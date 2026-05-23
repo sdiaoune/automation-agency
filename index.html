@@ -396,6 +396,7 @@
     }
 
     section { padding: 64px 0; }
+    #book { scroll-margin-top: 92px; }
 
     .section-head {
       max-width: 760px;
@@ -598,9 +599,6 @@
 
     .calendar-box {
       min-height: 400px;
-      display: grid;
-      place-items: center;
-      text-align: center;
       background:
         linear-gradient(180deg, rgba(247,201,72,.08), rgba(70,230,176,.05)),
         rgba(255,255,255,.04);
@@ -611,6 +609,80 @@
       display: block;
       margin-bottom: 8px;
     }
+
+    .audit-form {
+      display: grid;
+      gap: 14px;
+      text-align: left;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    label {
+      display: grid;
+      gap: 7px;
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 14px;
+      background: rgba(8,11,16,.62);
+      color: var(--text);
+      font: inherit;
+      min-height: 48px;
+      padding: 12px 14px;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: rgba(247,201,72,.66);
+      box-shadow: 0 0 0 4px rgba(247,201,72,.12);
+    }
+
+    .full-field { grid-column: 1 / -1; }
+
+    .hidden-field {
+      position: absolute;
+      left: -9999px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .form-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .form-note {
+      color: var(--muted);
+      font-size: .9rem;
+      margin: 0;
+    }
+
+    .form-status {
+      min-height: 22px;
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .form-status.success { color: var(--accent-2); }
+    .form-status.error { color: var(--danger); }
 
     .faq-grid {
       display: grid;
@@ -685,6 +757,7 @@
     }
 
     .mobile-sticky .btn { width: 100%; }
+    .booking-active .mobile-sticky { display: none; }
 
     @media (max-width: 980px) {
       .landing-links { grid-template-columns: 1fr 1fr; }
@@ -694,15 +767,19 @@
       .navlinks { display: none; }
       .hero { padding-top: 64px; }
       .hero-grid, .big-offer, .cards, .pricing, .proof-grid, .pain-grid, .media-grid, .booking, .faq-grid { grid-template-columns: 1fr; }
+      .booking { align-items: start; }
+      .calendar-box { order: 1; }
+      .booking-panel { order: 2; }
       .price-card.featured { transform: none; }
       h1 { font-size: 3.6rem; }
       .mobile-sticky { display: block; }
+      .booking-active .mobile-sticky { display: none; }
     }
 
     @media (max-width: 520px) {
       .wrap { width: min(100% - 28px, 1120px); }
       .hero-actions .btn { width: 100%; }
-      .metric-grid, .landing-links { grid-template-columns: 1fr; }
+      .metric-grid, .landing-links, .form-grid { grid-template-columns: 1fr; }
       h1 { font-size: 3.05rem; }
       .flow-row { grid-template-columns: 34px 1fr; }
       .flow-row .tag { grid-column: 2; justify-self: start; }
@@ -722,7 +799,7 @@
         <a href="#proof">Proof</a>
         <a href="/blog/">Blog</a>
         <a href="#faq">FAQ</a>
-        <a href="#book" class="btn btn-primary">Book Free Audit</a>
+        <a href="#book" class="btn btn-primary">Book 15-Min Audit</a>
       </nav>
     </div>
   </header>
@@ -1017,12 +1094,73 @@
           </div>
 
           <div class="calendar-box">
-            <div>
+            <form class="audit-form" id="audit-form">
               <strong>Start with your current workflow.</strong>
-              <p class="muted">Email the bottleneck you want to fix first, such as missed leasing calls, tenant intake, maintenance triage, or CRM follow-up.</p>
-              <br />
-              <a href="mailto:hello@emc2ops.com?subject=Free%20Ops%20Audit%20for%20EMC2Ops" class="btn btn-primary">Email to Book Audit</a>
-            </div>
+              <p class="muted">Tell us where communication is leaking time or revenue. We’ll confirm the audit by email.</p>
+
+              <div class="form-grid">
+                <label>
+                  Name
+                  <input name="fullName" autocomplete="name" required />
+                </label>
+                <label>
+                  Work email
+                  <input name="email" type="email" autocomplete="email" required />
+                </label>
+                <label>
+                  Phone
+                  <input name="phone" type="tel" autocomplete="tel" />
+                </label>
+                <label>
+                  Company
+                  <input name="company" autocomplete="organization" required />
+                </label>
+                <label>
+                  Company website
+                  <input name="companyWebsite" type="url" inputmode="url" placeholder="https://example.com" />
+                </label>
+                <label>
+                  Portfolio size
+                  <select name="portfolioSize">
+                    <option value="">Select one</option>
+                    <option>1-50 units</option>
+                    <option>51-250 units</option>
+                    <option>251-1,000 units</option>
+                    <option>1,000+ units</option>
+                  </select>
+                </label>
+                <label>
+                  First workflow to fix
+                  <select name="workflowProblem" required>
+                    <option value="">Select one</option>
+                    <option>Missed leasing calls</option>
+                    <option>Tenant intake</option>
+                    <option>Maintenance triage</option>
+                    <option>CRM follow-up</option>
+                    <option>Owner or vendor updates</option>
+                  </select>
+                </label>
+                <label>
+                  Preferred day/time
+                  <input name="preferredTime" placeholder="Tuesday morning, Friday at 2pm..." />
+                </label>
+                <label class="full-field">
+                  What should we look at first?
+                  <textarea name="message" placeholder="Example: after-hours calls are missed, leads are not followed up, maintenance requests need better routing..."></textarea>
+                </label>
+              </div>
+
+              <label class="hidden-field">
+                Leave this blank
+                <input name="companySiteConfirm" tabindex="-1" autocomplete="off" />
+              </label>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Request Free Audit</button>
+                <p class="form-note">You’ll get a direct follow-up from EMC2Ops.</p>
+              </div>
+              <p class="form-status" id="audit-form-status" role="status" aria-live="polite"></p>
+            </form>
           </div>
         </div>
       </div>
@@ -1113,5 +1251,53 @@
       <span>hello@emc2ops.com</span>
     </div>
   </footer>
+  <script>
+    const auditForm = document.querySelector("#audit-form");
+    const auditFormStatus = document.querySelector("#audit-form-status");
+    const bookingSection = document.querySelector("#book");
+
+    if (bookingSection && "IntersectionObserver" in window) {
+      const bookingObserver = new IntersectionObserver((entries) => {
+        const isBookingVisible = entries.some((entry) => entry.isIntersecting);
+        document.body.classList.toggle("booking-active", isBookingVisible);
+      }, { rootMargin: "0px", threshold: 0.01 });
+
+      bookingObserver.observe(bookingSection);
+    }
+
+    auditForm?.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const submitButton = auditForm.querySelector("button[type='submit']");
+      const formData = new FormData(auditForm);
+      const payload = Object.fromEntries(formData.entries());
+      payload.pageUrl = window.location.href;
+
+      auditFormStatus.textContent = "Sending your audit request...";
+      auditFormStatus.className = "form-status";
+      submitButton.disabled = true;
+
+      try {
+        const response = await fetch("/api/book-audit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          throw new Error(result.error || "We could not submit the request.");
+        }
+
+        auditForm.reset();
+        auditFormStatus.textContent = "Audit request received. We’ll follow up shortly.";
+        auditFormStatus.className = "form-status success";
+      } catch (error) {
+        auditFormStatus.textContent = error.message || "Something went wrong. Email hello@emc2ops.com directly.";
+        auditFormStatus.className = "form-status error";
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  </script>
 </body>
 </html>
