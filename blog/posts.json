@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "missed-leasing-calls-property-management",
+    "pillar": "Missed Call Recovery",
+    "keyword": "missed leasing calls property management",
+    "title": "The True Cost of Unanswered Leasing Calls for Property Managers",
+    "meta": "Learn how missed leasing calls leak showings after hours and how property management teams can recover demand with fast SMS and CRM workflows."
+  },
+  {
+    "slug": "missed-call-text-back-property-management",
+    "pillar": "Missed Call Recovery",
+    "keyword": "missed call text back property management",
+    "title": "Missed Call Text-Back for Property Management: Why Voicemail Is No Longer Enough",
+    "meta": "See why missed-call text-back is becoming a minimum leasing response standard for property managers handling renter inquiries."
+  },
+  {
+    "slug": "after-hours-leasing-automation",
+    "pillar": "Missed Call Recovery",
+    "keyword": "after hours leasing automation",
+    "title": "After-Hours Leasing Automation: Book Showings Without Adding Night Staff",
+    "meta": "A practical guide to after-hours leasing automation for property managers that need 24/7 renter intake, qualification, and showing handoff."
+  },
+  {
+    "slug": "property-management-response-times",
+    "pillar": "Missed Call Recovery",
+    "keyword": "property management response times",
+    "title": "Property Management Response Times: Why the 10-Second Target Matters",
+    "meta": "Learn why response speed affects showing ratios, renter trust, and owner confidence for multifamily property management teams."
+  },
+  {
+    "slug": "high-leasing-lead-volume-property-management",
+    "pillar": "Missed Call Recovery",
+    "keyword": "high leasing lead volume property management",
+    "title": "How Property Managers Handle High Leasing Lead Volume Without Dropping Prospects",
+    "meta": "A systems approach to peak-season leasing volume for property managers managing multifamily portfolios and fast-moving rental markets."
+  },
+  {
+    "slug": "property-management-ai-automation-vs-chatbots",
+    "pillar": "Systems and Integrations",
+    "keyword": "property management AI automation vs chatbots",
+    "title": "Property Management AI Automation vs Chatbots: What Operators Need to Know",
+    "meta": "Understand the difference between generic chatbots and workflow automation for property management leasing, maintenance, CRM, and owner updates."
+  },
+  {
+    "slug": "property-management-crm-workflow-automation",
+    "pillar": "Systems and Integrations",
+    "keyword": "property management CRM workflow automation",
+    "title": "Property Management CRM Workflow Automation: End Manual Conversation Logging",
+    "meta": "How property managers can automate CRM notes, statuses, tags, tasks, and leasing summaries from calls, texts, and forms."
+  },
+  {
+    "slug": "property-management-zapier-templates",
+    "pillar": "Systems and Integrations",
+    "keyword": "property management Zapier templates",
+    "title": "Zapier for Property Managers: Five Workflow Templates That Remove Manual Tasks",
+    "meta": "Five practical Zapier-style workflow templates for property managers covering missed calls, leasing follow-up, maintenance intake, owner updates, and CRM logging."
+  },
+  {
+    "slug": "reduce-showing-no-shows-property-management",
+    "pillar": "Systems and Integrations",
+    "keyword": "reduce showing no shows property management",
+    "title": "How Property Managers Reduce Showing No-Shows With Automated SMS Sequences",
+    "meta": "Reduce showing no-shows with automated SMS reminders, confirmation workflows, and renter reactivation sequences for property management teams."
+  },
+  {
+    "slug": "property-management-leasing-pipeline-setup",
+    "pillar": "Systems and Integrations",
+    "keyword": "property management leasing pipeline setup",
+    "title": "Property Management Leasing Pipeline Setup: From First Call to Showing Transcript",
+    "meta": "Design a leasing intake flow that captures calls, qualifies renters, syncs transcripts, and keeps property management CRMs clean."
+  },
+  {
+    "slug": "automate-property-management-lead-follow-up",
+    "pillar": "Systems and Integrations",
+    "keyword": "automate property management lead follow up",
+    "title": "Automate Property Management Lead Follow-Up Without Damaging Your Brand",
+    "meta": "How to automate lead follow-up across calls, texts, and emails while protecting brand reputation and leasing team control."
+  },
+  {
+    "slug": "automate-dispatch-crm-sync-property-management",
+    "pillar": "Maintenance Operations",
+    "keyword": "automate dispatch dispatching CRM sync",
+    "title": "Automate Dispatch and CRM Sync for Property Management Tenant Communication",
+    "meta": "Keep field techs, vendors, tenant conversations, and property management CRMs updated with automated dispatch and communication sync."
+  },
+  {
+    "slug": "property-management-maintenance-intake-automation",
+    "pillar": "Maintenance Operations",
+    "keyword": "property management maintenance intake automation",
+    "title": "Property Management Maintenance Intake Automation for 24/7 Triage",
+    "meta": "Standardize midnight maintenance requests with automated tenant intake, urgency triage, routing, and CRM updates."
+  },
+  {
+    "slug": "automate-vendor-dispatch-property-management",
+    "pillar": "Maintenance Operations",
+    "keyword": "automate vendor dispatch property management",
+    "title": "Automate Vendor Dispatch for Property Management Without Losing Control",
+    "meta": "Learn how property managers can automate vendor dispatch based on unit context, trade, urgency, approvals, and CRM status."
+  },
+  {
+    "slug": "owner-updates-property-management-automation",
+    "pillar": "Maintenance Operations",
+    "keyword": "owner updates property management automation",
+    "title": "Owner Updates Automation for Property Managers: Proactive Status Without Constant Calls",
+    "meta": "How property managers can automate owner updates for leasing, maintenance, and workflow status while keeping communication accurate."
+  },
+  {
+    "slug": "automate-tenant-maintenance-requests",
+    "pillar": "Maintenance Operations",
+    "keyword": "automate tenant maintenance requests",
+    "title": "Automate Tenant Maintenance Requests and Reduce Dispatch Fatigue",
+    "meta": "Standardize tenant maintenance request collection so property management teams get better details before dispatching vendors or staff."
+  },
+  {
+    "slug": "how-property-managers-get-new-owners",
+    "pillar": "Growth and Owner Trust",
+    "keyword": "how property managers get new owners",
+    "title": "How Property Managers Win New Owners With Faster Operational Response",
+    "meta": "Why fast response, clean maintenance workflows, and proactive communication help property managers compete for new multifamily owners."
+  },
+  {
+    "slug": "property-management-sms-compliance-10dlc",
+    "pillar": "Risk Mitigation",
+    "keyword": "property management SMS compliance 10DLC",
+    "title": "Property Management SMS Compliance: A2P 10DLC Basics for Operators",
+    "meta": "A practical operator guide to SMS opt-in, opt-out, identification, and A2P 10DLC considerations for property management workflows."
+  },
+  {
+    "slug": "property-management-ai-implementation-timeline",
+    "pillar": "Risk Mitigation",
+    "keyword": "property management AI implementation timeline",
+    "title": "Property Management AI Implementation Timeline: A Practical 7-Day Rollout",
+    "meta": "A 7-day implementation timeline for property management AI workflows that minimizes disruption and starts with one measurable front-desk automation."
+  },
+  {
+    "slug": "reduce-administrative-workload-property-management",
+    "pillar": "Risk Mitigation",
+    "keyword": "reduce administrative workload property management",
+    "title": "Reduce Administrative Workload in Property Management Without Losing the Human Touch",
+    "meta": "Where AI automation should step in for property managers and where leasing, tenant, owner, and compliance conversations should stay human-led."
+  }
+]
