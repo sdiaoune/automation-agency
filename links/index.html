@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMC2Ops Links | AI Automation for Property Management</title>
+  <meta name="description" content="EMC2Ops is an automation agency focused on property management. Find our website, social profiles, and book a free automation audit." />
+  <meta name="author" content="EMC2Ops" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#080b10" />
+  <link rel="canonical" href="https://www.emc2ops.com/links/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="EMC2Ops" />
+  <meta property="og:title" content="EMC2Ops Links" />
+  <meta property="og:description" content="AI automation for property management teams. Book a free audit or connect with EMC2Ops." />
+  <meta property="og:url" content="https://www.emc2ops.com/links/" />
+  <meta property="og:image" content="https://www.emc2ops.com/links/assets/emc2ops-logo.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="EMC2Ops Links" />
+  <meta name="twitter:description" content="AI automation for property management teams. Book a free audit or connect with EMC2Ops." />
+  <style>
+    :root {
+      --bg: #080b10;
+      --panel: #101722;
+      --panel-2: #121c2a;
+      --text: #f5f7fb;
+      --muted: #a9b4c6;
+      --line: rgba(255,255,255,.12);
+      --accent: #f7c948;
+      --accent-2: #46e6b0;
+      --shadow: 0 30px 90px rgba(0,0,0,.45);
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      min-height: 100%;
+      background: var(--bg);
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 18% 0%, rgba(70,230,176,.16), transparent 30%),
+        radial-gradient(circle at 88% 4%, rgba(247,201,72,.18), transparent 27%),
+        linear-gradient(180deg, #080b10 0%, #0b111a 56%, #07090d 100%);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 18px 0 32px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .shell {
+      width: min(100% - 28px, 460px);
+      min-height: calc(100vh - 50px);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .profile {
+      padding: 26px 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.035)),
+        rgba(16,23,34,.82);
+      box-shadow: var(--shadow);
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .profile::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 112px;
+      background:
+        linear-gradient(90deg, rgba(247,201,72,.2), rgba(70,230,176,.15)),
+        radial-gradient(circle at 78% 0%, rgba(70,230,176,.28), transparent 48%);
+      border-bottom: 1px solid rgba(255,255,255,.09);
+      pointer-events: none;
+    }
+
+    .logo {
+      position: relative;
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 16px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 24px;
+      background: #07100d;
+      box-shadow: 0 18px 52px rgba(0,0,0,.36);
+      object-fit: cover;
+      display: block;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      min-height: 30px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 11px;
+      border: 1px solid rgba(247,201,72,.28);
+      border-radius: 999px;
+      background: rgba(247,201,72,.08);
+      color: #ffe49a;
+      font-size: .78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 14px 0 8px;
+      font-size: 2.35rem;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .handle {
+      margin: 0 0 14px;
+      color: var(--accent-2);
+      font-weight: 800;
+    }
+
+    .bio {
+      margin: 0 auto;
+      max-width: 34ch;
+      color: #d7deea;
+      font-size: 1rem;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .link-card {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr) 22px;
+      align-items: center;
+      gap: 13px;
+      min-height: 68px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.045);
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(70,230,176,.42);
+      background: rgba(255,255,255,.07);
+    }
+
+    .link-card.primary {
+      min-height: 76px;
+      border-color: rgba(247,201,72,.34);
+      background: linear-gradient(135deg, rgba(247,201,72,.16), rgba(70,230,176,.1));
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.07);
+      color: var(--accent-2);
+      font-weight: 900;
+    }
+
+    .icon svg {
+      width: 21px;
+      height: 21px;
+      display: block;
+      fill: currentColor;
+      stroke: currentColor;
+    }
+
+    .icon .stroke-only {
+      fill: none;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .primary .icon {
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #07100d;
+    }
+
+    .link-copy {
+      min-width: 0;
+      display: grid;
+      gap: 2px;
+    }
+
+    .link-copy strong {
+      overflow-wrap: anywhere;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    .link-copy span {
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    .arrow {
+      color: var(--muted);
+      font-size: 1.25rem;
+      text-align: right;
+    }
+
+    .mini-proof {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .mini-proof span {
+      min-height: 58px;
+      display: grid;
+      place-items: center;
+      padding: 10px 8px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.035);
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 750;
+      text-align: center;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: .84rem;
+      text-align: center;
+    }
+
+    @media (max-width: 380px) {
+      body { padding-top: 12px; }
+      .shell { width: min(100% - 20px, 460px); }
+      .profile { padding-inline: 14px; }
+      h1 { font-size: 2rem; }
+      .mini-proof { grid-template-columns: 1fr; }
+    }
+
+    @media (min-width: 720px) {
+      body { padding-block: 34px; }
+      .shell { min-height: calc(100vh - 86px); }
+      .profile { padding-top: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="profile" aria-labelledby="profile-title">
+      <img class="logo" src="assets/emc2ops-logo.jpg" alt="EMC2Ops logo" width="96" height="96" />
+      <span class="eyebrow">Automation agency</span>
+      <h1 id="profile-title">EMC2Ops</h1>
+      <p class="handle">@EMC2Ops</p>
+      <p class="bio">We help property management teams automate leasing, maintenance, tenant communication, and CRM workflows. Book a free audit on our website to see what should be automated first.</p>
+    </section>
+
+    <nav class="links" aria-label="EMC2Ops links">
+      <a class="link-card primary" href="https://www.emc2ops.com/#book">
+        <span class="icon">E²</span>
+        <span class="link-copy">
+          <strong>Book a Free Ops Audit</strong>
+          <span>Map the best automation to install first</span>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="link-card" href="https://www.emc2ops.com/">
+        <span class="icon" aria-hidden="true">
+          <svg class="stroke-only" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M2 12h20"></path>
+            <path d="M12 2a15.3 15.3 0 0 1 0 20"></path>
+            <path d="M12 2a15.3 15.3 0 0 0 0 20"></path>
+          </svg>
+        </span>
+        <span class="link-copy">
+          <strong>EMC2Ops.com</strong>
+          <span>AI automation for property managers</span>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="link-card" href="https://www.linkedin.com/company/emc2ops/">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S.02 4.88.02 3.5 1.14 1 2.5 1s2.48 1.12 2.48 2.5ZM.32 8h4.36v14H.32V8Zm7.1 0h4.18v1.91h.06c.58-1.1 2-2.26 4.12-2.26 4.41 0 5.22 2.9 5.22 6.67V22h-4.35v-6.8c0-1.62-.03-3.71-2.26-3.71-2.26 0-2.61 1.77-2.61 3.59V22H7.42V8Z"></path>
+          </svg>
+        </span>
+        <span class="link-copy">
+          <strong>LinkedIn</strong>
+          <span>Follow EMC2Ops</span>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="link-card" href="https://www.youtube.com/@EMC2Ops">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.8 31.8 0 0 0 24 12a31.8 31.8 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"></path>
+          </svg>
+        </span>
+        <span class="link-copy">
+          <strong>YouTube</strong>
+          <span>Watch @EMC2Ops</span>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="link-card" href="https://x.com/EMC2Ops">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M18.9 2.3h3.4l-7.5 8.6 8.8 10.8h-6.9l-5.4-6.7-6.2 6.7H1.7l8-8.8L1.3 2.3h7.1l4.9 6.1 5.6-6.1Zm-1.2 17.5h1.9L7.4 4.1h-2L17.7 19.8Z"></path>
+          </svg>
+        </span>
+        <span class="link-copy">
+          <strong>X / Twitter</strong>
+          <span>Follow @EMC2Ops</span>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="link-card" href="https://www.instagram.com/emc2ops/">
+        <span class="icon" aria-hidden="true">
+          <svg class="stroke-only" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M17.5 6.5h.01"></path>
+          </svg>
+        </span>
+        <span class="link-copy">
+          <strong>Instagram</strong>
+          <span>Follow @emc2ops</span>
+        </span>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </nav>
+
+    <div class="mini-proof" aria-label="Core services">
+      <span>Leasing follow-up</span>
+      <span>Maintenance intake</span>
+      <span>CRM workflows</span>
+    </div>
+
+    <footer>
+      © 2026 EMC2Ops. Built for property management operations.
+    </footer>
+  </main>
+</body>
+</html>
