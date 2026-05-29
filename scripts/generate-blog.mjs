@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const siteUrl = "https://www.emc2ops.com";
-const today = "2026-05-23";
+const today = "2026-05-29";
 
 const cities = "Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, and Miami";
 
@@ -366,6 +366,24 @@ const posts = [
       ["What admin work should be automated first?", "Repetitive intake, reminders, status updates, missed-call response, and CRM logging are common first candidates."],
       ["How do leasing managers keep control?", "Use approval rules, exception queues, transcript review, and clear escalation paths."]
     ]
+  },
+  {
+    slug: "ai-leasing-follow-up-property-management",
+    pillar: "Systems and Integrations",
+    keyword: "AI leasing follow up property management",
+    title: "AI Leasing Follow-Up for Property Management: Stop Letting Warm Leads Go Cold",
+    meta: "How property managers can use AI leasing follow-up to reactivate warm prospects, protect response speed, and keep CRM stages current without manual chasing.",
+    h1: "Stop letting warm leasing leads die between inquiry and booked tour",
+    problem: "Most leasing leads do not go cold because the property is a bad fit. They go cold because the second or third follow-up never happens while the team is juggling tours, resident issues, and inbox cleanup.",
+    stakes: ["Leasing calls, forms, and SMS replies arrive faster than teams managing 50+ units can work them consistently.", "Prospects comparing multiple communities often lease elsewhere when the next message is generic, delayed, or never sent.", "Manual chasing creates stale CRM stages, duplicate outreach, and weak visibility into which leads still have intent."],
+    system: ["Trigger an AI-assisted follow-up workflow after missed calls, new inquiries, and aged CRM stages.", "Use property, unit type, move date, and prior conversation context to send a relevant next message instead of a generic check-in.", "Ask for the one missing qualification detail or preferred next step so the lead can move toward a showing.", "Pause, suppress, or reroute the sequence when a tour is booked, an application starts, or a human takes ownership.", "Write summaries, intent signals, and next actions back to the CRM automatically."],
+    metrics: ["stale leads reactivated", "time from inquiry to qualified reply", "tour requests recovered from aged leads", "CRM stages updated automatically", "manual follow-up touches removed"],
+    cta: "If warm leasing leads are aging out before they book a tour, book a 15-minute workflow audit.",
+    faqs: [
+      ["What is AI leasing follow-up in property management?", "It is a workflow that uses AI to personalize renter follow-up, capture missing qualification details, and update the CRM instead of relying on manual reminders alone."],
+      ["When should AI follow-up stop?", "It should stop or change when the prospect replies, books a showing, starts an application, opts out, or needs a human conversation."],
+      ["Can AI follow-up work with existing leasing CRMs?", "Usually yes. Most teams can connect AI follow-up through native integrations, APIs, or workflow tools as long as contact status and suppression rules are clear."]
+    ]
   }
 ];
 
@@ -375,14 +393,14 @@ const relatedMap = {
   "missed-leasing-calls-property-management": ["missed-call-text-back-property-management", "after-hours-leasing-automation", "property-management-response-times"],
   "missed-call-text-back-property-management": ["property-management-sms-compliance-10dlc", "missed-leasing-calls-property-management", "property-management-crm-workflow-automation"],
   "after-hours-leasing-automation": ["missed-leasing-calls-property-management", "high-leasing-lead-volume-property-management", "property-management-ai-implementation-timeline"],
-  "property-management-response-times": ["missed-leasing-calls-property-management", "automate-property-management-lead-follow-up", "how-property-managers-get-new-owners"],
+  "property-management-response-times": ["missed-leasing-calls-property-management", "automate-property-management-lead-follow-up", "ai-leasing-follow-up-property-management"],
   "high-leasing-lead-volume-property-management": ["property-management-leasing-pipeline-setup", "reduce-showing-no-shows-property-management", "property-management-crm-workflow-automation"],
   "property-management-ai-automation-vs-chatbots": ["property-management-ai-implementation-timeline", "reduce-administrative-workload-property-management", "property-management-crm-workflow-automation"],
   "property-management-crm-workflow-automation": ["property-management-leasing-pipeline-setup", "property-management-zapier-templates", "automate-dispatch-crm-sync-property-management"],
   "property-management-zapier-templates": ["property-management-crm-workflow-automation", "automate-property-management-lead-follow-up", "property-management-maintenance-intake-automation"],
   "reduce-showing-no-shows-property-management": ["automate-property-management-lead-follow-up", "property-management-leasing-pipeline-setup", "high-leasing-lead-volume-property-management"],
-  "property-management-leasing-pipeline-setup": ["property-management-crm-workflow-automation", "missed-leasing-calls-property-management", "high-leasing-lead-volume-property-management"],
-  "automate-property-management-lead-follow-up": ["property-management-response-times", "reduce-showing-no-shows-property-management", "missed-call-text-back-property-management"],
+  "property-management-leasing-pipeline-setup": ["property-management-crm-workflow-automation", "missed-leasing-calls-property-management", "ai-leasing-follow-up-property-management"],
+  "automate-property-management-lead-follow-up": ["property-management-response-times", "ai-leasing-follow-up-property-management", "missed-call-text-back-property-management"],
   "automate-dispatch-crm-sync-property-management": ["property-management-maintenance-intake-automation", "automate-vendor-dispatch-property-management", "automate-tenant-maintenance-requests"],
   "property-management-maintenance-intake-automation": ["automate-tenant-maintenance-requests", "automate-vendor-dispatch-property-management", "automate-dispatch-crm-sync-property-management"],
   "automate-vendor-dispatch-property-management": ["property-management-maintenance-intake-automation", "automate-dispatch-crm-sync-property-management", "owner-updates-property-management-automation"],
@@ -391,7 +409,8 @@ const relatedMap = {
   "how-property-managers-get-new-owners": ["owner-updates-property-management-automation", "property-management-response-times", "reduce-administrative-workload-property-management"],
   "property-management-sms-compliance-10dlc": ["missed-call-text-back-property-management", "automate-property-management-lead-follow-up", "property-management-ai-implementation-timeline"],
   "property-management-ai-implementation-timeline": ["property-management-ai-automation-vs-chatbots", "property-management-crm-workflow-automation", "missed-call-text-back-property-management"],
-  "reduce-administrative-workload-property-management": ["property-management-ai-automation-vs-chatbots", "owner-updates-property-management-automation", "property-management-ai-implementation-timeline"]
+  "reduce-administrative-workload-property-management": ["property-management-ai-automation-vs-chatbots", "owner-updates-property-management-automation", "property-management-ai-implementation-timeline"],
+  "ai-leasing-follow-up-property-management": ["automate-property-management-lead-follow-up", "property-management-response-times", "property-management-leasing-pipeline-setup"]
 };
 
 function escapeHtml(value) {
