@@ -20,6 +20,13 @@ export type ActivityType =
   | 'other'
 
 export type TaskStatus = 'todo' | 'doing' | 'done'
+export type EmailApprovalStatus =
+  | 'draft'
+  | 'approved'
+  | 'rejected'
+  | 'sending'
+  | 'sent'
+  | 'failed'
 
 export type Prospect = {
   id: string
@@ -57,4 +64,20 @@ export type SprintTask = {
   due_date: string | null
   notes: string
   created_at: string
+}
+
+export type EmailApproval = {
+  id: string
+  prospect_id: string | null
+  recipient_email: string
+  subject: string
+  body: string
+  activity_type: 'cold_email' | 'follow_up_email'
+  status: EmailApprovalStatus
+  approved_at: string | null
+  sent_at: string | null
+  provider_message_id: string
+  last_error: string
+  created_at: string
+  updated_at: string
 }

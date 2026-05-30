@@ -5,6 +5,13 @@
   "scripts": {
     "dev": "python3 -m http.server 3000",
     "start": "python3 -m http.server 3000",
-    "generate:blog": "node scripts/generate-blog.mjs"
+    "generate:blog": "node scripts/generate-blog.mjs",
+    "post:blog:x": "node scripts/x-blog-post.mjs",
+    "test:api": "node --test tests/api/*.test.js",
+    "test:dashboard": "playwright test tests/dashboard.spec.js --browser=chromium",
+    "test": "npm run test:api && npm run test:dashboard"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
   }
 }

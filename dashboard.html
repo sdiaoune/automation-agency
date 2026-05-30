@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outbound Sprint Dashboard | EMC2Ops</title>
+  <meta name="description" content="EMC2Ops outbound sprint dashboard for property-management prospecting, follow-up cadence, pipeline progress, and 30-day client acquisition goals." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://www.emc2ops.com/dashboard/" />
+  <link rel="stylesheet" href="/dashboard.css" />
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="/dashboard-config.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-row">
+      <a class="brand" href="/" aria-label="Back to EMC2Ops home">
+        <span class="brand-mark">E</span>
+        <span><strong>EMC2Ops</strong><small>Outbound sprint dashboard</small></span>
+      </a>
+      <div class="toolbar">
+        <button class="button button-ghost" id="local-mode-button" type="button">Local mode</button>
+        <button class="button button-ghost hidden" id="cloud-signout-button" type="button">Sign out</button>
+        <a class="button" href="/">Landing page</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="overview">
+      <div class="intro">
+        <p class="eyebrow">30-day acquisition sprint</p>
+        <h1>Track the outbound work that creates qualified leasing workflow audits.</h1>
+        <p class="intro-copy">One niche, one urgent offer, and a daily operating rhythm for missed leasing call recovery outreach to residential property managers.</p>
+        <div class="target-strip" id="target-strip"></div>
+      </div>
+      <aside class="auth-panel" id="auth-panel">
+        <p class="eyebrow">Data mode</p>
+        <h2>Store progress in Supabase.</h2>
+        <p class="muted" id="auth-summary">Sign in to keep prospects, daily metrics, and checklist completion synced to your dashboard account.</p>
+        <div class="notice hidden" id="config-notice">
+          <strong>Cloud config pending.</strong>
+          <p>Add the Supabase project URL and publishable key to enable sign-in. Local mode remains available.</p>
+        </div>
+        <div class="auth-tabs" role="tablist" aria-label="Authentication mode">
+          <button class="tab is-active" id="signin-tab" type="button">Sign in</button>
+          <button class="tab" id="signup-tab" type="button">Create account</button>
+        </div>
+        <form class="auth-form" id="auth-form">
+          <label>Email<input id="auth-email" type="email" autocomplete="email" required /></label>
+          <label>Password<input id="auth-password" type="password" minlength="8" autocomplete="current-password" required /></label>
+          <button class="button button-primary" id="auth-submit" type="submit">Sign in</button>
+          <div class="status-line" id="auth-status" aria-live="polite"></div>
+        </form>
+      </aside>
+    </section>
+
+    <section class="stat-grid" id="stat-grid"></section>
+
+    <section class="work-grid">
+      <article class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Daily check-in</p>
+            <h2>Log outbound cadence</h2>
+            <p>Daily targets from the strategy are built into the form.</p>
+          </div>
+        </div>
+        <form class="stack" id="daily-form">
+          <div class="form-grid">
+            <label>Date<input id="progress-date" type="date" required /></label>
+            <label>Accounts contacted<input id="accounts-contacted" type="number" min="0" value="0" required /></label>
+            <label>Cold emails<input id="cold-emails" type="number" min="0" value="0" required /></label>
+            <label>Follow-up emails<input id="followup-emails" type="number" min="0" value="0" required /></label>
+            <label>Phone calls<input id="phone-calls" type="number" min="0" value="0" required /></label>
+            <label>LinkedIn touches<input id="linkedin-touches" type="number" min="0" value="0" required /></label>
+            <label>Loom audits<input id="loom-audits" type="number" min="0" value="0" required /></label>
+            <label>Partner conversations<input id="partner-conversations" type="number" min="0" value="0" required /></label>
+            <label>Positive replies<input id="positive-replies" type="number" min="0" value="0" required /></label>
+            <label>Calls booked<input id="calls-booked" type="number" min="0" value="0" required /></label>
+            <label>Calls held<input id="calls-held" type="number" min="0" value="0" required /></label>
+            <label>Proposals sent<input id="proposals-sent" type="number" min="0" value="0" required /></label>
+            <label>Deals closed<input id="deals-closed" type="number" min="0" value="0" required /></label>
+            <label class="wide">Notes<textarea id="daily-notes" placeholder="Subject-line learnings, objections, best-fit pain signals, next follow-up block."></textarea></label>
+          </div>
+          <div class="inline-actions">
+            <button class="button button-primary" type="submit">Save daily log</button>
+            <span class="status-line" id="daily-status" aria-live="polite"></span>
+          </div>
+        </form>
+      </article>
+      <article class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Execution</p>
+            <h2>Start-today and weekly tasks</h2>
+            <p>Check off the launch work that turns outreach into booked audits and proof.</p>
+          </div>
+        </div>
+        <div class="checklist" id="checklist"></div>
+      </article>
+    </section>
+
+    <section class="prospect-grid">
+      <article class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Prospects</p>
+            <h2>Add property managers</h2>
+            <p>Track the first 100 accounts with lead-response clues and follow-up dates.</p>
+          </div>
+        </div>
+        <form class="stack" id="prospect-form">
+          <input id="prospect-id" type="hidden" />
+          <div class="form-grid">
+            <label>Company<input id="company" required /></label>
+            <label>Market<input id="market" required /></label>
+            <label>Decision maker<input id="contact-name" /></label>
+            <label>Email<input id="prospect-email" type="email" /></label>
+            <label>Phone<input id="prospect-phone" /></label>
+            <label>Website<input id="website" type="url" placeholder="https://" /></label>
+            <label>Stage
+              <select id="stage">
+                <option value="research">Research</option>
+                <option value="contacted">Contacted</option>
+                <option value="replied">Replied</option>
+                <option value="audit_booked">Audit booked</option>
+                <option value="proposal">Proposal</option>
+                <option value="won">Won</option>
+                <option value="nurture">Nurture</option>
+              </select>
+            </label>
+            <label>Next follow-up<input id="next-follow-up" type="date" /></label>
+            <label class="wide">Software clues<input id="software-clues" placeholder="AppFolio, Buildium, CRM, listing platform, call routing clue." /></label>
+            <label class="wide">Pain signal<textarea id="pain-signal" placeholder="Live listings, after-hours call path, slow response clue, communication review, hiring signal."></textarea></label>
+            <label class="wide">Notes<textarea id="prospect-notes" placeholder="Last touch, personalization angle, next audit idea."></textarea></label>
+          </div>
+          <div class="inline-actions">
+            <button class="button button-primary" type="submit">Save prospect</button>
+            <button class="button button-ghost hidden" id="cancel-edit" type="button">Cancel edit</button>
+            <span class="status-line" id="prospect-status" aria-live="polite"></span>
+          </div>
+        </form>
+      </article>
+      <article class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Pipeline</p>
+            <h2>Follow up by stage</h2>
+            <p>Keep booked audits, proposals, and stale follow-ups visible.</p>
+          </div>
+        </div>
+        <div class="stage-tabs" id="stage-tabs"></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Company</th><th>Signal</th><th>Stage</th><th>Follow-up</th><th>Actions</th></tr></thead>
+            <tbody id="prospect-rows"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Outreach scripts</p>
+          <h2>Keep the first message narrow</h2>
+          <p>Lead with missed leasing call recovery, not broad AI automation.</p>
+        </div>
+      </div>
+      <div class="script-grid" id="script-grid"></div>
+    </section>
+  </main>
+  <script src="/dashboard.js"></script>
+</body>
+</html>

@@ -3,6 +3,8 @@ import path from "node:path";
 
 const siteUrl = "https://www.emc2ops.com";
 const today = "2026-05-29";
+const defaultSocialImage = `${siteUrl}/blog/social-assets/stop-losing-leads-after-hours.png`;
+const socialImageDimensions = { width: 1672, height: 941 };
 
 const cities = "Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, and Miami";
 
@@ -430,7 +432,15 @@ function titleTag(post) {
   return raw.length > 62 ? `${post.title.replace(/:.*$/, "")} | EMC2Ops` : raw;
 }
 
+function socialImageFor(canonical) {
+  const slug = canonical.match(/\/blog\/([^/]+)\/$/)?.[1];
+  const localPath = slug ? path.join("blog", "social-assets", `${slug}.png`) : "";
+  return localPath && fs.existsSync(localPath) ? `${siteUrl}/blog/social-assets/${slug}.png` : defaultSocialImage;
+}
+
 function layout({ title, description, canonical, body, schema, pageClass = "" }) {
+  const socialImage = socialImageFor(canonical);
+  const imageAlt = `${title} social preview from EMC2Ops.`;
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -447,9 +457,17 @@ function layout({ title, description, canonical, body, schema, pageClass = "" })
   <meta property="og:title" content="${escapeHtml(title)}" />
   <meta property="og:description" content="${escapeHtml(description)}" />
   <meta property="og:url" content="${canonical}" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="${socialImage}" />
+  <meta property="og:image:alt" content="${escapeHtml(imageAlt)}" />
+  <meta property="og:image:width" content="${socialImageDimensions.width}" />
+  <meta property="og:image:height" content="${socialImageDimensions.height}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@EMC2Ops" />
+  <meta name="twitter:creator" content="@EMC2Ops" />
   <meta name="twitter:title" content="${escapeHtml(title)}" />
   <meta name="twitter:description" content="${escapeHtml(description)}" />
+  <meta name="twitter:image" content="${socialImage}" />
+  <meta name="twitter:image:alt" content="${escapeHtml(imageAlt)}" />
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
 </head>
 <body class="${pageClass}">

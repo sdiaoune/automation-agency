@@ -29,6 +29,15 @@ export const taskStatusOptions: Array<{ value: TaskStatus; label: string }> = [
   { value: 'done', label: 'Done' },
 ]
 
+export const emailApprovalStatusLabels = {
+  draft: 'Needs approval',
+  approved: 'Approved',
+  rejected: 'Rejected',
+  sending: 'Sending',
+  sent: 'Sent',
+  failed: 'Failed',
+} as const
+
 export const dailyTargets: Array<{
   value: ActivityType
   label: string

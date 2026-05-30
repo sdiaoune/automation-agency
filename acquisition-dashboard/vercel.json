@@ -1,0 +1,22 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/api/x/:path*",
+      "destination": "/api/x-auth"
+    },
+    {
+      "source": "/api/meta/:path*",
+      "destination": "/api/meta-auth"
+    },
+    {
+      "source": "/auth/callback",
+      "destination": "/api/x-auth"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

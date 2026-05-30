@@ -1,0 +1,25 @@
+[project]
+name = "acquisition-dashboard-agent"
+version = "0.1.0"
+description = "Local OpenAI agent for the EMC2Ops acquisition dashboard."
+requires-python = ">=3.10"
+dependencies = [
+  "msal>=1.32.0",
+  "openai-agents>=0.4.0",
+  "python-dotenv>=1.0.1",
+  "supabase>=2.15.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.5",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3.5",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
