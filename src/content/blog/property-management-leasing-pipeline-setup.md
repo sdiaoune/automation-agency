@@ -4,7 +4,10 @@ order: 10
 pillar: "Systems and Integrations"
 keyword: "property management leasing pipeline setup"
 title: "Property Management Leasing Pipeline Setup: From First Call to Showing Transcript"
+seoTitle: "Property Management Leasing Pipeline Setup"
 meta: "Design a leasing intake flow that captures calls, qualifies renters, syncs transcripts, and keeps property management CRMs clean."
+publishedAt: "2026-06-03"
+updatedAt: "2026-06-04"
 h1: "Designing a seamless leasing intake flow from first call to synced transcript"
 problem: "A leasing pipeline should show what happened, what the renter wants, and what the team needs to do next. Many pipelines only show fragments."
 stakes:
@@ -36,6 +39,7 @@ related:
   - "property-management-lead-deduplication-routing"
   - "ai-leasing-follow-up-property-management"
   - "property-management-no-show-recovery-automation"
+  - "property-management-tour-scheduling-automation"
 ---
 
 A leasing pipeline should show what happened, what the renter wants, and what the team needs to do next. Many pipelines only show fragments.

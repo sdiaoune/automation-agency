@@ -4,7 +4,10 @@ order: 21
 pillar: "Systems and Integrations"
 keyword: "AI leasing follow up property management"
 title: "AI Leasing Follow-Up for Property Management: Stop Letting Warm Leads Go Cold"
+seoTitle: "AI Leasing Follow-Up for Property Managers"
 meta: "How property managers can use AI leasing follow-up to reactivate warm prospects, protect response speed, and keep CRM stages current without manual chasing."
+publishedAt: "2026-06-03"
+updatedAt: "2026-06-04"
 h1: "Stop letting warm leasing leads die between inquiry and booked tour"
 problem: "Most leasing leads do not go cold because the property is a bad fit. They go cold because the second or third follow-up never happens while the team is juggling tours, resident issues, and inbox cleanup."
 stakes:
@@ -36,6 +39,7 @@ related:
   - "property-management-lead-deduplication-routing"
   - "property-management-leasing-pipeline-setup"
   - "property-management-no-show-recovery-automation"
+  - "property-management-tour-scheduling-automation"
 socialImage: "/blog/social-assets/ai-leasing-follow-up-property-management.png"
 ---
 
