@@ -2,7 +2,7 @@ import type { CollectionEntry } from "astro:content";
 
 export const siteUrl = "https://www.emc2ops.com";
 export const siteName = "EMC2Ops";
-export const today = "2026-06-01";
+export const siteUpdatedAt = "2026-06-05";
 export const defaultSocialImage = "/blog/social-assets/stop-losing-leads-after-hours.png";
 export const socialImageDimensions = { width: 1672, height: 941 };
 export const cities =
@@ -19,8 +19,7 @@ export function stripTags(value: string) {
 }
 
 export function articleTitleTag(post: BlogPost) {
-  const raw = `${post.data.title} | EMC2Ops`;
-  return raw.length > 62 ? `${post.data.title.replace(/:.*$/, "")} | EMC2Ops` : raw;
+  return `${post.data.seoTitle || post.data.title} | EMC2Ops`;
 }
 
 export function socialImageFor(post?: BlogPost) {
@@ -29,6 +28,10 @@ export function socialImageFor(post?: BlogPost) {
 
 export function byOrder(posts: BlogPost[]) {
   return [...posts].sort((left, right) => left.data.order - right.data.order);
+}
+
+export function postUpdatedAt(post: BlogPost) {
+  return post.data.updatedAt || post.data.publishedAt;
 }
 
 export function homeSchema() {
@@ -62,7 +65,7 @@ export function homeSchema() {
         url: `${siteUrl}/`,
         name: "EMC2Ops | Done-for-You AI Front Desk for Property Managers",
         description:
-          "EMC2Ops installs AI front desk workflows for property managers: missed-call text-back, leasing follow-up, maintenance intake, owner updates, vendor routing, and CRM logging.",
+          "EMC2Ops installs AI front desk workflows for property managers: missed-call text-back, leasing follow-up, maintenance intake, and CRM logging.",
         isPartOf: { "@id": `${siteUrl}/#website` },
         about: { "@id": `${siteUrl}/#service` },
       },
@@ -175,8 +178,9 @@ export function articleSchema(post: BlogPost) {
         "@id": `${url}#article`,
         headline: post.data.title,
         description: post.data.meta,
-        datePublished: today,
-        dateModified: today,
+        datePublished: post.data.publishedAt,
+        dateModified: postUpdatedAt(post),
+        image: socialImageFor(post),
         author: { "@id": `${siteUrl}/#organization` },
         publisher: { "@id": `${siteUrl}/#organization` },
         mainEntityOfPage: { "@id": `${url}#webpage` },

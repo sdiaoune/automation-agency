@@ -1,0 +1,152 @@
+{
+  "posts": {
+    "ai-leasing-follow-up-property-management": {
+      "imagePath": "blog/social-assets/ai-leasing-follow-up-property-management.png",
+      "method": "localhost-text-post",
+      "postedAt": "2026-05-29T23:16:51.394Z",
+      "replyId": null,
+      "tweetId": "2060500647959462319",
+      "url": "https://www.emc2ops.com/blog/ai-leasing-follow-up-property-management/"
+    },
+    "property-management-lead-deduplication-routing": {
+      "method": "oauth2-link-post",
+      "postedAt": "2026-05-30T21:53:09.353Z",
+      "replyId": null,
+      "tweetId": "2060841972500140341",
+      "url": "https://www.emc2ops.com/blog/property-management-lead-deduplication-routing/"
+    },
+    "property-management-lease-renewal-automation": {
+      "imagePath": "blog/social-assets/property-management-lease-renewal-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-lease-renewal-automation/",
+      "method": "oauth2-link-post",
+      "postedAt": "2026-05-31T01:44:40.648Z",
+      "replyId": null,
+      "tweetId": "2060900236185199088",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a1b928987e69d139927e9c1",
+      "linkedInPostedAt": "2026-05-31T01:44:51.536Z"
+    },
+    "property-management-repair-approval-automation": {
+      "imagePath": "blog/social-assets/property-management-repair-approval-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-repair-approval-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-05-31T01:44:59Z",
+        "status": "unsupported",
+        "reason": "oauth2 media upload forbidden: Forbidden"
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-05-31T19:35:54.000Z",
+      "replyId": null,
+      "tweetId": "2061169817843835130",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a1c8d9a97f5fea3f19ca8fc",
+      "linkedInPostedAt": "2026-05-31T19:36:04.728Z"
+    },
+    "property-management-no-show-recovery-automation": {
+      "imagePath": "blog/social-assets/property-management-no-show-recovery-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-no-show-recovery-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-05-31T01:44:59Z",
+        "status": "unsupported",
+        "reason": "oauth2 media upload forbidden: Forbidden"
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-01T19:36:16.809Z",
+      "replyId": null,
+      "tweetId": "2061532301498916956",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a1ddf31160a920c55a249ea",
+      "linkedInPostedAt": "2026-06-01T19:36:27.537Z"
+    },
+    "property-management-automation-tasks": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/property-management-automation-tasks/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-01T19:36:44.024Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-02T00:35:22.038Z",
+      "replyId": null,
+      "tweetId": "2061607568967925911",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a1e254ab7764efcae03fdca",
+      "linkedInPostedAt": "2026-06-02T00:35:32.937Z"
+    },
+    "property-management-move-out-automation": {
+      "imagePath": "blog/social-assets/property-management-move-out-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-move-out-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-02T19:36:53.006Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-02T19:36:53.593Z",
+      "replyId": "2061894842972578060",
+      "tweetId": "2061894841953382429",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a1f30d6d4f7adb97ebe9a91",
+      "linkedInPostedAt": "2026-06-02T19:37:04.652Z"
+    },
+    "ai-leasing-assistant": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/ai-leasing-assistant/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-02T19:36:53.006Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-03T14:46:37.703Z",
+      "replyId": null,
+      "tweetId": "2062184183858946142",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a203e4e7f32c21279fdae9c",
+      "linkedInPostedAt": "2026-06-03T14:46:48.569Z"
+    },
+    "property-management-maintenance-status-update-automation": {
+      "imagePath": "blog/social-assets/property-management-maintenance-status-update-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-maintenance-status-update-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-03T19:37:01.094Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-03T19:37:01.517Z",
+      "replyId": "2062257264568787072",
+      "tweetId": "2062257263700504956"
+    },
+    "property-management-tour-scheduling-automation": {
+      "imagePath": "public/blog/social-assets/property-management-tour-scheduling-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-tour-scheduling-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-04T19:36:00.753Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-04T19:36:01.150Z",
+      "replyId": "2062619399392006318",
+      "tweetId": "2062619398561464503"
+    },
+    "property-management-application-follow-up-automation": {
+      "imagePath": "blog/social-assets/property-management-application-follow-up-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-application-follow-up-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-05T19:41:04.546Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-05T19:41:05.222Z",
+      "replyId": "2062983062313439664",
+      "tweetId": "2062983061239722114",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a2326517c5c0c143883fd9d",
+      "linkedInPostedAt": "2026-06-05T19:41:16.041Z"
+    }
+  }
+}

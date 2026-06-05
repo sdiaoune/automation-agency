@@ -40,6 +40,7 @@ related:
   - "property-management-leasing-pipeline-setup"
   - "property-management-no-show-recovery-automation"
   - "property-management-tour-scheduling-automation"
+  - "property-management-application-follow-up-automation"
 socialImage: "/blog/social-assets/ai-leasing-follow-up-property-management.png"
 ---
 

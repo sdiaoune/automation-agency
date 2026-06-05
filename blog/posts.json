@@ -1,5 +1,12 @@
 [
   {
+    "slug": "property-management-automation-tasks",
+    "pillar": "Property Management Automation",
+    "keyword": "property management automation",
+    "title": "Property Management Automation: 15 Tasks to Automate in 2026",
+    "meta": "See the 15 property management automation tasks worth prioritizing in 2026 across leasing, maintenance, CRM, owner updates, renewals, and compliance."
+  },
+  {
     "slug": "missed-leasing-calls-property-management",
     "pillar": "Missed Call Recovery",
     "keyword": "missed leasing calls property management",
@@ -10,8 +17,8 @@
     "slug": "missed-call-text-back-property-management",
     "pillar": "Missed Call Recovery",
     "keyword": "missed call text back property management",
-    "title": "Missed Call Text-Back for Property Management: Why Voicemail Is No Longer Enough",
-    "meta": "See why missed-call text-back is becoming a minimum leasing response standard for property managers handling renter inquiries."
+    "title": "Missed Call Text-Back for Property Management: Why Voicemail Is Not Enough",
+    "meta": "Learn how missed-call text-back helps property managers recover leasing calls, qualify renters, route urgent replies, and update the CRM automatically."
   },
   {
     "slug": "after-hours-leasing-automation",
@@ -53,7 +60,7 @@
     "pillar": "Systems and Integrations",
     "keyword": "property management Zapier templates",
     "title": "Zapier for Property Managers: Five Workflow Templates That Remove Manual Tasks",
-    "meta": "Five practical Zapier-style workflow templates for property managers covering missed calls, leasing follow-up, maintenance intake, owner updates, and CRM logging."
+    "meta": "Five Zapier-style workflow templates for property managers covering missed calls, leasing follow-up, maintenance intake, owner updates, and CRM logging."
   },
   {
     "slug": "reduce-showing-no-shows-property-management",
@@ -145,5 +152,68 @@
     "keyword": "AI leasing follow up property management",
     "title": "AI Leasing Follow-Up for Property Management: Stop Letting Warm Leads Go Cold",
     "meta": "How property managers can use AI leasing follow-up to reactivate warm prospects, protect response speed, and keep CRM stages current without manual chasing."
+  },
+  {
+    "slug": "property-management-lead-deduplication-routing",
+    "pillar": "Systems and Integrations",
+    "keyword": "property management lead deduplication routing",
+    "title": "Property Management Lead Deduplication and Routing: Stop Working the Same Prospect Twice",
+    "meta": "How property managers can use lead deduplication and routing automation to merge duplicate inquiries, assign ownership, and protect leasing follow-up."
+  },
+  {
+    "slug": "property-management-lease-renewal-automation",
+    "pillar": "Resident Retention",
+    "keyword": "property management lease renewal automation",
+    "title": "Property Management Lease Renewal Automation: Keep More Residents Without More Admin",
+    "meta": "How property managers can automate lease renewal reminders, resident follow-up, approval routing, and owner visibility without creating another spreadsheet."
+  },
+  {
+    "slug": "property-management-repair-approval-automation",
+    "pillar": "Maintenance Operations",
+    "keyword": "property management repair approval automation",
+    "title": "Property Management Repair Approval Automation: Stop Stalling Work Orders in Inbox Threads",
+    "meta": "How property managers can automate repair approval routing, estimate collection, owner sign-off, and vendor handoff without losing cost control."
+  },
+  {
+    "slug": "property-management-no-show-recovery-automation",
+    "pillar": "Systems and Integrations",
+    "keyword": "property management no show recovery automation",
+    "title": "Property Management No-Show Recovery Automation: Rebook Missed Tours",
+    "meta": "Learn how property managers can automate no-show recovery, rescheduling, reminders, and CRM updates so missed tours become second chances."
+  },
+  {
+    "slug": "property-management-move-out-automation",
+    "pillar": "Resident Retention",
+    "keyword": "property management move out automation",
+    "title": "Property Management Move-Out Automation: Coordinate Notice, Turns, and Re-Leasing",
+    "meta": "Learn how move-out automation helps property managers coordinate notice intake, turn work, owner updates, vendor tasks, and re-leasing handoffs."
+  },
+  {
+    "slug": "ai-leasing-assistant",
+    "pillar": "Leasing Automation",
+    "keyword": "AI leasing assistant",
+    "title": "What Is an AI Leasing Assistant? How It Works for Property Managers in 2026",
+    "meta": "Learn what an AI leasing assistant does, how it answers renter inquiries, books tours, follows up, escalates exceptions, and updates the CRM."
+  },
+  {
+    "slug": "property-management-maintenance-status-update-automation",
+    "pillar": "Maintenance Operations",
+    "keyword": "property management maintenance status update automation",
+    "title": "Property Management Maintenance Status Update Automation: Stop the 'Any Update?' Call Loop",
+    "meta": "Automate resident maintenance status updates so tenants know what is happening and teams field fewer check-in calls."
+  },
+  {
+    "slug": "property-management-tour-scheduling-automation",
+    "pillar": "Leasing Automation",
+    "keyword": "property management tour scheduling automation",
+    "title": "Property Management Tour Scheduling Automation: Stop the Back-and-Forth Before Every Showing",
+    "meta": "How property managers can automate tour scheduling, confirmations, reminders, and CRM updates without creating calendar chaos."
+  },
+  {
+    "slug": "property-management-application-follow-up-automation",
+    "pillar": "Leasing Automation",
+    "keyword": "property management application follow up automation",
+    "title": "Property Management Application Follow-Up Automation: Stop Losing Qualified Renters Mid-Application",
+    "meta": "How property managers can automate applicant follow-up, missing-document reminders, status updates, and CRM handoff without turning screening into a manual chase."
   }
 ]

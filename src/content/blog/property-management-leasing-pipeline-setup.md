@@ -40,6 +40,7 @@ related:
   - "ai-leasing-follow-up-property-management"
   - "property-management-no-show-recovery-automation"
   - "property-management-tour-scheduling-automation"
+  - "property-management-application-follow-up-automation"
 ---
 
 A leasing pipeline should show what happened, what the renter wants, and what the team needs to do next. Many pipelines only show fragments.
