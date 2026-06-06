@@ -147,6 +147,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a2326517c5c0c143883fd9d",
       "linkedInPostedAt": "2026-06-05T19:41:16.041Z"
+    },
+    "property-management-move-in-automation": {
+      "imagePath": "blog/social-assets/property-management-move-in-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-move-in-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-06T15:37:24.660Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-06T15:37:25.331Z",
+      "replyId": "2063284129735594207",
+      "tweetId": "2063284128506614003",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a243eb6a1f61c27dba14866",
+      "linkedInPostedAt": "2026-06-06T15:37:36.374Z"
     }
   }
 }

@@ -36,6 +36,7 @@ faqs:
   - question: "When should a property manager trigger application follow-up?"
     answer: "The best triggers are specific workflow states such as started but not submitted, submitted with missing documents, screening returned, conditional approval, or inactivity after a defined number of hours or days."
 related:
+  - "property-management-move-in-automation"
   - "ai-leasing-follow-up-property-management"
   - "property-management-tour-scheduling-automation"
   - "property-management-leasing-pipeline-setup"
