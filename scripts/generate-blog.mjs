@@ -3,136 +3,144 @@ import path from "node:path";
 import { contentPostsPath, readBlogPosts, validateBlogPosts } from "./blog-content.mjs";
 
 const siteUrl = "https://www.emc2ops.com";
-const today = "2026-06-06";
+const today = "2026-06-07";
 const defaultSocialImage = `${siteUrl}/blog/social-assets/stop-losing-leads-after-hours.png`;
 const socialImageDimensions = { width: 1672, height: 941 };
 const cities =
   "Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, and Miami";
 
 const newPost = {
-  slug: "property-management-move-in-automation",
-  order: 31,
-  pillar: "Resident Retention",
-  keyword: "property management move in automation",
+  slug: "property-management-guest-card-automation",
+  order: 33,
+  pillar: "Leasing Automation",
+  keyword: "property management guest card automation",
   title:
-    "Property Management Move-In Automation: Stop Running Every New Resident Through the Same Manual Checklist",
-  seoTitle: "Property Management Move-In Automation",
+    "Property Management Guest Card Automation: Stop Re-Entering Every Prospect by Hand",
+  seoTitle: "Property Management Guest Card Automation",
   meta:
-    "Learn how property managers can automate move-in coordination, reminders, utility handoff, welcome steps, and resident onboarding without relying on spreadsheets.",
+    "Learn how property managers can automate guest card capture, source attribution, renter qualification, and CRM updates without manual re-entry.",
   publishedAt: today,
   updatedAt: today,
-  h1: "Stop turning every move-in into a manual coordination scramble",
+  h1: "Stop rebuilding the same guest card every time a renter reaches out",
   problem:
-    "Most move-in friction is not caused by one big failure. It comes from scattered reminders, missing handoffs, and unclear resident instructions across leasing, operations, and maintenance right before keys change hands.",
+    "Guest cards break when renter details arrive through calls, ILS forms, website tours, and text threads but staff still have to retype the same information into the CRM before follow-up can start.",
   stakes: [
-    "Teams managing 50+ units waste hours repeating the same pre-move-in reminders, utility checks, inspection coordination, and welcome instructions.",
-    "A missed lease-signing task, key handoff detail, or utility confirmation can create a bad resident experience before occupancy even starts.",
-    "If move-in steps live across inboxes, spreadsheets, and staff memory, operators lose confidence in whether each unit is actually ready.",
+    "Teams managing 50+ units lose leasing time when agents copy prospect details from voicemail, ILS emails, and web forms into a guest card one field at a time.",
+    "Manual guest card entry delays first response, creates duplicate records, and leaves source attribution too messy to trust.",
+    "If guest cards are incomplete or late, downstream automation for tour scheduling, application follow-up, and reporting starts with bad data.",
   ],
   system: [
-    "Trigger the move-in workflow as soon as the applicant is approved and the lease is executed, not when staff remember to start a checklist.",
-    "Send staged reminders for insurance, utilities, payment setup, key pickup, portal access, and first-day instructions based on the actual move-in date.",
-    "Create internal tasks automatically for inspection sign-off, lockbox or key preparation, cleaning confirmation, and resident packet delivery.",
-    "Route exceptions such as delayed unit readiness, missing funds, accommodation requests, or lease discrepancies to staff instead of continuing automation blindly.",
-    "Sync resident replies, completed tasks, and move-in status back to the CRM or property management system so every team sees the same handoff state.",
+    "Capture inbound renter details from calls, ILS leads, website forms, SMS, and chat before the leasing agent touches the CRM.",
+    "Create or update one guest card automatically using name, phone, email, property interest, unit type, move date, source, and conversation summary.",
+    "Normalize source names and route the record to the right property, team member, or pipeline stage immediately.",
+    "Trigger the next step automatically such as missed-call text-back, qualification questions, tour scheduling, or nurture instead of waiting on manual data entry.",
+    "Send uncertain matches, missing fields, and special-case inquiries to staff review while still logging the interaction back to the CRM.",
   ],
   metrics: [
-    "manual move-in tasks removed",
-    "on-time move-ins completed",
-    "resident setup steps completed before move-in day",
-    "last-minute handoff issues prevented",
-    "staff follow-up touches per move-in",
+    "guest cards auto-created",
+    "manual data-entry minutes removed",
+    "speed to first leasing response",
+    "duplicate renter records prevented",
+    "lead source attribution accuracy",
   ],
   cta:
-    "If move-ins still depend on inboxes and personal checklists, book a 15-minute workflow audit.",
+    "If leasing still depends on agents rebuilding guest cards by hand, book a 15-minute workflow audit.",
   faqs: [
     {
-      question: "What is move-in automation in property management?",
+      question: "What is guest card automation in property management?",
       answer:
-        "It is a workflow that coordinates resident reminders, internal tasks, status updates, and system logging from lease signing through key handoff instead of relying on staff to manually manage every step.",
+        "It is a workflow that captures renter details from inbound channels, creates or updates the guest card automatically, and triggers the next leasing action without manual re-entry.",
     },
     {
-      question: "What parts of the move-in process should stay human-led?",
+      question: "What should stay human-led instead of being fully automated?",
       answer:
-        "Exceptions involving unit readiness, funds, accommodations, disputes, or resident-specific judgment should stay with trained staff even if reminders and task routing are automated.",
+        "Unclear lead matches, nuanced qualification conversations, fair-housing-sensitive situations, and exceptions that require judgment should go to staff even if intake and routing are automated.",
     },
     {
-      question: "When should property managers trigger move-in automation?",
+      question: "When should a guest card be created automatically?",
       answer:
-        "The cleanest trigger is the lease-executed or approved-to-move-in state, with follow-up milestones tied to the scheduled move-in date and verified readiness checkpoints.",
+        "The best trigger is the first verified inbound interaction such as a call, form, ILS inquiry, or text, so follow-up and source tracking start immediately.",
     },
   ],
   related: [
-    "property-management-application-follow-up-automation",
-    "property-management-move-out-automation",
-    "property-management-lease-renewal-automation",
-    "owner-updates-property-management-automation",
+    "apartment-lead-tracking",
+    "property-management-leasing-pipeline-setup",
+    "property-management-lead-deduplication-routing",
+    "automate-property-management-lead-follow-up",
   ],
   socialImage:
-    "/blog/social-assets/property-management-move-in-automation.png",
-  body: `Property managers usually feel move-in friction as "a lot of little things." One resident still needs portal access. Another never got utility instructions. A third arrives while the unit turn is still being confirmed. None of that looks dramatic on its own, but together it creates avoidable chaos.
+    "/blog/social-assets/property-management-guest-card-automation.png",
+  body: `Guest cards are supposed to be the start of the leasing workflow. In many property management teams, they are still a clerical task.
 
-For operators managing 50 or more units, move-ins are where leasing promises, maintenance readiness, resident communication, and accounting tasks all collide. If the process still depends on individual staff remembering every next step, the team ends up doing the same coordination work over and over.
+One prospect calls after hours. Another submits an Apartments.com inquiry. A third books a tour from the website and sends a text the next morning. If the team has to rebuild that renter record by hand before follow-up starts, response speed slows down and the CRM starts from bad data.
 
-## Why move-ins keep slipping into fire drills
+For operators managing 50 or more units, guest card automation matters because it controls the first handoff. If that intake step is late, incomplete, or duplicated, every workflow after it gets noisier.
 
-Most move-in problems happen in predictable moments:
+## Why guest cards create admin drag
 
-- The resident does not know which tasks must be completed before keys are released.
-- The team is unsure whether utilities, insurance, lease signatures, or first payments are fully in place.
-- Unit readiness depends on inspection, cleaning, or maintenance confirmations that never get surfaced clearly.
-- Key pickup details, portal access, or welcome instructions are sent late or not at all.
+The friction usually shows up in familiar places:
 
-Those are workflow problems, not mystery problems. The useful fix is not a bigger spreadsheet. It is a system that knows the move-in date, the readiness checklist, and the next required action for both staff and resident.
+- Leasing agents copy contact details from voicemail, ILS emails, and form notifications into the CRM.
+- Source names come in inconsistently, so reporting cannot show which channels produce tours or leases.
+- One renter creates multiple guest cards because the phone system, website, and ILS are not matched before follow-up starts.
+- Tour scheduling, qualification, and nurture sequences wait on manual entry instead of firing from the first interaction.
 
-## What good automation should do
+This is why teams say they need better follow-up discipline when the real issue is that the workflow starts too late.
 
-The strongest move-in workflow is event-driven. It should react to signed leases, scheduled move-in dates, completed tasks, and readiness flags, not rely on staff to remember who needs what today.
+## What guest card automation should actually do
 
-That usually means:
+The practical goal is simple: every real renter inquiry should create one usable record and one next action.
 
-1. Detect when a resident is approved and ready for onboarding.
-2. Sequence the required reminders and task creation against the actual move-in date.
-3. Surface the one missing item that could block a smooth key handoff.
-4. Escalate when the case involves readiness risk, funds, policy, or judgment.
-5. Log every step in the CRM or property management system.
+That means the workflow should:
 
-When the workflow is narrow, the messages can stay useful. "Your renters insurance must be uploaded before key pickup on Friday at 3 PM" is operational. "Just checking in before move-in" usually is not.
+1. Watch every intake source that can produce a leasing inquiry.
+2. Capture the renter details already available from the interaction.
+3. Match against existing records before creating a duplicate guest card.
+4. Assign the correct property, pipeline stage, and owner.
+5. Trigger the next best action immediately.
+6. Escalate exceptions when the system is not confident.
 
-## Where teams create avoidable friction
+The guest card should not be a blank form staff complete later. It should be the structured output of the interaction that just happened.
 
-The first failure is vague resident instructions. New residents need to know exactly what is due before move-in and what happens on day one. If the message is generic, it creates another reply loop.
+## The fields worth automating first
 
-The second failure is team disconnect. Leasing may think the file is done while operations still needs inspection confirmation and accounting still needs payment setup. Nobody trusts the state because nobody sees the same checklist.
+Most teams do not need a more complicated guest card. They need the existing card to populate reliably with the fields that matter downstream.
 
-The third failure is automating through exceptions. Move-in reminders can be automated. Unit-not-ready issues, accommodation needs, disputed charges, or special access arrangements still need a clear human owner.
+Start with:
 
-## The operational gain
+- name
+- phone
+- email
+- property or community of interest
+- unit type or bedroom count
+- target move date
+- lead source
+- last touch summary
+- next action or status
 
-For property managers, the value is straightforward:
+Once those fields arrive cleanly, you can automate tour scheduling, application reminders, deduplication, and reporting with less manual cleanup.
 
-- Staff stop rebuilding the same checklist for every incoming resident.
-- Residents get clearer next steps before they arrive frustrated at the office.
-- Operators can see whether delays come from resident setup, unit readiness, or internal handoff failures.
-- Teams spend less move-in day time reacting and more time confirming exceptions early.
+## Where human review still belongs
 
-This matters because move-ins shape the resident relationship immediately. A sloppy first-day experience creates complaints, extra call volume, and preventable stress right when the team should be stabilizing occupancy.
+Not every inquiry should flow straight through.
 
-## How EMC2Ops would roll it out
+If two leads look like a possible duplicate but the match is weak, staff should review it. If the prospect asks a fair-housing-sensitive question, requests an accommodation, or provides conflicting household details, a human should take over. If the system cannot determine the property or unit context, it should create an exception task instead of guessing.
 
-We would start by mapping the real handoff states that already exist in your process: approved, lease signed, payment complete, utilities confirmed, unit ready, key handoff scheduled, and moved in.
+The point is not to remove leasing judgment. The point is to remove repetitive transcription work before that judgment is needed.
 
-Then we would define:
+## How EMC2Ops would implement it
 
-1. Which states can safely trigger resident and staff automation.
-2. What exact message belongs to each milestone.
-3. Which readiness checks must be confirmed before the next message goes out.
-4. Which exceptions need an immediate staff queue.
-5. Which systems must stay in sync so move-in status is credible.
+We would map every place a renter can first reach your team: calls, missed calls, ILS leads, website forms, chat, text, and tour requests. Then we would define the intake logic that turns those touches into one clean guest card flow.
 
-The goal is not to automate resident judgment calls away. The goal is to remove avoidable coordination lag before a resident arrives.
+From there we would set:
 
-If your move-ins still run on memory, inboxes, and side conversations, the missing workflow is usually not another checklist template. It is an automation layer that keeps leasing, operations, and resident communication aligned.`,
+1. The confidence rules for auto-creating versus updating a guest card.
+2. The routing rules for property, portfolio, and team ownership.
+3. The next-step automation for text-back, qualification, tour booking, or nurture.
+4. The exception queue for low-confidence matches or policy-sensitive cases.
+5. The CRM sync rules so staff trust the record they are looking at.
+
+If your leasing agents are still spending their first minutes retyping renter details, the operational problem is not a lack of effort. It is that your guest card is being created too manually to support modern leasing speed.`,
 };
 
 function escapeHtml(value) {

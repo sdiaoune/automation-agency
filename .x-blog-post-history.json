@@ -163,6 +163,38 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a243eb6a1f61c27dba14866",
       "linkedInPostedAt": "2026-06-06T15:37:36.374Z"
+    },
+    "apartment-lead-tracking": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/apartment-lead-tracking/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-06T15:37:24.660Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-06T16:10:45.056Z",
+      "replyId": null,
+      "tweetId": "2063292517458550861",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a244685ba6da2e70f708837",
+      "linkedInPostedAt": "2026-06-06T16:10:55.916Z"
+    },
+    "property-management-guest-card-automation": {
+      "imagePath": "blog/social-assets/property-management-guest-card-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-guest-card-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-07T15:37:07.440Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-07T15:37:08.350Z",
+      "replyId": "2063646446017040723",
+      "tweetId": "2063646443978527101",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a2590255205cc790d33c65d",
+      "linkedInPostedAt": "2026-06-07T15:37:19.411Z"
     }
   }
 }

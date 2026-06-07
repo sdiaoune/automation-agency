@@ -214,13 +214,27 @@
     "pillar": "Leasing Automation",
     "keyword": "property management application follow up automation",
     "title": "Property Management Application Follow-Up Automation: Stop Losing Qualified Renters Mid-Application",
-    "meta": "How property managers can automate applicant follow-up, missing-document reminders, status updates, and CRM handoff without turning screening into a manual chase."
+    "meta": "How property managers can automate applicant follow-up, missing-document reminders, status updates, and CRM handoff without a manual chase."
   },
   {
     "slug": "property-management-move-in-automation",
     "pillar": "Resident Retention",
     "keyword": "property management move in automation",
     "title": "Property Management Move-In Automation: Stop Running Every New Resident Through the Same Manual Checklist",
-    "meta": "Learn how property managers can automate move-in coordination, reminders, utility handoff, welcome steps, and resident onboarding without relying on spreadsheets."
+    "meta": "Learn how property managers can automate move-in coordination, reminders, utility handoff, welcome steps, and resident onboarding without spreadsheets."
+  },
+  {
+    "slug": "apartment-lead-tracking",
+    "pillar": "Leasing Automation",
+    "keyword": "apartment lead tracking",
+    "title": "Apartment Lead Tracking: How to Stop Losing Renters Between First Inquiry and Tour",
+    "meta": "A practical apartment lead tracking workflow for faster response, cleaner source attribution, fewer duplicate leads, and better tour conversion."
+  },
+  {
+    "slug": "property-management-guest-card-automation",
+    "pillar": "Leasing Automation",
+    "keyword": "property management guest card automation",
+    "title": "Property Management Guest Card Automation: Stop Re-Entering Every Prospect by Hand",
+    "meta": "Learn how property managers can automate guest card capture, source attribution, renter qualification, and CRM updates without manual re-entry."
   }
 ]
