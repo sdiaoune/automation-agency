@@ -38,6 +38,7 @@ related:
   - "property-management-crm-workflow-automation"
   - "property-management-lead-deduplication-routing"
   - "property-management-guest-card-automation"
+  - "property-management-lead-qualification-automation"
   - "ai-leasing-follow-up-property-management"
   - "property-management-no-show-recovery-automation"
   - "property-management-tour-scheduling-automation"

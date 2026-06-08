@@ -39,6 +39,7 @@ related:
   - "apartment-lead-tracking"
   - "property-management-leasing-pipeline-setup"
   - "property-management-lead-deduplication-routing"
+  - "property-management-lead-qualification-automation"
   - "automate-property-management-lead-follow-up"
 socialImage: "/blog/social-assets/property-management-guest-card-automation.png"
 ---

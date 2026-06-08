@@ -38,6 +38,7 @@ related:
   - "automate-property-management-lead-follow-up"
   - "property-management-lead-deduplication-routing"
   - "property-management-leasing-pipeline-setup"
+  - "property-management-lead-qualification-automation"
   - "property-management-no-show-recovery-automation"
   - "property-management-tour-scheduling-automation"
   - "property-management-application-follow-up-automation"

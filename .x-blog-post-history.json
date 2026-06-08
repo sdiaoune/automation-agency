@@ -195,6 +195,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a2590255205cc790d33c65d",
       "linkedInPostedAt": "2026-06-07T15:37:19.411Z"
+    },
+    "property-management-lead-qualification-automation": {
+      "imagePath": "blog/social-assets/property-management-lead-qualification-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-lead-qualification-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-08T15:37:54.794Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-08T15:37:55.315Z",
+      "replyId": "2064009031706939729",
+      "tweetId": "2064009030708662365",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a26e1d38af219a4127278ce",
+      "linkedInPostedAt": "2026-06-08T15:38:06.105Z"
     }
   }
 }
