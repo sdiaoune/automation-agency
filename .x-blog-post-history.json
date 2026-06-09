@@ -211,6 +211,118 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a26e1d38af219a4127278ce",
       "linkedInPostedAt": "2026-06-08T15:38:06.105Z"
+    },
+    "siri-ai-property-management-tenant-expectations": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/siri-ai-property-management-tenant-expectations/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-08T15:37:54.794Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-09T01:00:12.170Z",
+      "replyId": null,
+      "tweetId": "2064150534357926243",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a27659dcfe7e0cbfcdb3222",
+      "linkedInPostedAt": "2026-06-09T01:00:23.279Z"
+    },
+    "ai-front-desk-loop-not-chatbot": {
+      "imagePath": "public/blog/social-assets/ai-front-desk-loop-not-chatbot.png",
+      "url": "https://www.emc2ops.com/blog/ai-front-desk-loop-not-chatbot/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-09T02:46:42.204Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-09T02:46:42.811Z",
+      "replyId": "2064177338149941639",
+      "tweetId": "2064177336983880135",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a277c9a69741d6deddf73bf",
+      "linkedInPostedAt": "2026-06-09T02:38:28.715Z"
+    },
+    "claude-mythos-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/claude-mythos-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-09T02:46:42.204Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-09T12:38:10.983Z",
+      "replyId": null,
+      "tweetId": "2064326186574983626",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a2809335006da808d40254a",
+      "linkedInPostedAt": "2026-06-09T12:38:21.953Z"
+    },
+    "ai-support-breach-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/ai-support-breach-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-09T02:46:42.204Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-09T15:05:45.319Z",
+      "replyId": null,
+      "tweetId": "2064363323995398596",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a282bca9c6a054625b199e2",
+      "linkedInPostedAt": "2026-06-09T15:05:56.374Z"
+    },
+    "claude-fable-5-property-management-use-cases": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/claude-fable-5-property-management-use-cases/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-09T02:46:42.204Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-09T19:16:08.591Z",
+      "replyId": null,
+      "tweetId": "2064426335993212959",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a286679e82a4e2733ae49a7",
+      "linkedInPostedAt": "2026-06-09T19:16:19.460Z"
+    },
+    "microsoft-agent-control-spec-property-management": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/microsoft-agent-control-spec-property-management/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-09T02:46:42.204Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-09T22:06:06.239Z",
+      "replyId": null,
+      "tweetId": "2064469108209434875",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a288e4e891a03093da2cc40",
+      "linkedInPostedAt": "2026-06-09T22:06:17.132Z"
+    },
+    "property-management-make-ready-automation": {
+      "imagePath": "blog/social-assets/property-management-make-ready-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-make-ready-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-09T22:07:24.989Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-09T22:07:25.623Z",
+      "replyId": "2064469441509761143",
+      "tweetId": "2064469440125628647",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a288e9ec9aee0637955b2dc",
+      "linkedInPostedAt": "2026-06-09T22:07:36.694Z"
     }
   }
 }

@@ -3,142 +3,142 @@ import path from "node:path";
 import { contentPostsPath, readBlogPosts, validateBlogPosts } from "./blog-content.mjs";
 
 const siteUrl = "https://www.emc2ops.com";
-const today = "2026-06-08";
+const today = "2026-06-09";
 const defaultSocialImage = `${siteUrl}/blog/social-assets/stop-losing-leads-after-hours.png`;
 const socialImageDimensions = { width: 1672, height: 941 };
 const cities =
   "Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, and Miami";
 
 const newPost = {
-  slug: "property-management-lead-qualification-automation",
-  order: 34,
-  pillar: "Leasing Automation",
-  keyword: "property management lead qualification automation",
+  slug: "property-management-make-ready-automation",
+  order: 35,
+  pillar: "Maintenance Operations",
+  keyword: "property management make ready automation",
   title:
-    "Property Management Lead Qualification Automation: Stop Chasing Prospects Who Never Fit",
-  seoTitle: "Property Management Lead Qualification Automation",
+    "Property Management Make-Ready Automation: Stop Chasing Unit Turns Across Texts and Whiteboards",
+  seoTitle: "Property Management Make-Ready Automation",
   meta:
-    "Learn how property managers can automate leasing lead qualification, capture the right renter details, and route high-intent prospects faster without manual back-and-forth.",
+    "Learn how property managers can automate make-ready coordination, turn status, vendor handoff, and leasing readiness without manual chasing.",
   publishedAt: today,
   updatedAt: today,
-  h1: "Stop making leasing agents ask the same qualification questions all day",
+  h1: "Stop turning every make-ready into a manual status hunt",
   problem:
-    "Leasing lead qualification breaks when the first conversation depends on agents manually asking the same screening questions across calls, texts, forms, and ILS leads before they know whether a prospect is actually a fit.",
+    "Make-ready coordination breaks when turn status lives across texts, whiteboards, vendor calls, inspection notes, and staff memory instead of one workflow that knows what is done, what is blocked, and when the unit can lease again.",
   stakes: [
-    "Teams managing 50+ units burn leasing hours when agents repeat the same budget, move-date, pet, and unit-preference questions before a tour can be offered.",
-    "Prospects with real intent cool off when qualification is delayed, while low-fit leads still consume calendar slots, follow-up time, and CRM attention.",
-    "If qualification details live in call notes, inboxes, and text threads instead of structured fields, tour scheduling, application follow-up, and reporting start with guesswork.",
+    "Teams managing 50+ units lose days of vacancy when no one can quickly confirm cleaning, maintenance, inspection, key readiness, and remarketing status for each turn.",
+    "Leasing staff hesitate to market or schedule tours when unit readiness is unclear, while operations keeps answering the same 'Is this one ready yet?' questions.",
+    "If make-ready steps stay buried in vendor texts and side conversations, owners, coordinators, and leasing teams work from different versions of the turn timeline.",
   ],
   system: [
-    "Trigger a short qualification workflow from missed calls, website forms, ILS leads, chat, and inbound SMS before the lead goes stale.",
-    "Ask only the highest-value screening questions such as property interest, move date, bedroom count, budget range, pets, and preferred next step.",
-    "Write every answer back to structured CRM or property-management-system fields so staff can trust what is already known.",
-    "Route qualified prospects directly to tour scheduling or agent follow-up while suppressing duplicate outreach and flagging low-fit or incomplete leads.",
-    "Escalate fair-housing-sensitive situations, accommodation requests, policy exceptions, and uncertain matches to staff instead of forcing full automation.",
+    "Trigger the make-ready workflow automatically when notice is received, a move-out is completed, or a unit changes to a turn-needed status.",
+    "Create the right task sequence for inspection, cleaning, maintenance, vendor work, utilities, photos, and ready-to-market checks based on property rules.",
+    "Track each milestone in one shared status layer so operations, leasing, and ownership can see whether the unit is blocked, in progress, or ready.",
+    "Route delays, missing approvals, vendor no-shows, and failed inspections into exception queues instead of letting the turn stall silently.",
+    "Write make-ready status, due dates, and ready-to-lease signals back to the CRM or property management system automatically.",
   ],
   metrics: [
-    "qualified leads captured automatically",
-    "time from first inquiry to qualification complete",
-    "tours booked from qualified prospects",
-    "manual qualification touches removed",
-    "low-fit leads filtered before tour scheduling",
+    "days from move-out to ready-to-market",
+    "make-ready tasks completed on time",
+    "vendor follow-up touches removed",
+    "unit-ready status accuracy",
+    "vacancy days reduced by workflow visibility",
   ],
   cta:
-    "If leasing agents are still qualifying every renter by hand, book a 15-minute workflow audit.",
+    "If your unit turns still depend on chasing updates across inboxes and texts, book a 15-minute workflow audit.",
   faqs: [
     {
-      question: "What is leasing lead qualification automation in property management?",
+      question: "What is make-ready automation in property management?",
       answer:
-        "It is a workflow that captures the first renter details, asks the next qualification question automatically, and routes the prospect based on fit instead of relying on staff to screen every lead manually.",
+        "It is a workflow that starts when a unit needs to turn, creates the right tasks automatically, tracks readiness milestones, and updates everyone from the same operating status instead of relying on manual check-ins.",
     },
     {
-      question: "Which qualification steps should stay human-led?",
+      question: "Which make-ready steps should stay human-led?",
       answer:
-        "Fair-housing-sensitive conversations, accommodation requests, exception handling, nuanced affordability discussions, and any case where the workflow is not confident should go to trained staff.",
+        "Scope decisions, failed inspections, budget exceptions, vendor quality issues, owner-sensitive approvals, and any case where the unit status is uncertain should stay with trained staff.",
     },
     {
-      question: "When should qualification automation begin?",
+      question: "When should property managers trigger make-ready automation?",
       answer:
-        "The best trigger is the first verified inbound interaction such as a call, ILS inquiry, website form, chat, or text so the lead can be screened before response speed drops.",
+        "The cleanest trigger is the move-out or notice-to-vacate workflow, with the turn sequence adjusting again as inspections finish, vendors accept work, and the unit clears ready-to-market checks.",
     },
   ],
   related: [
-    "property-management-guest-card-automation",
-    "property-management-leasing-pipeline-setup",
-    "ai-leasing-follow-up-property-management",
-    "property-management-application-follow-up-automation",
-    "apartment-lead-tracking",
+    "property-management-move-out-automation",
+    "property-management-move-in-automation",
+    "property-management-repair-approval-automation",
+    "automate-vendor-dispatch-property-management",
+    "owner-updates-property-management-automation",
   ],
   socialImage:
-    "/blog/social-assets/property-management-lead-qualification-automation.png",
-  body: `Lead qualification is one of the first leasing tasks that becomes inconsistent as volume rises.
+    "/blog/social-assets/property-management-make-ready-automation.png",
+  body: `Make-ready work is where vacancy time quietly expands.
 
-One renter calls after hours. Another submits an ILS form with only partial details. A third texts after seeing a listing but never answers the phone. If every one of those conversations depends on a leasing agent asking the same five to seven questions manually, response speed drops and the calendar fills with weak-fit tours.
+One unit is waiting on paint. Another passed cleaning but still needs final maintenance sign-off. A third looks available in the leasing system even though no one has confirmed keys, photos, or utility readiness. If staff have to chase each update through texts, calls, and side notes, the turn timeline becomes harder to trust with every handoff.
 
-For operators managing 50 or more units, qualification automation matters because it decides who moves forward and how fast. If that handoff is messy, your team wastes time on the wrong prospects while good-fit renters wait too long for the next step.
+For operators managing 50 or more units, make-ready automation matters because it decides how quickly a unit gets back into circulation. If that workflow is unclear, vacancy days grow while leasing and operations keep interrupting each other for the same answers.
 
-## Why manual qualification creates drag
+## Why make-ready coordination creates drag
 
 The pattern is usually predictable:
 
-- Staff repeat budget, move date, pets, bedroom count, and property-interest questions across calls, texts, and follow-up emails.
-- Partial answers sit inside notes instead of structured CRM fields, so the next person asks the same questions again.
-- Low-fit leads still get tour slots because nobody screens them early enough.
-- High-intent prospects wait for a human callback even when the only missing detail is one qualification answer.
+- Turn tasks are created in multiple places, so nobody is sure which checklist is current.
+- Vendors share progress by text or phone, but the update never reaches leasing or ownership.
+- A unit gets treated as almost ready for days because no one can see the one blocking task clearly.
+- Coordinators spend more time asking for status than moving the next task forward.
 
-This is not a script problem. It is a workflow problem.
+This is not a staffing mystery. It is a workflow visibility problem.
 
-## What qualification automation should actually do
+## What make-ready automation should actually do
 
-The goal is not to interrogate renters with a long bot conversation. The goal is to collect only the details needed to decide the next step.
+The goal is not to automate every repair decision. The goal is to create one turn workflow that always shows the next required action and the current blocker.
 
 That means the workflow should:
 
-1. Trigger from the first verified inquiry source.
-2. Ask the smallest useful set of qualification questions.
-3. Save each answer into the system of record immediately.
-4. Route the prospect based on fit and urgency.
-5. Escalate edge cases to staff without guessing.
+1. Start as soon as the unit enters a turn-needed state.
+2. Create the right tasks for inspection, cleaning, repairs, vendor work, photos, and listing readiness.
+3. Keep every milestone in one shared status model.
+4. Surface delays and failed handoffs before they add another vacancy day.
+5. Escalate exceptions when scope, budget, or readiness is unclear.
 
-If the workflow captures the right fields early, everything downstream gets cleaner: guest cards, tour scheduling, follow-up, applications, and reporting.
+If the workflow captures the right milestones at the right time, everything downstream gets cleaner: vendor coordination, owner visibility, remarketing, tour scheduling, and occupancy forecasting.
 
-## The qualification fields worth automating first
+## The make-ready checkpoints worth automating first
 
-Most property management teams do not need a complex screening tree on day one. They need the first layer to become consistent.
+Most property management teams do not need a huge custom turn board on day one. They need the basic readiness signals to become trustworthy.
 
 Start with:
 
-- property or community of interest
-- desired move date
-- bedroom count or unit type
-- budget range
-- pets or other policy-relevant details
-- preferred contact method
-- requested next step
+- move-out complete or notice confirmed
+- inspection scheduled and completed
+- cleaning assigned and finished
+- maintenance scope assigned and cleared
+- vendor exceptions or parts delays
+- photos or marketing-ready confirmation
+- keys, access, and ready-to-show status
 
-These fields are enough to tell whether the lead is ready for a tour, needs a follow-up question, or should be routed to a different property or human owner.
+Those checkpoints are enough to tell whether the unit is blocked, almost ready, or truly ready to lease again.
 
 ## Where automation should stop
 
-Qualification automation should narrow the work, not replace leasing judgment.
+Make-ready automation should narrow the coordination work, not replace operations judgment.
 
-If the renter raises accommodation needs, affordability complexity, fair-housing-sensitive questions, or an exception to standard policy, the workflow should stop and create a human task. If the lead record is a weak match to an existing contact, staff should review before the system merges or suppresses anything.
+If the inspection reveals unexpected damage, the repair scope exceeds policy, a vendor disputes the work, or the owner needs to review an exception, the workflow should stop and create a clear human task. If the unit status is uncertain, the system should not guess that it is ready.
 
-The point is to remove repetitive screening work while making it easier for trained staff to step in at the right moment.
+The point is to remove repetitive status chasing while making it easier for trained staff to step in at the right moment.
 
 ## How EMC2Ops would implement it
 
-We would start by mapping your real inquiry channels: calls, missed calls, ILS leads, website forms, chat, text, and email. Then we would define the qualification questions that actually affect routing and tour readiness.
+We would start by mapping your real turn workflow: notice received, move-out complete, inspection, cleaning, maintenance, vendor completion, photos, and ready-to-market confirmation. Then we would define which milestones actually determine whether leasing can move.
 
 From there we would set:
 
-1. The trigger rules for each lead source.
-2. The exact order of qualification questions.
-3. The CRM fields that must update automatically.
-4. The routing rules for qualified, incomplete, low-fit, and exception cases.
-5. The handoff points into tours, applications, or human review.
+1. The trigger rules for starting and updating each make-ready sequence.
+2. The exact milestones that change unit status.
+3. The task and reminder rules for internal staff and vendors.
+4. The exception paths for failed inspections, budget issues, or missing approvals.
+5. The system write-backs that make ready-to-lease status visible to operations and leasing.
 
-If your leasing team is still spending prime response time re-asking the same intake questions, the qualification step is where automation should start.`,
+If your team still spends each turn chasing the answer to "what is this unit waiting on?", the make-ready workflow is where automation should start.`,
 };
 
 function escapeHtml(value) {

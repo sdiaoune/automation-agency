@@ -243,5 +243,54 @@
     "keyword": "property management lead qualification automation",
     "title": "Property Management Lead Qualification Automation: Stop Chasing Prospects Who Never Fit",
     "meta": "Learn how property managers can automate leasing lead qualification, capture the right renter details, and route high-intent prospects faster without manual back-and-forth."
+  },
+  {
+    "slug": "property-management-make-ready-automation",
+    "pillar": "Maintenance Operations",
+    "keyword": "property management make ready automation",
+    "title": "Property Management Make-Ready Automation: Stop Chasing Unit Turns Across Texts and Whiteboards",
+    "meta": "Learn how property managers can automate make-ready coordination, turn status, vendor handoff, and leasing readiness without manual chasing."
+  },
+  {
+    "slug": "siri-ai-property-management-tenant-expectations",
+    "pillar": "AI Front Desk",
+    "keyword": "Siri AI property management",
+    "title": "Siri AI Won't Run Your Property Management Office, But It Will Change Tenant Expectations",
+    "meta": "Apple's Siri AI announcement is a signal for property managers: tenants and prospects will expect faster, more natural, voice-first service."
+  },
+  {
+    "slug": "ai-front-desk-loop-not-chatbot",
+    "pillar": "AI Front Desk",
+    "keyword": "AI front desk property management",
+    "title": "The AI Front Desk Is a Loop, Not a Chatbot",
+    "meta": "Learn why an AI front desk for property managers should work as a response, routing, escalation, and CRM update loop instead of a simple chatbot."
+  },
+  {
+    "slug": "claude-mythos-property-management-workflows",
+    "pillar": "AI Front Desk",
+    "keyword": "Claude Mythos property management",
+    "title": "Claude Mythos Is Rumored to Be Close. Property Managers Should Watch the Workflow Shift",
+    "meta": "Claude Mythos is still not broadly available, but Mythos-class AI points to a future where property managers can automate longer, messier workflows."
+  },
+  {
+    "slug": "ai-support-breach-property-management-workflows",
+    "pillar": "AI Front Desk",
+    "keyword": "AI support workflow property management",
+    "title": "Meta's AI Support Breach Is a Property Management Workflow Warning",
+    "meta": "Meta's AI-assisted support incident is a reminder for property managers: automate intake and routing first, but keep approval gates on access, money, leases, and sensitive decisions."
+  },
+  {
+    "slug": "claude-fable-5-property-management-use-cases",
+    "pillar": "AI Front Desk",
+    "keyword": "Claude Fable 5 property management use cases",
+    "title": "Claude Fable 5 for Property Managers: 10 Practical Use Cases to Watch",
+    "meta": "Anthropic's Claude Fable 5 is built for long-running knowledge work. Here are 10 practical property management workflows it could help improve."
+  },
+  {
+    "slug": "microsoft-agent-control-spec-property-management",
+    "pillar": "AI Front Desk",
+    "keyword": "Microsoft Agent Control Specification property management",
+    "title": "Microsoft's Agent Control Spec Is a Better Property Management AI Checklist",
+    "meta": "Microsoft's new Agent Control Specification is a useful signal for property managers: AI front desk workflows need approval gates, audit trails, and clear stop conditions before they touch real operations."
   }
 ]
