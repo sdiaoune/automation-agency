@@ -35,6 +35,8 @@ faqs:
   - question: "Why is move-out automation valuable for operators managing 50+ units?"
     answer: "Because even a few avoidable vacancy days per month add up quickly when move-out tasks are delayed, scattered across tools, or assigned inconsistently."
 related:
+  - "property-management-make-ready-automation"
+  - "property-management-maintenance-status-update-automation"
   - "property-management-move-in-automation"
   - "property-management-lease-renewal-automation"
   - "owner-updates-property-management-automation"
