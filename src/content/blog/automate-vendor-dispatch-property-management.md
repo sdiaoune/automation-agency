@@ -4,7 +4,10 @@ order: 14
 pillar: "Maintenance Operations"
 keyword: "automate vendor dispatch property management"
 title: "Automate Vendor Dispatch for Property Management Without Losing Control"
+seoTitle: "Automate Vendor Dispatch for Property Managers"
 meta: "Learn how property managers can automate vendor dispatch based on unit context, trade, urgency, approvals, and CRM status."
+publishedAt: "2026-06-03"
+updatedAt: "2026-06-04"
 h1: "Eliminating the back-and-forth with vendor dispatch automation"
 problem: "Vendor dispatch slows down when request details, approval limits, access notes, and property context live in separate messages."
 stakes:
@@ -37,6 +40,7 @@ related:
   - "owner-updates-property-management-automation"
   - "property-management-repair-approval-automation"
   - "property-management-maintenance-status-update-automation"
+  - "property-management-vendor-no-show-automation"
 ---
 
 Vendor dispatch slows down when request details, approval limits, access notes, and property context live in separate messages.

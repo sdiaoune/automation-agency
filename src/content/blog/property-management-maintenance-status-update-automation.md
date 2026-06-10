@@ -4,7 +4,10 @@ order: 28
 pillar: "Maintenance Operations"
 keyword: "property management maintenance status update automation"
 title: "Property Management Maintenance Status Update Automation: Stop the 'Any Update?' Call Loop"
-meta: "How property managers can automate resident maintenance status updates so tenants know what is happening, teams field fewer check-in calls, and work orders move with less manual coordination."
+seoTitle: "Maintenance Status Update Automation"
+meta: "Automate resident maintenance status updates so tenants know what is happening and teams field fewer check-in calls."
+publishedAt: "2026-06-03"
+updatedAt: "2026-06-04"
 h1: "Stop the maintenance status call loop with automated resident updates"
 problem: "Once a maintenance request is submitted, residents usually want the same few answers: was it received, is it urgent, who is handling it, when is it scheduled, and what happens next. When those updates depend on manual calls and one-off texts, coordinators spend the day repeating status instead of moving work orders forward."
 stakes:
@@ -37,6 +40,7 @@ related:
   - "automate-vendor-dispatch-property-management"
   - "property-management-repair-approval-automation"
   - "owner-updates-property-management-automation"
+  - "property-management-vendor-no-show-automation"
 socialImage: "/blog/social-assets/property-management-maintenance-status-update-automation.png"
 ---
 

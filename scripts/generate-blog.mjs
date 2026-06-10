@@ -3,142 +3,142 @@ import path from "node:path";
 import { contentPostsPath, readBlogPosts, validateBlogPosts } from "./blog-content.mjs";
 
 const siteUrl = "https://www.emc2ops.com";
-const today = "2026-06-09";
+const today = "2026-06-10";
 const defaultSocialImage = `${siteUrl}/blog/social-assets/stop-losing-leads-after-hours.png`;
 const socialImageDimensions = { width: 1672, height: 941 };
 const cities =
   "Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, and Miami";
 
 const newPost = {
-  slug: "property-management-make-ready-automation",
-  order: 35,
+  slug: "property-management-vendor-no-show-automation",
+  order: 36,
   pillar: "Maintenance Operations",
-  keyword: "property management make ready automation",
+  keyword: "property management vendor no show automation",
   title:
-    "Property Management Make-Ready Automation: Stop Chasing Unit Turns Across Texts and Whiteboards",
-  seoTitle: "Property Management Make-Ready Automation",
+    "Property Management Vendor No-Show Automation: Stop Letting Missed Appointments Freeze Work Orders",
+  seoTitle: "Property Management Vendor No-Show Automation",
   meta:
-    "Learn how property managers can automate make-ready coordination, turn status, vendor handoff, and leasing readiness without manual chasing.",
+    "Learn how property managers can automate vendor no-show detection, resident updates, reassignment, and dispatch recovery without manual chasing.",
   publishedAt: today,
   updatedAt: today,
-  h1: "Stop turning every make-ready into a manual status hunt",
+  h1: "Stop letting vendor no-shows stall maintenance for days",
   problem:
-    "Make-ready coordination breaks when turn status lives across texts, whiteboards, vendor calls, inspection notes, and staff memory instead of one workflow that knows what is done, what is blocked, and when the unit can lease again.",
+    "Vendor no-shows create a hidden maintenance backlog when missed appointments are discovered late, residents are left uninformed, coordinators restart dispatch manually, and nobody can see which work orders are now blocked and need the next action.",
   stakes: [
-    "Teams managing 50+ units lose days of vacancy when no one can quickly confirm cleaning, maintenance, inspection, key readiness, and remarketing status for each turn.",
-    "Leasing staff hesitate to market or schedule tours when unit readiness is unclear, while operations keeps answering the same 'Is this one ready yet?' questions.",
-    "If make-ready steps stay buried in vendor texts and side conversations, owners, coordinators, and leasing teams work from different versions of the turn timeline.",
+    "Teams managing 50+ units lose hours every week when coordinators discover missed appointments only after a resident calls back angry or a unit turn slips another day.",
+    "Residents and onsite teams lose confidence when the office cannot quickly explain whether the vendor is late, the work order needs reassignment, or a new appointment is being scheduled.",
+    "If no-show recovery happens through inboxes and ad hoc calls, dispatch data, resident communication, and owner-facing status updates drift out of sync.",
   ],
   system: [
-    "Trigger the make-ready workflow automatically when notice is received, a move-out is completed, or a unit changes to a turn-needed status.",
-    "Create the right task sequence for inspection, cleaning, maintenance, vendor work, utilities, photos, and ready-to-market checks based on property rules.",
-    "Track each milestone in one shared status layer so operations, leasing, and ownership can see whether the unit is blocked, in progress, or ready.",
-    "Route delays, missing approvals, vendor no-shows, and failed inspections into exception queues instead of letting the turn stall silently.",
-    "Write make-ready status, due dates, and ready-to-lease signals back to the CRM or property management system automatically.",
+    "Watch for appointment windows, vendor ETA confirmations, technician check-ins, and resident replies so the system can identify probable no-shows without waiting for a manual complaint.",
+    "Trigger a no-show recovery path that asks the coordinator for the right exception decision: extend the arrival window, re-contact the vendor, or reassign the work order.",
+    "Send verified resident updates automatically when the appointment is delayed, missed, rescheduled, or reassigned so the resident is not left guessing.",
+    "Escalate repeat vendor misses, emergency jobs, make-ready blockers, and owner-sensitive repairs into priority queues with the full work-order history attached.",
+    "Write every no-show event, recovery action, reassignment, and resident notification back to the CRM or property management system automatically.",
   ],
   metrics: [
-    "days from move-out to ready-to-market",
-    "make-ready tasks completed on time",
-    "vendor follow-up touches removed",
-    "unit-ready status accuracy",
-    "vacancy days reduced by workflow visibility",
+    "vendor no-shows detected automatically",
+    "time from missed appointment to recovery action",
+    "manual dispatch follow-up touches removed",
+    "resident delay updates sent from verified events",
+    "repeat no-show rate by vendor",
   ],
   cta:
-    "If your unit turns still depend on chasing updates across inboxes and texts, book a 15-minute workflow audit.",
+    "If vendor misses keep creating maintenance chaos, book a 15-minute workflow audit.",
   faqs: [
     {
-      question: "What is make-ready automation in property management?",
+      question: "What is vendor no-show automation in property management?",
       answer:
-        "It is a workflow that starts when a unit needs to turn, creates the right tasks automatically, tracks readiness milestones, and updates everyone from the same operating status instead of relying on manual check-ins.",
+        "It is a workflow that detects likely missed vendor appointments, launches the right recovery step, updates residents automatically, and records the outcome in the work-order system without relying on manual follow-up.",
     },
     {
-      question: "Which make-ready steps should stay human-led?",
+      question: "What should stay human-led during vendor no-show recovery?",
       answer:
-        "Scope decisions, failed inspections, budget exceptions, vendor quality issues, owner-sensitive approvals, and any case where the unit status is uncertain should stay with trained staff.",
+        "Emergency maintenance, disputed arrival claims, vendor performance decisions, budget exceptions, legal or habitability issues, and any case where the next action is unclear should stay with trained staff.",
     },
     {
-      question: "When should property managers trigger make-ready automation?",
+      question: "How do property managers detect a vendor no-show automatically?",
       answer:
-        "The cleanest trigger is the move-out or notice-to-vacate workflow, with the turn sequence adjusting again as inspections finish, vendors accept work, and the unit clears ready-to-market checks.",
+        "The cleanest setup combines scheduled appointment windows with signals like missing technician check-in, no ETA confirmation, resident 'nobody arrived' replies, or elapsed grace periods after the scheduled slot ends.",
     },
   ],
   related: [
-    "property-management-move-out-automation",
-    "property-management-move-in-automation",
-    "property-management-repair-approval-automation",
     "automate-vendor-dispatch-property-management",
-    "owner-updates-property-management-automation",
+    "property-management-maintenance-status-update-automation",
+    "property-management-repair-approval-automation",
+    "property-management-maintenance-intake-automation",
+    "property-management-make-ready-automation",
   ],
   socialImage:
-    "/blog/social-assets/property-management-make-ready-automation.png",
-  body: `Make-ready work is where vacancy time quietly expands.
+    "/blog/social-assets/property-management-vendor-no-show-automation.png",
+  body: `A missed vendor appointment creates more than a scheduling inconvenience.
 
-One unit is waiting on paint. Another passed cleaning but still needs final maintenance sign-off. A third looks available in the leasing system even though no one has confirmed keys, photos, or utility readiness. If staff have to chase each update through texts, calls, and side notes, the turn timeline becomes harder to trust with every handoff.
+The resident waited at home. The onsite team assumed the vendor was running late. The coordinator thought the job was still on schedule because no one updated the work order. By the time somebody realizes the appointment was missed, the office is already behind and the resident is frustrated.
 
-For operators managing 50 or more units, make-ready automation matters because it decides how quickly a unit gets back into circulation. If that workflow is unclear, vacancy days grow while leasing and operations keep interrupting each other for the same answers.
+For operators managing 50 or more units, vendor no-shows become an operational tax. They create extra calls, rescheduling work, resident frustration, and slower repairs because the recovery process starts late and usually from incomplete information.
 
-## Why make-ready coordination creates drag
+## Why vendor no-shows create outsized drag
 
 The pattern is usually predictable:
 
-- Turn tasks are created in multiple places, so nobody is sure which checklist is current.
-- Vendors share progress by text or phone, but the update never reaches leasing or ownership.
-- A unit gets treated as almost ready for days because no one can see the one blocking task clearly.
-- Coordinators spend more time asking for status than moving the next task forward.
+- The vendor misses the window, but nobody verifies it quickly.
+- The resident calls in first, forcing the office to investigate from scratch.
+- The coordinator rechecks texts, dispatch notes, and vendor replies to figure out whether the job is delayed or truly missed.
+- The work order sits in limbo because no recovery step is triggered automatically.
 
-This is not a staffing mystery. It is a workflow visibility problem.
+This is not just a vendor reliability problem. It is a workflow recovery problem.
 
-## What make-ready automation should actually do
+## What vendor no-show automation should actually do
 
-The goal is not to automate every repair decision. The goal is to create one turn workflow that always shows the next required action and the current blocker.
+The goal is not to let software guess whether a vendor failed. The goal is to create a controlled exception path once the right signals say the appointment likely broke.
 
 That means the workflow should:
 
-1. Start as soon as the unit enters a turn-needed state.
-2. Create the right tasks for inspection, cleaning, repairs, vendor work, photos, and listing readiness.
-3. Keep every milestone in one shared status model.
-4. Surface delays and failed handoffs before they add another vacancy day.
-5. Escalate exceptions when scope, budget, or readiness is unclear.
+1. Watch the scheduled appointment window and grace period.
+2. Check for confirmation signals such as technician check-in, vendor ETA, or resident acknowledgement.
+3. Trigger a no-show exception when those signals do not appear on time.
+4. Launch the next valid action such as vendor outreach, reassignment, or resident rescheduling.
+5. Record the full timeline so staff, residents, and owners are working from the same status.
 
-If the workflow captures the right milestones at the right time, everything downstream gets cleaner: vendor coordination, owner visibility, remarketing, tour scheduling, and occupancy forecasting.
+If that recovery path is clean, everything downstream improves: dispatch coordination, resident trust, vendor accountability, and make-ready or maintenance throughput.
 
-## The make-ready checkpoints worth automating first
+## The vendor no-show checkpoints worth automating first
 
-Most property management teams do not need a huge custom turn board on day one. They need the basic readiness signals to become trustworthy.
+Most property management teams do not need a complicated AI layer on day one. They need a few reliable operational checkpoints.
 
 Start with:
 
-- move-out complete or notice confirmed
-- inspection scheduled and completed
-- cleaning assigned and finished
-- maintenance scope assigned and cleared
-- vendor exceptions or parts delays
-- photos or marketing-ready confirmation
-- keys, access, and ready-to-show status
+- appointment scheduled with a defined time window
+- technician check-in or ETA confirmation
+- resident confirmation that access was provided or nobody arrived
+- grace-period expiration without a valid arrival signal
+- reassignment or reschedule decision
+- resident update sent and logged
+- repeat no-show flag on the vendor profile
 
-Those checkpoints are enough to tell whether the unit is blocked, almost ready, or truly ready to lease again.
+Those checkpoints are enough to tell whether the work order is still on track, delayed, or needs intervention now.
 
 ## Where automation should stop
 
-Make-ready automation should narrow the coordination work, not replace operations judgment.
+Vendor no-show automation should narrow the follow-up work, not replace judgment.
 
-If the inspection reveals unexpected damage, the repair scope exceeds policy, a vendor disputes the work, or the owner needs to review an exception, the workflow should stop and create a clear human task. If the unit status is uncertain, the system should not guess that it is ready.
+If the vendor disputes the timeline, the repair is urgent, the resident is upset, a reimbursement issue appears, or the work order touches habitability or owner-sensitive approval rules, the workflow should stop and hand the case to a coordinator with context.
 
-The point is to remove repetitive status chasing while making it easier for trained staff to step in at the right moment.
+The point is to remove repetitive investigation while making it easier for trained staff to step in with the right record.
 
 ## How EMC2Ops would implement it
 
-We would start by mapping your real turn workflow: notice received, move-out complete, inspection, cleaning, maintenance, vendor completion, photos, and ready-to-market confirmation. Then we would define which milestones actually determine whether leasing can move.
+We would start by mapping how your team currently schedules vendors, what counts as proof of arrival, how residents report misses, and when a coordinator decides to reassign or reschedule. Then we would define which signals are trustworthy enough to trigger a recovery path automatically.
 
 From there we would set:
 
-1. The trigger rules for starting and updating each make-ready sequence.
-2. The exact milestones that change unit status.
-3. The task and reminder rules for internal staff and vendors.
-4. The exception paths for failed inspections, budget issues, or missing approvals.
-5. The system write-backs that make ready-to-lease status visible to operations and leasing.
+1. The appointment-window and grace-period rules.
+2. The arrival signals that count as valid confirmation.
+3. The exception logic for likely no-shows, delays, and repeat vendor misses.
+4. The resident update templates and reassignment paths.
+5. The CRM or PMS write-backs that preserve the full dispatch timeline.
 
-If your team still spends each turn chasing the answer to "what is this unit waiting on?", the make-ready workflow is where automation should start.`,
+If your team still discovers missed vendor appointments by angry callback instead of verified workflow signals, vendor no-show recovery is a strong place to automate next.`,
 };
 
 function escapeHtml(value) {

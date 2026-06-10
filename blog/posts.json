@@ -266,6 +266,13 @@
     "meta": "Learn why an AI front desk for property managers should work as a response, routing, escalation, and CRM update loop instead of a simple chatbot."
   },
   {
+    "slug": "property-management-vendor-no-show-automation",
+    "pillar": "Maintenance Operations",
+    "keyword": "property management vendor no show automation",
+    "title": "Property Management Vendor No-Show Automation: Stop Letting Missed Appointments Freeze Work Orders",
+    "meta": "Learn how property managers can automate vendor no-show detection, resident updates, reassignment, and dispatch recovery without manual chasing."
+  },
+  {
     "slug": "claude-mythos-property-management-workflows",
     "pillar": "AI Front Desk",
     "keyword": "Claude Mythos property management",
@@ -292,5 +299,12 @@
     "keyword": "Microsoft Agent Control Specification property management",
     "title": "Microsoft's Agent Control Spec Is a Better Property Management AI Checklist",
     "meta": "Microsoft's new Agent Control Specification is a useful signal for property managers: AI front desk workflows need approval gates, audit trails, and clear stop conditions before they touch real operations."
+  },
+  {
+    "slug": "apple-shortcuts-property-management-workflows",
+    "pillar": "AI Front Desk",
+    "keyword": "Apple Shortcuts property management workflows",
+    "title": "Apple's New AI Shortcuts Are a Better Property Management Lesson Than Another Chatbot Demo",
+    "meta": "Apple's new AI-powered Shortcuts app is a useful signal for property managers: the market is shifting from chatbot curiosity to workflow expectations."
   }
 ]

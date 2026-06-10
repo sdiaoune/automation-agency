@@ -41,6 +41,7 @@ related:
   - "property-management-repair-approval-automation"
   - "automate-vendor-dispatch-property-management"
   - "owner-updates-property-management-automation"
+  - "property-management-vendor-no-show-automation"
 socialImage: "/blog/social-assets/property-management-make-ready-automation.png"
 ---
 

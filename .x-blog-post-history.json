@@ -323,6 +323,38 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a288e9ec9aee0637955b2dc",
       "linkedInPostedAt": "2026-06-09T22:07:36.694Z"
+    },
+    "apple-shortcuts-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/apple-shortcuts-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-09T22:07:24.989Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-10T11:57:47.838Z",
+      "replyId": null,
+      "tweetId": "2064678411285459120",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a29513c97146d765989d4dd",
+      "linkedInPostedAt": "2026-06-10T11:57:58.719Z"
+    },
+    "property-management-vendor-no-show-automation": {
+      "imagePath": "blog/social-assets/property-management-vendor-no-show-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-vendor-no-show-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-10T15:34:48.308Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-10T15:34:49.019Z",
+      "replyId": "2064733025900855617",
+      "tweetId": "2064733023979860183",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a29841a7590474c85521077",
+      "linkedInPostedAt": "2026-06-10T15:35:00.583Z"
     }
   }
 }
