@@ -280,6 +280,13 @@
     "meta": "Claude Mythos is still not broadly available, but Mythos-class AI points to a future where property managers can automate longer, messier workflows."
   },
   {
+    "slug": "property-management-maintenance-invoice-automation",
+    "pillar": "Maintenance Operations",
+    "keyword": "property management maintenance invoice automation",
+    "title": "Property Management Maintenance Invoice Automation: Stop Chasing Vendor Bills Across Inboxes",
+    "meta": "Learn how property managers can automate vendor invoice intake, coding, approval routing, and accounting handoff without slowing maintenance operations."
+  },
+  {
     "slug": "ai-support-breach-property-management-workflows",
     "pillar": "AI Front Desk",
     "keyword": "AI support workflow property management",
@@ -306,5 +313,19 @@
     "keyword": "Apple Shortcuts property management workflows",
     "title": "Apple's New AI Shortcuts Are a Better Property Management Lesson Than Another Chatbot Demo",
     "meta": "Apple's new AI-powered Shortcuts app is a useful signal for property managers: the market is shifting from chatbot curiosity to workflow expectations."
+  },
+  {
+    "slug": "appfolio-claude-property-management-workflows",
+    "pillar": "AI Front Desk",
+    "keyword": "AppFolio Claude property management",
+    "title": "AppFolio and Claude Show Where Property Management AI Is Actually Going",
+    "meta": "AppFolio's new Claude connector is a useful signal for property managers: the real AI shift is from answering questions to moving work through guarded leasing, maintenance, and owner workflows."
+  },
+  {
+    "slug": "property-management-work-order-closeout-automation",
+    "pillar": "Maintenance Operations",
+    "keyword": "property management work order closeout automation",
+    "title": "Property Management Work Order Closeout Automation: Stop Leaving Finished Repairs in Limbo",
+    "meta": "Learn how property managers can automate work-order closeout, resident confirmation, invoice checks, and final documentation without reopening the same repair twice."
   }
 ]

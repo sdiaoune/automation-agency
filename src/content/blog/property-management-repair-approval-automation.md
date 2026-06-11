@@ -40,6 +40,8 @@ related:
   - "property-management-maintenance-intake-automation"
   - "automate-vendor-dispatch-property-management"
   - "owner-updates-property-management-automation"
+  - "property-management-maintenance-invoice-automation"
+  - "property-management-work-order-closeout-automation"
 socialImage: "/blog/social-assets/property-management-repair-approval-automation.png"
 ---
 

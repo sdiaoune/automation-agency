@@ -41,6 +41,8 @@ related:
   - "property-management-repair-approval-automation"
   - "owner-updates-property-management-automation"
   - "property-management-vendor-no-show-automation"
+  - "property-management-maintenance-invoice-automation"
+  - "property-management-work-order-closeout-automation"
 socialImage: "/blog/social-assets/property-management-maintenance-status-update-automation.png"
 ---
 
