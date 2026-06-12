@@ -322,10 +322,24 @@
     "meta": "AppFolio's new Claude connector is a useful signal for property managers: the real AI shift is from answering questions to moving work through guarded leasing, maintenance, and owner workflows."
   },
   {
+    "slug": "openai-ona-property-management-workflows",
+    "pillar": "AI Front Desk",
+    "keyword": "OpenAI Ona property management",
+    "title": "OpenAI's Ona Deal Signals What Property Management AI Actually Needs",
+    "meta": "OpenAI's planned Ona acquisition is a useful signal for property managers: the next AI advantage is persistent, controlled follow-up across leasing, maintenance, and owner workflows."
+  },
+  {
     "slug": "property-management-work-order-closeout-automation",
     "pillar": "Maintenance Operations",
     "keyword": "property management work order closeout automation",
     "title": "Property Management Work Order Closeout Automation: Stop Leaving Finished Repairs in Limbo",
     "meta": "Learn how property managers can automate work-order closeout, resident confirmation, invoice checks, and final documentation without reopening the same repair twice."
+  },
+  {
+    "slug": "property-management-delinquency-outreach-automation",
+    "pillar": "Risk Mitigation",
+    "keyword": "property management delinquency outreach automation",
+    "title": "Property Management Delinquency Outreach Automation: Stop Running Collections Follow-Up From Spreadsheets",
+    "meta": "Learn how property managers can automate rent reminders, delinquency outreach, escalation routing, owner visibility, and payment-status updates without creating compliance chaos."
   }
 ]

@@ -355,6 +355,86 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a29841a7590474c85521077",
       "linkedInPostedAt": "2026-06-10T15:35:00.583Z"
+    },
+    "property-management-maintenance-invoice-automation": {
+      "imagePath": "blog/social-assets/property-management-maintenance-invoice-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-maintenance-invoice-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-10T19:36:36.266Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-10T19:36:36.802Z",
+      "replyId": "2064793875667902834",
+      "tweetId": "2064793874623607060",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a29bcc52e319e36d10ebb8f",
+      "linkedInPostedAt": "2026-06-10T19:36:47.764Z"
+    },
+    "appfolio-claude-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/appfolio-claude-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-10T19:36:36.266Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-11T06:35:04.414Z",
+      "replyId": null,
+      "tweetId": "2064959582791774691",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a2a5718e7e413f1ab5aa859",
+      "linkedInPostedAt": "2026-06-11T06:35:15.179Z"
+    },
+    "property-management-work-order-closeout-automation": {
+      "imagePath": "blog/social-assets/property-management-work-order-closeout-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-work-order-closeout-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-11T19:36:49.114Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-11T19:36:49.629Z",
+      "replyId": "2065156317870776791",
+      "tweetId": "2065156316784365904",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a2b0e5204d010f31b01b970",
+      "linkedInPostedAt": "2026-06-11T19:37:00.511Z"
+    },
+    "openai-ona-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/openai-ona-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-11T19:36:49.114Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-12T17:34:36.576Z",
+      "replyId": null,
+      "tweetId": "2065487948162679215",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a2c432d3b82df546cddcc7b",
+      "linkedInPostedAt": "2026-06-12T17:34:47.598Z"
+    },
+    "property-management-delinquency-outreach-automation": {
+      "imagePath": "blog/social-assets/property-management-delinquency-outreach-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-delinquency-outreach-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-12T19:35:53.462Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-12T19:35:53.938Z",
+      "replyId": "2065518471949983911",
+      "tweetId": "2065518470989566168",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a2c5f9ada3868703ac08cb5",
+      "linkedInPostedAt": "2026-06-12T19:36:04.736Z"
     }
   }
 }
