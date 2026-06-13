@@ -38,6 +38,7 @@ faqs:
 related:
   - "reduce-administrative-workload-property-management"
   - "owner-updates-property-management-automation"
+  - "property-management-owner-reporting-automation"
   - "property-management-crm-workflow-automation"
   - "property-management-move-out-automation"
   - "property-management-lease-renewal-automation"

@@ -341,5 +341,26 @@
     "keyword": "property management delinquency outreach automation",
     "title": "Property Management Delinquency Outreach Automation: Stop Running Collections Follow-Up From Spreadsheets",
     "meta": "Learn how property managers can automate rent reminders, delinquency outreach, escalation routing, owner visibility, and payment-status updates without creating compliance chaos."
+  },
+  {
+    "slug": "anthropic-fable-mythos-access-property-management",
+    "pillar": "AI Front Desk",
+    "keyword": "Anthropic Fable Mythos access property management",
+    "title": "Anthropic's Fable and Mythos Shutdown Is an AI Front Desk Wake-Up Call",
+    "meta": "Anthropic's sudden Fable 5 and Mythos 5 access suspension is a reminder for property managers: build AI front desk workflows that can survive model, policy, and vendor changes."
+  },
+  {
+    "slug": "property-management-owner-reporting-automation",
+    "pillar": "Risk Mitigation",
+    "keyword": "property management owner reporting automation",
+    "title": "Property Management Owner Reporting Automation: Stop Rebuilding the Same Weekly Report in Excel",
+    "meta": "Learn how property managers can automate owner reporting across leasing, maintenance, delinquency, and turn updates without rebuilding the same report from spreadsheets every week."
+  },
+  {
+    "slug": "meta-business-agent-property-management-workflows",
+    "pillar": "AI Front Desk",
+    "keyword": "Meta Business Agent property management",
+    "title": "Meta's Business Agent Rollout Is a Messaging Workflow Signal for Property Managers",
+    "meta": "Meta's Business Agent rollout is a useful signal for property managers: renters increasingly expect fast, conversational messaging, but the real win comes from structured after-hours capture, scheduling, logging, and human escalation."
   }
 ]

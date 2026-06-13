@@ -43,6 +43,7 @@ related:
   - "property-management-make-ready-automation"
   - "property-management-vendor-no-show-automation"
   - "owner-updates-property-management-automation"
+  - "property-management-owner-reporting-automation"
 socialImage: "/blog/social-assets/property-management-work-order-closeout-automation.png"
 ---
 

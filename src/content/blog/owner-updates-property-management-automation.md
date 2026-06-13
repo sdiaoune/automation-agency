@@ -41,6 +41,7 @@ related:
   - "property-management-repair-approval-automation"
   - "property-management-move-out-automation"
   - "property-management-delinquency-outreach-automation"
+  - "property-management-owner-reporting-automation"
 ---
 
 Owners do not usually want more messages; they want fewer surprises. Property teams need a way to send useful status updates without creating another manual reporting burden.
