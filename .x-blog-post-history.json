@@ -435,6 +435,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a2c5f9ada3868703ac08cb5",
       "linkedInPostedAt": "2026-06-12T19:36:04.736Z"
+    },
+    "anthropic-fable-mythos-access-property-management": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/anthropic-fable-mythos-access-property-management/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-12T19:35:53.462Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-13T02:05:28.790Z",
+      "replyId": null,
+      "tweetId": "2065616513231446424",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a2cbae961b0aab8c15aea7b",
+      "linkedInPostedAt": "2026-06-13T02:05:39.639Z"
     }
   }
 }
