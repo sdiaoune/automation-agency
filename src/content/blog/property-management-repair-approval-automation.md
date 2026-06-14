@@ -35,6 +35,7 @@ faqs:
   - question: "Do owners have to approve every repair?"
     answer: "No. Many operators use not-to-exceed rules so routine repairs move automatically while only larger or unusual jobs trigger owner review."
 related:
+  - "property-management-owner-approval-workflow"
   - "property-management-make-ready-automation"
   - "property-management-maintenance-status-update-automation"
   - "property-management-maintenance-intake-automation"

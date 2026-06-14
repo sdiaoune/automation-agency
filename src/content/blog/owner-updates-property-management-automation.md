@@ -38,6 +38,7 @@ related:
   - "property-management-maintenance-intake-automation"
   - "reduce-administrative-workload-property-management"
   - "property-management-lease-renewal-automation"
+  - "property-management-owner-approval-workflow"
   - "property-management-repair-approval-automation"
   - "property-management-move-out-automation"
   - "property-management-delinquency-outreach-automation"

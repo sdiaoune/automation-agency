@@ -362,5 +362,12 @@
     "keyword": "Meta Business Agent property management",
     "title": "Meta's Business Agent Rollout Is a Messaging Workflow Signal for Property Managers",
     "meta": "Meta's Business Agent rollout is a useful signal for property managers: renters increasingly expect fast, conversational messaging, but the real win comes from structured after-hours capture, scheduling, logging, and human escalation."
+  },
+  {
+    "slug": "property-management-owner-approval-workflow",
+    "pillar": "Risk Mitigation",
+    "keyword": "property management owner approval workflow",
+    "title": "Property Management Owner Approval Workflow: Stop Letting Inbox Threads Delay Decisions",
+    "meta": "Learn how property managers can automate owner approval workflows for repairs, turns, invoice exceptions, and leasing decisions without stalling operations in inbox threads."
   }
 ]

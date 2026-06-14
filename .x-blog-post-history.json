@@ -483,6 +483,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a2dbfec3cd9497d55f3a0de",
       "linkedInPostedAt": "2026-06-13T20:39:18.439Z"
+    },
+    "property-management-owner-approval-workflow": {
+      "imagePath": "blog/social-assets/property-management-owner-approval-workflow.png",
+      "url": "https://www.emc2ops.com/blog/property-management-owner-approval-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-14T23:43:14.880Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-14T23:43:15.294Z",
+      "replyId": "2066305496819134860",
+      "tweetId": "2066305495959322791",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a2f3c93699f807eb30bc7a0",
+      "linkedInPostedAt": "2026-06-14T23:43:26.089Z"
     }
   }
 }
