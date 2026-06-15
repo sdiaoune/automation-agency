@@ -499,6 +499,38 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a2f3c93699f807eb30bc7a0",
       "linkedInPostedAt": "2026-06-14T23:43:26.089Z"
+    },
+    "visa-openai-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/visa-openai-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-14T23:43:14.880Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-15T14:42:04.020Z",
+      "replyId": null,
+      "tweetId": "2066531690080604598",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a300f3c9643bbb55485bec8",
+      "linkedInPostedAt": "2026-06-15T14:42:15.220Z"
+    },
+    "property-management-maintenance-scheduling-automation": {
+      "imagePath": "blog/social-assets/property-management-maintenance-scheduling-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-maintenance-scheduling-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-15T19:35:34.237Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-15T19:35:34.676Z",
+      "replyId": "2066605554617757953",
+      "tweetId": "2066605553703362839",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3054076c33ab6ea074ea6e",
+      "linkedInPostedAt": "2026-06-15T19:35:45.598Z"
     }
   }
 }

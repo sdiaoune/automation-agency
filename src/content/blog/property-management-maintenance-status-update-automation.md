@@ -38,6 +38,7 @@ faqs:
 related:
   - "property-management-maintenance-intake-automation"
   - "automate-vendor-dispatch-property-management"
+  - "property-management-maintenance-scheduling-automation"
   - "property-management-repair-approval-automation"
   - "owner-updates-property-management-automation"
   - "property-management-vendor-no-show-automation"

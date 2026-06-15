@@ -36,11 +36,13 @@ faqs:
     answer: "Use rule-based routing, required fields, exception alerts, and staged rollout by request type."
 related:
   - "property-management-maintenance-intake-automation"
+  - "property-management-maintenance-scheduling-automation"
   - "automate-dispatch-crm-sync-property-management"
   - "owner-updates-property-management-automation"
   - "property-management-repair-approval-automation"
   - "property-management-maintenance-status-update-automation"
   - "property-management-vendor-no-show-automation"
+  - "property-management-maintenance-invoice-automation"
 ---
 
 Vendor dispatch slows down when request details, approval limits, access notes, and property context live in separate messages.

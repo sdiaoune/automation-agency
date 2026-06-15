@@ -4,7 +4,10 @@ order: 13
 pillar: "Maintenance Operations"
 keyword: "property management maintenance intake automation"
 title: "Property Management Maintenance Intake Automation for 24/7 Triage"
+seoTitle: "Maintenance Intake Automation for Property Managers"
 meta: "Standardize midnight maintenance requests with automated tenant intake, urgency triage, routing, and CRM updates."
+publishedAt: "2026-06-03"
+updatedAt: "2026-06-04"
 h1: "Standardizing the midnight leak with 24/7 automated maintenance triage"
 problem: "The hardest maintenance calls often arrive when the office is closed. Without structured intake, the team wakes up to vague messages, missing photos, and unclear urgency."
 stakes:
@@ -32,6 +35,7 @@ faqs:
     answer: "No. It standardizes intake so coordinators start with cleaner information and fewer repetitive questions."
 related:
   - "automate-tenant-maintenance-requests"
+  - "property-management-maintenance-scheduling-automation"
   - "automate-vendor-dispatch-property-management"
   - "automate-dispatch-crm-sync-property-management"
   - "property-management-repair-approval-automation"

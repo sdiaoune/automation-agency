@@ -369,5 +369,19 @@
     "keyword": "property management owner approval workflow",
     "title": "Property Management Owner Approval Workflow: Stop Letting Inbox Threads Delay Decisions",
     "meta": "Learn how property managers can automate owner approval workflows for repairs, turns, invoice exceptions, and leasing decisions without stalling operations in inbox threads."
+  },
+  {
+    "slug": "visa-openai-property-management-workflows",
+    "pillar": "AI Front Desk",
+    "keyword": "Visa OpenAI property management workflows",
+    "title": "Visa and OpenAI's AI Commerce News Is Really a Workflow Lesson for Property Managers",
+    "meta": "Visa and OpenAI's AI commerce partnership is a useful signal for property managers: renters will increasingly expect conversations to turn into approved next steps, not just fast replies."
+  },
+  {
+    "slug": "property-management-maintenance-scheduling-automation",
+    "pillar": "Maintenance Operations",
+    "keyword": "property management maintenance scheduling automation",
+    "title": "Property Management Maintenance Scheduling Automation: Stop Chasing Access Windows by Hand",
+    "meta": "Learn how property managers can automate maintenance scheduling, resident access coordination, vendor confirmations, and reschedules without endless call-and-text loops."
   }
 ]
