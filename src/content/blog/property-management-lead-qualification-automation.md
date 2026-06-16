@@ -38,6 +38,7 @@ faqs:
 related:
   - "property-management-guest-card-automation"
   - "property-management-leasing-pipeline-setup"
+  - "property-management-leasing-inquiry-routing-automation"
   - "ai-leasing-follow-up-property-management"
   - "property-management-application-follow-up-automation"
   - "apartment-lead-tracking"

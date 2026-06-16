@@ -38,6 +38,7 @@ faqs:
 related:
   - "apartment-lead-tracking"
   - "property-management-leasing-pipeline-setup"
+  - "property-management-leasing-inquiry-routing-automation"
   - "property-management-lead-deduplication-routing"
   - "property-management-lead-qualification-automation"
   - "automate-property-management-lead-follow-up"

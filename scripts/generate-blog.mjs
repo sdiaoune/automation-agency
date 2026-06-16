@@ -3,146 +3,146 @@ import path from "node:path";
 import { contentPostsPath, readBlogPosts, validateBlogPosts } from "./blog-content.mjs";
 
 const siteUrl = "https://www.emc2ops.com";
-const today = "2026-06-15";
+const today = "2026-06-16";
 const defaultSocialImage = `${siteUrl}/blog/social-assets/stop-losing-leads-after-hours.png`;
 const socialImageDimensions = { width: 1672, height: 941 };
 const cities =
   "Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, and Miami";
 
 const newPost = {
-  slug: "property-management-maintenance-scheduling-automation",
-  order: 48,
-  pillar: "Maintenance Operations",
-  keyword: "property management maintenance scheduling automation",
+  slug: "property-management-leasing-inquiry-routing-automation",
+  order: 49,
+  pillar: "Leasing Automation",
+  keyword: "property management leasing inquiry routing automation",
   title:
-    "Property Management Maintenance Scheduling Automation: Stop Chasing Access Windows by Hand",
-  seoTitle: "Property Management Maintenance Scheduling Automation",
+    "Property Management Leasing Inquiry Routing Automation: Stop Sending Renters to the Wrong Property",
+  seoTitle: "Property Management Leasing Inquiry Routing Automation",
   meta:
-    "Learn how property managers can automate maintenance scheduling, resident access coordination, vendor confirmations, and reschedules without endless call-and-text loops.",
+    "Learn how property managers can automate multi-property leasing inquiry routing by community, unit fit, source, and backup coverage without manual inbox sorting.",
   publishedAt: today,
   updatedAt: today,
-  h1: "Stop chasing residents and vendors for every maintenance appointment",
+  h1: "Stop sorting every new leasing inquiry by hand before follow-up can even start",
   problem:
-    "Maintenance scheduling becomes an operational drag when resident availability, access notes, vendor windows, and reschedules live in scattered calls, texts, and inbox threads instead of one workflow that confirms the appointment and updates the work order automatically.",
+    "Leasing inquiry routing breaks when calls, ILS leads, forms, texts, and chat messages arrive without a workflow that assigns each renter to the right property, team member, and next action before response speed drops.",
   stakes: [
-    "Teams managing 50+ units lose hours every week trying to confirm appointment windows, relay access instructions, and manually recover when a resident or vendor does not reply on time.",
-    "Residents lose confidence when they take time off, prepare pets, or wait at home for a visit that was never fully confirmed or was changed in a thread they did not see.",
-    "If scheduling logic lives in coordinators' memory instead of a workflow, dispatch slows down, vendor utilization drops, no-shows increase, and status communication becomes unreliable.",
+    "Teams managing 50+ units lose leasing time when staff manually read every source alert just to decide which community, portfolio, or agent should own the lead.",
+    "Qualified renters cool off when they get routed to the wrong property, wait in an unowned inbox, or receive follow-up from someone who cannot answer for the unit they want.",
+    "If routing logic lives in tribal knowledge instead of a workflow, coverage gaps, duplicate outreach, and source-specific errors grow as lead volume and property count increase.",
   ],
   system: [
-    "Trigger scheduling only after the request is triaged, approved when needed, and assigned to the right vendor or internal technician.",
-    "Collect the resident's preferred windows, access instructions, pet notes, and contact method in a structured format instead of rebuilding the details in every message.",
-    "Offer appointment options, confirm the selected slot, and send reminders to both the resident and the vendor with the same job context attached.",
-    "Watch for unconfirmed appointments, conflicting calendars, late changes, and no-response cases so the workflow can escalate or offer a new slot before the visit fails.",
-    "Write the scheduled time, confirmation status, reschedule reason, and communication log back to the work order, CRM, and resident record automatically.",
+    "Capture every inbound leasing inquiry before it reaches a person so the workflow can see source, property interest, unit type, budget, move date, and channel context.",
+    "Match the renter to the right property, portfolio, or fallback queue using explicit routing rules instead of expecting staff to remember every coverage nuance.",
+    "Assign one owner and one next action immediately, whether that means qualification, tour scheduling, after-hours text-back, or live human follow-up.",
+    "Detect missing property context, unavailable units, duplicate leads, and after-hours edge cases so uncertain inquiries move to an exception path instead of getting lost.",
+    "Write the routing decision, owner assignment, response status, and conversation summary back to the CRM or leasing system automatically.",
   ],
   metrics: [
-    "time from triage to scheduled appointment",
-    "appointments confirmed without manual follow-up",
-    "resident or vendor no-shows",
-    "reschedules recovered automatically",
-    "work orders with complete scheduling logs",
+    "time from inquiry to assigned owner",
+    "leads routed without manual sorting",
+    "misrouted inquiries caught before follow-up",
+    "speed to first response by property",
+    "unowned leads older than SLA",
   ],
   cta:
-    "If maintenance scheduling still runs through phone tag and inbox cleanup, book a 15-minute workflow audit.",
+    "If new leasing inquiries still depend on inbox triage and staff memory, book a 15-minute workflow audit.",
   faqs: [
     {
-      question: "What is maintenance scheduling automation in property management?",
+      question: "What is leasing inquiry routing automation in property management?",
       answer:
-        "It is a workflow that collects scheduling constraints, offers appointment options, confirms the slot with the resident and vendor, tracks reschedules, and updates the work order automatically.",
+        "It is a workflow that captures each new renter inquiry, determines which property or team should own it, assigns the next action, and updates the CRM automatically.",
     },
     {
       question: "What should stay human-led?",
       answer:
-        "Habitability issues, legal disputes, resident complaints, unusual access situations, safety concerns, and any job where the schedule depends on judgment or negotiation should stay with trained staff.",
+        "Fair-housing-sensitive conversations, accommodation requests, unusual portfolio exceptions, owner-specific leasing rules, and any low-confidence routing case should stay with trained staff.",
     },
     {
-      question: "How do property managers automate scheduling without creating more confusion?",
+      question: "How do property managers automate routing without sending renters to the wrong team?",
       answer:
-        "The safest setup uses approved scheduling triggers, shared appointment data, confirmation checkpoints, reminder rules, and write-backs so everyone sees the same schedule and exceptions surface early.",
+        "The safest setup uses explicit property coverage rules, required lead fields, backup queues, duplicate checks, and CRM write-backs so uncertain cases surface early instead of being guessed at.",
     },
   ],
   related: [
-    "property-management-maintenance-intake-automation",
-    "automate-vendor-dispatch-property-management",
-    "property-management-maintenance-status-update-automation",
-    "property-management-vendor-no-show-automation",
-    "property-management-work-order-closeout-automation",
-    "property-management-maintenance-invoice-automation",
-    "property-management-repair-approval-automation",
-    "reduce-administrative-workload-property-management",
+    "apartment-lead-tracking",
+    "property-management-guest-card-automation",
+    "property-management-lead-qualification-automation",
+    "property-management-leasing-pipeline-setup",
+    "property-management-lead-deduplication-routing",
+    "ai-leasing-follow-up-property-management",
+    "after-hours-leasing-automation",
+    "automate-property-management-lead-follow-up",
   ],
   socialImage:
-    "/blog/social-assets/property-management-maintenance-scheduling-automation.png",
-  body: `A maintenance appointment should not take six messages to confirm.
+    "/blog/social-assets/property-management-leasing-inquiry-routing-automation.png",
+  body: `A new leasing inquiry should not sit in limbo while someone figures out who owns it.
 
-The request is already triaged. The vendor is already selected. Then the work order stalls because nobody has one clean place to coordinate resident availability, access notes, appointment windows, and schedule changes. Staff start calling, texting, and forwarding updates between residents and vendors just to land one visit.
+One renter calls the main office about Property A. Another submits an ILS form with only a floor-plan name. A third texts after hours asking whether a two-bedroom is still available at Property B. If each of those touches lands in a different inbox and staff have to decide ownership manually, response speed starts slipping before follow-up even begins.
 
-For operators managing 50 or more units, maintenance scheduling becomes a hidden coordination tax. It slows dispatch, increases no-shows, and creates more "Any update?" traffic because the schedule lives in conversations instead of the workflow record.
+For operators managing 50 or more units, leasing inquiry routing becomes a hidden front-desk tax. It delays first response, creates property confusion, and leaves high-intent renters waiting while the team sorts out basic ownership.
 
-## Why maintenance scheduling becomes a bottleneck
+## Why leasing inquiry routing becomes a bottleneck
 
 The pattern is usually predictable:
 
-- Resident availability is collected inconsistently or too late.
-- Vendors accept the job but not the actual appointment window.
-- Access notes, pet instructions, gate codes, and entry rules are buried in old messages.
-- Reschedules happen in text threads that never update the work order.
-- Staff do manual reminder work because nobody trusts the current schedule.
+- Website forms, ILS leads, calls, chat, and text threads all reach different tools first.
+- Property interest is missing, inconsistent, or inferred from weak signals.
+- Portfolio coverage rules live in people's heads instead of a routing table.
+- After-hours inquiries wait for the one staff member who knows where they belong.
+- Duplicate leads get routed twice because intake and ownership happen in separate steps.
 
-This is not just a communication issue. It is a workflow design issue.
+This is not just a staffing issue. It is a routing design issue.
 
-## What maintenance scheduling automation should actually do
+## What leasing inquiry routing automation should actually do
 
-The goal is not to automate every resident conversation. The goal is to create one reliable scheduling layer between triage, dispatch, and completion.
+The goal is not to build a complicated chatbot. The goal is to create one routing layer between inquiry capture and leasing follow-up.
 
 That means the workflow should:
 
-1. Start only when the request is ready for scheduling.
-2. Gather the resident's valid windows, access constraints, and contact preferences in a structured format.
-3. Offer approved appointment options tied to vendor or technician availability.
-4. Confirm the chosen slot with both sides and send the same job context to each.
-5. Detect silence, conflicts, and late changes before they become a no-show.
-6. Write every scheduling outcome back to the work order automatically.
+1. Start from every lead source that can create a leasing conversation.
+2. Capture the few routing fields that actually determine ownership.
+3. Match the inquiry to the right property, team, or fallback queue immediately.
+4. Trigger the correct next action instead of waiting on inbox review.
+5. Detect low-confidence cases before the wrong team responds.
+6. Write the routing decision and conversation status back to the CRM automatically.
 
-If that process is clean, downstream operations improve fast: fewer missed visits, fewer manual check-ins, better status communication, and cleaner closeout.
+If that process is clean, downstream operations improve fast: fewer unowned leads, cleaner handoffs, faster replies, and less confusion for renters and staff.
 
-## The scheduling checkpoints worth automating first
+## The routing checkpoints worth automating first
 
-Most property management teams do not need a complex AI layer first. They need a few reliable scheduling checkpoints.
+Most property management teams do not need AI deciding everything. They need a few reliable routing checkpoints.
 
 Start with:
 
-- collecting resident availability and access notes after triage
-- offering approved time windows after vendor assignment
-- confirming appointments with shared job details
-- sending reminders before the visit
-- detecting unconfirmed or changed appointments early
-- syncing reschedules and no-show outcomes back to the system of record
+- capturing property interest and source context at first touch
+- assigning ownership by property, portfolio, or leasing pod
+- pushing incomplete inquiries to a backup queue instead of leaving them unowned
+- triggering qualification or tour scheduling only after routing is correct
+- suppressing duplicate outreach when an existing renter record already exists
+- logging every routing outcome back to the CRM or PMS
 
-Those checkpoints are enough to reduce the phone-tag loop without forcing unusual cases through automation.
+Those checkpoints are enough to remove manual inbox sorting without forcing uncertain cases through blind automation.
 
 ## Where automation should stop
 
-Maintenance scheduling automation should reduce coordination work, not replace judgment.
+Routing automation should reduce triage work, not replace leasing judgment.
 
-If the issue involves habitability risk, resident conflict, legal exposure, unusual access problems, safety concerns, repeated missed visits, or any case where the vendor or resident needs live negotiation, the workflow should stop and hand the case to staff with the full timeline attached.
+If the inquiry raises fair-housing-sensitive questions, accommodation requests, unusual property rules, ownership exceptions, unclear duplicate matches, or missing context that could misroute the renter, the workflow should stop and hand the case to staff with the timeline attached.
 
-The point is to remove repetitive scheduling labor while giving trained coordinators a cleaner exception queue.
+The point is to remove repetitive sorting work while giving trained staff a cleaner exception queue.
 
 ## How EMC2Ops would implement it
 
-We would start by mapping how maintenance work becomes schedulable in your operation: after intake triage, after approval, after vendor assignment, or after a resident supplies missing details. Then we would define who can offer windows, what data is required, how reminders should fire, and when the workflow should escalate.
+We would start by mapping every way a leasing inquiry reaches your operation: calls, missed calls, ILS leads, website forms, chat, text, and after-hours messages. Then we would define which fields determine routing, what backup coverage exists, and where the workflow should stop guessing.
 
 From there we would set:
 
-1. The scheduling trigger by work-order type and approval status.
-2. The resident and vendor fields required before an appointment can be offered.
-3. The reminder, confirmation, and fallback timing for unanswered messages.
-4. The PMS, CRM, and dispatch write-backs that preserve the real appointment status.
-5. The metrics that show whether scheduling friction is actually shrinking.
+1. The routing rules by property, portfolio, source, and time of day.
+2. The minimum lead fields required before ownership is assigned automatically.
+3. The fallback queue and SLA rules for incomplete or uncertain inquiries.
+4. The CRM and PMS write-backs that preserve the true owner, status, and next action.
+5. The metrics that show whether inquiry handling is actually getting faster.
 
-If your team still coordinates maintenance appointments through phone tag and inbox cleanup, this workflow is a strong place to automate next.`,
+If your team still decides lead ownership from inbox alerts and staff memory, leasing inquiry routing is a strong workflow to automate next.`,
 };
 
 function escapeHtml(value) {

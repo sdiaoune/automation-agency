@@ -383,5 +383,19 @@
     "keyword": "property management maintenance scheduling automation",
     "title": "Property Management Maintenance Scheduling Automation: Stop Chasing Access Windows by Hand",
     "meta": "Learn how property managers can automate maintenance scheduling, resident access coordination, vendor confirmations, and reschedules without endless call-and-text loops."
+  },
+  {
+    "slug": "property-management-leasing-inquiry-routing-automation",
+    "pillar": "Leasing Automation",
+    "keyword": "property management leasing inquiry routing automation",
+    "title": "Property Management Leasing Inquiry Routing Automation: Stop Sending Renters to the Wrong Property",
+    "meta": "Learn how property managers can automate multi-property leasing inquiry routing by community, unit fit, source, and backup coverage without manual inbox sorting."
+  },
+  {
+    "slug": "respond-io-property-management-conversation-workflows",
+    "pillar": "AI Front Desk",
+    "keyword": "Respond.io property management",
+    "title": "Respond.io's Funding Is a Signal Property Managers Need One Conversation Workflow, Not Five Inboxes",
+    "meta": "Respond.io's June 15-16 funding news is a useful signal for property managers: renters increasingly expect one continuous conversation across text, chat, calls, and after-hours follow-up."
   }
 ]

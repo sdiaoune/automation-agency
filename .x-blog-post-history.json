@@ -531,6 +531,38 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a3054076c33ab6ea074ea6e",
       "linkedInPostedAt": "2026-06-15T19:35:45.598Z"
+    },
+    "respond-io-property-management-conversation-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/respond-io-property-management-conversation-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-15T19:35:34.237Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-16T12:23:29.826Z",
+      "replyId": null,
+      "tweetId": "2066859205634458005",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3140427d1a1f620f1e4bac",
+      "linkedInPostedAt": "2026-06-16T12:23:40.616Z"
+    },
+    "property-management-leasing-inquiry-routing-automation": {
+      "imagePath": "blog/social-assets/property-management-leasing-inquiry-routing-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-leasing-inquiry-routing-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-16T19:35:43.601Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-16T19:35:44.218Z",
+      "replyId": "2066967982505341263",
+      "tweetId": "2066967981104467971",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a31a5906bb7eddfe0207184",
+      "linkedInPostedAt": "2026-06-16T19:35:54.897Z"
     }
   }
 }
