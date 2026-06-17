@@ -40,6 +40,7 @@ related:
   - "property-management-lease-renewal-automation"
   - "property-management-application-follow-up-automation"
   - "property-management-delinquency-outreach-automation"
+  - "property-management-lease-violation-follow-up-automation"
 ---
 
 When leasing and operations teams manually copy notes between calls, texts, inboxes, spreadsheets, and the CRM, records become inconsistent and follow-up gets missed.

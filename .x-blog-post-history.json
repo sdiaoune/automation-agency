@@ -563,6 +563,38 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a31a5906bb7eddfe0207184",
       "linkedInPostedAt": "2026-06-16T19:35:54.897Z"
+    },
+    "salesforce-fin-property-management-service-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/salesforce-fin-property-management-service-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-16T19:35:43.601Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-17T23:30:03.511Z",
+      "replyId": null,
+      "tweetId": "2067389339407994949",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a332dfcd0c755affe3ea774",
+      "linkedInPostedAt": "2026-06-17T23:30:14.757Z"
+    },
+    "property-management-lease-violation-follow-up-automation": {
+      "imagePath": "blog/social-assets/property-management-lease-violation-follow-up-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-lease-violation-follow-up-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-17T23:37:15.703Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-17T23:37:16.217Z",
+      "replyId": "2067391154270703807",
+      "tweetId": "2067391153117262136",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a332fadd0c755affe3ec4d7",
+      "linkedInPostedAt": "2026-06-17T23:37:30.139Z"
     }
   }
 }

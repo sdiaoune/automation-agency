@@ -397,5 +397,19 @@
     "keyword": "Respond.io property management",
     "title": "Respond.io's Funding Is a Signal Property Managers Need One Conversation Workflow, Not Five Inboxes",
     "meta": "Respond.io's June 15-16 funding news is a useful signal for property managers: renters increasingly expect one continuous conversation across text, chat, calls, and after-hours follow-up."
+  },
+  {
+    "slug": "property-management-lease-violation-follow-up-automation",
+    "pillar": "Resident Operations",
+    "keyword": "property management lease violation follow up automation",
+    "title": "Property Management Lease Violation Follow-Up Automation: Stop Chasing Notices Across Texts and Spreadsheets",
+    "meta": "Learn how property managers can automate lease violation follow-up, resident reminders, manager escalations, and documentation without running enforcement from inboxes and spreadsheets."
+  },
+  {
+    "slug": "salesforce-fin-property-management-service-workflows",
+    "pillar": "AI Front Desk",
+    "keyword": "Salesforce Fin property management",
+    "title": "Salesforce's Fin Deal Is a Service Workflow Signal for Property Managers",
+    "meta": "Salesforce's agreement to buy Fin is a useful signal for property managers: renter and resident service now needs one tracked workflow across channels, not separate inboxes and callbacks."
   }
 ]

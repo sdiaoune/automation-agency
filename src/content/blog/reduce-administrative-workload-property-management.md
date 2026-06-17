@@ -40,6 +40,7 @@ related:
   - "property-management-lease-renewal-automation"
   - "property-management-move-out-automation"
   - "property-management-delinquency-outreach-automation"
+  - "property-management-lease-violation-follow-up-automation"
 ---
 
 The goal of automation is not to remove judgment from property management. The goal is to remove repetitive intake, reminders, routing, and logging so staff can spend more time on work that needs human context.
