@@ -41,6 +41,7 @@ related:
   - "property-management-lease-renewal-automation"
   - "owner-updates-property-management-automation"
   - "property-management-repair-approval-automation"
+  - "property-management-security-deposit-return-automation"
   - "reduce-administrative-workload-property-management"
 socialImage: "/blog/social-assets/property-management-move-out-automation.png"
 ---

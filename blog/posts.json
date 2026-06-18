@@ -411,5 +411,19 @@
     "keyword": "Salesforce Fin property management",
     "title": "Salesforce's Fin Deal Is a Service Workflow Signal for Property Managers",
     "meta": "Salesforce's agreement to buy Fin is a useful signal for property managers: renter and resident service now needs one tracked workflow across channels, not separate inboxes and callbacks."
+  },
+  {
+    "slug": "renters-market-property-management-leasing-follow-up",
+    "pillar": "Leasing Automation",
+    "keyword": "renter's market property management leasing follow up",
+    "title": "A Renter's Market Is Really a Leasing Workflow Test for Property Managers",
+    "meta": "As renters gain more leverage in many markets, property managers need tighter leasing follow-up, faster after-hours response, and cleaner tour-booking workflows."
+  },
+  {
+    "slug": "property-management-security-deposit-return-automation",
+    "pillar": "Risk Mitigation",
+    "keyword": "property management security deposit return automation",
+    "title": "Property Management Security Deposit Return Automation: Stop Rebuilding Deposit Dispositions by Hand",
+    "meta": "Learn how property managers can automate security deposit return workflows, damage-charge review, owner visibility, and resident disposition notices without another spreadsheet scramble."
   }
 ]

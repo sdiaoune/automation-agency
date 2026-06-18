@@ -595,6 +595,38 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a332fadd0c755affe3ec4d7",
       "linkedInPostedAt": "2026-06-17T23:37:30.139Z"
+    },
+    "renters-market-property-management-leasing-follow-up": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/renters-market-property-management-leasing-follow-up/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-17T23:37:15.703Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-18T06:36:37.809Z",
+      "replyId": null,
+      "tweetId": "2067496689519247429",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3391f66a2e3f2145780f1f",
+      "linkedInPostedAt": "2026-06-18T06:36:48.646Z"
+    },
+    "property-management-security-deposit-return-automation": {
+      "imagePath": "blog/social-assets/property-management-security-deposit-return-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-security-deposit-return-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-18T19:41:19.679Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-18T19:41:20.167Z",
+      "replyId": "2067694167392674023",
+      "tweetId": "2067694166377742405",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3449e02e4d673a613b2bc0",
+      "linkedInPostedAt": "2026-06-18T19:41:31.171Z"
     }
   }
 }
