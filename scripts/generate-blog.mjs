@@ -3,145 +3,145 @@ import path from "node:path";
 import { contentPostsPath, readBlogPosts, validateBlogPosts } from "./blog-content.mjs";
 
 const siteUrl = "https://www.emc2ops.com";
-const today = "2026-06-19";
+const today = "2026-06-20";
 const defaultSocialImage = `${siteUrl}/blog/social-assets/stop-losing-leads-after-hours.png`;
 const socialImageDimensions = { width: 1672, height: 941 };
 const cities =
   "Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, and Miami";
 
 const newPost = {
-  slug: "property-management-owner-statement-automation",
-  order: 54,
-  pillar: "Risk Mitigation",
-  keyword: "property management owner statement automation",
+  slug: "property-management-resident-portal-message-automation",
+  order: 55,
+  pillar: "Resident Operations",
+  keyword: "property management resident portal message automation",
   title:
-    "Property Management Owner Statement Automation: Stop Rebuilding Month-End Packets by Hand",
-  seoTitle: "Property Management Owner Statement Automation",
+    "Property Management Resident Portal Message Automation: Stop Letting the Inbox Run the Day",
+  seoTitle: "Property Management Resident Portal Message Automation",
   meta:
-    "Learn how property managers can automate owner statement prep, variance follow-up, invoice checks, and approval routing without another month-end spreadsheet scramble.",
+    "Learn how property managers can automate resident portal message triage, routing, follow-up, and CRM updates without letting the inbox drive the day.",
   publishedAt: today,
   updatedAt: today,
-  h1: "Stop rebuilding owner statements from exports, inboxes, and last-minute explanations",
+  h1: "Stop letting resident portal messages become a second property management system",
   problem:
-    "Owner statement prep turns into a recurring month-end scramble when rent exceptions, maintenance invoices, delinquency notes, reserve draws, leasing updates, and owner questions live across the PMS, inboxes, spreadsheets, and accounting exports instead of one controlled workflow.",
+    "Resident portal message handling turns into repetitive admin work when maintenance questions, rent issues, lease concerns, access requests, and status updates pile into one shared inbox without a workflow that can classify the issue, capture the right context, and route the next step automatically.",
   stakes: [
-    "Teams managing 50+ units lose hours every month reconciling owner balances, missing invoice backup, delinquency exceptions, reserve activity, and make-ready overages before a statement packet is ready to send.",
-    "If statement prep stays manual, owners get inconsistent explanations, accounting fields do not line up with operating context, and staff end up answering the same variance questions twice.",
-    "When month-end review happens through inbox forwarding and spreadsheet patches, approval-sensitive charges, late vendor bills, and delinquency narratives move forward without a complete operating record attached.",
+    "Teams managing 50+ units lose hours every week opening portal threads, reclassifying resident issues by hand, forwarding the same message to multiple people, and rebuilding context that should already be attached to the unit and resident record.",
+    "If portal messages stay manual, urgent maintenance gets mixed with routine billing questions, residents receive inconsistent response times, and managers lose visibility into which inbox conversations are actually unresolved.",
+    "When portal communication lives outside the real workflow, delinquency replies, lease-violation disputes, access questions, and service updates drift away from the PMS, CRM, and work-order record that the team relies on.",
   ],
   system: [
-    "Trigger the workflow at the start of month-end close so each property, owner, statement period, reserve balance, and outstanding exception is already attached.",
-    "Collect verified accounting exports, maintenance invoices, delinquency notes, leasing changes, and owner-sensitive spend explanations into one review path instead of asking staff to rebuild the packet by hand.",
-    "Assemble the owner-ready statement package using approved rules for line-item summaries, variance explanations, reserve activity, attachments, and send timing.",
-    "Escalate approval-sensitive charges, missing invoice backup, unresolved delinquency items, and unusual variances into a manager review queue with the full timeline attached.",
-    "Write every packet decision, explanation, approval, and send timestamp back to the operating record automatically.",
+    "Trigger the workflow when a new resident portal message arrives so the property, unit, resident, lease status, and conversation channel are attached before anyone has to triage it manually.",
+    "Classify the message into approved paths such as maintenance intake, rent or delinquency question, lease violation response, move-in or move-out coordination, or general account support without making policy decisions.",
+    "Ask for the one next missing detail automatically, create or update the right task or record, and route the message to the correct team queue with the full conversation attached.",
+    "Escalate emergencies, payment disputes, accommodation requests, legal-risk issues, and owner-sensitive cases into a human review queue instead of continuing automation blindly.",
+    "Write every message, classification, task handoff, response timestamp, and resolution state back to the operating record automatically.",
   ],
   metrics: [
-    "owner statements delivered on time",
-    "manual touches per statement cycle",
-    "statement packets with complete backup",
-    "variance explanations resolved before send",
-    "owner follow-up questions per statement",
+    "portal messages routed without manual triage",
+    "first-response time by message type",
+    "resident threads resolved without duplicate handoffs",
+    "CRM or PMS conversation completeness",
+    "manual inbox touches removed per week",
   ],
   cta:
-    "If owner statements still depend on exports, spreadsheet stitching, and inbox chasing, book a 15-minute workflow audit.",
+    "If resident portal messages still depend on inbox sorting, forwarding, and staff memory, book a 15-minute workflow audit.",
   faqs: [
     {
-      question: "What is owner statement automation in property management?",
+      question: "What is resident portal message automation in property management?",
       answer:
-        "It is a workflow that assembles the owner statement packet from verified accounting and operating data, routes exceptions for review, and sends the final package with the right explanations and attachments on schedule.",
+        "It is a workflow that classifies incoming resident portal messages, requests missing details, routes each issue to the right operating path, and logs the full conversation automatically.",
     },
     {
-      question: "What should stay human-led during owner statement prep?",
+      question: "What should stay human-led when automating resident portal messages?",
       answer:
-        "Legal interpretation, disputed balances, owner-sensitive narratives, unusual reserve decisions, accounting edge cases, and any packet with unclear documentation should stay with trained staff.",
+        "Emergency judgment, legal interpretation, accommodation requests, payment disputes, resident complaints, owner-sensitive cases, and any unclear or emotionally charged situation should stay with trained staff.",
     },
     {
-      question: "How do property managers automate owner statements without sending bad information?",
+      question: "How do property managers automate portal messages without creating bad routing or compliance risk?",
       answer:
-        "The safest setup uses verified source data, fixed packet rules, required backup checks, manager review thresholds, and complete write-backs so the workflow handles repetitive assembly without improvising financial explanations.",
+        "The safest setup uses approved message categories, verified resident and unit context, clear escalation rules, human review thresholds, and full write-backs so automation handles repetitive triage without improvising policy or legal answers.",
     },
   ],
   related: [
-    "property-management-owner-reporting-automation",
-    "property-management-maintenance-invoice-automation",
-    "property-management-owner-approval-workflow",
+    "property-management-maintenance-intake-automation",
     "property-management-delinquency-outreach-automation",
+    "property-management-lease-violation-follow-up-automation",
+    "property-management-crm-workflow-automation",
     "reduce-administrative-workload-property-management",
-    "owner-updates-property-management-automation",
-    "property-management-work-order-closeout-automation",
+    "property-management-maintenance-status-update-automation",
+    "salesforce-fin-property-management-service-workflows",
   ],
   socialImage:
-    "/blog/social-assets/property-management-owner-statement-automation.png",
-  body: `An owner statement should not become a monthly reconstruction project.
+    "/blog/social-assets/property-management-resident-portal-message-automation.png",
+  body: `A resident portal inbox should not become a second operating system.
 
-Accounting has the export. Operations has context on open delinquency. Maintenance has a late invoice. Leasing has a concession note that affects the story. Someone is still confirming whether a reserve draw was already approved. By the time the statement packet is almost ready, the team is still piecing together which explanations actually need to go to the owner.
+One resident sends a maintenance complaint with no unit number. Another asks about a balance that already changed this morning. A third replies to an old portal thread with a new lease concern. By lunch, the team is forwarding messages, copying notes into the PMS, and trying to remember which conversation already became a work order, delinquency task, or manager callback.
 
-For operators managing 50 or more units, owner statements become a quiet administrative drain. They pull accounting, operations, and managers into repetitive reconciliation work, create inconsistent owner communication, and increase risk because the full month-end record never stays in one place.
+For operators managing 50 or more units, resident portal messages become a quiet administrative drain. They pull leasing, maintenance, accounting, and managers into repetitive triage work, create inconsistent response times, and increase risk because the full conversation record never stays attached to the workflow that should own it.
 
-## Why owner statement prep breaks down
+## Why portal message handling breaks down
 
 The pattern is usually predictable:
 
-- accounting exports the financials, but the operating context for variances, delinquency, make-ready overages, and reserve activity lives in other systems
-- late invoices and approval-sensitive charges surface after the first draft, so staff keep patching the packet instead of reviewing one controlled workflow
-- owners ask the same month-end questions because explanations were rewritten manually and never tied back to the source record
-- managers spend time reconstructing why a number changed before they can approve the final packet
-- statement deadlines sit on somebody's calendar instead of inside a workflow the whole team can see
+- different resident issues land in the same portal inbox even though they belong to different workflows
+- staff manually decide whether a message should become a maintenance request, delinquency follow-up, manager task, or general reply
+- residents send partial information, so teams waste time asking the same clarifying questions over and over
+- replies get handled in the inbox, but the PMS, CRM, or work-order record never reflects the latest conversation
+- managers lose visibility into which messages are still unresolved because the queue looks full even when half the threads are waiting on residents
 
-This is not mainly an accounting issue. It is a workflow issue.
+This is not mainly an inbox discipline problem. It is a workflow problem.
 
-## What owner statement automation should actually do
+## What resident portal message automation should actually do
 
-The goal is not to let automation improvise financial explanations. The goal is to automate the repetitive coordination around a verified month-end statement file.
+The goal is not to let AI answer every resident question freely. The goal is to automate the repetitive intake, classification, and routing around approved message types.
 
 That means the workflow should:
 
-1. Start only after the verified month-end close trigger is created.
-2. Attach the property, owner, statement period, reserve position, and unresolved exceptions immediately.
-3. Pull accounting lines, invoice backup, delinquency notes, and operating explanations into one review path automatically.
-4. Track whether documentation is complete, whether variances need review, and whether the packet is ready before the send deadline hits.
-5. Escalate owner-sensitive, approval-heavy, or under-documented cases to a manager with the full timeline attached.
-6. Write every explanation, approval, and send event back to the operating record automatically.
+1. Start when a new portal message arrives from a verified resident thread.
+2. Attach the property, unit, resident, active lease status, and prior conversation history immediately.
+3. Classify the message into the right approved path such as maintenance, billing, delinquency, lease follow-up, move coordination, or general support.
+4. Ask for the one next missing detail automatically before a staff member has to chase it manually.
+5. Escalate emergencies, disputes, legal-risk issues, and policy-sensitive requests into a human queue with the full timeline attached.
+6. Write every message, task, and status change back to the operating record automatically.
 
-If that loop is clean, the team gains consistency without letting automation improvise judgment.
+If that loop is clean, the team gains speed and consistency without letting automation improvise judgment.
 
-## The statement checkpoints worth automating first
+## The portal inbox checkpoints worth automating first
 
-Most property management teams do not need AI writing freeform owner letters from scratch. They need a reliable sequence around the basics.
+Most property management teams do not need a resident-facing AI free-for-all. They need a reliable sequence around the basics.
 
 Start with:
 
-- verified accounting export and statement-period trigger
-- invoice backup, reserve activity, and delinquency notes tied to the same owner packet
-- approved variance categories and manager review thresholds
-- owner-sensitive charge and reserve checks before the send deadline
-- deadline-based escalation when documentation or approvals are still missing
-- write-backs for every explanation, approval, and delivered statement
+- verified resident, property, and unit matching on every portal thread
+- approved categories for maintenance, balance questions, delinquency replies, lease concerns, and general support
+- required-detail prompts when the message is missing issue type, urgency, access notes, or supporting context
+- task or record creation for the correct downstream workflow
+- exception routing for emergencies, disputes, accommodations, complaints, and legal-sensitive topics
+- write-backs so the PMS, CRM, and team queue reflect the same conversation state
 
-Those checkpoints remove a large amount of manual chasing while keeping explanations in the right hands.
+Those checkpoints remove a large amount of manual sorting while keeping sensitive decisions in the right hands.
 
 ## Where automation should stop
 
-Automation should coordinate the timeline, not make accounting or relationship calls.
+Automation should coordinate the first layer of the inbox, not replace human judgment.
 
-If the owner disputes a balance, the accounting treatment is unclear, a reserve decision needs judgment, legal timing is in question, or the documentation does not actually support the explanation, the workflow should stop and hand the case to staff with the evidence and communication history attached.
+If the resident raises a safety issue, disputes a charge, asks for an accommodation, reports a legal concern, or sends a message that does not fit an approved category, the workflow should stop and hand the case to staff with the full thread, resident history, and next recommended action attached.
 
 The objective is cleaner execution, not automated overreach.
 
 ## How EMC2Ops would implement it
 
-We would start by mapping how your team currently handles statement prep: where the close process begins, which accounting exports and invoice backup are required, how variances are explained, who owns the deadline, which exceptions should pause the workflow, and what conditions force manager review.
+We would start by mapping how portal messages reach your team today: which message types show up most often, what details staff always have to request, which workflows those messages should create or update, who owns each queue, and which situations should always force human review.
 
 From there we would define:
 
-1. The verified trigger that opens an owner-statement workflow.
-2. The required fields, exports, invoices, and variance evidence before automation can proceed.
-3. The approved review, approval, and escalation timing by property or owner rule.
-4. The write-backs that keep the accounting record, owner view, and internal timeline accurate.
-5. The reporting that shows whether statement prep is actually becoming faster and more consistent.
+1. The verified trigger that opens a portal-message workflow.
+2. The approved categories, prompts, and downstream routing rules.
+3. The escalation logic for emergency, compliance, payment, and owner-sensitive cases.
+4. The write-backs that keep the inbox, PMS, CRM, and work-order record aligned.
+5. The reporting that shows whether portal triage is actually removing admin load and improving response time.
 
-If owner statements still run on exports, spreadsheet stitching, and staff memory, this is a strong workflow to automate next.`,
+If resident portal messages still depend on forwarding, inbox tagging, and staff memory, this is a strong workflow to automate next.`,
 };
 
 function escapeHtml(value) {

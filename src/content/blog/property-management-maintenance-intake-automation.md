@@ -51,6 +51,7 @@ related:
   - "automate-dispatch-crm-sync-property-management"
   - "property-management-repair-approval-automation"
   - "property-management-maintenance-status-update-automation"
+  - "property-management-resident-portal-message-automation"
 ---
 
 The hardest maintenance calls often arrive when the office is closed. Without structured intake, the team wakes up to vague messages, missing photos, and unclear urgency.

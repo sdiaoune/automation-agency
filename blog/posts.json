@@ -413,6 +413,13 @@
     "meta": "Salesforce's agreement to buy Fin is a useful signal for property managers: renter and resident service now needs one tracked workflow across channels, not separate inboxes and callbacks."
   },
   {
+    "slug": "intent-beats-volume-property-management-leasing-workflows",
+    "pillar": "Leasing Automation",
+    "keyword": "intent beats volume property management",
+    "title": "Why 'Intent Beats Volume' Is the Better Leasing Lesson for Property Managers",
+    "meta": "A fresh real estate AI follow-up story points to a better operating rule for property managers: trigger leasing workflows from real renter intent, not larger outbound lists."
+  },
+  {
     "slug": "renters-market-property-management-leasing-follow-up",
     "pillar": "Leasing Automation",
     "keyword": "renter's market property management leasing follow up",
@@ -439,5 +446,12 @@
     "keyword": "property management owner statement automation",
     "title": "Property Management Owner Statement Automation: Stop Rebuilding Month-End Packets by Hand",
     "meta": "Learn how property managers can automate owner statement prep, variance follow-up, invoice checks, and approval routing without another month-end spreadsheet scramble."
+  },
+  {
+    "slug": "property-management-resident-portal-message-automation",
+    "pillar": "Resident Operations",
+    "keyword": "property management resident portal message automation",
+    "title": "Property Management Resident Portal Message Automation: Stop Letting the Inbox Run the Day",
+    "meta": "Learn how property managers can automate resident portal message triage, routing, follow-up, and CRM updates without letting the inbox drive the day."
   }
 ]

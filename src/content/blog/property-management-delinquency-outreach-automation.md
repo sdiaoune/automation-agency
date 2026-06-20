@@ -45,6 +45,7 @@ related:
   - "property-management-zapier-templates"
   - "property-management-ai-automation-vs-chatbots"
   - "property-management-lease-violation-follow-up-automation"
+  - "property-management-resident-portal-message-automation"
 socialImage: "/blog/social-assets/property-management-delinquency-outreach-automation.png"
 ---
 

@@ -675,6 +675,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a3634be9513262b4d2b051d",
       "linkedInPostedAt": "2026-06-20T06:35:52.869Z"
+    },
+    "property-management-resident-portal-message-automation": {
+      "imagePath": "blog/social-assets/property-management-resident-portal-message-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-resident-portal-message-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-20T19:37:24.354Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-20T19:37:24.851Z",
+      "replyId": "2068417956082483685",
+      "tweetId": "2068417954983604591",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a36ebf52ac8d3316c7ef099",
+      "linkedInPostedAt": "2026-06-20T19:37:35.559Z"
     }
   }
 }

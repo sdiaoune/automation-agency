@@ -43,6 +43,7 @@ related:
   - "property-management-move-out-automation"
   - "property-management-owner-reporting-automation"
   - "property-management-automation-tasks"
+  - "property-management-resident-portal-message-automation"
 socialImage: "/blog/social-assets/property-management-lease-violation-follow-up-automation.png"
 ---
 
