@@ -1,0 +1,41 @@
+---
+interface Props {
+  variant?: "landing" | "blog";
+}
+
+const { variant = "blog" } = Astro.props;
+---
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href={variant === "landing" ? "#" : "/"}>
+      <span class="mark">E²</span>
+      <span>EMC2Ops</span>
+    </a>
+    {
+      variant === "landing" ? (
+        <nav class="navlinks" aria-label="Primary">
+          <a href="#overview">What You Get</a>
+          <a href="/services/">Services</a>
+          <a href="/use-cases/">Use Cases</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="#proof">Proof</a>
+          <a href="/blog/">Blog</a>
+          <a href="/about/">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="#book" class="btn btn-primary">Request Workflow Audit</a>
+        </nav>
+      ) : (
+        <nav class="navlinks" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/services/">Services</a>
+          <a href="/use-cases/">Use Cases</a>
+          <a href="/integrations/">Integrations</a>
+          <a href="/blog/">Blog</a>
+          <a href="/about/">About</a>
+          <a class="btn btn-primary" href="/#book">Request a workflow audit</a>
+        </nav>
+      )
+    }
+  </div>
+</header>

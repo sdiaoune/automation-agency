@@ -1,0 +1,20 @@
+{
+  "heartbeat": "2026-06-18T17:32:02.111Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "4c42b6fc-5b3f-4bc1-8429-87503bc4eb6c",
+  "activity_id": "30baa78f-91d1-428b-a93e-78b754d3eb24",
+  "prospect_id": "650b7568-8fcb-4d67-b1c8-6e4a6bd09d2d",
+  "company_name": "Domino Realty Management",
+  "decision_maker": "Tory Takoma - Residential Property Manager",
+  "recipient_email": "tory.takoma@terracetrousdale.com",
+  "subject": "lost leads",
+  "sent_at": "2026-06-18T17:33:09.807733+00:00",
+  "daily_sent_count": 23,
+  "approved_queue_count": 7,
+  "approved_by_subject_after": {
+    "response time": 6,
+    "lost leads": 1
+  }
+}

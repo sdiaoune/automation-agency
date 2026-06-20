@@ -43,6 +43,7 @@ related:
   - "property-management-maintenance-invoice-automation"
   - "property-management-move-out-automation"
   - "property-management-make-ready-automation"
+  - "property-management-owner-statement-automation"
   - "property-management-security-deposit-return-automation"
   - "property-management-ai-automation-vs-chatbots"
 socialImage: "/blog/social-assets/property-management-owner-reporting-automation.png"

@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-17",
+  "slot": "midday",
+  "slug": "work-order-closeout-map",
+  "topic": "Work-order closeout map for property managers",
+  "hook": "If a work order only feels done when someone manually checks three systems, the closeout workflow is still broken.",
+  "captionInstagram": "Why do completed work orders still create resident callbacks for property managers?\n\nBecause many teams treat vendor completion like the end of the job when it is really the start of the closeout workflow. Practical property management automation should confirm the outcome, update the resident, write the record back, and route any exception before the ticket disappears into a false done state.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster intake. Maintenance intake automation, vendor routing, SMS updates, AI voice, and property management CRM automation should all feed one visible work-order path so completion status, resident communication, and follow-up do not split apart.\n\nIf your team still loses time to \"was this actually fixed?\" calls, stale work-order statuses, missing notes, or reopen requests that start from zero, the issue is not effort. The closeout workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk, maintenance, and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do completed work orders still create resident callbacks?\n\nBecause vendor completion is not the same thing as operational closeout. Property management automation should confirm the fix, update the resident, sync the status, and route reopen exceptions before the ticket gets marked done.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Maintenance workflow",
+      "title": "If a work order only feels done when someone manually checks three systems,",
+      "titleAccent": "the closeout workflow is still broken.",
+      "body": "A completed repair should create one trusted finish path across vendor notes, resident communication, CRM status, and any reopen exception instead of leaving staff to verify everything by hand.",
+      "footer": "Swipe for the 6 rules behind a cleaner work-order closeout",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Completion signal",
+      "title": "A vendor marked done should trigger a closeout check, not an automatic final status.",
+      "body": "Completion time, repair summary, photos, parts used, access issues, and follow-up flags should land before the work order gets treated as fully resolved.",
+      "footer": "Goal: done starts verification instead of skipping it",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Resident update",
+      "title": "The resident should hear what happened before they need to call back for status.",
+      "body": "Resolved, needs follow-up visit, waiting on part, or unable to access should route into the right update so the resident gets the next step without chasing the office.",
+      "footer": "Goal: completion creates a clear resident message fast",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Status truth",
+      "title": "Closed, pending, and needs-review should mean different operating states.",
+      "body": "A ticket should not say closed if the resident has not been updated, the invoice is missing, or the vendor flagged a return visit. Status has to drive the next action.",
+      "footer": "Goal: every label reflects a real operating condition",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Reopen path",
+      "title": "Repeat issues should reopen with context instead of starting from zero.",
+      "body": "Original issue, repair history, vendor notes, resident replies, and property context should stay attached so the second touch does not become another blind intake.",
+      "footer": "Goal: repeat tickets inherit the full repair timeline",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Owner visibility",
+      "title": "High-cost or recurring repairs should route to the right owner automatically.",
+      "body": "Approval thresholds, repeated failures, unit impact, and resident frustration signals should branch to operations or ownership before the pattern gets expensive.",
+      "footer": "Goal: exception cost becomes visible before it compounds",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "CRM write-back",
+      "title": "Every closeout event should sync before the next workflow fires.",
+      "body": "Final status, completion summary, responsible vendor, resident update sent, reopen flag, and next owner should write back immediately so staff are not rebuilding the record later.",
+      "footer": "Goal: one record shows completion, exception, and next step",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want maintenance closeout to create",
+      "titleAccent": "fewer callbacks and cleaner records?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make front-desk and maintenance handoffs easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-17-midday-work-order-closeout-map",
+  "renderedAt": "2026-06-17T23:28:53.035Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-17-midday-work-order-closeout-map/contact-sheet.png"
+}

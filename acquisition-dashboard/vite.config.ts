@@ -40,6 +40,15 @@ function socialPostApiPlugin(): Plugin {
           return
         }
 
+        if (request.url?.startsWith('/api/linkedin/')) {
+          const modulePath = new URL('./api/linkedin-auth.js', import.meta.url).href
+          const { default: handler } = (await import(modulePath)) as {
+            default: ApiHandler
+          }
+          await handler(request, response)
+          return
+        }
+
         next()
       })
     },

@@ -1,0 +1,78 @@
+{
+  "accounts_per_run": 6,
+  "tweets_per_account": 5,
+  "groups": [
+    {
+      "id": "leasing_signals",
+      "topic": "leasing response and conversion",
+      "accounts": [
+        {
+          "id": "16193228",
+          "username": "jayparsons",
+          "name": "Jay Parsons"
+        },
+        {
+          "id": "249021690",
+          "username": "TopherNOW",
+          "name": "Topher Stephenson"
+        },
+        {
+          "id": "18207142",
+          "username": "pslohmann",
+          "name": "Peter Lohmann"
+        },
+        {
+          "id": "1230621102981799937",
+          "username": "Jb2Investments",
+          "name": "Jonathan Barr"
+        },
+        {
+          "id": "1709530571058339840",
+          "username": "vrsapients",
+          "name": "VRSapients"
+        },
+        {
+          "id": "18585201",
+          "username": "mfinsiders",
+          "name": "Multifamily Insiders"
+        }
+      ]
+    },
+    {
+      "id": "ops_signals",
+      "topic": "maintenance and operations",
+      "accounts": [
+        {
+          "id": "250714983",
+          "username": "inMultifamily",
+          "name": "Multifamily Leadership"
+        },
+        {
+          "id": "30892036",
+          "username": "NAAhq",
+          "name": "National Apartment Association"
+        },
+        {
+          "id": "4150664172",
+          "username": "hemlane",
+          "name": "Hemlane"
+        },
+        {
+          "id": "1239667276623810560",
+          "username": "doorloopapp",
+          "name": "DoorLoop"
+        },
+        {
+          "id": "20797614",
+          "username": "AppFolio",
+          "name": "AppFolio"
+        },
+        {
+          "id": "20649364",
+          "username": "MFEmagazine",
+          "name": "MultifamilyExecutive"
+        }
+      ]
+    }
+  ]
+}

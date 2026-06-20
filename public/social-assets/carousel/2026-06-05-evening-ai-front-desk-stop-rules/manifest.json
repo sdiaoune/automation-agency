@@ -1,0 +1,137 @@
+{
+  "date": "2026-06-05",
+  "slot": "evening",
+  "slug": "ai-front-desk-stop-rules",
+  "topic": "AI front desk stop-rule checklist for property managers",
+  "hook": "If your automation never knows when to stop, your team will hate it.",
+  "captionInstagram": "What should property managers automate first if the team worries AI will create more cleanup?\n\nStart with the repeatable opener, but only if the workflow has stop rules. A practical AI front desk for property managers should know when a human reply takes over, when emergency maintenance or a sensitive exception needs escalation, when missed-call text-back or leasing follow-up automation should stop, and when property management CRM automation has already logged the outcome.\n\nThis is the difference between gimmicky property management automation and operator-safe automation. AI voice, SMS, leasing follow-up automation, maintenance intake automation, vendor routing, owner updates, and CRM workflows should reduce rework, not create parallel conversations.\n\nUse this carousel as a guardrail checklist for missed-call text-back, tenant intake, maintenance intake automation, property management CRM automation, owner updates, and vendor handoffs. If you cannot define the stop rules, the workflow is not ready to go live.\n\nEMC2Ops installs a done-for-you AI front desk for property managers in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and for remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #LeasingAutomation #CRMWorkflows #AIVoice",
+  "captionFacebook": "What stop rules does property management automation need?\n\nProperty management automation needs clear handoff rules before it goes live. An AI front desk for property managers should know when to stop messaging, when to escalate to staff, and when AI voice, SMS, missed-call text-back, leasing follow-up automation, maintenance intake automation, or property management CRM automation has already done its job.\n\nThat matters across leasing, tenant intake, maintenance, owner updates, vendor coordination, and CRM workflows. If the system keeps pushing after a human reply, ignores emergency signals, misses an opt-out, or keeps working after the record is already routed, the team ends up doing cleanup instead of getting leverage.\n\nThis carousel is a simple operator checklist you can use before launching AI voice, SMS, and CRM workflows. It is built for property management teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #MaintenanceAutomation #CRMWorkflows #LeasingFollowUp",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Operator guardrails",
+      "title": "If your automation never knows when to stop,",
+      "titleAccent": "your team will hate it.",
+      "body": "Property management automation should narrow the queue, not compete with staff across leasing, maintenance, owner updates, vendors, and CRM handoffs.",
+      "footer": "Swipe for the 6 stop rules",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Stop rule 01",
+      "kicker": "Human takeover",
+      "title": "The moment a human replies, the workflow should step out.",
+      "body": "Missed-call text-back, leasing follow-up automation, and tenant intake should stop the second a staff member takes the thread.",
+      "footer": "One owner. One conversation.",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Stop rule 02",
+      "kicker": "Sensitive context",
+      "title": "Policy-sensitive or upset conversations need a human lane.",
+      "body": "Leasing nuance, resident complaints, owner exceptions, and judgment-heavy replies should route to staff with the full history attached.",
+      "footer": "Do not force judgment calls through a script.",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Stop rule 03",
+      "kicker": "Safety first",
+      "title": "Emergency or safety signals should break the normal path.",
+      "body": "Gas smell. No heat. Active leak. Lockout risk. AI voice and SMS can gather facts fast, but the workflow should escalate immediately.",
+      "footer": "Urgency beats sequence timing.",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Stop rule 04",
+      "kicker": "Record ownership",
+      "title": "If the record is duplicate or unowned, stop and route.",
+      "body": "Property management CRM automation should resolve who owns the lead, request, or vendor follow-up before more messages go out.",
+      "footer": "Bad ownership creates parallel work.",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Stop rule 05",
+      "kicker": "Permission state",
+      "title": "No consent or an opt-out means the sequence ends.",
+      "body": "SMS workflows should respect the permission state, stop language, and channel rules before the team keeps nudging.",
+      "footer": "Protect the brand and the list.",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Stop rule 06",
+      "kicker": "Outcome complete",
+      "title": "Booked, routed, or logged means the workflow should close.",
+      "body": "Once the showing is booked, the maintenance request is routed, or the CRM handoff is complete, stop the chase and let the next owner work.",
+      "footer": "Completion is a stop rule too.",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Define the stop rules before you scale the workflow.",
+      "body": "That is how AI voice, SMS, missed-call text-back, leasing follow-up, and CRM workflows stay practical for property managers.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules",
+  "renderedAt": "2026-06-05T22:07:24.480Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-front-desk-stop-rules/contact-sheet.png"
+}

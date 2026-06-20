@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-15",
+  "slot": "midday",
+  "slug": "notice-to-vacate-handoff-map",
+  "topic": "Notice-to-vacate handoff map for property managers",
+  "hook": "If a notice to vacate still triggers a scramble, the handoff starts too late.",
+  "captionInstagram": "Why do notice-to-vacate workflows still create last-minute scrambling for property managers?\n\nBecause many teams treat the notice like a single update instead of the trigger for a full operating handoff. Practical property management automation should start the move-out clock, route the right owner, package resident context, and line up leasing, turn, and follow-up steps before the vacancy becomes expensive.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. SMS, AI voice, leasing follow-up automation, resident communication, and property management CRM automation should work as one clean system so every notice creates a planned handoff instead of scattered reminders.\n\nIf your team still loses time to unclear move-out dates, missing resident instructions, make-ready surprises, or leasing that starts after the unit is already empty, the issue is not effort. The handoff workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MoveOutAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do notice-to-vacate handoffs still turn into vacancy scrambling?\n\nBecause the notice often lands before the operating workflow is defined. Property management automation should start the move-out clock, route the right owner, and trigger leasing and turn prep before the unit goes dark.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MoveOutAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Move-out workflow",
+      "title": "If a notice to vacate still triggers a scramble,",
+      "titleAccent": "the handoff starts too late.",
+      "body": "A resident notice should launch one coordinated path across resident communication, leasing prep, turn planning, and CRM ownership before vacancy cost starts compounding.",
+      "footer": "Swipe for the 6 rules behind a cleaner notice-to-vacate handoff",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Clock start",
+      "title": "Every notice needs one confirmed move-out date the moment it lands.",
+      "body": "Submitted notice, lease-end alignment, resident confirmation, and policy exceptions should create one dated move-out record so the team is not working from conflicting timelines.",
+      "footer": "Goal: one notice creates one trusted move-out clock",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Resident path",
+      "title": "The resident should get the next steps automatically instead of waiting for manual follow-up.",
+      "body": "Instructions for keys, cleaning, utilities, photos, access, and final balance questions should route fast so the resident does not create avoidable back-and-forth.",
+      "footer": "Goal: one message sets the move-out expectation early",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Internal routing",
+      "title": "Leasing, maintenance, and operations should not learn about the vacancy at different times.",
+      "body": "Notice date, reason, unit, renewal outcome, showing limits, and turn expectations should branch into the right internal owners before the handoff goes stale.",
+      "footer": "Goal: every team sees the vacancy path at the same time",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Turn readiness",
+      "title": "Pre-turn planning should start before the unit is empty.",
+      "body": "Inspection timing, vendor hold, make-ready assumptions, and access rules should be packaged early so the unit does not sit idle while staff rebuild context.",
+      "footer": "Goal: make-ready starts from a prepared packet, not a scramble",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Leasing restart",
+      "title": "The marketing and showing lane should relaunch from the notice, not from memory.",
+      "body": "Availability timing, pricing review, unit condition notes, photo plan, and next leasing owner should be triggered before the team starts hunting for the status.",
+      "footer": "Goal: vacancy exposure starts early with clean ownership",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "CRM write-back",
+      "title": "Every move-out status change should land in the CRM before the next task fires.",
+      "body": "Notice received, target date, resident instructions sent, turn owner, leasing status, and exception notes should write back so nobody has to reconstruct the handoff later.",
+      "footer": "Goal: one record shows timing, owner, and next step",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want notice-to-vacate handoffs to create",
+      "titleAccent": "faster turns and cleaner leasing restarts?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make front-desk and operations handoffs easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map",
+  "renderedAt": "2026-06-15T20:02:49.932Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/contact-sheet.png"
+}

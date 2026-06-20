@@ -1,0 +1,23 @@
+{
+  "sent_count": 0,
+  "skipped_count": 0,
+  "replies_found": 0,
+  "bounces_found": 0,
+  "blockers": [
+    "No approved rows remained, and restock found no additional eligible send-ready local/dashboard records."
+  ],
+  "restock": {
+    "target_total": 30,
+    "sent_today_before": 29,
+    "approved_before": 0,
+    "desired_approved": 1,
+    "needed": 1,
+    "inserted": 0,
+    "approved_after_estimate": 0
+  },
+  "daily_send_count": 29,
+  "approved_queue_count": 0,
+  "next_due_date": "2026-06-20",
+  "next_approved": [],
+  "checked_at": "2026-06-20T18:02:23.886882+00:00"
+}

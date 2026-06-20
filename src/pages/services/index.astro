@@ -1,0 +1,73 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage } from "../../lib/site";
+import { servicePages, serviceUrl } from "../../lib/services";
+import "../../styles/service.css";
+
+const title = "Property Management Automation Services | EMC2Ops";
+const description =
+  "Explore EMC2Ops services for missed-call recovery, leasing follow-up, maintenance intake, CRM automation, owner updates, and vendor dispatch.";
+---
+
+<SiteLayout
+  title={title}
+  description={description}
+  canonical={absoluteUrl("/services/")}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt="EMC2Ops property management automation service workflow."
+  pageClass="service-page"
+>
+  <SiteHeader />
+  <main>
+    <section class="service-hero">
+      <div class="wrap">
+        <p class="eyebrow">Services</p>
+        <h1>Property management automation services built around real operating workflows.</h1>
+        <p class="dek">
+          Start with one measurable workflow, then expand once it proves useful for leasing,
+          maintenance, owner communication, vendor coordination, or CRM cleanup.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap service-grid-section">
+      <div class="service-grid">
+        {
+          servicePages.map((service) => (
+            <article class="service-card">
+              <span>{service.eyebrow}</span>
+              <h2><a href={serviceUrl(service)}>{service.title}</a></h2>
+              <p>{service.description}</p>
+              <a class="read-more" href={serviceUrl(service)}>View service</a>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="wrap detail-section">
+      <h2>Popular use cases</h2>
+      <div class="related-links">
+        <a href="/use-cases/apartment-lead-tracking/">
+          <strong>Apartment lead tracking</strong>
+          <span>Lead source, qualification, ownership, and CRM next steps</span>
+        </a>
+        <a href="/use-cases/lead-to-lease-automation/">
+          <strong>Lead-to-lease automation</strong>
+          <span>Inquiry, tour, application, approval, and move-in handoff</span>
+        </a>
+        <a href="/use-cases/how-to-automate-property-management/">
+          <strong>How to automate property management</strong>
+          <span>Start with one measurable workflow and expand from there</span>
+        </a>
+        <a href="/use-cases/real-estate-crm-follow-up-mess/">
+          <strong>CRM follow-up cleanup</strong>
+          <span>Fix stages, notes, tasks, duplicates, and ownership rules</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</SiteLayout>

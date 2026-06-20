@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-05",
+  "slot": "morning",
+  "topic": "How property managers should choose the first workflow to automate",
+  "hook": "Your first automation should be boring.",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-7.png"
+  ],
+  "captions": {
+    "instagram": "What is an AI front desk for property managers?\n\nIt is a practical layer of AI voice, SMS, and CRM workflows that handles the first response, captures context, routes the conversation, and logs the next step before your team has to chase it manually.\n\nIf you are evaluating property management automation, do not start with the most complex workflow. Start with the most repetitive one. The best first wins usually come from missed-call text-back, leasing follow-up automation, maintenance intake automation, or property management CRM automation.\n\nUse the 4-question test in this carousel:\n1. Does it happen every day?\n2. Is the first reply mostly the same?\n3. Can it end as booked, routed, or logged?\n4. Can exceptions reach a human fast?\n\nThat is where an AI front desk for property managers works best: high-volume conversations with a predictable opening and a clean handoff. Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S. are all dealing with the same pressure: faster response times without more admin overhead.\n\nIf you want help mapping AI voice, SMS, and CRM workflows around leasing, tenant intake, maintenance, owner updates, vendor routing, or CRM handoffs, book a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #AIFrontDesk #LeasingAutomation #MaintenanceAutomation #CRMWorkflows",
+    "facebook": "What is property management automation?\n\nProperty management automation is the use of AI voice, SMS, and CRM workflows to handle repetitive front-desk work such as missed-call text-back, leasing follow-up automation, maintenance intake automation, owner update routing, vendor coordination, and property management CRM automation.\n\nOne mistake teams make is trying to automate the hardest workflow first. A better approach is to score each candidate workflow on four operator questions:\n1. High volume\n2. Predictable opening\n3. Clear outcome\n4. Fast human escalation\n\nIf a workflow scores 4 out of 4, it is a strong first project. That is why many property managers start with missed-call text-back, leasing follow-up automation, maintenance intake automation, or clean CRM handoffs before moving into more nuanced conversations.\n\nWe support teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #AIFrontDesk #CRMWorkflows #LeasingFollowUp"
+  }
+}

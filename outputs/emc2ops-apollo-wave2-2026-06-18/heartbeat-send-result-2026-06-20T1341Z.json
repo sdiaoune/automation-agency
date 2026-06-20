@@ -1,0 +1,17 @@
+{
+  "sent_count": 1,
+  "skipped_count": 0,
+  "replies_found": 0,
+  "restocked_count": 0,
+  "daily_send_count": 5,
+  "approved_queue_count": 24,
+  "approval_id": "a5a80f40-9f63-47c9-9136-da5cda938382",
+  "prospect_id": "69328c53-f4e2-4a6c-85a2-b9519f50ebf0",
+  "recipient_email": "christine@simplyres.com",
+  "subject": "lost leads",
+  "sent_at": "2026-06-20T13:43:02.540141+00:00",
+  "activity_id": "e3554ff7-fbf7-4ff7-9b06-33a8aa09d532",
+  "next_due_date": "2026-06-20",
+  "blockers": [],
+  "outlook_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_1AAA="
+}

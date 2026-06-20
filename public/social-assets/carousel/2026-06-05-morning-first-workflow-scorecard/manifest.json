@@ -1,0 +1,122 @@
+{
+  "date": "2026-06-05",
+  "slot": "morning",
+  "slug": "first-workflow-scorecard",
+  "topic": "How property managers should choose the first workflow to automate",
+  "hook": "Do not automate everything first. Score these 5 factors instead.",
+  "captionInstagram": "What is an AI front desk for property managers? It is a practical layer of AI voice, SMS, and CRM workflows that captures routine intake, routes the next step, and logs the conversation so your team does not start from scratch.\n\nIf you are evaluating property management automation, do not start by asking, \"What can AI do?\" Start by asking, \"Which workflow breaks every day and follows clear rules?\"\n\nUse this scorecard across five workflow candidates:\n1. Missed-call text-back\n2. Leasing follow-up automation\n3. Maintenance intake automation\n4. Property management CRM automation\n5. Owner or vendor routing\n\nScore each workflow from 1-5 on:\n- Volume\n- Delay cost\n- Rule clarity\n- Handoff pain\n- System fit\n\nThe best first workflow is usually the one your team repeats every day, loses time on when it waits, and can route with clear rules. That is why many property teams start with missed-call text-back, leasing follow-up automation, maintenance intake automation, or CRM workflows before they attempt anything more complex.\n\nEMC2Ops builds a done-for-you AI front desk for property managers with AI voice, SMS, and CRM workflows. We help teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIVoice #LeasingAutomation #CRMWorkflows #PropTech",
+  "captionFacebook": "What is an AI front desk for property managers? It is a practical system of AI voice, SMS, and CRM workflows that handles routine intake, captures the right details, routes the next step, and logs the conversation for your team.\n\nWhen property management owners and operators ask where to begin with property management automation, the best answer is not \"automate everything.\" The best answer is to score the workflow that is high-volume, expensive to delay, easy to route with clear rules, painful to hand off manually, and realistic to connect to your current system.\n\nThis carousel gives a simple framework you can use for missed-call text-back, leasing follow-up automation, maintenance intake automation, property management CRM automation, owner updates, and vendor routing.\n\nIf your team is juggling AI voice, SMS, and CRM workflows across Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, or remote teams across the U.S., this is the first conversation to have before buying another tool.\n\nEMC2Ops installs a done-for-you AI front desk for property managers. Book a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIVoice #MaintenanceAutomation #LeasingFollowUp #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Property management owners + operators",
+      "title": "Do not automate everything first.",
+      "titleAccent": "Score these 5 factors instead.",
+      "body": "The best first workflow is the one your team repeats every day, loses time on when it waits, and can route with clear rules.",
+      "footer": "Swipe for the scorecard",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "Factor 01",
+      "kicker": "Volume",
+      "title": "If it shows up every day, it belongs on the shortlist.",
+      "body": "Missed calls, leasing follow-up, maintenance intake, CRM logging, and vendor handoffs are strong candidates because the work repeats.",
+      "footer": "Higher repeat volume = better first workflow",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Factor 02",
+      "kicker": "Delay cost",
+      "title": "The best first workflow gets expensive when it waits.",
+      "body": "Cold leads, stalled maintenance requests, and owner status chasers all create drag when the first response depends on voicemail or manual follow-up.",
+      "footer": "Ask: what breaks when nobody answers fast?",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Factor 03",
+      "kicker": "Rule clarity",
+      "title": "Good first automations follow obvious rules.",
+      "body": "Collect basics. Route the request. Log the outcome. Escalate exceptions. If the path is clear, AI voice, SMS, and CRM workflows are easier to install safely.",
+      "footer": "Routine steps first. Edge cases later.",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Factor 04",
+      "kicker": "Handoff pain",
+      "title": "If your team has to retype it, chase it, or ask twice, score it higher.",
+      "body": "Manual CRM updates, missing unit details, duplicate follow-up, and vendor back-and-forth are all signs the handoff is the real bottleneck.",
+      "footer": "Bad handoffs are automation opportunities",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Factor 05",
+      "kicker": "System fit",
+      "title": "Start where your current stack can actually move.",
+      "body": "Choose the workflow with the clearest trigger, the cleanest next action, and the simplest path into your phone, inbox, CRM, or work-order process.",
+      "footer": "Simple connection points beat ambitious diagrams",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "The scorecard",
+      "kicker": "Save this",
+      "title": "Score each workflow from 1 to 5.",
+      "body": "Volume\nDelay cost\nRule clarity\nHandoff pain\nSystem fit\n\nStart with the highest total. For many teams, that is missed-call text-back, leasing follow-up, maintenance intake, or CRM logging.",
+      "footer": "Book a 15-minute workflow audit at emc2ops.com",
+      "visual": "grid"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard",
+  "renderedAt": "2026-06-05T14:39:02.830Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-morning-first-workflow-scorecard/contact-sheet.png"
+}

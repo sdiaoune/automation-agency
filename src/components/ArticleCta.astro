@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  top?: boolean;
+}
+
+const { title, description, top = false } = Astro.props;
+---
+
+<section class:list={["article-cta", { "top-cta": top }]}>
+  <div>
+    <strong>{title}</strong>
+    <span>{description}</span>
+  </div>
+  <a class="btn btn-primary" href="/#book">Request a workflow audit</a>
+</section>

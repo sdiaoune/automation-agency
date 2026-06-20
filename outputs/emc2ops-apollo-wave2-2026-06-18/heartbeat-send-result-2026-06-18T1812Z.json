@@ -1,0 +1,19 @@
+{
+  "heartbeat": "2026-06-18T18:12:02.300Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "5b221755-be3e-4fbc-9124-485145282d20",
+  "activity_id": "77d2ed63-50ed-4738-9585-590667dc6b30",
+  "prospect_id": "2972981d-df27-463c-bde0-ebf39c88b596",
+  "company_name": "Landmark Real Estate Management",
+  "decision_maker": "Heather Vermaat - Experienced Residential Property Manager",
+  "recipient_email": "heather@visitlandmark.com",
+  "subject": "response time",
+  "sent_at": "2026-06-18T18:13:04.368705+00:00",
+  "daily_sent_count": 27,
+  "approved_queue_count": 3,
+  "approved_by_subject_after": {
+    "response time": 3
+  }
+}

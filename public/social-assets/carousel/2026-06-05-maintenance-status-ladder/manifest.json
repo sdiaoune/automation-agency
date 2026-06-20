@@ -1,0 +1,76 @@
+{
+  "date": "2026-06-05",
+  "slug": "maintenance-status-ladder",
+  "topic": "Maintenance status ladder",
+  "hook": "If residents keep asking \"Any update?\", automate these 6 status triggers.",
+  "caption": "What is maintenance intake automation for property managers? It is a workflow that captures the request, triages urgency, sends the right resident update, and routes the next step without manual chasing.\n\nA lot of property management automation value shows up after the request is submitted, not just at intake. When an AI front desk for property managers connects AI voice, SMS, and CRM workflows, the team can confirm receipt, separate emergency paths, handle maintenance intake automation, and send verified status messages before the resident has to call again.\n\nThis is where missed-call text-back logic, maintenance intake automation, vendor routing, and property management CRM automation start working together. The goal is not to automate every conversation. The goal is to automate the repeatable status ladder and escalate exceptions with the full timeline attached.\n\nEMC2Ops works with property teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S. that need practical operating workflows instead of generic AI tools.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Maintenance ops",
+      "title": "If residents keep asking",
+      "titleAccent": "\"Any update?\", automate these 6 status triggers.",
+      "body": "Maintenance teams lose hours when every status check turns into a fresh call, text, or inbox thread.",
+      "footer": "Swipe for the status ladder",
+      "visual": "ladder"
+    },
+    {
+      "eyebrow": "Trigger 01",
+      "kicker": "Request received",
+      "title": "Send confirmation the moment the request lands.",
+      "body": "Residents want to know it was received, what was captured, and what happens next. Silence creates repeat calls.",
+      "footer": "Automate request received.",
+      "visual": "inbox"
+    },
+    {
+      "eyebrow": "Trigger 02",
+      "kicker": "Triage",
+      "title": "Separate emergency triage from routine work early.",
+      "body": "AI voice or SMS should collect issue type, urgency signals, access notes, unit details, and photos when supported.",
+      "footer": "Do not route blind.",
+      "visual": "shield"
+    },
+    {
+      "eyebrow": "Trigger 03",
+      "kicker": "Assignment",
+      "title": "Tell the resident when the job has an owner.",
+      "body": "Under review, assigned, waiting on vendor response, or waiting on approval are different states. Message the real one.",
+      "footer": "Verified status only.",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Trigger 04",
+      "kicker": "Scheduling",
+      "title": "Make scheduling updates useful, not vague.",
+      "body": "If access is needed, say it. If a window is proposed, confirm it. If the vendor needs details, ask once and log the reply.",
+      "footer": "Use the workflow record as the source of truth.",
+      "visual": "calendar"
+    },
+    {
+      "eyebrow": "Trigger 05",
+      "kicker": "Delay handling",
+      "title": "Delays need a controlled holding message.",
+      "body": "Approval holds, parts delays, and reschedules should send a short update with the next expected step instead of forcing the resident to chase the office.",
+      "footer": "Bad delay messaging multiplies inbound noise.",
+      "visual": "signal"
+    },
+    {
+      "eyebrow": "Trigger 06",
+      "kicker": "Closeout",
+      "title": "Completion should trigger a clean closeout check.",
+      "body": "Confirm the work order status, capture unresolved issues, and suppress auto-close messages when the repair is partial or sensitive.",
+      "footer": "Completion without confirmation creates reopen loops.",
+      "visual": "checklist"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute audit",
+      "title": "Automate the status ladder,",
+      "titleAccent": "not every conversation.",
+      "body": "Use automation for verified events. Escalate complaints, habitability issues, and judgment-heavy cases to staff with the full timeline attached.",
+      "footer": "Book a 15-minute workflow audit at emc2ops.com.",
+      "visual": "cta"
+    }
+  ],
+  "directory": "2026-06-05-maintenance-status-ladder"
+}

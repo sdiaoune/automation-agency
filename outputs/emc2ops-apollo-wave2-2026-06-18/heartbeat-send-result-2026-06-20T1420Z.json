@@ -1,0 +1,45 @@
+{
+  "heartbeat": "2026-06-20T14:20:52.612Z",
+  "sent_count": 1,
+  "skipped_count": 0,
+  "replies_found": 0,
+  "blockers": [],
+  "restocked_count": 0,
+  "daily_send_count": 9,
+  "approved_queue_count": 20,
+  "approval": {
+    "id": "1bddc5be-f5e6-4fb8-9733-1eb8f0cd640a",
+    "owner_id": "3b39a282-3404-4b8c-85c4-b0b5403cf344",
+    "prospect_id": "7806b212-9bf9-40fc-ae81-552a659ce807",
+    "recipient_email": "kbraxton@standardmanagement.com",
+    "subject": "response time",
+    "body": "Hey Keondra,\n\nI noticed Standard Asset Management & Investments has renter-facing leasing paths where speed matters: phone, listings, portals, or online inquiries.\n\nQuick question: when a renter calls and no one can answer, how quickly do they get a useful next step?\n\nI help property managers tighten that first response window: missed call -> instant text-back -> a few fit/timing questions -> routed summary for the team.\n\nWorth seeing where the slowest handoff might be for Standard Asset Management & Investments?\n\nDiaoune\nEMC2Ops",
+    "activity_type": "cold_email",
+    "status": "sent",
+    "approved_at": "2026-06-20T13:02:03.770354+00:00",
+    "sent_at": "2026-06-20T14:22:00.367286+00:00",
+    "provider_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_5AAA=",
+    "last_error": "",
+    "created_at": "2026-06-20T13:02:04.82459+00:00",
+    "updated_at": "2026-06-20T14:22:00.374736+00:00"
+  },
+  "prospect": {
+    "id": "7806b212-9bf9-40fc-ae81-552a659ce807",
+    "company_name": "Standard Asset Management & Investments",
+    "email": "kbraxton@standardmanagement.com",
+    "stage": "contacted",
+    "next_follow_up_date": "2026-06-23"
+  },
+  "activity": {
+    "id": "64f77087-9982-42c8-a522-6804a3567c4f",
+    "owner_id": "3b39a282-3404-4b8c-85c4-b0b5403cf344",
+    "prospect_id": "7806b212-9bf9-40fc-ae81-552a659ce807",
+    "activity_type": "cold_email",
+    "occurred_on": "2026-06-20",
+    "outcome": "sent",
+    "notes": "Sent approved EMC2Ops Speed-to-Lead Response cold email via Outlook Email connector to kbraxton@standardmanagement.com. Approval 1bddc5be-f5e6-4fb8-9733-1eb8f0cd640a. Sender: soya@GetEMC2Ops.com. Subject: response time. Outlook message id AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_5AAA=.",
+    "created_at": "2026-06-20T14:22:00.90568+00:00"
+  },
+  "outlook_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_5AAA=",
+  "next_due_date": "2026-06-20"
+}

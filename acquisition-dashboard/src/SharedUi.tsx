@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react'
 
-export function DraftInput<T extends Record<string, string | number>>({
+type DraftValue = string | number | readonly string[]
+
+export function DraftInput<T extends Record<string, DraftValue>>({
   className,
   draft,
   field,
@@ -32,7 +34,7 @@ export function DraftInput<T extends Record<string, string | number>>({
   )
 }
 
-export function DraftTextArea<T extends Record<string, string | number>>({
+export function DraftTextArea<T extends Record<string, DraftValue>>({
   draft,
   field,
   label,

@@ -1,0 +1,20 @@
+{
+  "sent": true,
+  "approval_id": "221924d4-81a5-4a59-ae14-00a8abfb0abf",
+  "recipient_email": "brian@bornpm.com",
+  "company_name": "Born Property Management",
+  "sent_at": "2026-06-18T13:42:28.568759+00:00",
+  "activity_id": "5e2d9d07-ea76-4e57-a8c6-8f5c23b0ca82",
+  "prospect_id": "37466be9-d075-4141-b8e7-d3f61ff82586",
+  "daily_send_count_after": 5,
+  "remaining_approved_count": 1,
+  "remaining_approved": [
+    {
+      "id": "c9c8369a-abd6-4824-8f92-ecf2c5eac6f3",
+      "recipient_email": "bennettmanager@brazosresidentialmgmt.com",
+      "subject": "lost leads",
+      "status": "approved",
+      "created_at": "2026-06-18T13:02:12.153608+00:00"
+    }
+  ]
+}

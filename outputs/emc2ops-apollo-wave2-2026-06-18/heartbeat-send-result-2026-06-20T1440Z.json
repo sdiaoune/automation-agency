@@ -1,0 +1,45 @@
+{
+  "heartbeat": "2026-06-20T14:40:22.642Z",
+  "sent_count": 1,
+  "skipped_count": 0,
+  "replies_found": 0,
+  "blockers": [],
+  "restocked_count": 0,
+  "daily_send_count": 11,
+  "approved_queue_count": 18,
+  "approval": {
+    "id": "e0a93c09-6ac3-4f47-b471-65763828d549",
+    "owner_id": "3b39a282-3404-4b8c-85c4-b0b5403cf344",
+    "prospect_id": "2b5d84f0-e170-426a-b9b7-09228dfe7730",
+    "recipient_email": "mark@plazamanagementny.com",
+    "subject": "lost leads",
+    "body": "Mark,\n\nI noticed Plaza Management USA Inc has renter-facing leasing paths where missed calls or slow follow-up can quietly turn into lost showing opportunities.\n\nQuick question: do you have a clean way to see which leasing inquiries disappear before the team can respond?\n\nI build a narrow recovery workflow for property managers: missed call -> instant text-back -> qualification -> routed showing request or team summary.\n\nThe point is not more software. It is recovering the leads that would otherwise go cold.\n\nWorth a quick teardown for Plaza Management USA Inc?\n\nDiaoune\nEMC2Ops",
+    "activity_type": "cold_email",
+    "status": "sent",
+    "approved_at": "2026-06-20T13:02:03.770354+00:00",
+    "sent_at": "2026-06-20T14:41:34.746032+00:00",
+    "provider_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_7AAA=",
+    "last_error": "",
+    "created_at": "2026-06-20T13:02:04.82459+00:00",
+    "updated_at": "2026-06-20T14:41:34.752616+00:00"
+  },
+  "prospect": {
+    "id": "2b5d84f0-e170-426a-b9b7-09228dfe7730",
+    "company_name": "Plaza Management USA Inc",
+    "email": "mark@plazamanagementny.com",
+    "stage": "contacted",
+    "next_follow_up_date": "2026-06-23"
+  },
+  "activity": {
+    "id": "a958bdc0-66c3-405f-b7ad-f4c9b5eb28c7",
+    "owner_id": "3b39a282-3404-4b8c-85c4-b0b5403cf344",
+    "prospect_id": "2b5d84f0-e170-426a-b9b7-09228dfe7730",
+    "activity_type": "cold_email",
+    "occurred_on": "2026-06-20",
+    "outcome": "sent",
+    "notes": "Sent approved EMC2Ops Revenue Recovery from Lost Leads cold email via Outlook Email connector to mark@plazamanagementny.com. Approval e0a93c09-6ac3-4f47-b471-65763828d549. Sender: soya@GetEMC2Ops.com. Subject: lost leads. Outlook message id AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_7AAA=.",
+    "created_at": "2026-06-20T14:41:35.489037+00:00"
+  },
+  "outlook_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_7AAA=",
+  "next_due_date": "2026-06-20"
+}

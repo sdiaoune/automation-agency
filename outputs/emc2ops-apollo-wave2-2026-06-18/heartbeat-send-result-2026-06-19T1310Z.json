@@ -1,0 +1,13 @@
+{
+  "approval_id": "20c00fcd-7e46-4f66-bbaf-74e80745d770",
+  "sent": true,
+  "sent_at": "2026-06-19T13:12:10Z",
+  "activity_id": "30bc6be1-6868-40f2-884f-a755df59aa8d",
+  "prospect_id": "2ddddf80-024f-43ab-8303-5db33919f552",
+  "company": "First Class Realty & Property Management",
+  "contact_name": null,
+  "recipient_email": "allison@fcpmnc.com",
+  "subject": "missed calls",
+  "daily_sent_count": 2,
+  "approved_queue_count": 28
+}

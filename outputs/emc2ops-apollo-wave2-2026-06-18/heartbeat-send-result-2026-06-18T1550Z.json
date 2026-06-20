@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-06-18T15:51:41.282124+00:00",
+  "approval_id": "c7c963fd-3bdd-44ea-a04d-5f60267a9ab7",
+  "sent": true,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0,
+  "sent_at": "2026-06-18T15:51:43.845138+00:00",
+  "recipient_email": "hal@henrysmiller.com",
+  "subject": "lost leads",
+  "company": "Essentials Residential Property Management",
+  "prospect_id": "6cbcbfcd-7403-4f23-83c0-b2c8a2bbfa1f",
+  "activity_id": "530f8683-faa9-4e6d-9e95-5aaf2a2659a1",
+  "daily_sent_count": 13,
+  "approved_queue_count": 17,
+  "approved_by_subject_after": {
+    "response time": 10,
+    "missed calls": 2,
+    "lost leads": 5
+  }
+}

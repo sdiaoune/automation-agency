@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-06-18T15:32:29.917623+00:00",
+  "approval_id": "74631297-2e0e-4eed-9c63-6356febd4740",
+  "sent": true,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0,
+  "sent_at": "2026-06-18T15:32:32.580356+00:00",
+  "recipient_email": "lori@dennisrealty.com",
+  "subject": "missed calls",
+  "company": "Dennis Property Management",
+  "prospect_id": "4f7ab685-c911-434e-9217-52469114070e",
+  "activity_id": "941720ad-5f25-408d-a8a3-f7ae93d55e7c",
+  "daily_sent_count": 11,
+  "approved_queue_count": 19,
+  "approved_by_subject_after": {
+    "lost leads": 6,
+    "response time": 11,
+    "missed calls": 2
+  }
+}

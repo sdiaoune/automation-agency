@@ -1,0 +1,116 @@
+---
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { aboutPageSchema, absoluteUrl, defaultSocialImage } from "../lib/site";
+import "../styles/service.css";
+
+const title = "About EMC2Ops | AI Front Desk Workflows for Property Managers";
+const description =
+  "EMC2Ops builds AI front desk and workflow automation systems for property management companies that need faster leasing, maintenance, owner, vendor, and CRM handoffs.";
+---
+
+<SiteLayout
+  title={title}
+  description={description}
+  canonical={absoluteUrl("/about/")}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt="EMC2Ops AI front desk workflow for property management teams."
+  schema={aboutPageSchema()}
+  pageClass="service-page"
+>
+  <SiteHeader />
+  <main>
+    <section class="service-hero">
+      <div class="wrap">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a><span>/</span>About
+        </nav>
+        <p class="eyebrow">About EMC2Ops</p>
+        <h1>AI front desk workflows for property managers who need cleaner handoffs.</h1>
+        <p class="dek">
+          EMC2Ops installs practical automation around the work property teams repeat every day:
+          missed calls, leasing follow-up, maintenance intake, owner updates, vendor routing, and CRM
+          logging.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#book">Request a workflow audit</a>
+          <a class="btn btn-secondary" href="/use-cases/">View use cases</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap split-section">
+      <div>
+        <h2>What EMC2Ops does</h2>
+        <p>
+          EMC2Ops builds done-for-you AI voice, SMS, routing, and CRM workflows for property
+          management companies. The goal is not to replace the team. The goal is to make the team
+          faster by handling repetitive intake, reminders, summaries, status updates, and system
+          logging.
+        </p>
+        <p>
+          The first workflow is intentionally narrow so it can be launched, measured, and improved:
+          a missed-call text-back, a leasing follow-up sequence, a maintenance intake path, a CRM
+          logging rule, or an owner update workflow.
+        </p>
+      </div>
+      <div class="check-list">
+        <div><span>✓</span><p>Built for property managers, multifamily teams, and rental operators.</p></div>
+        <div><span>✓</span><p>Designed around existing CRMs, phone systems, inboxes, calendars, and work order processes.</p></div>
+        <div><span>✓</span><p>Uses human review gates for approvals, emergencies, fair housing concerns, money, and sensitive conversations.</p></div>
+        <div><span>✓</span><p>Measures response speed, booked next steps, CRM completeness, and manual work removed.</p></div>
+      </div>
+    </section>
+
+    <section class="wrap detail-section">
+      <h2>Operating principles</h2>
+      <ol class="step-list">
+        <li>Start with the workflow, not the AI tool.</li>
+        <li>Define the trigger, required context, stop rule, and exception path before launch.</li>
+        <li>Write useful CRM outcomes, not noisy raw transcripts.</li>
+        <li>Keep approvals and sensitive decisions with humans.</li>
+      </ol>
+    </section>
+
+    <section class="wrap detail-section">
+      <h2>Where EMC2Ops fits</h2>
+      <div class="related-links">
+        <a href="/services/missed-call-recovery/">
+          <strong>Missed-call recovery</strong>
+          <span>Respond to leasing calls with instant text-back and routing.</span>
+        </a>
+        <a href="/services/leasing-follow-up/">
+          <strong>Leasing follow-up</strong>
+          <span>Recover stale leads, no-shows, and unfinished renter next steps.</span>
+        </a>
+        <a href="/services/maintenance-intake-automation/">
+          <strong>Maintenance intake</strong>
+          <span>Collect issue details, urgency, access notes, and routing context.</span>
+        </a>
+        <a href="/services/crm-workflow-automation/">
+          <strong>CRM workflow automation</strong>
+          <span>Sync summaries, tasks, stages, tags, and ownership updates.</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="wrap split-section">
+      <div>
+        <h2>Contact and credibility signals</h2>
+        <p>
+          EMC2Ops publishes detailed property management automation guides, use-case pages, RSS,
+          machine-readable agent files, OpenAPI documentation for exposed website endpoints, and
+          structured data so both search engines and AI systems can understand the business clearly.
+        </p>
+      </div>
+      <div class="check-list">
+        <div><span>✓</span><p>Email: <a href="mailto:hello@emc2ops.com">hello@emc2ops.com</a></p></div>
+        <div><span>✓</span><p>LinkedIn: <a href="https://www.linkedin.com/company/emc2ops/">EMC2Ops</a></p></div>
+        <div><span>✓</span><p>X: <a href="https://x.com/EMC2Ops">@EMC2Ops</a></p></div>
+        <div><span>✓</span><p>YouTube: <a href="https://www.youtube.com/@EMC2Ops">@EMC2Ops</a></p></div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</SiteLayout>

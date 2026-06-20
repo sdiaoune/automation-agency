@@ -1,0 +1,105 @@
+---
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage, legalPageSchema } from "../lib/site";
+import "../styles/service.css";
+
+const title = "Privacy Policy | EMC2Ops";
+const description =
+  "Privacy policy for EMC2Ops website visitors, workflow audit requests, newsletter subscribers, and business contacts.";
+const updatedAt = "2026-06-20";
+---
+
+<SiteLayout
+  title={title}
+  description={description}
+  canonical={absoluteUrl("/privacy/")}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt="EMC2Ops property management automation workflow."
+  schema={legalPageSchema({
+    path: "/privacy/",
+    title,
+    description,
+    pageType: "PrivacyPolicy",
+    updatedAt,
+  })}
+  pageClass="service-page"
+>
+  <SiteHeader />
+  <main>
+    <section class="service-hero">
+      <div class="wrap">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a><span>/</span>Privacy
+        </nav>
+        <p class="eyebrow">Legal</p>
+        <h1>Privacy Policy</h1>
+        <p class="dek">How EMC2Ops handles website, newsletter, and workflow audit information.</p>
+      </div>
+    </section>
+
+    <section class="wrap detail-section">
+      <p><strong>Last updated:</strong> {updatedAt}</p>
+      <p>
+        EMC2Ops provides AI front desk and workflow automation services for property management
+        companies. This policy explains what information we collect through this website and related
+        business forms, how we use it, and how to contact us.
+      </p>
+
+      <h2>Information we collect</h2>
+      <p>
+        We may collect information you submit through forms, including your name, email address,
+        phone number, company name, company website, portfolio size, workflow needs, preferred
+        meeting time, and message details. Newsletter forms collect your email address, source page,
+        and subscription status.
+      </p>
+      <p>
+        We may also collect technical information such as page URL, browser user agent, basic
+        analytics events, and server logs to operate, secure, and improve the site.
+      </p>
+
+      <h2>How we use information</h2>
+      <ul>
+        <li>Respond to workflow audit requests and business inquiries.</li>
+        <li>Send requested newsletters or content updates.</li>
+        <li>Operate forms, notifications, scheduling, and website analytics.</li>
+        <li>Improve EMC2Ops services, content, and website performance.</li>
+        <li>Protect against spam, abuse, security issues, and unauthorized use.</li>
+      </ul>
+
+      <h2>Service providers</h2>
+      <p>
+        EMC2Ops may use third-party providers for hosting, analytics, email, database storage,
+        form routing, notifications, CRM workflows, and automation infrastructure. These providers
+        process information only as needed to support the website and business operations.
+      </p>
+
+      <h2>Newsletter choices</h2>
+      <p>
+        Newsletter emails include an unsubscribe option. You can also request removal by emailing
+        <a href="mailto:hello@emc2ops.com">hello@emc2ops.com</a>.
+      </p>
+
+      <h2>Data retention</h2>
+      <p>
+        We retain business inquiry and newsletter information for as long as needed to provide
+        services, maintain records, resolve issues, and meet operational or legal obligations.
+      </p>
+
+      <h2>Your choices</h2>
+      <p>
+        You may request access, correction, or deletion of personal information by contacting
+        <a href="mailto:hello@emc2ops.com">hello@emc2ops.com</a>. We may need to retain limited
+        records where required for security, compliance, or legitimate business purposes.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy can be sent to
+        <a href="mailto:hello@emc2ops.com">hello@emc2ops.com</a>.
+      </p>
+    </section>
+  </main>
+  <SiteFooter />
+</SiteLayout>

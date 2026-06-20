@@ -1,0 +1,48 @@
+---
+interface Props {
+  variant?: "landing" | "blog";
+}
+
+const footerLinks = [
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services/" },
+  { label: "Use Cases", href: "/use-cases/" },
+  { label: "Integrations", href: "/integrations/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "About", href: "/about/" },
+  { label: "Links", href: "/links/" },
+  { label: "Privacy", href: "/privacy/" },
+  { label: "Terms", href: "/terms/" },
+  { label: "Workflow audit", href: "/#book" },
+];
+
+const socialLinks = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/emc2ops/" },
+  { label: "YouTube", href: "https://www.youtube.com/@EMC2Ops" },
+  { label: "X", href: "https://x.com/EMC2Ops" },
+  { label: "Instagram", href: "https://www.instagram.com/emc2ops_official/" },
+];
+---
+
+<footer class="site-footer">
+  <div class="wrap footer-shell">
+    <div class="footer-brand">
+      <a class="footer-logo" href="/" aria-label="EMC2Ops home">
+        <span class="mark">E²</span>
+        <span>EMC2Ops</span>
+      </a>
+      <p>AI front desk workflows for property managers.</p>
+      <span>© 2026 EMC2Ops. All rights reserved.</span>
+    </div>
+
+    <nav class="footer-group" aria-label="Important links">
+      <strong>Site</strong>
+      {footerLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+
+    <nav class="footer-group" aria-label="Social links">
+      <strong>Social</strong>
+      {socialLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+  </div>
+</footer>

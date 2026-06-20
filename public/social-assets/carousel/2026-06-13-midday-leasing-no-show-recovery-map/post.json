@@ -1,0 +1,95 @@
+{
+  "captions": {
+    "facebook": "Why do leasing no-shows still become lost leads?\n\nBecause many teams stop the workflow at the missed appointment instead of running a recovery sequence with instant follow-up, rebooking logic, and CRM write-back.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows",
+    "instagram": "Why do leasing no-shows still turn into lost leads for property managers?\n\nBecause too many teams treat the missed appointment like the end of the workflow instead of the start of a recovery sequence. Practical property management automation should detect the no-show, trigger the right follow-up, offer the next booking path, and write the outcome back before the lead goes stale.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Missed-call text-back, leasing follow-up automation, SMS, AI voice, and property management CRM automation should work as one clean system so every no-show gets a next step instead of a dead record.\n\nIf your team still loses renters after one missed tour, chases scattered notes, or rebooks appointments manually without clear ownership, the issue is not lead volume. The recovery workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement"
+  },
+  "channels": [
+    "instagram"
+  ],
+  "date": "2026-06-13",
+  "facebook": null,
+  "hook": "If a leasing no-show kills the lead, the workflow stopped too early.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18087763130263933",
+      "18087763148263933",
+      "18087763196263933",
+      "18087763217263933",
+      "18087763289263933",
+      "18087763307263933",
+      "18087763343263933",
+      "18087763370263933"
+    ],
+    "creationId": "18087763388263933",
+    "id": "18190732411340095",
+    "permalink": "https://www.instagram.com/p/DZiiqccmh3L/"
+  },
+  "publishSelection": {
+    "facebookSelected": false,
+    "instagramSelected": true
+  },
+  "slot": "midday",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-7.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-8.png"
+  ],
+  "topic": "Leasing no-show recovery map for property managers",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-7.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-8.png"
+    }
+  ]
+}

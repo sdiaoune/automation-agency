@@ -1,0 +1,102 @@
+{
+  "caption": "What is maintenance intake automation for property managers? It is a workflow that captures the request, triages urgency, sends the right resident update, and routes the next step without manual chasing.\n\nA lot of property management automation value shows up after the request is submitted, not just at intake. When an AI front desk for property managers connects AI voice, SMS, and CRM workflows, the team can confirm receipt, separate emergency paths, handle maintenance intake automation, and send verified status messages before the resident has to call again.\n\nThis is where missed-call text-back logic, maintenance intake automation, vendor routing, and property management CRM automation start working together. The goal is not to automate every conversation. The goal is to automate the repeatable status ladder and escalate exceptions with the full timeline attached.\n\nEMC2Ops works with property teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S. that need practical operating workflows instead of generic AI tools.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "channels": [
+    "instagram",
+    "facebook"
+  ],
+  "date": "2026-06-05",
+  "facebook": {
+    "channel": "facebook",
+    "attachedPhotoIds": [
+      "122104717797337252",
+      "122104717851337252",
+      "122104717899337252",
+      "122104717947337252",
+      "122104717989337252",
+      "122104718325337252",
+      "122104718367337252",
+      "122104718415337252"
+    ],
+    "id": "1103086129558384_122104718457337252",
+    "permalink": "https://www.facebook.com/122104714761337252/posts/122104718457337252"
+  },
+  "hook": "If residents keep asking \"Any update?\", automate these 6 status triggers.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18086481977263933",
+      "18086481989263933",
+      "18086482010263933",
+      "18086482052263933",
+      "18086482067263933",
+      "18086482088263933",
+      "18086482109263933",
+      "18086482130263933"
+    ],
+    "creationId": "18086482163263933",
+    "id": "18103324961047856",
+    "permalink": "https://www.instagram.com/p/DZNTzbllvOi/"
+  },
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-maintenance-status-ladder",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-7.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-8.png"
+  ],
+  "topic": "Maintenance status ladder",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-7.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-status-ladder/slide-8.png"
+    }
+  ]
+}

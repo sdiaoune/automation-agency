@@ -1,8 +1,9 @@
 import type { FormEvent } from 'react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Session } from '@supabase/supabase-js'
-import { LogOut, Megaphone, Target } from 'lucide-react'
+import { LogOut, Megaphone, Plug, Target } from 'lucide-react'
 import { AcquisitionDashboard } from './AcquisitionDashboard'
+import { IntegrationsDashboard } from './IntegrationsDashboard'
 import { SocialMediaMarketing } from './SocialMediaMarketing'
 import {
   buildDashboardStats,
@@ -25,8 +26,21 @@ import type {
   SprintTask,
   TaskStatus,
 } from './types'
+import { normalizePlatformIds } from './integrations'
 import { supabase } from './lib/supabase'
 import { LoadingScreen } from './SharedUi'
+
+function decodeMetaRedirectUri(state: string) {
+  try {
+    const base64 = state.replace(/-/g, '+').replace(/_/g, '/')
+    const padded = base64.padEnd(base64.length + ((4 - (base64.length % 4)) % 4), '=')
+    const payload = JSON.parse(atob(padded)) as { redirectUri?: unknown }
+
+    return typeof payload.redirectUri === 'string' ? payload.redirectUri : ''
+  } catch {
+    return ''
+  }
+}
 
 export function Dashboard({ session }: { session: Session }) {
   const [prospects, setProspects] = useState<Prospect[]>([])
@@ -49,6 +63,11 @@ export function Dashboard({ session }: { session: Session }) {
   const handledMetaCallback = useRef(false)
 
   useEffect(() => {
+    const tab = new URLSearchParams(window.location.search).get('tab')
+    if (tab === 'social') {
+      setActiveTab('social')
+    }
+
     void loadDashboard()
   }, [])
 
@@ -69,23 +88,37 @@ export function Dashboard({ session }: { session: Session }) {
     handledMetaCallback.current = true
 
     const completeUrl = new URL('/api/meta/auth/complete', window.location.origin)
+    const redirectUri = decodeMetaRedirectUri(state)
     completeUrl.searchParams.set('code', code)
     completeUrl.searchParams.set('state', state)
+    if (redirectUri) {
+      completeUrl.searchParams.set('redirect_uri', redirectUri)
+    }
 
     void fetch(completeUrl)
       .then((response) => response.json())
-      .then((result: { error?: string; pages?: Array<{ name: string }> }) => {
-        if (result.error) {
-          setMessage(`Meta connection failed: ${result.error}`)
-          return
-        }
+      .then(
+        (result: {
+          error?: string
+          pages?: Array<{ name: string }>
+          returnTo?: DashboardTab
+        }) => {
+          if (result.error) {
+            setMessage(`Meta connection failed: ${result.error}`)
+            return
+          }
 
-        setMessage(
-          `Meta connected: ${result.pages?.length ?? 0} Page${
-            result.pages?.length === 1 ? '' : 's'
-          } found.`,
-        )
-      })
+          if (result.returnTo === 'social') {
+            setActiveTab('social')
+          }
+
+          setMessage(
+            `Meta connected: ${result.pages?.length ?? 0} Page${
+              result.pages?.length === 1 ? '' : 's'
+            } found.`,
+          )
+        },
+      )
       .catch(() => setMessage('Meta connection failed.'))
       .finally(() => {
         window.history.replaceState({}, '', window.location.pathname)
@@ -123,7 +156,14 @@ export function Dashboard({ session }: { session: Session }) {
     if (firstError) {
       setMessage(firstError.message)
     } else {
-      setProspects((prospectResult.data ?? []) as Prospect[])
+      setProspects(
+        ((prospectResult.data ?? []) as Array<Prospect & { platforms?: unknown }>).map(
+          (prospect) => ({
+            ...prospect,
+            platforms: normalizePlatformIds(prospect.platforms),
+          }),
+        ),
+      )
       setActivities((activityResult.data ?? []) as OutreachActivity[])
       setTasks((taskResult.data ?? []) as SprintTask[])
       setEmailApprovals((approvalResult.data ?? []) as EmailApproval[])
@@ -413,6 +453,8 @@ export function Dashboard({ session }: { session: Session }) {
           taskDraft={taskDraft}
           tasks={tasks}
         />
+      ) : activeTab === 'integrations' ? (
+        <IntegrationsDashboard prospects={prospects} />
       ) : (
         <SocialMediaMarketing
           draft={socialDraft}
@@ -451,6 +493,14 @@ function DashboardTabs({
       >
         <Megaphone />
         Social Media Marketing
+      </button>
+      <button
+        aria-current={activeTab === 'integrations' ? 'page' : undefined}
+        onClick={() => onChange('integrations')}
+        type="button"
+      >
+        <Plug />
+        Integrations
       </button>
     </nav>
   )

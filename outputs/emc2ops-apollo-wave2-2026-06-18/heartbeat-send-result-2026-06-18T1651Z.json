@@ -1,0 +1,20 @@
+{
+  "heartbeat": "2026-06-18T16:51:01.868Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "2ea666ef-15dd-4587-94b6-5d9975f1ad1c",
+  "activity_id": "736d41d7-5a2a-4dba-b070-81dd5a388f9a",
+  "prospect_id": "c0f2649b-b684-4b3e-8c9f-98288f817d40",
+  "company_name": "Durante & Rich Real Estate",
+  "decision_maker": "Dianne Kirk - Office Manager Residential Property Management",
+  "recipient_email": "dkirk@drpropmgt.com",
+  "subject": "lost leads",
+  "sent_at": "2026-06-18T16:52:01.574104+00:00",
+  "daily_sent_count": 19,
+  "approved_queue_count": 11,
+  "approved_by_subject_after": {
+    "response time": 8,
+    "lost leads": 3
+  }
+}

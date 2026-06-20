@@ -1,0 +1,13 @@
+{
+  "approval_id": "68d6ac20-a1ea-42f1-be5d-cc6ffb61f536",
+  "sent": true,
+  "sent_at": "2026-06-19T14:41:23Z",
+  "activity_id": "54e6df47-ca0a-49ad-86ae-20c9e83108f5",
+  "prospect_id": "048ed138-1e5c-4694-aa67-b9872b7c8964",
+  "company": null,
+  "contact_name": null,
+  "recipient_email": "nick@theshufordgroup.com",
+  "subject": "missed calls",
+  "daily_sent_count": 11,
+  "approved_queue_count": 19
+}

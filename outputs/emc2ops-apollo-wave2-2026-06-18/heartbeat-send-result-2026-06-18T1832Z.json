@@ -1,0 +1,19 @@
+{
+  "heartbeat": "2026-06-18T18:32:02.373Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "60ff7735-ddb3-4073-841f-d379b566f631",
+  "activity_id": "8886c78f-f5ff-45b6-a50e-429f134935b4",
+  "prospect_id": "b45e2a7c-d7ec-4ed8-9301-43981af1df57",
+  "company_name": "KBC Management, Inc.",
+  "decision_maker": "Elijah Lee - Residential Property Manager",
+  "recipient_email": "elijah@kbcmgmt.com",
+  "subject": "response time",
+  "sent_at": "2026-06-18T18:33:07.043515+00:00",
+  "daily_sent_count": 29,
+  "approved_queue_count": 1,
+  "approved_by_subject_after": {
+    "response time": 1
+  }
+}

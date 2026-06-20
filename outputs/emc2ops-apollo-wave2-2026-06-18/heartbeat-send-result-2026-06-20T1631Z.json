@@ -1,0 +1,38 @@
+{
+  "sent_count": 1,
+  "skipped_count": 0,
+  "replies_found": 0,
+  "bounces_found": 0,
+  "blockers": [
+    "No additional eligible send-ready local/dashboard records were available to restock the approved queue to the daily target."
+  ],
+  "restock": {
+    "target_total": 30,
+    "sent_today_before": 21,
+    "approved_before": 8,
+    "desired_approved": 9,
+    "needed": 1,
+    "inserted": 0,
+    "approved_after_estimate": 8
+  },
+  "daily_send_count": 22,
+  "approved_queue_count": 7,
+  "sent": {
+    "approval_id": "661fc511-3174-4ac5-a1e0-628d1a009268",
+    "prospect_id": "e93c8245-780f-4a72-a4e6-bf21d437d180",
+    "recipient": "vinecrest@burbankhousing.org",
+    "subject": "lost leads",
+    "outlook_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs-GAAA=",
+    "activity_id": "8355f349-93b6-4ee2-9982-b255c034c0b4"
+  },
+  "next_due_date": "2026-06-20",
+  "next_approved": [
+    {
+      "id": "1d65483f-7ada-44d7-a54c-ce48fba1d8aa",
+      "prospect_id": "433d5bfa-446d-46cd-a06b-b2efc0643943",
+      "recipient_email": "diana@az-rm.com",
+      "subject": "response time",
+      "created_at": "2026-06-20T13:02:04.82459+00:00"
+    }
+  ]
+}

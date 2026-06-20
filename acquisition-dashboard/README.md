@@ -122,6 +122,25 @@ http://localhost:9876/auth/callback
 The app stores OAuth 2.0 connection data in `.x-social-connections.json`, which
 is ignored by git.
 
+## LinkedIn posting through Buffer
+
+Connect the EMC2Ops LinkedIn profile or Page in Buffer first, then fill these
+values in `.env.local` and restart `npm run dev`:
+
+```bash
+BUFFER_API_KEY=
+BUFFER_ORGANIZATION_ID=
+BUFFER_LINKEDIN_CHANNEL_ID=
+```
+
+`BUFFER_ORGANIZATION_ID` and `BUFFER_LINKEDIN_CHANNEL_ID` are optional. When
+they are blank, the app asks Buffer for the first organization and the first
+LinkedIn channel in it. The Social Media Marketing tab can publish text, link,
+image URL, and video URL posts to that LinkedIn channel through Buffer.
+
+By default, LinkedIn posts use Buffer's `shareNow` mode. Set
+`BUFFER_POST_MODE=addToQueue` when posts should enter the Buffer queue instead.
+
 ## Separate Vercel deployment
 
 Deploy this dashboard as its own Vercel project with:
@@ -136,6 +155,7 @@ app. Configure production callback URLs to the dashboard domain:
 ```bash
 X_OAUTH_REDIRECT_URI="https://your-dashboard-domain.com/auth/callback"
 META_OAUTH_REDIRECT_URI="https://your-dashboard-domain.com/api/meta/auth/callback"
+BUFFER_API_KEY="..."
 ```
 
 Keep the root EMC2Ops marketing site deployment separate from this dashboard

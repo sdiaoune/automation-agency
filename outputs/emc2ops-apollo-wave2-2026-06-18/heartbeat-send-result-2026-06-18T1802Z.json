@@ -1,0 +1,19 @@
+{
+  "heartbeat": "2026-06-18T18:02:02.251Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "8544a0ab-1991-48a8-abf0-6ca21f2545a9",
+  "activity_id": "6881e014-90ae-44c4-a196-d9cbe6a14d1d",
+  "prospect_id": "1562173d-55a1-4b52-be7e-2e7584e18d19",
+  "company_name": "Independent Property Management",
+  "decision_maker": "Karen Stenquist - Residential Property Manager (Owner-Operated)",
+  "recipient_email": "karen@independent-pm.com",
+  "subject": "response time",
+  "sent_at": "2026-06-18T18:03:04.808559+00:00",
+  "daily_sent_count": 26,
+  "approved_queue_count": 4,
+  "approved_by_subject_after": {
+    "response time": 4
+  }
+}

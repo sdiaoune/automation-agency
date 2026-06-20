@@ -1,0 +1,13 @@
+{
+  "approval_id": "d38d541c-8126-44d8-ab54-a6986230b37d",
+  "sent": true,
+  "sent_at": "2026-06-19T13:42:59Z",
+  "activity_id": "bad7b56d-ec12-46f9-85a2-c2335f108133",
+  "prospect_id": "e9e19606-b786-48c1-8c9b-6444b2f107ba",
+  "company": "New View Realty Group",
+  "contact_name": null,
+  "recipient_email": "sara@newviewrg.com",
+  "subject": "missed calls",
+  "daily_sent_count": 5,
+  "approved_queue_count": 25
+}

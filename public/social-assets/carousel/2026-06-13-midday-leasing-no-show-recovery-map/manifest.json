@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-13",
+  "slot": "midday",
+  "slug": "leasing-no-show-recovery-map",
+  "topic": "Leasing no-show recovery map for property managers",
+  "hook": "If a leasing no-show kills the lead, the workflow stopped too early.",
+  "captionInstagram": "Why do leasing no-shows still turn into lost leads for property managers?\n\nBecause too many teams treat the missed appointment like the end of the workflow instead of the start of a recovery sequence. Practical property management automation should detect the no-show, trigger the right follow-up, offer the next booking path, and write the outcome back before the lead goes stale.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Missed-call text-back, leasing follow-up automation, SMS, AI voice, and property management CRM automation should work as one clean system so every no-show gets a next step instead of a dead record.\n\nIf your team still loses renters after one missed tour, chases scattered notes, or rebooks appointments manually without clear ownership, the issue is not lead volume. The recovery workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do leasing no-shows still become lost leads?\n\nBecause many teams stop the workflow at the missed appointment instead of running a recovery sequence with instant follow-up, rebooking logic, and CRM write-back.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Leasing recovery workflow",
+      "title": "If a leasing no-show kills the lead,",
+      "titleAccent": "the workflow stopped too early.",
+      "body": "A missed tour should trigger the next best action automatically. The goal is a clean recovery path, not another lead that disappears into manual follow-up.",
+      "footer": "Swipe for the 6 rules behind a cleaner no-show recovery map",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Instant detection",
+      "title": "The workflow should know the appointment was missed without waiting for manual cleanup.",
+      "body": "Calendar status, tour check-in, agent notes, or no-arrival timers should mark the lead as a no-show fast so recovery starts while intent is still warm.",
+      "footer": "Goal: detect the miss while the renter still remembers the tour",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "First response",
+      "title": "Every no-show needs an immediate message with one clear next step.",
+      "body": "Send a simple recovery text or call path that acknowledges the miss, offers rebooking, and keeps the lead moving instead of sounding like a generic blast.",
+      "footer": "Goal: one fast follow-up with one obvious action",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Reason capture",
+      "title": "The system should capture why the tour was missed before the team guesses.",
+      "body": "Timing conflict, wrong property, budget shift, application friction, duplicate inquiry, or dead lead should route into different next actions and reporting lanes.",
+      "footer": "Goal: recovery branches by reason, not by assumption",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Rebooking path",
+      "title": "Self-scheduling should reopen with guardrails, not restart from zero.",
+      "body": "Offer the right dates, property options, and escalation rules so qualified renters can rebook fast while complex cases route to a leasing agent.",
+      "footer": "Goal: easy rebooking for good leads, human routing for exceptions",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Ownership",
+      "title": "A recovered lead still needs one named owner after the appointment changes.",
+      "body": "The workflow should assign who follows up, who handles stale no-shows, and who escalates hot prospects so recovery does not stall between agents or inboxes.",
+      "footer": "Goal: no-show recovery always has a visible owner",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "CRM write-back",
+      "title": "Every no-show outcome should land in the CRM before the next message fires.",
+      "body": "Status, reason code, next appointment, opt-out, and escalation notes should write back into the system so reporting and follow-up stay accurate.",
+      "footer": "Goal: one record shows what happened and what happens next",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want missed tours to create",
+      "titleAccent": "recovery instead of leakage?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make leasing and front-desk operations easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map",
+  "renderedAt": "2026-06-13T20:34:50.297Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-13-midday-leasing-no-show-recovery-map/contact-sheet.png"
+}

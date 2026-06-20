@@ -1,0 +1,34 @@
+{
+  "captions": {
+    "instagram": "What should property managers automate first?\n\nStart with the repetitive, low-risk conversations that have a clear next step. That is usually where property management automation creates the fastest win: missed-call text-back, leasing follow-up automation, maintenance intake automation, and property management CRM automation that keeps AI voice, SMS, and CRM workflows moving without manual cleanup.\n\nThis 3-bucket test helps property management owners, operators, and onsite teams decide what should be automated end-to-end, what should use AI for intake plus routing, and what should stay human-first. The goal is not to force every conversation through a bot. The goal is to install a practical AI front desk for property managers that handles repeatable work and escalates judgment-heavy work cleanly.\n\nIf your team says every conversation is different, run this diagnostic before buying another tool. It will show where AI voice, SMS, missed-call text-back, leasing follow-up automation, maintenance intake automation, and property management CRM automation actually belong.\n\nEMC2Ops builds done-for-you workflows for Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #AIFrontDesk #LeasingAutomation #MaintenanceAutomation #CRMWorkflows",
+    "facebook": "What should property managers automate first?\n\nStart with repetitive, low-risk conversations with a clear next step. That is usually where property management automation pays off fastest: missed-call text-back, leasing follow-up automation, maintenance intake automation, and property management CRM automation tied into AI voice, SMS, and CRM workflows.\n\nUse this 3-bucket test to separate end-to-end automation, intake-plus-routing, and human-first conversations across leasing, tenant intake, maintenance, owner updates, vendor handoffs, and CRM workflows.\n\nEMC2Ops installs done-for-you AI front desk for property managers in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #CRMWorkflows"
+  },
+  "channels": [
+    "instagram",
+    "facebook"
+  ],
+  "date": "2026-06-06",
+  "hook": "If every conversation feels different, you are choosing the wrong automation target.",
+  "slot": "evening",
+  "topic": "3-bucket automation test for property managers",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-automation-bucket-test",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-automation-bucket-test/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-automation-bucket-test/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-automation-bucket-test/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-automation-bucket-test/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-automation-bucket-test/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-automation-bucket-test/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-automation-bucket-test/slide-7.png"
+  ],
+  "postIds": {
+    "instagram": "17879580750458908",
+    "facebook": "1103086129558384_122104969833337252"
+  },
+  "postUrls": {
+    "instagram": "https://www.instagram.com/p/DZQP9UZE8qX/",
+    "facebook": "https://www.facebook.com/122104714761337252/posts/122104969833337252"
+  },
+  "partialFailure": "Initial combined publish script failed on Facebook feed creation with: Please reduce the amount of data you're asking for, then retry your request",
+  "recoveredWith": "facebook_only_retry_shorter_caption"
+}

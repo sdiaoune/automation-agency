@@ -16,33 +16,54 @@ grounded in research, user input, or evidence in the workspace.
 
 The agent may advance these tasks without waiting for the founder:
 
-1. Research public property-management prospects that match the ICP.
-2. Capture company, market, website, decision-maker path, public contact path,
+1. Use Apollo to find and enrich property-management prospects that match the
+   ICP. Do not use internet search as the default prospect source while Apollo
+   access is available.
+2. Enrich Apollo leads in batches of 5 credits at a time. Stop after each
+   5-person batch, record credits used, and preserve Apollo provenance in
+   dashboard source, software clues, pain signal, or notes.
+3. Read Outlook Email for recent prospect replies before deciding follow-up
+   work. Update stages, notes, next follow-up dates, and reply summaries only
+   when the inbox evidence supports the change.
+   Log each confirmed prospect reply in `outreach_activities` with
+   `activity_type = 'other'`, `outcome = 'Outlook reply'`, the received date as
+   `occurred_on`, the matching `prospect_id` when known, and notes containing
+   sender, subject, Outlook message id, and a concise reply excerpt.
+4. Capture company, market, website, decision-maker path, contact path,
    software clues, pain signals, source, and uncertainty in the dashboard.
-3. Prepare draft cold emails, follow-ups, call notes, Loom audit outlines,
+5. Prepare approved cold emails, follow-ups, call notes, Loom audit outlines,
    workflow breakdowns, proposal skeletons, and landing-page improvements.
-   Queue email copy in the dashboard approval list when it is ready for review.
-4. Keep sprint tasks current when the strategy or workspace evidence supports
+   Routine cold-email and follow-up approval rows may be created with
+   `approved` status so the founder can still reject or stop unwanted sends
+   during the day.
+   For approved scheduled cold-email campaigns, maintain enough approved rows
+   to reach the user-approved daily send target when eligible enriched
+   prospects exist. An empty approved queue before the daily cap is not a
+   stopping condition; restock from existing send-ready dashboard/local queue
+   records first, without Apollo, then send through the approved sender.
+6. Keep sprint tasks current when the strategy or workspace evidence supports
    a change.
-5. Review dashboard metrics, due follow-ups, and the 10-business-day learning
+7. Review dashboard metrics, due follow-ups, and the 10-business-day learning
    rule from the plan.
 
 ## Approval-Gated Work
 
 Ask the founder before any of these happen:
 
-1. Send cold email or follow-up email.
+1. Spend more than the current 5-credit Apollo enrichment batch.
 2. Place phone calls, send LinkedIn messages, or contact partners.
 3. Publish content or post under the EMC2Ops name.
 4. Change booking-calendar settings or commit to meeting availability.
 5. Send proposals, pricing, commitments, or delivery promises externally.
+6. Send replies from Outlook Email.
 
 If an outbound channel becomes explicitly authorized later, record the scope of
 that authorization before using it.
 
-For Office 365 approval sending, a dashboard row with `approved` status is the
-founder approval. Send only those approved rows through `office365_mail.py` and
-leave draft, failed, or rejected rows unsent until they are reviewed again.
+For routine cold emails and follow-ups, dashboard rows may now be created with
+`approved` status by default. A dashboard row with `approved` status is founder
+authorization to send through the configured approved-email sender. Leave
+rejected, failed, or manually paused rows unsent until they are reviewed again.
 
 ## Human-Only Handoffs
 
@@ -56,11 +77,18 @@ an offer or ICP change is warranted.
 Each run should:
 
 1. Read the strategy, dashboard snapshot, and recent workspace changes.
-2. Pick the highest-value autonomous task that moves the current week forward.
-3. Prefer evidence-rich prospect research and useful drafts over busywork.
-4. Update the dashboard only for facts and work that can be proven.
-5. Report completed autonomous work, ready-for-approval items, human blockers,
-   and the next likely action.
+2. Check Outlook Email for replies from active prospects and update the
+   dashboard from confirmed inbox evidence.
+   New reply evidence should appear on the dashboard's Outlook replies panel via
+   the `outreach_activities` logging format above.
+3. Use Apollo for the next 5-credit prospect enrichment batch when the pipeline
+   needs more qualified leads.
+4. Pick the highest-value autonomous task that moves the current week forward.
+5. Prefer evidence-rich Apollo enrichment, reply handling, and useful approved
+   outreach over busywork.
+6. Update the dashboard only for facts and work that can be proven.
+7. Report completed autonomous work, Apollo credits used, replies found,
+   approved outreach queued, human blockers, and the next likely action.
 
 ## Strategy Guardrails
 

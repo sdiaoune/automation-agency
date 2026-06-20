@@ -1,0 +1,256 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "EMC2Ops Website API",
+    "version": "1.0.0",
+    "description": "Public and operational endpoints exposed by the EMC2Ops website."
+  },
+  "servers": [
+    {
+      "url": "https://www.emc2ops.com"
+    }
+  ],
+  "paths": {
+    "/api/book-audit": {
+      "post": {
+        "summary": "Submit a workflow audit request",
+        "description": "Accepts a website form submission for an EMC2Ops workflow audit request.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["fullName", "email", "company", "workflowProblem"],
+                "properties": {
+                  "fullName": { "type": "string", "maxLength": 160 },
+                  "email": { "type": "string", "format": "email", "maxLength": 320 },
+                  "phone": { "type": "string", "maxLength": 80 },
+                  "company": { "type": "string", "maxLength": 180 },
+                  "companyWebsite": { "type": "string", "maxLength": 240 },
+                  "portfolioSize": { "type": "string", "maxLength": 80 },
+                  "workflowProblem": { "type": "string", "maxLength": 120 },
+                  "preferredTime": { "type": "string", "maxLength": 160 },
+                  "message": { "type": "string", "maxLength": 2000 },
+                  "pageUrl": { "type": "string", "maxLength": 500 },
+                  "companySiteConfirm": { "type": "string", "description": "Honeypot field. Leave blank." }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Request accepted.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/OkResponse" }
+              }
+            }
+          },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "405": { "$ref": "#/components/responses/MethodNotAllowed" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/newsletter-subscribe": {
+      "post": {
+        "summary": "Subscribe to EMC2Ops blog updates",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["email"],
+                "properties": {
+                  "email": { "type": "string", "format": "email", "maxLength": 320 },
+                  "source": { "type": "string", "maxLength": 120 },
+                  "pageUrl": { "type": "string", "maxLength": 500 },
+                  "websiteConfirm": { "type": "string", "description": "Honeypot field. Leave blank." }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Subscription accepted.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/OkResponse" }
+              }
+            }
+          },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "405": { "$ref": "#/components/responses/MethodNotAllowed" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/newsletter-unsubscribe": {
+      "get": {
+        "summary": "Unsubscribe from newsletter emails",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string", "maxLength": 200 }
+          }
+        ],
+        "responses": {
+          "200": { "description": "HTML confirmation page." },
+          "400": { "description": "Missing token." },
+          "404": { "description": "Token not found." },
+          "500": { "description": "Unsubscribe failed." }
+        }
+      },
+      "post": {
+        "summary": "Unsubscribe from newsletter emails with JSON",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["token"],
+                "properties": {
+                  "token": { "type": "string", "maxLength": 200 }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Unsubscribed.",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/OkResponse" }
+              }
+            }
+          },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "404": { "description": "Subscriber not found." },
+          "405": { "$ref": "#/components/responses/MethodNotAllowed" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/newsletter-send-daily": {
+      "get": {
+        "summary": "Send daily newsletter digest",
+        "description": "Protected operational endpoint for scheduled newsletter delivery.",
+        "security": [{ "cronBearerAuth": [] }],
+        "responses": {
+          "200": { "description": "Digest processed." },
+          "401": { "description": "Unauthorized." },
+          "405": { "$ref": "#/components/responses/MethodNotAllowed" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      },
+      "post": {
+        "summary": "Send daily newsletter digest",
+        "description": "Protected operational endpoint for scheduled newsletter delivery.",
+        "security": [{ "cronBearerAuth": [] }],
+        "responses": {
+          "200": { "description": "Digest processed." },
+          "401": { "description": "Unauthorized." },
+          "405": { "$ref": "#/components/responses/MethodNotAllowed" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/x-growth-post": {
+      "get": {
+        "summary": "Publish or dry-run a scheduled X growth post",
+        "description": "Protected internal endpoint for scheduled X posting.",
+        "security": [{ "cronBearerAuth": [] }],
+        "parameters": [
+          {
+            "name": "dryRun",
+            "in": "query",
+            "schema": { "type": "boolean" }
+          },
+          {
+            "name": "slot",
+            "in": "query",
+            "schema": { "type": "integer", "minimum": 0, "maximum": 4 }
+          }
+        ],
+        "responses": {
+          "200": { "description": "Post processed or skipped." },
+          "401": { "description": "Unauthorized." },
+          "405": { "$ref": "#/components/responses/MethodNotAllowed" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      },
+      "post": {
+        "summary": "Publish or dry-run a scheduled X growth post",
+        "description": "Protected internal endpoint for scheduled X posting.",
+        "security": [{ "cronBearerAuth": [] }],
+        "responses": {
+          "200": { "description": "Post processed or skipped." },
+          "401": { "description": "Unauthorized." },
+          "405": { "$ref": "#/components/responses/MethodNotAllowed" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "cronBearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "CRON_SECRET bearer token."
+      }
+    },
+    "schemas": {
+      "OkResponse": {
+        "type": "object",
+        "properties": {
+          "ok": { "type": "boolean" },
+          "id": { "type": "string" },
+          "notification": { "type": "string" }
+        },
+        "required": ["ok"]
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "error": { "type": "string" }
+        },
+        "required": ["error"]
+      }
+    },
+    "responses": {
+      "BadRequest": {
+        "description": "Invalid request.",
+        "content": {
+          "application/json": {
+            "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+          }
+        }
+      },
+      "MethodNotAllowed": {
+        "description": "Method not allowed.",
+        "content": {
+          "application/json": {
+            "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+          }
+        }
+      },
+      "ServerError": {
+        "description": "Server or configuration error.",
+        "content": {
+          "application/json": {
+            "schema": { "$ref": "#/components/schemas/ErrorResponse" }
+          }
+        }
+      }
+    }
+  }
+}

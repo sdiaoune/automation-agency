@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-06",
+  "slot": "evening",
+  "slug": "after-hours-queue-checklist",
+  "topic": "After-hours queue checklist for property managers",
+  "hook": "If the morning starts with cleanup, your after-hours workflow is still manual.",
+  "captionInstagram": "What should property managers automate after hours?\n\nStart with the repeatable conversations that arrive when the office is closed but still need a clean next step before the team opens the next day. The right property management automation creates a usable queue, not a bigger mess.\n\nThis is where an AI front desk for property managers earns its keep: missed-call text-back, leasing follow-up automation, maintenance intake automation, owner update routing, vendor prep, and property management CRM automation that lands the right summary, owner, and next action before anyone starts rebuilding context from voicemail and inbox threads.\n\nIf your team walks into stale leads, half-filled maintenance requests, missing owner context, or unassigned tasks, the gap is not more software. It is weak AI voice, SMS, and CRM workflows after hours.\n\nEMC2Ops builds done-for-you property management automation for owners, operators, and teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #LeasingAutomation #MaintenanceAutomation #CRMWorkflows",
+  "captionFacebook": "What should property managers automate after hours?\n\nAutomate the queue-building work that should already be organized before the office opens: missed-call text-back, leasing follow-up automation, maintenance intake automation, owner update routing, vendor prep, and property management CRM automation with a clear next owner.\n\nAn AI front desk for property managers should use AI voice, SMS, and CRM workflows to capture the right details, route the next step, and log the summary while the team is offline. If staff still start the day by rebuilding voicemail, renter follow-up, maintenance context, owner notes, and vendor handoffs by hand, the workflow is not finished.\n\nThis checklist is built for property management owners and operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #SMSWorkflows #AIVoice #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "After-hours diagnostic",
+      "title": "If the morning starts with cleanup,",
+      "titleAccent": "your after-hours workflow is still manual.",
+      "body": "Property teams should not open to stale leasing replies, half-filled maintenance requests, owner pings, vendor guesswork, and unassigned CRM follow-up.",
+      "footer": "Swipe for the 6 things the queue should already contain",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Queue 01",
+      "kicker": "Missed-call text-back",
+      "title": "Every missed leasing call should leave a next step behind.",
+      "body": "After-hours calls should trigger SMS that captures intent, property interest, move timing, and reply routing before the lead disappears into voicemail.",
+      "footer": "Goal: a qualified lead, not a blind callback list",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Queue 02",
+      "kicker": "Leasing follow-up automation",
+      "title": "No-show and no-reply renters should already be in motion.",
+      "body": "Tour reminders, rebooking prompts, and follow-up timing should be queued before staff open the CRM instead of rebuilt from memory and inbox threads.",
+      "footer": "Goal: the leasing team opens to live next steps",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Queue 03",
+      "kicker": "Maintenance intake automation",
+      "title": "Overnight requests should arrive dispatch-ready.",
+      "body": "Issue, urgency, unit, access notes, and photo requests should be captured up front so the morning team is triaging action, not collecting basics.",
+      "footer": "Goal: better triage before the first callback",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Queue 04",
+      "kicker": "Vendor prep",
+      "title": "Standard repairs should already have a routing packet.",
+      "body": "Trade, property, resident context, approval state, and the next owner should be packaged so vendor handoffs do not start from a blank screen.",
+      "footer": "Goal: routing context attached before dispatch begins",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Queue 05",
+      "kicker": "Owner exception summary",
+      "title": "Important owner updates should be drafted from workflow data.",
+      "body": "Material leasing, maintenance, approval, or delay events can be summarized for review so owners hear the status without staff rewriting the timeline.",
+      "footer": "Goal: review-ready updates, not another status chase",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Queue 06",
+      "kicker": "Property management CRM automation",
+      "title": "The queue should open with one record, one owner, one next action.",
+      "body": "AI voice, SMS, and CRM workflows should write back the summary, assignee, and follow-up state before the office opens so nobody retypes the same story.",
+      "footer": "Goal: the system opens with context already attached",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want the morning queue built before your team logs in?",
+      "titleAccent": "Start with the after-hours path.",
+      "body": "We install a done-for-you AI front desk for property managers with practical AI voice, SMS, and CRM workflows for leasing, tenant intake, maintenance, owners, and vendors.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist",
+  "renderedAt": "2026-06-06T19:18:21.304Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/contact-sheet.png"
+}

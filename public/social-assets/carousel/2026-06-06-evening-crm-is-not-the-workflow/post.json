@@ -1,0 +1,97 @@
+{
+  "captions": {
+    "facebook": "What should property managers automate first if they already have a CRM?\n\nAutomate the workflow gaps the CRM does not close by itself: missed-call text-back, leasing follow-up automation, maintenance intake automation, owner update routing, vendor handoffs, and property management CRM automation that writes the outcome back cleanly.\n\nMost teams do not need another dashboard first. They need AI voice, SMS, and CRM workflows that answer faster, collect the right details, route the next owner, and keep the record current without manual copy-paste.\n\nIf your team still rebuilds context from calls, texts, inbox threads, and work orders, this carousel will show where the real friction lives. It is built for property management operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #SMSWorkflows #CRMWorkflows #PropertyManagement",
+    "instagram": "What should property managers automate first if they already have a CRM?\n\nStart with the gaps between the trigger, the first response, the routing decision, and the CRM write-back. Property management automation does not replace your system of record. It makes the work actually move through AI voice, SMS, missed-call text-back, leasing follow-up automation, maintenance intake automation, owner updates, vendor routing, and property management CRM automation.\n\nIf a leasing call still dies in voicemail, a renter follow-up still depends on memory, a maintenance request still arrives half-complete, or the summary never makes it back into the CRM, the software is not the operating workflow yet.\n\nThis carousel is a practical diagnostic for property management owners, operators, and teams that already have tools but still feel front-desk drag across leasing, tenant intake, maintenance, owner communication, vendor handoffs, and CRM workflows.\n\nEMC2Ops installs a done-for-you AI front desk for property managers in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and for remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #CRMWorkflows #LeasingAutomation #AIVoice"
+  },
+  "channels": [
+    "instagram",
+    "facebook"
+  ],
+  "date": "2026-06-06",
+  "facebook": {
+    "channel": "facebook",
+    "attachedPhotoIds": [
+      "122104935411337252",
+      "122104935459337252",
+      "122104935501337252",
+      "122104935591337252",
+      "122104935681337252",
+      "122104935723337252",
+      "122104935861337252"
+    ],
+    "id": "1103086129558384_122104935891337252",
+    "permalink": "https://www.facebook.com/122104714761337252/posts/122104935891337252"
+  },
+  "hook": "Your CRM is not your workflow. These 5 front-desk gaps still leak time.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18086638478263933",
+      "18086638505263933",
+      "18086638529263933",
+      "18086638559263933",
+      "18086638598263933",
+      "18086638616263933",
+      "18086638628263933"
+    ],
+    "creationId": "18086638646263933",
+    "id": "18123698434641409",
+    "permalink": "https://www.instagram.com/p/DZP6xyRnMih/"
+  },
+  "slot": "evening",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-7.png"
+  ],
+  "topic": "Why property managers still need workflow automation after buying software",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-7.png"
+    }
+  ]
+}

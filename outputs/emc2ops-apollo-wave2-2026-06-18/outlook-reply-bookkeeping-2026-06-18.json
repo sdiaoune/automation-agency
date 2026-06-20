@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-06-18T01:58:21.885286+00:00",
+  "inserted": [
+    {
+      "id": "43070e26-90ef-4562-8dfb-398a1abb624b",
+      "company": "EquityTeam Property Management",
+      "outcome": "Outlook bounce"
+    }
+  ],
+  "skipped": [
+    {
+      "company": "Scarlett Properties",
+      "reason": "activity_already_logged"
+    },
+    {
+      "company": "JRealty Property Management",
+      "reason": "activity_already_logged"
+    }
+  ]
+}

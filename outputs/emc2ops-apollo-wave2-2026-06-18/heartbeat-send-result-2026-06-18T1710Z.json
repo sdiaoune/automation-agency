@@ -1,0 +1,20 @@
+{
+  "heartbeat": "2026-06-18T17:10:31.967Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "a01e6ac2-8d6a-4d61-aa6a-93bb580db338",
+  "activity_id": "9614897d-92ea-4074-8d78-32524884dc5a",
+  "prospect_id": "872587c1-015c-494b-a593-14b9dd454ed7",
+  "company_name": "CloudTen Residential",
+  "decision_maker": "Trisha Evans - Property Management",
+  "recipient_email": "tevans@livecloudten.com",
+  "subject": "lost leads",
+  "sent_at": "2026-06-18T17:11:35.396716+00:00",
+  "daily_sent_count": 21,
+  "approved_queue_count": 9,
+  "approved_by_subject_after": {
+    "response time": 7,
+    "lost leads": 2
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "approval_id": "55aaf604-9bef-40b7-9b5f-2bc9a0579690",
+  "sent": true,
+  "sent_at": "2026-06-19T15:22:12Z",
+  "activity_id": "614d5ebb-f5d7-4d1e-863b-f758833d6755",
+  "prospect_id": "559a6b15-f630-48a4-8006-ca05855b336b",
+  "company": null,
+  "contact_name": null,
+  "recipient_email": "bobj@rpmpdx.com",
+  "subject": "response time",
+  "daily_sent_count": 15,
+  "approved_queue_count": 15
+}

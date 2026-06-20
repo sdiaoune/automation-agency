@@ -1,0 +1,13 @@
+{
+  "approval_id": "f3f6e340-dcbb-41ba-b131-975ef6ef33e2",
+  "sent": true,
+  "sent_at": "2026-06-19T14:53:02Z",
+  "activity_id": "fdb268f8-2c84-41ab-87b8-427e5b8ce369",
+  "prospect_id": "8696e016-070b-46c4-a465-66b1d4c9a7cb",
+  "company": null,
+  "contact_name": null,
+  "recipient_email": "danielle@rpmpdx.com",
+  "subject": "response time",
+  "daily_sent_count": 12,
+  "approved_queue_count": 18
+}

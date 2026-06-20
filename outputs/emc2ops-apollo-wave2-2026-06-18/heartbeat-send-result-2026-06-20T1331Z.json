@@ -1,0 +1,17 @@
+{
+  "sent_count": 1,
+  "skipped_count": 0,
+  "replies_found": 0,
+  "restocked_count": 0,
+  "daily_send_count": 4,
+  "approved_queue_count": 25,
+  "approval_id": "a4258a22-667a-41a2-bf38-e20811a01f78",
+  "prospect_id": "f223166c-de1f-4728-88c9-e9c7b68aa36c",
+  "recipient_email": "sbailey@epacdevco.com",
+  "subject": "lost leads",
+  "sent_at": "2026-06-20T13:32:58.080779+00:00",
+  "activity_id": "7783e5a2-a25a-4426-9848-06401f782b52",
+  "next_due_date": "2026-06-20",
+  "blockers": [],
+  "outlook_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_0AAA="
+}

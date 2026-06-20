@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-06-20T17:11:00.235629+00:00",
+  "dry_run": false,
+  "target_total": 30,
+  "sent_today": 25,
+  "approved_before": 4,
+  "desired_approved": 5,
+  "needed": 1,
+  "inserted": 0,
+  "selected": 0,
+  "selected_by_subject": {},
+  "approved_after_estimate": 4
+}

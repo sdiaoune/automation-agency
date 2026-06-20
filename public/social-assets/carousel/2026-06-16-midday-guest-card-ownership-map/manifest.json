@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-16",
+  "slot": "midday",
+  "slug": "guest-card-ownership-map",
+  "topic": "Guest-card ownership map for property managers",
+  "hook": "If renter follow-up still depends on duplicate guest cards and loose ownership, the workflow is leaking tours.",
+  "captionInstagram": "Why do leasing guest cards still create follow-up leaks for property managers?\n\nBecause many teams treat the guest card like a note bucket instead of the operating record for lead ownership. Practical property management automation should create one clean renter record, capture the first context fast, merge duplicate replies across calls and SMS, route the next owner by rule, and write every status change back before the lead goes cold.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Missed-call text-back, AI voice, SMS, leasing follow-up automation, self-scheduling, and property management CRM automation should all feed one visible guest-card path so booked tours and applications do not disappear into parallel records.\n\nIf your team still loses time to duplicate leads, stale guest cards, unclear ownership, or follow-up that starts over every time the renter switches channels, the problem is not effort. The guest-card workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and leasing teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do leasing guest cards still create follow-up leaks?\n\nBecause most teams let the lead record split across calls, texts, forms, and showing notes. Property management automation should create one renter record, assign one visible owner, and keep every status change synced before the lead goes stale.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Leasing workflow",
+      "title": "If renter follow-up still depends on duplicate guest cards and loose ownership,",
+      "titleAccent": "the workflow is leaking tours.",
+      "body": "A lead record should carry one renter from first inquiry through showing, application, and next-step follow-up instead of resetting every time the channel changes.",
+      "footer": "Swipe for the 6 rules behind a cleaner guest-card workflow",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Single record",
+      "title": "One inquiry should create one guest card before follow-up begins.",
+      "body": "Call, form, SMS, ILS lead, chatbot, and walk-in activity should resolve into one renter record so the team is not working from competing versions of the same lead.",
+      "footer": "Goal: one lead enters one visible leasing lane",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "First context",
+      "title": "The first touch should capture fit and urgency before the lead gets routed.",
+      "body": "Property, unit type, timing, budget, pet context, and preferred next step should land fast so the team is not restarting qualification after every reply.",
+      "footer": "Goal: early context makes every follow-up more usable",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Merge logic",
+      "title": "Duplicate detection should happen before the workflow sends another message.",
+      "body": "If the same renter calls after submitting a form or replies by SMS after booking online, the workflow should merge the activity before the record splits again.",
+      "footer": "Goal: channel switching does not create parallel leads",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Ownership rules",
+      "title": "Every stage change should assign one next owner automatically.",
+      "body": "New inquiry, booked tour, no-show, reschedule, application started, and stale follow-up should each move to a named leasing owner instead of sitting in a shared queue.",
+      "footer": "Goal: every guest card has one clear next owner",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Status truth",
+      "title": "The guest card should reflect the real next step, not just the last message sent.",
+      "body": "Booked, confirmed, no-show, reapplied, unqualified, or needs-review should be operating states that drive the workflow instead of labels no one trusts.",
+      "footer": "Goal: status means something operationally",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "CRM write-back",
+      "title": "Every leasing touchpoint should land in the CRM before the next automation fires.",
+      "body": "Latest summary, current stage, assigned owner, showing outcome, and exception notes should write back immediately so staff never rebuild the renter timeline by hand.",
+      "footer": "Goal: one record shows lead history, owner, and next step",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want cleaner guest cards and",
+      "titleAccent": "fewer lost leasing handoffs?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make front-desk and leasing follow-up easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map",
+  "renderedAt": "2026-06-16T20:04:52.051Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-16-midday-guest-card-ownership-map/contact-sheet.png"
+}

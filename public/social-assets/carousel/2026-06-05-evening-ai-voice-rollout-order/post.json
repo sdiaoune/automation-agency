@@ -1,0 +1,97 @@
+{
+  "captions": {
+    "facebook": "Should property managers roll out AI voice first? In most cases, no. The first win usually comes from property management automation that closes the missed-call gap, improves leasing follow-up automation, standardizes maintenance intake automation, and keeps property management CRM automation clean before AI voice is asked to carry more of the front desk.\n\nIf the handoff is still manual, the intake questions are incomplete, or nobody owns the CRM write-back, voice will move faster inside the same broken workflow.\n\nUse this rollout order:\n1. Missed-call text-back\n2. Leasing follow-up automation\n3. Maintenance intake automation\n4. CRM ownership and write-back rules\n5. AI voice once the path is stable\n\nThat is the practical version of an AI front desk for property managers: AI voice, SMS, and CRM workflows that recover opportunities, route the next step, and reduce manual cleanup for leasing, tenant intake, and operations teams.\n\nThis is relevant for property management teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #AIVoice #SMSWorkflows #CRMWorkflows",
+    "instagram": "Should property managers start with AI voice first? Usually no. The better first move is property management automation that fixes missed-call text-back, leasing follow-up automation, maintenance intake automation, and property management CRM automation before AI voice handles more live conversations.\n\nIf your team is still losing after-hours calls, chasing stale renter replies, re-asking for maintenance details, or copying notes into the CRM, voice is not the first bottleneck. The workflow underneath it is.\n\nUse this rollout order:\n1. Missed-call text-back\n2. Leasing follow-up automation\n3. Maintenance intake automation\n4. CRM ownership + write-back rules\n5. AI voice after the handoffs are stable\n\nThis is what a practical AI front desk for property managers should look like: AI voice, SMS, and CRM workflows that move the next step instead of creating another inbox to watch.\n\nFor operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S., the cleanest first win is usually a workflow that already interrupts the team every day.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #AIFrontDesk #AIVoice #LeasingAutomation #CRMWorkflows"
+  },
+  "channels": [
+    "instagram",
+    "facebook"
+  ],
+  "date": "2026-06-05",
+  "facebook": {
+    "channel": "facebook",
+    "attachedPhotoIds": [
+      "122104808289337252",
+      "122104808337337252",
+      "122104808373337252",
+      "122104808421337252",
+      "122104808469337252",
+      "122104808505337252",
+      "122104808553337252"
+    ],
+    "id": "1103086129558384_122104808589337252",
+    "permalink": "https://www.facebook.com/122104714761337252/posts/122104808589337252"
+  },
+  "hook": "You probably do not need AI voice first. Install this sequence instead.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18086532755263933",
+      "18086532767263933",
+      "18086532779263933",
+      "18086532791263933",
+      "18086532803263933",
+      "18086532821263933",
+      "18086532836263933"
+    ],
+    "creationId": "18086532848263933",
+    "id": "18049527491603665",
+    "permalink": "https://www.instagram.com/p/DZOGy2flvbA/"
+  },
+  "slot": "evening",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-7.png"
+  ],
+  "topic": "AI voice rollout order for property managers",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-05-evening-ai-voice-rollout-order/slide-7.png"
+    }
+  ]
+}

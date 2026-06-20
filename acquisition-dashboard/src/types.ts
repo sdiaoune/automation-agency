@@ -28,6 +28,17 @@ export type EmailApprovalStatus =
   | 'sent'
   | 'failed'
 
+export type IntegrationPlatformId =
+  | 'appfolio'
+  | 'buildium'
+  | 'leadsimple'
+  | 'yardi'
+  | 'rent_manager'
+  | 'entrata'
+  | 'knock'
+  | 'hubspot'
+  | 'salesforce'
+
 export type Prospect = {
   id: string
   company_name: string
@@ -38,6 +49,7 @@ export type Prospect = {
   phone: string
   source: string
   software_clues: string
+  platforms: IntegrationPlatformId[]
   pain_signal: string
   notes: string
   next_follow_up_date: string | null

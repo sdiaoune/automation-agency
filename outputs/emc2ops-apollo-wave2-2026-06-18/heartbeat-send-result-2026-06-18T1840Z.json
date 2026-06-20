@@ -1,0 +1,13 @@
+{
+  "approval_id": "3f419b35-695e-4e67-b268-5e6db0f7ffbe",
+  "sent": true,
+  "sent_at": "2026-06-18T18:42:50Z",
+  "activity_id": "3c9e5888-8d55-4d70-a517-18f6700999c5",
+  "prospect_id": "9edc20ca-44f1-42a3-99f3-25d6d282421c",
+  "company": "JVM Property | Residential Property Management",
+  "contact_name": null,
+  "recipient_email": "joshua@jvmproperty.com",
+  "subject": "response time",
+  "daily_sent_count": 30,
+  "approved_queue_count": 0
+}

@@ -1,0 +1,19 @@
+{
+  "heartbeat": "2026-06-18T18:22:02.335Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "de5b640e-9ac8-42bd-810f-edb4920e1706",
+  "activity_id": "d867b535-fcbd-486b-a679-3687128dc51f",
+  "prospect_id": "f0c75089-5edb-4f83-9f68-5c27c0eac422",
+  "company_name": "Keener Management, Inc",
+  "decision_maker": "Elisse Spence - Residential Property Manager",
+  "recipient_email": "espence@keenermanagement.com",
+  "subject": "response time",
+  "sent_at": "2026-06-18T18:23:04.210275+00:00",
+  "daily_sent_count": 28,
+  "approved_queue_count": 2,
+  "approved_by_subject_after": {
+    "response time": 2
+  }
+}

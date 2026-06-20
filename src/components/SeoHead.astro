@@ -1,0 +1,64 @@
+---
+import { socialImageDimensions } from "../lib/site";
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  type?: "website" | "article";
+  image: string;
+  imageAlt: string;
+  themeColor?: string;
+  schema?: unknown;
+  author?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  type = "website",
+  image,
+  imageAlt,
+  themeColor = "#080b10",
+  schema,
+  author,
+} = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{title}</title>
+<meta name="description" content={description} />
+{author && <meta name="author" content={author} />}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="theme-color" content={themeColor} />
+<link rel="canonical" href={canonical} />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="alternate" type="application/rss+xml" title="EMC2Ops Blog" href="/feed.xml" />
+<link rel="alternate" type="application/json" title="EMC2Ops company profile" href="/ai-docs.json" />
+<link rel="help" href="/llms.txt" />
+<link rel="help" href="/llms-full.txt" />
+<link rel="help" href="/openapi.json" type="application/json" />
+<link rel="security" href="/.well-known/security.txt" />
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content="EMC2Ops" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={image} />
+<meta property="og:image:alt" content={imageAlt} />
+<meta property="og:image:width" content={String(socialImageDimensions.width)} />
+<meta property="og:image:height" content={String(socialImageDimensions.height)} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@EMC2Ops" />
+<meta name="twitter:creator" content="@EMC2Ops" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+<meta name="twitter:image:alt" content={imageAlt} />
+{schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}

@@ -1,0 +1,13 @@
+{
+  "approval_id": "01021a84-9f01-407d-94d4-6a18377b2e03",
+  "sent": true,
+  "sent_at": "2026-06-19T13:21:36Z",
+  "activity_id": "c35c3bfc-cc92-4323-8a69-b042165e4bbd",
+  "prospect_id": "2db19595-7801-4991-9abe-b759f673e13b",
+  "company": "ROERS",
+  "contact_name": null,
+  "recipient_email": "lfischer@roers.com",
+  "subject": "response time",
+  "daily_sent_count": 3,
+  "approved_queue_count": 27
+}

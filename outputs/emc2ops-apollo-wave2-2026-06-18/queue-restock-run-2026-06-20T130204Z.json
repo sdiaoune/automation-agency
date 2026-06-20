@@ -1,0 +1,16 @@
+{
+  "as_of": "2026-06-20T13:02:03.770354+00:00",
+  "dry_run": false,
+  "target_total": 30,
+  "sent_today": 0,
+  "approved_before": 0,
+  "desired_approved": 30,
+  "needed": 30,
+  "inserted": 29,
+  "selected": 29,
+  "selected_by_subject": {
+    "lost leads": 16,
+    "response time": 13
+  },
+  "approved_after_estimate": 29
+}

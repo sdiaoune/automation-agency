@@ -1,0 +1,25 @@
+---
+import type { BlogPost } from "../lib/site";
+
+interface Props {
+  posts: BlogPost[];
+}
+
+const { posts } = Astro.props;
+---
+
+{
+  posts.length > 0 && (
+    <section class="related">
+      <h2>Related property management automation guides</h2>
+      <div class="related-grid">
+        {posts.map((post) => (
+          <a href={`/blog/${post.data.slug}/`}>
+            <strong>{post.data.title}</strong>
+            <span>{post.data.keyword}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}

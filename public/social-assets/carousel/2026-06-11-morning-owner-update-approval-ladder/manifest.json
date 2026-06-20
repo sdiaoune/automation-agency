@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-11",
+  "slot": "morning",
+  "slug": "owner-update-approval-ladder",
+  "topic": "Owner update approval ladder for property managers",
+  "hook": "If owner updates only happen when something breaks, the workflow is already late.",
+  "captionInstagram": "Why do owner updates still feel reactive in property management?\n\nBecause too many teams treat owner communication like a manual recap instead of an operating workflow with triggers, thresholds, and named approvals. Practical property management automation should decide when a repair, leasing issue, delinquency risk, make-ready delay, or resident escalation becomes an owner-facing update.\n\nThis is where an AI front desk for property managers becomes more than faster reply speed. AI voice, SMS, routing, vendor coordination, and CRM write-back should support one clean approval ladder so owners get the right update at the right moment without staff rewriting the story from scratch.\n\nIf your team still waits until the owner is already frustrated to explain cost changes, timeline slips, unresolved approvals, or repeat maintenance problems, the issue is not effort. The operating workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #OwnerUpdates #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do owner updates still arrive too late?\n\nBecause many property teams rely on inbox memory instead of a workflow with triggers, approval rules, and one clean handoff. Cost changes, timeline slips, leasing issues, and maintenance exceptions should route into a clear owner-update ladder before frustration builds.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #OwnerUpdates #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Owner communication workflow",
+      "title": "If owner updates only happen when something breaks,",
+      "titleAccent": "the workflow is already late.",
+      "body": "Owners should not depend on ad hoc recaps. Good operations define when a cost, delay, risk, or approval threshold automatically becomes an owner-facing update.",
+      "footer": "Swipe for the 6 rules behind a clean owner-update ladder",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Trigger map",
+      "title": "Every owner update needs a named event that starts the clock.",
+      "body": "Maintenance overruns, leasing stalls, delinquency signals, make-ready delays, approval requests, and resident escalations should create owner-review events automatically.",
+      "footer": "Goal: no critical update depends on memory alone",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Severity filter",
+      "title": "Routine status should stay routine. Exceptions should escalate fast.",
+      "body": "Not every note needs owner attention. The workflow should separate normal progress from events that change cost, timeline, occupancy, compliance, or trust.",
+      "footer": "Goal: fewer noisy updates, faster critical ones",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Approval threshold",
+      "title": "Spend limits and approval rules must be attached before the message goes out.",
+      "body": "If a repair crosses threshold, a vendor quote changes, or a timeline slips beyond policy, the owner update should include the rule, the ask, and the next action.",
+      "footer": "Goal: one message carries context and decision path",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Source of truth",
+      "title": "Owner updates should pull from the operating record, not from copy-paste summaries.",
+      "body": "Calls, photos, vendor notes, lease status, resident threads, and cost changes should write back into one timeline so the owner sees the actual state of work.",
+      "footer": "Goal: no rebuilt story at the end of the day",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Ownership",
+      "title": "Every escalated update needs one responsible operator.",
+      "body": "The workflow should assign who reviews, who approves, who sends, and who follows up when the owner has not responded or the situation changes again.",
+      "footer": "Goal: no update stalls between leasing, maintenance, and PM",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "Closed loop",
+      "title": "The owner response has to route the next step back into the system.",
+      "body": "Approval, rejection, questions, and no-response timers should all feed the CRM or PMS so vendor dispatch, resident messaging, and internal follow-up keep moving.",
+      "footer": "Goal: owner replies create actions, not more inbox drift",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want owner updates to feel",
+      "titleAccent": "predictable instead of reactive?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make front-desk operations and owner communication easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder",
+  "renderedAt": "2026-06-11T20:04:16.228Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/contact-sheet.png"
+}

@@ -1,0 +1,16 @@
+{
+  "sent": true,
+  "approval_id": "61897fa4-d147-49ae-ae23-8053530f3b06",
+  "prospect_id": "a7b6b95e-d647-40fc-ae0d-efab892d94ea",
+  "company": null,
+  "contact": null,
+  "email": "alexander@leapdfw.com",
+  "subject": "response time",
+  "sent_at": "2026-06-19T17:32:19Z",
+  "activity_id": "8abaf001-4b4b-4923-b797-cf4668aa066b",
+  "daily_send_count": 28,
+  "approved_queue_count": 2,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0
+}

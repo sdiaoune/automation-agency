@@ -1,0 +1,73 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage } from "../../lib/site";
+import { useCasePages, useCasesIndexSchema, useCaseUrl } from "../../lib/useCases";
+import "../../styles/service.css";
+
+const title = "Property Management Automation Use Cases | EMC2Ops";
+const description =
+  "Use-case guides for apartment lead tracking, real estate lead follow-up automation, lead-to-lease automation, CRM follow-up cleanup, and property management automation.";
+---
+
+<SiteLayout
+  title={title}
+  description={description}
+  canonical={absoluteUrl("/use-cases/")}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt="EMC2Ops property management automation use-case cluster."
+  schema={useCasesIndexSchema()}
+  pageClass="service-page"
+>
+  <SiteHeader />
+  <main>
+    <section class="service-hero">
+      <div class="wrap">
+        <p class="eyebrow">Use cases</p>
+        <h1>Property management automation use cases built around how operators search.</h1>
+        <p class="dek">
+          These pages map the phrases property managers already use when they are looking for help:
+          apartment lead tracking, real estate lead follow-up automation, lead-to-lease automation,
+          and CRM follow-up cleanup.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#book">Request a workflow audit</a>
+          <a class="btn btn-secondary" href="#use-cases">Browse use cases</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap detail-section">
+      <h2>Search cluster strategy</h2>
+      <p>
+        The hub groups high-intent query clusters into practical workflows. Each page targets a
+        primary phrase, supports related long-tail keywords, and links into the relevant EMC2Ops
+        service pages and deeper blog guides.
+      </p>
+      <div class="metric-list">
+        <span>apartment lead tracking</span>
+        <span>real estate lead follow up automation</span>
+        <span>how to automate property management</span>
+        <span>lead-to-lease automation</span>
+        <span>CRM follow-up automation</span>
+      </div>
+    </section>
+
+    <section id="use-cases" class="wrap service-grid-section">
+      <div class="service-grid">
+        {
+          useCasePages.map((useCase) => (
+            <article class="service-card">
+              <span>{useCase.primaryKeyword}</span>
+              <h2><a href={useCaseUrl(useCase)}>{useCase.title}</a></h2>
+              <p>{useCase.description}</p>
+              <a class="read-more" href={useCaseUrl(useCase)}>View use case</a>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</SiteLayout>

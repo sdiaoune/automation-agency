@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-06-18T15:13:16.915615+00:00",
+  "approval_id": "7451c7d8-d5d0-41e3-bc1e-6fd73fec5d60",
+  "sent": true,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0,
+  "sent_at": "2026-06-18T15:13:18.877483+00:00",
+  "recipient_email": "nmateleska@betinvestments.com",
+  "subject": "response time",
+  "company": "BET Investments",
+  "prospect_id": "87105411-3738-48b3-bdbc-a25206ff29f5",
+  "activity_id": "850a61ff-6093-4df0-a67b-3f9f1273ee0e",
+  "daily_sent_count": 9,
+  "approved_queue_count": 21,
+  "approved_by_subject_after": {
+    "lost leads": 7,
+    "response time": 11,
+    "missed calls": 3
+  }
+}

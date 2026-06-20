@@ -1,0 +1,704 @@
+---
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage, homeSchema } from "../lib/site";
+import "../styles/landing.css";
+
+const title = "EMC2Ops | Missed Leasing Call Recovery for Property Managers";
+const description = "EMC2Ops installs a 7-day missed leasing call recovery workflow for property managers: instant SMS text-back, renter qualification, routing, and CRM logging.";
+---
+
+<SiteLayout
+  title={title}
+  description={description}
+  canonical={absoluteUrl("/")}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt="EMC2Ops property management automation workflow for capturing after-hours leasing leads."
+  themeColor="#0b0c0a"
+  schema={homeSchema()}
+  author="EMC2Ops"
+>
+  <SiteHeader variant="landing" />
+<main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">7-day missed leasing call recovery for property managers</div>
+          <h1>Turn missed leasing calls into text-back, qualification, and routed next steps.</h1>
+          <p class="lead">EMC2Ops installs one measurable workflow first: when a renter call is missed after hours, during tours, or while the team is busy, they get an immediate SMS path and your team gets a clean summary.</p>
+          <div class="hero-actions">
+            <a href="#book" class="btn btn-primary">Request a Free Workflow Audit</a>
+            <a href="#demo" class="btn btn-secondary">Watch the Demo</a>
+          </div>
+          <div class="offer-strip" aria-label="Core EMC2Ops services">
+            <div class="offer-chip"><span class="icon">01</span><div><strong>Immediate text-back</strong><span>Missed callers get a branded SMS in seconds</span></div></div>
+            <div class="offer-chip"><span class="icon">02</span><div><strong>Renter qualification</strong><span>Move timing, property fit, budget, pets, and intent captured</span></div></div>
+            <div class="offer-chip"><span class="icon">03</span><div><strong>Team and CRM routing</strong><span>Showing requests, transcripts, summaries, and tasks sent to the right place</span></div></div>
+          </div>
+          <div class="proof">
+            <span><i class="dot"></i> Built around your current phone/SMS and CRM stack</span>
+            <span><i class="dot"></i> Scoped to launch the first workflow in about 7 days</span>
+            <span><i class="dot"></i> Human handoff stays in the team’s control</span>
+          </div>
+        </div>
+
+        <div class="dashboard" aria-label="Automation dashboard mockup">
+          <div class="screen">
+            <div class="screen-top">
+              <div class="traffic"><i></i><i></i><i></i></div>
+              <div class="status">Property workflow live</div>
+            </div>
+
+            <div class="metric-grid">
+              <div class="metric">
+                <small>Workflow installed</small>
+                <strong>7 days</strong>
+              </div>
+              <div class="metric">
+                <small>Avg. response time</small>
+                <strong>&lt;10s</strong>
+              </div>
+            </div>
+
+            <div class="flow-card">
+              <div class="flow-row">
+                <span class="icon">1</span>
+                <span>Prospect calls after hours about an available rental</span>
+                <span class="tag">Missed</span>
+              </div>
+              <div class="flow-row">
+                <span class="icon">2</span>
+                <span>AI texts back, qualifies budget, move date, and location</span>
+                <span class="tag">Qualified</span>
+              </div>
+              <div class="flow-row">
+                <span class="icon">3</span>
+                <span>Showing is booked and synced to your CRM/calendar</span>
+                <span class="tag">Booked</span>
+              </div>
+              <div class="flow-row">
+                <span class="icon">4</span>
+                <span>Team receives a summary, transcript, and next step</span>
+                <span class="tag">Logged</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What you are buying: an installed property management automation system.</h2>
+          <p>We do the implementation work: workflow mapping, AI prompts, SMS and voice logic, CRM connections, appointment routing, reporting, testing, and post-launch optimization.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <span class="icon">1</span>
+            <h3>AI front desk setup</h3>
+            <p>We configure AI voice and SMS intake that answers common questions, collects renter details, handles missed calls, and escalates when a human should take over.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon">2</span>
+            <h3>Workflow and routing buildout</h3>
+            <p>We turn leasing, maintenance, owner, and vendor communication into clear workflows with the right questions, routing rules, notifications, and handoffs.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon">3</span>
+            <h3>CRM and reporting integration</h3>
+            <p>We connect calls, texts, appointments, summaries, tasks, tags, and pipeline updates to your existing tools so the team can see what happened next.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="integrations">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Works with the systems your property team already uses.</h2>
+          <p>We support the platforms property managers rely on for leasing, operations, CRM, and follow-up workflows.</p>
+        </div>
+
+        <div class="integration-grid" aria-label="Supported property management and CRM platforms">
+          <div class="integration-logo">
+            <img src="/assets/integrations/appfolio.png" alt="AppFolio logo" width="42" height="42" loading="lazy" />
+            <span>AppFolio</span>
+          </div>
+          <div class="integration-logo">
+            <img src="/assets/integrations/buildium.png" alt="Buildium logo" width="42" height="42" loading="lazy" />
+            <span>Buildium</span>
+          </div>
+          <div class="integration-logo">
+            <img src="/assets/integrations/leadsimple.png" alt="LeadSimple logo" width="42" height="42" loading="lazy" />
+            <span>LeadSimple</span>
+          </div>
+          <div class="integration-logo">
+            <img src="/assets/integrations/yardi.png" alt="Yardi logo" width="42" height="42" loading="lazy" />
+            <span>Yardi</span>
+          </div>
+          <div class="integration-logo">
+            <img src="/assets/integrations/rent-manager.png" alt="Rent Manager logo" width="42" height="42" loading="lazy" />
+            <span>Rent Manager</span>
+          </div>
+          <div class="integration-logo">
+            <img src="/assets/integrations/entrata.png" alt="Entrata logo" width="42" height="42" loading="lazy" />
+            <span>Entrata</span>
+          </div>
+          <div class="integration-logo">
+            <img src="/assets/integrations/knock.png" alt="Knock logo" width="42" height="42" loading="lazy" />
+            <span>Knock</span>
+          </div>
+          <div class="integration-logo">
+            <img src="/assets/integrations/hubspot.png" alt="HubSpot logo" width="42" height="42" loading="lazy" />
+            <span>HubSpot</span>
+          </div>
+          <div class="integration-logo">
+            <img src="/assets/integrations/salesforce.png" alt="Salesforce logo" width="42" height="42" loading="lazy" />
+            <span>Salesforce</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pain">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Built for the problems property teams feel every day.</h2>
+          <p>Slow response times cost showings, tenant satisfaction, owner trust, and staff capacity. EMC2Ops targets the operational bottlenecks that leak revenue.</p>
+        </div>
+
+        <div class="pain-grid">
+          <article class="pain-card">
+            <strong>Missed leasing calls</strong>
+            <p>Respond instantly when prospects call after hours, during tours, or while your team is overloaded.</p>
+          </article>
+          <article class="pain-card">
+            <strong>Tenant maintenance requests</strong>
+            <p>Collect issue details, photos, urgency, property/unit information, and route requests to the right person.</p>
+          </article>
+          <article class="pain-card">
+            <strong>Owner updates</strong>
+            <p>Send automated status updates so owners are not constantly asking your team for progress.</p>
+          </article>
+          <article class="pain-card">
+            <strong>Vendor dispatching</strong>
+            <p>Trigger technician notifications and collect completion updates without manual back-and-forth.</p>
+          </article>
+          <article class="pain-card">
+            <strong>Stale lead follow-up</strong>
+            <p>Automatically follow up with prospects who never booked, no-showed, or stopped replying.</p>
+          </article>
+          <article class="pain-card">
+            <strong>Manual CRM updates</strong>
+            <p>Log conversations, tags, statuses, tasks, and appointment details into your existing systems.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Service packages built around the work your team repeats.</h2>
+          <p>This is not a generic chatbot subscription. EMC2Ops implements the actual operating workflows that affect leasing response, tenant experience, owner confidence, and admin capacity.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <span class="icon" aria-hidden="true">MC</span>
+            <h3><a href="/services/missed-call-recovery/">Missed Call Recovery</a></h3>
+            <p>Automatically respond to missed calls with AI-powered SMS, capture intent, and route qualified leads into your booking flow.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">LF</span>
+            <h3><a href="/services/leasing-follow-up/">Tenant + Lead Follow-Up</a></h3>
+            <p>Send personalized follow-ups across SMS and email so prospects, tenants, owners, and vendors get timely updates.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">CRM</span>
+            <h3><a href="/services/crm-workflow-automation/">CRM Workflow Automation</a></h3>
+            <p>Sync calls, messages, notes, lead status, appointments, maintenance requests, and reminders into your CRM.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">AI</span>
+            <h3><a href="/services/ai-front-desk-property-management/">AI Front Desk for Property Management</a></h3>
+            <p>Install AI voice, SMS, routing, and CRM workflows around the leasing and operations paths your team already runs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Use cases matched to how property managers search for help.</h2>
+          <p>Start with the problem your team is already trying to solve, then connect it to the right automation workflow.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <span class="icon" aria-hidden="true">LT</span>
+            <h3><a href="/use-cases/apartment-lead-tracking/">Apartment Lead Tracking</a></h3>
+            <p>Capture renter source, qualification details, ownership, and CRM next steps from first inquiry through booked tour.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">LF</span>
+            <h3><a href="/use-cases/real-estate-lead-follow-up-automation/">Real Estate Lead Follow-Up Automation</a></h3>
+            <p>Automate speed-to-lead, stale lead recovery, no-show follow-up, and stop rules when staff take over.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">CRM</span>
+            <h3><a href="/use-cases/real-estate-crm-follow-up-mess/">CRM Follow-Up Cleanup</a></h3>
+            <p>Fix messy follow-up with cleaner ownership, stages, tasks, deduplication, and CRM logging rules.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">L2L</span>
+            <h3><a href="/use-cases/lead-to-lease-automation/">Lead-to-Lease Automation</a></h3>
+            <p>Connect inquiry, tour, application, approval, and move-in handoff so renter next steps stay visible.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">PM</span>
+            <h3><a href="/use-cases/how-to-automate-property-management/">How to Automate Property Management</a></h3>
+            <p>Start with one measurable workflow, define the exception path, and expand once the system proves useful.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="offer">
+      <div class="wrap">
+        <div class="big-offer">
+          <div>
+            <div class="eyebrow">Core offer</div>
+            <h2>Your first AI front desk workflow, installed in about 7 days.</h2>
+            <p class="lead">A done-for-you response system that turns missed calls, tenant questions, maintenance issues, and stale leasing leads into clean, trackable next steps.</p>
+            <a href="#book" class="btn btn-primary">Request the Free Audit</a>
+          </div>
+
+          <div class="offer-list">
+            <div class="offer-item"><span class="check">✓</span><span>Missed call text-back automation with property-specific qualification questions.</span></div>
+            <div class="offer-item"><span class="check">✓</span><span>AI voice or SMS assistant for leasing intake, FAQs, maintenance triage, and appointment routing.</span></div>
+            <div class="offer-item"><span class="check">✓</span><span>CRM updates, pipeline tags, appointment reminders, team alerts, and tenant/owner notifications.</span></div>
+            <div class="offer-item"><span class="check">✓</span><span>Reporting dashboard showing recovered leads, booked showings, response speed, and workflow volume.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What the first workflow is built to improve.</h2>
+          <p>The first automation should be easy to measure. EMC2Ops focuses on response speed, booked next steps, and the amount of repetitive admin work removed from property teams.</p>
+        </div>
+
+        <div class="proof-grid">
+          <article class="proof-card">
+            <strong>10 sec</strong>
+            <p>Target response time after a missed call or inbound lead form.</p>
+          </article>
+          <article class="proof-card">
+            <strong>24/7</strong>
+            <p>Automated intake for after-hours leasing calls, tenant questions, and maintenance requests.</p>
+          </article>
+          <article class="proof-card">
+            <strong>1 CRM</strong>
+            <p>Conversations, statuses, notes, and tasks logged into your current workflow.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Product preview</div>
+          <h2>See the missed-call recovery control room in action.</h2>
+          <p>This short walkthrough shows the first workflow we install: recover the call, qualify the renter, route the risky replies, and sync the CRM record.</p>
+        </div>
+
+        <div class="demo-showcase">
+          <div class="demo-video-shell">
+            <video
+              class="demo-video"
+              src="/social-assets/emc2ops-missed-call-recovery-demo-landing.mp4"
+              poster="/social-assets/emc2ops-missed-call-recovery-demo-landing-poster.jpg"
+              controls
+              playsinline
+              preload="metadata"
+              aria-label="EMC2Ops missed-call recovery product demo"
+            ></video>
+          </div>
+
+          <div class="workflow-panel card demo-panel">
+            <div>
+              <strong>7-day missed-call recovery pilot</strong>
+              <span class="muted">Built for property managers who want the first workflow to prove ROI before a larger AI rollout.</span>
+            </div>
+            <ul>
+              <li>Instant SMS reply after missed leasing calls</li>
+              <li>Budget, move date, pets, and tour intent captured</li>
+              <li>Human handoff for sensitive or uncertain replies</li>
+              <li>Clean notes, tags, transcript, and next step logged to CRM</li>
+            </ul>
+            <a href="#book" class="btn btn-primary">Book Workflow Audit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Start with one workflow, then expand once it proves useful.</h2>
+          <p>Exact scope depends on your CRM, call volume, integrations, phone/SMS setup, and compliance needs. The audit tells you which automation should come first.</p>
+        </div>
+
+        <div class="pricing">
+          <article class="price-card">
+            <h3>Launch</h3>
+            <p>For a single high-friction workflow.</p>
+            <div class="price">Starts at $1.5k</div>
+            <ul>
+              <li>Missed call SMS workflow</li>
+              <li>Basic lead qualification</li>
+              <li>Email/SMS notifications</li>
+              <li>1 CRM integration</li>
+            </ul>
+          </article>
+
+          <article class="price-card featured">
+            <h3>Growth</h3>
+            <p>For property teams ready to automate intake and follow-up.</p>
+            <div class="price">Custom quote</div>
+            <ul>
+              <li>AI voice or SMS assistant</li>
+              <li>Leasing follow-up sequences</li>
+              <li>Showing booking workflow</li>
+              <li>CRM sync + reporting dashboard</li>
+              <li>30-day optimization</li>
+            </ul>
+          </article>
+
+          <article class="price-card">
+            <h3>Ops Partner</h3>
+            <p>For teams that want ongoing workflow iteration.</p>
+            <div class="price">Monthly retainer</div>
+            <ul>
+              <li>Workflow monitoring</li>
+              <li>New automations monthly</li>
+              <li>Reporting improvements</li>
+              <li>Support and iteration</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="book">
+      <div class="wrap">
+        <div class="booking">
+          <div class="booking-panel">
+            <div class="eyebrow">Free Ops Audit</div>
+            <h2>Request a 15-minute workflow audit.</h2>
+            <p class="muted">We’ll map where your leasing, tenant, maintenance, and owner communication process is leaking time or revenue, then recommend one automation to install first.</p>
+            <ul>
+              <li>No generic AI pitch</li>
+              <li>Workflow diagnosis first</li>
+              <li>Clear implementation plan</li>
+              <li>Built around your existing tools</li>
+            </ul>
+          </div>
+
+          <div class="calendar-box">
+            <form class="audit-form" id="audit-form">
+              <strong>Start with your current workflow.</strong>
+              <p class="muted">Tell us where communication is leaking time or revenue. We’ll confirm the audit by email.</p>
+
+              <div class="form-grid">
+                <label>
+                  Name
+                  <input name="fullName" autocomplete="name" required />
+                </label>
+                <label>
+                  Work email
+                  <input name="email" type="email" autocomplete="email" required />
+                </label>
+                <label>
+                  Phone
+                  <input name="phone" type="tel" autocomplete="tel" />
+                </label>
+                <label>
+                  Company
+                  <input name="company" autocomplete="organization" required />
+                </label>
+                <label>
+                  Company website
+                  <input name="companyWebsite" type="url" inputmode="url" placeholder="https://example.com" />
+                </label>
+                <label>
+                  Portfolio size
+                  <select name="portfolioSize">
+                    <option value="">Select one</option>
+                    <option>1-50 units</option>
+                    <option>51-250 units</option>
+                    <option>251-1,000 units</option>
+                    <option>1,000+ units</option>
+                  </select>
+                </label>
+                <label>
+                  First workflow to fix
+                  <select name="workflowProblem" required>
+                    <option value="">Select one</option>
+                    <option>Missed leasing calls</option>
+                    <option>Tenant intake</option>
+                    <option>Maintenance triage</option>
+                    <option>CRM follow-up</option>
+                    <option>Owner or vendor updates</option>
+                  </select>
+                </label>
+                <label>
+                  Preferred day/time
+                  <input name="preferredTime" placeholder="Tuesday morning, Friday at 2pm..." />
+                </label>
+                <label class="full-field">
+                  What should we look at first?
+                  <textarea name="message" placeholder="Example: after-hours calls are missed, leads are not followed up, maintenance requests need better routing..."></textarea>
+                </label>
+              </div>
+
+              <label class="hidden-field">
+                Leave this blank
+                <input name="companySiteConfirm" tabindex="-1" autocomplete="off" />
+              </label>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Request Free Audit</button>
+                <p class="form-note">You’ll get a direct follow-up from EMC2Ops.</p>
+              </div>
+              <p class="form-status" id="audit-form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="landing-pages">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Common buying paths.</h2>
+          <p>Most property management teams start with the workflow that is easiest to measure: missed calls, leasing follow-up, maintenance intake, or CRM cleanup.</p>
+        </div>
+
+        <div class="landing-links">
+          <a class="landing-link" href="/blog/property-management-ai-automation-vs-chatbots/">
+            <strong>Property management AI intake</strong>
+            <span>Capture leasing, tenant, owner, and vendor context from inbound conversations.</span>
+          </a>
+          <a class="landing-link" href="/blog/missed-call-text-back-property-management/">
+            <strong>Missed-call text-back</strong>
+            <span>Respond when a prospect calls after hours or while the team is unavailable.</span>
+          </a>
+          <a class="landing-link" href="/blog/property-management-maintenance-intake-automation/">
+            <strong>Tenant communication AI</strong>
+            <span>Collect maintenance details and route questions into the right operating path.</span>
+          </a>
+          <a class="landing-link" href="/blog/automate-property-management-lead-follow-up/">
+            <strong>Leasing follow-up</strong>
+            <span>Qualify stale leads, trigger reminders, and move booked next steps into the CRM.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="wrap">
+        <div class="newsletter-band">
+          <div>
+            <div class="eyebrow">Newsletter</div>
+            <h2>Get property management automation ideas in your inbox.</h2>
+            <p>Short notes on missed-call recovery, leasing follow-up, tenant intake, CRM cleanup, and operational AI workflows.</p>
+          </div>
+
+          <form class="newsletter-form" id="newsletter-form">
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </label>
+            <input name="source" type="hidden" value="website-newsletter" />
+            <label class="hidden-field">
+              Leave this blank
+              <input name="websiteConfirm" tabindex="-1" autocomplete="off" />
+            </label>
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+            <p class="form-status" id="newsletter-form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Questions property managers ask before installing AI.</h2>
+          <p>These answers cover setup timing, CRM integrations, team handoff, maintenance intake, and the compliance questions to resolve before launch.</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>How fast can this go live?</h3>
+            <p>The starter missed-call and follow-up workflow is designed to launch in about 7 days after access, copy, CRM details, and call/SMS requirements are confirmed.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Does this replace my team?</h3>
+            <p>No. It handles repetitive intake, qualification, routing, reminders, and logging so your team can focus on higher-value conversations.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can it connect to my CRM?</h3>
+            <p>Most CRMs can be supported through native integrations, APIs, Zapier, Make, n8n, webhooks, or custom database workflows.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What about SMS compliance?</h3>
+            <p>We design opt-in language, message flows, and routing around your provider’s requirements. Final compliance approval depends on your business, use case, and carrier setup.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can it handle maintenance requests?</h3>
+            <p>Yes. The AI can collect the issue, urgency, property/unit, photos or links when supported, and route the request to your team or vendor process.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do I need AI voice right away?</h3>
+            <p>No. Many teams should start with missed-call text-back and CRM logging, then add AI voice after the workflow proves ROI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="cta">
+          <h2>Ready to see what your first workflow should be?</h2>
+          <p>Send us your current intake process and we’ll identify where automation can save time, speed up response, and increase booked showings.</p>
+          <a href="#book" class="btn btn-primary">Request the Free Audit</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-sticky">
+    <a href="#book" class="btn btn-primary">Request Free Audit</a>
+  </div>
+
+  <SiteFooter variant="landing" />
+  <script is:inline>
+    const auditForm = document.querySelector("#audit-form");
+    const auditFormStatus = document.querySelector("#audit-form-status");
+    const newsletterForm = document.querySelector("#newsletter-form");
+    const newsletterFormStatus = document.querySelector("#newsletter-form-status");
+    const bookingSection = document.querySelector("#book");
+    const demoSection = document.querySelector("#demo");
+    const updateStickyCta = () => {
+      document.body.classList.toggle("sticky-visible", window.scrollY > 520);
+    };
+
+    updateStickyCta();
+    window.addEventListener("scroll", updateStickyCta, { passive: true });
+
+    if (bookingSection && "IntersectionObserver" in window) {
+      const bookingObserver = new IntersectionObserver((entries) => {
+        const isBookingVisible = entries.some((entry) => entry.isIntersecting);
+        document.body.classList.toggle("booking-active", isBookingVisible);
+      }, { rootMargin: "0px", threshold: 0.01 });
+
+      bookingObserver.observe(bookingSection);
+    }
+
+    if (demoSection && "IntersectionObserver" in window) {
+      const demoObserver = new IntersectionObserver((entries) => {
+        const isDemoVisible = entries.some((entry) => entry.isIntersecting);
+        document.body.classList.toggle("demo-active", isDemoVisible);
+      }, { rootMargin: "-20% 0px -10% 0px", threshold: 0.01 });
+
+      demoObserver.observe(demoSection);
+    }
+
+    auditForm?.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const submitButton = auditForm.querySelector("button[type='submit']");
+      const formData = new FormData(auditForm);
+      const payload = Object.fromEntries(formData.entries());
+      payload.pageUrl = window.location.href;
+
+      auditFormStatus.textContent = "Sending your audit request...";
+      auditFormStatus.className = "form-status";
+      submitButton.disabled = true;
+
+      try {
+        const response = await fetch("/api/book-audit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          throw new Error(result.error || "We could not submit the request.");
+        }
+
+        auditForm.reset();
+        auditFormStatus.textContent = "Audit request received. We’ll follow up shortly.";
+        auditFormStatus.className = "form-status success";
+      } catch (error) {
+        auditFormStatus.textContent = error.message || "Something went wrong. Please try again in a moment.";
+        auditFormStatus.className = "form-status error";
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+
+    newsletterForm?.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const submitButton = newsletterForm.querySelector("button[type='submit']");
+      const formData = new FormData(newsletterForm);
+      const payload = Object.fromEntries(formData.entries());
+      payload.pageUrl = window.location.href;
+
+      newsletterFormStatus.textContent = "Subscribing...";
+      newsletterFormStatus.className = "form-status";
+      submitButton.disabled = true;
+
+      try {
+        const response = await fetch("/api/newsletter-subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          throw new Error(result.error || "We could not subscribe that email.");
+        }
+
+        newsletterForm.reset();
+        newsletterFormStatus.textContent = "Subscribed. Check your inbox for future notes.";
+        newsletterFormStatus.className = "form-status success";
+      } catch (error) {
+        newsletterFormStatus.textContent = error.message || "Something went wrong. Please try again in a moment.";
+        newsletterFormStatus.className = "form-status error";
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  </script>
+</SiteLayout>

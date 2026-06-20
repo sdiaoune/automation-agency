@@ -1,0 +1,16 @@
+{
+  "sent": true,
+  "approval_id": "3e6c2bf1-1585-4daa-99fe-2b8489aca541",
+  "prospect_id": "bdb68976-1a2f-4980-8331-d7f099998701",
+  "company": null,
+  "contact": null,
+  "email": "leon@lrmmiami.com",
+  "subject": "response time",
+  "sent_at": "2026-06-19T17:21:19Z",
+  "activity_id": "5e7a7006-657f-4170-97d1-25e431e5280a",
+  "daily_send_count": 27,
+  "approved_queue_count": 3,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0
+}

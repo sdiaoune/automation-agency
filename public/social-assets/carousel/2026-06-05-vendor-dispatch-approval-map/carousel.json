@@ -1,0 +1,15 @@
+{
+  "caption": "What is vendor dispatch automation for property managers?\nIt is a workflow that takes a dispatch-ready maintenance request, checks trade, approval rules, access context, and next-step ownership, then routes the job into the right vendor and CRM path.\n\nMost vendor delays are not vendor problems first. They are routing problems. When maintenance intake automation, owner approval logic, AI voice, SMS, and property management CRM workflows are disconnected, staff have to rebuild the request before anyone can act.\n\nThis dispatch map helps teams tighten vendor handoffs, reduce approval ping-pong, and keep the full work-order context attached from intake through closeout.\n\nWe build property management automation for operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit: https://www.emc2ops.com/\n\n#PropertyManagementAutomation #VendorDispatch #MaintenanceAutomation #CRMWorkflows #PropertyManagement",
+  "date": "2026-06-05",
+  "hook": "Dispatch slows down when every repair starts from scratch. Use this 5-rule routing map.",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-vendor-dispatch-approval-map/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-vendor-dispatch-approval-map/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-vendor-dispatch-approval-map/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-vendor-dispatch-approval-map/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-vendor-dispatch-approval-map/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-vendor-dispatch-approval-map/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-vendor-dispatch-approval-map/slide-7.png"
+  ],
+  "topic": "vendor dispatch approval map"
+}

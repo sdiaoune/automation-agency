@@ -33,6 +33,14 @@ faqs:
     answer: "Sensitive disputes, legal issues, complex financial explanations, and exceptions that require judgment should stay human-reviewed."
   - question: "Can owner communication improve portfolio growth?"
     answer: "Consistent operational communication can support owner trust, which helps retention and referrals, but it should not be treated as a guaranteed growth lever."
+relatedServices:
+  - label: "Owner update automation"
+    href: "/services/owner-update-automation/"
+    description: "Send proactive owner status updates from real leasing, maintenance, and workflow events."
+relatedUseCases:
+  - label: "How to automate property management"
+    href: "/use-cases/how-to-automate-property-management/"
+    description: "Define events, review gates, and final records before automating owner communication."
 related:
   - "how-property-managers-get-new-owners"
   - "property-management-maintenance-intake-automation"

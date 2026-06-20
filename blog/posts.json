@@ -425,5 +425,19 @@
     "keyword": "property management security deposit return automation",
     "title": "Property Management Security Deposit Return Automation: Stop Rebuilding Deposit Dispositions by Hand",
     "meta": "Learn how property managers can automate security deposit return workflows, damage-charge review, owner visibility, and resident disposition notices without another spreadsheet scramble."
+  },
+  {
+    "slug": "oracle-opera-cloud-property-management-workflows",
+    "pillar": "AI Front Desk",
+    "keyword": "Oracle OPERA Cloud property management",
+    "title": "Oracle's OPERA Cloud Assistant Launch Clarifies Where Property Management AI Should Live",
+    "meta": "Oracle's June 16 OPERA Cloud Assistant launch is a useful signal for property managers: the next AI win is not another bot tab, but workflow automation embedded where staff already work."
+  },
+  {
+    "slug": "property-management-owner-statement-automation",
+    "pillar": "Risk Mitigation",
+    "keyword": "property management owner statement automation",
+    "title": "Property Management Owner Statement Automation: Stop Rebuilding Month-End Packets by Hand",
+    "meta": "Learn how property managers can automate owner statement prep, variance follow-up, invoice checks, and approval routing without another month-end spreadsheet scramble."
   }
 ]

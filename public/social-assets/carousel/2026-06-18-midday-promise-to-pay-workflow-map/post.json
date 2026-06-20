@@ -1,0 +1,95 @@
+{
+  "captions": {
+    "facebook": "Why do promise-to-pay follow-ups still create collections cleanup?\n\nBecause a payment promise should be handled like a workflow, not a note. Property management automation should capture the commitment, trigger reminders, stop duplicate outreach, and escalate broken arrangements before the ledger falls behind.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #ResidentCommunication #CRMWorkflows",
+    "instagram": "Why do promise-to-pay conversations still create follow-up leaks for property managers?\n\nBecause many teams treat a resident promise like a one-off note instead of a dated operating workflow. Practical property management automation should capture the commitment, verify the amount and date, trigger the right reminder path, stop duplicate outreach, and escalate exceptions before the ledger goes stale.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. SMS, AI voice, resident communication, delinquency follow-up, and property management CRM automation should work as one system so every payment promise creates a clean next step instead of another manual callback.\n\nIf your team still loses time to unclear due dates, broken payment arrangements, duplicate outreach, or staff rebuilding collections context from inbox threads, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #ResidentCommunication #CRMWorkflows #PropertyManagement"
+  },
+  "channels": [
+    "instagram"
+  ],
+  "date": "2026-06-18",
+  "facebook": null,
+  "hook": "If every promise-to-pay still lives in scattered notes and callback reminders, the collections workflow is still leaking.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18088535900263933",
+      "18088535915263933",
+      "18088535930263933",
+      "18088535945263933",
+      "18088535960263933",
+      "18088535972263933",
+      "18088535984263933",
+      "18088535999263933"
+    ],
+    "creationId": "18088536017263933",
+    "id": "18120468274787814",
+    "permalink": "https://www.instagram.com/p/DZvXIEYj-gG/"
+  },
+  "publishSelection": {
+    "facebookSelected": false,
+    "instagramSelected": true
+  },
+  "slot": "midday",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-7.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-8.png"
+  ],
+  "topic": "Promise-to-pay workflow map for property managers",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-7.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-8.png"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "sent",
+  "approval_id": "de337e7f-675d-4c38-8b71-61042d0461cd",
+  "recipient": "reynaldo@amarvic.com",
+  "subject": "response time",
+  "company": "Amarvic Residential",
+  "sent_at": "2026-06-18T13:21:38.148565+00:00",
+  "today_sent_before": 2,
+  "today_sent_after": 3
+}

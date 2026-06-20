@@ -33,6 +33,17 @@ faqs:
     answer: "Property, unit, resident contact, issue type, severity, photos when possible, access instructions, pets, and preferred scheduling windows."
   - question: "Does this replace maintenance coordinators?"
     answer: "No. It standardizes intake so coordinators start with cleaner information and fewer repetitive questions."
+relatedServices:
+  - label: "Maintenance intake automation"
+    href: "/services/maintenance-intake-automation/"
+    description: "Collect issue details, urgency, access notes, photos, and routing context before requests reach your team."
+  - label: "Vendor dispatch automation"
+    href: "/services/vendor-dispatch-automation/"
+    description: "Route categorized maintenance requests to the right vendor path with fewer coordination loops."
+relatedUseCases:
+  - label: "How to automate property management"
+    href: "/use-cases/how-to-automate-property-management/"
+    description: "Start with one measurable operating workflow and expand once it works."
 related:
   - "automate-tenant-maintenance-requests"
   - "property-management-maintenance-scheduling-automation"

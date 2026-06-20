@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-06-18T15:43:08.378483+00:00",
+  "approval_id": "a2f5dd6a-7c1a-4a53-9fc7-ece3a8075bf6",
+  "sent": true,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0,
+  "sent_at": "2026-06-18T15:43:10.444163+00:00",
+  "recipient_email": "vawmgr@brightonmgmt.com",
+  "subject": "response time",
+  "company": "Brighton Residential Management",
+  "prospect_id": "19992051-d159-4a45-8ce6-0ad4d18db1bf",
+  "activity_id": "ff976535-8981-43cd-933c-d3345985a846",
+  "daily_sent_count": 12,
+  "approved_queue_count": 18,
+  "approved_by_subject_after": {
+    "lost leads": 6,
+    "response time": 10,
+    "missed calls": 2
+  }
+}

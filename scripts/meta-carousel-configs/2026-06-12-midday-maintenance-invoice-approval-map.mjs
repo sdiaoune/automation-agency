@@ -1,0 +1,97 @@
+export default {
+  date: "2026-06-12",
+  slot: "midday",
+  slug: "maintenance-invoice-approval-map",
+  topic: "Maintenance invoice approval map for property managers",
+  hook: "If maintenance invoices need detective work before approval, the workflow is still leaking time.",
+  captionInstagram: `Why do maintenance invoices still create approval delays in property management?
+
+Because the invoice usually shows up before the operating context is packaged. Property management automation should connect the work order, scope change, approval threshold, vendor proof, and next owner before accounting, operations, or the owner has to reconstruct what happened.
+
+This is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Maintenance intake automation, vendor routing, AI voice, SMS, and property management CRM automation should make invoice review cleaner by design so cost questions, approval requests, and closeout steps move through one visible workflow.
+
+If your team still chases missing notes, unclear approvals, surprise overages, or vendor invoices that cannot be matched back to the job, the problem is not effort. The workflow between dispatch and closeout is weak.
+
+EMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.
+
+Book a 15-minute workflow audit at https://www.emc2ops.com/
+
+#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement`,
+  captionFacebook: `Why do maintenance invoices still get stuck in approval?
+
+Because most teams receive the bill before they receive the full operating context. Property management automation should attach the work order, scope change, approval threshold, vendor proof, and next decision owner before the invoice hits accounting or the owner.
+
+If staff still rebuild the story from texts, vendor notes, and work orders before they can approve or question a charge, the workflow is still incomplete.
+
+Book a 15-minute workflow audit at https://www.emc2ops.com/
+
+#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows`,
+  slides: [
+    {
+      eyebrow: "EMC2Ops",
+      kicker: "Maintenance closeout workflow",
+      title: "If maintenance invoices need detective work before approval,",
+      titleAccent: "the workflow is still leaking time.",
+      body: "Invoices should arrive with the job context, approval rule, and next action already attached. Otherwise accounting, PMs, and owners all waste time rebuilding the same story.",
+      footer: "Swipe for the 6 rules behind a cleaner invoice-approval path",
+      visual: "grid",
+    },
+    {
+      eyebrow: "Rule 01",
+      kicker: "Context packet",
+      title: "Every invoice should be tied to the work order before review starts.",
+      body: "Property, unit, issue, vendor, scope, approval history, photos, and completion notes should already be linked so nobody has to guess what the charge belongs to.",
+      footer: "Goal: one invoice arrives with one complete job record",
+      visual: "route",
+    },
+    {
+      eyebrow: "Rule 02",
+      kicker: "Threshold logic",
+      title: "Approval rules should fire before the invoice reaches accounting.",
+      body: "If cost crosses owner threshold, scope shifts, or repeat repair risk appears, the workflow should branch into review immediately instead of letting the surprise surface later.",
+      footer: "Goal: exceptions escalate before the bill becomes urgent",
+      visual: "timer",
+    },
+    {
+      eyebrow: "Rule 03",
+      kicker: "Proof layer",
+      title: "Every overage or scope change needs evidence attached to the ask.",
+      body: "Vendor notes, before-and-after photos, quote deltas, and reason codes should travel with the approval request so the decision is fast and defensible.",
+      footer: "Goal: no approval request without proof and rationale",
+      visual: "stack",
+    },
+    {
+      eyebrow: "Rule 04",
+      kicker: "Decision lane",
+      title: "The workflow should know whether PM, accounting, or owner decides next.",
+      body: "Routine charges, policy exceptions, capital work, and disputed invoices should not share the same lane. Named decision ownership keeps approvals from stalling between teams.",
+      footer: "Goal: every invoice has one visible decision owner",
+      visual: "handoff",
+    },
+    {
+      eyebrow: "Rule 05",
+      kicker: "Closed loop",
+      title: "Approvals and rejections should route the next operational step automatically.",
+      body: "Approved invoices should close the job and sync downstream records. Rejected or questioned charges should route back to vendor follow-up with the full context intact.",
+      footer: "Goal: the decision changes the system, not just the inbox",
+      visual: "bars",
+    },
+    {
+      eyebrow: "Rule 06",
+      kicker: "Audit trail",
+      title: "Invoice status belongs in the same system the team already runs on.",
+      body: "Approval state, invoice amount, exception reason, responder, and next action should write back into the CRM or PMS so nobody chases status across email threads.",
+      footer: "Goal: one record shows cost, owner, status, and next step",
+      visual: "score",
+    },
+    {
+      eyebrow: "EMC2Ops",
+      kicker: "15-minute workflow audit",
+      title: "Want maintenance approvals to move",
+      titleAccent: "faster without more cleanup?",
+      body: "We install practical AI voice, SMS, intake, vendor routing, and CRM workflows that make maintenance operations easier to run.",
+      footer: "Book your workflow audit at emc2ops.com",
+      visual: "cta",
+    },
+  ],
+}

@@ -6,6 +6,12 @@ import {
   INSTAGRAM_PUBLISH_SCOPE,
   inspectAccessToken,
 } from './meta-store.js'
+import {
+  createBufferPost,
+  getBufferConfig,
+  getBufferLinkedInChannelId,
+  getBufferLinkedInStatus,
+} from './buffer-store.js'
 import { getActiveXConfig, saveXOAuthConnection } from './x-store.js'
 
 const MAX_IMAGE_BYTES = 8 * 1024 * 1024
@@ -54,8 +60,9 @@ async function readBody(request) {
   return rawBody ? JSON.parse(rawBody) : {}
 }
 
-async function configuredResponse() {
+async function configuredResponse(request) {
   const config = await getActiveMetaConfig()
+  const linkedInConfig = await getBufferLinkedInStatus()
   const xConfig = await getActiveXConfig()
   const token = await inspectAccessToken(config.pageAccessToken)
   const facebookReady = Boolean(
@@ -85,6 +92,11 @@ async function configuredResponse() {
           ? 'Ready'
           : `Needs ${INSTAGRAM_PUBLISH_SCOPE}`
         : 'No linked Instagram professional account',
+      linkedin: Boolean(
+        linkedInConfig.appConfigured &&
+          linkedInConfig.connected,
+      ),
+      linkedinStatus: linkedInConfig.status,
       tokenType: token.type,
       version: config.version,
       x: Boolean(xConfig.oauth2Ready || xConfig.envOAuth1Ready),
@@ -117,6 +129,25 @@ async function postGraph(path, params) {
       body,
       method: 'POST',
     },
+  )
+  const data = await response.json().catch(() => ({}))
+
+  if (!response.ok) {
+    throw new Error(
+      data?.error?.message || `Graph API returned ${response.status}.`,
+    )
+  }
+
+  return data
+}
+
+async function getGraph(path, params = {}) {
+  const config = await getActiveMetaConfig()
+  const query = new URLSearchParams(params)
+  await addAuthParams(query)
+
+  const response = await fetch(
+    `https://graph.facebook.com/${config.version}/${path}?${query}`,
   )
   const data = await response.json().catch(() => ({}))
 
@@ -201,6 +232,32 @@ async function publishFacebookPost(payload) {
   return { channel: 'facebook', id: data.id, ok: true }
 }
 
+function wait(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms)
+  })
+}
+
+async function waitForInstagramContainer(containerId) {
+  for (let attempt = 0; attempt < 12; attempt += 1) {
+    const status = await getGraph(containerId, {
+      fields: 'status_code,status',
+    })
+
+    if (status.status_code === 'FINISHED') {
+      return
+    }
+
+    if (status.status_code === 'ERROR') {
+      throw new Error(status.status || 'Instagram media processing failed.')
+    }
+
+    await wait(2500)
+  }
+
+  throw new Error('Instagram media is still processing. Try publishing again in a minute.')
+}
+
 async function publishInstagramPost(payload) {
   const config = await getActiveMetaConfig()
   if (!config.instagramBusinessAccountId || !config.pageAccessToken) {
@@ -226,6 +283,7 @@ async function publishInstagramPost(payload) {
     `${config.instagramBusinessAccountId}/media`,
     containerParams,
   )
+  await waitForInstagramContainer(container.id)
   const published = await postGraph(
     `${config.instagramBusinessAccountId}/media_publish`,
     {
@@ -366,9 +424,69 @@ async function publishXPost(payload) {
   return { channel: 'x', id: data.data?.id, ok: true }
 }
 
+function linkedInCommentaryFromPayload(payload) {
+  const commentary =
+    payload.postType === 'link' && payload.linkUrl
+      ? `${payload.caption}\n\n${payload.linkUrl}`
+      : payload.caption
+
+  if (commentary.length > 3000) {
+    throw new Error('LinkedIn posts must be 3,000 characters or fewer.')
+  }
+
+  return commentary
+}
+
+function bufferLinkedInAssetsFromPayload(payload) {
+  if (payload.postType === 'link' && payload.linkUrl) {
+    return [{ link: { url: payload.linkUrl } }]
+  }
+
+  if (payload.mediaUrl && payload.postType === 'photo') {
+    return [{ image: { url: payload.mediaUrl } }]
+  }
+
+  if (
+    payload.mediaUrl &&
+    (payload.postType === 'video' || payload.postType === 'reel')
+  ) {
+    return [{ video: { url: payload.mediaUrl } }]
+  }
+
+  return []
+}
+
+async function publishLinkedInPost(payload) {
+  const channelId = await getBufferLinkedInChannelId()
+  const config = getBufferConfig()
+
+  if (!['text', 'link', 'photo', 'video', 'reel'].includes(payload.postType)) {
+    throw new Error('LinkedIn via Buffer supports text, link, image, and video posts.')
+  }
+
+  if (payload.mediaFile && payload.channels.length === 1) {
+    throw new Error('LinkedIn via Buffer requires a public media URL, not a local upload.')
+  }
+
+  const post = await createBufferPost({
+    assets: bufferLinkedInAssetsFromPayload(payload),
+    channelId,
+    mode: config.mode,
+    schedulingType: 'automatic',
+    source: 'emc2ops-acquisition-dashboard',
+    text: linkedInCommentaryFromPayload(payload),
+  })
+
+  return {
+    channel: 'linkedin',
+    id: post.id,
+    ok: true,
+  }
+}
+
 export default async function handler(request, response) {
   if (request.method === 'GET') {
-    return sendJson(response, 200, await configuredResponse())
+    return sendJson(response, 200, await configuredResponse(request))
   }
 
   if (request.method !== 'POST') {
@@ -385,7 +503,7 @@ export default async function handler(request, response) {
 
   const channels = Array.isArray(body.channels)
     ? body.channels.filter((channel) =>
-        ['facebook', 'instagram', 'x'].includes(channel),
+        ['facebook', 'instagram', 'linkedin', 'x'].includes(channel),
       )
     : []
   const payload = {
@@ -418,6 +536,10 @@ export default async function handler(request, response) {
 
     if (payload.channels.includes('instagram')) {
       results.push(await publishInstagramPost(payload))
+    }
+
+    if (payload.channels.includes('linkedin')) {
+      results.push(await publishLinkedInPost(payload, request))
     }
 
     if (payload.channels.includes('x')) {

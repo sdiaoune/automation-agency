@@ -1,0 +1,95 @@
+{
+  "captions": {
+    "facebook": "Why do notice-to-vacate handoffs still turn into vacancy scrambling?\n\nBecause the notice often lands before the operating workflow is defined. Property management automation should start the move-out clock, route the right owner, and trigger leasing and turn prep before the unit goes dark.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MoveOutAutomation #AIFrontDesk #CRMWorkflows",
+    "instagram": "Why do notice-to-vacate workflows still create last-minute scrambling for property managers?\n\nBecause many teams treat the notice like a single update instead of the trigger for a full operating handoff. Practical property management automation should start the move-out clock, route the right owner, package resident context, and line up leasing, turn, and follow-up steps before the vacancy becomes expensive.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. SMS, AI voice, leasing follow-up automation, resident communication, and property management CRM automation should work as one clean system so every notice creates a planned handoff instead of scattered reminders.\n\nIf your team still loses time to unclear move-out dates, missing resident instructions, make-ready surprises, or leasing that starts after the unit is already empty, the issue is not effort. The handoff workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MoveOutAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement"
+  },
+  "channels": [
+    "instagram"
+  ],
+  "date": "2026-06-15",
+  "facebook": null,
+  "hook": "If a notice to vacate still triggers a scramble, the handoff starts too late.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18088071794263933",
+      "18088071806263933",
+      "18088071836263933",
+      "18088071851263933",
+      "18088071863263933",
+      "18088071875263933",
+      "18088071890263933",
+      "18088071905263933"
+    ],
+    "creationId": "18088071917263933",
+    "id": "18139253839552769",
+    "permalink": "https://www.instagram.com/p/DZnov5An9fu/"
+  },
+  "publishSelection": {
+    "facebookSelected": false,
+    "instagramSelected": true
+  },
+  "slot": "midday",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-7.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-8.png"
+  ],
+  "topic": "Notice-to-vacate handoff map for property managers",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-7.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-15-midday-notice-to-vacate-handoff-map/slide-8.png"
+    }
+  ]
+}

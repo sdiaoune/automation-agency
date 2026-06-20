@@ -408,6 +408,43 @@ progress {
   justify-items: stretch;
 }
 
+.reply-surface {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.reply-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.reply-row {
+  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.85rem;
+}
+
+.reply-meta {
+  align-items: start;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.reply-meta span,
+.reply-row p {
+  color: var(--muted);
+}
+
+.reply-row p {
+  max-height: 7rem;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
 .reject-action {
   align-items: center;
   display: flex;
@@ -418,6 +455,178 @@ progress {
 
 .dashboard-grid {
   grid-template-columns: 0.9fr 1.25fr 0.85fr;
+}
+
+.integration-surface {
+  grid-column: 1 / -1;
+}
+
+.integration-insight-list,
+.platform-count-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.integration-insight-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.integration-insight-list div,
+.platform-count-row {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  min-height: 3.4rem;
+  padding: 0.7rem;
+}
+
+.integration-insight-list span,
+.platform-count-row span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.platform-picker {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0.8rem;
+}
+
+.platform-picker legend {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  font-size: 0.84rem;
+  font-weight: 900;
+  gap: 0.42rem;
+  padding: 0 0.35rem;
+}
+
+.platform-picker > div,
+.platform-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.platform-option,
+.platform-chip {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.64);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  display: inline-flex;
+  font-size: 0.82rem;
+  font-weight: 900;
+  gap: 0.45rem;
+  min-height: 2.35rem;
+  padding: 0.35rem 0.62rem;
+}
+
+.platform-option input {
+  accent-color: var(--green);
+  min-height: auto;
+  width: auto;
+}
+
+.platform-option img,
+.platform-chip img,
+.platform-count-row img {
+  display: block;
+  max-height: 1rem;
+  max-width: 5rem;
+  object-fit: contain;
+}
+
+.platform-chip {
+  border-radius: 8px;
+  min-height: 2rem;
+}
+
+.integrations-layout {
+  align-items: start;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(20rem, 0.65fr);
+}
+
+.integrations-side {
+  display: grid;
+  gap: 1rem;
+}
+
+.integration-card-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.integration-card {
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: grid;
+  gap: 0.75rem;
+  min-height: 15.5rem;
+  padding: 0.9rem;
+}
+
+.integration-logo-wrap {
+  align-items: center;
+  background: var(--surface-strong);
+  border: 1px solid rgba(145, 120, 78, 0.18);
+  border-radius: 8px;
+  display: flex;
+  height: 4.25rem;
+  padding: 0.8rem;
+}
+
+.integration-logo-wrap img {
+  max-height: 2.5rem;
+  max-width: 9rem;
+  object-fit: contain;
+}
+
+.integration-card h3 {
+  font-size: 1.05rem;
+}
+
+.integration-card span,
+.integration-card p {
+  color: var(--muted);
+}
+
+.integration-card span {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.integration-card p {
+  font-size: 0.88rem;
+}
+
+.integration-card strong {
+  align-items: center;
+  color: var(--green);
+  display: flex;
+  font-size: 0.84rem;
+  gap: 0.4rem;
+}
+
+.platform-count-row span {
+  align-items: center;
+  color: var(--ink);
+  display: inline-flex;
+  gap: 0.5rem;
 }
 
 .social-layout {
@@ -455,7 +664,7 @@ progress {
 }
 
 .meta-connect-actions {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto;
 }
 
 .meta-connect-actions {
@@ -685,7 +894,7 @@ progress {
 
 table {
   border-collapse: collapse;
-  min-width: 58rem;
+  min-width: 66rem;
   width: 100%;
 }
 
@@ -704,7 +913,7 @@ th {
 }
 
 td:first-child,
-td:nth-child(2) {
+td:nth-child(3) {
   display: grid;
   gap: 0.14rem;
 }
@@ -821,6 +1030,7 @@ td select {
 @media (max-width: 1120px) {
   .metric-grid,
   .dashboard-grid,
+  .integrations-layout,
   .social-layout {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -831,6 +1041,10 @@ td select {
 
   .followup-surface {
     grid-column: span 2;
+  }
+
+  .integration-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .week-grid {
@@ -847,6 +1061,7 @@ td select {
   .auth-shell,
   .metric-grid,
   .dashboard-grid,
+  .integrations-layout,
   .social-layout,
   .work-grid,
   .week-grid {
@@ -871,9 +1086,15 @@ td select {
     grid-column: auto;
   }
 
+  .integration-surface {
+    grid-column: auto;
+  }
+
   .pipeline-grid,
   .field-grid,
   .channel-row,
+  .integration-card-grid,
+  .integration-insight-list,
   .meta-connect-actions,
   .setup-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -889,6 +1110,8 @@ td select {
   .pipeline-grid,
   .field-grid,
   .channel-row,
+  .integration-card-grid,
+  .integration-insight-list,
   .meta-connect-actions,
   .setup-grid {
     grid-template-columns: 1fr;

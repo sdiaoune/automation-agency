@@ -1,0 +1,11 @@
+What should property managers automate once the conversation starts moving? The CRM write-back.
+
+Property management automation should not stop at the first text, the first call summary, or the first maintenance reply. An AI front desk for property managers should push clean outcomes into the operating system: who owns the lead, what happened, what changed, and what happens next. That is how AI voice, SMS, missed-call text-back, leasing follow-up automation, maintenance intake automation, and property management CRM automation actually reduce admin work.
+
+Use this carousel as a practical checklist for leasing, tenant intake, maintenance, owner updates, vendor handoffs, and CRM workflows. If the team still has to copy-paste notes, guess record ownership, fix duplicates, or close stages manually, the automation is incomplete.
+
+EMC2Ops builds done-for-you property management automation for operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.
+
+Book a 15-minute workflow audit at https://www.emc2ops.com/.
+
+#PropertyManagementAutomation #AIFrontDesk #CRMWorkflows #SMSWorkflows #PropertyManagement

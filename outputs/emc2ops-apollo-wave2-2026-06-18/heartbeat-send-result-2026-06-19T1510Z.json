@@ -1,0 +1,13 @@
+{
+  "approval_id": "cc71cbcc-d976-4ee5-a141-c9dbd644a686",
+  "sent": true,
+  "sent_at": "2026-06-19T15:11:55Z",
+  "activity_id": "834184b9-0476-4ac6-a432-57dbfaf9b25c",
+  "prospect_id": "6b40e2fd-e183-49b5-a713-fe5caeaeb166",
+  "company": null,
+  "contact_name": null,
+  "recipient_email": "pamela@pgmanagementgroup.com",
+  "subject": "missed calls",
+  "daily_sent_count": 14,
+  "approved_queue_count": 16
+}

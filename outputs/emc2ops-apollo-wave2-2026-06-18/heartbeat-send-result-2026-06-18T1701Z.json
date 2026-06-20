@@ -1,0 +1,20 @@
+{
+  "heartbeat": "2026-06-18T17:01:31.909Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "c3811f82-ce4e-4d3d-bd36-2f2289b712c5",
+  "activity_id": "dced7d89-9c7e-4e00-9d14-eec665540599",
+  "prospect_id": "131c4790-2924-4949-a99a-0e42c8b31dbc",
+  "company_name": "Daniel Management Group, Inc.",
+  "decision_maker": "Danielle Allen - Multi Site Residential and Commercial Property Manager",
+  "recipient_email": "danielle.allen@danielmanagement.com",
+  "subject": "response time",
+  "sent_at": "2026-06-18T17:02:35.882575+00:00",
+  "daily_sent_count": 20,
+  "approved_queue_count": 10,
+  "approved_by_subject_after": {
+    "response time": 7,
+    "lost leads": 3
+  }
+}

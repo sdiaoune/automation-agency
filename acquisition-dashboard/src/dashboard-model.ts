@@ -1,13 +1,14 @@
 import { activityOptions, stageOptions } from './strategy'
 import type {
   ActivityType,
+  IntegrationPlatformId,
   OutreachActivity,
   Prospect,
   ProspectStage,
 } from './types'
 
-export type DashboardTab = 'acquisition' | 'social'
-export type SocialChannel = 'facebook' | 'instagram' | 'x'
+export type DashboardTab = 'acquisition' | 'integrations' | 'social'
+export type SocialChannel = 'facebook' | 'instagram' | 'linkedin' | 'x'
 export type SocialPostType = 'text' | 'link' | 'photo' | 'video' | 'reel'
 export type SocialPostHistoryItem = {
   channels: SocialChannel[]
@@ -48,6 +49,27 @@ export type XStatus = {
     username: string
   } | null
 }
+export type LinkedInStatus = {
+  appConfigured: boolean
+  channel: {
+    displayName: string
+    id: string
+    name: string
+    service: string
+  } | null
+  channelId: string
+  connected: boolean
+  expiresAt: string | null
+  organizationId: string
+  status: string
+  user: {
+    email: string
+    name: string
+    picture: string
+    sub: string
+  } | null
+  version: string
+}
 
 const outboundActivityTypes = new Set<ActivityType>([
   'cold_email',
@@ -79,6 +101,7 @@ export const initialProspect = {
   phone: '',
   source: '',
   software_clues: '',
+  platforms: [] as IntegrationPlatformId[],
   pain_signal: '',
   next_follow_up_date: '',
   notes: '',
@@ -109,7 +132,7 @@ export const initialTask = {
 export const initialSocialDraft = {
   campaign: 'Property management automation',
   caption: '',
-  channels: ['x'] as SocialChannel[],
+  channels: ['linkedin'] as SocialChannel[],
   linkUrl: '',
   mediaUrl: '',
   postType: 'text' as SocialPostType,

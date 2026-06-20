@@ -1,0 +1,6 @@
+Contact: mailto:hello@emc2ops.com
+Preferred-Languages: en
+Canonical: https://www.emc2ops.com/.well-known/security.txt
+Canonical: https://www.emc2ops.com/security.txt
+Policy: https://www.emc2ops.com/privacy/
+Expires: 2027-06-20T00:00:00Z

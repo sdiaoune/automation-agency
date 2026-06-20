@@ -1,0 +1,19 @@
+{
+  "heartbeat": "2026-06-18T17:51:02.201Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "702e5732-00b8-4e46-a445-4b68bd9c9f02",
+  "activity_id": "2e413b8d-efdc-40cf-a768-c88919af5b9f",
+  "prospect_id": "ebae321d-1406-4c46-9f24-037a2d9f8247",
+  "company_name": "Carlisle Residential Properties",
+  "decision_maker": "Joshua Taylor - VP of Property Management",
+  "recipient_email": "jtaylor@carlislerp.com",
+  "subject": "lost leads",
+  "sent_at": "2026-06-18T17:52:10.873664+00:00",
+  "daily_sent_count": 25,
+  "approved_queue_count": 5,
+  "approved_by_subject_after": {
+    "response time": 5
+  }
+}

@@ -1,0 +1,52 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage } from "../../lib/site";
+import { integrationPages, integrationUrl } from "../../lib/integrations";
+import "../../styles/service.css";
+
+const title = "Property Management Automation Integrations | EMC2Ops";
+const description =
+  "Explore EMC2Ops integration workflows for AppFolio, Buildium, LeadSimple, and property management operations tools.";
+---
+
+<SiteLayout
+  title={title}
+  description={description}
+  canonical={absoluteUrl("/integrations/")}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt="EMC2Ops property management automation integrations."
+  pageClass="service-page"
+>
+  <SiteHeader />
+  <main>
+    <section class="service-hero">
+      <div class="wrap">
+        <p class="eyebrow">Integrations</p>
+        <h1>Automation workflows for the systems property teams already use.</h1>
+        <p class="dek">
+          EMC2Ops connects communication, intake, routing, and CRM handoffs through supported APIs,
+          webhooks, middleware, and workflow tools.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap service-grid-section">
+      <div class="service-grid">
+        {
+          integrationPages.map((integration) => (
+            <article class="service-card">
+              <img src={integration.logo} alt={`${integration.name} logo`} width="42" height="42" loading="lazy" />
+              <span>{integration.name}</span>
+              <h2><a href={integrationUrl(integration)}>{integration.title}</a></h2>
+              <p>{integration.description}</p>
+              <a class="read-more" href={integrationUrl(integration)}>View integration</a>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</SiteLayout>

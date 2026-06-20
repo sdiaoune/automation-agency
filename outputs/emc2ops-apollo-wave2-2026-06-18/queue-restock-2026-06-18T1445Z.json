@@ -1,0 +1,253 @@
+{
+  "created_at": "2026-06-18T14:46:18.652281+00:00",
+  "reason": "Restock approved queue to support safe paced sending up to 30 total cold emails on 2026-06-18.",
+  "target_additional_rows": 24,
+  "inserted_count": 24,
+  "by_cohort": {
+    "missed_calls": 8,
+    "speed": 8,
+    "revenue": 8
+  },
+  "rows": [
+    {
+      "approval_id": "74631297-2e0e-4eed-9c63-6356febd4740",
+      "prospect_id": "4f7ab685-c911-434e-9217-52469114070e",
+      "company_name": "Dennis Property Management",
+      "recipient_email": "lori@dennisrealty.com",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Hi Lori,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "5392b006-990c-4f88-9dbc-eb1f758b0738",
+      "prospect_id": "18e882a7-4da6-4b02-b2c7-247c16a819af",
+      "company_name": "ABS Property Management",
+      "recipient_email": "sandra@absproperty.net",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Hey Sandra,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "6714d940-d742-4d54-b084-feda4a14376f",
+      "prospect_id": "4e9548d6-6650-4ab4-876d-e2fac788b7f5",
+      "company_name": "Synergistic Property Management, LLC",
+      "recipient_email": "mariaelena@synergisticpropertymgmt.com",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Hello Maria,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "e9f9e9f8-a47b-4c36-a3f6-a97a1fc556a1",
+      "prospect_id": "30b8afc2-d816-441e-94b7-1a0f1b848916",
+      "company_name": "Five Bridges Real Estate Services Company",
+      "recipient_email": "patti@womackrealty.net",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Patricia,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "13f91815-6924-4f63-abc3-1fbc7b827525",
+      "prospect_id": "abf6dee0-361c-4844-8ed0-cedf7ed7ae59",
+      "company_name": "Culture Property Management",
+      "recipient_email": "alex@culturepm.com",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Good morning Alex,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "241e0571-0825-489b-b016-1f2773bbf749",
+      "prospect_id": "5182e2bd-d17f-4cfa-88aa-8aa685b03674",
+      "company_name": "Element Property Management",
+      "recipient_email": "evan@elementrealtygroup.net",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Hi Evan,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "d7ede671-a087-401e-b2e2-95d3b245f9e6",
+      "prospect_id": "9b5bcaa9-25d9-4f4e-aabc-81de1c3051f6",
+      "company_name": "407 Property Management Services",
+      "recipient_email": "antonio@407vhr.com",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Hey Antonio,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "eee99e95-0a30-43a9-be8d-afdc46f2c5f6",
+      "prospect_id": "b88ecc50-86c7-4ce4-ba6b-72c8d13e88db",
+      "company_name": "MoveZen Property Management",
+      "recipient_email": "re@victoryrealestateinc.com",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Hello RE,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "7451c7d8-d5d0-41e3-bc1e-6fd73fec5d60",
+      "prospect_id": "87105411-3738-48b3-bdbc-a25206ff29f5",
+      "company_name": "BET Investments",
+      "recipient_email": "nmateleska@betinvestments.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Nancy,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json"
+    },
+    {
+      "approval_id": "a2f5dd6a-7c1a-4a53-9fc7-ece3a8075bf6",
+      "prospect_id": "19992051-d159-4a45-8ce6-0ad4d18db1bf",
+      "company_name": "Brighton Residential Management",
+      "recipient_email": "vawmgr@brightonmgmt.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Good morning Sarah,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json"
+    },
+    {
+      "approval_id": "93ed2da5-d762-49f0-8f36-e82fe176594e",
+      "prospect_id": "a5971253-b382-4f04-89d8-fe9648550f60",
+      "company_name": "Carlisle Residential Properties",
+      "recipient_email": "ckey@carlislerp.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Hi Canyon,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json"
+    },
+    {
+      "approval_id": "b4d35b9e-5a2e-4a0c-9732-c82297fb5a18",
+      "prospect_id": "a6fc9fec-8ede-4aed-9546-e7bf34bed80c",
+      "company_name": "Costa Real Estate LLC",
+      "recipient_email": "greg@costare.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Hey Greg,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json"
+    },
+    {
+      "approval_id": "c3811f82-ce4e-4d3d-bd36-2f2289b712c5",
+      "prospect_id": "131c4790-2924-4949-a99a-0e42c8b31dbc",
+      "company_name": "Daniel Management Group, Inc.",
+      "recipient_email": "danielle.allen@danielmanagement.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Hello Danielle,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json"
+    },
+    {
+      "approval_id": "6d685696-9e73-4bc3-b5f0-b1e26e301a90",
+      "prospect_id": "9b129f0a-4ac6-43a4-8812-8df9c0e96e41",
+      "company_name": "Drysdale Property Management",
+      "recipient_email": "michelle.wight@drysdalepm.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Michelle,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json"
+    },
+    {
+      "approval_id": "7193972e-8ff7-4fe2-9b0d-996b9b00b72e",
+      "prospect_id": "781fb64d-b68e-46d2-ab5c-5bb113b8ea93",
+      "company_name": "Emerald Residential Property Management",
+      "recipient_email": "greg@emeraldcreekms.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Good morning Greg,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json"
+    },
+    {
+      "approval_id": "8544a0ab-1991-48a8-abf0-6ca21f2545a9",
+      "prospect_id": "1562173d-55a1-4b52-be7e-2e7584e18d19",
+      "company_name": "Independent Property Management",
+      "recipient_email": "karen@independent-pm.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Hi Karen,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json"
+    },
+    {
+      "approval_id": "59e3f341-76b9-40c6-b7d9-14952bb58a25",
+      "prospect_id": "3b72e17d-9907-4be1-8e8c-56bfd01f33dd",
+      "company_name": "Broadmoor",
+      "recipient_email": "sflaschner@broadmoor.cc",
+      "subject": "lost leads",
+      "angle": "Revenue Recovery from Lost Leads",
+      "greeting": "Hey Sam,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/revenue-recovery-send-queue-2026-06-23.json"
+    },
+    {
+      "approval_id": "702e5732-00b8-4e46-a445-4b68bd9c9f02",
+      "prospect_id": "ebae321d-1406-4c46-9f24-037a2d9f8247",
+      "company_name": "Carlisle Residential Properties",
+      "recipient_email": "jtaylor@carlislerp.com",
+      "subject": "lost leads",
+      "angle": "Revenue Recovery from Lost Leads",
+      "greeting": "Hello Joshua,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/revenue-recovery-send-queue-2026-06-23.json"
+    },
+    {
+      "approval_id": "a01e6ac2-8d6a-4d61-aa6a-93bb580db338",
+      "prospect_id": "872587c1-015c-494b-a593-14b9dd454ed7",
+      "company_name": "CloudTen Residential",
+      "recipient_email": "tevans@livecloudten.com",
+      "subject": "lost leads",
+      "angle": "Revenue Recovery from Lost Leads",
+      "greeting": "Trisha,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/revenue-recovery-send-queue-2026-06-23.json"
+    },
+    {
+      "approval_id": "4c42b6fc-5b3f-4bc1-8429-87503bc4eb6c",
+      "prospect_id": "650b7568-8fcb-4d67-b1c8-6e4a6bd09d2d",
+      "company_name": "Domino Realty Management",
+      "recipient_email": "tory.takoma@terracetrousdale.com",
+      "subject": "lost leads",
+      "angle": "Revenue Recovery from Lost Leads",
+      "greeting": "Good morning Tory,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/revenue-recovery-send-queue-2026-06-23.json"
+    },
+    {
+      "approval_id": "2ea666ef-15dd-4587-94b6-5d9975f1ad1c",
+      "prospect_id": "c0f2649b-b684-4b3e-8c9f-98288f817d40",
+      "company_name": "Durante & Rich Real Estate",
+      "recipient_email": "dkirk@drpropmgt.com",
+      "subject": "lost leads",
+      "angle": "Revenue Recovery from Lost Leads",
+      "greeting": "Hi Dianne,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/revenue-recovery-send-queue-2026-06-23.json"
+    },
+    {
+      "approval_id": "e7ae17c1-cba0-4275-b9c2-fdd8a665fc1a",
+      "prospect_id": "9d687d0b-262c-4cef-88c4-c7aef290ea95",
+      "company_name": "Engage Management",
+      "recipient_email": "jennifer.latshaw@engagemanagement.com",
+      "subject": "lost leads",
+      "angle": "Revenue Recovery from Lost Leads",
+      "greeting": "Hey Jennifer,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/revenue-recovery-send-queue-2026-06-23.json"
+    },
+    {
+      "approval_id": "8424fb1c-7017-4394-8c3b-d6039773c14d",
+      "prospect_id": "db3c4d10-8cf7-4067-a1e4-b48e20680f03",
+      "company_name": "Epac Property Management",
+      "recipient_email": "dglover@epacdevco.com",
+      "subject": "lost leads",
+      "angle": "Revenue Recovery from Lost Leads",
+      "greeting": "Hello Dani,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/revenue-recovery-send-queue-2026-06-23.json"
+    },
+    {
+      "approval_id": "c7c963fd-3bdd-44ea-a04d-5f60267a9ab7",
+      "prospect_id": "6cbcbfcd-7403-4f23-83c0-b2c8a2bbfa1f",
+      "company_name": "Essentials Residential Property Management",
+      "recipient_email": "hal@henrysmiller.com",
+      "subject": "lost leads",
+      "angle": "Revenue Recovery from Lost Leads",
+      "greeting": "Hal,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/revenue-recovery-send-queue-2026-06-23.json"
+    }
+  ]
+}

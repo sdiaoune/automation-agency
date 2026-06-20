@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-07",
+  "slot": "morning",
+  "slug": "leasing-self-scheduling-traps",
+  "topic": "Leasing self-scheduling traps for property managers",
+  "hook": "If self-scheduling creates no-shows and ghost leads, the workflow is missing operating rules.",
+  "captionInstagram": "Why does leasing self-scheduling break for property managers?\n\nBecause most teams automate the calendar link, not the operating workflow around it. Property management automation should not stop at \"pick a time.\" It should qualify intent, confirm unit fit, enforce tour rules, recover no-shows, route exceptions, and write the outcome back into the CRM without copy-paste.\n\nThat is where an AI front desk for property managers creates leverage. Missed-call text-back, leasing follow-up automation, self-scheduling logic, AI voice, SMS, and property management CRM automation should work as one path so tours do not disappear into stale guest cards and unowned follow-up.\n\nIf your team is still asking the same screening questions manually, chasing tour confirmations, or rebuilding context after every no-show, the problem is not demand. The workflow around scheduling is incomplete.\n\nEMC2Ops installs done-for-you property management automation for operators and front-desk teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows #AIVoice",
+  "captionFacebook": "Why does leasing self-scheduling break for property managers?\n\nBecause the calendar link is only one step. Property management automation should also qualify renter intent, confirm unit fit, enforce tour rules, recover no-shows, route exceptions, and write clean notes back into the CRM.\n\nIf staff still chase confirmations, reschedule manually, or rebuild context after a missed tour, the self-scheduling flow is not complete. The right AI front desk for property managers ties missed-call text-back, leasing follow-up automation, SMS, AI voice, and property management CRM automation into one operating path.\n\nEMC2Ops installs done-for-you workflows for property management teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Leasing workflow audit",
+      "title": "A calendar link is not a leasing workflow.",
+      "titleAccent": "That is why self-scheduling leaks tours.",
+      "body": "If confirmations, screening, no-show recovery, exceptions, and CRM write-back still depend on staff memory, the tour path is only half automated.",
+      "footer": "Swipe for the 6 traps to fix first",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Trap 01",
+      "kicker": "Qualification gap",
+      "title": "Do not offer times before intent and fit are clear.",
+      "body": "Guest count, move timing, budget range, pet status, and target property should be captured before the tour slot opens so bad-fit leads do not consume prime inventory.",
+      "footer": "Goal: scheduling after baseline qualification",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Trap 02",
+      "kicker": "Rule enforcement",
+      "title": "Tour rules should be enforced by workflow, not by reminder.",
+      "body": "ID policy, notice windows, occupied-unit limits, office hours, and blackout dates should shape availability automatically instead of being fixed by staff later.",
+      "footer": "Goal: no bookings that break operating rules",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Trap 03",
+      "kicker": "Confirmation sequence",
+      "title": "A booked tour still needs confirmation and prep.",
+      "body": "SMS reminders, location details, parking notes, reschedule links, and human contact options should fire before the appointment so renters actually arrive ready.",
+      "footer": "Goal: fewer no-shows and fewer inbound clarifiers",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Trap 04",
+      "kicker": "No-show recovery",
+      "title": "If the renter misses, the next step should already exist.",
+      "body": "No-show follow-up, instant rebooking prompts, and stop rules when a human replies should launch automatically before the lead goes cold.",
+      "footer": "Goal: recover missed tours without manual chasing",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Trap 05",
+      "kicker": "Exception routing",
+      "title": "Special cases need an owner before the thread gets messy.",
+      "body": "Waitlists, concession requests, accessibility needs, fair-housing sensitive questions, and unavailable-unit cases should route to a named human lane immediately.",
+      "footer": "Goal: clear escalation instead of ad hoc inbox cleanup",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Trap 06",
+      "kicker": "CRM write-back",
+      "title": "If the tour outcome never lands in the CRM, the team repeats the work.",
+      "body": "Booked, confirmed, rescheduled, no-show, toured, and follow-up states should update automatically with one clean summary and one next owner.",
+      "footer": "Goal: one record, one status, one next action",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want leasing self-scheduling to create booked tours,",
+      "titleAccent": "not admin work?",
+      "body": "We install practical AI voice, SMS, leasing follow-up automation, and property management CRM workflows around the real leasing path.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps",
+  "renderedAt": "2026-06-07T16:03:42.539Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-07-morning-leasing-self-scheduling-traps/contact-sheet.png"
+}

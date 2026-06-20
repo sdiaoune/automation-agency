@@ -2,6 +2,7 @@ import type { FormEvent } from 'react'
 import { useEffect, useState } from 'react'
 import {
   AtSign,
+  BriefcaseBusiness,
   CalendarDays,
   Camera,
   CheckCircle2,
@@ -15,6 +16,7 @@ import {
 } from 'lucide-react'
 import {
   initialSocialDraft,
+  type LinkedInStatus,
   socialContentPillars,
   socialPostTypes,
   type MetaStatus,
@@ -41,6 +43,9 @@ export function SocialMediaMarketing({
   posting: boolean
 }) {
   const [config, setConfig] = useState<MetaStatus | null>(null)
+  const [linkedInConfig, setLinkedInConfig] = useState<LinkedInStatus | null>(
+    null,
+  )
   const [xConfig, setXConfig] = useState<XStatus | null>(null)
   const [localImageName, setLocalImageName] = useState('')
 
@@ -54,6 +59,12 @@ export function SocialMediaMarketing({
     const response = await fetch('/api/x/auth/status')
     const result = (await response.json()) as XStatus
     setXConfig(result)
+  }
+
+  async function loadLinkedInStatus() {
+    const response = await fetch('/api/linkedin/auth/status')
+    const result = (await response.json()) as LinkedInStatus
+    setLinkedInConfig(result)
   }
 
   useEffect(() => {
@@ -77,6 +88,15 @@ export function SocialMediaMarketing({
         if (!cancelled) setXConfig(null)
       })
 
+    void fetch('/api/linkedin/auth/status')
+      .then((response) => response.json())
+      .then((result: LinkedInStatus) => {
+        if (!cancelled) setLinkedInConfig(result)
+      })
+      .catch(() => {
+        if (!cancelled) setLinkedInConfig(null)
+      })
+
     return () => {
       cancelled = true
     }
@@ -97,6 +117,8 @@ export function SocialMediaMarketing({
     (needsMedia || mediaUrlRequired) &&
     !draft.mediaUrl.trim() &&
     !localImageSatisfiesFacebook
+  const metaReady = Boolean(config?.facebook || config?.instagram)
+  const metaButtonLabel = metaReady ? 'Reconnect Meta' : 'Sign in with Meta'
 
   function toggleChannel(channel: SocialChannel) {
     const channels = selectedChannels.has(channel)
@@ -113,6 +135,10 @@ export function SocialMediaMarketing({
       method: 'POST',
     })
     await loadMetaStatus()
+  }
+
+  function startMetaOAuth() {
+    window.location.href = '/api/meta/auth/start?mode=publish&return_to=social'
   }
 
   return (
@@ -154,6 +180,15 @@ export function SocialMediaMarketing({
               />
               <AtSign />
               X
+            </label>
+            <label className="channel-toggle">
+              <input
+                checked={selectedChannels.has('linkedin')}
+                onChange={() => toggleChannel('linkedin')}
+                type="checkbox"
+              />
+              <BriefcaseBusiness />
+              LinkedIn
             </label>
           </div>
 
@@ -259,24 +294,13 @@ export function SocialMediaMarketing({
           />
           <div className="meta-connect-actions">
             <button
-              className="secondary-action"
-              onClick={() => {
-                window.location.href = '/api/meta/auth/start'
-              }}
-              type="button"
-            >
-              <Share2 />
-              Connect Page
-            </button>
-            <button
-              className="secondary-action"
-              onClick={() => {
-                window.location.href = '/api/meta/auth/start?mode=publish'
-              }}
+              className="secondary-action meta-oauth-action"
+              disabled={config ? !config.appConfigured : false}
+              onClick={startMetaOAuth}
               type="button"
             >
               <Send />
-              Enable Posting
+              {metaButtonLabel}
             </button>
             <button
               className="icon-action"
@@ -356,6 +380,45 @@ export function SocialMediaMarketing({
               <AtSign />
               <strong>X</strong>
               <span>{xConfig?.status ?? 'Checking setup'}</span>
+            </div>
+          </div>
+        </article>
+
+        <article className="surface">
+          <SectionHeading
+            icon={<BriefcaseBusiness />}
+            title="Buffer LinkedIn"
+            value={linkedInConfig?.connected ? 'Ready' : 'Connect'}
+          />
+          <div className="meta-connect-actions x-connect-actions">
+            <button
+              className="secondary-action"
+              onClick={() => {
+                window.location.href = '/api/linkedin/auth/start'
+              }}
+              type="button"
+            >
+              <BriefcaseBusiness />
+              Open Buffer
+            </button>
+            <button
+              className="icon-action"
+              onClick={() => void loadLinkedInStatus()}
+              title="Refresh Buffer LinkedIn connection"
+              type="button"
+            >
+              <RefreshCw />
+            </button>
+          </div>
+          <div className="setup-grid x-setup-grid">
+            <div
+              className={
+                linkedInConfig?.connected ? 'setup-item ready' : 'setup-item'
+              }
+            >
+              <BriefcaseBusiness />
+              <strong>LinkedIn via Buffer</strong>
+              <span>{linkedInConfig?.status ?? 'Checking setup'}</span>
             </div>
           </div>
         </article>

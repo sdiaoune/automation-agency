@@ -1,0 +1,45 @@
+{
+  "heartbeat": "2026-06-20T14:11:22.570Z",
+  "sent_count": 1,
+  "skipped_count": 0,
+  "replies_found": 0,
+  "blockers": [],
+  "restocked_count": 0,
+  "daily_send_count": 8,
+  "approved_queue_count": 21,
+  "approval": {
+    "id": "7e541269-91b1-4825-be3c-4c58d1d5ad56",
+    "owner_id": "3b39a282-3404-4b8c-85c4-b0b5403cf344",
+    "prospect_id": "1d65a4cc-3275-4ad4-9a4c-a5db041967ec",
+    "recipient_email": "dawn@overby.net",
+    "subject": "lost leads",
+    "body": "Hi Dawn,\n\nI noticed Overby, Inc. Commercial | Residential | Land Brokers has renter-facing leasing paths where missed calls or slow follow-up can quietly turn into lost showing opportunities.\n\nQuick question: do you have a clean way to see which leasing inquiries disappear before the team can respond?\n\nI build a narrow recovery workflow for property managers: missed call -> instant text-back -> qualification -> routed showing request or team summary.\n\nThe point is not more software. It is recovering the leads that would otherwise go cold.\n\nWorth a quick teardown for Overby, Inc. Commercial | Residential | Land Brokers?\n\nDiaoune\nEMC2Ops",
+    "activity_type": "cold_email",
+    "status": "sent",
+    "approved_at": "2026-06-20T13:02:03.770354+00:00",
+    "sent_at": "2026-06-20T14:12:34.092085+00:00",
+    "provider_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_4AAA=",
+    "last_error": "",
+    "created_at": "2026-06-20T13:02:04.82459+00:00",
+    "updated_at": "2026-06-20T14:12:34.098338+00:00"
+  },
+  "prospect": {
+    "id": "1d65a4cc-3275-4ad4-9a4c-a5db041967ec",
+    "company_name": "Overby, Inc. Commercial | Residential | Land Brokers",
+    "email": "dawn@overby.net",
+    "stage": "contacted",
+    "next_follow_up_date": "2026-06-23"
+  },
+  "activity": {
+    "id": "4218c9f6-7a50-4ac5-bfa4-701651377de3",
+    "owner_id": "3b39a282-3404-4b8c-85c4-b0b5403cf344",
+    "prospect_id": "1d65a4cc-3275-4ad4-9a4c-a5db041967ec",
+    "activity_type": "cold_email",
+    "occurred_on": "2026-06-20",
+    "outcome": "sent",
+    "notes": "Sent approved EMC2Ops Revenue Recovery from Lost Leads cold email via Outlook Email connector to dawn@overby.net. Approval 7e541269-91b1-4825-be3c-4c58d1d5ad56. Sender: soya@GetEMC2Ops.com. Subject: lost leads. Outlook message id AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_4AAA=.",
+    "created_at": "2026-06-20T14:12:34.947275+00:00"
+  },
+  "outlook_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_4AAA=",
+  "next_due_date": "2026-06-20"
+}

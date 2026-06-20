@@ -1,0 +1,20 @@
+{
+  "heartbeat": "2026-06-18T17:20:32.017Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "6d685696-9e73-4bc3-b5f0-b1e26e301a90",
+  "activity_id": "93558a75-bb56-415c-83d0-95cb7b2f2aca",
+  "prospect_id": "9b129f0a-4ac6-43a4-8812-8df9c0e96e41",
+  "company_name": "Drysdale Property Management",
+  "decision_maker": "Michelle Wight - Licensed Residential & Commercial Property Manager",
+  "recipient_email": "michelle.wight@drysdalepm.com",
+  "subject": "response time",
+  "sent_at": "2026-06-18T17:21:36.422160+00:00",
+  "daily_sent_count": 22,
+  "approved_queue_count": 8,
+  "approved_by_subject_after": {
+    "response time": 6,
+    "lost leads": 2
+  }
+}

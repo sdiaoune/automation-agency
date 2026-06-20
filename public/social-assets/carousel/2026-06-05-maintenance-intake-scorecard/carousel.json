@@ -1,0 +1,15 @@
+{
+  "caption": "What is maintenance intake automation for property managers?\nIt is a workflow that collects issue type, urgency, unit details, access notes, photos when supported, and routing context before the request reaches your team or vendor.\n\nMost maintenance intake automation fails because teams try to automate dispatch before they standardize intake. A stronger setup uses AI voice, SMS, forms, and property management CRM automation to gather the missing details first, separate emergencies from standard requests, and route clean summaries to coordinators, vendors, and owner-update workflows.\n\nThis scorecard is useful for tenant intake, maintenance intake automation, vendor handoffs, and owner updates because incomplete requests create extra calls, duplicate work, and messy CRM records.\n\nWe build property management automation for operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit: https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MaintenanceIntake #AIFrontDesk #AIVoice #VendorWorkflows",
+  "date": "2026-06-05",
+  "hook": "If maintenance intake starts vague, dispatch stays slow. Use this 5-point scorecard.",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-intake-scorecard/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-intake-scorecard/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-intake-scorecard/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-intake-scorecard/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-intake-scorecard/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-intake-scorecard/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-maintenance-intake-scorecard/slide-7.png"
+  ],
+  "topic": "maintenance intake scorecard"
+}

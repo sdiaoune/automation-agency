@@ -1,0 +1,20 @@
+{
+  "as_of": "2026-06-18T16:31:42.182591+00:00",
+  "approval_id": "6714d940-d742-4d54-b084-feda4a14376f",
+  "sent": true,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0,
+  "sent_at": "2026-06-18T16:31:44.351677+00:00",
+  "recipient_email": "mariaelena@synergisticpropertymgmt.com",
+  "subject": "missed calls",
+  "company": "Synergistic Property Management, LLC",
+  "prospect_id": "4e9548d6-6650-4ab4-876d-e2fac788b7f5",
+  "activity_id": "5b771702-471b-43c0-b3b5-da43770aad55",
+  "daily_sent_count": 17,
+  "approved_queue_count": 13,
+  "approved_by_subject_after": {
+    "response time": 9,
+    "lost leads": 4
+  }
+}

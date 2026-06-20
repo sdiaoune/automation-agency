@@ -1,0 +1,13 @@
+{
+  "approval_id": "d1c5770e-d85a-4d31-9c16-2847423489b5",
+  "sent": true,
+  "sent_at": "2026-06-19T14:11:27Z",
+  "activity_id": "43b463b9-8ba0-457f-b6e2-781a6ee2295b",
+  "prospect_id": "02756d36-d750-45e8-877b-02a852dc3836",
+  "company": null,
+  "contact_name": null,
+  "recipient_email": "bariza@covepm.com",
+  "subject": "missed calls",
+  "daily_sent_count": 8,
+  "approved_queue_count": 22
+}

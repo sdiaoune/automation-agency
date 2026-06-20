@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-06-18T16:21:40.729525+00:00",
+  "approval_id": "59e3f341-76b9-40c6-b7d9-14952bb58a25",
+  "sent": true,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0,
+  "sent_at": "2026-06-18T16:21:42.765460+00:00",
+  "recipient_email": "sflaschner@broadmoor.cc",
+  "subject": "lost leads",
+  "company": "Broadmoor",
+  "prospect_id": "3b72e17d-9907-4be1-8e8c-56bfd01f33dd",
+  "activity_id": "a8a032e3-fd6e-4a99-8066-d3b133b97ae4",
+  "daily_sent_count": 16,
+  "approved_queue_count": 14,
+  "approved_by_subject_after": {
+    "response time": 9,
+    "missed calls": 1,
+    "lost leads": 4
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "heartbeat": "2026-06-18T17:40:32.146Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "7193972e-8ff7-4fe2-9b0d-996b9b00b72e",
+  "activity_id": "5a4411c2-e975-4d36-82b8-1ff983b6e168",
+  "prospect_id": "781fb64d-b68e-46d2-ab5c-5bb113b8ea93",
+  "company_name": "Emerald Residential Property Management",
+  "decision_maker": "Greg Vance - Property Manager",
+  "recipient_email": "greg@emeraldcreekms.com",
+  "subject": "response time",
+  "sent_at": "2026-06-18T17:41:52.569495+00:00",
+  "daily_sent_count": 24,
+  "approved_queue_count": 6,
+  "approved_by_subject_after": {
+    "response time": 5,
+    "lost leads": 1
+  }
+}

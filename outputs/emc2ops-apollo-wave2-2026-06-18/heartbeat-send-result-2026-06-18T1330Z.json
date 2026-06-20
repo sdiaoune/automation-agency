@@ -1,0 +1,10 @@
+{
+  "status": "sent",
+  "approval_id": "edd7bca5-8d2c-4070-86d2-c5cc60b1096b",
+  "recipient": "mwilliamson@apmportland.com",
+  "subject": "response time",
+  "company": "American Property Management",
+  "sent_at": "2026-06-18T13:31:11.059819+00:00",
+  "today_sent_before": 3,
+  "today_sent_after": 4
+}

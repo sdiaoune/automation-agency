@@ -1,0 +1,16 @@
+---
+import type { BlogPost } from "../lib/site";
+
+interface Props {
+  post: BlogPost;
+}
+
+const { post } = Astro.props;
+---
+
+<article class="post-card">
+  <span>{post.data.keyword}</span>
+  <h3><a href={`/blog/${post.data.slug}/`}>{post.data.title}</a></h3>
+  <p>{post.data.meta}</p>
+  <a class="read-more" href={`/blog/${post.data.slug}/`}>Read guide</a>
+</article>

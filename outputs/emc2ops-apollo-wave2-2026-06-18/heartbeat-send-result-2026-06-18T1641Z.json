@@ -1,0 +1,20 @@
+{
+  "heartbeat": "2026-06-18T16:41:31.821Z",
+  "sent": 1,
+  "replies_found": 0,
+  "restocked": 0,
+  "approval_id": "b4d35b9e-5a2e-4a0c-9732-c82297fb5a18",
+  "activity_id": "b9f4f29f-3eb4-4d36-be6d-8348ee8fdac7",
+  "prospect_id": "a6fc9fec-8ede-4aed-9546-e7bf34bed80c",
+  "company_name": "Costa Real Estate LLC",
+  "decision_maker": "Greg Costa - Owner / Commercial & Residential Investment Property Management",
+  "recipient_email": "greg@costare.com",
+  "subject": "response time",
+  "sent_at": "2026-06-18T16:44:37.684644+00:00",
+  "daily_sent_count": 18,
+  "approved_queue_count": 12,
+  "approved_by_subject_after": {
+    "response time": 8,
+    "lost leads": 4
+  }
+}

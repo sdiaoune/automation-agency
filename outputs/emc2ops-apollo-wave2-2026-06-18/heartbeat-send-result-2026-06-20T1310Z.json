@@ -1,0 +1,17 @@
+{
+  "sent_count": 1,
+  "skipped_count": 0,
+  "replies_found": 0,
+  "restocked_count": 0,
+  "daily_send_count": 2,
+  "approved_queue_count": 27,
+  "approval_id": "0417fdb4-c730-41bb-9967-7f40cb9cdbe0",
+  "prospect_id": "638dd1ae-3bcb-47e9-897b-06e3a67035db",
+  "recipient_email": "logan@mackensenmediation.com",
+  "subject": "lost leads",
+  "sent_at": "2026-06-20T13:12:34.296969+00:00",
+  "activity_id": "80966fe6-f322-4451-a487-9c1bca90876b",
+  "next_due_date": "2026-06-20",
+  "blockers": [],
+  "outlook_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs_yAAA="
+}

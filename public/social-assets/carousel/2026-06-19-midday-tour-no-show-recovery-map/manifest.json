@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-19",
+  "slot": "midday",
+  "slug": "tour-no-show-recovery-map",
+  "topic": "Tour no-show recovery map for property managers",
+  "hook": "If a missed tour still turns into a dead lead by default, the follow-up workflow is too loose.",
+  "captionInstagram": "Why do missed leasing tours still turn into dead leads for property managers?\n\nBecause many teams treat a no-show like a one-off disappointment instead of a timed recovery workflow. Practical property management automation should detect the missed appointment fast, confirm whether the prospect still wants to tour, capture the reason, route the next step, and keep the CRM clean before the lead goes cold.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster texting. Tour reminders, SMS follow-up, AI voice, guest-card updates, leasing pipeline rules, and property management CRM automation should act like one system so a no-show produces a clear next action instead of another vague callback task.\n\nIf your team still loses leases because missed tours sit in voicemail, duplicate reminders, stale statuses, or unowned follow-up, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do missed leasing tours still become lost follow-up?\n\nBecause a no-show should trigger a recovery workflow, not another manual callback list. Property management automation should confirm interest fast, capture the reason, route the next owner, and update the CRM before the lead goes stale.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Leasing no-show recovery",
+      "title": "If a missed tour still turns into a dead lead by default,",
+      "titleAccent": "the workflow is too loose.",
+      "body": "A no-show should create one recovery path across reminders, call attempts, status changes, and rebooking instead of leaving staff to guess whether the prospect is gone or still interested.",
+      "footer": "Swipe for the 6 rules behind cleaner no-show recovery",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Immediate detection",
+      "title": "The tour workflow should flag a no-show the moment the appointment window expires.",
+      "body": "If the prospect has not checked in, confirmed arrival, or answered the reminder path, the system should move the tour into a recovery state automatically before the lead disappears into the day.",
+      "footer": "Goal: no missed tour waits for manual discovery",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Fast contact path",
+      "title": "Every no-show should trigger one instant follow-up asking to reschedule or close the loop.",
+      "body": "A text-back, voicemail drop, or AI voice check should go out fast with a simple choice so the prospect can rebook, explain the miss, or opt out without staff rebuilding the same message.",
+      "footer": "Goal: the next step starts within minutes, not days",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Reason capture",
+      "title": "Recovery is stronger when the reason for the miss is captured before the second attempt.",
+      "body": "Schedule conflict, bad timing, wrong property, transport issue, duplicate booking, or cold lead should be logged so the next action fits the actual objection instead of repeating the first reminder.",
+      "footer": "Goal: no-show reasons shape the follow-up path",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Rebooking lane",
+      "title": "Interested prospects should move straight into a clean reschedule flow.",
+      "body": "Available times, preferred channel, assigned agent, and booking confirmation should route together so the lead does not bounce between texts, calendars, and CRM notes before the next tour is locked in.",
+      "footer": "Goal: rebooked tours leave the recovery queue fast",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Stop rules",
+      "title": "No-show outreach should stop when the lead rebooks, opts out, or is clearly unqualified.",
+      "body": "Confirmed tour, explicit decline, duplicate guest card merge, disqualified criteria, or agent-owned conversation should pause automation before the prospect gets mixed signals from multiple follow-up paths.",
+      "footer": "Goal: one source of truth controls recovery outreach",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "CRM write-back",
+      "title": "Every no-show event should update the guest card before the next leasing task fires.",
+      "body": "Missed time, response status, reason, reschedule outcome, assigned owner, and next due action should write back quickly so staff are not re-reading texts and voicemails to understand pipeline status.",
+      "footer": "Goal: the CRM shows the miss, recovery, and owner",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want missed tours to create",
+      "titleAccent": "more rebooks and less leakage?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make leasing recovery and front-desk follow-up easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map",
+  "renderedAt": "2026-06-19T20:03:24.692Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/contact-sheet.png"
+}

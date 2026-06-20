@@ -40,6 +40,7 @@ related:
   - "owner-updates-property-management-automation"
   - "property-management-repair-approval-automation"
   - "property-management-maintenance-invoice-automation"
+  - "property-management-owner-statement-automation"
   - "property-management-make-ready-automation"
   - "property-management-work-order-closeout-automation"
   - "property-management-delinquency-outreach-automation"

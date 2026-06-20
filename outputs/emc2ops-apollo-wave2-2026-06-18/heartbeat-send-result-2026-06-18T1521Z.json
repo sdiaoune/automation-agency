@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-06-18T15:22:41.627177+00:00",
+  "approval_id": "8424fb1c-7017-4394-8c3b-d6039773c14d",
+  "sent": true,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0,
+  "sent_at": "2026-06-18T15:22:43.534955+00:00",
+  "recipient_email": "dglover@epacdevco.com",
+  "subject": "lost leads",
+  "company": "Epac Property Management",
+  "prospect_id": "db3c4d10-8cf7-4067-a1e4-b48e20680f03",
+  "activity_id": "b2ead34d-791c-4f6d-8bdd-44286993669e",
+  "daily_sent_count": 10,
+  "approved_queue_count": 20,
+  "approved_by_subject_after": {
+    "lost leads": 6,
+    "response time": 11,
+    "missed calls": 3
+  }
+}

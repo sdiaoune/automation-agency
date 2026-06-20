@@ -1,0 +1,13 @@
+{
+  "approval_id": "d72014ea-d16a-4e69-ba82-520b08bc99e5",
+  "sent": true,
+  "sent_at": "2026-06-19T14:03:29+00:00",
+  "activity_id": "b248b4af-115c-4ba9-ab8a-9b590cfe963a",
+  "prospect_id": "795e8c38-7ef3-4102-a55c-d79bd26dd4db",
+  "company": null,
+  "contact_name": null,
+  "recipient_email": "marlo@mpmnashville.com",
+  "subject": "lost leads",
+  "daily_sent_count": 7,
+  "approved_queue_count": 23
+}

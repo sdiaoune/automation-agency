@@ -49,6 +49,10 @@ function redirect(response, location) {
   response.end()
 }
 
+function safeReturnTo(value) {
+  return value === 'social' ? 'social' : ''
+}
+
 function originFromRequest(request) {
   const host = request.headers.host || request.headers.get?.('host')
   const protocol =
@@ -67,7 +71,8 @@ function isLocalRequest(request) {
 function redirectUri(request) {
   return (
     process.env.META_OAUTH_REDIRECT_URI ||
-    originFromRequest(request)
+    process.env.META_REDIRECT_URI ||
+    `${originFromRequest(request)}/api/meta/auth/callback`
   )
 }
 
@@ -161,8 +166,9 @@ async function statusResponse() {
   )
   const selectedPage = config.selectedPage
   const instagramAccount = selectedPage?.instagramBusinessAccount || null
+  const instagramAccountId = instagramAccount?.id || config.instagramBusinessAccountId
   const instagramReady = Boolean(
-    facebookReady && instagramAccount?.id && token.scopes.includes(INSTAGRAM_PUBLISH_SCOPE),
+    facebookReady && instagramAccountId && token.scopes.includes(INSTAGRAM_PUBLISH_SCOPE),
   )
 
   return {
@@ -176,9 +182,9 @@ async function statusResponse() {
           : `Needs Page token with ${FACEBOOK_PUBLISH_SCOPE}`
         : 'Connect a Facebook Page',
     instagram: instagramReady,
-    instagramStatus: instagramAccount?.id
+    instagramStatus: instagramAccountId
       ? instagramReady
-        ? `Ready: ${instagramAccount.username || instagramAccount.name || instagramAccount.id}`
+        ? `Ready: ${instagramAccount?.username || instagramAccount?.name || instagramAccountId}`
         : `Needs ${INSTAGRAM_PUBLISH_SCOPE}`
       : 'No linked Instagram professional account',
     pages: config.pages.map(publicPage),
@@ -192,15 +198,20 @@ async function handleStart(request, response) {
   const config = await getActiveMetaConfig()
   const requestUrl = new URL(request.url || '', originFromRequest(request))
   const mode = requestUrl.searchParams.get('mode') === 'publish' ? 'publish' : 'basic'
+  const returnTo = safeReturnTo(requestUrl.searchParams.get('return_to') || '')
   const oauthRedirectUri = redirectUri(request)
 
   if (!config.appId || !config.appSecret) {
     return sendJson(response, 500, {
-      error: 'Add FACEBOOK_APP_ID and FACEBOOK_APP_SECRET before connecting Meta.',
+      error: 'Add META_APP_ID and META_APP_SECRET before connecting Meta.',
     })
   }
 
-  const state = await createPendingState({ mode, redirectUri: oauthRedirectUri })
+  const state = await createPendingState({
+    mode,
+    redirectUri: oauthRedirectUri,
+    returnTo,
+  })
   const url = new URL(`https://www.facebook.com/${config.version}/dialog/oauth`)
   url.searchParams.set('client_id', config.appId)
   url.searchParams.set('redirect_uri', oauthRedirectUri)
@@ -228,7 +239,12 @@ async function handleCallback(request, response) {
   const pendingState = code && state ? await consumePendingState(state) : null
   const localStateFallback =
     !pendingState && code && state && isLocalRequest(request)
-      ? { redirectUri: oauthRedirectUri || redirectUri(request) }
+      ? {
+          redirectUri:
+            oauthRedirectUri ||
+            (typeof pendingState === 'object' ? pendingState.redirectUri : '') ||
+            redirectUri(request),
+        }
       : null
 
   if (!code || !state || (!pendingState && !localStateFallback)) {
@@ -261,14 +277,17 @@ async function handleCallback(request, response) {
 
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html')
+    const returnTo = safeReturnTo(pendingState?.returnTo || '')
+    const returnUrl = `/?meta_connected=1${returnTo ? `&tab=${returnTo}` : ''}`
+
     response.end(`
       <!doctype html>
       <title>Meta connected</title>
       <main style="font-family: system-ui; padding: 2rem;">
         <h1>Meta connected</h1>
         <p>Connected ${pages.length} Page${pages.length === 1 ? '' : 's'}.</p>
-        <p><a href="/?meta_connected=1">Return to the dashboard</a></p>
-        <script>setTimeout(() => location.href = '/?meta_connected=1', 900)</script>
+        <p><a href="${returnUrl}">Return to the dashboard</a></p>
+        <script>setTimeout(() => location.href = '${returnUrl}', 900)</script>
       </main>
     `)
   } catch (callbackError) {
@@ -295,7 +314,12 @@ async function handleComplete(request, response) {
   const pendingState = await consumePendingState(state)
   const localStateFallback =
     !pendingState && isLocalRequest(request)
-      ? { redirectUri: oauthRedirectUri || redirectUri(request) }
+      ? {
+          redirectUri:
+            oauthRedirectUri ||
+            (typeof pendingState === 'object' ? pendingState.redirectUri : '') ||
+            redirectUri(request),
+        }
       : null
 
   if (!pendingState && !localStateFallback) {
@@ -326,6 +350,7 @@ async function handleComplete(request, response) {
     return sendJson(response, 200, {
       ok: true,
       pages: pages.map(publicPage),
+      returnTo: safeReturnTo(pendingState?.returnTo || localStateFallback?.returnTo || ''),
       selectedPageId,
     })
   } catch (error) {

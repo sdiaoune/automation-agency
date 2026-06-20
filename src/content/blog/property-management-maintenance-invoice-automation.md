@@ -37,6 +37,7 @@ faqs:
     answer: "The safest setup uses property-specific coding rules tied to vendor, trade, work-order type, approval thresholds, and ownership structure, then stops for review when required details are missing or the charge falls outside those rules."
 related:
   - "property-management-owner-approval-workflow"
+  - "property-management-owner-statement-automation"
   - "automate-vendor-dispatch-property-management"
   - "property-management-repair-approval-automation"
   - "owner-updates-property-management-automation"

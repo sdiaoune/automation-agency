@@ -1,0 +1,12 @@
+{
+  "sent": true,
+  "approval_id": "e10b86f7-88ca-458a-9c16-d2324f4ba0c6",
+  "prospect_id": "aee58ac4-a3c0-4b6e-bf80-ae35345b0ed4",
+  "company": "Olympic Property Management",
+  "recipient": "peter@olympicpropertymgmt.com",
+  "subject": "response time",
+  "sent_at": "2026-06-19T16:42:32Z",
+  "activity_id": "b3785022-bf8a-4a41-a65b-2d8a105d8f56",
+  "sent_today": 23,
+  "approved_queue": 7
+}

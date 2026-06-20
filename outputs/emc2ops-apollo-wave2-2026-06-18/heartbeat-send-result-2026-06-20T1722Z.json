@@ -1,0 +1,38 @@
+{
+  "sent_count": 1,
+  "skipped_count": 0,
+  "replies_found": 0,
+  "bounces_found": 0,
+  "blockers": [
+    "No additional eligible send-ready local/dashboard records were available to restock the approved queue to the daily target."
+  ],
+  "restock": {
+    "target_total": 30,
+    "sent_today_before": 26,
+    "approved_before": 3,
+    "desired_approved": 4,
+    "needed": 1,
+    "inserted": 0,
+    "approved_after_estimate": 3
+  },
+  "daily_send_count": 27,
+  "approved_queue_count": 2,
+  "sent": {
+    "approval_id": "729ac422-9917-4339-b827-b71035ae3672",
+    "prospect_id": "4398eefd-04be-4d25-a490-21b54732b50c",
+    "recipient": "hp@barringtonresidential.com",
+    "subject": "response time",
+    "outlook_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs-LAAA=",
+    "activity_id": "ea75c319-8339-420f-83b2-2b84651c9a79"
+  },
+  "next_due_date": "2026-06-20",
+  "next_approved": [
+    {
+      "id": "06c01680-6901-434e-90f4-33bb89868421",
+      "prospect_id": "10e3fa04-cb42-4c76-af52-af47a630cc5f",
+      "recipient_email": "atyler@chanres.com",
+      "subject": "lost leads",
+      "created_at": "2026-06-20T13:02:04.82459+00:00"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { Session } from '@supabase/supabase-js'
+import { Analytics } from '@vercel/analytics/react'
 import { AuthScreen } from './AuthScreen'
 import { Dashboard } from './Dashboard'
 import { LoadingScreen } from './SharedUi'
@@ -29,7 +30,12 @@ function App() {
     return <LoadingScreen label="Checking your dashboard session" />
   }
 
-  return session ? <Dashboard session={session} /> : <AuthScreen />
+  return (
+    <>
+      {session ? <Dashboard session={session} /> : <AuthScreen />}
+      <Analytics />
+    </>
+  )
 }
 
 export default App

@@ -6,11 +6,14 @@ import {
   CheckCircle2,
   CircleUserRound,
   ClipboardPlus,
+  Inbox,
   MailPlus,
   Pencil,
+  Plug,
   Plus,
   Save,
   Send,
+  Tags,
   Target,
   X,
 } from 'lucide-react'
@@ -40,6 +43,12 @@ import {
   stageLabel,
 } from './dashboard-model'
 import {
+  buildIntegrationInsights,
+  integrationPlatforms,
+  normalizePlatformIds,
+  platformForId,
+} from './integrations'
+import {
   DraftInput,
   DraftTextArea,
   EmptyState,
@@ -48,6 +57,16 @@ import {
 } from './SharedUi'
 
 type DashboardStats = ReturnType<typeof buildDashboardStats>
+
+function isOutlookReplyActivity(activity: OutreachActivity) {
+  const content = `${activity.outcome} ${activity.notes}`.toLowerCase()
+
+  return (
+    content.includes('outlook reply') ||
+    content.includes('prospect reply') ||
+    content.includes('inbound reply')
+  )
+}
 
 export function AcquisitionDashboard({
   activities,
@@ -202,7 +221,11 @@ export function AcquisitionDashboard({
             </div>
           )}
         </article>
+
+        <IntegrationInsights prospects={prospects} />
       </section>
+
+      <OutlookReplies activities={activities} prospects={prospects} />
 
       <section className="work-grid">
         <ProspectEntry
@@ -244,6 +267,91 @@ export function AcquisitionDashboard({
         tasks={tasks}
       />
     </>
+  )
+}
+
+function OutlookReplies({
+  activities,
+  prospects,
+}: {
+  activities: OutreachActivity[]
+  prospects: Prospect[]
+}) {
+  const prospectsById = new Map(
+    prospects.map((prospect) => [prospect.id, prospect]),
+  )
+  const replies = activities
+    .filter(isOutlookReplyActivity)
+    .sort((left, right) => {
+      const leftDate = left.created_at || left.occurred_on
+      const rightDate = right.created_at || right.occurred_on
+
+      return rightDate.localeCompare(leftDate)
+    })
+
+  return (
+    <section className="surface reply-surface">
+      <SectionHeading
+        icon={<Inbox />}
+        title="Outlook replies"
+        value={`${replies.length} found`}
+      />
+      {replies.length === 0 ? (
+        <EmptyState label="Prospect replies found by the autopilot will appear here." />
+      ) : (
+        <div className="reply-list">
+          {replies.slice(0, 8).map((reply) => {
+            const prospect = reply.prospect_id
+              ? prospectsById.get(reply.prospect_id)
+              : null
+
+            return (
+              <article className="reply-row" key={reply.id}>
+                <div className="reply-meta">
+                  <strong>{prospect?.company_name || 'Unlinked reply'}</strong>
+                  <span>
+                    {reply.occurred_on}
+                    {reply.outcome ? ` / ${reply.outcome}` : ''}
+                  </span>
+                </div>
+                <p>{reply.notes || 'No reply summary captured yet.'}</p>
+              </article>
+            )
+          })}
+        </div>
+      )}
+    </section>
+  )
+}
+
+function IntegrationInsights({ prospects }: { prospects: Prospect[] }) {
+  const insights = buildIntegrationInsights(prospects)
+  const mostCommon = insights.mostCommonPlatform
+
+  return (
+    <article className="surface integration-surface">
+      <SectionHeading
+        icon={<Plug />}
+        title="Integration coverage"
+        value={`${insights.taggedProspects.length} tagged`}
+      />
+      <div className="integration-insight-list">
+        <div>
+          <span>Tagged accounts</span>
+          <strong>
+            {insights.taggedProspects.length} / {prospects.length}
+          </strong>
+        </div>
+        <div>
+          <span>Most common</span>
+          <strong>{mostCommon?.platform?.name ?? 'None yet'}</strong>
+        </div>
+        <div>
+          <span>Needs review</span>
+          <strong>{insights.untaggedProspects.length}</strong>
+        </div>
+      </div>
+    </article>
   )
 }
 
@@ -464,7 +572,8 @@ function ProspectEntry({
           <DraftInput draft={draft} field="website" label="Website" onChange={onChange} />
           <DraftInput draft={draft} field="source" label="Source" onChange={onChange} />
         </div>
-        <DraftInput draft={draft} field="software_clues" label="Software clues" onChange={onChange} />
+        <PlatformPicker draft={draft} onChange={onChange} />
+        <DraftInput draft={draft} field="software_clues" label="Software notes" onChange={onChange} />
         <DraftTextArea draft={draft} field="pain_signal" label="Pain signal" onChange={onChange} />
         <DraftTextArea draft={draft} field="notes" label="Notes" onChange={onChange} />
         <button className="primary-action" disabled={busy} type="submit">
@@ -473,6 +582,46 @@ function ProspectEntry({
         </button>
       </form>
     </article>
+  )
+}
+
+function PlatformPicker({
+  draft,
+  onChange,
+}: {
+  draft: typeof initialProspect
+  onChange: (draft: typeof initialProspect) => void
+}) {
+  const selectedPlatforms = new Set(draft.platforms)
+
+  function togglePlatform(platformId: (typeof draft.platforms)[number]) {
+    const platforms = selectedPlatforms.has(platformId)
+      ? draft.platforms.filter((id) => id !== platformId)
+      : [...draft.platforms, platformId]
+
+    onChange({ ...draft, platforms })
+  }
+
+  return (
+    <fieldset className="platform-picker">
+      <legend>
+        <Tags />
+        Platforms
+      </legend>
+      <div>
+        {integrationPlatforms.map((platform) => (
+          <label className="platform-option" key={platform.id}>
+            <input
+              checked={selectedPlatforms.has(platform.id)}
+              onChange={() => togglePlatform(platform.id)}
+              type="checkbox"
+            />
+            <img alt="" src={platform.logo} />
+            <span>{platform.name}</span>
+          </label>
+        ))}
+      </div>
+    </fieldset>
   )
 }
 
@@ -576,6 +725,34 @@ function ActivityEntry({
   )
 }
 
+function PlatformChips({
+  platforms,
+}: {
+  platforms: Prospect['platforms'] | undefined
+}) {
+  const selectedPlatforms = normalizePlatformIds(platforms)
+
+  if (selectedPlatforms.length === 0) {
+    return <span>No platform tags</span>
+  }
+
+  return (
+    <div className="platform-chip-list">
+      {selectedPlatforms.map((platformId) => {
+        const platform = platformForId(platformId)
+        if (!platform) return null
+
+        return (
+          <span className="platform-chip" key={platform.id}>
+            <img alt="" src={platform.logo} />
+            {platform.name}
+          </span>
+        )
+      })}
+    </div>
+  )
+}
+
 function ProspectTable({
   onStageChange,
   prospects,
@@ -598,6 +775,7 @@ function ProspectTable({
             <thead>
               <tr>
                 <th>Account</th>
+                <th>Platforms</th>
                 <th>Contact</th>
                 <th>Pain signal</th>
                 <th>Follow-up</th>
@@ -610,6 +788,9 @@ function ProspectTable({
                   <td>
                     <strong>{prospect.company_name}</strong>
                     <span>{prospect.market || prospect.source || 'Unsorted'}</span>
+                  </td>
+                  <td>
+                    <PlatformChips platforms={prospect.platforms} />
                   </td>
                   <td>
                     <strong>{prospect.decision_maker || 'Unknown contact'}</strong>

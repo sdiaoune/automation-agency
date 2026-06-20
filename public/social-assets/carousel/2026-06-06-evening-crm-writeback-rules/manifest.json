@@ -1,0 +1,139 @@
+{
+  "date": "2026-06-06",
+  "slot": "evening",
+  "slug": "crm-writeback-rules",
+  "topic": "Property management CRM write-back rules",
+  "hook": "If the CRM only updates after someone remembers, you do not have automation.",
+  "captionInstagram": "What should property managers automate after the first reply? The CRM write-back.\n\nProperty management automation is not finished when AI voice or SMS gets the answer. It is finished when the right outcome, owner, and next step land in the system without your leasing, maintenance, or operations team copying notes by hand. That is where an AI front desk for property managers becomes practical.\n\nUse this checklist for missed-call text-back, leasing follow-up automation, maintenance intake automation, owner updates, vendor routing, and property management CRM automation. Every workflow should define the trigger, the summary format, the record match rules, the assignee, the closeout state, and the human-review lane before more messages go out.\n\nIf your team still has to retype renter replies, maintenance context, owner approvals, or vendor updates into the CRM, the real bottleneck is not more lead volume. It is weak CRM workflows.\n\nEMC2Ops installs done-for-you property management automation with AI front desk for property managers, AI voice, SMS, and CRM workflows for teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #AIFrontDesk #CRMWorkflows #LeasingAutomation #AIVoice",
+  "captionFacebook": "What should property managers automate once the conversation starts moving? The CRM write-back.\n\nProperty management automation should not stop at the first text, the first call summary, or the first maintenance reply. An AI front desk for property managers should push clean outcomes into the operating system: who owns the lead, what happened, what changed, and what happens next. That is how AI voice, SMS, missed-call text-back, leasing follow-up automation, maintenance intake automation, and property management CRM automation actually reduce admin work.\n\nUse this carousel as a practical checklist for leasing, tenant intake, maintenance, owner updates, vendor handoffs, and CRM workflows. If the team still has to copy-paste notes, guess record ownership, fix duplicates, or close stages manually, the automation is incomplete.\n\nEMC2Ops builds done-for-you property management automation for operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #AIFrontDesk #CRMWorkflows #SMSWorkflows #PropertyManagement",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Operator checklist",
+      "title": "If the CRM only updates after someone remembers,",
+      "titleAccent": "you do not have automation.",
+      "body": "Leasing, maintenance, owner updates, vendor routing, and tenant intake all break when the next step lives in somebody's memory instead of the record.",
+      "footer": "Swipe for the 6 CRM write-back rules",
+      "visual": "merge"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Clear trigger",
+      "title": "Every workflow needs one moment that writes back.",
+      "body": "Missed-call text-back, AI voice, form intake, SMS replies, and leasing follow-up automation should each define the exact event that creates or updates the record.",
+      "footer": "No trigger = no reliable CRM workflow.",
+      "visual": "signal"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Clean summary",
+      "title": "Write back the outcome, not the whole transcript.",
+      "body": "Property management CRM automation should store status, reason, urgency, unit context, and next step instead of dumping raw conversation clutter into the notes.",
+      "footer": "Short summaries beat noisy transcripts.",
+      "visual": "cards"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Single owner",
+      "title": "One record should leave with one assignee.",
+      "body": "Whether it is a renter lead, maintenance request, owner approval, or vendor follow-up, the workflow should set the next owner and due moment automatically.",
+      "footer": "Automation should assign, not just alert.",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Duplicate defense",
+      "title": "Match before you create.",
+      "body": "Phone number, email, property, unit, and conversation source should be checked before the workflow creates another lead, request, task, or vendor thread.",
+      "footer": "Duplicate records create duplicate work.",
+      "visual": "merge"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Closeout logic",
+      "title": "Booked, routed, approved, or closed should change the record immediately.",
+      "body": "When the showing is booked, the maintenance request is dispatched, or the owner decision is logged, the stage and follow-up path should update without manual cleanup.",
+      "footer": "Completion should close the loop.",
+      "visual": "calendar"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "Human review lane",
+      "title": "Exceptions need context, not another inbox.",
+      "body": "Upset residents, lease-policy nuance, owner approval questions, vendor conflicts, and messy record matches should route to staff with the full summary attached.",
+      "footer": "Escalate the edge case with the history attached.",
+      "visual": "shield"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "If your team is still retyping the next step,",
+      "titleAccent": "start with the write-back rules.",
+      "body": "That is how AI voice, SMS, missed-call text-back, leasing follow-up automation, maintenance intake automation, and CRM workflows become operator-safe for property managers.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "directory": "2026-06-06-evening-crm-writeback-rules",
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules",
+  "renderedAt": "2026-06-06T14:59:16.883Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/contact-sheet.png"
+}

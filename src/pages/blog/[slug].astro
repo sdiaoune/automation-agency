@@ -1,0 +1,199 @@
+---
+import { getCollection, render } from "astro:content";
+import ArticleCta from "../../components/ArticleCta.astro";
+import FaqList from "../../components/FaqList.astro";
+import NewsletterSignup from "../../components/NewsletterSignup.astro";
+import RelatedPosts from "../../components/RelatedPosts.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import {
+  absoluteUrl,
+  articleSchema,
+  articleTitleTag,
+  byOrder,
+  cities,
+  socialImageFor,
+  stripTags,
+  type BlogPost,
+} from "../../lib/site";
+import "../../styles/blog.css";
+
+export async function getStaticPaths() {
+  const posts = byOrder(await getCollection("blog"));
+  return posts.map((post) => ({
+    params: { slug: post.data.slug },
+    props: { post, posts },
+  }));
+}
+
+interface Props {
+  post: BlogPost;
+  posts: BlogPost[];
+}
+
+const { post, posts } = Astro.props;
+const related = post.data.related
+  .map((slug) => posts.find((item) => item.data.slug === slug))
+  .filter(Boolean) as BlogPost[];
+const canonical = absoluteUrl(`/blog/${post.data.slug}/`);
+const { Content } = await render(post);
+---
+
+<SiteLayout
+  title={articleTitleTag(post)}
+  description={post.data.meta}
+  canonical={canonical}
+  type="article"
+  image={socialImageFor(post)}
+  imageAlt={`${post.data.title} social preview from EMC2Ops.`}
+  schema={articleSchema(post)}
+  pageClass="article-page"
+>
+  <SiteHeader />
+  <main>
+    <article class="article">
+      <div class="wrap article-grid">
+        <aside class="toc" aria-label="Article navigation">
+          <strong>{post.data.pillar}</strong>
+          <a href="#answer">Direct answer</a>
+          <a href="#cost">Operational cost</a>
+          <a href="#workflow">Workflow design</a>
+          <a href="#metrics">Metrics</a>
+          <a href="#faq">FAQ</a>
+        </aside>
+
+        <div class="article-body">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="/">Home</a><span>/</span><a href="/blog/">Blog</a><span>/</span>{post.data.keyword}
+          </nav>
+          <p class="eyebrow">{post.data.keyword}</p>
+          <h1>{post.data.h1}</h1>
+          <p class="dek">{post.data.problem}</p>
+
+          <ArticleCta
+            top
+            title="Want the fastest workflow win?"
+            description="EMC2Ops maps your leasing, maintenance, and CRM handoffs and identifies the first automation worth installing."
+          />
+
+          <NewsletterSignup
+            title="Want the next guide in your inbox?"
+            description="Get new EMC2Ops property management automation posts when they publish."
+            source="blog-article-newsletter"
+          />
+
+          <section id="answer" class="answer-box">
+            <h2>Direct answer for operators</h2>
+            <p>
+              {stripTags(post.data.problem)} For property management companies managing 50+ units,
+              the practical fix is not another inbox. It is a defined workflow that acknowledges the
+              inquiry, captures the required context, routes the next step, and updates the operating
+              system of record.
+            </p>
+          </section>
+
+          {post.data.bodySections && (
+            <section class="article-content">
+              <Content />
+            </section>
+          )}
+
+          <section id="cost">
+            <h2>Where the operational cost shows up</h2>
+            <p>
+              In high-growth rental markets across the United States, including {cities}, response
+              speed and clean handoffs affect leasing capacity, tenant satisfaction, and owner
+              confidence. The cost usually appears in a few repeatable places:
+            </p>
+            <ul>{post.data.stakes.map((item) => <li>{item}</li>)}</ul>
+          </section>
+
+          <section class="visual" aria-label="Workflow diagram">
+            <h2>Simple workflow model</h2>
+            <div class="flow-diagram">
+              <span>Inbound trigger</span><i></i><span>AI intake</span><i></i><span>Human exception</span><i></i><span>CRM update</span>
+            </div>
+          </section>
+
+          <section id="workflow">
+            <h2>What a practical automation system should do</h2>
+            <p>
+              Strong property management automation starts with the operating workflow, not the tool.
+              Before adding AI voice, SMS, Zapier, or CRM logic, define the trigger, the required
+              context, the exception path, and the record that should exist when the workflow finishes.
+            </p>
+            <ol>{post.data.system.map((item) => <li>{item}</li>)}</ol>
+            <h3>Design rules that keep automation useful</h3>
+            <p>
+              Keep the workflow narrow enough to measure. Use short prompts, clear routing, and
+              conservative escalation. Automation should remove repetitive intake and logging while
+              preserving human control for approvals, sensitive conversations, compliance questions,
+              and unusual situations.
+            </p>
+          </section>
+
+          <section id="metrics">
+            <h2>Metrics worth tracking</h2>
+            <p>
+              The best first workflow creates data your team can review weekly. Track metrics that
+              show speed, workload reduction, and conversion movement rather than vanity activity.
+            </p>
+            <div class="metric-list">{post.data.metrics.map((item) => <span>{item}</span>)}</div>
+          </section>
+
+          <section>
+            <h2>How EMC2Ops would approach this rollout</h2>
+            <p>
+              We start by mapping the current path from inbound request to completed next step. Then
+              we identify the highest-intent workflow, define the minimum viable automation, connect
+              the required systems, and monitor the first live conversations for routing quality.
+            </p>
+            <p>
+              The goal is practical ROI: faster response, fewer missed opportunities, cleaner CRM
+              records, and less manual coordination for leasing and operations teams.
+            </p>
+          </section>
+
+          <FaqList faqs={post.data.faqs} />
+
+          <ArticleCta
+            title={post.data.cta}
+            description="Bring your current call, text, CRM, leasing, or maintenance process. We will identify the first workflow to automate."
+          />
+
+          {post.data.relatedServices && post.data.relatedServices.length > 0 && (
+            <section class="related">
+              <h2>Related EMC2Ops services</h2>
+              <div class="related-grid">
+                {post.data.relatedServices.map((link) => (
+                  <a href={link.href}>
+                    <strong>{link.label}</strong>
+                    <span>{link.description}</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {post.data.relatedUseCases && post.data.relatedUseCases.length > 0 && (
+            <section class="related">
+              <h2>Related use cases</h2>
+              <div class="related-grid">
+                {post.data.relatedUseCases.map((link) => (
+                  <a href={link.href}>
+                    <strong>{link.label}</strong>
+                    <span>{link.description}</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <RelatedPosts posts={related} />
+        </div>
+      </div>
+    </article>
+  </main>
+  <SiteFooter />
+</SiteLayout>

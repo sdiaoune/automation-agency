@@ -1,0 +1,30 @@
+{
+  "sent_count": 1,
+  "skipped_count": 0,
+  "replies_found": 0,
+  "bounces_found": 0,
+  "blockers": [
+    "No additional eligible send-ready local/dashboard records were available to restock the approved queue to the daily target."
+  ],
+  "restock": {
+    "target_total": 30,
+    "sent_today_before": 28,
+    "approved_before": 1,
+    "desired_approved": 2,
+    "needed": 1,
+    "inserted": 0,
+    "approved_after_estimate": 1
+  },
+  "daily_send_count": 29,
+  "approved_queue_count": 0,
+  "sent": {
+    "approval_id": "cfe03600-fc92-43fb-b7c8-14c63575cfa3",
+    "prospect_id": "a2597c18-2d1e-4baf-9990-6130c59fe6ae",
+    "recipient": "alice@greenbriermc.com",
+    "subject": "response time",
+    "outlook_message_id": "AAMkAGY2MzFmNjhjLTU3MzktNDcyMy05NGI5LWEyODJjNmM1YmNlMgBGAAAAAADICFSAGLEpS67hhE3jEc6fBwBjRvplUI3yTa8MNRmm2syzAAAAAAEJAABjRvplUI3yTa8MNRmm2syzAAAQFs-NAAA=",
+    "activity_id": "072c6489-c5d2-4596-87e1-04b248a7b7b9"
+  },
+  "next_due_date": "2026-06-20",
+  "next_approved": []
+}

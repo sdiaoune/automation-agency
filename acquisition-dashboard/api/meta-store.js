@@ -152,10 +152,10 @@ export async function getActiveMetaConfig() {
     pages.find((page) => page.id === connections.selectedPageId) || pages[0]
   const envPageAccessToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN || ''
   const pageAccessToken = selectedPage?.accessToken || envPageAccessToken
-  const appSecret = process.env.FACEBOOK_APP_SECRET || ''
+  const appSecret = process.env.FACEBOOK_APP_SECRET || process.env.META_APP_SECRET || ''
 
   return {
-    appId: process.env.FACEBOOK_APP_ID || '',
+    appId: process.env.FACEBOOK_APP_ID || process.env.META_APP_ID || '',
     appSecret,
     appSecretProof:
       appSecret && pageAccessToken

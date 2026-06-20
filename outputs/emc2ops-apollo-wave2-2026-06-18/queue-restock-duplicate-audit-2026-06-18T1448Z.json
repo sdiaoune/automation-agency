@@ -1,0 +1,89 @@
+{
+  "audited_at": "2026-06-18T14:47:01.702187+00:00",
+  "rejected_duplicate_count": 4,
+  "rejected_duplicates": [
+    {
+      "approval_id": "13f91815-6924-4f63-abc3-1fbc7b827525",
+      "prospect_id": "abf6dee0-361c-4844-8ed0-cedf7ed7ae59",
+      "company_name": "Culture Property Management",
+      "recipient_email": "alex@culturepm.com",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Good morning Alex,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "241e0571-0825-489b-b016-1f2773bbf749",
+      "prospect_id": "5182e2bd-d17f-4cfa-88aa-8aa685b03674",
+      "company_name": "Element Property Management",
+      "recipient_email": "evan@elementrealtygroup.net",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Hi Evan,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "d7ede671-a087-401e-b2e2-95d3b245f9e6",
+      "prospect_id": "9b5bcaa9-25d9-4f4e-aabc-81de1c3051f6",
+      "company_name": "407 Property Management Services",
+      "recipient_email": "antonio@407vhr.com",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Hey Antonio,",
+      "source_ref": "candidates.json"
+    },
+    {
+      "approval_id": "eee99e95-0a30-43a9-be8d-afdc46f2c5f6",
+      "prospect_id": "b88ecc50-86c7-4ce4-ba6b-72c8d13e88db",
+      "company_name": "MoveZen Property Management",
+      "recipient_email": "re@victoryrealestateinc.com",
+      "subject": "missed calls",
+      "angle": "Missed Calls Recovery",
+      "greeting": "Hello RE,",
+      "source_ref": "candidates.json"
+    }
+  ],
+  "replacement_count": 4,
+  "replacements": [
+    {
+      "prospect_id": "9edc20ca-44f1-42a3-99f3-25d6d282421c",
+      "company_name": "JVM Property | Residential Property Management",
+      "recipient_email": "joshua@jvmproperty.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Good morning Joshua,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json",
+      "approval_id": "3f419b35-695e-4e67-b268-5e6db0f7ffbe"
+    },
+    {
+      "prospect_id": "b45e2a7c-d7ec-4ed8-9301-43981af1df57",
+      "company_name": "KBC Management, Inc.",
+      "recipient_email": "elijah@kbcmgmt.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Hi Elijah,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json",
+      "approval_id": "60ff7735-ddb3-4073-841f-d379b566f631"
+    },
+    {
+      "prospect_id": "f0c75089-5edb-4f83-9f68-5c27c0eac422",
+      "company_name": "Keener Management, Inc",
+      "recipient_email": "espence@keenermanagement.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Hey Elisse,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json",
+      "approval_id": "de5b640e-9ac8-42bd-810f-edb4920e1706"
+    },
+    {
+      "prospect_id": "2972981d-df27-463c-bde0-ebf39c88b596",
+      "company_name": "Landmark Real Estate Management",
+      "recipient_email": "heather@visitlandmark.com",
+      "subject": "response time",
+      "angle": "Speed-to-Lead Response",
+      "greeting": "Hello Heather,",
+      "source_ref": "outputs/emc2ops-apollo-wave2-2026-06-18/speed-to-lead-send-queue-2026-06-22.json",
+      "approval_id": "5b221755-be3e-4fbc-9124-485145282d20"
+    }
+  ]
+}

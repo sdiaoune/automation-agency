@@ -33,6 +33,17 @@ faqs:
     answer: "At minimum, source, contact details, property interest, summary, transcript link, status, next step, and assigned owner."
   - question: "How do you avoid bad CRM data?"
     answer: "Use field validation, matching rules, exception queues, and human review for uncertain records."
+relatedServices:
+  - label: "CRM workflow automation"
+    href: "/services/crm-workflow-automation/"
+    description: "Sync calls, texts, notes, tasks, statuses, and summaries without manual copy-paste."
+relatedUseCases:
+  - label: "CRM follow-up cleanup"
+    href: "/use-cases/real-estate-crm-follow-up-mess/"
+    description: "Fix messy stages, notes, duplicate records, ownership, and follow-up rules."
+  - label: "Apartment lead tracking"
+    href: "/use-cases/apartment-lead-tracking/"
+    description: "Keep lead source, renter fit, ownership, and CRM completion visible."
 related:
   - "property-management-lead-deduplication-routing"
   - "property-management-leasing-pipeline-setup"

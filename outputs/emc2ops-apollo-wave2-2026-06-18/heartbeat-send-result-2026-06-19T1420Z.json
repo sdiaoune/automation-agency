@@ -1,0 +1,13 @@
+{
+  "approval_id": "dce2f2f8-330e-43ed-b49e-f97c3521ea8f",
+  "sent": true,
+  "sent_at": "2026-06-19T14:21:28Z",
+  "activity_id": "8966d986-beca-4ab9-937b-59616db1cd68",
+  "prospect_id": "f539ae7e-3fa8-4ae8-957b-da39f38ccf15",
+  "company": null,
+  "contact_name": null,
+  "recipient_email": "samuelm@solil.com",
+  "subject": "response time",
+  "daily_sent_count": 9,
+  "approved_queue_count": 21
+}

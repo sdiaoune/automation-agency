@@ -1,0 +1,33 @@
+{
+  "captions": {
+    "facebook": "Why do renter applications still stall after strong intent?\n\nBecause too many teams send the link and hope the renter finishes. Property management automation should detect incomplete steps, trigger the right follow-up, and push the next owner into motion before the application dies.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows",
+    "instagram": "Why do renter applications still go quiet after strong leasing intent?\n\nBecause many teams treat the application link like the end of the workflow instead of the start of a guided completion path. Practical property management automation should detect stall points, trigger the right follow-up, surface the missing step, and route the record back into one clean ownership lane before the renter disappears.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Leasing follow-up automation, missed-call text-back, SMS, AI voice, and property management CRM automation should work as one system so incomplete applications create recovery instead of silent leakage.\n\nIf your team still loses qualified renters to half-finished forms, missing documents, unclear next steps, or manual reminder gaps, the issue is not lead volume. The recovery workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement"
+  },
+  "channels": [
+    "instagram"
+  ],
+  "date": "2026-06-14",
+  "facebook": null,
+  "hook": "If an application goes quiet after renter intent is high, the workflow lost the handoff.",
+  "instagram": {
+    "creationId": "18087934574263933",
+    "id": "17962204110126555",
+    "permalink": "https://www.instagram.com/p/DZlcuPPl2j7/"
+  },
+  "publishSelection": {
+    "facebookSelected": false,
+    "instagramSelected": true
+  },
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map",
+  "slideUrls": [
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-1.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-2.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-3.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-4.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-5.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-6.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-7.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-8.png"
+  ],
+  "topic": "Application abandonment recovery map for property managers"
+}

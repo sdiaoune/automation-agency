@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-06-18T16:02:37.393919+00:00",
+  "approval_id": "5392b006-990c-4f88-9dbc-eb1f758b0738",
+  "sent": true,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0,
+  "sent_at": "2026-06-18T16:02:39.443993+00:00",
+  "recipient_email": "sandra@absproperty.net",
+  "subject": "missed calls",
+  "company": "ABS Property Management",
+  "prospect_id": "18e882a7-4da6-4b02-b2c7-247c16a819af",
+  "activity_id": "60c6f918-60df-4746-afef-fcf909c8d37b",
+  "daily_sent_count": 14,
+  "approved_queue_count": 16,
+  "approved_by_subject_after": {
+    "response time": 10,
+    "missed calls": 1,
+    "lost leads": 5
+  }
+}

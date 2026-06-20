@@ -1,6 +1,9 @@
 .DS_Store
 node_modules/
+.astro/
+dist/
 .vercel/
 supabase/.temp/
 test-results/
 .x-blog-post-history.json
+.x-growth-post-history.json

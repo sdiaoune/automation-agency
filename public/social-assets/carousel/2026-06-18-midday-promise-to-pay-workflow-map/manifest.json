@@ -1,0 +1,139 @@
+{
+  "date": "2026-06-18",
+  "slot": "midday",
+  "slug": "promise-to-pay-workflow-map",
+  "topic": "Promise-to-pay workflow map for property managers",
+  "hook": "If every promise-to-pay still lives in scattered notes and callback reminders, the collections workflow is still leaking.",
+  "captionInstagram": "Why do promise-to-pay conversations still create follow-up leaks for property managers?\n\nBecause many teams treat a resident promise like a one-off note instead of a dated operating workflow. Practical property management automation should capture the commitment, verify the amount and date, trigger the right reminder path, stop duplicate outreach, and escalate exceptions before the ledger goes stale.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. SMS, AI voice, resident communication, delinquency follow-up, and property management CRM automation should work as one system so every payment promise creates a clean next step instead of another manual callback.\n\nIf your team still loses time to unclear due dates, broken payment arrangements, duplicate outreach, or staff rebuilding collections context from inbox threads, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #ResidentCommunication #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do promise-to-pay follow-ups still create collections cleanup?\n\nBecause a payment promise should be handled like a workflow, not a note. Property management automation should capture the commitment, trigger reminders, stop duplicate outreach, and escalate broken arrangements before the ledger falls behind.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #ResidentCommunication #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Collections workflow",
+      "title": "If every promise-to-pay still lives in scattered notes and callback reminders,",
+      "titleAccent": "the workflow is still leaking.",
+      "body": "A resident payment commitment should create one trusted path across the ledger, reminders, outreach rules, and exception handling instead of leaving staff to remember what happens next.",
+      "footer": "Swipe for the 6 rules behind a cleaner promise-to-pay workflow",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Commitment capture",
+      "title": "Every promise should log the exact amount, date, and payment path before the call ends.",
+      "body": "Partial amount, full balance, payment method, resident confirmation, and responsible contact should be captured immediately so the next step is based on a real commitment instead of a vague note.",
+      "footer": "Goal: the promise becomes a dated operating record",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Reminder path",
+      "title": "A promised payment date should start a timed reminder sequence automatically.",
+      "body": "Pre-due reminder, due-day check, failed-payment follow-up, and no-payment escalation should fire by rule so the team is not rebuilding the same outreach manually every morning.",
+      "footer": "Goal: every commitment gets the right follow-up cadence",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Stop rules",
+      "title": "Collections outreach should stop the second the payment lands or a staff owner takes over.",
+      "body": "Confirmed payment, ledger sync, active manager conversation, dispute status, or approved arrangement change should pause automated nudges before the resident gets mixed signals.",
+      "footer": "Goal: one source of truth controls the outreach state",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Broken arrangement",
+      "title": "Missed promises should escalate with context instead of starting another blind callback.",
+      "body": "Original commitment, outreach history, prior delinquency, resident replies, and policy notes should stay attached so the next owner knows exactly what failed and what to do next.",
+      "footer": "Goal: failed promises route with the full timeline",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Exception lane",
+      "title": "Hardship, dispute, and legal-sensitive cases should branch out of the standard payment flow fast.",
+      "body": "Sensitive circumstances, charge disagreements, eviction-stage status, and owner-approval thresholds should route to the right human immediately instead of being treated like another routine reminder.",
+      "footer": "Goal: high-risk collections cases leave the default queue early",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "Ledger + CRM sync",
+      "title": "Every payment promise event should write back before the next workflow fires.",
+      "body": "Promise date, amount, outcome, exception type, next owner, and payment confirmation should sync fast so staff are not reconciling calls, texts, and ledger status by hand later.",
+      "footer": "Goal: one record shows the promise, outcome, and next step",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want collections follow-up to create",
+      "titleAccent": "less chasing and cleaner records?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make front-desk and resident communication handoffs easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "directory": "2026-06-18-midday-promise-to-pay-workflow-map",
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map",
+  "renderedAt": "2026-06-18T20:03:58.131Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-18-midday-promise-to-pay-workflow-map/contact-sheet.png"
+}

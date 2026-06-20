@@ -1,0 +1,16 @@
+{
+  "sent": true,
+  "approval_id": "3c628cf0-2c58-4aa5-9830-9bcb6c5a0a91",
+  "prospect_id": "c119c861-197b-4c62-9421-b95752ce6a81",
+  "company": null,
+  "contact": null,
+  "email": "aracely.euceda@fsresidential.com",
+  "subject": "lost leads",
+  "sent_at": "2026-06-19T17:12:21Z",
+  "activity_id": "e6874fc3-061f-4ddc-846c-a48acea74841",
+  "daily_send_count": 26,
+  "approved_queue_count": 4,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0
+}

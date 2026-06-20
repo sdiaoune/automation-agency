@@ -1,0 +1,148 @@
+{
+  "date": "2026-06-14",
+  "slot": "midday",
+  "slug": "application-abandonment-recovery-map",
+  "topic": "Application abandonment recovery map for property managers",
+  "hook": "If an application goes quiet after renter intent is high, the workflow lost the handoff.",
+  "captionInstagram": "Why do renter applications still go quiet after strong leasing intent?\n\nBecause many teams treat the application link like the end of the workflow instead of the start of a guided completion path. Practical property management automation should detect stall points, trigger the right follow-up, surface the missing step, and route the record back into one clean ownership lane before the renter disappears.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Leasing follow-up automation, missed-call text-back, SMS, AI voice, and property management CRM automation should work as one system so incomplete applications create recovery instead of silent leakage.\n\nIf your team still loses qualified renters to half-finished forms, missing documents, unclear next steps, or manual reminder gaps, the issue is not lead volume. The recovery workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do renter applications still stall after strong intent?\n\nBecause too many teams send the link and hope the renter finishes. Property management automation should detect incomplete steps, trigger the right follow-up, and push the next owner into motion before the application dies.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Leasing recovery workflow",
+      "title": "If an application goes quiet after renter intent is high,",
+      "titleAccent": "the workflow lost the handoff.",
+      "body": "A sent application is not a completed application. The goal is a guided recovery path that keeps qualified renters moving instead of fading into incomplete records.",
+      "footer": "Swipe for the 6 rules behind a cleaner application recovery map",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Stall detection",
+      "title": "The workflow should know exactly where the application stopped without waiting for manual review.",
+      "body": "Start, partial save, missing ID, income doc gap, screening hold, or unsigned terms should generate a clear stall state so recovery begins while intent is still warm.",
+      "footer": "Goal: detect the exact drop-off point fast",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Next-step messaging",
+      "title": "Every stalled application needs one clear next step, not a generic reminder blast.",
+      "body": "The message should name the missing step, explain how to finish it, and offer the fastest completion path by text, call, or portal link.",
+      "footer": "Goal: one reminder, one task, one path forward",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Friction routing",
+      "title": "The system should separate technical friction from qualification friction before the team guesses.",
+      "body": "Portal issues, document confusion, co-applicant delays, screening questions, or price shock should route into different recovery branches and owner queues.",
+      "footer": "Goal: different blockers trigger different plays",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Human assist lane",
+      "title": "High-intent applicants should escalate to a person before they restart the search.",
+      "body": "If the renter toured, replied, or asked for help, the workflow should route the case to one named leasing owner with the full timeline attached.",
+      "footer": "Goal: warm applications never sit unowned",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Deadline logic",
+      "title": "Recovery should use timing rules that create momentum without dragging dead files forever.",
+      "body": "Set a short follow-up ladder, reopen windows for good fits, and close cold records cleanly so the team can focus on renters who are still moving.",
+      "footer": "Goal: urgency for live deals, clean closeout for dead ones",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "CRM write-back",
+      "title": "Every application outcome should land in the CRM before the next follow-up fires.",
+      "body": "Missing step, last contact, next owner, completion risk, and closeout reason should write back into the system so reporting and follow-up stay accurate.",
+      "footer": "Goal: one record shows what is blocked and who owns it",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want incomplete applications to create",
+      "titleAccent": "recovery instead of leakage?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make leasing and front-desk operations easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map",
+  "slideUrls": [
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-1.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-2.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-3.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-4.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-5.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-6.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-7.png",
+    "https://2026-06-14-midday-application-aband.vercel.app/slide-8.png"
+  ],
+  "renderedAt": "2026-06-14T23:39:49.122Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-14-midday-application-abandonment-recovery-map/contact-sheet.png"
+}

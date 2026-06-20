@@ -11,6 +11,10 @@
       "destination": "/api/meta-auth"
     },
     {
+      "source": "/api/linkedin/:path*",
+      "destination": "/api/linkedin-auth"
+    },
+    {
       "source": "/auth/callback",
       "destination": "/api/x-auth"
     },

@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-06-18T15:03:54.916708+00:00",
+  "approval_id": "e7ae17c1-cba0-4275-b9c2-fdd8a665fc1a",
+  "sent": true,
+  "sent_at": "2026-06-18T15:03:57.528077+00:00",
+  "recipient_email": "jennifer.latshaw@engagemanagement.com",
+  "subject": "lost leads",
+  "company": "Engage Management",
+  "prospect_id": "9d687d0b-262c-4cef-88c4-c7aef290ea95",
+  "activity_id": "a41c9388-73cc-4bbe-a421-2ff2edc0ead9",
+  "daily_sent_count": 8,
+  "approved_queue_count": 22,
+  "approved_by_subject_after": {
+    "lost leads": 7,
+    "response time": 12,
+    "missed calls": 3
+  }
+}

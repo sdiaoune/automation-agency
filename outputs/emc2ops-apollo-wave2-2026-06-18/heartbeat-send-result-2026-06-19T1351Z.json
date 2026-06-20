@@ -1,0 +1,13 @@
+{
+  "approval_id": "224eed4c-fe3f-4fe7-960d-ad156dc65657",
+  "sent": true,
+  "sent_at": "2026-06-19T13:52:35Z",
+  "activity_id": "59e95f4e-e193-431c-b004-11bdd841a03d",
+  "prospect_id": "d90d7785-18b6-4dd3-b39b-0afc88c26871",
+  "company": "San Diego Residential Property Management",
+  "contact_name": null,
+  "recipient_email": "bob@sandiegorpm.com",
+  "subject": "response time",
+  "daily_sent_count": 6,
+  "approved_queue_count": 24
+}

@@ -1,0 +1,75 @@
+{
+  "date": "2026-06-05",
+  "slug": "leasing-handoff-audit",
+  "topic": "Leasing handoff audit",
+  "hook": "Before you buy more leasing leads, audit these 6 handoffs.",
+  "caption": "What is property management leasing follow-up automation? It is a workflow that answers, qualifies, routes, and logs renter conversations before a lead goes cold.\n\nMore leads do not fix a broken leasing path. Property management automation works when the first response, qualification, scheduling, missed-call text-back, and property management CRM automation all move as one operating system. That is what a practical AI front desk for property managers should do: use AI voice, SMS, and CRM workflows to keep renter intent moving instead of dying in voicemail, inbox threads, or stale tasks.\n\nThis carousel is the quick audit I would run before spending another dollar on lead volume. Score each handoff green, yellow, or red, then fix the first red step. For many teams, the biggest gain comes from leasing follow-up automation tied to clean CRM ownership and after-hours response rules.\n\nEMC2Ops supports operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S. that need done-for-you workflow implementation, not another dashboard.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #AIFrontDesk #LeasingAutomation #CRMWorkflows #PropertyManagement",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Leasing ops",
+      "title": "Before you buy more leasing leads,",
+      "titleAccent": "audit these 6 handoffs.",
+      "body": "Most renter demand is not lost at the ad. It disappears between the first inquiry, the tour calendar, and the CRM.",
+      "footer": "Swipe for the operator scorecard",
+      "visual": "flow"
+    },
+    {
+      "eyebrow": "Handoff 01",
+      "kicker": "First response",
+      "title": "Every inquiry needs a next step in under 60 seconds.",
+      "body": "Calls, web forms, ILS leads, and after-hours texts should all trigger the same path: acknowledge, answer, qualify, and route.",
+      "footer": "If the reply depends on voicemail, this step is broken.",
+      "visual": "phone"
+    },
+    {
+      "eyebrow": "Handoff 02",
+      "kicker": "Qualification",
+      "title": "Collect the fields that decide follow-up.",
+      "body": "Move date. Property interest. Budget. Pets. Tour intent. Without those 5 fields, leasing follow-up automation cannot prioritize the right lead.",
+      "footer": "Context first. Calendar second.",
+      "visual": "checklist"
+    },
+    {
+      "eyebrow": "Handoff 03",
+      "kicker": "Source routing",
+      "title": "One prospect should not become 3 records.",
+      "body": "Portal leads, calls, and guest cards often create duplicate work. Match the lead, merge the context, and assign one clear owner.",
+      "footer": "Deduplication protects speed and sanity.",
+      "visual": "merge"
+    },
+    {
+      "eyebrow": "Handoff 04",
+      "kicker": "Scheduling",
+      "title": "Booking should not require inbox ping-pong.",
+      "body": "Prospects should be able to confirm, reschedule, or ask a question without waiting for office hours or chasing a human thread.",
+      "footer": "Less friction means more showings kept.",
+      "visual": "calendar"
+    },
+    {
+      "eyebrow": "Handoff 05",
+      "kicker": "Recovery",
+      "title": "Warm leads need a recovery path when the tour slips.",
+      "body": "No-shows, stale replies, and missed callbacks should trigger a short SMS sequence, a staff task, and a clean rebook prompt.",
+      "footer": "Recovery is part of leasing, not cleanup.",
+      "visual": "signal"
+    },
+    {
+      "eyebrow": "Handoff 06",
+      "kicker": "CRM ownership",
+      "title": "Your CRM should show what happened and who owns next.",
+      "body": "Property interest, summary, last touch, status, and next task should land on the same record automatically.",
+      "footer": "If the handoff is manual, the pipeline will age.",
+      "visual": "cards"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute audit",
+      "title": "Score each handoff green, yellow, or red.",
+      "body": "Green: automatic and logged.\\nYellow: manual but consistent.\\nRed: voicemail, inbox chase, or unassigned owner.\\nStart with the first red handoff.",
+      "footer": "Book a 15-minute workflow audit at emc2ops.com.",
+      "visual": "cta"
+    }
+  ],
+  "directory": "2026-06-05-leasing-handoff-audit"
+}

@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-06",
+  "slot": "night",
+  "slug": "front-desk-escalation-ladder",
+  "topic": "Front-desk exception escalation ladder for property managers",
+  "hook": "If every exception lands in the same inbox, your front desk is still guessing.",
+  "captionInstagram": "What should an AI front desk escalate first for property managers?\n\nStart with the exception paths that can create delay, compliance risk, or owner frustration if the workflow keeps acting like every message is routine. Good property management automation does not just answer faster. It knows when to route the next owner immediately.\n\nThat means missed-call text-back, leasing follow-up automation, maintenance intake automation, owner updates, vendor coordination, and property management CRM automation should all share a clear escalation ladder. Emergency maintenance, legal or fair-housing sensitive questions, approval thresholds, angry resident threads, duplicate records, and no-owner-found states should not sit in a general queue.\n\nIf your AI voice, SMS, and CRM workflows still dump every exception into manual cleanup, the team is not getting leverage. The system still lacks operating rules.\n\nEMC2Ops installs done-for-you property management automation for owners, operators, and front-desk teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #MaintenanceAutomation #CRMWorkflows #LeasingAutomation",
+  "captionFacebook": "What should an AI front desk escalate first for property managers?\n\nEscalate the exception paths that should never wait in a generic queue: emergency maintenance, sensitive leasing questions, approval thresholds, owner-visible delays, duplicate CRM matches, and conversations with no clear next owner.\n\nProperty management automation works when AI voice, SMS, missed-call text-back, leasing follow-up automation, maintenance intake automation, owner updates, vendor coordination, and property management CRM automation all know when to keep moving and when to raise a hand.\n\nIf staff still discover the exception only after reading the thread manually, the workflow is not complete.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #CRMWorkflows #MaintenanceAutomation #PropertyManagement",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Exception routing",
+      "title": "If every exception lands in the same inbox,",
+      "titleAccent": "your front desk is still guessing.",
+      "body": "An AI front desk should not treat emergency maintenance, approval thresholds, angry residents, and broken CRM matches like routine conversations.",
+      "footer": "Swipe for the escalation ladder",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Ladder 01",
+      "kicker": "Emergency maintenance",
+      "title": "Safety and habitability issues should jump the queue instantly.",
+      "body": "Leaks, no heat, no AC in extreme weather, electrical hazards, lockouts, flooding, and other emergency signals should route to the right human path immediately.",
+      "footer": "Goal: no emergency buried in general follow-up",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Ladder 02",
+      "kicker": "Leasing edge cases",
+      "title": "Sensitive leasing questions need a human review lane.",
+      "body": "Fair-housing risk, policy exceptions, complex concessions, or unclear unit fit should stop the automation from improvising beyond the approved playbook.",
+      "footer": "Goal: fast reply without unscripted risk",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Ladder 03",
+      "kicker": "Approval thresholds",
+      "title": "Spend and policy limits should trigger the owner before work stalls.",
+      "body": "Maintenance scope, make-ready overages, vendor exceptions, and non-routine approvals should escalate with the summary, cost context, and next decision attached.",
+      "footer": "Goal: one summary, one approver, one next action",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Ladder 04",
+      "kicker": "Resident frustration",
+      "title": "Repeated or angry threads should not stay in drip logic.",
+      "body": "Multiple failed contacts, unresolved maintenance, or high-friction sentiment should move to a staffed lane before the relationship degrades further.",
+      "footer": "Goal: de-escalate before the next message goes out",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Ladder 05",
+      "kicker": "CRM mismatch",
+      "title": "No match or duplicate match should pause write-back and route review.",
+      "body": "If the system cannot identify the right renter, owner, property, or work order cleanly, it should escalate instead of polluting the CRM with bad records.",
+      "footer": "Goal: protect the system of record",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Ladder 06",
+      "kicker": "No-owner-found state",
+      "title": "Every workflow needs a named fallback owner.",
+      "body": "When no teammate, vendor, or owner path is obvious, the workflow should send the summary into a defined review queue with SLA and accountability.",
+      "footer": "Goal: no orphaned conversation, no hidden backlog",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want your AI front desk to know",
+      "titleAccent": "when to escalate and who owns it next?",
+      "body": "We install practical AI voice, SMS, and CRM workflows for leasing, maintenance, owner updates, vendor routing, and front-desk exception handling.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder",
+  "renderedAt": "2026-06-06T19:19:40.501Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-night-front-desk-escalation-ladder/contact-sheet.png"
+}

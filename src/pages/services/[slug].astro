@@ -1,0 +1,114 @@
+---
+import { getCollection } from "astro:content";
+import FaqList from "../../components/FaqList.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { absoluteUrl, byOrder, defaultSocialImage, type BlogPost } from "../../lib/site";
+import { servicePages, serviceSchema, serviceUrl, type ServicePage } from "../../lib/services";
+import "../../styles/service.css";
+
+export async function getStaticPaths() {
+  return servicePages.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+
+interface Props {
+  service: ServicePage;
+}
+
+const { service } = Astro.props;
+const posts = byOrder(await getCollection("blog"));
+const relatedPosts = service.relatedPosts
+  .map((slug) => posts.find((post) => post.data.slug === slug))
+  .filter(Boolean) as BlogPost[];
+const canonical = absoluteUrl(serviceUrl(service));
+---
+
+<SiteLayout
+  title={`${service.seoTitle} | EMC2Ops`}
+  description={service.description}
+  canonical={canonical}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt={`${service.title} from EMC2Ops.`}
+  schema={serviceSchema(service)}
+  pageClass="service-page"
+>
+  <SiteHeader />
+  <main>
+    <section class="service-hero">
+      <div class="wrap">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span>{service.eyebrow}
+        </nav>
+        <p class="eyebrow">{service.eyebrow}</p>
+        <h1>{service.title}</h1>
+        <p class="dek">{service.summary}</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#book">Request a workflow audit</a>
+          <a class="btn btn-secondary" href="#workflow">See workflow</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap split-section">
+      <div>
+        <h2>What this improves</h2>
+        <p>
+          This service focuses on a narrow, measurable operating workflow so your team can respond
+          faster without giving up control over exceptions, approvals, or sensitive conversations.
+        </p>
+      </div>
+      <div class="check-list">
+        {service.outcomes.map((outcome) => <div><span>✓</span><p>{outcome}</p></div>)}
+      </div>
+    </section>
+
+    <section id="workflow" class="wrap detail-section">
+      <h2>Workflow model</h2>
+      <ol class="step-list">
+        {service.workflow.map((step) => <li>{step}</li>)}
+      </ol>
+    </section>
+
+    <section class="wrap detail-section">
+      <h2>Metrics to track</h2>
+      <div class="metric-list">{service.metrics.map((metric) => <span>{metric}</span>)}</div>
+    </section>
+
+    <section class="wrap detail-section">
+      <h2>Related use cases</h2>
+      <div class="related-links">
+        {service.relatedUseCases.map((link) => (
+          <a href={link.href}>
+            <strong>{link.label}</strong>
+            <span>{link.description}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="wrap detail-section">
+      <FaqList faqs={service.faqs} />
+    </section>
+
+    {
+      relatedPosts.length > 0 && (
+        <section class="wrap detail-section">
+          <h2>Related guides</h2>
+          <div class="related-links">
+            {relatedPosts.map((post) => (
+              <a href={`/blog/${post.data.slug}/`}>
+                <strong>{post.data.seoTitle || post.data.title}</strong>
+                <span>{post.data.keyword}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </main>
+  <SiteFooter />
+</SiteLayout>

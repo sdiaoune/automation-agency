@@ -34,6 +34,17 @@ faqs:
     answer: "Trade, service area, property eligibility, contact method, approval limits, availability rules, and escalation path."
   - question: "How do you avoid dispatch mistakes?"
     answer: "Use rule-based routing, required fields, exception alerts, and staged rollout by request type."
+relatedServices:
+  - label: "Vendor dispatch automation"
+    href: "/services/vendor-dispatch-automation/"
+    description: "Route maintenance requests with issue context, urgency, approvals, vendor rules, and status updates."
+  - label: "Maintenance intake automation"
+    href: "/services/maintenance-intake-automation/"
+    description: "Collect clean resident and request details before dispatch rules fire."
+relatedUseCases:
+  - label: "How to automate property management"
+    href: "/use-cases/how-to-automate-property-management/"
+    description: "Pick one measurable vendor or maintenance workflow before scaling the system."
 related:
   - "property-management-maintenance-intake-automation"
   - "property-management-maintenance-scheduling-automation"

@@ -1,0 +1,17 @@
+{
+  "sent": true,
+  "approval_id": "3b71710d-3e62-4b23-8cc4-bb6550180af8",
+  "prospect_id": "dce9a8f7-b180-443d-a429-95995e7deaef",
+  "company": null,
+  "contact": null,
+  "email": "maxx.bell@mainlander.com",
+  "subject": "response time",
+  "sent_at": "2026-06-19T17:01:59Z",
+  "activity_id": "a513fa1e-ee2a-40cd-bcd5-a5d1d76d4ac9",
+  "daily_send_count": 25,
+  "approved_queue_count": 5,
+  "restocked_count": 0,
+  "replies_found": 1,
+  "reply_activity_id": "1a349c3a-64e9-4064-8317-0514ae15e82e",
+  "skipped_count": 0
+}

@@ -1,0 +1,123 @@
+{
+  "date": "2026-06-06",
+  "slot": "evening",
+  "slug": "crm-is-not-the-workflow",
+  "topic": "Why property managers still need workflow automation after buying software",
+  "hook": "Your CRM is not your workflow. These 5 front-desk gaps still leak time.",
+  "captionInstagram": "What should property managers automate first if they already have a CRM?\n\nStart with the gaps between the trigger, the first response, the routing decision, and the CRM write-back. Property management automation does not replace your system of record. It makes the work actually move through AI voice, SMS, missed-call text-back, leasing follow-up automation, maintenance intake automation, owner updates, vendor routing, and property management CRM automation.\n\nIf a leasing call still dies in voicemail, a renter follow-up still depends on memory, a maintenance request still arrives half-complete, or the summary never makes it back into the CRM, the software is not the operating workflow yet.\n\nThis carousel is a practical diagnostic for property management owners, operators, and teams that already have tools but still feel front-desk drag across leasing, tenant intake, maintenance, owner communication, vendor handoffs, and CRM workflows.\n\nEMC2Ops installs a done-for-you AI front desk for property managers in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and for remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #CRMWorkflows #LeasingAutomation #AIVoice",
+  "captionFacebook": "What should property managers automate first if they already have a CRM?\n\nAutomate the workflow gaps the CRM does not close by itself: missed-call text-back, leasing follow-up automation, maintenance intake automation, owner update routing, vendor handoffs, and property management CRM automation that writes the outcome back cleanly.\n\nMost teams do not need another dashboard first. They need AI voice, SMS, and CRM workflows that answer faster, collect the right details, route the next owner, and keep the record current without manual copy-paste.\n\nIf your team still rebuilds context from calls, texts, inbox threads, and work orders, this carousel will show where the real friction lives. It is built for property management operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #SMSWorkflows #CRMWorkflows #PropertyManagement",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Operator objection handler",
+      "title": "Your CRM is not your workflow.",
+      "titleAccent": "These 5 gaps still leak time.",
+      "body": "If leasing, maintenance, owner updates, vendor routing, and CRM handoffs still depend on manual follow-up, your system of record is not yet an operating system.",
+      "footer": "Swipe for the 5 gaps to automate first",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Gap 01",
+      "kicker": "Missed-call text-back",
+      "title": "A CRM record does not answer the missed leasing call.",
+      "body": "If after-hours or busy-hour calls still hit voicemail, automation should text back, qualify intent, and alert the right teammate before the renter goes cold.",
+      "footer": "First fix: instant response plus clean handoff",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Gap 02",
+      "kicker": "Leasing follow-up automation",
+      "title": "A pipeline stage does not send the next message.",
+      "body": "Guest cards and tasks are not follow-up. Automate reminders, confirmations, no-show recovery, and stop rules when a human takes over the thread.",
+      "footer": "First fix: consistent follow-up without parallel outreach",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Gap 03",
+      "kicker": "Maintenance intake automation",
+      "title": "A work order is only as good as the intake.",
+      "body": "Issue, exact location, urgency, access notes, and photos should be captured before dispatch so staff and vendors do not chase the same details twice.",
+      "footer": "First fix: dispatch-ready requests at first touch",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Gap 04",
+      "kicker": "Owner and vendor routing",
+      "title": "A shared inbox is not an approval or dispatch rule.",
+      "body": "Owner updates, vendor handoffs, and repair approvals need triggers, exceptions, and next-owner logic so context does not get rebuilt from scattered texts and calls.",
+      "footer": "First fix: one routing rule for each path",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Gap 05",
+      "kicker": "Property management CRM automation",
+      "title": "If the summary never writes back, the team repeats the work.",
+      "body": "Every AI voice, SMS, and front-desk workflow needs one clean note, one owner, one status change, and one next action pushed back into the CRM.",
+      "footer": "First fix: summary, owner, status, next step",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want this installed around your current stack?",
+      "titleAccent": "Start with one high-friction workflow.",
+      "body": "We build done-for-you AI front desk for property managers with practical AI voice, SMS, leasing follow-up automation, maintenance intake automation, owner updates, vendor routing, and CRM workflows.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow",
+  "renderedAt": "2026-06-06T14:59:45.627Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-is-not-the-workflow/contact-sheet.png"
+}

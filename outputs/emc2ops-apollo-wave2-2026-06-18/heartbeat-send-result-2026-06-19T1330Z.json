@@ -1,0 +1,13 @@
+{
+  "approval_id": "93be2d27-17d4-49a7-bcd5-31afd23aab40",
+  "sent": true,
+  "sent_at": "2026-06-19T13:32:04Z",
+  "activity_id": "6e09d199-3171-406f-9320-31c0b16f967a",
+  "prospect_id": "36da448f-3e67-4832-ada1-13d6bd969400",
+  "company": "Northeast Property Management",
+  "contact_name": null,
+  "recipient_email": "kayla@northeastpm.com",
+  "subject": "lost leads",
+  "daily_sent_count": 4,
+  "approved_queue_count": 26
+}

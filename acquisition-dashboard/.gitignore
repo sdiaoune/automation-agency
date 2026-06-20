@@ -17,6 +17,7 @@ dist-ssr
 *.local
 .meta-social-connections.json
 .x-social-connections.json
+.linkedin-social-connections.json
 
 # Editor directories and files
 .vscode/*

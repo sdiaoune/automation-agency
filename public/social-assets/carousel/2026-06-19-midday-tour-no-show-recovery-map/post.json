@@ -1,0 +1,95 @@
+{
+  "captions": {
+    "facebook": "Why do missed leasing tours still become lost follow-up?\n\nBecause a no-show should trigger a recovery workflow, not another manual callback list. Property management automation should confirm interest fast, capture the reason, route the next owner, and update the CRM before the lead goes stale.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows",
+    "instagram": "Why do missed leasing tours still turn into dead leads for property managers?\n\nBecause many teams treat a no-show like a one-off disappointment instead of a timed recovery workflow. Practical property management automation should detect the missed appointment fast, confirm whether the prospect still wants to tour, capture the reason, route the next step, and keep the CRM clean before the lead goes cold.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster texting. Tour reminders, SMS follow-up, AI voice, guest-card updates, leasing pipeline rules, and property management CRM automation should act like one system so a no-show produces a clear next action instead of another vague callback task.\n\nIf your team still loses leases because missed tours sit in voicemail, duplicate reminders, stale statuses, or unowned follow-up, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement"
+  },
+  "channels": [
+    "instagram"
+  ],
+  "date": "2026-06-19",
+  "facebook": null,
+  "hook": "If a missed tour still turns into a dead lead by default, the follow-up workflow is too loose.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18088689887263933",
+      "18088689905263933",
+      "18088689932263933",
+      "18088689968263933",
+      "18088689989263933",
+      "18088690004263933",
+      "18088690016263933",
+      "18088690028263933"
+    ],
+    "creationId": "18088690043263933",
+    "id": "17973131112114853",
+    "permalink": "https://www.instagram.com/p/DZx78OjE87p/"
+  },
+  "publishSelection": {
+    "facebookSelected": false,
+    "instagramSelected": true
+  },
+  "slot": "midday",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-7.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-8.png"
+  ],
+  "topic": "Tour no-show recovery map for property managers",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-7.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-19-midday-tour-no-show-recovery-map/slide-8.png"
+    }
+  ]
+}

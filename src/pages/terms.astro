@@ -1,0 +1,107 @@
+---
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage, legalPageSchema } from "../lib/site";
+import "../styles/service.css";
+
+const title = "Terms of Use | EMC2Ops";
+const description = "Terms of use for the EMC2Ops website, content, forms, and business inquiries.";
+const updatedAt = "2026-06-20";
+---
+
+<SiteLayout
+  title={title}
+  description={description}
+  canonical={absoluteUrl("/terms/")}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt="EMC2Ops property management automation workflow."
+  schema={legalPageSchema({
+    path: "/terms/",
+    title,
+    description,
+    pageType: "TermsOfService",
+    updatedAt,
+  })}
+  pageClass="service-page"
+>
+  <SiteHeader />
+  <main>
+    <section class="service-hero">
+      <div class="wrap">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a><span>/</span>Terms
+        </nav>
+        <p class="eyebrow">Legal</p>
+        <h1>Terms of Use</h1>
+        <p class="dek">Terms for using the EMC2Ops website, content, forms, and related resources.</p>
+      </div>
+    </section>
+
+    <section class="wrap detail-section">
+      <p><strong>Last updated:</strong> {updatedAt}</p>
+
+      <h2>Use of this website</h2>
+      <p>
+        The EMC2Ops website provides information about AI front desk and workflow automation services
+        for property management companies. You may use the site for lawful business research and
+        inquiry purposes.
+      </p>
+
+      <h2>No professional advice</h2>
+      <p>
+        Website content is provided for general informational purposes and does not constitute legal,
+        financial, compliance, or technical advice. You are responsible for evaluating any automation,
+        SMS, CRM, data, or operational decision with appropriate professional support.
+      </p>
+
+      <h2>Service discussions</h2>
+      <p>
+        Submitting a workflow audit request, newsletter signup, or contact form does not create a
+        client relationship. Any paid work, deliverables, timelines, access requirements, fees, and
+        responsibilities must be agreed in a separate written agreement.
+      </p>
+
+      <h2>Acceptable use</h2>
+      <ul>
+        <li>Do not interfere with the website, APIs, forms, security, or infrastructure.</li>
+        <li>Do not submit unlawful, misleading, abusive, or spam content.</li>
+        <li>Do not attempt unauthorized access to systems, accounts, data, or endpoints.</li>
+        <li>Do not use website content in a way that misrepresents EMC2Ops or its services.</li>
+      </ul>
+
+      <h2>Intellectual property</h2>
+      <p>
+        Website copy, guides, branding, graphics, and other materials are owned by EMC2Ops or its
+        licensors unless otherwise stated. You may link to public pages and quote short excerpts with
+        attribution, but you may not copy or republish substantial portions without permission.
+      </p>
+
+      <h2>Third-party tools and links</h2>
+      <p>
+        The site may reference third-party platforms, tools, integrations, or websites. EMC2Ops is
+        not responsible for third-party services, policies, availability, or content.
+      </p>
+
+      <h2>Limitation of liability</h2>
+      <p>
+        The website is provided as available without warranties of any kind. To the fullest extent
+        permitted by law, EMC2Ops is not liable for indirect, incidental, consequential, special, or
+        punitive damages arising from use of the website.
+      </p>
+
+      <h2>Changes</h2>
+      <p>
+        EMC2Ops may update these terms from time to time. Continued use of the website after changes
+        are posted means you accept the updated terms.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about these terms can be sent to
+        <a href="mailto:hello@emc2ops.com">hello@emc2ops.com</a>.
+      </p>
+    </section>
+  </main>
+  <SiteFooter />
+</SiteLayout>

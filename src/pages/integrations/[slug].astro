@@ -1,0 +1,69 @@
+---
+import FaqList from "../../components/FaqList.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage } from "../../lib/site";
+import {
+  integrationPages,
+  integrationSchema,
+  integrationUrl,
+  type IntegrationPage,
+} from "../../lib/integrations";
+import "../../styles/service.css";
+
+export async function getStaticPaths() {
+  return integrationPages.map((integration) => ({
+    params: { slug: integration.slug },
+    props: { integration },
+  }));
+}
+
+interface Props {
+  integration: IntegrationPage;
+}
+
+const { integration } = Astro.props;
+const canonical = absoluteUrl(integrationUrl(integration));
+---
+
+<SiteLayout
+  title={`${integration.seoTitle} | EMC2Ops`}
+  description={integration.description}
+  canonical={canonical}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt={`${integration.name} automation workflows from EMC2Ops.`}
+  schema={integrationSchema(integration)}
+  pageClass="service-page"
+>
+  <SiteHeader />
+  <main>
+    <section class="service-hero">
+      <div class="wrap">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="/">Home</a><span>/</span><a href="/integrations/">Integrations</a><span>/</span>{integration.name}
+        </nav>
+        <img class="hero-logo" src={integration.logo} alt={`${integration.name} logo`} width="54" height="54" />
+        <p class="eyebrow">{integration.name}</p>
+        <h1>{integration.title}</h1>
+        <p class="dek">{integration.summary}</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#book">Request a workflow audit</a>
+          <a class="btn btn-secondary" href="/services/">View services</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap detail-section">
+      <h2>Useful workflows</h2>
+      <ol class="step-list">
+        {integration.workflows.map((workflow) => <li>{workflow}</li>)}
+      </ol>
+    </section>
+
+    <section class="wrap detail-section">
+      <FaqList faqs={integration.faqs} />
+    </section>
+  </main>
+  <SiteFooter />
+</SiteLayout>

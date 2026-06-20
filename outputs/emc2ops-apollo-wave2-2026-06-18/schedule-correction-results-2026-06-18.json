@@ -1,0 +1,396 @@
+{
+  "updated_at": "2026-06-18T02:06:44.480637+00:00",
+  "wave2_dashboard_prospects_updated": 78,
+  "updated": [
+    {
+      "id": "caf09739-fdb1-481e-8bfb-13674bd1edd0",
+      "company_name": "Amarvic Residential",
+      "email": "reynaldo@amarvic.com"
+    },
+    {
+      "id": "19992051-d159-4a45-8ce6-0ad4d18db1bf",
+      "company_name": "Brighton Residential Management",
+      "email": "vawmgr@brightonmgmt.com"
+    },
+    {
+      "id": "df2d6aa4-4bdf-4ee9-981a-39f6145333ca",
+      "company_name": "American Property Management",
+      "email": "mwilliamson@apmportland.com"
+    },
+    {
+      "id": "559a6b15-f630-48a4-8006-ca05855b336b",
+      "company_name": "Residential Property Management, Inc.",
+      "email": "bobj@rpmpdx.com"
+    },
+    {
+      "id": "87105411-3738-48b3-bdbc-a25206ff29f5",
+      "company_name": "BET Investments",
+      "email": "nmateleska@betinvestments.com"
+    },
+    {
+      "id": "a5971253-b382-4f04-89d8-fe9648550f60",
+      "company_name": "Carlisle Residential Properties",
+      "email": "ckey@carlislerp.com"
+    },
+    {
+      "id": "9b129f0a-4ac6-43a4-8812-8df9c0e96e41",
+      "company_name": "Drysdale Property Management",
+      "email": "michelle.wight@drysdalepm.com"
+    },
+    {
+      "id": "a6fc9fec-8ede-4aed-9546-e7bf34bed80c",
+      "company_name": "Costa Real Estate LLC",
+      "email": "greg@costare.com"
+    },
+    {
+      "id": "131c4790-2924-4949-a99a-0e42c8b31dbc",
+      "company_name": "Daniel Management Group, Inc.",
+      "email": "danielle.allen@danielmanagement.com"
+    },
+    {
+      "id": "781fb64d-b68e-46d2-ab5c-5bb113b8ea93",
+      "company_name": "Emerald Residential Property Management",
+      "email": "greg@emeraldcreekms.com"
+    },
+    {
+      "id": "b45e2a7c-d7ec-4ed8-9301-43981af1df57",
+      "company_name": "KBC Management, Inc.",
+      "email": "elijah@kbcmgmt.com"
+    },
+    {
+      "id": "1562173d-55a1-4b52-be7e-2e7584e18d19",
+      "company_name": "Independent Property Management",
+      "email": "karen@independent-pm.com"
+    },
+    {
+      "id": "9edc20ca-44f1-42a3-99f3-25d6d282421c",
+      "company_name": "JVM Property | Residential Property Management",
+      "email": "joshua@jvmproperty.com"
+    },
+    {
+      "id": "f0c75089-5edb-4f83-9f68-5c27c0eac422",
+      "company_name": "Keener Management, Inc",
+      "email": "espence@keenermanagement.com"
+    },
+    {
+      "id": "41b82940-87af-4d81-ac9c-d29de00138b3",
+      "company_name": "Legacy Residential Group",
+      "email": "gperez@legacyresidential.com"
+    },
+    {
+      "id": "2972981d-df27-463c-bde0-ebf39c88b596",
+      "company_name": "Landmark Real Estate Management",
+      "email": "heather@visitlandmark.com"
+    },
+    {
+      "id": "bdb68976-1a2f-4980-8331-d7f099998701",
+      "company_name": "Luxury Residential Management",
+      "email": "leon@lrmmiami.com"
+    },
+    {
+      "id": "aee58ac4-a3c0-4b6e-bf80-ae35345b0ed4",
+      "company_name": "Olympic Property Management",
+      "email": "peter@olympicpropertymgmt.com"
+    },
+    {
+      "id": "954addc3-8912-4bf3-93dc-720600576a29",
+      "company_name": "PM Residential Management LLC",
+      "email": "jordan.smith@pmresi.com"
+    },
+    {
+      "id": "a7b6b95e-d647-40fc-ae0d-efab892d94ea",
+      "company_name": "LEAP Property Management",
+      "email": "alexander@leapdfw.com"
+    },
+    {
+      "id": "dce9a8f7-b180-443d-a429-95995e7deaef",
+      "company_name": "Mainlander Property Management",
+      "email": "maxx.bell@mainlander.com"
+    },
+    {
+      "id": "861649f6-85e4-4cf1-9b56-8150707f5253",
+      "company_name": "Redwood Residential Property Management",
+      "email": "kendall@redwoodrpm.com"
+    },
+    {
+      "id": "dee88494-08ba-40c4-9f34-aeb67f4f1310",
+      "company_name": "Redwood Residential Property Management",
+      "email": "michael@redwoodrpm.com"
+    },
+    {
+      "id": "2db19595-7801-4991-9abe-b759f673e13b",
+      "company_name": "ROERS",
+      "email": "lfischer@roers.com"
+    },
+    {
+      "id": "7806b212-9bf9-40fc-ae81-552a659ce807",
+      "company_name": "Standard Asset Management & Investments",
+      "email": "kbraxton@standardmanagement.com"
+    },
+    {
+      "id": "4665c4f5-f157-4a92-b2a6-f6f40b98624e",
+      "company_name": "Unified Residential Management",
+      "email": "shawkins@unified-residential.com"
+    },
+    {
+      "id": "d0b8acdf-e905-4e8d-b1d6-4cc27c16d225",
+      "company_name": "Brazos Residential Management",
+      "email": "bennettmanager@brazosresidentialmgmt.com"
+    },
+    {
+      "id": "8696e016-070b-46c4-a465-66b1d4c9a7cb",
+      "company_name": "Residential Property Management, Inc.",
+      "email": "danielle@rpmpdx.com"
+    },
+    {
+      "id": "f539ae7e-3fa8-4ae8-957b-da39f38ccf15",
+      "company_name": "Solil Management, LLC",
+      "email": "samuelm@solil.com"
+    },
+    {
+      "id": "7bf35bd4-5829-4dd7-9d6b-1733c7935a61",
+      "company_name": "Unified Residential Management",
+      "email": "mstevenson@unified-residential.com"
+    },
+    {
+      "id": "ce2b2e77-02e4-4818-a0d6-90c0520488a2",
+      "company_name": "Wilkinson Property Management, Inc.",
+      "email": "fatuma@wilkinsonpm.com"
+    },
+    {
+      "id": "2db5e75a-d7b5-4961-aad1-0739ee450231",
+      "company_name": "AREA Texas Realty & Management",
+      "email": "travis@areatexas.com"
+    },
+    {
+      "id": "4398eefd-04be-4d25-a490-21b54732b50c",
+      "company_name": "Barrington Residential",
+      "email": "hp@barringtonresidential.com"
+    },
+    {
+      "id": "d90d7785-18b6-4dd3-b39b-0afc88c26871",
+      "company_name": "San Diego Residential Property Management",
+      "email": "bob@sandiegorpm.com"
+    },
+    {
+      "id": "03effea1-e558-4ad3-b81b-81a82c521ba5",
+      "company_name": "TMG Property Management Services NW",
+      "email": "kristin.griffin@tmgnorthwest.com"
+    },
+    {
+      "id": "1fbe29e1-6bf9-4625-987a-fbd51645cb1c",
+      "company_name": "Upper Management Realty",
+      "email": "brandi@upperllc.com"
+    },
+    {
+      "id": "6cf85a8c-6f75-4446-9c5e-ff2e7e9623b4",
+      "company_name": "Access Residential Management",
+      "email": "hburch@accessdifference.com"
+    },
+    {
+      "id": "9734a379-cbb1-45fb-b31b-17e194f93b0e",
+      "company_name": "Babcock & Brown Residential",
+      "email": "teresa.sandman@bbrmail.com"
+    },
+    {
+      "id": "b9e23666-3167-4f92-b7fb-62aaa322dbeb",
+      "company_name": "Unified Residential Management",
+      "email": "islandclub@unified-residential.com"
+    },
+    {
+      "id": "433d5bfa-446d-46cd-a06b-b2efc0643943",
+      "company_name": "AZ Residential Management",
+      "email": "diana@az-rm.com"
+    },
+    {
+      "id": "a2597c18-2d1e-4baf-9990-6130c59fe6ae",
+      "company_name": "Berkeley Realty Property Management",
+      "email": "alice@greenbriermc.com"
+    },
+    {
+      "id": "3b72e17d-9907-4be1-8e8c-56bfd01f33dd",
+      "company_name": "Broadmoor",
+      "email": "sflaschner@broadmoor.cc"
+    },
+    {
+      "id": "650b7568-8fcb-4d67-b1c8-6e4a6bd09d2d",
+      "company_name": "Domino Realty Management",
+      "email": "tory.takoma@terracetrousdale.com"
+    },
+    {
+      "id": "37466be9-d075-4141-b8e7-d3f61ff82586",
+      "company_name": "Born Property Management",
+      "email": "brian@bornpm.com"
+    },
+    {
+      "id": "ebae321d-1406-4c46-9f24-037a2d9f8247",
+      "company_name": "Carlisle Residential Properties",
+      "email": "jtaylor@carlislerp.com"
+    },
+    {
+      "id": "c0f2649b-b684-4b3e-8c9f-98288f817d40",
+      "company_name": "Durante & Rich Real Estate",
+      "email": "dkirk@drpropmgt.com"
+    },
+    {
+      "id": "6cbcbfcd-7403-4f23-83c0-b2c8a2bbfa1f",
+      "company_name": "Essentials Residential Property Management",
+      "email": "hal@henrysmiller.com"
+    },
+    {
+      "id": "a6d8e54b-f45a-4a23-adbb-9984840216f9",
+      "company_name": "Frontline Residential Property Management",
+      "email": "kent@forrentbykent.com"
+    },
+    {
+      "id": "d9a39b4c-c8c3-47eb-91bd-4a2505e04ab9",
+      "company_name": "Harmoniq Residential",
+      "email": "austin.rawski@harmoniqresidential.com"
+    },
+    {
+      "id": "872587c1-015c-494b-a593-14b9dd454ed7",
+      "company_name": "CloudTen Residential",
+      "email": "tevans@livecloudten.com"
+    },
+    {
+      "id": "9d687d0b-262c-4cef-88c4-c7aef290ea95",
+      "company_name": "Engage Management",
+      "email": "jennifer.latshaw@engagemanagement.com"
+    },
+    {
+      "id": "c119c861-197b-4c62-9421-b95752ce6a81",
+      "company_name": "Firstservice Residential Management, Inc.",
+      "email": "aracely.euceda@fsresidential.com"
+    },
+    {
+      "id": "8954e937-f4f4-4b7f-b2df-7ba724605cfb",
+      "company_name": "Glowacki Management Company",
+      "email": "ccambra@managedbygmc.com"
+    },
+    {
+      "id": "4150aba5-4866-42d0-a795-00cb42f0ef18",
+      "company_name": "Haven Property Management",
+      "email": "trevor@havenrent.com"
+    },
+    {
+      "id": "5dcb9104-0ef8-4b75-a2aa-5b41e14afb59",
+      "company_name": "Mason Equity Group",
+      "email": "krachfal@masonequitygroup.com"
+    },
+    {
+      "id": "db3c4d10-8cf7-4067-a1e4-b48e20680f03",
+      "company_name": "Epac Property Management",
+      "email": "dglover@epacdevco.com"
+    },
+    {
+      "id": "6bf556eb-c7ca-4c7e-ac3e-9c1324a3978b",
+      "company_name": "FLORIDA WEST COAST PROPERTY MANAGEMENT, LLC",
+      "email": "abahk@flwestcoastpm.com"
+    },
+    {
+      "id": "d03a1938-b8ca-4244-b079-ed00fbfedadc",
+      "company_name": "Goudreau Management",
+      "email": "kgoudreau@goudreaugroup.com"
+    },
+    {
+      "id": "956866ae-e461-424d-81c3-1bae8bf634cf",
+      "company_name": "Island Property Management",
+      "email": "yvonne@ipmrent.com"
+    },
+    {
+      "id": "795e8c38-7ef3-4102-a55c-d79bd26dd4db",
+      "company_name": "Metropolitan Property Management",
+      "email": "marlo@mpmnashville.com"
+    },
+    {
+      "id": "2b5d84f0-e170-426a-b9b7-09228dfe7730",
+      "company_name": "Plaza Management USA Inc",
+      "email": "mark@plazamanagementny.com"
+    },
+    {
+      "id": "3c283257-b7dc-4480-b489-2c8051f977d6",
+      "company_name": "Key West Residential Property Management",
+      "email": "jaime@kwrpm.com"
+    },
+    {
+      "id": "36da448f-3e67-4832-ada1-13d6bd969400",
+      "company_name": "Northeast Property Management",
+      "email": "kayla@northeastpm.com"
+    },
+    {
+      "id": "5d653be9-0dae-4bc6-8430-5cda8842d6e2",
+      "company_name": "PMI Arrico Realty and Property Management Tampa",
+      "email": "penny@arricorealty.com"
+    },
+    {
+      "id": "69328c53-f4e2-4a6c-85a2-b9519f50ebf0",
+      "company_name": "Simply Residential Property Management",
+      "email": "christine@simplyres.com"
+    },
+    {
+      "id": "1d65a4cc-3275-4ad4-9a4c-a5db041967ec",
+      "company_name": "Overby, Inc. Commercial | Residential | Land Brokers",
+      "email": "dawn@overby.net"
+    },
+    {
+      "id": "a70415bf-53b5-4732-abe0-52acca416510",
+      "company_name": "Property Management, Inc.",
+      "email": "kdzvonyicsak@rentpmi.com"
+    },
+    {
+      "id": "5286404c-6921-4b66-b9b9-b2fb155a9811",
+      "company_name": "SPM Residential Services",
+      "email": "laura.wyte@wilmingtonforrent.com"
+    },
+    {
+      "id": "c4b8394d-7950-4d86-8560-29fbd6f696fa",
+      "company_name": "Radney Management",
+      "email": "teresa@radneymanagement.com"
+    },
+    {
+      "id": "f223166c-de1f-4728-88c9-e9c7b68aa36c",
+      "company_name": "Epac Property Management",
+      "email": "sbailey@epacdevco.com"
+    },
+    {
+      "id": "076dcdbf-35f8-4901-90a4-7ff84a139adc",
+      "company_name": "Van Treese Management",
+      "email": "michael@vantreesemanagement.com"
+    },
+    {
+      "id": "536ff5ed-4b2e-4f07-9362-df364ab53df1",
+      "company_name": "Ranchwood Residential, Inc.",
+      "email": "norma@ranchwood.com"
+    },
+    {
+      "id": "1a0df7bb-55f2-432e-8eaa-eb46d221ec57",
+      "company_name": "Vidalta Residential",
+      "email": "guillermo.marin@vidaltaresidential.com"
+    },
+    {
+      "id": "6cb36a70-e5ac-46a0-8af8-242dafbfbe4d",
+      "company_name": "Brazos Residential Management",
+      "email": "dhynek@s2res.com"
+    },
+    {
+      "id": "67a45dc5-2c82-4a34-9840-57c33f5f0c1d",
+      "company_name": "J.K. Residential Services, Inc.",
+      "email": "gablesvillarosa@gables.com"
+    },
+    {
+      "id": "e93c8245-780f-4a72-a4e6-bf21d437d180",
+      "company_name": "Burbank Housing",
+      "email": "vinecrest@burbankhousing.org"
+    },
+    {
+      "id": "10e3fa04-cb42-4c76-af52-af47a630cc5f",
+      "company_name": "Chandler Residential, Inc.",
+      "email": "atyler@chanres.com"
+    },
+    {
+      "id": "638dd1ae-3bcb-47e9-897b-06e3a67035db",
+      "company_name": "ROLO MANAGEMENT, LLC",
+      "email": "logan@mackensenmediation.com"
+    }
+  ]
+}

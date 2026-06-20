@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-05",
+  "slot": "morning",
+  "slug": "dispatch-ready-maintenance-intake-scorecard",
+  "topic": "Dispatch-ready maintenance intake scorecard for property managers",
+  "hook": "If a work order starts with \"AC broken,\" it is not dispatch-ready.",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-dispatch-ready-maintenance-intake-scorecard/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-dispatch-ready-maintenance-intake-scorecard/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-dispatch-ready-maintenance-intake-scorecard/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-dispatch-ready-maintenance-intake-scorecard/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-dispatch-ready-maintenance-intake-scorecard/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-dispatch-ready-maintenance-intake-scorecard/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-dispatch-ready-maintenance-intake-scorecard/slide-7.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-05-morning-dispatch-ready-maintenance-intake-scorecard/slide-8.png"
+  ],
+  "captions": {
+    "instagram": "What is maintenance intake automation for property managers? It is an AI front desk for property managers that answers by AI voice or SMS, collects the exact repair details, routes the next step, and updates CRM workflows before your coordinator or vendor takes over.\\n\\nIf your maintenance request still starts with \"AC broken\" or \"leak in unit,\" the real bottleneck is not dispatch speed. It is intake quality.\\n\\nUse this 6-point scorecard:\\n1. Exact issue + exact location\\n2. Urgency + safety screen\\n3. Access notes\\n4. Photos or context\\n5. Trade or approval path\\n6. CRM note + next owner\\n\\nThis is where property management automation becomes operational instead of gimmicky. Maintenance intake automation, property management CRM automation, missed-call text-back, leasing follow-up automation, AI voice, SMS, and CRM workflows should all reduce the second call, the missing detail, and the \\\"who owns this now?\\\" moment.\\n\\nFor operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S., the first win is usually simple: collect better inputs before you dispatch.\\n\\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\\n\\n#PropertyManagementAutomation #MaintenanceAutomation #AIVoice #SMSWorkflows #CRMWorkflows",
+    "facebook": "What is an AI front desk for property managers? At the maintenance level, it is a voice, SMS, and CRM workflow that gathers the facts of a resident issue before staff, vendors, or owners have to chase them down.\\n\\nIf a maintenance request still starts with \"AC broken,\" dispatch is already behind. The fix is better intake before the first handoff.\\n\\nUse this dispatch-ready scorecard:\\n1. Exact issue + exact location\\n2. Urgency + safety screen\\n3. Access notes\\n4. Photos or context\\n5. Trade or approval path\\n6. CRM note + next owner\\n\\nThat is the practical side of property management automation. AI voice, SMS, maintenance intake automation, missed-call text-back, leasing follow-up automation, and property management CRM automation should create cleaner handoffs, faster routing, and fewer wasted callbacks.\\n\\nThis is especially relevant for property management teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\\n\\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\\n\\n#PropertyManagementAutomation #MaintenanceAutomation #AIVoice #CRMWorkflows"
+  }
+}

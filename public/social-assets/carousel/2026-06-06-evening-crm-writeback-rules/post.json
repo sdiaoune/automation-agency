@@ -1,0 +1,106 @@
+{
+  "captions": {
+    "facebook": "What should property managers automate once the conversation starts moving? The CRM write-back.\n\nProperty management automation should not stop at the first text, the first call summary, or the first maintenance reply. An AI front desk for property managers should push clean outcomes into the operating system: who owns the lead, what happened, what changed, and what happens next. That is how AI voice, SMS, missed-call text-back, leasing follow-up automation, maintenance intake automation, and property management CRM automation actually reduce admin work.\n\nUse this carousel as a practical checklist for leasing, tenant intake, maintenance, owner updates, vendor handoffs, and CRM workflows. If the team still has to copy-paste notes, guess record ownership, fix duplicates, or close stages manually, the automation is incomplete.\n\nEMC2Ops builds done-for-you property management automation for operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #AIFrontDesk #CRMWorkflows #SMSWorkflows #PropertyManagement",
+    "instagram": "What should property managers automate after the first reply? The CRM write-back.\n\nProperty management automation is not finished when AI voice or SMS gets the answer. It is finished when the right outcome, owner, and next step land in the system without your leasing, maintenance, or operations team copying notes by hand. That is where an AI front desk for property managers becomes practical.\n\nUse this checklist for missed-call text-back, leasing follow-up automation, maintenance intake automation, owner updates, vendor routing, and property management CRM automation. Every workflow should define the trigger, the summary format, the record match rules, the assignee, the closeout state, and the human-review lane before more messages go out.\n\nIf your team still has to retype renter replies, maintenance context, owner approvals, or vendor updates into the CRM, the real bottleneck is not more lead volume. It is weak CRM workflows.\n\nEMC2Ops installs done-for-you property management automation with AI front desk for property managers, AI voice, SMS, and CRM workflows for teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/.\n\n#PropertyManagementAutomation #AIFrontDesk #CRMWorkflows #LeasingAutomation #AIVoice"
+  },
+  "channels": [
+    "instagram",
+    "facebook"
+  ],
+  "date": "2026-06-06",
+  "facebook": {
+    "channel": "facebook",
+    "attachedPhotoIds": [
+      "122104935057337252",
+      "122104935099337252",
+      "122104935147337252",
+      "122104935195337252",
+      "122104935237337252",
+      "122104935279337252",
+      "122104935321337252",
+      "122104935363337252"
+    ],
+    "id": "1103086129558384_122104935393337252",
+    "permalink": "https://www.facebook.com/122104714761337252/posts/122104935393337252"
+  },
+  "hook": "If the CRM only updates after someone remembers, you do not have automation.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18086638409263933",
+      "18086638424263933",
+      "18086638448263933",
+      "18086638466263933",
+      "18086638481263933",
+      "18086638508263933",
+      "18086638532263933",
+      "18086638571263933"
+    ],
+    "creationId": "18086638601263933",
+    "id": "18094346000210493",
+    "permalink": "https://www.instagram.com/p/DZP6wIejgMK/"
+  },
+  "slot": "evening",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-crm-writeback-rules",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-7.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-8.png"
+  ],
+  "topic": "Property management CRM write-back rules",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-7.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-crm-writeback-rules/slide-8.png"
+    }
+  ]
+}

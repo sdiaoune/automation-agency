@@ -1,0 +1,19 @@
+{
+  "sent": true,
+  "approval_id": "d3ad5223-a51c-4d93-8da1-3a3a7de043ec",
+  "prospect_id": "41b82940-87af-4d81-ac9c-d29de00138b3",
+  "company": null,
+  "contact": null,
+  "email": "gperez@legacyresidential.com",
+  "subject": "response time",
+  "sent_at": "2026-06-19T17:51:31Z",
+  "activity_id": "e42ff53b-938e-4a8f-8355-7d79b856ec6b",
+  "daily_send_count": 30,
+  "approved_queue_count": 0,
+  "restocked_count": 0,
+  "replies_found": 1,
+  "reply_activity_id": "89309d8e-4ad1-429a-a92c-7c571d74fea4",
+  "reply_logged": true,
+  "reply_prospect_id": "6bf556eb-c7ca-4c7e-ac3e-9c1324a3978b",
+  "skipped_count": 0
+}

@@ -34,6 +34,17 @@ faqs:
     answer: "It should stop or change when the prospect replies, books a showing, starts an application, opts out, or needs a human conversation."
   - question: "Can AI follow-up work with existing leasing CRMs?"
     answer: "Usually yes. Most teams can connect AI follow-up through native integrations, APIs, or workflow tools as long as contact status and suppression rules are clear."
+relatedServices:
+  - label: "AI leasing follow-up automation"
+    href: "/services/leasing-follow-up/"
+    description: "Build renter follow-up sequences around stage, timing, and CRM status."
+relatedUseCases:
+  - label: "Lead-to-lease automation"
+    href: "/use-cases/lead-to-lease-automation/"
+    description: "Move renters from inquiry to tour, application, approval, and move-in handoff."
+  - label: "Real estate lead follow-up automation"
+    href: "/use-cases/real-estate-lead-follow-up-automation/"
+    description: "Recover warm prospects with short, stage-aware follow-up."
 related:
   - "automate-property-management-lead-follow-up"
   - "property-management-lead-deduplication-routing"

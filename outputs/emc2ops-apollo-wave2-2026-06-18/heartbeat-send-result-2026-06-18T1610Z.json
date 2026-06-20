@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-06-18T16:11:43.931781+00:00",
+  "approval_id": "93ed2da5-d762-49f0-8f36-e82fe176594e",
+  "sent": true,
+  "restocked_count": 0,
+  "replies_found": 0,
+  "skipped_count": 0,
+  "sent_at": "2026-06-18T16:11:46.148199+00:00",
+  "recipient_email": "ckey@carlislerp.com",
+  "subject": "response time",
+  "company": "Carlisle Residential Properties",
+  "prospect_id": "a5971253-b382-4f04-89d8-fe9648550f60",
+  "activity_id": "90a79208-64a9-49f0-971e-7eff3a65ff99",
+  "daily_sent_count": 15,
+  "approved_queue_count": 15,
+  "approved_by_subject_after": {
+    "response time": 9,
+    "missed calls": 1,
+    "lost leads": 5
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "updated_at": "2026-06-18T13:17:11.594550+00:00",
+  "prospect_id": "ba0112e3-cb4c-48a1-b40c-e9cf8e1ef18f",
+  "company": "Morgan Property Management",
+  "email": "angele@morganpm.com",
+  "activity_inserted": true,
+  "activity_id": "97adc1e7-d4b7-45bb-88c7-82824fd58186",
+  "rejected_approval_ids": [],
+  "approval_status_counts": {
+    "sent": 89,
+    "draft": 1,
+    "approved": 4
+  }
+}

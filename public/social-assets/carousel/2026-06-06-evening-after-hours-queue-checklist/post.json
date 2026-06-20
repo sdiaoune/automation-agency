@@ -1,0 +1,106 @@
+{
+  "captions": {
+    "facebook": "What should property managers automate after hours?\n\nAutomate the queue-building work that should already be organized before the office opens: missed-call text-back, leasing follow-up automation, maintenance intake automation, owner update routing, vendor prep, and property management CRM automation with a clear next owner.\n\nAn AI front desk for property managers should use AI voice, SMS, and CRM workflows to capture the right details, route the next step, and log the summary while the team is offline. If staff still start the day by rebuilding voicemail, renter follow-up, maintenance context, owner notes, and vendor handoffs by hand, the workflow is not finished.\n\nThis checklist is built for property management owners and operators in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #SMSWorkflows #AIVoice #CRMWorkflows",
+    "instagram": "What should property managers automate after hours?\n\nStart with the repeatable conversations that arrive when the office is closed but still need a clean next step before the team opens the next day. The right property management automation creates a usable queue, not a bigger mess.\n\nThis is where an AI front desk for property managers earns its keep: missed-call text-back, leasing follow-up automation, maintenance intake automation, owner update routing, vendor prep, and property management CRM automation that lands the right summary, owner, and next action before anyone starts rebuilding context from voicemail and inbox threads.\n\nIf your team walks into stale leads, half-filled maintenance requests, missing owner context, or unassigned tasks, the gap is not more software. It is weak AI voice, SMS, and CRM workflows after hours.\n\nEMC2Ops builds done-for-you property management automation for owners, operators, and teams in Dallas, Houston, Phoenix, Charlotte, Atlanta, Tampa, Orlando, Austin, Nashville, Miami, and remote teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #LeasingAutomation #MaintenanceAutomation #CRMWorkflows"
+  },
+  "channels": [
+    "instagram",
+    "facebook"
+  ],
+  "date": "2026-06-06",
+  "facebook": {
+    "channel": "facebook",
+    "attachedPhotoIds": [
+      "122104965345337252",
+      "122104965393337252",
+      "122104965435337252",
+      "122104965513337252",
+      "122104965645337252",
+      "122104965747337252",
+      "122104965819337252",
+      "122104965891337252"
+    ],
+    "id": "1103086129558384_122104965975337252",
+    "permalink": "https://www.facebook.com/122104714761337252/posts/122104965975337252"
+  },
+  "hook": "If the morning starts with cleanup, your after-hours workflow is still manual.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18086663381263933",
+      "18086663399263933",
+      "18086663429263933",
+      "18086663462263933",
+      "18086663489263933",
+      "18086663516263933",
+      "18086663546263933",
+      "18086663570263933"
+    ],
+    "creationId": "18086663594263933",
+    "id": "18212950945327747",
+    "permalink": "https://www.instagram.com/p/DZQP8kODmPT/"
+  },
+  "slot": "evening",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-7.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-8.png"
+  ],
+  "topic": "After-hours queue checklist for property managers",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-7.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-06-evening-after-hours-queue-checklist/slide-8.png"
+    }
+  ]
+}

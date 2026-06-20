@@ -627,6 +627,54 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a3449e02e4d673a613b2bc0",
       "linkedInPostedAt": "2026-06-18T19:41:31.171Z"
+    },
+    "oracle-opera-cloud-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/oracle-opera-cloud-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-18T19:41:19.679Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-19T06:34:25.145Z",
+      "replyId": null,
+      "tweetId": "2067858520939077959",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a34e2f12860b3191c57930e",
+      "linkedInPostedAt": "2026-06-19T06:34:35.900Z"
+    },
+    "property-management-owner-statement-automation": {
+      "imagePath": "blog/social-assets/property-management-owner-statement-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-owner-statement-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-19T19:39:03.998Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-19T19:39:04.540Z",
+      "replyId": "2068055986397401255",
+      "tweetId": "2068055985264971931",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a359ad98cced62613c96822",
+      "linkedInPostedAt": "2026-06-19T19:39:15.365Z"
+    },
+    "intent-beats-volume-property-management-leasing-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/intent-beats-volume-property-management-leasing-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-19T19:39:03.998Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-20T06:35:41.953Z",
+      "replyId": null,
+      "tweetId": "2068221231120212109",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3634be9513262b4d2b051d",
+      "linkedInPostedAt": "2026-06-20T06:35:52.869Z"
     }
   }
 }

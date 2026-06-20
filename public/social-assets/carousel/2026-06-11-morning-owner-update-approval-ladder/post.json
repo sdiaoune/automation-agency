@@ -1,0 +1,95 @@
+{
+  "captions": {
+    "facebook": "Why do owner updates still arrive too late?\n\nBecause many property teams rely on inbox memory instead of a workflow with triggers, approval rules, and one clean handoff. Cost changes, timeline slips, leasing issues, and maintenance exceptions should route into a clear owner-update ladder before frustration builds.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #OwnerUpdates #AIFrontDesk #CRMWorkflows",
+    "instagram": "Why do owner updates still feel reactive in property management?\n\nBecause too many teams treat owner communication like a manual recap instead of an operating workflow with triggers, thresholds, and named approvals. Practical property management automation should decide when a repair, leasing issue, delinquency risk, make-ready delay, or resident escalation becomes an owner-facing update.\n\nThis is where an AI front desk for property managers becomes more than faster reply speed. AI voice, SMS, routing, vendor coordination, and CRM write-back should support one clean approval ladder so owners get the right update at the right moment without staff rewriting the story from scratch.\n\nIf your team still waits until the owner is already frustrated to explain cost changes, timeline slips, unresolved approvals, or repeat maintenance problems, the issue is not effort. The operating workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #OwnerUpdates #AIFrontDesk #CRMWorkflows #PropertyManagement"
+  },
+  "channels": [
+    "instagram"
+  ],
+  "date": "2026-06-11",
+  "facebook": null,
+  "hook": "If owner updates only happen when something breaks, the workflow is already late.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18087451277263933",
+      "18087451292263933",
+      "18087451304263933",
+      "18087451343263933",
+      "18087451376263933",
+      "18087451433263933",
+      "18087451499263933",
+      "18087451676263933"
+    ],
+    "creationId": "18087451700263933",
+    "id": "18161399875456701",
+    "permalink": "https://www.instagram.com/p/DZdVkiWCajG/"
+  },
+  "publishSelection": {
+    "facebookSelected": false,
+    "instagramSelected": true
+  },
+  "slot": "morning",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-7.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-8.png"
+  ],
+  "topic": "Owner update approval ladder for property managers",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-7.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-11-morning-owner-update-approval-ladder/slide-8.png"
+    }
+  ]
+}

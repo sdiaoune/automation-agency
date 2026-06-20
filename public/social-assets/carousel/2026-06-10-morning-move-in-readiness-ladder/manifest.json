@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-10",
+  "slot": "morning",
+  "slug": "move-in-readiness-ladder",
+  "topic": "Move-in readiness ladder for property managers",
+  "hook": "If move-in week still runs on scattered reminders, the handoff is not ready.",
+  "captionInstagram": "Why do property management move-ins still create last-minute chaos?\n\nBecause most teams treat move-in as a checklist, not a workflow with named triggers, owners, and proof. Practical property management automation should start from the signed lease, confirm utilities and documents, route exceptions, trigger resident messages, and keep the CRM or PMS current before keys are on the line.\n\nThis is where an AI front desk for property managers becomes useful beyond leasing. SMS, AI voice, document follow-up, maintenance coordination, and CRM workflows should all support one clean move-in readiness path instead of five separate reminder chains.\n\nIf your team still spends move-in week chasing insurance files, missing payments, incomplete utilities, unresolved make-ready items, or key handoff confusion, the problem is not effort. The operating workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MoveInAutomation #AIFrontDesk #CRMWorkflows #AIVoice",
+  "captionFacebook": "Why do move-ins still become last-minute fire drills?\n\nBecause the work usually lives in reminders, inbox threads, and side checklists instead of one operating workflow. Signed lease, funds, documents, utilities, make-ready, and handoff ownership should move through clear triggers before move-in day.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MoveInAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Move-in workflow audit",
+      "title": "If move-in week still runs on scattered reminders,",
+      "titleAccent": "the handoff is not ready.",
+      "body": "A clean move-in should follow one operating path from signed lease to key release, not a scramble across inboxes, texts, and sticky-note tasks.",
+      "footer": "Swipe for the 6 readiness rules that protect move-in day",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Start trigger",
+      "title": "Signed lease should open the move-in workflow automatically.",
+      "body": "The clock should start from the executed lease and target date so documents, payments, utility steps, and staff ownership do not wait for someone to remember.",
+      "footer": "Goal: no new resident starts in an unowned queue",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Resident packet",
+      "title": "Every move-in needs one required-documents lane.",
+      "body": "Insurance proof, IDs, utility confirmation, pet records, parking details, and policy acknowledgements should be tracked in one completion path with automatic reminders.",
+      "footer": "Goal: one checklist, one status, one owner",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Funds check",
+      "title": "Payment readiness should be verified before key handoff becomes a front-desk surprise.",
+      "body": "Deposits, first rent, fees, concessions, and payment exceptions should resolve in advance so staff are not negotiating the file at pickup time.",
+      "footer": "Goal: money issues escalate before move-in day",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Unit readiness",
+      "title": "Make-ready status has to feed the resident workflow.",
+      "body": "Cleaning, repairs, inspection completion, vendor delays, and final approval should update the move-in lane automatically instead of living in separate maintenance threads.",
+      "footer": "Goal: resident messaging reflects real unit status",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Exception routing",
+      "title": "Late documents or failed readiness checks need a named owner immediately.",
+      "body": "Missing insurance, utility gaps, payment problems, unresolved repairs, or lease exceptions should route with summary, deadline, and next action attached.",
+      "footer": "Goal: exception paths do not hide inside reminders",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "System of record",
+      "title": "Move-in status belongs in the CRM or PMS your team already runs from.",
+      "body": "Readiness stage, missing items, latest resident confirmation, unit status, and next owner should write back so the team is not rebuilding context on move-in morning.",
+      "footer": "Goal: one record shows what is done and what is blocking keys",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want move-ins to feel",
+      "titleAccent": "scheduled instead of rescued?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make resident handoffs and front-desk operations easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder",
+  "renderedAt": "2026-06-10T16:03:31.991Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-10-morning-move-in-readiness-ladder/contact-sheet.png"
+}
