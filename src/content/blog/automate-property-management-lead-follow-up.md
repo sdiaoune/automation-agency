@@ -53,6 +53,7 @@ relatedUseCases:
 related:
   - "property-management-response-times"
   - "ai-leasing-follow-up-property-management"
+  - "property-management-stale-lead-reactivation-automation"
   - "missed-call-text-back-property-management"
 ---
 

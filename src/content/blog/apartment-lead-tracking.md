@@ -44,6 +44,7 @@ related:
   - "property-management-guest-card-automation"
   - "property-management-leasing-pipeline-setup"
   - "property-management-leasing-inquiry-routing-automation"
+  - "property-management-stale-lead-reactivation-automation"
   - "property-management-lead-deduplication-routing"
   - "automate-property-management-lead-follow-up"
 ---

@@ -453,5 +453,19 @@
     "keyword": "property management resident portal message automation",
     "title": "Property Management Resident Portal Message Automation: Stop Letting the Inbox Run the Day",
     "meta": "Learn how property managers can automate resident portal message triage, routing, follow-up, and CRM updates without letting the inbox drive the day."
+  },
+  {
+    "slug": "customer-service-doom-loops-property-management",
+    "pillar": "AI Front Desk",
+    "keyword": "customer service doom loops property management",
+    "title": "Customer-Service Doom Loops Are a Property Management Workflow Warning",
+    "meta": "A June 20 customer-service backlash story is a timely lesson for property managers: automate routine intake and follow-up, but avoid AI doom loops by preserving human escalation and clean workflow boundaries."
+  },
+  {
+    "slug": "property-management-stale-lead-reactivation-automation",
+    "pillar": "Leasing Automation",
+    "keyword": "property management stale lead reactivation automation",
+    "title": "Property Management Stale Lead Reactivation Automation: Stop Letting Old Prospects Rot in the CRM",
+    "meta": "Learn how property managers can automate stale-lead reactivation, renter re-engagement, and CRM cleanup without blasting every old prospect with generic follow-up."
   }
 ]

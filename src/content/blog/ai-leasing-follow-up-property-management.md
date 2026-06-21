@@ -47,6 +47,7 @@ relatedUseCases:
     description: "Recover warm prospects with short, stage-aware follow-up."
 related:
   - "automate-property-management-lead-follow-up"
+  - "property-management-stale-lead-reactivation-automation"
   - "property-management-lead-deduplication-routing"
   - "property-management-leasing-pipeline-setup"
   - "property-management-lead-qualification-automation"

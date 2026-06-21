@@ -707,6 +707,19 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a3785d4848d7b22d0447ec1",
       "linkedInPostedAt": "2026-06-21T06:34:07.230Z"
+    },
+    "property-management-stale-lead-reactivation-automation": {
+      "imagePath": "blog/social-assets/property-management-stale-lead-reactivation-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-stale-lead-reactivation-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-21T19:35:01.884Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-21T19:35:02.405Z",
+      "replyId": "2068779746373107864",
+      "tweetId": "2068779745257431059"
     }
   }
 }
