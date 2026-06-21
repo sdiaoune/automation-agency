@@ -691,6 +691,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a36ebf52ac8d3316c7ef099",
       "linkedInPostedAt": "2026-06-20T19:37:35.559Z"
+    },
+    "customer-service-doom-loops-property-management": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/customer-service-doom-loops-property-management/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-20T19:37:24.354Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-21T06:33:56.242Z",
+      "replyId": null,
+      "tweetId": "2068583175559823539",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3785d4848d7b22d0447ec1",
+      "linkedInPostedAt": "2026-06-21T06:34:07.230Z"
     }
   }
 }
