@@ -720,6 +720,22 @@
       "postedAt": "2026-06-21T19:35:02.405Z",
       "replyId": "2068779746373107864",
       "tweetId": "2068779745257431059"
+    },
+    "harvard-housing-report-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/harvard-housing-report-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-21T19:35:01.884Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-22T06:35:45.754Z",
+      "replyId": null,
+      "tweetId": "2068946022793920694",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a38d7c20345e73a0fca769b",
+      "linkedInPostedAt": "2026-06-22T06:35:56.786Z"
     }
   }
 }
