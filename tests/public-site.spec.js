@@ -6,21 +6,12 @@ const blogPostCount = fs
   .readdirSync(path.join(__dirname, "..", "src", "content", "blog"))
   .filter((file) => file.endsWith(".md") || file.endsWith(".mdx")).length;
 
-test("home page loads and submits the audit form payload", async ({ page }) => {
+test("home page loads and routes audit CTAs to the booking page", async ({ page }) => {
   const errors = [];
-  let submittedPayload;
   let newsletterPayload;
 
   page.on("console", (message) => {
     if (message.type() === "error") errors.push(message.text());
-  });
-
-  await page.route("**/api/book-audit", async (route) => {
-    submittedPayload = route.request().postDataJSON();
-    await route.fulfill({
-      contentType: "application/json",
-      body: JSON.stringify({ ok: true, id: "booking-id", notification: "not_configured" }),
-    });
   });
 
   await page.route("**/api/newsletter-subscribe", async (route) => {
@@ -33,7 +24,40 @@ test("home page loads and submits the audit form payload", async ({ page }) => {
 
   await page.goto("/");
   await expect(page.locator("h1")).toContainText("Turn missed leasing calls");
+  await expect(page.locator(".hero-actions .btn-primary")).toHaveAttribute("href", "/book-demo/");
   await expect(page.locator("#newsletter h2")).toContainText("Get property management automation ideas");
+
+  await page.locator("#newsletter-form [name=email]").fill("newsletter@example.com");
+  await page.locator("#newsletter-form button[type=submit]").click();
+  await expect(page.locator("#newsletter-form-status")).toContainText("Subscribed");
+  expect(newsletterPayload).toMatchObject({
+    email: "newsletter@example.com",
+    source: "website-newsletter",
+    websiteConfirm: "",
+  });
+  expect(newsletterPayload.pageUrl).toContain("/");
+  expect(errors).toEqual([]);
+});
+
+test("booking page submits the audit form payload", async ({ page }) => {
+  const errors = [];
+  let submittedPayload;
+
+  page.on("console", (message) => {
+    if (message.type() === "error") errors.push(message.text());
+  });
+
+  await page.route("**/api/book-audit/", async (route) => {
+    submittedPayload = route.request().postDataJSON();
+    await route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({ ok: true, id: "booking-id", notification: "sent" }),
+    });
+  });
+
+  await page.goto("/book-demo/");
+  await expect(page.locator("h1")).toContainText("Find the first workflow");
+  await expect(page.locator("#book-demo h2")).toContainText("Request a 15-minute workflow audit");
 
   await page.locator("#audit-form [name=fullName]").fill("Avery Lee");
   await page.locator("#audit-form [name=email]").fill("avery@example.com");
@@ -59,17 +83,7 @@ test("home page loads and submits the audit form payload", async ({ page }) => {
     message: "After-hours leasing calls are going unanswered.",
     companySiteConfirm: "",
   });
-  expect(submittedPayload.pageUrl).toContain("/");
-
-  await page.locator("#newsletter-form [name=email]").fill("newsletter@example.com");
-  await page.locator("#newsletter-form button[type=submit]").click();
-  await expect(page.locator("#newsletter-form-status")).toContainText("Subscribed");
-  expect(newsletterPayload).toMatchObject({
-    email: "newsletter@example.com",
-    source: "website-newsletter",
-    websiteConfirm: "",
-  });
-  expect(newsletterPayload.pageUrl).toContain("/");
+  expect(submittedPayload.pageUrl).toContain("/book-demo/");
   expect(errors).toEqual([]);
 });
 

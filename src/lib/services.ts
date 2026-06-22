@@ -390,7 +390,7 @@ export function serviceSchema(service: ServicePage) {
         serviceOutput: service.outcomes,
         potentialAction: {
           "@type": "ContactAction",
-          target: `${siteUrl}/#book`,
+          target: `${siteUrl}/book-demo/`,
           name: "Request a workflow audit",
         },
       },

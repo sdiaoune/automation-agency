@@ -1,0 +1,37 @@
+---
+import AuditBookingSection from "../components/AuditBookingSection.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage } from "../lib/site";
+import "../styles/landing.css";
+
+const title = "Book a Demo | EMC2Ops Workflow Audit";
+const description = "Request a 15-minute EMC2Ops workflow audit for property management missed calls, leasing follow-up, maintenance intake, CRM cleanup, and owner or vendor updates.";
+---
+
+<SiteLayout
+  title={title}
+  description={description}
+  canonical={absoluteUrl("/book-demo/")}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt="EMC2Ops property management automation workflow for capturing after-hours leasing leads."
+  themeColor="#0b0c0a"
+  author="EMC2Ops"
+>
+  <SiteHeader variant="blog" />
+
+  <main>
+    <section class="booking-page-hero">
+      <div class="wrap">
+        <div class="eyebrow">Book a demo</div>
+        <h1>Find the first workflow your property team should automate.</h1>
+        <p class="lead">Share the current bottleneck. We’ll review the intake path, CRM handoff, and follow-up gap, then recommend one measurable automation to install first.</p>
+      </div>
+    </section>
+
+    <AuditBookingSection />
+  </main>
+
+  <SiteFooter variant="blog" />
+</SiteLayout>

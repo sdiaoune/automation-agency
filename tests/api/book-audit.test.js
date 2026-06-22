@@ -170,6 +170,89 @@ test("stores a valid booking and marks notification as not configured", async ()
   assert.match(fetchCalls[1].options.body, /not_configured/);
 });
 
+test("sends Telegram notification when Telegram env vars are configured", async () => {
+  const fetchCalls = [];
+  global.fetch = async (url, options) => {
+    fetchCalls.push({ url: String(url), options });
+    if (String(url).includes("/rest/v1/audit_bookings") && options.method === "POST") {
+      return {
+        ok: true,
+        json: async () => [
+          {
+            company: "North Lake PM",
+            company_website: "https://northlake.example",
+            email: "avery@example.com",
+            full_name: "Avery Lee",
+            id: "booking-id",
+            message: "After-hours leasing calls are going unanswered.",
+            page_url: "https://www.emc2ops.com/book-demo/",
+            phone: "555-0100",
+            portfolio_size: "51-250 units",
+            preferred_time: "Tuesday morning",
+            workflow_problem: "Missed leasing calls",
+          },
+        ],
+      };
+    }
+    if (String(url).includes("api.telegram.org")) {
+      return {
+        ok: true,
+        json: async () => ({ ok: true, result: { message_id: 12345 } }),
+      };
+    }
+    return { ok: true, json: async () => ({}) };
+  };
+  const handler = loadHandler({
+    SUPABASE_SERVICE_ROLE_KEY: "service-key",
+    SUPABASE_URL: "https://example.supabase.co",
+    TELEGRAM_BOT_TOKEN: "telegram-token",
+    TELEGRAM_CHAT_ID: "telegram-chat",
+  });
+
+  const response = await invoke(
+    handler,
+    jsonRequest("POST", {
+      company: "North Lake PM",
+      email: "avery@example.com",
+      fullName: "Avery Lee",
+      pageUrl: "https://www.emc2ops.com/book-demo/",
+      workflowProblem: "Missed leasing calls",
+    }),
+  );
+
+  assert.equal(response.statusCode, 200);
+  assert.deepEqual(response.json(), {
+    id: "booking-id",
+    notification: "sent",
+    ok: true,
+  });
+  assert.equal(fetchCalls.length, 3);
+  assert.match(fetchCalls[1].url, /^https:\/\/api\.telegram\.org\/bottelegram-token\/sendMessage$/);
+  assert.deepEqual(JSON.parse(fetchCalls[1].options.body), {
+    chat_id: "telegram-chat",
+    disable_web_page_preview: true,
+    text: [
+      "New EMC2Ops audit request",
+      "",
+      "Name: Avery Lee",
+      "Email: avery@example.com",
+      "Phone: 555-0100",
+      "Company: North Lake PM",
+      "Website: https://northlake.example",
+      "Portfolio size: 51-250 units",
+      "Workflow: Missed leasing calls",
+      "Preferred time: Tuesday morning",
+      "",
+      "Message:",
+      "After-hours leasing calls are going unanswered.",
+      "",
+      "Page: https://www.emc2ops.com/book-demo/",
+    ].join("\n"),
+  });
+  assert.match(fetchCalls[2].options.body, /"notification_provider":"telegram"/);
+  assert.match(fetchCalls[2].options.body, /"notification_provider_message_id":"12345"/);
+});
+
 test("keeps a saved booking successful when notification fails", async () => {
   const fetchCalls = [];
   global.fetch = async (url, options) => {
