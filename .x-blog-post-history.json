@@ -752,6 +752,70 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a398e6685e924f5db767bae",
       "linkedInPostedAt": "2026-06-22T19:35:12.616Z"
+    },
+    "microsoft-blended-workforce-property-management": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/microsoft-blended-workforce-property-management/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-22T19:35:01.121Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-23T06:34:58.646Z",
+      "replyId": null,
+      "tweetId": "2069308213149815209",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3a29134f0ceb745be357ac",
+      "linkedInPostedAt": "2026-06-23T06:35:09.506Z"
+    },
+    "property-management-vendor-quote-collection-automation": {
+      "imagePath": "blog/social-assets/property-management-vendor-quote-collection-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-vendor-quote-collection-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-23T19:36:12.328Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-23T19:36:12.851Z",
+      "replyId": "2069504817601356253",
+      "tweetId": "2069504816577921379",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3ae02d3c8f561ea12ac03b",
+      "linkedInPostedAt": "2026-06-23T19:36:23.976Z"
+    },
+    "anthropic-claude-tag-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/anthropic-claude-tag-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-23T19:36:12.328Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-24T06:37:46.565Z",
+      "replyId": null,
+      "tweetId": "2069671305192902820",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3b7b3bffa234a7c8e65d36",
+      "linkedInPostedAt": "2026-06-24T06:37:57.419Z"
+    },
+    "property-management-application-screening-exception-workflow": {
+      "imagePath": "blog/social-assets/property-management-application-screening-exception-workflow.png",
+      "url": "https://www.emc2ops.com/blog/property-management-application-screening-exception-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-24T19:35:59.354Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-24T19:35:59.837Z",
+      "replyId": "2069867150928416984",
+      "tweetId": "2069867149909254564",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3c31a0eb8b329e6be9ffad",
+      "linkedInPostedAt": "2026-06-24T19:36:10.672Z"
     }
   }
 }
