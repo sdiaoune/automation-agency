@@ -816,6 +816,38 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a3c31a0eb8b329e6be9ffad",
       "linkedInPostedAt": "2026-06-24T19:36:10.672Z"
+    },
+    "apartment-fee-disclosure-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/apartment-fee-disclosure-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-24T19:35:59.354Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-25T06:35:02.375Z",
+      "replyId": null,
+      "tweetId": "2070033004651479374",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3ccc16536bc7a025596af7",
+      "linkedInPostedAt": "2026-06-25T06:35:13.538Z"
+    },
+    "property-management-rental-verification-request-automation": {
+      "imagePath": "blog/social-assets/property-management-rental-verification-request-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-rental-verification-request-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-25T19:37:14.370Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-25T19:37:14.872Z",
+      "replyId": "2070229853668888817",
+      "tweetId": "2070229852729307300",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3d836b2406a34f393e6426",
+      "linkedInPostedAt": "2026-06-25T19:37:25.812Z"
     }
   }
 }
