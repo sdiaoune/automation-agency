@@ -289,6 +289,14 @@ function mainTweetForPost(post) {
     );
   }
 
+  if (post.socialHook) {
+    const hashtags = "#PropertyManagement #AIAutomation";
+    const cta = "The news is the hook. The workflow is the point.";
+    const reserve = post.socialHook.length + cta.length + hashtags.length + 8;
+    const insight = truncateForTweet(post.meta.replace(/\.$/, ""), maxTweetLength - reserve);
+    return truncateForTweet(`${post.socialHook}\n\n${insight}\n\n${cta}\n\n${hashtags}`, maxTweetLength);
+  }
+
   const hashtags = "#PropertyManagement #AIAutomation";
   const lead = `New EMC2Ops guide: ${post.keyword}`;
   const cta = "For owners/operators managing 50+ units who want faster leasing response, cleaner maintenance intake, and fewer manual CRM handoffs.";
@@ -312,7 +320,7 @@ function replyTweetForPost(post, url) {
 }
 
 function localhostTweetForPost(post, url) {
-  const tweet = `New EMC2Ops guide: ${post.title}`;
+  const tweet = post.socialHook || `New EMC2Ops guide: ${post.title}`;
   return truncateForTweet(tweet, maxTweetLength - url.length - 2);
 }
 
@@ -342,6 +350,35 @@ It is: "Can it move the request to the next correct outcome?"
 
 I wrote the full EMC2Ops guide here:
 ${url}
+
+#PropertyManagement #LeasingAutomation #AIAutomation
+`);
+  }
+
+  if (post.socialHook) {
+    const systemBullets = (post.system || [])
+      .slice(0, 5)
+      .map((item) => `- ${item.replace(/\.$/, "")}`)
+      .join("\n");
+    const metricLine = (post.metrics || [])
+      .slice(0, 4)
+      .join(", ");
+
+    return normalizeWhitespace(`
+${post.socialHook}
+
+${post.problem}
+
+For property managers and operators managing 50+ doors, the useful move is not chasing the headline. It is turning the headline into an operating workflow:
+
+${systemBullets}
+
+Useful metrics to watch: ${metricLine}.
+
+I wrote the practical EMC2Ops guide here:
+${url}
+
+${post.cta}
 
 #PropertyManagement #LeasingAutomation #AIAutomation
 `);

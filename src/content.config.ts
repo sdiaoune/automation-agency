@@ -45,6 +45,7 @@ const blog = defineCollection({
       )
       .optional(),
     related: z.array(z.string()),
+    socialHook: z.string().optional(),
     socialImage: z.string().optional(),
   }),
 });

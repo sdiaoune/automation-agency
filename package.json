@@ -11,6 +11,7 @@
     "seo:validate": "node scripts/seo-validate.mjs",
     "blog:list": "node scripts/blog-content.mjs --list",
     "blog:validate": "node scripts/blog-content.mjs",
+    "blog:card": "node scripts/render-blog-social-card.mjs",
     "post:blog:x": "node scripts/x-blog-post.mjs",
     "post:blog:social": "node scripts/x-blog-post.mjs",
     "post:x:growth": "node scripts/post-x-growth.mjs",

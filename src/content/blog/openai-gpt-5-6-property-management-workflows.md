@@ -31,6 +31,8 @@ metrics:
   - "human escalation quality"
 cta: "If this news cycle has you thinking about AI front desk workflows, book a 15-minute workflow audit. EMC2Ops will map the first leasing, maintenance, owner update, vendor handoff, or CRM workflow worth automating."
 bodySections: true
+socialHook: "OpenAI just made 'we'll call you tomorrow' feel obsolete."
+socialImage: "/blog/social-assets/openai-gpt-5-6-property-management-workflows.png"
 faqs:
   - question: "What did OpenAI announce?"
     answer: "OpenAI announced a limited preview of GPT-5.6 Sol, described as a next-generation frontier model, along with GPT-5.6 Terra for efficient everyday work and GPT-5.6 Luna for fast, affordable high-volume work."
