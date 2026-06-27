@@ -848,6 +848,86 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a3d836b2406a34f393e6426",
       "linkedInPostedAt": "2026-06-25T19:37:25.812Z"
+    },
+    "adobe-ai-support-readiness-property-management": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/adobe-ai-support-readiness-property-management/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-25T19:37:14.370Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-25T22:27:24.458Z",
+      "replyId": null,
+      "tweetId": "2070272675658785117",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3dab4ddf68ab154c212189",
+      "linkedInPostedAt": "2026-06-25T22:27:35.320Z"
+    },
+    "thomson-reuters-shadow-ai-property-management": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/thomson-reuters-shadow-ai-property-management/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-25T19:37:14.370Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-26T17:07:47.930Z",
+      "replyId": null,
+      "tweetId": "2070554631516696619",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3eb1e4b705788bdb4a4f38",
+      "linkedInPostedAt": "2026-06-26T17:07:59.214Z"
+    },
+    "openai-gpt-5-6-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/openai-gpt-5-6-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-25T19:37:14.370Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-26T17:43:30.726Z",
+      "replyId": null,
+      "tweetId": "2070563619117408697",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3eba4337c4dee3e0b997b1",
+      "linkedInPostedAt": "2026-06-26T17:43:41.533Z"
+    },
+    "property-management-post-tour-follow-up-automation": {
+      "imagePath": "blog/social-assets/property-management-post-tour-follow-up-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-post-tour-follow-up-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-26T19:38:03.623Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-26T19:38:04.274Z",
+      "replyId": "2070592448485523838",
+      "tweetId": "2070592446984032346",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a3ed51c57229b8be2691ff9",
+      "linkedInPostedAt": "2026-06-26T19:38:15.219Z"
+    },
+    "openai-jalapeno-property-management-workflow-economics": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/openai-jalapeno-property-management-workflow-economics/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-26T19:38:03.623Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-27T17:06:22.245Z",
+      "replyId": null,
+      "tweetId": "2070916659779416278",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a40030ebe13aec991836d9c",
+      "linkedInPostedAt": "2026-06-27T17:06:33.090Z"
     }
   }
 }
