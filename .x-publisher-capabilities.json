@@ -1,6 +1,6 @@
 {
   "mediaUpload": {
-    "lastCheckedAt": "2026-06-26T19:38:03.623Z",
+    "lastCheckedAt": "2026-06-27T19:39:21.235Z",
     "status": "unsupported",
     "reason": "oauth1 media upload forbidden: X media upload returned 403."
   }

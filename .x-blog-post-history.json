@@ -928,6 +928,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a40030ebe13aec991836d9c",
       "linkedInPostedAt": "2026-06-27T17:06:33.090Z"
+    },
+    "property-management-maintenance-escalation-automation": {
+      "imagePath": "blog/social-assets/property-management-maintenance-escalation-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-maintenance-escalation-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-27T19:39:21.235Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-27T19:39:21.951Z",
+      "replyId": "2070955162324132227",
+      "tweetId": "2070955160562442477",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4026eac19bcf14a3a3d1f2",
+      "linkedInPostedAt": "2026-06-27T19:39:32.806Z"
     }
   }
 }
