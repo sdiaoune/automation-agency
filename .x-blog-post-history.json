@@ -944,6 +944,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a4026eac19bcf14a3a3d1f2",
       "linkedInPostedAt": "2026-06-27T19:39:32.806Z"
+    },
+    "europe-heat-wave-property-management-maintenance-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/europe-heat-wave-property-management-maintenance-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-27T19:39:21.235Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-28T17:06:43.605Z",
+      "replyId": null,
+      "tweetId": "2071279137222705439",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4154a40a2e7f6ea344e628",
+      "linkedInPostedAt": "2026-06-28T17:06:54.404Z"
     }
   }
 }
