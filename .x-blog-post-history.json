@@ -960,6 +960,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a4154a40a2e7f6ea344e628",
       "linkedInPostedAt": "2026-06-28T17:06:54.404Z"
+    },
+    "property-management-lease-signing-automation": {
+      "imagePath": "blog/social-assets/property-management-lease-signing-automation.png",
+      "url": "https://www.emc2ops.com/blog/property-management-lease-signing-automation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-text-thread",
+      "postedAt": "2026-06-28T19:40:19.834Z",
+      "replyId": "2071317792834355601",
+      "tweetId": "2071317791865495929",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4178a47ebc14f15f0f70d7",
+      "linkedInPostedAt": "2026-06-28T19:40:30.738Z"
     }
   }
 }
