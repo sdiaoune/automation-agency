@@ -976,6 +976,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a4178a47ebc14f15f0f70d7",
       "linkedInPostedAt": "2026-06-28T19:40:30.738Z"
+    },
+    "heat-dome-property-management-resident-update-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/heat-dome-property-management-resident-update-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-29T17:11:15.101Z",
+      "replyId": null,
+      "tweetId": "2071642663678337239",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a42a73374d1f906b061bb58",
+      "linkedInPostedAt": "2026-06-29T17:11:25.965Z"
     }
   }
 }
