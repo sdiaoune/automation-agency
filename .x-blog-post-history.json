@@ -992,6 +992,22 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a42a73374d1f906b061bb58",
       "linkedInPostedAt": "2026-06-29T17:11:25.965Z"
+    },
+    "buildium-lead-source-attribution-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-lead-source-attribution-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-29T19:34:56.339Z",
+      "replyId": null,
+      "tweetId": "2071678824073265506",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a42c8e0e7214a508c9775c0",
+      "linkedInPostedAt": "2026-06-29T19:35:07.122Z"
     }
   }
 }
