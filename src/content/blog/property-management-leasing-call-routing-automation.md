@@ -36,7 +36,7 @@ faqs:
     answer: "Use a fallback path that captures the property question, creates a lead record, and assigns a fast follow-up task instead of forcing a blind transfer."
 relatedServices:
   - label: "AI leasing automation"
-    href: "/services/ai-leasing-automation/"
+    href: "/services/leasing-follow-up/"
     description: "Respond, qualify, route, and follow up on leasing leads without adding front-office headcount."
   - label: "CRM workflow automation"
     href: "/services/crm-workflow-automation/"

@@ -2,6 +2,13 @@ import fs from "node:fs";
 import path from "node:path";
 import { contentPostsPath, readBlogPosts, validateBlogPosts } from "./blog-content.mjs";
 
+if (process.env.ALLOW_LEGACY_BLOG_GENERATOR !== "true") {
+  console.error("scripts/generate-blog.mjs is retired for normal publishing.");
+  console.error("Use src/content/blog/*.md, then run: npm run blog:validate, npm run blog:card, npm run build.");
+  console.error("Set ALLOW_LEGACY_BLOG_GENERATOR=true only for an intentional legacy static export.");
+  process.exit(1);
+}
+
 const siteUrl = "https://www.emc2ops.com";
 const today = "2026-06-21";
 const defaultSocialImage = `${siteUrl}/blog/social-assets/stop-losing-leads-after-hours.png`;

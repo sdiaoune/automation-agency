@@ -29,6 +29,27 @@ const sitemap = fs.readFileSync(sitemapPath, "utf8");
 const sitemapUrls = new Set(
   [...sitemap.matchAll(/<loc>https:\/\/www\.emc2ops\.com([^<]*)<\/loc>/g)].map((match) => match[1]),
 );
+const moneyPageUrls = [
+  "/use-cases/apartment-lead-tracking/",
+  "/use-cases/real-estate-lead-follow-up-automation/",
+  "/use-cases/how-to-automate-property-management/",
+  "/use-cases/lead-to-lease-automation/",
+  "/use-cases/real-estate-crm-follow-up-mess/",
+  "/services/missed-call-recovery/",
+  "/services/leasing-follow-up/",
+  "/services/maintenance-intake-automation/",
+  "/services/crm-workflow-automation/",
+  "/services/owner-update-automation/",
+  "/services/vendor-dispatch-automation/",
+  "/services/ai-front-desk-property-management/",
+  "/integrations/appfolio/",
+  "/integrations/buildium/",
+  "/integrations/leadsimple/",
+];
+const forbiddenVisibleLabels = [
+  "Search intent this page answers",
+  "Cluster keywords",
+];
 const failures = [];
 const warnings = [];
 
@@ -48,6 +69,12 @@ for (const file of htmlFiles) {
   if (!canonical) failures.push(`${url} is missing a canonical tag.`);
   if (h1s.length !== 1) failures.push(`${url} has ${h1s.length} H1 tags.`);
   if (!hasNoindex && !sitemapUrls.has(url)) failures.push(`${url} is indexable but missing from sitemap.`);
+  for (const label of forbiddenVisibleLabels) {
+    if (stripTags(html).includes(label)) failures.push(`${url} exposes internal SEO label "${label}".`);
+  }
+  if (url.startsWith("/blog/") && url !== "/blog/" && !moneyPageUrls.some((moneyUrl) => html.includes(`href="${moneyUrl}"`))) {
+    failures.push(`${url} does not link to a service, use-case, or integration money page.`);
+  }
 
   for (const img of html.matchAll(/<img\b[^>]*>/g)) {
     if (!/\salt=/.test(img[0])) failures.push(`${url} has an image without alt text.`);

@@ -4,6 +4,7 @@ const test = require("node:test");
 const handlerPath = require.resolve("../../api/book-audit.js");
 const originalEnv = { ...process.env };
 const originalFetch = global.fetch;
+const { generateSlots } = require("../../server/booking-schedule");
 
 function loadHandler(env = {}) {
   delete require.cache[handlerPath];
@@ -34,6 +35,10 @@ function makeResponse() {
       this.headers[key.toLowerCase()] = value;
     },
   };
+}
+
+function nextSlot() {
+  return generateSlots()[0];
 }
 
 async function invoke(handler, request) {
@@ -132,13 +137,18 @@ test("validates required fields and work email format", async () => {
 });
 
 test("stores a valid booking and marks notification as not configured", async () => {
+  const slot = nextSlot();
   const fetchCalls = [];
   global.fetch = async (url, options) => {
     fetchCalls.push({ url: String(url), options });
+    if (!options.method) {
+      return { ok: true, json: async () => [] };
+    }
     if (options.method === "POST") {
+      const booking = JSON.parse(options.body);
       return {
         ok: true,
-        json: async () => [{ id: "booking-id", company: "North Lake PM" }],
+        json: async () => [{ ...booking, id: "booking-id", company: "North Lake PM" }],
       };
     }
     return { ok: true, json: async () => ({}) };
@@ -154,6 +164,7 @@ test("stores a valid booking and marks notification as not configured", async ()
       company: "North Lake PM",
       email: "avery@example.com",
       fullName: "Avery Lee",
+      scheduledStart: slot.start,
       workflowProblem: "Missed leasing calls",
     }),
   );
@@ -164,21 +175,30 @@ test("stores a valid booking and marks notification as not configured", async ()
     notification: "not_configured",
     ok: true,
   });
-  assert.equal(fetchCalls.length, 2);
-  assert.equal(fetchCalls[0].options.method, "POST");
-  assert.equal(fetchCalls[1].options.method, "PATCH");
-  assert.match(fetchCalls[1].options.body, /not_configured/);
+  assert.equal(fetchCalls.length, 3);
+  assert.equal(fetchCalls[0].options.method, undefined);
+  assert.equal(fetchCalls[1].options.method, "POST");
+  assert.equal(fetchCalls[2].options.method, "PATCH");
+  assert.match(fetchCalls[1].options.body, /"status":"scheduled"/);
+  assert.match(fetchCalls[1].options.body, /"scheduled_start":/);
+  assert.match(fetchCalls[2].options.body, /not_configured/);
 });
 
 test("sends Telegram notification when Telegram env vars are configured", async () => {
+  const slot = nextSlot();
   const fetchCalls = [];
   global.fetch = async (url, options) => {
     fetchCalls.push({ url: String(url), options });
+    if (String(url).includes("/rest/v1/audit_bookings") && !options.method) {
+      return { ok: true, json: async () => [] };
+    }
     if (String(url).includes("/rest/v1/audit_bookings") && options.method === "POST") {
+      const booking = JSON.parse(options.body);
       return {
         ok: true,
         json: async () => [
           {
+            ...booking,
             company: "North Lake PM",
             company_website: "https://northlake.example",
             email: "avery@example.com",
@@ -188,7 +208,6 @@ test("sends Telegram notification when Telegram env vars are configured", async 
             page_url: "https://www.emc2ops.com/book-demo/",
             phone: "555-0100",
             portfolio_size: "51-250 units",
-            preferred_time: "Tuesday morning",
             workflow_problem: "Missed leasing calls",
           },
         ],
@@ -216,6 +235,7 @@ test("sends Telegram notification when Telegram env vars are configured", async 
       email: "avery@example.com",
       fullName: "Avery Lee",
       pageUrl: "https://www.emc2ops.com/book-demo/",
+      scheduledStart: slot.start,
       workflowProblem: "Missed leasing calls",
     }),
   );
@@ -226,9 +246,9 @@ test("sends Telegram notification when Telegram env vars are configured", async 
     notification: "sent",
     ok: true,
   });
-  assert.equal(fetchCalls.length, 3);
-  assert.match(fetchCalls[1].url, /^https:\/\/api\.telegram\.org\/bottelegram-token\/sendMessage$/);
-  assert.deepEqual(JSON.parse(fetchCalls[1].options.body), {
+  assert.equal(fetchCalls.length, 4);
+  assert.match(fetchCalls[2].url, /^https:\/\/api\.telegram\.org\/bottelegram-token\/sendMessage$/);
+  assert.deepEqual(JSON.parse(fetchCalls[2].options.body), {
     chat_id: "telegram-chat",
     disable_web_page_preview: true,
     text: [
@@ -241,7 +261,8 @@ test("sends Telegram notification when Telegram env vars are configured", async 
       "Website: https://northlake.example",
       "Portfolio size: 51-250 units",
       "Workflow: Missed leasing calls",
-      "Preferred time: Tuesday morning",
+      `Scheduled time: ${slot.label}`,
+      `Scheduled start: ${slot.start}`,
       "",
       "Message:",
       "After-hours leasing calls are going unanswered.",
@@ -249,19 +270,25 @@ test("sends Telegram notification when Telegram env vars are configured", async 
       "Page: https://www.emc2ops.com/book-demo/",
     ].join("\n"),
   });
-  assert.match(fetchCalls[2].options.body, /"notification_provider":"telegram"/);
-  assert.match(fetchCalls[2].options.body, /"notification_provider_message_id":"12345"/);
+  assert.match(fetchCalls[3].options.body, /"notification_provider":"telegram"/);
+  assert.match(fetchCalls[3].options.body, /"notification_provider_message_id":"12345"/);
 });
 
 test("keeps a saved booking successful when notification fails", async () => {
+  const slot = nextSlot();
   const fetchCalls = [];
   global.fetch = async (url, options) => {
     fetchCalls.push({ url: String(url), options });
+    if (String(url).includes("/rest/v1/audit_bookings") && !options.method) {
+      return { ok: true, json: async () => [] };
+    }
     if (String(url).includes("/rest/v1/audit_bookings") && options.method === "POST") {
+      const booking = JSON.parse(options.body);
       return {
         ok: true,
         json: async () => [
           {
+            ...booking,
             company: "North Lake PM",
             email: "avery@example.com",
             full_name: "Avery Lee",
@@ -290,6 +317,7 @@ test("keeps a saved booking successful when notification fails", async () => {
       company: "North Lake PM",
       email: "avery@example.com",
       fullName: "Avery Lee",
+      scheduledStart: slot.start,
       workflowProblem: "Missed leasing calls",
     }),
   );
@@ -300,6 +328,6 @@ test("keeps a saved booking successful when notification fails", async () => {
     notification: "failed",
     ok: true,
   });
-  assert.equal(fetchCalls.length, 3);
-  assert.match(fetchCalls[2].options.body, /Resend rejected the message/);
+  assert.equal(fetchCalls.length, 4);
+  assert.match(fetchCalls[3].options.body, /Resend rejected the message/);
 });

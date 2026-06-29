@@ -31,26 +31,33 @@ export const useCasePages: UseCasePage[] = [
       "rental lead tracking",
     ],
     intent: "A leasing operator wants to stop losing renter leads between first inquiry and tour.",
-    title: "Apartment lead tracking",
-    seoTitle: "Apartment Lead Tracking for Property Managers",
+    title: "Apartment lead tracking automation",
+    seoTitle: "Apartment Lead Tracking for Multifamily Teams",
     description:
-      "Track apartment leads from first call, form, text, or tour request through qualification, follow-up, CRM logging, and booked showing.",
-    h1: "Apartment lead tracking that keeps renter inquiries from disappearing",
+      "Capture apartment and multifamily lead tracking data from calls, forms, texts, ILS sources, and tours with CRM ownership, qualification, and follow-up.",
+    h1: "Apartment lead tracking for calls, forms, texts, and tours",
     summary:
-      "EMC2Ops installs lead tracking workflows that capture where a renter came from, what they asked for, who owns the next step, and what should happen next in the CRM.",
+      "EMC2Ops installs apartment and multifamily lead tracking workflows that preserve source attribution, deduplicate repeat inquiries, qualify renter intent, assign ownership, and log the next step in the CRM.",
     painPoints: [
-      "Leads arrive from calls, forms, ILS sources, texts, and walk-ins with different levels of context.",
-      "Duplicate renter records make it unclear who followed up and what was promised.",
-      "Leasing teams lose visibility when calls or texts are not logged back to the CRM.",
-      "Managers cannot tell whether the issue is lead quality, response speed, or handoff discipline.",
+      "Apartment and multifamily leads arrive from calls, forms, ILS sources, texts, walk-ins, and tour requests with different levels of context.",
+      "Duplicate renter records make it unclear which source won, who followed up, and what was promised.",
+      "Leasing teams lose visibility when phone, SMS, and ILS touches are not logged back to the CRM.",
+      "Managers cannot tell whether weak conversion comes from lead quality, response speed, or handoff discipline.",
     ],
     workflow: [
-      "Capture the source, property, unit interest, budget, move date, pets, and showing intent.",
-      "Deduplicate repeat inquiries and route ownership to the right property or leasing agent.",
-      "Trigger SMS or email follow-up when a renter stalls before booking or confirming a tour.",
-      "Write clean notes, tags, tasks, and next steps into the CRM so reporting stays current.",
+      "Capture source, property, unit interest, bedroom count, budget, move date, pets, and showing intent from each inbound channel.",
+      "Match repeat inquiries by phone, email, property interest, and conversation history before creating another renter record.",
+      "Route ownership to the correct property, leasing agent, backup queue, or review path with a due time.",
+      "Trigger SMS, email, or call-task follow-up when a qualified renter stalls before booking, confirming, or applying.",
+      "Write clean source, status, owner, summary, and next-step fields into the CRM so source-to-tour reporting stays current.",
     ],
-    metrics: ["source-to-showing rate", "speed to first response", "duplicate leads merged", "CRM completion rate"],
+    metrics: [
+      "source-to-showing rate",
+      "speed to first response",
+      "duplicate leads merged",
+      "unowned leads cleared",
+      "CRM completion rate",
+    ],
     bestFit: [
       "Multifamily teams with multiple lead sources.",
       "Property managers whose leasing CRM is often incomplete.",
@@ -70,6 +77,11 @@ export const useCasePages: UseCasePage[] = [
         question: "What is apartment lead tracking?",
         answer:
           "Apartment lead tracking is the process of capturing each renter inquiry, source, qualification detail, owner, follow-up step, and outcome from first contact through tour or application.",
+      },
+      {
+        question: "How do multifamily teams track leads from multiple sources?",
+        answer:
+          "Use one intake workflow that normalizes calls, forms, ILS alerts, texts, and tour requests before they create duplicate CRM records or separate follow-up paths.",
       },
       {
         question: "Can EMC2Ops connect lead tracking to my existing CRM?",
@@ -148,12 +160,12 @@ export const useCasePages: UseCasePage[] = [
     ],
     intent: "An operator wants a practical starting point for automation without rebuilding the whole business.",
     title: "How to automate property management",
-    seoTitle: "How to Automate Property Management Workflows",
+    seoTitle: "Property Management Automation Workflow Guide",
     description:
-      "Learn how to automate property management workflows by starting with leasing, maintenance, CRM logging, owner updates, and vendor handoffs.",
+      "Choose the first property management automation to launch across leasing, maintenance, CRM logging, owner updates, and vendor handoffs.",
     h1: "How to automate property management without creating another mess",
     summary:
-      "The best first automation is usually a narrow workflow with a clear trigger, required context, human exception path, and system-of-record update.",
+      "The safest first property management workflow automation is a narrow first-workflow selection with a clear trigger, required context, human exception path, and system-of-record update.",
     painPoints: [
       "Teams try to automate too many workflows before defining the operating rules.",
       "AI tools answer questions but do not update the CRM or route the next step.",
@@ -162,9 +174,10 @@ export const useCasePages: UseCasePage[] = [
     ],
     workflow: [
       "Pick one measurable bottleneck: missed calls, leasing follow-up, maintenance intake, CRM logging, owner updates, or vendor dispatch.",
-      "Define the trigger, required fields, escalation rules, and final record that should exist.",
-      "Connect the communication channel to the CRM, inbox, calendar, task system, or work order process.",
-      "Review early conversations weekly and improve prompts, routing, timing, and reporting.",
+      "Define the trigger, required fields, owner, escalation rules, stop conditions, and final record that should exist.",
+      "Connect the communication channel to the CRM, inbox, calendar, task system, work order process, or owner update path.",
+      "Launch with conservative human review for emergencies, fair-housing-sensitive questions, approvals, and unclear routing.",
+      "Review early conversations weekly and improve prompts, timing, CRM writebacks, reporting, and exception handling.",
     ],
     metrics: ["manual tasks removed", "response speed", "completed handoffs", "exception rate"],
     bestFit: [
@@ -188,6 +201,11 @@ export const useCasePages: UseCasePage[] = [
           "Start with a high-volume, measurable workflow such as missed-call recovery, leasing follow-up, maintenance intake, CRM logging, owner updates, or vendor dispatch.",
       },
       {
+        question: "What makes property management workflow automation different from a chatbot?",
+        answer:
+          "Workflow automation starts from an operating trigger, collects required context, routes the next step, escalates exceptions, and updates the system of record instead of only answering questions.",
+      },
+      {
         question: "Can property management automation work with my current tools?",
         answer:
           "Usually, yes. Most workflows can be connected through existing CRMs, phone systems, SMS tools, inboxes, APIs, webhooks, Zapier, Make, n8n, or custom middleware.",
@@ -200,29 +218,31 @@ export const useCasePages: UseCasePage[] = [
     clusterKeywords: [
       "lead to lease automation",
       "lead-to-lease workflow",
+      "lead to lease workflow",
+      "workflow for lease management",
       "leasing pipeline automation",
-      "renter journey automation",
       "leasing conversion automation",
     ],
     intent: "A leasing team wants the full inquiry-to-lease path to move faster and with fewer dropped steps.",
     title: "Lead-to-lease automation",
-    seoTitle: "Lead-to-Lease Automation for Property Management",
+    seoTitle: "Lead-to-Lease Automation Workflow",
     description:
-      "Build lead-to-lease automation that tracks renters from inquiry to tour, application, approval, move-in, and CRM reporting.",
+      "Automate inquiry-to-lease handoffs from renter lead capture through tours, applications, approval routing, move-in tasks, and CRM reporting.",
     h1: "Lead-to-lease automation that keeps every renter next step visible",
     summary:
-      "EMC2Ops helps property managers connect first inquiry, qualification, showing, application follow-up, approval routing, and move-in handoff into one tracked workflow.",
+      "EMC2Ops helps property managers turn the lead to lease workflow into one tracked path across first inquiry, qualification, tour scheduling, application follow-up, approval routing, and move-in handoff.",
     painPoints: [
-      "The renter journey breaks between inquiry, tour, application, approval, and move-in.",
+      "The renter journey breaks when the workflow for lease management is spread across inquiry, tour, application, approval, and move-in handoffs.",
       "No-shows and partial applications do not trigger timely recovery steps.",
       "CRM stages lag behind what actually happened in calls, texts, and inboxes.",
       "Managers cannot see which step is leaking qualified renters.",
     ],
     workflow: [
-      "Capture and qualify the inquiry with the minimum details needed for the next step.",
+      "Capture and qualify the inquiry with source, property, unit fit, budget, move date, pets, and preferred tour path.",
       "Route booking, reminders, confirmations, no-show recovery, and rescheduling into the leasing calendar and CRM.",
-      "Follow up on missing application items and route exceptions to staff.",
-      "Create move-in readiness tasks and status updates once the renter is approved.",
+      "Follow up on missing application items, stalled approvals, and incomplete renter steps by stage.",
+      "Route pricing questions, accommodation requests, exceptions, and approval decisions to staff with context.",
+      "Create move-in readiness tasks, owner-visible status, and CRM reporting updates once the renter is approved.",
     ],
     metrics: ["lead-to-tour rate", "tour-to-application rate", "application completion", "lead-to-lease conversion"],
     bestFit: [
@@ -246,6 +266,11 @@ export const useCasePages: UseCasePage[] = [
           "Lead-to-lease automation connects the renter journey from first inquiry through qualification, tour scheduling, application follow-up, approval routing, and move-in handoff.",
       },
       {
+        question: "What lead-to-lease stages can be automated first?",
+        answer:
+          "Start with inquiry capture, tour booking, reminders, no-show recovery, application follow-up, and CRM status updates because those stages have clear triggers and measurable outcomes.",
+      },
+      {
         question: "Does lead-to-lease automation replace leasing staff?",
         answer:
           "No. It handles repetitive reminders, routing, CRM logging, and status updates so leasing staff can focus on the conversations that need judgment.",
@@ -261,18 +286,22 @@ export const useCasePages: UseCasePage[] = [
       "CRM follow up automation",
       "messy CRM lead follow up",
       "real estate CRM automation",
+      "real estate CRM cleanup service",
+      "fix messy real estate CRM database",
+      "fix messy pipeline stages setup real estate CRM",
     ],
     intent: "A buyer is blaming the CRM, but the deeper issue is usually follow-up process and data hygiene.",
     title: "Real estate CRM follow-up cleanup",
     seoTitle: "Best Real Estate CRM When Follow-Up Is a Mess",
     description:
-      "Before switching CRMs, fix the follow-up workflow: ownership, stages, notes, tasks, duplicate leads, and automated next steps.",
+      "Before switching CRMs, fix the messy CRM database and follow-up workflow: ownership, pipeline stages, notes, tasks, duplicate leads, and automated next steps.",
     h1: "The best real estate CRM will not fix messy follow-up by itself",
     summary:
-      "If follow-up is a mess, EMC2Ops starts by cleaning the workflow around the CRM: what enters, who owns it, what gets logged, when tasks fire, and when a human takes over.",
+      "If follow-up is a mess, EMC2Ops provides a real estate CRM cleanup service focused on the workflow around the CRM: what enters, who owns it, what gets logged, how to fix messy pipeline stages, when tasks fire, and when a human takes over.",
     painPoints: [
       "Teams search for a new CRM when the real issue is inconsistent follow-up behavior.",
       "Duplicate leads, missing notes, stale stages, and unclear ownership make every CRM feel broken.",
+      "Managers need to fix a messy real estate CRM database before automation can create reliable follow-up.",
       "Automation adds more noise when it logs raw conversations instead of clean outcomes.",
       "Managers cannot trust reports because fields do not reflect the current lead status.",
     ],
@@ -307,6 +336,11 @@ export const useCasePages: UseCasePage[] = [
         question: "How can automation clean up CRM follow-up?",
         answer:
           "Automation can create tasks, update stages, merge or flag duplicates, log concise summaries, and route exceptions so staff work from current context instead of stale records.",
+      },
+      {
+        question: "Can EMC2Ops fix messy real estate CRM pipeline stages?",
+        answer:
+          "Yes. The cleanup starts by defining the stages, required fields, duplicate rules, task triggers, and ownership handoffs that make the CRM reflect real follow-up instead of stale activity.",
       },
     ],
   },

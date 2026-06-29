@@ -25,6 +25,7 @@ test("home page loads and routes audit CTAs to the booking page", async ({ page 
   await page.goto("/");
   await expect(page.locator("h1")).toContainText("Turn missed leasing calls");
   await expect(page.locator(".hero-actions .btn-primary")).toHaveAttribute("href", "/book-demo/");
+  await expect(page.locator(".hero-actions .btn-primary")).toContainText("Book a 15-minute audit");
   await expect(page.locator("#newsletter h2")).toContainText("Get property management automation ideas");
 
   await page.locator("#newsletter-form [name=email]").fill("newsletter@example.com");
@@ -42,6 +43,15 @@ test("home page loads and routes audit CTAs to the booking page", async ({ page 
 test("booking page submits the audit form payload", async ({ page }) => {
   const errors = [];
   let submittedPayload;
+  const slots = [
+    {
+      day: "Monday, June 29",
+      end: "2026-06-29T21:15:00.000Z",
+      label: "Mon, Jun 29, 5:00 PM EDT - 5:15 PM",
+      start: "2026-06-29T21:00:00.000Z",
+      timeZone: "America/New_York",
+    },
+  ];
 
   page.on("console", (message) => {
     if (message.type() === "error") errors.push(message.text());
@@ -54,23 +64,36 @@ test("booking page submits the audit form payload", async ({ page }) => {
       body: JSON.stringify({ ok: true, id: "booking-id", notification: "sent" }),
     });
   });
+  await page.route("**/api/audit-slots/", async (route) => {
+    await route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({ slots }),
+    });
+  });
 
   await page.goto("/book-demo/");
   await expect(page.locator("h1")).toContainText("Find the first workflow");
-  await expect(page.locator("#book-demo h2")).toContainText("Request a 15-minute workflow audit");
+  await expect(page.locator("#book-demo h2")).toContainText("Leave with one workflow");
+  await expect(page.locator(".slot-button")).toContainText("Mon, Jun 29");
 
+  await page.locator(".slot-button").click();
+  await expect(page.locator("#selected-slot-summary")).toBeVisible();
+  await expect(page.locator("#selected-slot-summary")).toContainText(slots[0].label);
+  await expect
+    .poll(async () => page.evaluate(() => document.activeElement?.getAttribute("name")))
+    .toBe("fullName");
   await page.locator("#audit-form [name=fullName]").fill("Avery Lee");
   await page.locator("#audit-form [name=email]").fill("avery@example.com");
-  await page.locator("#audit-form [name=phone]").fill("555-0100");
   await page.locator("#audit-form [name=company]").fill("North Lake PM");
+  await page.locator("#audit-form [name=workflowProblem]").selectOption("Missed leasing calls");
+  await page.locator(".prep-fields summary").click();
+  await page.locator("#audit-form [name=phone]").fill("555-0100");
   await page.locator("#audit-form [name=companyWebsite]").fill("https://northlake.example");
   await page.locator("#audit-form [name=portfolioSize]").selectOption("51-250 units");
-  await page.locator("#audit-form [name=workflowProblem]").selectOption("Missed leasing calls");
-  await page.locator("#audit-form [name=preferredTime]").fill("Tuesday morning");
   await page.locator("#audit-form [name=message]").fill("After-hours leasing calls are going unanswered.");
   await page.locator("#audit-form button[type=submit]").click();
 
-  await expect(page.locator("#audit-form-status")).toContainText("Audit request received");
+  await expect(page.locator("#audit-form-status")).toContainText("Audit booked");
   expect(submittedPayload).toMatchObject({
     fullName: "Avery Lee",
     email: "avery@example.com",
@@ -79,7 +102,10 @@ test("booking page submits the audit form payload", async ({ page }) => {
     companyWebsite: "https://northlake.example",
     portfolioSize: "51-250 units",
     workflowProblem: "Missed leasing calls",
-    preferredTime: "Tuesday morning",
+    scheduledEnd: slots[0].end,
+    scheduledLabel: slots[0].label,
+    scheduledStart: slots[0].start,
+    scheduledTimeZone: "America/New_York",
     message: "After-hours leasing calls are going unanswered.",
     companySiteConfirm: "",
   });

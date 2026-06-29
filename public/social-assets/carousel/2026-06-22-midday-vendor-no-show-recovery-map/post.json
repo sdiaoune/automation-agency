@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "publishedAt": "2026-06-22T20:04:18.852Z",
+    "date": "2026-06-22",
+    "slot": "midday",
+    "channels": [
+      "instagram"
+    ],
+    "topic": "Vendor no-show recovery map for property managers",
+    "hook": "If a missed vendor visit still turns into resident frustration and manual rescheduling, the maintenance workflow is too loose.",
+    "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map",
+    "slideUrls": [
+      "https://www.emc2ops.com/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-1.png",
+      "https://www.emc2ops.com/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-2.png",
+      "https://www.emc2ops.com/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-3.png",
+      "https://www.emc2ops.com/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-4.png",
+      "https://www.emc2ops.com/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-5.png",
+      "https://www.emc2ops.com/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-6.png",
+      "https://www.emc2ops.com/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-7.png",
+      "https://www.emc2ops.com/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-8.png"
+    ],
+    "caption": "Why do vendor no-shows still create resident frustration for property managers?\n\nBecause many teams treat a missed vendor visit like a one-off scheduling issue instead of a recovery workflow. Practical property management automation should detect the missed appointment fast, confirm what happened, route the next owner, update the resident, and protect the work order record before the case turns into more calls, more delays, and more blame.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Work order coordination, vendor scheduling, resident communication, AI voice, SMS, and property management CRM workflows should act like one controlled system so a missed visit creates a clear next action instead of another loose callback chain.\n\nIf your team still loses time to missing ETA updates, ownerless reschedules, duplicate outreach, stale work order notes, or residents asking for status your system should already know, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+    "captions": {
+      "instagram": "Why do vendor no-shows still create resident frustration for property managers?\n\nBecause many teams treat a missed vendor visit like a one-off scheduling issue instead of a recovery workflow. Practical property management automation should detect the missed appointment fast, confirm what happened, route the next owner, update the resident, and protect the work order record before the case turns into more calls, more delays, and more blame.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Work order coordination, vendor scheduling, resident communication, AI voice, SMS, and property management CRM workflows should act like one controlled system so a missed visit creates a clear next action instead of another loose callback chain.\n\nIf your team still loses time to missing ETA updates, ownerless reschedules, duplicate outreach, stale work order notes, or residents asking for status your system should already know, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement"
+    },
+    "postIds": {
+      "instagram": "17939754024083916"
+    },
+    "postUrls": {
+      "instagram": "https://www.instagram.com/p/DZ5qGKMH3hz/"
+    },
+    "instagramPostId": "17939754024083916",
+    "instagramPermalink": "https://www.instagram.com/p/DZ5qGKMH3hz/"
+  },
+  "instagram": {
+    "childIds": [
+      "18089217647263933",
+      "18089217662263933",
+      "18089217680263933",
+      "18089217701263933",
+      "18089217746263933",
+      "18089217758263933",
+      "18089217773263933",
+      "18089217794263933"
+    ],
+    "creationId": "18089217809263933",
+    "postId": "17939754024083916",
+    "permalink": "https://www.instagram.com/p/DZ5qGKMH3hz/"
+  },
+  "manifestPath": "public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/manifest.json",
+  "instagramOnly": true
+}

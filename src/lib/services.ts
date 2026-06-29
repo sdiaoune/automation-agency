@@ -70,21 +70,21 @@ export const servicePages: ServicePage[] = [
     slug: "leasing-follow-up",
     eyebrow: "Leasing follow-up",
     title: "AI leasing follow-up automation",
-    seoTitle: "AI Leasing Follow-Up Automation",
+    seoTitle: "Leasing Follow-Up Automation for Property Managers",
     description:
-      "Automate leasing follow-up across SMS, email, reminders, and CRM tasks so warm renter leads do not go cold.",
+      "Automate renter follow-up after missed calls, stale replies, no-shows, and incomplete applications with SMS, email, CRM tasks, and stop rules.",
     summary:
-      "EMC2Ops builds follow-up workflows that keep renter conversations moving after the first inquiry, missed tour, stale reply, or booked showing.",
+      "EMC2Ops builds leasing follow-up workflows that keep renter conversations moving after the first inquiry, missed call, booked tour, no-show, stale reply, or incomplete application.",
     outcomes: [
-      "Follow up with prospects who stopped replying.",
-      "Send showing reminders, confirmations, and rebooking prompts.",
-      "Update CRM stages when a prospect replies, books, no-shows, or opts out.",
+      "Recover prospects who stopped replying after first contact, tour requests, or application links.",
+      "Send showing reminders, confirmations, no-show recovery prompts, and rebooking paths.",
+      "Update CRM stages, tasks, owners, and suppression rules when a prospect replies, books, no-shows, applies, or opts out.",
     ],
     workflow: [
       "A renter lead enters your CRM, inbox, phone system, or form stack.",
-      "The workflow chooses the right follow-up path based on status and timing.",
-      "Prospects receive short, branded prompts to book, confirm, or reschedule.",
-      "Replies and outcomes are synced back to the operating system of record.",
+      "The workflow checks stage, source, timing, consent, last touch, and whether staff already took over.",
+      "Prospects receive short, branded prompts to book, confirm, reschedule, complete an application, or clarify interest.",
+      "Replies, stop signals, bookings, no-shows, and owner handoffs are synced back to the operating system of record.",
     ],
     metrics: ["lead-to-showing rate", "reply rate", "no-show recovery", "stale leads reactivated"],
     faqs: [
@@ -95,6 +95,10 @@ export const servicePages: ServicePage[] = [
       {
         question: "Will every lead receive the same message?",
         answer: "No. Strong workflows vary by stage, timing, source, and the last known prospect action.",
+      },
+      {
+        question: "Can follow-up stop when a prospect books or staff replies?",
+        answer: "Yes. Stop rules are core to the workflow so automation pauses when a prospect books, applies, opts out, becomes unqualified, or a human takes over.",
       },
     ],
     relatedUseCases: [

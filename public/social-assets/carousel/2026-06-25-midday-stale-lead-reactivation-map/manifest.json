@@ -1,0 +1,148 @@
+{
+  "date": "2026-06-25",
+  "slot": "midday",
+  "slug": "stale-lead-reactivation-map",
+  "topic": "Stale lead reactivation map for property managers",
+  "hook": "If old leasing leads still sit in the CRM until occupancy pressure spikes, the reactivation workflow is too loose.",
+  "captionInstagram": "Why do stale leasing leads still clutter the pipeline for property managers?\n\nBecause many teams treat reactivation like an occasional call blitz instead of a controlled workflow. Practical property management automation should detect inactivity by rule, segment the lead by last intent signal, trigger the right re-engagement path, route live replies to one owner, and write the outcome back before the pipeline turns into a graveyard of half-dead demand.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster texting. Missed-call recovery, AI voice, SMS, leasing follow-up automation, self-scheduling, and property management CRM workflows should act like one system so older leads create clean recovery instead of random manual outreach.\n\nIf your team still loses time to inflated pipeline counts, duplicate follow-up, no-stop sequences, or stale leads that suddenly reply with no visible owner, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do stale leasing leads still create pipeline drag?\n\nBecause reactivation should run on rules, not on whatever list the team remembers to call. Property management automation should detect inactivity, segment by last intent, route live replies, and sync the outcome back before the CRM stays bloated and misleading.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Leasing recovery workflow",
+      "title": "If stale leads still sit in the CRM until occupancy pressure hits,",
+      "titleAccent": "the reactivation workflow is too loose.",
+      "body": "Old calls, tour requests, guest cards, and half-finished conversations should move through one controlled recovery path for timing, segmentation, outreach, ownership, and cleanup instead of becoming a list someone works by memory.",
+      "footer": "Swipe for the 6 rules behind cleaner lead reactivation",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Inactivity trigger",
+      "title": "Reactivation should start from real inactivity rules, not from end-of-month panic.",
+      "body": "No reply after first contact, no tour booked after qualification, no movement after a showing request, or aged CRM stages should trigger the stale-lead path automatically before the pipeline gets distorted.",
+      "footer": "Goal: the system knows when a live lead became stale",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Lead segmentation",
+      "title": "Old leads should split by last signal before anyone sends the same check-in to everyone.",
+      "body": "Missed call, form fill, toured but ghosted, pricing objection, wrong timing, duplicate record, or no-fit criteria should branch into different reactivation lanes so the next message matches the real context.",
+      "footer": "Goal: stale leads route by last intent, not one generic blast",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Context recovery",
+      "title": "The reactivation owner should get the property, timing, and prior conversation context together.",
+      "body": "Property interest, unit fit, move timeline, last contact, source, and prior objections should appear in one view so the team does not restart the conversation blind or re-ask answered questions.",
+      "footer": "Goal: context arrives before the next outreach fires",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Reply routing",
+      "title": "The moment a stale lead answers, one owner should pick it up without channel confusion.",
+      "body": "SMS replies, returned calls, form resubmissions, and booking clicks should route to one named leasing owner with the full timeline attached so hot reactivated leads do not disappear into shared inboxes.",
+      "footer": "Goal: a live reply creates one owner and one next step",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Stop rules",
+      "title": "Reactivation should stop when the lead re-engages, opts out, or is clearly dead.",
+      "body": "Booked tour, active conversation, do-not-contact reply, moved already, duplicate record, or disqualified criteria should pause automation before the team keeps nudging leads who should be closed or handled by a person.",
+      "footer": "Goal: the workflow stops cleanly instead of creating noise",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "CRM cleanup",
+      "title": "The workflow is not finished until the lead record shows what reactivation actually did.",
+      "body": "Stale reason, segment, outreach attempt, reply state, assigned owner, recovered stage, and closeout reason should sync back before reporting runs so pipeline numbers reflect reality instead of hopeful clutter.",
+      "footer": "Goal: the CRM shows stale status, recovery, owner, and outcome",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want old leasing leads to create",
+      "titleAccent": "more recovery and less pipeline fiction?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make leasing follow-up and front-desk operations easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map",
+  "slideUrls": [
+    "https://files.catbox.moe/ehy2r5.png",
+    "https://files.catbox.moe/bol8x4.png",
+    "https://files.catbox.moe/d3cnva.png",
+    "https://files.catbox.moe/q60yju.png",
+    "https://files.catbox.moe/lzsizm.png",
+    "https://files.catbox.moe/td5ehd.png",
+    "https://files.catbox.moe/wepve9.png",
+    "https://files.catbox.moe/lkpbua.png"
+  ],
+  "renderedAt": "2026-06-25T20:03:00.264Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-25-midday-stale-lead-reactivation-map/contact-sheet.png"
+}

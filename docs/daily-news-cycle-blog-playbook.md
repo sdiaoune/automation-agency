@@ -38,6 +38,11 @@ Avoid positioning EMC2Ops as a general AI news site, a consumer AI reviewer, or 
    - Use the existing Astro blog frontmatter schema.
    - Keep the title timely, but make the article evergreen enough to remain useful after the news cycle fades.
    - Include a direct answer, operational stakes, practical workflow guidance, metrics, FAQs, related posts, and sources.
+   - Set `bodySections: true` and write a substantial article body, not a short workflow stub.
+   - Add a `socialHook` frontmatter field with a sharp, shareable one-sentence hook for X and LinkedIn.
+   - Generate a custom social card with `npm run blog:card -- --slug <slug>` and confirm the generated `socialImage` frontmatter points to `/blog/social-assets/<slug>.png`.
+   - Target 1,000-1,400 body words before frontmatter; do not publish articles under 900 body words unless the user explicitly asks for a short note.
+   - Add at least 6 contextual internal links to existing EMC2Ops blog posts inside the article body, plus the `related` frontmatter list.
 
 4. Keep the message anchored.
    - Say clearly when the news item is only a signal, not a direct property management tool.
@@ -45,10 +50,11 @@ Avoid positioning EMC2Ops as a general AI news site, a consumer AI reviewer, or 
    - End with an EMC2Ops workflow audit CTA.
 
 5. Validate and publish.
+   - Confirm the post has `socialHook` and a custom `socialImage` before build.
    - Run `npm run blog:validate`.
    - Run `npm run build`.
    - Deploy with `npx vercel --prod --yes` only when the working tree state is intended for production.
-   - Verify the public article URL and Twitter card.
+   - Verify the public article URL and Twitter card, including that `twitter:image` points to the custom generated card rather than the default `/og-image.png`.
    - Promote the article through the existing social publishing script when appropriate.
 
 ## Angle Filters
@@ -116,9 +122,76 @@ Use this structure unless the story calls for a better one:
 5. The workflow property managers should fix first.
 6. What to automate.
 7. What not to automate.
-8. Metrics to track.
-9. Practical takeaway.
-10. EMC2Ops workflow audit CTA.
+8. Related EMC2Ops workflows to review next, with contextual internal links.
+9. Metrics to track.
+10. Practical takeaway.
+11. EMC2Ops workflow audit CTA.
+
+## Social Hook and Card Requirements
+
+Daily news-cycle articles should be written with distribution in mind, not as generic SEO posts.
+
+Before publishing, define a `socialHook` that can stand alone as the first line on X and LinkedIn. Strong hooks should:
+
+- Make a clear, scroll-stopping claim tied to the news hook.
+- Translate the headline into an operating consequence for property managers.
+- Be concrete enough to make the reader curious, such as "OpenAI just made 'we'll call you tomorrow' feel obsolete."
+- Avoid vague setup lines like "New guide," "In today's article," or "Property managers should pay attention."
+- Avoid unsupported fear, fake metrics, and overclaiming third-party relationships.
+
+After the post is drafted, run:
+
+```bash
+npm run blog:card -- --slug <slug>
+```
+
+The renderer creates `/public/blog/social-assets/<slug>.png` and inserts `socialImage: "/blog/social-assets/<slug>.png"` into the post frontmatter when missing. The article should not publish with the generic `/og-image.png` fallback unless the card renderer fails and that blocker is reported.
+
+When promoting the post, the social publisher uses `socialHook` for the X/LinkedIn opening. If the hook is weak, rewrite it before posting.
+
+## SEO Internal Linking Requirements
+
+Every daily article should help readers move deeper into the EMC2Ops property-management automation cluster.
+
+## SEO Cluster Ownership Rules
+
+Some short, commercial search intents are reserved for use-case, service, or integration pages. Daily blog posts can support these topics, but they should not compete as the primary page for the exact term.
+
+Reserved money-page targets:
+
+| Reserved keyword family | Primary page |
+| --- | --- |
+| apartment lead tracking, multifamily lead tracking | `/use-cases/apartment-lead-tracking/` |
+| lead-to-lease automation, lead to lease | `/use-cases/lead-to-lease-automation/` |
+| property management automation, how to automate property management | `/use-cases/how-to-automate-property-management/` |
+| Buildium integration, Buildium integrations | `/integrations/buildium/` |
+
+When a daily article touches one of these topics:
+
+- Use a long-tail support angle for the blog keyword, not the reserved money-page keyword.
+- Link contextually to the matching primary page in the body.
+- Add `relatedUseCases` or `relatedServices` frontmatter when the destination is a use-case or service page.
+- Keep the blog post practical and specific: examples, workflows, pitfalls, comparison points, or implementation detail that the primary page can summarize.
+- Do not publish a new article whose main job is to replace one of the reserved pages unless the task is explicitly to update that page instead.
+
+Before writing, run or inspect `npm run blog:list` and choose relevant existing posts. In the article body, include:
+
+- 2-3 links to broad pillar or comparison guides, such as property management automation tasks, AI automation vs chatbots, AI front desk, or AI leasing assistant.
+- 2-4 links to adjacent workflow guides, such as missed-call text-back, leasing follow-up, maintenance intake, CRM workflow automation, owner updates, vendor dispatch, tour scheduling, no-show recovery, or administrative workload reduction.
+- Natural anchor text that describes the destination topic; avoid generic anchors like "click here," "this post," or "learn more."
+- A short "Related workflows to review next" or equivalent section when it fits the article flow.
+
+Do not stuff links into unrelated paragraphs. The link should answer the reader's next operational question.
+
+## Body Depth Requirements
+
+The article body should keep readers on the page by giving them enough substance to act:
+
+- Open with the timely news hook, then quickly translate it into a property-management workflow issue.
+- Explain the operational cost with concrete examples from leasing, maintenance, owner communication, vendor handoffs, or CRM/PMS logging.
+- Include a practical workflow model with trigger, required fields, routing, exception handling, system update, and reporting.
+- Add "what to automate" and "what not to automate" sections so the advice does not sound like generic AI hype.
+- End with a concrete rollout path and the workflow audit CTA.
 
 ## Default CTA
 

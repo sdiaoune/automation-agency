@@ -1,0 +1,95 @@
+{
+  "captions": {
+    "facebook": "Why do security deposit returns still turn into admin cleanup?\n\nBecause move-out accounting should run on a timed workflow, not a spreadsheet chase. Property management automation should collect inspection proof, route charge decisions, assemble the notice, and update the record before deadlines slip.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MoveOutAutomation #AIFrontDesk #CRMWorkflows",
+    "instagram": "Why do security deposit returns still create admin drag for property managers?\n\nBecause many teams treat move-out accounting like a one-off paperwork scramble instead of a timed workflow. Practical property management automation should trigger the deposit path when the unit closes, collect inspection evidence, route charge decisions, assemble the resident notice, and write the outcome back before deadlines turn into fire drills.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Move-out coordination, maintenance closeout, owner visibility, resident communication, and property management CRM workflows should act like one controlled system so staff are not rebuilding the same deposit story across inboxes, spreadsheets, and notes.\n\nIf your team still loses time to missing photos, unclear charge ownership, delayed approvals, notice deadlines, or manual ledger cleanup, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MoveOutAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement"
+  },
+  "channels": [
+    "instagram"
+  ],
+  "date": "2026-06-21",
+  "facebook": null,
+  "hook": "If every move-out still becomes a spreadsheet chase before the deposit notice goes out, the workflow is too loose.",
+  "instagram": {
+    "channel": "instagram",
+    "childCreationIds": [
+      "18089061038263933",
+      "18089061059263933",
+      "18089061074263933",
+      "18089061089263933",
+      "18089061113263933",
+      "18089061125263933",
+      "18089061149263933",
+      "18089061167263933"
+    ],
+    "creationId": "18089061182263933",
+    "id": "18136668775566469",
+    "permalink": "https://www.instagram.com/p/DZ3FX5kDyTf/"
+  },
+  "publishSelection": {
+    "facebookSelected": false,
+    "instagramSelected": true
+  },
+  "slot": "midday",
+  "slideDirectory": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map",
+  "slideUrls": [
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-1.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-2.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-3.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-4.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-5.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-6.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-7.png",
+    "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-8.png"
+  ],
+  "topic": "Security deposit return workflow map for property managers",
+  "verifiedSlides": [
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-1.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-2.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-3.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-4.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-5.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-6.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-7.png"
+    },
+    {
+      "contentType": "image/png",
+      "ok": true,
+      "status": 200,
+      "url": "https://www.emc2ops.com/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-8.png"
+    }
+  ]
+}

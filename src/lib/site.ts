@@ -188,7 +188,7 @@ export function homeSchema() {
             acceptedAnswer: {
               "@type": "Answer",
               text:
-                "The starter missed-call and follow-up workflow is designed to launch in about 7 days after access, copy, CRM details, and call or SMS requirements are confirmed.",
+                "The starter missed-call and follow-up workflow is scoped after access, copy, CRM details, and call or SMS requirements are confirmed.",
             },
           },
           {

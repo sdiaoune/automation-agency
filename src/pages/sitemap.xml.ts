@@ -9,6 +9,7 @@ export async function GET() {
   const urls = [
     { url: "/", lastmod: siteUpdatedAt },
     { url: "/about/", lastmod: siteUpdatedAt },
+    { url: "/book-demo/", lastmod: siteUpdatedAt },
     { url: "/services/", lastmod: siteUpdatedAt },
     ...servicePages.map((service) => ({ url: serviceUrl(service), lastmod: siteUpdatedAt })),
     { url: "/use-cases/", lastmod: siteUpdatedAt },

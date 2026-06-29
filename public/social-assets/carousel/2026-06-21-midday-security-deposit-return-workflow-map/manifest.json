@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-21",
+  "slot": "midday",
+  "slug": "security-deposit-return-workflow-map",
+  "topic": "Security deposit return workflow map for property managers",
+  "hook": "If every move-out still becomes a spreadsheet chase before the deposit notice goes out, the workflow is too loose.",
+  "captionInstagram": "Why do security deposit returns still create admin drag for property managers?\n\nBecause many teams treat move-out accounting like a one-off paperwork scramble instead of a timed workflow. Practical property management automation should trigger the deposit path when the unit closes, collect inspection evidence, route charge decisions, assemble the resident notice, and write the outcome back before deadlines turn into fire drills.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Move-out coordination, maintenance closeout, owner visibility, resident communication, and property management CRM workflows should act like one controlled system so staff are not rebuilding the same deposit story across inboxes, spreadsheets, and notes.\n\nIf your team still loses time to missing photos, unclear charge ownership, delayed approvals, notice deadlines, or manual ledger cleanup, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MoveOutAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do security deposit returns still turn into admin cleanup?\n\nBecause move-out accounting should run on a timed workflow, not a spreadsheet chase. Property management automation should collect inspection proof, route charge decisions, assemble the notice, and update the record before deadlines slip.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MoveOutAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Move-out accounting workflow",
+      "title": "If every move-out still becomes a spreadsheet chase,",
+      "titleAccent": "the deposit workflow is too loose.",
+      "body": "A deposit return should move through one controlled path for inspection, charges, review, notice timing, and write-back instead of forcing staff to rebuild the file from scattered notes and inbox threads.",
+      "footer": "Swipe for the 6 rules behind cleaner deposit returns",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Trigger point",
+      "title": "The workflow should start the moment the move-out reaches the right status.",
+      "body": "Unit surrender, keys returned, final inspection scheduled, and ledger state should trigger the deposit path automatically so the clock starts in the system instead of in someone's memory.",
+      "footer": "Goal: no deposit file waits for manual kickoff",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Evidence collection",
+      "title": "Photos, inspection notes, invoices, and forwarding details should land in one place fast.",
+      "body": "The workflow should gather required documentation before charge review starts so missing photos, vendor receipts, or resident address details do not stall the notice at the last minute.",
+      "footer": "Goal: the file is complete before decisions begin",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Charge classification",
+      "title": "Every deduction should be sorted before the final notice is assembled.",
+      "body": "Normal wear, resident damage, cleaning, missing items, concessions, and owner-paid exceptions should split into clear categories so staff are not debating line items inside the final deadline window.",
+      "footer": "Goal: charge logic is visible before approval",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Approval lane",
+      "title": "High-friction or owner-sensitive charges should route to one named reviewer.",
+      "body": "Disputed damage, large deductions, policy exceptions, incomplete evidence, and write-off decisions should hit the right approver with context so the team is not chasing sign-off across email and chat.",
+      "footer": "Goal: one reviewer owns the exception path",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Notice assembly",
+      "title": "Once the decision is made, the resident notice should build without copy-paste.",
+      "body": "Approved charges, remaining balance, support detail, mailing data, and send timing should assemble into the right disposition package so staff are not rewriting the same explanation every move-out.",
+      "footer": "Goal: approved data turns into a ready notice fast",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "System write-back",
+      "title": "The workflow is not finished until the ledger, status, and audit trail are updated.",
+      "body": "Return amount, deductions, approval outcome, notice sent date, resident destination, and exception notes should write back before the case closes so reporting and follow-up stay clean.",
+      "footer": "Goal: the record shows decision, notice, and outcome",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want move-out accounting to create",
+      "titleAccent": "fewer delays and cleaner notices?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make resident operations and front-desk coordination easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map",
+  "renderedAt": "2026-06-21T20:03:18.800Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-21-midday-security-deposit-return-workflow-map/contact-sheet.png"
+}

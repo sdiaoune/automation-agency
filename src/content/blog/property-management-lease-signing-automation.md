@@ -66,7 +66,7 @@ Most lease execution problems do not look dramatic in the moment. They show up a
 
 This is why approved renters still fall out of the funnel. The issue is usually not that the renter suddenly lost intent. The issue is that the workflow stopped carrying the file forward.
 
-That is the same operating problem behind [apartment lead tracking](/blog/apartment-lead-tracking/): if you cannot reliably measure approval-to-signed-lease, you still have a blind spot in the funnel that affects occupancy and marketing efficiency.
+That is the same operating problem behind [apartment lead tracking](/blog/apartment-lead-tracking/) and the related [apartment lead tracking workflow](/use-cases/apartment-lead-tracking/): if you cannot reliably measure approval-to-signed-lease, you still have a blind spot in the funnel that affects occupancy and marketing efficiency.
 
 ## The first workflow to build
 

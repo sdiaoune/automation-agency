@@ -45,6 +45,14 @@ const enableAnalytics = process.env.VERCEL === "1" || import.meta.env.PUBLIC_ENA
       schema={schema}
       author={author}
     />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18196518863"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-18196518863');
+    </script>
     {enableAnalytics && <Analytics />}
   </head>
   <body class={pageClass}>

@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-20",
+  "slot": "midday",
+  "slug": "resident-portal-message-triage-map",
+  "topic": "Resident portal message triage map for property managers",
+  "hook": "If resident portal messages still become a manual inbox sorting job, the workflow is not doing triage yet.",
+  "captionInstagram": "Why do resident portal messages still create front-desk drag for property managers?\n\nBecause many teams treat the portal like a better inbox instead of a routed workflow. Practical property management automation should classify the message, pull the right context, trigger the first response, assign the next owner, and write the status back before the thread starts bouncing between leasing, maintenance, and operations.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster replies. Resident communication, maintenance intake automation, AI voice, SMS, and property management CRM workflows should work like one queue so routine messages do not bury urgent or high-friction work.\n\nIf your team still loses time to unclear ownership, duplicated follow-up, emergency messages hidden in the portal, or updates that never make it back to the record, the issue is not effort. The triage workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #ResidentCommunication #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do resident portal messages still create front-desk drag?\n\nBecause the portal should route work, not just collect messages. Property management automation should classify the request, assign the next owner, and sync the status back before the thread turns into manual cleanup.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #ResidentCommunication #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Resident portal workflow",
+      "title": "If resident portal messages still become a manual sorting job,",
+      "titleAccent": "the triage workflow is weak.",
+      "body": "A resident message should create one clear path for classification, routing, response timing, and record updates instead of another inbox your team has to decode by hand.",
+      "footer": "Swipe for the 6 rules behind cleaner portal triage",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Message classification",
+      "title": "Every portal message should be tagged before a person has to read the whole thread.",
+      "body": "Maintenance, payment, lease question, move-out, access issue, complaint, and emergency risk should split early so the queue reflects the real type of work instead of one generic inbox pile.",
+      "footer": "Goal: classification happens at arrival, not after backlog builds",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Urgency detection",
+      "title": "Emergency or high-risk language should branch out of the routine queue immediately.",
+      "body": "Flooding, no heat, lockout, habitability, legal escalation, or safety signals should trigger the right response path before routine leasing or billing messages slow down the handoff.",
+      "footer": "Goal: urgent resident issues skip the general queue",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Context pull",
+      "title": "The next owner should receive the unit, resident, and open-work context with the message.",
+      "body": "Property, unit, resident history, current balance, open work orders, prior replies, and assigned staff should appear together so the first response does not start with detective work.",
+      "footer": "Goal: triage creates context before the reply",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Ownership",
+      "title": "Every message should land with one clear owner and one visible next action.",
+      "body": "Leasing, maintenance, accounting, site staff, or operations should receive the thread with the reason for ownership so portal messages do not bounce across teams with no accountable next step.",
+      "footer": "Goal: no resident thread lives in ownerless limbo",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Response lane",
+      "title": "Routine messages should trigger the right first touch without copy-paste.",
+      "body": "Receipt confirmation, maintenance intake questions, payment-policy replies, scheduling prompts, and escalation notices should use approved templates or AI-assisted summaries to move faster without going off-script.",
+      "footer": "Goal: common resident messages start moving fast",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "System write-back",
+      "title": "Portal triage is not finished until status and owner write back to the record.",
+      "body": "Category, urgency, assigned owner, next due action, resident response sent, and exception flags should sync before the next workflow fires so staff are not rebuilding the thread later.",
+      "footer": "Goal: the system shows message type, owner, and next step",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want resident messages to create",
+      "titleAccent": "fewer delays and cleaner handoffs?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make front-desk queues and resident operations easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map",
+  "renderedAt": "2026-06-20T20:03:40.422Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-20-midday-resident-portal-message-triage-map/contact-sheet.png"
+}

@@ -31,6 +31,14 @@ metrics:
   - "source to signed lease attribution"
 cta: "If apartment leads are spread across calls, texts, ILS alerts, and CRM notes, book a 15-minute workflow audit."
 bodySections: true
+relatedServices:
+  - label: "AI leasing follow-up automation"
+    href: "/services/leasing-follow-up/"
+    description: "Turn tracked renter leads into stage-aware follow-up and booked next steps."
+relatedUseCases:
+  - label: "Apartment lead tracking automation"
+    href: "/use-cases/apartment-lead-tracking/"
+    description: "Use this as the primary workflow page for source tracking, deduplication, ownership, and CRM writeback."
 faqs:
   - question: "What is apartment lead tracking?"
     answer: "Apartment lead tracking is the process of capturing every renter inquiry, recording its source and stage, assigning the next action, and measuring whether that lead becomes a tour, application, or lease."
@@ -56,6 +64,8 @@ A renter may call from Google Business Profile, submit an ILS form, reply to an 
 ## The direct answer
 
 The solution to apartment lead tracking is a single intake workflow that sits in front of the CRM. Every source should enter the same path, get matched against existing renter records, receive a clear status, trigger the right next action, and write the outcome back to the system of record.
+
+For the commercial workflow version of this topic, use the EMC2Ops [apartment lead tracking automation](/use-cases/apartment-lead-tracking/) page. This article explains the operating model in more detail so teams can see what needs to happen before follow-up, tour scheduling, and reporting can work reliably.
 
 That matters because the leasing team does not need more places to check. They need one reliable answer to four questions:
 

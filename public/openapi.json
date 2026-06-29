@@ -13,15 +13,15 @@
   "paths": {
     "/api/book-audit": {
       "post": {
-        "summary": "Submit a workflow audit request",
-        "description": "Accepts a website form submission for an EMC2Ops workflow audit request.",
+        "summary": "Book a workflow audit",
+        "description": "Accepts a website form submission for a scheduled EMC2Ops workflow audit.",
         "requestBody": {
           "required": true,
           "content": {
             "application/json": {
               "schema": {
                 "type": "object",
-                "required": ["fullName", "email", "company", "workflowProblem"],
+                "required": ["fullName", "email", "company", "workflowProblem", "scheduledStart"],
                 "properties": {
                   "fullName": { "type": "string", "maxLength": 160 },
                   "email": { "type": "string", "format": "email", "maxLength": 320 },
@@ -31,6 +31,10 @@
                   "portfolioSize": { "type": "string", "maxLength": 80 },
                   "workflowProblem": { "type": "string", "maxLength": 120 },
                   "preferredTime": { "type": "string", "maxLength": 160 },
+                  "scheduledStart": { "type": "string", "format": "date-time", "maxLength": 80 },
+                  "scheduledEnd": { "type": "string", "format": "date-time", "maxLength": 80 },
+                  "scheduledLabel": { "type": "string", "maxLength": 160 },
+                  "scheduledTimeZone": { "type": "string", "maxLength": 80 },
                   "message": { "type": "string", "maxLength": 2000 },
                   "pageUrl": { "type": "string", "maxLength": 500 },
                   "companySiteConfirm": { "type": "string", "description": "Honeypot field. Leave blank." }
@@ -49,6 +53,43 @@
             }
           },
           "400": { "$ref": "#/components/responses/BadRequest" },
+          "409": { "description": "Selected audit time is no longer available." },
+          "405": { "$ref": "#/components/responses/MethodNotAllowed" },
+          "500": { "$ref": "#/components/responses/ServerError" }
+        }
+      }
+    },
+    "/api/audit-slots": {
+      "get": {
+        "summary": "List available workflow audit slots",
+        "description": "Returns upcoming 15-minute Eastern-time workflow audit slots that are not already booked.",
+        "responses": {
+          "200": {
+            "description": "Available audit slots.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "slots": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "day": { "type": "string" },
+                          "end": { "type": "string", "format": "date-time" },
+                          "label": { "type": "string" },
+                          "start": { "type": "string", "format": "date-time" },
+                          "timeLabel": { "type": "string" },
+                          "timeZone": { "type": "string" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "405": { "$ref": "#/components/responses/MethodNotAllowed" },
           "500": { "$ref": "#/components/responses/ServerError" }
         }

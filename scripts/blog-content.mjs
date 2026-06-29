@@ -3,6 +3,17 @@ import path from "node:path";
 
 export const contentPostsPath = "src/content/blog";
 
+const reservedMoneyPageKeywords = new Map([
+  ["apartment lead tracking", "/use-cases/apartment-lead-tracking/"],
+  ["multifamily lead tracking", "/use-cases/apartment-lead-tracking/"],
+  ["lead-to-lease automation", "/use-cases/lead-to-lease-automation/"],
+  ["lead to lease", "/use-cases/lead-to-lease-automation/"],
+  ["property management automation", "/use-cases/how-to-automate-property-management/"],
+  ["how to automate property management", "/use-cases/how-to-automate-property-management/"],
+  ["buildium integration", "/integrations/buildium/"],
+  ["buildium integrations", "/integrations/buildium/"],
+]);
+
 function parseScalar(value) {
   const trimmed = value.trim();
   if (!trimmed) return "";
@@ -63,6 +74,24 @@ function parseFrontmatter(raw, filePath) {
   return data;
 }
 
+function normalizeKeyword(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[“”]/g, '"')
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function postLinksTo(post, href) {
+  const pools = [
+    post.body || "",
+    JSON.stringify(post.relatedUseCases || []),
+    JSON.stringify(post.relatedServices || []),
+  ];
+
+  return pools.some((value) => value.includes(href));
+}
+
 export function readBlogPosts({ includeBody = false } = {}) {
   if (!fs.existsSync(contentPostsPath)) {
     throw new Error(`Blog content directory not found: ${contentPostsPath}`);
@@ -88,7 +117,7 @@ export function readBlogPosts({ includeBody = false } = {}) {
     });
 }
 
-export function validateBlogPosts(posts = readBlogPosts()) {
+export function validateBlogPosts(posts = readBlogPosts({ includeBody: true })) {
   const requiredFields = [
     "slug",
     "order",
@@ -128,6 +157,13 @@ export function validateBlogPosts(posts = readBlogPosts()) {
       }
     }
 
+    const reservedTarget = reservedMoneyPageKeywords.get(normalizeKeyword(post.keyword));
+    if (reservedTarget && !postLinksTo(post, reservedTarget)) {
+      errors.push(
+        `${post.filePath}: reserved money-page keyword "${post.keyword}" must link to ${reservedTarget}.`
+      );
+    }
+
     if (post.socialImage && !fs.existsSync(path.join("public", post.socialImage))) {
       errors.push(`${post.filePath}: social image not found: ${post.socialImage}`);
     }
@@ -148,7 +184,7 @@ function postSummary(post) {
 
 function main() {
   const flags = new Set(process.argv.slice(2));
-  const posts = readBlogPosts();
+  const posts = readBlogPosts({ includeBody: !flags.has("--json") });
 
   if (flags.has("--json")) {
     console.log(JSON.stringify(posts.map(postSummary), null, 2));

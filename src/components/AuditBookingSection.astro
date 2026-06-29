@@ -2,23 +2,59 @@
   <div class="wrap">
     <div class="booking">
       <div class="booking-panel">
-        <div class="eyebrow">Free Ops Audit</div>
-        <h2>Request a 15-minute workflow audit.</h2>
-        <p class="muted">We’ll map where your leasing, tenant, maintenance, and owner communication process is leaking time or revenue, then recommend one automation to install first.</p>
+        <div class="eyebrow">15-minute workflow audit</div>
+        <h2>Leave with one workflow worth automating first.</h2>
+        <p class="muted">Pick a time. We’ll review the current bottleneck, identify the handoff that is costing time or revenue, and map the simplest first automation to install.</p>
+
+        <div class="audit-agenda" aria-label="Audit agenda">
+          <strong>What happens on the call</strong>
+          <ol>
+            <li>Map where the lead, tenant, maintenance, or owner update stalls.</li>
+            <li>Estimate the operational leak and the fastest measurable win.</li>
+            <li>Show the first workflow and the tools it needs to touch.</li>
+          </ol>
+        </div>
+
+        <div class="proof-strip" aria-label="Workflow examples">
+          <span>Missed-call text-back</span>
+          <span>Leasing follow-up</span>
+          <span>Maintenance triage</span>
+          <span>CRM cleanup</span>
+        </div>
+
         <ul>
           <li>No generic AI pitch</li>
-          <li>Workflow diagnosis first</li>
-          <li>Clear implementation plan</li>
           <li>Built around your existing tools</li>
+          <li>One practical implementation path</li>
         </ul>
       </div>
 
       <div class="calendar-box">
         <form class="audit-form" id="audit-form">
-          <strong>Start with your current workflow.</strong>
-          <p class="muted">Tell us where communication is leaking time or revenue. We’ll confirm the audit by email.</p>
+          <strong>Book your 15-minute workflow audit.</strong>
+          <p class="muted">Choose an available Eastern-time slot first. Then add the basic details needed to confirm the audit.</p>
 
-          <div class="form-grid">
+          <div class="slot-picker" id="slot-picker" aria-live="polite">
+            <div class="slot-picker-head">
+              <span>Available times</span>
+              <small>Eastern time</small>
+            </div>
+            <div class="slot-grid" id="slot-grid">
+              <p class="slot-loading">Loading available audit times...</p>
+            </div>
+          </div>
+
+          <input name="scheduledStart" id="scheduled-start" type="hidden" required />
+          <input name="scheduledEnd" id="scheduled-end" type="hidden" />
+          <input name="scheduledLabel" id="scheduled-label" type="hidden" />
+          <input name="scheduledTimeZone" id="scheduled-time-zone" type="hidden" value="America/New_York" />
+
+          <div class="selected-slot-summary" id="selected-slot-summary" hidden>
+            <span>Selected time</span>
+            <strong id="selected-slot-label"></strong>
+          </div>
+
+          <div class="form-grid" id="booking-details">
             <label>
               Name
               <input name="fullName" autocomplete="name" required />
@@ -28,29 +64,11 @@
               <input name="email" type="email" autocomplete="email" required />
             </label>
             <label>
-              Phone
-              <input name="phone" type="tel" autocomplete="tel" />
-            </label>
-            <label>
               Company
               <input name="company" autocomplete="organization" required />
             </label>
             <label>
-              Company website
-              <input name="companyWebsite" type="url" inputmode="url" placeholder="https://example.com" />
-            </label>
-            <label>
-              Portfolio size
-              <select name="portfolioSize">
-                <option value="">Select one</option>
-                <option>1-50 units</option>
-                <option>51-250 units</option>
-                <option>251-1,000 units</option>
-                <option>1,000+ units</option>
-              </select>
-            </label>
-            <label>
-              First workflow to fix
+              Biggest workflow problem
               <select name="workflowProblem" required>
                 <option value="">Select one</option>
                 <option>Missed leasing calls</option>
@@ -60,15 +78,35 @@
                 <option>Owner or vendor updates</option>
               </select>
             </label>
-            <label>
-              Preferred day/time
-              <input name="preferredTime" placeholder="Tuesday morning, Friday at 2pm..." />
-            </label>
-            <label class="full-field">
-              What should we look at first?
-              <textarea name="message" placeholder="Example: after-hours calls are missed, leads are not followed up, maintenance requests need better routing..."></textarea>
-            </label>
           </div>
+
+          <details class="prep-fields">
+            <summary>Optional prep details</summary>
+            <div class="form-grid">
+              <label>
+                Phone
+                <input name="phone" type="tel" autocomplete="tel" />
+              </label>
+              <label>
+                Company website
+                <input name="companyWebsite" type="url" inputmode="url" placeholder="https://example.com" />
+              </label>
+              <label>
+                Portfolio size
+                <select name="portfolioSize">
+                  <option value="">Select one</option>
+                  <option>1-50 units</option>
+                  <option>51-250 units</option>
+                  <option>251-1,000 units</option>
+                  <option>1,000+ units</option>
+                </select>
+              </label>
+              <label class="full-field">
+                What should we look at first?
+                <textarea name="message" placeholder="Example: after-hours calls are missed, leads are not followed up, maintenance requests need better routing..."></textarea>
+              </label>
+            </div>
+          </details>
 
           <label class="hidden-field">
             Leave this blank
@@ -76,8 +114,8 @@
           </label>
 
           <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Request Free Audit</button>
-            <p class="form-note">You’ll get a direct follow-up from EMC2Ops.</p>
+            <button class="btn btn-primary" type="submit">Book My Audit</button>
+            <p class="form-note">You’ll get a direct confirmation from EMC2Ops.</p>
           </div>
           <p class="form-status" id="audit-form-status" role="status" aria-live="polite"></p>
         </form>
@@ -89,6 +127,149 @@
 <script is:inline>
   const auditForm = document.querySelector("#audit-form");
   const auditFormStatus = document.querySelector("#audit-form-status");
+  const slotGrid = document.querySelector("#slot-grid");
+  const scheduledStart = document.querySelector("#scheduled-start");
+  const scheduledEnd = document.querySelector("#scheduled-end");
+  const scheduledLabel = document.querySelector("#scheduled-label");
+  const scheduledTimeZone = document.querySelector("#scheduled-time-zone");
+  const selectedSlotSummary = document.querySelector("#selected-slot-summary");
+  const selectedSlotLabel = document.querySelector("#selected-slot-label");
+  const bookingDetails = document.querySelector("#booking-details");
+  let formStarted = false;
+
+  function bookingEvent(name, params = {}) {
+    const googleTag = window.gtag || (typeof gtag === "function" ? gtag : null);
+
+    if (typeof googleTag === "function") {
+      googleTag("event", name, params);
+    }
+
+    if (typeof window.va === "function") {
+      window.va("event", { name, data: params });
+    }
+  }
+
+  function gtag_report_conversion(url) {
+    const callback = function () {
+      if (typeof url !== "undefined") {
+        window.location = url;
+      }
+    };
+
+    const googleTag = window.gtag || (typeof gtag === "function" ? gtag : null);
+
+    if (typeof googleTag === "function") {
+      googleTag("event", "conversion", {
+        send_to: "AW-18196518863/zkVCCLy6ncQcEM-v4-RD",
+        event_callback: callback
+      });
+    } else {
+      callback();
+    }
+
+    return false;
+  }
+
+  window.gtag_report_conversion = gtag_report_conversion;
+  bookingEvent("booking_page_view", { page_path: window.location.pathname });
+
+  function groupSlots(slots) {
+    return slots.reduce((groups, slot) => {
+      const existing = groups.find((group) => group.day === slot.day);
+      if (existing) {
+        existing.slots.push(slot);
+      } else {
+        groups.push({ day: slot.day, slots: [slot] });
+      }
+      return groups;
+    }, []);
+  }
+
+  function selectSlot(button, slot) {
+    slotGrid?.querySelectorAll(".slot-button").forEach((slotButton) => {
+      slotButton.classList.remove("selected");
+      slotButton.setAttribute("aria-pressed", "false");
+    });
+
+    button.classList.add("selected");
+    button.setAttribute("aria-pressed", "true");
+    scheduledStart.value = slot.start;
+    scheduledEnd.value = slot.end;
+    scheduledLabel.value = slot.label;
+    scheduledTimeZone.value = slot.timeZone || "America/New_York";
+    selectedSlotSummary.hidden = false;
+    selectedSlotLabel.textContent = slot.label;
+    auditForm.classList.add("slot-selected");
+    auditFormStatus.textContent = `Selected ${slot.label}. Add your details to confirm.`;
+    auditFormStatus.className = "form-status";
+    bookingEvent("calendar_slot_selected", { slot_start: slot.start, slot_label: slot.label });
+
+    window.requestAnimationFrame(() => {
+      bookingDetails?.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.setTimeout(() => {
+        auditForm.querySelector("[name='fullName']")?.focus({ preventScroll: true });
+      }, 320);
+    });
+  }
+
+  function renderSlots(slots) {
+    if (!slotGrid) return;
+
+    if (!slots.length) {
+      slotGrid.innerHTML = '<p class="slot-loading">No open audit slots are available right now. Email hello@emc2ops.com and we will send options manually.</p>';
+      return;
+    }
+
+    slotGrid.innerHTML = "";
+    for (const group of groupSlots(slots).slice(0, 7)) {
+      const groupElement = document.createElement("div");
+      groupElement.className = "slot-day";
+
+      const title = document.createElement("strong");
+      title.textContent = group.day;
+      groupElement.append(title);
+
+      const list = document.createElement("div");
+      list.className = "slot-list";
+
+      for (const slot of group.slots.slice(0, 6)) {
+        const button = document.createElement("button");
+        button.className = "slot-button";
+        button.type = "button";
+        button.setAttribute("aria-pressed", "false");
+        button.textContent = slot.timeLabel || slot.label;
+        button.addEventListener("click", () => selectSlot(button, slot));
+        list.append(button);
+      }
+
+      groupElement.append(list);
+      slotGrid.append(groupElement);
+    }
+  }
+
+  async function loadSlots() {
+    if (!slotGrid) return;
+
+    try {
+      const response = await fetch("/api/audit-slots/");
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(result.error || "Could not load available audit times.");
+      }
+
+      renderSlots(result.slots || []);
+    } catch (error) {
+      slotGrid.innerHTML = '<p class="slot-loading">Available times could not load. Email hello@emc2ops.com and we will send options manually.</p>';
+      bookingEvent("form_error", { step: "slot_load", message: error.message || "Slot load failed" });
+    }
+  }
+
+  auditForm?.addEventListener("input", () => {
+    if (formStarted) return;
+    formStarted = true;
+    bookingEvent("form_start", { form: "workflow_audit" });
+  });
 
   auditForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -97,7 +278,14 @@
     const payload = Object.fromEntries(formData.entries());
     payload.pageUrl = window.location.href;
 
-    auditFormStatus.textContent = "Sending your audit request...";
+    if (!payload.scheduledStart) {
+      auditFormStatus.textContent = "Pick an available audit time first.";
+      auditFormStatus.className = "form-status error";
+      bookingEvent("form_error", { step: "slot_required" });
+      return;
+    }
+
+    auditFormStatus.textContent = "Booking your audit...";
     auditFormStatus.className = "form-status";
     submitButton.disabled = true;
 
@@ -114,13 +302,27 @@
       }
 
       auditForm.reset();
-      auditFormStatus.textContent = "Audit request received. We’ll follow up shortly.";
+      slotGrid?.querySelectorAll(".slot-button").forEach((slotButton) => {
+        slotButton.classList.remove("selected");
+        slotButton.setAttribute("aria-pressed", "false");
+      });
+      selectedSlotSummary.hidden = true;
+      selectedSlotLabel.textContent = "";
+      auditForm.classList.remove("slot-selected");
+      auditFormStatus.textContent = "Audit booked. We’ll send a direct confirmation shortly.";
       auditFormStatus.className = "form-status success";
+      bookingEvent("booking_confirmed", { booking_id: result.id, slot_start: payload.scheduledStart });
+      loadSlots();
+
+      window.gtag_report_conversion();
     } catch (error) {
       auditFormStatus.textContent = error.message || "Something went wrong. Please try again in a moment.";
       auditFormStatus.className = "form-status error";
+      bookingEvent("form_error", { step: "submit", message: error.message || "Submit failed" });
     } finally {
       submitButton.disabled = false;
     }
   });
+
+  loadSlots();
 </script>

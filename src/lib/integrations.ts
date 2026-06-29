@@ -44,19 +44,27 @@ export const integrationPages: IntegrationPage[] = [
     slug: "buildium",
     name: "Buildium",
     logo: "/assets/integrations/buildium.png",
-    title: "Buildium automation for property managers",
-    seoTitle: "Buildium Automation for Property Managers",
+    title: "Buildium integration automation for property managers",
+    seoTitle: "Buildium Integration Automation",
     description:
-      "Automate Buildium-adjacent leasing, maintenance, resident communication, owner updates, and workflow handoffs.",
+      "Build Buildium integration workflows for leasing follow-up, maintenance intake, owner updates, CRM tasks, and supported Buildium API or middleware handoffs.",
     summary:
-      "EMC2Ops designs AI intake and workflow automation around Buildium processes so property teams spend less time chasing details.",
+      "EMC2Ops scopes practical Buildium integrations around your account permissions, Buildium API or Buildium Open API availability, data flow, and operating handoffs so teams spend less time chasing details between systems.",
     workflows: [
-      "Leasing inquiry capture and follow-up routing.",
-      "Maintenance request detail collection before team review.",
-      "Owner update drafts and approval paths.",
-      "CRM, task, and notification handoffs through supported integration paths.",
+      "Leasing inquiry capture, source tracking, and follow-up routing before prospects go stale.",
+      "Maintenance request detail collection with urgency, access, photo, and owner-approval context before team review.",
+      "Owner update drafts, approval paths, and logging rules for sensitive status changes.",
+      "Task, note, CRM, notification, and exception handoffs through supported Buildium API access, Buildium Open API access, webhooks, middleware, or inbox-based workflows.",
     ],
     faqs: [
+      {
+        question: "Can EMC2Ops connect workflows to Buildium?",
+        answer: "Yes, when the workflow can be supported by your Buildium setup, permissions, available APIs, webhooks, middleware, or approved handoff path.",
+      },
+      {
+        question: "Does this require the Buildium Open API?",
+        answer: "Not always. Some workflows use API access, while others use middleware, email parsing, forms, task handoffs, or human approval queues depending on the data that needs to move.",
+      },
       {
         question: "Can Buildium workflows include human approval?",
         answer: "Yes. Approval steps are recommended for owner-facing updates, repair approvals, policy-sensitive issues, and unusual resident conversations.",

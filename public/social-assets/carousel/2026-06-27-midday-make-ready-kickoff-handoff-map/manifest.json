@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-27",
+  "slot": "midday",
+  "slug": "make-ready-kickoff-handoff-map",
+  "topic": "Make-ready kickoff handoff map for property managers",
+  "hook": "If make-ready work still starts from hallway follow-up, scattered notes, and missing context, the turnover workflow is leaking before vendors even begin.",
+  "captionInstagram": "Why does make-ready kickoff still create so much delay for property managers?\n\nBecause many teams treat the turnover handoff like a loose reminder instead of a controlled workflow. Property management automation should confirm the vacate event, package unit status, route the right scope, assign the first owner, trigger vendor or tech coordination, and write the current state back before the turn starts drifting.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. AI voice, SMS, resident communication, maintenance coordination, vendor routing, and property management CRM workflows should work as one system so make-ready starts with a clean brief instead of a scavenger hunt.\n\nIf your team still loses time to unclear vacate timing, missing inspection notes, duplicate vendor outreach, no visible owner, or turn work that starts late because context lived in inbox threads, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #MakeReadyWorkflow #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why does make-ready kickoff still create turnover drag?\n\nBecause the handoff usually lives in notes and reminders instead of one controlled workflow. Property management automation should confirm the vacate event, route the unit scope, assign the owner, and sync the current status before vendors and techs start working from partial context.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #AIFrontDesk #MakeReadyWorkflow #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Turnover operations workflow",
+      "title": "If make-ready kickoff still starts from scattered notes and hallway follow-up,",
+      "titleAccent": "the turnover handoff is too loose.",
+      "body": "Vacate confirmation, unit condition, inspection findings, scope, ownership, and vendor coordination should move through one controlled path instead of becoming a chain of reminders spread across leasing, maintenance, and operations.",
+      "footer": "Swipe for the 6 rules behind cleaner make-ready kickoff",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Vacate trigger",
+      "title": "The workflow should start from a confirmed vacate event, not when someone notices the unit is empty.",
+      "body": "Move-out complete, keys returned, possession status, inspection readiness, and access details should create one dated turnover trigger so make-ready work does not begin from assumptions.",
+      "footer": "Goal: a confirmed vacate event opens the turn automatically",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Condition package",
+      "title": "The first handoff should include the actual unit story before anyone starts assigning work.",
+      "body": "Photos, inspection notes, resident exceptions, damages, cleaning status, appliance issues, and access constraints should land together so the next owner is not rebuilding context across systems.",
+      "footer": "Goal: the kickoff arrives with usable unit context attached",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Scope split",
+      "title": "Cleaning, maintenance, paint, flooring, and compliance items should branch before the turn becomes one giant task.",
+      "body": "Base scope, optional upgrades, owner approvals, safety issues, and vendor-specific work should split into clear lanes so teams are not hiding five different jobs inside one generic make-ready request.",
+      "footer": "Goal: the scope separates into actionable work lanes early",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Owner assignment",
+      "title": "One person should own kickoff status even when multiple teams touch the turn.",
+      "body": "Operations, maintenance, onsite staff, and vendors can all contribute, but one named owner should hold the current state, next blocker, and due date so nobody is guessing who moves the turn forward.",
+      "footer": "Goal: one visible owner carries kickoff to active execution",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Exception routing",
+      "title": "Unreturned keys, holdovers, severe damage, and owner-sensitive work should branch fast instead of stalling the whole turn.",
+      "body": "Access problems, disputed charges, utility issues, insurance claims, and scope changes should trigger exception paths with clear ownership before standard make-ready work starts against bad assumptions.",
+      "footer": "Goal: exceptions route fast without freezing the base workflow",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "System write-back",
+      "title": "The workflow is not finished until leasing, ops, and maintenance can all see the same turn status.",
+      "body": "Kickoff date, current scope, assigned owner, vendor state, blockers, and ready-for-marketing timing should sync back before downstream teams start asking for updates in separate channels.",
+      "footer": "Goal: the system shows status, owner, blockers, and next date",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want make-ready kickoff to create",
+      "titleAccent": "faster turns and less coordination drag?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make front-desk and property operations easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map",
+  "renderedAt": "2026-06-27T20:02:26.386Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-27-midday-make-ready-kickoff-handoff-map/contact-sheet.png"
+}

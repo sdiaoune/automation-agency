@@ -28,6 +28,17 @@ metrics:
   - "lead source attribution accuracy"
 cta: "If leasing still depends on agents rebuilding guest cards by hand, book a 15-minute workflow audit."
 bodySections: true
+relatedServices:
+  - label: "CRM workflow automation"
+    href: "/services/crm-workflow-automation/"
+    description: "Sync guest card outcomes, notes, tasks, and lead status without manual copy-paste."
+  - label: "AI leasing follow-up automation"
+    href: "/services/leasing-follow-up/"
+    description: "Trigger the right next step after a guest card is created, updated, or matched."
+relatedUseCases:
+  - label: "Apartment lead tracking automation"
+    href: "/use-cases/apartment-lead-tracking/"
+    description: "Use this as the primary workflow page for renter source tracking, deduplication, ownership, and CRM writeback."
 faqs:
   - question: "What is guest card automation in property management?"
     answer: "It is a workflow that captures renter details from inbound channels, creates or updates the guest card automatically, and triggers the next leasing action without manual re-entry."
@@ -65,6 +76,8 @@ This is why teams say they need better follow-up discipline when the real issue 
 ## What guest card automation should actually do
 
 The practical goal is simple: every real renter inquiry should create one usable record and one next action.
+
+That makes guest cards one part of the larger [apartment lead tracking automation](/use-cases/apartment-lead-tracking/) workflow. The guest card is the record; lead tracking is the operating system that keeps source, stage, owner, follow-up, and CRM writeback aligned.
 
 That means the workflow should:
 

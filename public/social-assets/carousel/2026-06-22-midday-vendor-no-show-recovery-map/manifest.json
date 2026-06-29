@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-22",
+  "slot": "midday",
+  "slug": "vendor-no-show-recovery-map",
+  "topic": "Vendor no-show recovery map for property managers",
+  "hook": "If a missed vendor visit still turns into resident frustration and manual rescheduling, the maintenance workflow is too loose.",
+  "captionInstagram": "Why do vendor no-shows still create resident frustration for property managers?\n\nBecause many teams treat a missed vendor visit like a one-off scheduling issue instead of a recovery workflow. Practical property management automation should detect the missed appointment fast, confirm what happened, route the next owner, update the resident, and protect the work order record before the case turns into more calls, more delays, and more blame.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. Work order coordination, vendor scheduling, resident communication, AI voice, SMS, and property management CRM workflows should act like one controlled system so a missed visit creates a clear next action instead of another loose callback chain.\n\nIf your team still loses time to missing ETA updates, ownerless reschedules, duplicate outreach, stale work order notes, or residents asking for status your system should already know, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do vendor no-shows still create maintenance cleanup?\n\nBecause a missed visit should trigger a recovery workflow, not another manual reschedule thread. Property management automation should confirm the miss, route the next owner, update the resident, and sync the work order before the delay spreads.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Maintenance recovery workflow",
+      "title": "If a missed vendor visit still becomes a resident fire drill,",
+      "titleAccent": "the recovery workflow is too loose.",
+      "body": "A vendor no-show should create one controlled path for detection, follow-up, reassignment, resident updates, and work order cleanup instead of forcing site teams to rebuild the status by phone and text.",
+      "footer": "Swipe for the 6 rules behind cleaner vendor recovery",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Miss detection",
+      "title": "The workflow should flag a likely no-show as soon as the service window breaks.",
+      "body": "Scheduled arrival range, check-in signal, technician ETA, and resident access confirmation should determine when the job moves into recovery so staff do not discover the miss hours later from an angry resident.",
+      "footer": "Goal: no missed visit waits for manual discovery",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Fast verification",
+      "title": "Every vendor miss should trigger one fast check to confirm what actually happened.",
+      "body": "Vendor response, dispatch note, GPS arrival proof, gate issue, resident access problem, and wrong-unit errors should be captured quickly so the next step reflects reality instead of guesswork.",
+      "footer": "Goal: the reason is known before rescheduling starts",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Reason routing",
+      "title": "The recovery path should split by cause, not reuse one generic callback script.",
+      "body": "Scheduling error, parts delay, technician overrun, access failure, vendor capacity issue, and bad contact info should branch into different actions so the queue does not treat every missed visit like the same problem.",
+      "footer": "Goal: root cause decides the next action lane",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Owner assignment",
+      "title": "One person should own the recovery path until the next visit is locked in.",
+      "body": "Site staff, maintenance coordinator, vendor dispatcher, or operations should receive clear ownership with context so the resident is not stuck between unanswered texts, office calls, and vague internal notes.",
+      "footer": "Goal: one owner carries the case to a confirmed next step",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Resident update",
+      "title": "The resident should get a clean status update without waiting for manual copy-paste.",
+      "body": "Miss confirmed, cause known, new ETA pending, access needed, and reschedule booked messages should go out through approved templates or AI-assisted replies so communication stays fast and consistent.",
+      "footer": "Goal: residents hear the update before they have to chase it",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "System write-back",
+      "title": "Recovery is not finished until the work order record shows the miss and the next plan.",
+      "body": "No-show timestamp, reason, vendor response, new appointment target, resident contact outcome, and exception notes should sync back before the next task fires so staff are not reconstructing the story later.",
+      "footer": "Goal: the system shows miss, cause, owner, and next visit",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want missed vendor visits to create",
+      "titleAccent": "fewer callbacks and faster recovery?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make maintenance coordination and front-desk operations easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map",
+  "renderedAt": "2026-06-22T20:02:12.582Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-06-22-midday-vendor-no-show-recovery-map/contact-sheet.png"
+}

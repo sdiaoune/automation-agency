@@ -1,20 +1,41 @@
-# Blog Publishing Schedule: June 2026
+# Search Console SEO Cluster Priorities: July 2026
 
-This schedule promotes the pages that showed early analytics traction from May 24 to June 4, then sequences them from broad search intent to higher-intent operational pain.
+This replaces the early June publishing schedule. The June Search Console export showed early impressions but very low CTR, especially after June 21. The next publishing cycle should concentrate authority around the pages already earning impressions instead of adding disconnected posts.
 
-| Date | Article | Primary query | SEO/AEO/GEO angle |
+## Primary Money Pages
+
+| Priority | Page | Search intent | Role |
 | --- | --- | --- | --- |
-| 2026-06-05 | Property Management Automation: 15 Tasks to Automate in 2026 | property management automation | Pillar guide with a direct answer, task list, FAQ schema, internal links, and concise definitions for answer engines. |
-| 2026-06-06 | Missed Call Text-Back for Property Management | missed call text back property management | High-intent lead recovery page with direct definition, compliance FAQ, CRM workflow language, and service CTA. |
-| 2026-06-07 | Property Management No-Show Recovery Automation | property management no show recovery automation | Problem-solution article focused on rebooking missed tours, rescheduling logic, CRM updates, and measurable outcomes. |
-| 2026-06-08 | AI Leasing Assistant for Property Managers | AI leasing assistant | Definition-led guide built for AI summaries, comparison queries, feature expectations, compliance caveats, and workflow selection. |
-| 2026-06-09 | Property Management Move-Out Automation | property management move out automation | Operations article targeting notice intake, turn coordination, vendor tasks, owner updates, and re-leasing handoffs. |
+| P0 | `/use-cases/apartment-lead-tracking/` | apartment lead tracking, multifamily lead tracking | Primary page for source capture, deduplication, ownership, and CRM writeback. |
+| P0 | `/use-cases/lead-to-lease-automation/` | lead-to-lease automation, lead to lease | Primary page for inquiry, tour, application, approval, and move-in handoffs. |
+| P0 | `/use-cases/how-to-automate-property-management/` | property management automation, how to automate property management | Primary page for choosing the first measurable workflow. |
+| P1 | `/integrations/buildium/` | Buildium integration, Buildium automation | Primary page for Buildium-adjacent workflow scoping and supported handoffs. |
+| P1 | `/services/leasing-follow-up/` | leasing follow-up automation | Service page for stale replies, no-shows, application follow-up, and stop rules. |
+
+## Supporting Content Queue
+
+| Cluster | Supporting article angles | Link target |
+| --- | --- | --- |
+| Apartment lead tracking | lead source attribution, renter deduplication, guest card creation, call/form/ILS intake, lead owner assignment | `/use-cases/apartment-lead-tracking/` |
+| Lead-to-lease automation | tour-to-application follow-up, approval handoffs, move-in task creation, no-show recovery, application reminders | `/use-cases/lead-to-lease-automation/` |
+| Property management automation | first workflow selection, maintenance intake rollout, CRM field discipline, owner update approval gates, vendor dispatch routing | `/use-cases/how-to-automate-property-management/` |
+| Buildium workflows | Buildium task handoffs, Buildium maintenance intake, Buildium owner updates, Buildium leasing follow-up, supported API or middleware paths | `/integrations/buildium/` |
+| Leasing follow-up service | stale lead reactivation, post-tour follow-up, SMS/email cadence, suppression rules, no-show recovery | `/services/leasing-follow-up/` |
+
+## Publishing Rules
+
+- Do not use reserved money-page keywords as new blog `keyword` values unless the blog post also links to the matching primary page and clearly acts as a support article.
+- Prefer long-tail keywords that describe the specific workflow problem.
+- Add at least one body link to the target money page in the first half of the article.
+- Add `relatedUseCases` or `relatedServices` frontmatter for the target page when available.
+- Keep each post focused on one operational handoff: trigger, required fields, routing rule, exception path, system update, and metric.
+- Run `npm run blog:validate` before build so reserved keyword conflicts are caught.
 
 ## Optimization Checklist
 
-- Keep each title tag under 65 characters with the target query near the front.
-- Keep meta descriptions under 160 characters and state the concrete workflow outcome.
-- Lead each article with a direct answer suitable for featured snippets and AI-generated answers.
-- Use FAQ schema to answer exact buyer questions in plain language.
-- Cross-link from the pillar article into the operational subtopics and back into relevant service pages.
-- Mention measurable outcomes, CRM/system-of-record updates, escalation rules, and human review to improve credibility in generative answers.
+- Title tags should put the long-tail topic near the front and stay under 65 characters when practical.
+- Meta descriptions should state the workflow outcome, not just the topic.
+- The first section should answer the exact operational question in plain language.
+- FAQ answers should use concise, buyer-language explanations.
+- Each support article should reinforce one primary page and 2-4 adjacent blog posts.
+- Mention measurable outcomes, CRM or system-of-record updates, escalation rules, and human review.

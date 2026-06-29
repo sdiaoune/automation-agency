@@ -124,7 +124,7 @@ const detailBySlug = {
         <h1>{useCase.h1}</h1>
         <p class="dek">{useCase.summary}</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="/book-demo/">Request a workflow audit</a>
+          <a class="btn btn-primary" href="/book-demo/">Book a 15-minute audit</a>
           <a class="btn btn-secondary" href="#workflow">See workflow</a>
         </div>
       </div>
@@ -132,9 +132,9 @@ const detailBySlug = {
 
     <section class="wrap split-section">
       <div>
-        <h2>Search intent this page answers</h2>
+        <h2>Problems this workflow solves</h2>
         <p>{useCase.intent}</p>
-        <h2>Cluster keywords</h2>
+        <h2>Related ways teams search for this</h2>
         <div class="metric-list">
           {useCase.clusterKeywords.map((keyword) => <span>{keyword}</span>)}
         </div>
@@ -145,7 +145,7 @@ const detailBySlug = {
     </section>
 
     <section id="workflow" class="wrap detail-section">
-      <h2>Workflow model</h2>
+      <h2>Workflow to install</h2>
       <ol class="step-list">
         {useCase.workflow.map((step) => <li>{step}</li>)}
       </ol>

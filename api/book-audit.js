@@ -6,6 +6,7 @@ const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const NOTIFICATION_WEBHOOK_URL = process.env.AUDIT_NOTIFICATION_WEBHOOK_URL;
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+const { findAvailableSlot, LOOKAHEAD_DAYS } = require("../server/booking-schedule");
 
 const allowedMethods = ["POST"];
 
@@ -53,6 +54,9 @@ async function insertBooking(booking) {
 
   const data = await response.json().catch(() => null);
   if (!response.ok) {
+    if (response.status === 409) {
+      throw new Error("That audit time was just booked. Please pick another available slot.");
+    }
     const detail = data?.message || data?.hint || "Supabase insert failed.";
     throw new Error(detail);
   }
@@ -74,6 +78,32 @@ async function updateBookingNotification(id, values) {
   }).catch(() => {});
 }
 
+async function fetchBookedSlots() {
+  const now = new Date();
+  const through = new Date(now.getTime() + (LOOKAHEAD_DAYS + 1) * 24 * 60 * 60 * 1000);
+  const params = new URLSearchParams();
+  params.set("select", "scheduled_start,scheduled_end,status");
+  params.append("scheduled_start", `gte.${now.toISOString()}`);
+  params.append("scheduled_start", `lte.${through.toISOString()}`);
+  params.append("scheduled_start", "not.is.null");
+  params.set("status", "not.eq.closed");
+
+  const response = await fetch(`${SUPABASE_URL}/rest/v1/audit_bookings?${params.toString()}`, {
+    headers: {
+      apikey: SUPABASE_SERVICE_ROLE_KEY,
+      Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
+    },
+  });
+
+  const data = await response.json().catch(() => null);
+  if (!response.ok) {
+    const detail = data?.message || data?.hint || "Could not verify audit availability.";
+    throw new Error(detail);
+  }
+
+  return data;
+}
+
 function notificationText(booking) {
   return [
     "New EMC2Ops audit request",
@@ -85,7 +115,8 @@ function notificationText(booking) {
     `Website: ${booking.company_website || "Not provided"}`,
     `Portfolio size: ${booking.portfolio_size || "Not provided"}`,
     `Workflow: ${booking.workflow_problem}`,
-    `Preferred time: ${booking.preferred_time || "Not provided"}`,
+    `Scheduled time: ${booking.scheduled_label || booking.preferred_time || "Not provided"}`,
+    `Scheduled start: ${booking.scheduled_start || "Not captured"}`,
     "",
     "Message:",
     booking.message || "Not provided",
@@ -191,12 +222,16 @@ module.exports = async function handler(request, response) {
     company_website: clean(body.companyWebsite, 240),
     portfolio_size: clean(body.portfolioSize, 80),
     workflow_problem: clean(body.workflowProblem, 120),
-    preferred_time: clean(body.preferredTime, 160),
+    preferred_time: clean(body.scheduledLabel || body.preferredTime, 160),
     message: clean(body.message, 2000),
     page_url: clean(body.pageUrl, 500),
+    scheduled_end: "",
+    scheduled_label: clean(body.scheduledLabel, 160),
+    scheduled_start: clean(body.scheduledStart, 80),
+    scheduled_time_zone: clean(body.scheduledTimeZone, 80) || "America/New_York",
     user_agent: clean(request.headers["user-agent"], 500),
     source: "website",
-    status: "new",
+    status: "scheduled",
     notification_status: "pending"
   };
 
@@ -207,6 +242,24 @@ module.exports = async function handler(request, response) {
   if (!isEmail(booking.email)) {
     return sendJson(response, 400, { error: "A valid work email is required." });
   }
+
+  let selectedSlot;
+  try {
+    const bookedSlots = await fetchBookedSlots();
+    selectedSlot = findAvailableSlot(booking.scheduled_start, bookedSlots);
+  } catch (error) {
+    return sendJson(response, 500, { error: error.message || "Could not verify audit availability." });
+  }
+
+  if (!selectedSlot) {
+    return sendJson(response, 409, { error: "Select an available audit time." });
+  }
+
+  booking.scheduled_start = selectedSlot.start;
+  booking.scheduled_end = selectedSlot.end;
+  booking.scheduled_label = selectedSlot.label;
+  booking.preferred_time = selectedSlot.label;
+  booking.scheduled_time_zone = selectedSlot.timeZone;
 
   let savedBooking;
   try {

@@ -28,6 +28,14 @@ metrics:
   - "manual admin tasks removed"
 cta: "Use an EMC2Ops workflow audit to choose the first property management automation that will save time without creating operational risk."
 bodySections: true
+relatedServices:
+  - label: "Property management automation services"
+    href: "/services/"
+    description: "Compare the service paths for leasing, maintenance, CRM, owner updates, and vendor handoffs."
+relatedUseCases:
+  - label: "How to automate property management"
+    href: "/use-cases/how-to-automate-property-management/"
+    description: "Use this as the primary workflow page for choosing and launching the first measurable automation."
 faqs:
   - question: "What property management tasks should be automated first in 2026?"
     answer: "Property managers should automate missed-call response, leasing lead follow-up, maintenance intake, CRM logging, showing reminders, vendor routing, owner updates, and renewal reminders first because these tasks have repeatable triggers, clear owners, and measurable outcomes."
@@ -46,6 +54,8 @@ Property managers do not need automation everywhere. They need automation in the
 In 2026, the best property management automation is not a generic chatbot. It is a set of narrow workflows that answer quickly, ask the right questions, route the result, update the CRM, and escalate exceptions to a human.
 
 That is the operating model EMC2Ops installs for property management companies: AI voice, SMS, and CRM workflows that handle the repetitive front-desk work while keeping operators in control.
+
+For the step-by-step buyer workflow, start with [how to automate property management](/use-cases/how-to-automate-property-management/). This article stays broader by comparing the recurring tasks worth prioritizing across the operation.
 
 ## 1. Missed-call text-back
 
