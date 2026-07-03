@@ -4,38 +4,328 @@ interface Props {
 }
 
 const { variant = "blog" } = Astro.props;
+
+const landingLinks = [
+  { href: "#overview", label: "What You Get" },
+  { href: "/services/", label: "Services" },
+  { href: "/use-cases/", label: "Use Cases" },
+  { href: "/integrations/", label: "Integrations" },
+  { href: "#proof", label: "Proof" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/about/", label: "About" },
+  { href: "#faq", label: "FAQ" },
+];
+
+const siteLinks = [
+  { href: "/", label: "Home" },
+  { href: "/services/", label: "Services" },
+  { href: "/use-cases/", label: "Use Cases" },
+  { href: "/integrations/", label: "Integrations" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/about/", label: "About" },
+];
+
+const navLinks = variant === "landing" ? landingLinks : siteLinks;
+const mobileNavId = `mobile-primary-nav-${variant}`;
 ---
 
-<header>
+<header data-site-header>
   <div class="wrap nav">
     <a class="logo" href={variant === "landing" ? "#" : "/"}>
       <span class="mark">E²</span>
       <span>EMC2Ops</span>
     </a>
-    {
-      variant === "landing" ? (
-        <nav class="navlinks" aria-label="Primary">
-          <a href="#overview">What You Get</a>
-          <a href="/services/">Services</a>
-          <a href="/use-cases/">Use Cases</a>
-          <a href="/integrations/">Integrations</a>
-          <a href="#proof">Proof</a>
-          <a href="/blog/">Blog</a>
-          <a href="/about/">About</a>
-          <a href="#faq">FAQ</a>
-          <a href="/book-demo/" class="btn btn-primary">Book a 15-minute audit</a>
-        </nav>
-      ) : (
-        <nav class="navlinks" aria-label="Primary">
-          <a href="/">Home</a>
-          <a href="/services/">Services</a>
-          <a href="/use-cases/">Use Cases</a>
-          <a href="/integrations/">Integrations</a>
-          <a href="/blog/">Blog</a>
-          <a href="/about/">About</a>
-          <a class="btn btn-primary" href="/book-demo/">Book a 15-minute audit</a>
-        </nav>
-      )
-    }
+    <nav class="navlinks" aria-label="Primary">
+      {navLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+      <a href="/book-demo/" class="btn btn-primary">Book a 15-minute audit</a>
+    </nav>
+    <button
+      class="mobile-menu-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-controls={mobileNavId}
+      aria-expanded="false"
+      data-mobile-menu-toggle
+    >
+      <span class="mobile-menu-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
   </div>
+  <div class="mobile-menu-backdrop" hidden data-mobile-menu-backdrop></div>
+  <nav class="mobile-menu-panel" id={mobileNavId} aria-label="Mobile primary" hidden data-mobile-menu-panel>
+    <div class="mobile-menu-head">
+      <span>Menu</span>
+    </div>
+    <div class="mobile-menu-links">
+      {navLinks.map((link) => <a href={link.href} data-mobile-nav-link>{link.label}</a>)}
+    </div>
+    <a class="mobile-menu-cta" href="/book-demo/" data-mobile-nav-link>Book a 15-minute audit</a>
+  </nav>
 </header>
+
+<style>
+  :global(html.mobile-nav-open),
+  :global(html.mobile-nav-open body) {
+    overflow: hidden;
+  }
+
+  header {
+    z-index: 70;
+  }
+
+  .mobile-menu-toggle {
+    align-items: center;
+    background: rgba(255, 255, 255, .055);
+    border: 1px solid var(--line, rgba(255, 255, 255, .14));
+    border-radius: var(--radius, 8px);
+    color: var(--text, #f5f7fb);
+    cursor: pointer;
+    display: none;
+    height: 46px;
+    justify-content: center;
+    padding: 0;
+    touch-action: manipulation;
+    transition: background .18s ease, border-color .18s ease, box-shadow .18s ease;
+    width: 46px;
+  }
+
+  .mobile-menu-toggle:hover,
+  .mobile-menu-toggle:focus-visible {
+    background: rgba(255, 255, 255, .1);
+    border-color: rgba(247, 201, 72, .62);
+    box-shadow: 0 0 0 4px rgba(247, 201, 72, .12);
+    outline: none;
+  }
+
+  .mobile-menu-icon {
+    display: grid;
+    gap: 5px;
+    width: 20px;
+  }
+
+  .mobile-menu-icon span {
+    background: currentColor;
+    border-radius: 999px;
+    display: block;
+    height: 2px;
+    transform-origin: center;
+    transition: opacity .18s ease, transform .18s ease;
+    width: 20px;
+  }
+
+  header[data-mobile-nav-open="true"] .mobile-menu-icon span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  header[data-mobile-nav-open="true"] .mobile-menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  header[data-mobile-nav-open="true"] .mobile-menu-icon span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .mobile-menu-backdrop {
+    background: rgba(0, 0, 0, .54);
+    backdrop-filter: blur(4px);
+    inset: 76px 0 0;
+    position: fixed;
+    z-index: 71;
+  }
+
+  .mobile-menu-panel {
+    background: linear-gradient(180deg, #11140f 0%, #080906 100%);
+    background-color: #0b0c0a;
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: var(--radius, 8px);
+    box-shadow: 0 28px 80px rgba(0, 0, 0, .55);
+    color: var(--text, #f5f7fb);
+    left: max(14px, env(safe-area-inset-left));
+    max-height: calc(100dvh - 102px);
+    overflow: auto;
+    padding: 12px;
+    position: fixed;
+    right: max(14px, env(safe-area-inset-right));
+    top: 88px;
+    z-index: 72;
+  }
+
+  .mobile-menu-head {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 12px 10px;
+  }
+
+  .mobile-menu-head span {
+    color: #ffe49a;
+    font-size: .76rem;
+    font-weight: 850;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .mobile-menu-links {
+    display: grid;
+    gap: 6px;
+  }
+
+  .mobile-menu-links a,
+  .mobile-menu-cta {
+    align-items: center;
+    border-radius: var(--radius, 8px);
+    display: flex;
+    min-height: 48px;
+    padding: 12px 14px;
+    transition: background .18s ease, color .18s ease, border-color .18s ease;
+  }
+
+  .mobile-menu-links a {
+    border: 1px solid transparent;
+    color: var(--muted, #b8bcae);
+    font-weight: 780;
+  }
+
+  .mobile-menu-links a:hover,
+  .mobile-menu-links a:focus-visible {
+    background: rgba(255, 255, 255, .07);
+    border-color: rgba(255, 255, 255, .12);
+    color: var(--text, #f5f7fb);
+    outline: none;
+  }
+
+  .mobile-menu-cta {
+    background: var(--accent, #f7c948);
+    color: #15100a;
+    font-weight: 850;
+    justify-content: center;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .mobile-menu-cta:hover,
+  .mobile-menu-cta:focus-visible {
+    background: #ffe08a;
+    box-shadow: 0 18px 42px rgba(247, 201, 72, .22);
+    outline: none;
+  }
+
+  @media (max-width: 900px) {
+    .navlinks {
+      display: none;
+    }
+
+    .mobile-menu-toggle {
+      display: inline-flex;
+      flex: 0 0 auto;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .mobile-menu-panel {
+      max-height: calc(100dvh - 92px);
+      top: 82px;
+    }
+
+    .mobile-menu-backdrop {
+      inset-block-start: 72px;
+    }
+  }
+
+  @media (min-width: 901px) {
+    .mobile-menu-backdrop,
+    .mobile-menu-panel,
+    .mobile-menu-toggle {
+      display: none !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .mobile-menu-backdrop:not([hidden]) {
+      animation: mobile-menu-fade .16s ease-out both;
+    }
+
+    .mobile-menu-panel:not([hidden]) {
+      animation: mobile-menu-in .2s cubic-bezier(.2, .8, .2, 1) both;
+    }
+  }
+
+  @keyframes mobile-menu-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes mobile-menu-in {
+    from {
+      opacity: .98;
+      transform: translateY(-10px) scale(.985);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+</style>
+
+<script>
+  const syncMobileNavDocumentState = () => {
+    const hasOpenMenu = Boolean(document.querySelector('[data-site-header][data-mobile-nav-open="true"]'));
+    document.documentElement.classList.toggle("mobile-nav-open", hasOpenMenu);
+  };
+
+  document.querySelectorAll("[data-site-header]").forEach((header) => {
+    if (header instanceof HTMLElement && header.dataset.mobileMenuBound === "true") return;
+    if (header instanceof HTMLElement) header.dataset.mobileMenuBound = "true";
+
+    const toggle = header.querySelector("[data-mobile-menu-toggle]");
+    const panel = header.querySelector("[data-mobile-menu-panel]");
+    const backdrop = header.querySelector("[data-mobile-menu-backdrop]");
+    if (!(toggle instanceof HTMLButtonElement) || !(panel instanceof HTMLElement) || !(backdrop instanceof HTMLElement)) {
+      return;
+    }
+
+    const setOpen = (open) => {
+      if (open) {
+        header.setAttribute("data-mobile-nav-open", "true");
+      } else {
+        header.removeAttribute("data-mobile-nav-open");
+      }
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+      panel.hidden = !open;
+      backdrop.hidden = !open;
+      syncMobileNavDocumentState();
+
+      if (!open && panel.contains(document.activeElement)) {
+        toggle.focus({ preventScroll: true });
+      }
+    };
+
+    toggle.addEventListener("click", () => {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true");
+    });
+
+    backdrop.addEventListener("click", () => setOpen(false));
+
+    panel.querySelectorAll("[data-mobile-nav-link]").forEach((link) => {
+      link.addEventListener("click", () => setOpen(false));
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+      }
+    });
+
+    window.addEventListener(
+      "resize",
+      () => {
+        if (window.matchMedia("(min-width: 901px)").matches) setOpen(false);
+      },
+      { passive: true },
+    );
+  });
+</script>

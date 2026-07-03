@@ -17,7 +17,7 @@
     "post:blog:social": "node scripts/x-blog-post.mjs",
     "post:x:growth": "node scripts/post-x-growth.mjs",
     "test:api": "node --test tests/api/*.test.js",
-    "test:public": "playwright test tests/public-site.spec.js --browser=chromium",
+    "test:public": "playwright test tests/*.spec.js --browser=chromium",
     "test:dashboard": "node -e \"console.log('Legacy root dashboard.html route is intentionally outside the Astro public-site migration.')\"",
     "test": "npm run test:api && npm run test:public && npm run test:dashboard"
   },
