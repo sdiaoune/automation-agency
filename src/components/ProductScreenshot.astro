@@ -1,0 +1,32 @@
+---
+import type { ProductScreenshot } from "../lib/productScreenshots";
+import "../styles/product-screenshot.css";
+
+interface Props {
+  screenshot: ProductScreenshot;
+  variant?: "proof" | "hero";
+  priority?: boolean;
+}
+
+const { screenshot, variant = "proof", priority = false } = Astro.props;
+---
+
+<figure
+  class:list={["product-screenshot", `product-screenshot--${variant}`]}
+  data-product-screenshot-route={screenshot.route}
+>
+  <picture>
+    <source media="(max-width: 719px)" srcset={screenshot.mobile.webp} type="image/webp" />
+    <source media="(max-width: 719px)" srcset={screenshot.mobile.jpeg} type="image/jpeg" />
+    <source srcset={screenshot.desktop.webp} type="image/webp" />
+    <img
+      src={screenshot.desktop.jpeg}
+      alt={screenshot.alt}
+      width={screenshot.desktop.width}
+      height={screenshot.desktop.height}
+      loading={priority ? "eager" : "lazy"}
+      fetchpriority={priority ? "high" : "auto"}
+      decoding="async"
+    />
+  </picture>
+</figure>

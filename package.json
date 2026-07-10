@@ -9,6 +9,8 @@
     "preview": "astro preview --host 0.0.0.0 --port 3000",
     "generate:blog": "npm run blog:validate && npm run build",
     "seo:validate": "node scripts/seo-validate.mjs",
+    "screenshots:capture": "node scripts/capture-pm-ops-money-pages.mjs",
+    "screenshots:validate": "node scripts/validate-product-screenshots.mjs",
     "content:preflight": "node scripts/content-preflight.mjs",
     "blog:list": "node scripts/blog-content.mjs --list",
     "blog:validate": "node scripts/blog-content.mjs",
@@ -24,7 +26,8 @@
   "devDependencies": {
     "@astrojs/mdx": "^6.0.1",
     "@playwright/test": "^1.60.0",
-    "astro": "^6.4.2"
+    "astro": "^6.4.2",
+    "sharp": "^0.34.5"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1"
