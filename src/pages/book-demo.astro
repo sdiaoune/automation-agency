@@ -1,9 +1,11 @@
 ---
 import AuditBookingSection from "../components/AuditBookingSection.astro";
+import ProductScreenshot from "../components/ProductScreenshot.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
 import { absoluteUrl, defaultSocialImage } from "../lib/site";
+import { productScreenshotForPath } from "../lib/productScreenshots";
 import "../styles/landing.css";
 
 const title = "Book a 15-Minute Workflow Audit | EMC2Ops";
@@ -27,6 +29,12 @@ const description = "Book a 15-minute EMC2Ops workflow audit for property manage
         <div class="eyebrow">Book a 15-minute workflow audit</div>
         <h1>Find the first workflow your property team should automate.</h1>
         <p class="lead">Pick a time. We’ll review the intake path, CRM handoff, and follow-up gap, then recommend one measurable automation to install first.</p>
+      </div>
+    </section>
+
+    <section class="product-proof-section">
+      <div class="wrap">
+        <ProductScreenshot screenshot={productScreenshotForPath("/book-demo/")} />
       </div>
     </section>
 
