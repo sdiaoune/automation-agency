@@ -1,4 +1,4 @@
-Contact: mailto:hello@emc2ops.com
+Contact: mailto:soya@getemc2ops.com
 Preferred-Languages: en
 Canonical: https://www.emc2ops.com/.well-known/security.txt
 Canonical: https://www.emc2ops.com/security.txt

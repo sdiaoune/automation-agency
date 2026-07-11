@@ -13,7 +13,7 @@ export async function GET() {
     "",
     `Primary website: ${siteUrl}/`,
     `About: ${absoluteUrl("/about/")}`,
-    `Contact: hello@emc2ops.com`,
+    `Contact: soya@getemc2ops.com`,
     "",
     "## Positioning",
     "",

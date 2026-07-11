@@ -21,6 +21,7 @@ export async function GET() {
     { url: "/links/", lastmod: siteUpdatedAt },
     { url: "/privacy/", lastmod: siteUpdatedAt },
     { url: "/terms/", lastmod: siteUpdatedAt },
+    { url: "/sms-consent/", lastmod: siteUpdatedAt },
   ];
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">

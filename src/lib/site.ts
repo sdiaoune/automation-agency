@@ -30,7 +30,7 @@ export function organizationSchema() {
     logo: absoluteUrl("/favicon.svg"),
     image: absoluteUrl(defaultSocialImage),
     sameAs,
-    email: "hello@emc2ops.com",
+    email: "soya@getemc2ops.com",
     description:
       "EMC2Ops builds done-for-you AI front desk and workflow automation systems for property management companies.",
     areaServed: { "@type": "Country", name: "United States" },
@@ -49,14 +49,14 @@ export function organizationSchema() {
       {
         "@type": "ContactPoint",
         contactType: "sales",
-        email: "hello@emc2ops.com",
+        email: "soya@getemc2ops.com",
         areaServed: "US",
         availableLanguage: "en",
       },
       {
         "@type": "ContactPoint",
         contactType: "security",
-        email: "hello@emc2ops.com",
+        email: "soya@getemc2ops.com",
         areaServed: "US",
         availableLanguage: "en",
       },

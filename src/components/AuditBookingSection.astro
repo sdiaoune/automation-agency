@@ -216,7 +216,7 @@
     if (!slotGrid) return;
 
     if (!slots.length) {
-      slotGrid.innerHTML = '<p class="slot-loading">No open audit slots are available right now. Email hello@emc2ops.com and we will send options manually.</p>';
+      slotGrid.innerHTML = '<p class="slot-loading">No open audit slots are available right now. Email soya@getemc2ops.com and we will send options manually.</p>';
       return;
     }
 
@@ -260,7 +260,7 @@
 
       renderSlots(result.slots || []);
     } catch (error) {
-      slotGrid.innerHTML = '<p class="slot-loading">Available times could not load. Email hello@emc2ops.com and we will send options manually.</p>';
+      slotGrid.innerHTML = '<p class="slot-loading">Available times could not load. Email soya@getemc2ops.com and we will send options manually.</p>';
       bookingEvent("form_error", { step: "slot_load", message: error.message || "Slot load failed" });
     }
   }
