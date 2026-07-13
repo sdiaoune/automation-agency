@@ -3,7 +3,7 @@
   "rows": [
     {
       "tweet_number": 37,
-      "text": "Fast response is not a leasing strategy if the reply creates three more questions.",
+      "text": "Fast response fails as a leasing strategy when the reply creates three more questions.",
       "content_pillar": "Leasing response and conversion",
       "content_format": "Sharp one-line observation",
       "content_intent": "insight"
@@ -17,7 +17,7 @@
     },
     {
       "tweet_number": 39,
-      "text": "Where does work disappear in your operation: before assignment, during the handoff, or after someone assumes it was handled?",
+      "text": "Where does work disappear inside your company: before assignment, during the handoff, or after someone assumes it was handled?",
       "content_pillar": "Workflow design and handoffs",
       "content_format": "Diagnostic question",
       "content_intent": "conversation"
@@ -31,7 +31,7 @@
     },
     {
       "tweet_number": 41,
-      "text": "A clean lead record answers: who contacted us, what they want, who owns the next step, and when it is due. If one is missing, the CRM is storage—not a system.",
+      "text": "A clean lead record answers: who contacted us, what they want, who owns what happens next, and when it is due. If one is missing, the CRM is storage—not a system.",
       "content_pillar": "CRM/PMS data discipline",
       "content_format": "Workflow teardown",
       "content_intent": "insight"
@@ -73,7 +73,7 @@
     },
     {
       "tweet_number": 47,
-      "text": "Rule of thumb: if a handoff has no named owner and deadline, it is not a handoff. It is hope.",
+      "text": "Handoff standard: without a named owner and deadline, the work is running on hope.",
       "content_pillar": "Workflow design and handoffs",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
@@ -94,7 +94,7 @@
     },
     {
       "tweet_number": 50,
-      "text": "Escalation should define: trigger, destination, response window, and what context travels with it. “Send to manager” is not a process.",
+      "text": "Escalation should define: trigger, destination, response window, and what context travels with it. “Send to manager” does not qualify as a process.",
       "content_pillar": "Team capacity and human escalation",
       "content_format": "Micro-checklist",
       "content_intent": "insight"
@@ -157,7 +157,7 @@
     },
     {
       "tweet_number": 59,
-      "text": "Rule of thumb: track time between steps, not just task completion. The waiting is usually where revenue and trust leak.",
+      "text": "Measurement rule: track time between steps, not just task completion. The waiting is usually where revenue and trust leak.",
       "content_pillar": "Operational metrics and economics",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
@@ -241,7 +241,7 @@
     },
     {
       "tweet_number": 71,
-      "text": "Rule of thumb: every queue needs an aging view. If old work looks identical to new work, priorities will drift.",
+      "text": "Queue rule: show age at a glance. If old work looks identical to new work, priorities will drift.",
       "content_pillar": "Workflow design and handoffs",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
@@ -269,7 +269,7 @@
     },
     {
       "tweet_number": 75,
-      "text": "Which metric would expose more truth in your operation: queue age, handoff delay, repeat contact, or exception rate?",
+      "text": "Which metric would expose more truth across your portfolio: queue age, handoff delay, repeat contact, or exception rate?",
       "content_pillar": "Operational metrics and economics",
       "content_format": "Diagnostic question",
       "content_intent": "conversation"
@@ -290,7 +290,7 @@
     },
     {
       "tweet_number": 78,
-      "text": "A resident reports a leak at 11:47 PM. The useful automation is not a cheerful reply; it is disciplined triage. That is the layer EMC2Ops helps operators design.",
+      "text": "A resident reports a leak at 11:47 PM. The useful automation is disciplined triage, not a cheerful reply. That is the layer EMC2Ops helps operators design.",
       "content_pillar": "Maintenance and resident operations",
       "content_format": "Short scenario",
       "content_intent": "soft_promotion"
@@ -325,7 +325,7 @@
     },
     {
       "tweet_number": 83,
-      "text": "Rule of thumb: if repeat contacts rise, do not celebrate ticket volume. Ask why the first interaction failed to close the loop.",
+      "text": "Service metric: when repeat contacts rise, do not celebrate ticket volume. Ask why the first interaction failed to close the loop.",
       "content_pillar": "Operational metrics and economics",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
@@ -339,7 +339,7 @@
     },
     {
       "tweet_number": 85,
-      "text": "A booked tour is not a win if nobody owns what happens after the tour.",
+      "text": "A booked tour counts for little if nobody owns what happens after it.",
       "content_pillar": "Leasing response and conversion",
       "content_format": "Sharp one-line observation",
       "content_intent": "insight"
@@ -409,7 +409,7 @@
     },
     {
       "tweet_number": 95,
-      "text": "Rule of thumb: every prospect-facing automation needs a graceful exit to a human.",
+      "text": "Prospect automation rule: always provide a graceful exit to a human.",
       "content_pillar": "Leasing response and conversion",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
@@ -444,7 +444,7 @@
     },
     {
       "tweet_number": 100,
-      "text": "Vendor coordination is not a contact-list problem. It is a scope, access, approval, and proof problem.",
+      "text": "Vendor coordination problems rarely come from the contact list. They come from scope, access, approval, and proof.",
       "content_pillar": "Owner and vendor coordination",
       "content_format": "Contrarian take",
       "content_intent": "insight"

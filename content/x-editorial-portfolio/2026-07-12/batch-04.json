@@ -3,15 +3,15 @@
   "rows": [
     {
       "tweet_number": 235,
-      "text": "Myth: a lead is lost only when they say no. A lead is also lost when the next step is unclear, inconvenient, or unowned.",
-      "content_pillar": "Leasing response and conversion",
+      "text": "Myth: a maintenance request is lost only when nobody replies. It is also lost when priority, ownership, or the next checkpoint stays unclear.",
+      "content_pillar": "Maintenance and resident operations",
       "content_format": "Myth and reframe",
       "content_intent": "insight"
     },
     {
       "tweet_number": 236,
-      "text": "Maintenance priority is a decision, not a label. It should combine safety, active damage, service loss, resident impact, and time sensitivity.",
-      "content_pillar": "Maintenance and resident operations",
+      "text": "Leasing priority is a decision, not a label. Weigh intent, timing, fit, answered questions, and the clarity of the path forward.",
+      "content_pillar": "Leasing response and conversion",
       "content_format": "Mini-framework",
       "content_intent": "insight"
     },
@@ -143,7 +143,7 @@
     },
     {
       "tweet_number": 255,
-      "text": "What is the most dangerous stale field in your operation because people still trust it?",
+      "text": "What is the most dangerous stale field across your systems because people still trust it?",
       "content_pillar": "CRM/PMS data discipline",
       "content_format": "Diagnostic question",
       "content_intent": "conversation"

@@ -3,15 +3,15 @@
   "rows": [
     {
       "tweet_number": 169,
-      "text": "Leasing follow-up fails quietly: not when a message is unsent, but when no one notices the prospect changed direction.",
-      "content_pillar": "Leasing response and conversion",
+      "text": "A maintenance queue without current status turns every update into detective work.",
+      "content_pillar": "Maintenance and resident operations",
       "content_format": "Sharp one-line observation",
       "content_intent": "insight"
     },
     {
       "tweet_number": 170,
-      "text": "For any no-access visit, capture who attempted entry, when, what blocked access, who was notified, and the new plan.",
-      "content_pillar": "Maintenance and resident operations",
+      "text": "Lead recovery checklist: last intent, unanswered question, promised follow-up, current owner, and one relevant next action.",
+      "content_pillar": "Leasing response and conversion",
       "content_format": "Micro-checklist",
       "content_intent": "insight"
     },
@@ -185,7 +185,7 @@
     },
     {
       "tweet_number": 195,
-      "text": "Which queue in your operation has the weakest definition of “done”?",
+      "text": "Which queue across the business has the weakest definition of “done”?",
       "content_pillar": "Workflow design and handoffs",
       "content_format": "Diagnostic question",
       "content_intent": "conversation"
@@ -206,7 +206,7 @@
     },
     {
       "tweet_number": 198,
-      "text": "A bot reaches its confidence limit and keeps talking anyway. That is not automation maturity; it is an escalation failure.",
+      "text": "A bot reaches its confidence limit and keeps talking anyway. That is an escalation failure, not automation maturity.",
       "content_pillar": "Team capacity and human escalation",
       "content_format": "Short scenario",
       "content_intent": "insight"
@@ -283,7 +283,7 @@
     },
     {
       "tweet_number": 209,
-      "text": "Lead reactivation should begin with a reason to return: new availability, changed timing, unanswered question, or simpler next action. “Checking in” is not a reason.",
+      "text": "Lead reactivation should begin with a reason to return: new availability, changed timing, unanswered question, or simpler next action. “Checking in” gives them no reason.",
       "content_pillar": "Leasing response and conversion",
       "content_format": "Workflow teardown",
       "content_intent": "insight"

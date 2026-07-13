@@ -3,15 +3,15 @@
   "rows": [
     {
       "tweet_number": 103,
-      "text": "Myth: every lead needs the same speed. High-intent requests need immediate next steps; early research needs useful answers without pressure.",
-      "content_pillar": "Leasing response and conversion",
+      "text": "Myth: maintenance speed begins at dispatch. It begins when intake captures enough truth to set priority and choose the next action.",
+      "content_pillar": "Maintenance and resident operations",
       "content_format": "Myth and reframe",
       "content_intent": "insight"
     },
     {
       "tweet_number": 104,
-      "text": "Maintenance intake has two jobs: understand the condition and make the next decision possible. A long form that fails either job is just friction.",
-      "content_pillar": "Maintenance and resident operations",
+      "text": "Leasing response has two jobs: answer the current question and make the following action easy to take.",
+      "content_pillar": "Leasing response and conversion",
       "content_format": "Mini-framework",
       "content_intent": "insight"
     },
@@ -31,7 +31,7 @@
     },
     {
       "tweet_number": 107,
-      "text": "Rule of thumb: capture the next action while the conversation is still open. Later usually becomes never.",
+      "text": "Workflow habit: capture the next action while the conversation is still open. Later usually becomes never.",
       "content_pillar": "CRM/PMS data discipline",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
@@ -115,7 +115,7 @@
     },
     {
       "tweet_number": 119,
-      "text": "Rule of thumb: a leasing sequence should stop the moment the prospect takes a different path.",
+      "text": "A useful leasing sequence stops the moment the prospect takes a different path.",
       "content_pillar": "Leasing response and conversion",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
@@ -171,7 +171,7 @@
     },
     {
       "tweet_number": 127,
-      "text": "Myth: no response means no interest. Sometimes it means the next step was vague, inconvenient, or delivered on the wrong channel.",
+      "text": "Myth: no response means no interest. Sometimes the path forward was vague, inconvenient, or delivered on the wrong channel.",
       "content_pillar": "Leasing response and conversion",
       "content_format": "Myth and reframe",
       "content_intent": "insight"
@@ -185,7 +185,7 @@
     },
     {
       "tweet_number": 129,
-      "text": "Where does duplicate work start most often in your operation: unclear ownership, scattered notes, or conflicting systems?",
+      "text": "Where does duplicate work start most often for your team: unclear ownership, scattered notes, or conflicting systems?",
       "content_pillar": "Workflow design and handoffs",
       "content_format": "Cost or bottleneck lens",
       "content_intent": "conversation"
@@ -199,7 +199,7 @@
     },
     {
       "tweet_number": 131,
-      "text": "Rule of thumb: if a field does not change a decision, routing rule, or report, question why you collect it.",
+      "text": "Field rule: if a value does not change a decision, routing rule, or report, question why you collect it.",
       "content_pillar": "CRM/PMS data discipline",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
@@ -283,7 +283,7 @@
     },
     {
       "tweet_number": 143,
-      "text": "Rule of thumb: after a tour, the next message should match what actually happened—not merely that the appointment time passed.",
+      "text": "Post-tour rule: the next message should match what actually happened—not merely that the appointment time passed.",
       "content_pillar": "Leasing response and conversion",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
@@ -367,7 +367,7 @@
     },
     {
       "tweet_number": 155,
-      "text": "Rule of thumb: never ask a prospect for information already captured in the same journey.",
+      "text": "Prospect data rule: never ask for information already captured in the same journey.",
       "content_pillar": "Leasing response and conversion",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
@@ -451,7 +451,7 @@
     },
     {
       "tweet_number": 167,
-      "text": "Rule of thumb: no task is closed until the person waiting on it knows what happened.",
+      "text": "Closure standard: the task stays open until the person waiting on it knows what happened.",
       "content_pillar": "Workflow design and handoffs",
       "content_format": "Rule of thumb",
       "content_intent": "insight"
