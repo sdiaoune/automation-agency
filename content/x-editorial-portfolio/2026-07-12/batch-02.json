@@ -1,0 +1,467 @@
+{
+  "batch": 2,
+  "rows": [
+    {
+      "tweet_number": 103,
+      "text": "Myth: every lead needs the same speed. High-intent requests need immediate next steps; early research needs useful answers without pressure.",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Myth and reframe",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 104,
+      "text": "Maintenance intake has two jobs: understand the condition and make the next decision possible. A long form that fails either job is just friction.",
+      "content_pillar": "Maintenance and resident operations",
+      "content_format": "Mini-framework",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 105,
+      "text": "Which handoff creates the most rework for your team: leasing to operations, resident to maintenance, or vendor back to manager?",
+      "content_pillar": "Workflow design and handoffs",
+      "content_format": "Cost or bottleneck lens",
+      "content_intent": "conversation"
+    },
+    {
+      "tweet_number": 106,
+      "text": "Before: owner asks, team searches. After: milestone changes trigger a short update with decision, risk, and next checkpoint.",
+      "content_pillar": "Owner and vendor coordination",
+      "content_format": "Before-and-after contrast",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 107,
+      "text": "Rule of thumb: capture the next action while the conversation is still open. Later usually becomes never.",
+      "content_pillar": "CRM/PMS data discipline",
+      "content_format": "Rule of thumb",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 108,
+      "text": "If a frontline teammate cannot tell when to escalate, the rulebook is too vague.",
+      "content_pillar": "Team capacity and human escalation",
+      "content_format": "If/then operating rule",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 109,
+      "text": "A fast workflow with a high reopen rate is not efficient. It is unfinished work moving quickly.",
+      "content_pillar": "Operational metrics and economics",
+      "content_format": "Sharp one-line observation",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 110,
+      "text": "Before automating a decision, list the failure modes, the reversible actions, and the point where a human must take over.",
+      "content_pillar": "Contrarian takes and industry myths",
+      "content_format": "Micro-checklist",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 111,
+      "text": "What percentage of your tour no-shows receive a useful rebooking path instead of a generic reminder?",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Diagnostic question",
+      "content_intent": "conversation"
+    },
+    {
+      "tweet_number": 112,
+      "text": "A maintenance chatbot that cannot recognize urgency is worse than a form. At least the form does not pretend to understand.",
+      "content_pillar": "Maintenance and resident operations",
+      "content_format": "Contrarian take",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 113,
+      "text": "The handoff between call and action needs: summary, intent, promised next step, owner, due time. A transcript alone is not operational context.",
+      "content_pillar": "Workflow design and handoffs",
+      "content_format": "Workflow teardown",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 114,
+      "text": "A vendor arrives but cannot enter. The visit looked scheduled on paper; the access handoff failed in reality.",
+      "content_pillar": "Owner and vendor coordination",
+      "content_format": "Short scenario",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 115,
+      "text": "Myth: more CRM fields create better visibility. Unowned, optional, and stale fields create prettier uncertainty.",
+      "content_pillar": "CRM/PMS data discipline",
+      "content_format": "Myth and reframe",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 116,
+      "text": "Escalation design: what triggers it, who receives it, what they need, how fast they respond, what happens if they do not.",
+      "content_pillar": "Team capacity and human escalation",
+      "content_format": "Mini-framework",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 117,
+      "text": "Which hidden delay would you want on a dashboard tomorrow: waiting for approval, waiting for access, or waiting for someone to claim the work?",
+      "content_pillar": "Operational metrics and economics",
+      "content_format": "Cost or bottleneck lens",
+      "content_intent": "conversation"
+    },
+    {
+      "tweet_number": 118,
+      "text": "Before: automate the whole journey. After: automate one stable step, watch the exceptions, then expand.",
+      "content_pillar": "Contrarian takes and industry myths",
+      "content_format": "Before-and-after contrast",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 119,
+      "text": "Rule of thumb: a leasing sequence should stop the moment the prospect takes a different path.",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Rule of thumb",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 120,
+      "text": "If emergency and routine requests enter the same lane, the workflow is asking humans to rescue its priorities. EMC2Ops designs the separation before adding automation.",
+      "content_pillar": "Maintenance and resident operations",
+      "content_format": "If/then operating rule",
+      "content_intent": "soft_promotion"
+    },
+    {
+      "tweet_number": 121,
+      "text": "Status is not ownership. “In progress” still needs a person and a clock.",
+      "content_pillar": "Workflow design and handoffs",
+      "content_format": "Sharp one-line observation",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 122,
+      "text": "A useful vendor assignment includes problem, property, contact, access, urgency, approval ceiling, and closeout evidence.",
+      "content_pillar": "Owner and vendor coordination",
+      "content_format": "Micro-checklist",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 123,
+      "text": "When a lead record is incomplete, what is usually missing: source, intent, owner, next action, or outcome?",
+      "content_pillar": "CRM/PMS data discipline",
+      "content_format": "Diagnostic question",
+      "content_intent": "conversation"
+    },
+    {
+      "tweet_number": 124,
+      "text": "The goal is not fewer humans in the loop. It is fewer humans trapped in the obvious parts of the loop.",
+      "content_pillar": "Team capacity and human escalation",
+      "content_format": "Contrarian take",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 125,
+      "text": "Measure a workflow in four places: demand enters, work starts, exceptions appear, outcome closes. Counting only completions hides the queue.",
+      "content_pillar": "Operational metrics and economics",
+      "content_format": "Workflow teardown",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 126,
+      "text": "An automation sends the right message to the wrong resident record. The copy can be perfect while the control system is broken.",
+      "content_pillar": "Contrarian takes and industry myths",
+      "content_format": "Short scenario",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 127,
+      "text": "Myth: no response means no interest. Sometimes it means the next step was vague, inconvenient, or delivered on the wrong channel.",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Myth and reframe",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 128,
+      "text": "Resident-facing maintenance flow: acknowledge, assess risk, collect access, set expectation, route, update, close.",
+      "content_pillar": "Maintenance and resident operations",
+      "content_format": "Mini-framework",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 129,
+      "text": "Where does duplicate work start most often in your operation: unclear ownership, scattered notes, or conflicting systems?",
+      "content_pillar": "Workflow design and handoffs",
+      "content_format": "Cost or bottleneck lens",
+      "content_intent": "conversation"
+    },
+    {
+      "tweet_number": 130,
+      "text": "Before: vendor sends a photo in a text thread. After: proof attaches to the work order with cost and completion status.",
+      "content_pillar": "Owner and vendor coordination",
+      "content_format": "Before-and-after contrast",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 131,
+      "text": "Rule of thumb: if a field does not change a decision, routing rule, or report, question why you collect it.",
+      "content_pillar": "CRM/PMS data discipline",
+      "content_format": "Rule of thumb",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 132,
+      "text": "If every unusual request goes straight to the founder, the exception path is not designed yet.",
+      "content_pillar": "Team capacity and human escalation",
+      "content_format": "If/then operating rule",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 133,
+      "text": "Queue age is an operational truth serum.",
+      "content_pillar": "Operational metrics and economics",
+      "content_format": "Sharp one-line observation",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 134,
+      "text": "Safe automation needs a kill switch, a visible log, clear permissions, and an owner for exceptions.",
+      "content_pillar": "Contrarian takes and industry myths",
+      "content_format": "Micro-checklist",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 135,
+      "text": "What is the first sign your leasing follow-up is too aggressive: opt-outs, silence, duplicate touches, or staff overrides?",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Diagnostic question",
+      "content_intent": "conversation"
+    },
+    {
+      "tweet_number": 136,
+      "text": "Residents do not care that a request crossed three departments. They experience one company and one delay.",
+      "content_pillar": "Maintenance and resident operations",
+      "content_format": "Contrarian take",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 137,
+      "text": "A reminder solves forgetfulness. It does not solve unclear ownership, missing information, or a blocked approval. Diagnose before adding another alert.",
+      "content_pillar": "Workflow design and handoffs",
+      "content_format": "Workflow teardown",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 138,
+      "text": "An owner approves the repair, but the vendor never receives the green light. Decision made; workflow unfinished.",
+      "content_pillar": "Owner and vendor coordination",
+      "content_format": "Short scenario",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 139,
+      "text": "Myth: integrations keep data clean. Integrations move data. Rules and ownership keep it trustworthy.",
+      "content_pillar": "CRM/PMS data discipline",
+      "content_format": "Myth and reframe",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 140,
+      "text": "Three escalation tiers: routine exception, time-sensitive risk, immediate human judgment. Each needs a destination and response window.",
+      "content_pillar": "Team capacity and human escalation",
+      "content_format": "Mini-framework",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 141,
+      "text": "Which number would change behavior faster on your team: oldest open item, repeat contact rate, or work returned for missing information?",
+      "content_pillar": "Operational metrics and economics",
+      "content_format": "Cost or bottleneck lens",
+      "content_intent": "conversation"
+    },
+    {
+      "tweet_number": 142,
+      "text": "Before: automation handles every edge case badly. After: automation handles the common path and labels the edges clearly.",
+      "content_pillar": "Contrarian takes and industry myths",
+      "content_format": "Before-and-after contrast",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 143,
+      "text": "Rule of thumb: after a tour, the next message should match what actually happened—not merely that the appointment time passed.",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Rule of thumb",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 144,
+      "text": "If residents keep calling for status, the problem may be update design rather than repair speed. EMC2Ops traces the missing signals and builds the communication layer around them.",
+      "content_pillar": "Maintenance and resident operations",
+      "content_format": "If/then operating rule",
+      "content_intent": "soft_promotion"
+    },
+    {
+      "tweet_number": 145,
+      "text": "A queue with no exit criteria becomes a museum of unfinished work.",
+      "content_pillar": "Workflow design and handoffs",
+      "content_format": "Sharp one-line observation",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 146,
+      "text": "Owner decision request: what changed, what it affects, recommended option, alternatives, cost range, decision deadline.",
+      "content_pillar": "Owner and vendor coordination",
+      "content_format": "Micro-checklist",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 147,
+      "text": "Which CRM stage causes the most disagreement between your reports and what the team believes is happening?",
+      "content_pillar": "CRM/PMS data discipline",
+      "content_format": "Diagnostic question",
+      "content_intent": "conversation"
+    },
+    {
+      "tweet_number": 148,
+      "text": "Hiring another coordinator can absorb chaos. It does not explain why the chaos keeps returning.",
+      "content_pillar": "Team capacity and human escalation",
+      "content_format": "Contrarian take",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 149,
+      "text": "When cycle time rises, split it into active work and waiting time. Then name what the work is waiting on.",
+      "content_pillar": "Operational metrics and economics",
+      "content_format": "Workflow teardown",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 150,
+      "text": "A system sends three perfect reminders after the resident already completed the task. Without stop signals, persistence becomes incompetence.",
+      "content_pillar": "Contrarian takes and industry myths",
+      "content_format": "Short scenario",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 151,
+      "text": "Myth: the leasing funnel is linear. Real prospects reschedule, switch units, pause, return, and ask side questions. The workflow must survive movement.",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Myth and reframe",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 152,
+      "text": "Clean handoff = context carried forward, ownership transferred, acceptance visible, deadline set, outcome recorded.",
+      "content_pillar": "Workflow design and handoffs",
+      "content_format": "Mini-framework",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 153,
+      "text": "What creates more maintenance delay in your portfolio: incomplete intake, access coordination, approval, or vendor availability?",
+      "content_pillar": "Maintenance and resident operations",
+      "content_format": "Cost or bottleneck lens",
+      "content_intent": "conversation"
+    },
+    {
+      "tweet_number": 154,
+      "text": "Before: start with the tool. After: map the decision, exception, and owner; then choose what deserves software.",
+      "content_pillar": "Contrarian takes and industry myths",
+      "content_format": "Before-and-after contrast",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 155,
+      "text": "Rule of thumb: never ask a prospect for information already captured in the same journey.",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Rule of thumb",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 156,
+      "text": "If the PMS and CRM disagree, define which system owns each field before building another sync.",
+      "content_pillar": "CRM/PMS data discipline",
+      "content_format": "If/then operating rule",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 157,
+      "text": "Work does not move because everyone can see it. Work moves because someone owns it.",
+      "content_pillar": "Workflow design and handoffs",
+      "content_format": "Sharp one-line observation",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 158,
+      "text": "Tour-to-application checklist: attendance confirmed, objections captured, unit fit updated, next action chosen, follow-up timed.",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Micro-checklist",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 159,
+      "text": "Why can fast repairs still feel slow? Missing expectations create a communication gap alongside the repair gap.",
+      "content_pillar": "Maintenance and resident operations",
+      "content_format": "Diagnostic question",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 160,
+      "text": "Automation should remove ambiguity before it removes clicks.",
+      "content_pillar": "Contrarian takes and industry myths",
+      "content_format": "Contrarian take",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 161,
+      "text": "A missed-call workflow should distinguish prospect, resident, vendor, and unknown caller before deciding what happens next.",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Workflow teardown",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 162,
+      "text": "The same request gets copied from phone note to inbox to task board. That friction is exactly where EMC2Ops looks for a cleaner trigger, owner, and writeback path.",
+      "content_pillar": "Workflow design and handoffs",
+      "content_format": "Short scenario",
+      "content_intent": "soft_promotion"
+    },
+    {
+      "tweet_number": 163,
+      "text": "Myth: a complete record is a long record. The useful record contains the facts needed for the next decision.",
+      "content_pillar": "CRM/PMS data discipline",
+      "content_format": "Myth and reframe",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 164,
+      "text": "Leasing recovery sequence: acknowledge the miss, identify intent, offer one clear action, preserve a human path, stop on response.",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "Mini-framework",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 165,
+      "text": "If you could remove one source of maintenance phone tag, would you choose unit details, access, troubleshooting, or scheduling?",
+      "content_pillar": "Maintenance and resident operations",
+      "content_format": "Cost or bottleneck lens",
+      "content_intent": "conversation"
+    },
+    {
+      "tweet_number": 166,
+      "text": "Before: weekly owner update assembled from memory. After: milestones collected during the week, summary generated from the record.",
+      "content_pillar": "Owner and vendor coordination",
+      "content_format": "Before-and-after contrast",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 167,
+      "text": "Rule of thumb: no task is closed until the person waiting on it knows what happened.",
+      "content_pillar": "Workflow design and handoffs",
+      "content_format": "Rule of thumb",
+      "content_intent": "insight"
+    },
+    {
+      "tweet_number": 168,
+      "text": "If the next leasing action is not scheduled, the lead is relying on somebody’s memory.",
+      "content_pillar": "Leasing response and conversion",
+      "content_format": "If/then operating rule",
+      "content_intent": "insight"
+    }
+  ]
+}
