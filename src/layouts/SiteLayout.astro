@@ -1,6 +1,7 @@
 ---
 import Analytics from "@vercel/analytics/astro";
 import SeoHead from "../components/SeoHead.astro";
+import "../styles/theme.css";
 
 interface Props {
   title: string;
@@ -34,6 +35,26 @@ const enableAnalytics = process.env.VERCEL === "1" || import.meta.env.PUBLIC_ENA
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script is:inline>
+      (() => {
+        const storageKey = "emc2ops-theme";
+
+        try {
+          const storedTheme = window.localStorage.getItem(storageKey);
+          const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+          const theme = storedTheme === "light" || storedTheme === "dark"
+            ? storedTheme
+            : prefersDark
+              ? "dark"
+              : "light";
+
+          document.documentElement.classList.toggle("dark", theme === "dark");
+          document.documentElement.dataset.theme = theme;
+        } catch {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
     <SeoHead
       title={title}
       description={description}

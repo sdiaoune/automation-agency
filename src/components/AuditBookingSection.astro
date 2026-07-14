@@ -33,21 +33,29 @@
         <form class="audit-form" id="audit-form">
           <strong>Book your 15-minute workflow audit.</strong>
           <p class="muted">Choose an available Eastern-time slot first. Then add the basic details needed to confirm the audit.</p>
+          <p class="booking-step" id="booking-step">Step 1 of 2: choose a time that works.</p>
+          <p class="booking-context" id="booking-context" hidden></p>
 
           <div class="slot-picker" id="slot-picker" aria-live="polite">
             <div class="slot-picker-head">
-              <span>Available times</span>
-              <small>Eastern time</small>
+              <span>Next openings</span>
+              <small>15 min · Eastern time</small>
             </div>
             <div class="slot-grid" id="slot-grid">
               <p class="slot-loading">Loading available audit times...</p>
             </div>
+            <p class="slot-fallback">
+              Need a morning or midday time?
+              <a href="mailto:soya@getemc2ops.com?subject=Workflow%20audit%20alternate%20times">Ask for alternate options</a>.
+            </p>
           </div>
 
           <input name="scheduledStart" id="scheduled-start" type="hidden" required />
           <input name="scheduledEnd" id="scheduled-end" type="hidden" />
           <input name="scheduledLabel" id="scheduled-label" type="hidden" />
           <input name="scheduledTimeZone" id="scheduled-time-zone" type="hidden" value="America/New_York" />
+          <input name="workflowContext" id="workflow-context" type="hidden" />
+          <input name="sourceContext" id="source-context" type="hidden" />
 
           <div class="selected-slot-summary" id="selected-slot-summary" hidden>
             <span>Selected time</span>
@@ -132,10 +140,73 @@
   const scheduledEnd = document.querySelector("#scheduled-end");
   const scheduledLabel = document.querySelector("#scheduled-label");
   const scheduledTimeZone = document.querySelector("#scheduled-time-zone");
+  const workflowContext = document.querySelector("#workflow-context");
+  const sourceContext = document.querySelector("#source-context");
+  const bookingStep = document.querySelector("#booking-step");
+  const bookingContext = document.querySelector("#booking-context");
   const selectedSlotSummary = document.querySelector("#selected-slot-summary");
   const selectedSlotLabel = document.querySelector("#selected-slot-label");
-  const bookingDetails = document.querySelector("#booking-details");
+  const workflowProblemSelect = auditForm?.querySelector("[name='workflowProblem']");
+  const bookingParams = new URLSearchParams(window.location.search);
+  const requestedWorkflow = bookingParams.get("workflow") || "";
+  const requestedSource = bookingParams.get("source") || "";
+  const INITIAL_VISIBLE_SLOT_COUNT = 8;
+  const SLOT_BATCH_SIZE = 8;
+  let loadedSlots = [];
+  let visibleSlotCount = INITIAL_VISIBLE_SLOT_COUNT;
   let formStarted = false;
+
+  const workflowContextMap = {
+    "missed-call-recovery": { label: "Missed-call recovery", problem: "Missed leasing calls" },
+    "leasing-follow-up": { label: "Leasing follow-up automation", problem: "CRM follow-up" },
+    "maintenance-intake-automation": { label: "Maintenance intake automation", problem: "Maintenance triage" },
+    "crm-workflow-automation": { label: "CRM workflow automation", problem: "CRM follow-up" },
+    "owner-update-automation": { label: "Owner update automation", problem: "Owner or vendor updates" },
+    "vendor-dispatch-automation": { label: "Vendor dispatch automation", problem: "Owner or vendor updates" },
+    "ai-front-desk-property-management": { label: "AI front desk for property management", problem: "Missed leasing calls" },
+    "apartment-lead-tracking": { label: "Apartment lead tracking", problem: "CRM follow-up" },
+    "real-estate-lead-follow-up-automation": { label: "Real estate lead follow-up automation", problem: "CRM follow-up" },
+    "how-to-automate-property-management": { label: "Property management workflow automation", problem: "CRM follow-up" },
+    "lead-to-lease-automation": { label: "Lead-to-lease automation", problem: "CRM follow-up" },
+    "real-estate-crm-follow-up-mess": { label: "CRM follow-up cleanup", problem: "CRM follow-up" },
+    appfolio: { label: "AppFolio automation", problem: "CRM follow-up" },
+    buildium: { label: "Buildium integration", problem: "CRM follow-up" },
+    leadsimple: { label: "LeadSimple automation", problem: "CRM follow-up" },
+  };
+
+  function workflowLabelFromSlug(slug) {
+    return slug
+      .split("-")
+      .filter(Boolean)
+      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+      .join(" ");
+  }
+
+  function applyBookingContext() {
+    if (!requestedWorkflow) return;
+
+    const context = workflowContextMap[requestedWorkflow] || {
+      label: workflowLabelFromSlug(requestedWorkflow),
+      problem: "",
+    };
+
+    if (workflowProblemSelect && context.problem) {
+      workflowProblemSelect.value = context.problem;
+    }
+
+    if (workflowContext) {
+      workflowContext.value = requestedWorkflow;
+    }
+
+    if (sourceContext) {
+      sourceContext.value = requestedSource;
+    }
+
+    if (bookingContext) {
+      bookingContext.hidden = false;
+      bookingContext.textContent = `You came from ${context.label}. We'll focus the audit there first.`;
+    }
+  }
 
   function bookingEvent(name, params = {}) {
     const googleTag = window.gtag || (typeof gtag === "function" ? gtag : null);
@@ -171,7 +242,12 @@
   }
 
   window.gtag_report_conversion = gtag_report_conversion;
-  bookingEvent("booking_page_view", { page_path: window.location.pathname });
+  applyBookingContext();
+  bookingEvent("booking_page_view", {
+    page_path: window.location.pathname,
+    workflow: requestedWorkflow,
+    source: requestedSource
+  });
 
   function groupSlots(slots) {
     return slots.reduce((groups, slot) => {
@@ -183,6 +259,26 @@
       }
       return groups;
     }, []);
+  }
+
+  function slotStartLabel(slot) {
+    const start = new Date(slot.start);
+
+    if (!Number.isNaN(start.getTime())) {
+      return new Intl.DateTimeFormat("en-US", {
+        hour: "numeric",
+        minute: "2-digit",
+        timeZone: slot.timeZone || "America/New_York",
+      }).format(start);
+    }
+
+    return (slot.timeLabel || slot.label || "Select time").split(" - ")[0];
+  }
+
+  function resetBookingStep() {
+    if (bookingStep) {
+      bookingStep.textContent = "Step 1 of 2: choose a time that works.";
+    }
   }
 
   function selectSlot(button, slot) {
@@ -199,13 +295,16 @@
     scheduledTimeZone.value = slot.timeZone || "America/New_York";
     selectedSlotSummary.hidden = false;
     selectedSlotLabel.textContent = slot.label;
+    if (bookingStep) {
+      bookingStep.textContent = "Step 2 of 2: add details to confirm.";
+    }
     auditForm.classList.add("slot-selected");
-    auditFormStatus.textContent = `Selected ${slot.label}. Add your details to confirm.`;
+    auditFormStatus.textContent = `Time selected: ${slot.label}. Last step: add your details.`;
     auditFormStatus.className = "form-status";
     bookingEvent("calendar_slot_selected", { slot_start: slot.start, slot_label: slot.label });
 
     window.requestAnimationFrame(() => {
-      bookingDetails?.scrollIntoView({ behavior: "smooth", block: "start" });
+      selectedSlotSummary?.scrollIntoView({ behavior: "smooth", block: "start" });
       window.setTimeout(() => {
         auditForm.querySelector("[name='fullName']")?.focus({ preventScroll: true });
       }, 320);
@@ -221,7 +320,9 @@
     }
 
     slotGrid.innerHTML = "";
-    for (const group of groupSlots(slots).slice(0, 7)) {
+    const visibleSlots = slots.slice(0, visibleSlotCount);
+
+    for (const group of groupSlots(visibleSlots)) {
       const groupElement = document.createElement("div");
       groupElement.className = "slot-day";
 
@@ -232,18 +333,43 @@
       const list = document.createElement("div");
       list.className = "slot-list";
 
-      for (const slot of group.slots.slice(0, 6)) {
+      for (const slot of group.slots) {
         const button = document.createElement("button");
         button.className = "slot-button";
         button.type = "button";
         button.setAttribute("aria-pressed", "false");
-        button.textContent = slot.timeLabel || slot.label;
+        button.setAttribute("aria-label", `Select ${slot.label || slotStartLabel(slot)}`);
+        button.title = slot.label || slotStartLabel(slot);
+        button.textContent = slotStartLabel(slot);
+
+        if (slot.start === scheduledStart.value) {
+          button.classList.add("selected");
+          button.setAttribute("aria-pressed", "true");
+        }
+
         button.addEventListener("click", () => selectSlot(button, slot));
         list.append(button);
       }
 
       groupElement.append(list);
       slotGrid.append(groupElement);
+    }
+
+    if (visibleSlotCount < slots.length) {
+      const moreButton = document.createElement("button");
+      const remaining = slots.length - visibleSlotCount;
+      moreButton.className = "slot-more-button";
+      moreButton.type = "button";
+      moreButton.textContent = `Show more times (${remaining} more)`;
+      moreButton.addEventListener("click", () => {
+        visibleSlotCount += SLOT_BATCH_SIZE;
+        renderSlots(loadedSlots);
+        bookingEvent("calendar_more_times_opened", {
+          visible_slots: Math.min(visibleSlotCount, loadedSlots.length),
+          total_slots: loadedSlots.length
+        });
+      });
+      slotGrid.append(moreButton);
     }
   }
 
@@ -258,7 +384,9 @@
         throw new Error(result.error || "Could not load available audit times.");
       }
 
-      renderSlots(result.slots || []);
+      loadedSlots = result.slots || [];
+      visibleSlotCount = INITIAL_VISIBLE_SLOT_COUNT;
+      renderSlots(loadedSlots);
     } catch (error) {
       slotGrid.innerHTML = '<p class="slot-loading">Available times could not load. Email soya@getemc2ops.com and we will send options manually.</p>';
       bookingEvent("form_error", { step: "slot_load", message: error.message || "Slot load failed" });
@@ -282,6 +410,7 @@
       auditFormStatus.textContent = "Pick an available audit time first.";
       auditFormStatus.className = "form-status error";
       bookingEvent("form_error", { step: "slot_required" });
+      document.querySelector("#slot-picker")?.scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }
 
@@ -309,6 +438,7 @@
       selectedSlotSummary.hidden = true;
       selectedSlotLabel.textContent = "";
       auditForm.classList.remove("slot-selected");
+      resetBookingStep();
       auditFormStatus.textContent = "Audit booked. We’ll send a direct confirmation shortly.";
       auditFormStatus.className = "form-status success";
       bookingEvent("booking_confirmed", { booking_id: result.id, slot_start: payload.scheduledStart });

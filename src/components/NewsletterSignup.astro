@@ -79,9 +79,10 @@ const {
 <style>
   .newsletter-signup {
     align-items: center;
-    background: rgba(255,255,255,.045);
-    border: 1px solid rgba(255,255,255,.12);
-    border-radius: 8px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
     display: grid;
     gap: 24px;
     grid-template-columns: minmax(0, 1fr) minmax(280px, 430px);
@@ -89,7 +90,7 @@ const {
   }
 
   .newsletter-kicker {
-    color: #ffe49a;
+    color: var(--primary);
     font-size: .78rem;
     font-weight: 800;
     letter-spacing: .08em;
@@ -104,7 +105,7 @@ const {
   }
 
   .newsletter-signup p {
-    color: #b8bcae;
+    color: var(--muted);
     margin: 0;
   }
 
@@ -116,7 +117,7 @@ const {
   }
 
   .newsletter-signup-form label {
-    color: #f5f7fb;
+    color: var(--muted-strong);
     display: grid;
     font-size: .92rem;
     font-weight: 760;
@@ -124,10 +125,10 @@ const {
   }
 
   .newsletter-signup-form input {
-    background: rgba(8,11,16,.62);
-    border: 1px solid rgba(255,255,255,.12);
-    border-radius: 8px;
-    color: #f5f7fb;
+    background: var(--card);
+    border: 1px solid var(--input);
+    border-radius: var(--radius);
+    color: var(--foreground);
     font: inherit;
     min-height: 48px;
     outline: none;
@@ -135,16 +136,16 @@ const {
   }
 
   .newsletter-signup-form input:focus {
-    border-color: rgba(247,201,72,.66);
-    box-shadow: 0 0 0 4px rgba(247,201,72,.12);
+    border-color: var(--ring);
+    box-shadow: var(--focus-ring);
   }
 
   .newsletter-submit {
     align-items: center;
-    background: #f7c948;
+    background: var(--primary);
     border: 1px solid transparent;
-    border-radius: 8px;
-    color: #15100a;
+    border-radius: var(--radius);
+    color: var(--primary-foreground);
     cursor: pointer;
     display: inline-flex;
     font: inherit;
@@ -173,11 +174,11 @@ const {
   }
 
   .newsletter-status.success {
-    color: #46e6b0;
+    color: var(--success);
   }
 
   .newsletter-status.error {
-    color: #ff6b6b;
+    color: var(--danger);
   }
 
   @media (max-width: 760px) {

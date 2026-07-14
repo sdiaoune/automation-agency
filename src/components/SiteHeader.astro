@@ -39,20 +39,31 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
       {navLinks.map((link) => <a href={link.href}>{link.label}</a>)}
       <a href="/book-demo/" class="btn btn-primary">Book a 15-minute audit</a>
     </nav>
-    <button
-      class="mobile-menu-toggle"
-      type="button"
-      aria-label="Open navigation menu"
-      aria-controls={mobileNavId}
-      aria-expanded="false"
-      data-mobile-menu-toggle
-    >
-      <span class="mobile-menu-icon" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
-    </button>
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" data-theme-toggle>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.66-5.66 1.42-1.42M4.92 19.08l1.42-1.42m0-11.32L4.92 4.92m14.16 14.16-1.42-1.42" />
+          <circle cx="12" cy="12" r="4" />
+        </svg>
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 15.31A8.5 8.5 0 0 1 8.69 4 7 7 0 1 0 20 15.31Z" />
+        </svg>
+      </button>
+      <button
+        class="mobile-menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls={mobileNavId}
+        aria-expanded="false"
+        data-mobile-menu-toggle
+      >
+        <span class="mobile-menu-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
   </div>
   <div class="mobile-menu-backdrop" hidden data-mobile-menu-backdrop></div>
   <nav class="mobile-menu-panel" id={mobileNavId} aria-label="Mobile primary" hidden data-mobile-menu-panel>
@@ -67,37 +78,137 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
 </header>
 
 <style>
-  :global(html.mobile-nav-open),
-  :global(html.mobile-nav-open body) {
-    overflow: hidden;
-  }
-
   header {
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
     z-index: 70;
   }
 
-  .mobile-menu-toggle {
+  .nav {
     align-items: center;
-    background: rgba(255, 255, 255, .055);
-    border: 1px solid var(--line, rgba(255, 255, 255, .14));
-    border-radius: var(--radius, 8px);
-    color: var(--text, #f5f7fb);
-    cursor: pointer;
-    display: none;
-    height: 46px;
-    justify-content: center;
-    padding: 0;
-    touch-action: manipulation;
-    transition: background .18s ease, border-color .18s ease, box-shadow .18s ease;
-    width: 46px;
+    display: flex;
+    gap: 20px;
+    min-height: 56px;
+    justify-content: space-between;
   }
 
+  .logo {
+    align-items: center;
+    color: var(--foreground);
+    display: inline-flex;
+    font-size: .95rem;
+    font-weight: 850;
+    gap: 8px;
+    letter-spacing: 0;
+    min-height: 40px;
+  }
+
+  .mark {
+    align-items: center;
+    background: var(--primary);
+    border-radius: 8px;
+    box-shadow: 0 10px 22px var(--shadow-brand-color);
+    color: var(--primary-foreground);
+    display: inline-flex;
+    font-size: .78rem;
+    font-weight: 950;
+    height: 28px;
+    justify-content: center;
+    width: 28px;
+  }
+
+  .navlinks {
+    align-items: center;
+    color: var(--muted);
+    display: flex;
+    font-size: .86rem;
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  .navlinks > a:not(.btn) {
+    align-items: center;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    min-height: 40px;
+    padding: 0 8px;
+    transition: background .18s ease, color .18s ease;
+  }
+
+  .navlinks > a:not(.btn):hover,
+  .navlinks > a:not(.btn):focus-visible {
+    background: var(--secondary);
+    color: var(--foreground);
+    outline: none;
+  }
+
+  .navlinks .btn {
+    font-size: .84rem;
+    min-height: 36px;
+    padding-inline: 14px;
+  }
+
+  .nav-actions {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+  }
+
+  .theme-toggle,
+  .mobile-menu-toggle {
+    align-items: center;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    color: var(--foreground);
+    cursor: pointer;
+    display: inline-flex;
+    height: 44px;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    touch-action: manipulation;
+    transition: background .18s ease, border-color .18s ease, box-shadow .18s ease, color .18s ease;
+    width: 44px;
+  }
+
+  .theme-toggle:hover,
+  .theme-toggle:focus-visible,
   .mobile-menu-toggle:hover,
   .mobile-menu-toggle:focus-visible {
-    background: rgba(255, 255, 255, .1);
-    border-color: rgba(247, 201, 72, .62);
-    box-shadow: 0 0 0 4px rgba(247, 201, 72, .12);
+    background: var(--secondary);
+    border-color: var(--border);
+    box-shadow: var(--focus-ring);
     outline: none;
+  }
+
+  .theme-icon {
+    fill: none;
+    height: 18px;
+    position: absolute;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    transition: opacity .18s ease, transform .18s ease;
+    width: 18px;
+  }
+
+  .theme-icon-moon,
+  :global(html.dark) .theme-icon-sun {
+    opacity: 0;
+    transform: scale(.72) rotate(-18deg);
+  }
+
+  :global(html.dark) .theme-icon-moon {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+
+  .mobile-menu-toggle {
+    display: none;
   }
 
   .mobile-menu-icon {
@@ -129,27 +240,28 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
   }
 
   .mobile-menu-backdrop {
-    background: rgba(0, 0, 0, .54);
+    background: rgba(0, 0, 0, .48);
     backdrop-filter: blur(4px);
-    inset: 76px 0 0;
+    inset: 56px 0 0;
+    overscroll-behavior: contain;
     position: fixed;
+    touch-action: none;
     z-index: 71;
   }
 
   .mobile-menu-panel {
-    background: linear-gradient(180deg, #11140f 0%, #080906 100%);
-    background-color: #0b0c0a;
-    border: 1px solid rgba(255, 255, 255, .15);
+    background: var(--card);
+    border: 1px solid var(--border);
     border-radius: var(--radius, 8px);
-    box-shadow: 0 28px 80px rgba(0, 0, 0, .55);
-    color: var(--text, #f5f7fb);
+    box-shadow: var(--shadow-lg);
+    color: var(--foreground);
     left: max(14px, env(safe-area-inset-left));
-    max-height: calc(100dvh - 102px);
+    max-height: calc(100dvh - 80px);
     overflow: auto;
     padding: 12px;
     position: fixed;
     right: max(14px, env(safe-area-inset-right));
-    top: 88px;
+    top: 68px;
     z-index: 72;
   }
 
@@ -161,7 +273,7 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
   }
 
   .mobile-menu-head span {
-    color: #ffe49a;
+    color: var(--primary);
     font-size: .76rem;
     font-weight: 850;
     letter-spacing: .08em;
@@ -185,21 +297,21 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
 
   .mobile-menu-links a {
     border: 1px solid transparent;
-    color: var(--muted, #b8bcae);
+    color: var(--muted-strong);
     font-weight: 780;
   }
 
   .mobile-menu-links a:hover,
   .mobile-menu-links a:focus-visible {
-    background: rgba(255, 255, 255, .07);
-    border-color: rgba(255, 255, 255, .12);
-    color: var(--text, #f5f7fb);
+    background: var(--secondary);
+    border-color: var(--border);
+    color: var(--foreground);
     outline: none;
   }
 
   .mobile-menu-cta {
-    background: var(--accent, #f7c948);
-    color: #15100a;
+    background: var(--primary);
+    color: var(--primary-foreground);
     font-weight: 850;
     justify-content: center;
     margin-top: 12px;
@@ -208,8 +320,8 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
 
   .mobile-menu-cta:hover,
   .mobile-menu-cta:focus-visible {
-    background: #ffe08a;
-    box-shadow: 0 18px 42px rgba(247, 201, 72, .22);
+    background: var(--brand-500);
+    box-shadow: 0 18px 42px var(--shadow-brand-color);
     outline: none;
   }
 
@@ -226,12 +338,12 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
 
   @media (max-width: 520px) {
     .mobile-menu-panel {
-      max-height: calc(100dvh - 92px);
-      top: 82px;
+      max-height: calc(100dvh - 76px);
+      top: 66px;
     }
 
     .mobile-menu-backdrop {
-      inset-block-start: 72px;
+      inset-block-start: 56px;
     }
   }
 
@@ -271,6 +383,38 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
 </style>
 
 <script>
+  const themeStorageKey = "emc2ops-theme";
+
+  const setTheme = (theme) => {
+    const nextTheme = theme === "dark" ? "dark" : "light";
+    document.documentElement.classList.toggle("dark", nextTheme === "dark");
+    document.documentElement.dataset.theme = nextTheme;
+
+    document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+      if (button instanceof HTMLButtonElement) {
+        button.setAttribute("aria-label", nextTheme === "dark" ? "Switch to light theme" : "Switch to dark theme");
+      }
+    });
+  };
+
+  setTheme(document.documentElement.classList.contains("dark") ? "dark" : "light");
+
+  document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+    if (!(button instanceof HTMLButtonElement) || button.dataset.themeToggleBound === "true") return;
+    button.dataset.themeToggleBound = "true";
+
+    button.addEventListener("click", () => {
+      const nextTheme = document.documentElement.classList.contains("dark") ? "light" : "dark";
+      setTheme(nextTheme);
+
+      try {
+        window.localStorage.setItem(themeStorageKey, nextTheme);
+      } catch {
+        /* Theme still applies for this page view when storage is unavailable. */
+      }
+    });
+  });
+
   const syncMobileNavDocumentState = () => {
     const hasOpenMenu = Boolean(document.querySelector('[data-site-header][data-mobile-nav-open="true"]'));
     document.documentElement.classList.toggle("mobile-nav-open", hasOpenMenu);
