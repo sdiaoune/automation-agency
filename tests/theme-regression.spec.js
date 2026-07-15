@@ -17,6 +17,14 @@ test("homepage and booking page keep the EMC2Ops theme controls", async ({ page 
   }
 
   await page.goto("/");
+  await expect(page.locator(".pricing .price")).toHaveCount(3);
+  await expect(page.locator(".pricing .price")).toHaveText([
+    "Get a Quote",
+    "Get a Quote",
+    "Get a Quote",
+  ]);
+
+  await page.goto("/");
   await page.locator("[data-theme-toggle]").first().click();
   await expect(page.locator("html")).toHaveClass(/dark/);
 
