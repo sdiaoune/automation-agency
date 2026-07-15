@@ -20,7 +20,7 @@ test("mobile header menu opens, closes, and routes to core pages", async ({ page
   await expect(mobileNav).toBeVisible();
   await expect(toggle).toHaveAttribute("aria-expanded", "true");
   await expect(mobileNav.getByRole("link", { name: "Services" })).toBeVisible();
-  await expect(mobileNav.getByRole("link", { name: "Book a 15-minute audit" })).toBeVisible();
+  await expect(mobileNav.getByRole("link", { name: "Book a 15-minute consultation" })).toBeVisible();
 
   await page.keyboard.press("Escape");
   await expect(mobileNav).toBeHidden();

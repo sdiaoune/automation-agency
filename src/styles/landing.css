@@ -498,6 +498,27 @@ html.dark .dashboard {
   margin: 14px 0 4px;
 }
 
+.price-link {
+  align-items: center;
+  display: inline-flex;
+  gap: .38em;
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  text-decoration-thickness: .08em;
+  text-underline-offset: .16em;
+}
+
+.price-link::after {
+  content: "\2192";
+  font-size: .78em;
+  transition: transform 160ms ease;
+}
+
+.price-link:hover::after,
+.price-link:focus-visible::after {
+  transform: translateX(4px);
+}
+
 .price small {
   color: var(--muted);
   font-size: .95rem;

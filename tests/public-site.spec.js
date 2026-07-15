@@ -25,7 +25,7 @@ test("home page loads and routes audit CTAs to the booking page", async ({ page 
   await page.goto("/");
   await expect(page.locator("h1")).toContainText("Turn missed leasing calls");
   await expect(page.locator(".hero-actions .btn-primary")).toHaveAttribute("href", "/book-demo/");
-  await expect(page.locator(".hero-actions .btn-primary")).toContainText("Book a 15-minute audit");
+  await expect(page.locator(".hero-actions .btn-primary")).toContainText("Book a 15-minute consultation");
   await expect(page.locator("#newsletter h2")).toContainText("Get property management automation ideas");
 
   await page.locator("#newsletter-form [name=email]").fill("newsletter@example.com");
@@ -72,8 +72,8 @@ test("booking page submits the audit form payload", async ({ page }) => {
   });
 
   await page.goto("/book-demo/");
-  await expect(page.locator("h1")).toContainText("Find the first workflow");
-  await expect(page.locator("#book-demo h2")).toContainText("Leave with one workflow");
+  await expect(page.locator("h1")).toContainText("Tell us what you need");
+  await expect(page.locator("#book-demo h2")).toContainText("Use the call for a quote, demo, or workflow audit");
   await expect(page.locator(".slot-button")).toContainText("Mon, Jun 29");
 
   await page.locator(".slot-button").click();
@@ -93,7 +93,7 @@ test("booking page submits the audit form payload", async ({ page }) => {
   await page.locator("#audit-form [name=message]").fill("After-hours leasing calls are going unanswered.");
   await page.locator("#audit-form button[type=submit]").click();
 
-  await expect(page.locator("#audit-form-status")).toContainText("Audit booked");
+  await expect(page.locator("#audit-form-status")).toContainText("Consultation booked");
   expect(submittedPayload).toMatchObject({
     fullName: "Avery Lee",
     email: "avery@example.com",

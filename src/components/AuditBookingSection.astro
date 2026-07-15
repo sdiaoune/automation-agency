@@ -2,16 +2,16 @@
   <div class="wrap">
     <div class="booking">
       <div class="booking-panel">
-        <div class="eyebrow">15-minute workflow audit</div>
-        <h2>Leave with one workflow worth automating first.</h2>
-        <p class="muted">Pick a time. We’ll review the current bottleneck, identify the handoff that is costing time or revenue, and map the simplest first automation to install.</p>
+        <div class="eyebrow">15-minute consultation</div>
+        <h2>Use the call for a quote, demo, or workflow audit.</h2>
+        <p class="muted">Choose the outcome you need. We’ll review your current setup, answer questions, and recommend a practical next step.</p>
 
-        <div class="audit-agenda" aria-label="Audit agenda">
+        <div class="audit-agenda" aria-label="Consultation agenda">
           <strong>What happens on the call</strong>
           <ol>
-            <li>Map where the lead, tenant, maintenance, or owner update stalls.</li>
-            <li>Estimate the operational leak and the fastest measurable win.</li>
-            <li>Show the first workflow and the tools it needs to touch.</li>
+            <li>Tell us whether you need pricing, a demo, or help choosing the first workflow.</li>
+            <li>Review the current bottleneck and the tools your team already uses.</li>
+            <li>Leave with a clear next step and tailored scope when there is a fit.</li>
           </ol>
         </div>
 
@@ -31,8 +31,8 @@
 
       <div class="calendar-box">
         <form class="audit-form" id="audit-form">
-          <strong>Book your 15-minute workflow audit.</strong>
-          <p class="muted">Choose an available Eastern-time slot first. Then add the basic details needed to confirm the audit.</p>
+          <strong>Book your 15-minute consultation.</strong>
+          <p class="muted">Choose an available Eastern-time slot first. Then add the basic details needed to confirm the call.</p>
           <p class="booking-step" id="booking-step">Step 1 of 2: choose a time that works.</p>
           <p class="booking-context" id="booking-context" hidden></p>
 
@@ -42,11 +42,11 @@
               <small>15 min · Eastern time</small>
             </div>
             <div class="slot-grid" id="slot-grid">
-              <p class="slot-loading">Loading available audit times...</p>
+              <p class="slot-loading">Loading available consultation times...</p>
             </div>
             <p class="slot-fallback">
               Need a morning or midday time?
-              <a href="mailto:soya@getemc2ops.com?subject=Workflow%20audit%20alternate%20times">Ask for alternate options</a>.
+              <a href="mailto:soya@getemc2ops.com?subject=Consultation%20alternate%20times">Ask for alternate options</a>.
             </p>
           </div>
 
@@ -122,7 +122,7 @@
           </label>
 
           <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Book My Audit</button>
+            <button class="btn btn-primary" type="submit">Book My Consultation</button>
             <p class="form-note">You’ll get a direct confirmation from EMC2Ops.</p>
           </div>
           <p class="form-status" id="audit-form-status" role="status" aria-live="polite"></p>
@@ -204,7 +204,7 @@
 
     if (bookingContext) {
       bookingContext.hidden = false;
-      bookingContext.textContent = `You came from ${context.label}. We'll focus the audit there first.`;
+      bookingContext.textContent = `You came from ${context.label}. We'll focus the consultation there first.`;
     }
   }
 
@@ -315,7 +315,7 @@
     if (!slotGrid) return;
 
     if (!slots.length) {
-      slotGrid.innerHTML = '<p class="slot-loading">No open audit slots are available right now. Email soya@getemc2ops.com and we will send options manually.</p>';
+      slotGrid.innerHTML = '<p class="slot-loading">No open consultation times are available right now. Email soya@getemc2ops.com and we will send options manually.</p>';
       return;
     }
 
@@ -381,7 +381,7 @@
       const result = await response.json().catch(() => ({}));
 
       if (!response.ok) {
-        throw new Error(result.error || "Could not load available audit times.");
+        throw new Error(result.error || "Could not load available consultation times.");
       }
 
       loadedSlots = result.slots || [];
@@ -407,14 +407,14 @@
     payload.pageUrl = window.location.href;
 
     if (!payload.scheduledStart) {
-      auditFormStatus.textContent = "Pick an available audit time first.";
+      auditFormStatus.textContent = "Pick an available consultation time first.";
       auditFormStatus.className = "form-status error";
       bookingEvent("form_error", { step: "slot_required" });
       document.querySelector("#slot-picker")?.scrollIntoView({ behavior: "smooth", block: "start" });
       return;
     }
 
-    auditFormStatus.textContent = "Booking your audit...";
+    auditFormStatus.textContent = "Booking your consultation...";
     auditFormStatus.className = "form-status";
     submitButton.disabled = true;
 
@@ -439,7 +439,7 @@
       selectedSlotLabel.textContent = "";
       auditForm.classList.remove("slot-selected");
       resetBookingStep();
-      auditFormStatus.textContent = "Audit booked. We’ll send a direct confirmation shortly.";
+      auditFormStatus.textContent = "Consultation booked. We’ll send a direct confirmation shortly.";
       auditFormStatus.className = "form-status success";
       bookingEvent("booking_confirmed", { booking_id: result.id, slot_start: payload.scheduledStart });
       loadSlots();

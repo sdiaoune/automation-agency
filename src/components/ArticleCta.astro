@@ -7,7 +7,7 @@ interface Props {
   label?: string;
 }
 
-const { title, description, top = false, href = "/book-demo/", label = "Book a 15-minute audit" } = Astro.props;
+const { title, description, top = false, href = "/book-demo/", label = "Book a 15-minute consultation" } = Astro.props;
 ---
 
 <section class:list={["article-cta", { "top-cta": top }]}>
