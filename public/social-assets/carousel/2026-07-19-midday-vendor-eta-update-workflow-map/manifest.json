@@ -1,0 +1,138 @@
+{
+  "date": "2026-07-19",
+  "slot": "midday",
+  "slug": "vendor-eta-update-workflow-map",
+  "topic": "Vendor ETA update workflow map for property managers",
+  "hook": "If vendor ETA updates still live in call notes and resident callbacks, the maintenance workflow is already creating avoidable friction.",
+  "captionInstagram": "Why do vendor ETA updates still create maintenance drag for property managers?\n\nBecause many teams treat ETA communication like a few manual texts instead of one controlled workflow. Property management automation should capture the dispatch context, watch for ETA changes, trigger the right resident update, route exceptions, and write the latest status back before your team gets buried in “Are they still coming?” calls.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. AI voice, SMS, maintenance coordination, vendor routing, resident updates, and property management CRM workflows should work as one visible ETA path so every schedule change produces the next action without staff rebuilding the same context across phones, inboxes, and work-order notes.\n\nIf your team still loses time to missed arrival windows, duplicate callbacks, residents waiting without updates, vendors arriving to the wrong access plan, or coordinators chasing the same status three times, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk, maintenance, and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do vendor ETA updates still create maintenance drag?\n\nBecause many teams handle arrival updates like loose follow-up instead of one controlled workflow. Property management automation should trigger the right resident communication, route exceptions, and sync the latest ETA before callbacks pile up.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #MaintenanceAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Vendor ETA workflow",
+      "title": "If vendor ETA updates still live in callbacks,",
+      "titleAccent": "the maintenance workflow is already too noisy.",
+      "body": "Arrival timing should move through one visible path before residents, coordinators, and vendors all start asking different versions of the same question. Loose ETA updates create avoidable calls, confusion, and missed access windows.",
+      "footer": "Swipe for the 6 rules behind cleaner vendor ETA communication",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Dispatch context",
+      "title": "The ETA workflow should start with the exact job context before anyone sends the first update.",
+      "body": "Unit, issue, trade, access plan, resident preference, priority, and appointment window should travel together so ETA messages are tied to the real work order instead of vague coordinator notes.",
+      "footer": "Goal: every ETA update should point to one clear visit context",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Update trigger",
+      "title": "The workflow should know when a vendor timing change actually requires a resident update.",
+      "body": "En route, running late, arrived, rescheduled, access blocked, parts delay, and no-response events should each trigger the next message or task automatically when the condition is clear.",
+      "footer": "Goal: timing changes should create the next action without manual triage",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Resident communication",
+      "title": "Residents should get one clear ETA path instead of piecing together status from voicemail, portal notes, and front-desk calls.",
+      "body": "Arrival window, vendor name, access instructions, prep step, delay notice, and reply path should travel in one clean message so the resident knows what is happening and what to do next.",
+      "footer": "Goal: one ETA message should reduce the next inbound call",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Exception routing",
+      "title": "Not every vendor delay belongs in the same queue once the workflow sees friction.",
+      "body": "Gate code issue, resident unavailable, wrong part, emergency reprioritization, vendor no-show, or approval hold should route with summary and owner attached before the delay spreads across the day.",
+      "footer": "Goal: the first human touch should start with context and authority",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Timer protection",
+      "title": "Timers should protect the visit before silence turns into another round of callbacks.",
+      "body": "Appointment window, late threshold, travel buffer, resident confirmation gap, no-arrival checkpoint, and unresolved exception age should all change urgency before the team notices the miss too late.",
+      "footer": "Goal: the clock should force clarity before trust drops",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "System write-back",
+      "title": "The ETA path is not complete until every team sees the same visit status.",
+      "body": "Latest ETA, resident contact result, access note, delay reason, assigned owner, and completion timestamp should write back immediately so front desk, maintenance, and ops are not reading different records.",
+      "footer": "Goal: one system should show whether the visit is still on track",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want maintenance visits to create",
+      "titleAccent": "less ETA chase and cleaner resident updates?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make front-desk and maintenance operations easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map",
+  "renderedAt": "2026-07-19T20:03:16.550Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-07-19-midday-vendor-eta-update-workflow-map/contact-sheet.png"
+}
