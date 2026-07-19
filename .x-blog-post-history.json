@@ -1015,6 +1015,496 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a43f882ce54b0fa29cb8ea9",
       "linkedInPostedAt": "2026-06-30T17:10:36.463Z"
+    },
+    "buildium-maintenance-intake-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-maintenance-intake-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-06-30T19:35:06.287Z",
+      "replyId": null,
+      "tweetId": "2072041253781316065",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a441a6bde06cec522e05b86",
+      "linkedInPostedAt": "2026-06-30T19:35:17.185Z"
+    },
+    "claude-science-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/claude-science-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-01T17:06:11.680Z",
+      "replyId": null,
+      "tweetId": "2072366166908002396",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a454904840395c560c5fa90",
+      "linkedInPostedAt": "2026-07-01T17:06:22.670Z"
+    },
+    "buildium-leasing-follow-up-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-leasing-follow-up-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-01T19:33:36.999Z",
+      "replyId": null,
+      "tweetId": "2072403266709684379",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a456b91881fa128a47909a2",
+      "linkedInPostedAt": "2026-07-01T19:33:47.833Z"
+    },
+    "ai-admin-workflow-property-management": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/ai-admin-workflow-property-management/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-02T17:06:55.469Z",
+      "replyId": null,
+      "tweetId": "2072728738509324705",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a469ab0c50ced23d9e8d012",
+      "linkedInPostedAt": "2026-07-02T17:07:06.431Z"
+    },
+    "buildium-tour-to-application-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-tour-to-application-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-02T19:35:58.924Z",
+      "replyId": null,
+      "tweetId": "2072766250225176959",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a46bd9fc7f3a3379f2ec506",
+      "linkedInPostedAt": "2026-07-02T19:36:09.781Z"
+    },
+    "nmhc-affordability-toolkit-apartment-lead-tracking": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/nmhc-affordability-toolkit-apartment-lead-tracking/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-03T17:07:31.840Z",
+      "replyId": null,
+      "tweetId": "2073091278917554423",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a47ec54c109183ee84684f0",
+      "linkedInPostedAt": "2026-07-03T17:07:42.597Z"
+    },
+    "buildium-approval-to-move-in-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-approval-to-move-in-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-03T19:35:39.509Z",
+      "replyId": null,
+      "tweetId": "2073128556532535495",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a480f0cf2d4081834445f99",
+      "linkedInPostedAt": "2026-07-03T19:35:50.349Z"
+    },
+    "microsoft-frontier-company-property-management-rollout": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/microsoft-frontier-company-property-management-rollout/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-04T17:05:46.008Z",
+      "replyId": null,
+      "tweetId": "2073453222488907795",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a493d6a9dd66bf2fd4fdf2c",
+      "linkedInPostedAt": "2026-07-04T17:05:56.713Z"
+    },
+    "buildium-lead-owner-assignment-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-lead-owner-assignment-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-04T19:34:17.282Z",
+      "replyId": null,
+      "tweetId": "2073490599496343679",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a496039c109183ee8515853",
+      "linkedInPostedAt": "2026-07-04T19:34:28.198Z"
+    },
+    "july-4-power-outages-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/july-4-power-outages-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-05T17:06:22.929Z",
+      "replyId": null,
+      "tweetId": "2073815764079976731",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4a8f0f9dd66bf2fd58aebc",
+      "linkedInPostedAt": "2026-07-05T17:06:33.749Z"
+    },
+    "buildium-owner-update-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-owner-update-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-05T19:35:25.220Z",
+      "replyId": null,
+      "tweetId": "2073853272494915665",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4ab1fd7e52c06f81bcd9ff",
+      "linkedInPostedAt": "2026-07-05T19:35:36.106Z"
+    },
+    "maintenance-staffing-workflow-property-management": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/maintenance-staffing-workflow-property-management/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-06T17:08:01.098Z",
+      "replyId": null,
+      "tweetId": "2074178565294158208",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4be0f1d4332909198c33e3",
+      "linkedInPostedAt": "2026-07-06T17:08:11.979Z"
+    },
+    "buildium-guest-card-creation-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-guest-card-creation-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-06T19:35:02.307Z",
+      "replyId": null,
+      "tweetId": "2074215564369649708",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4c036739b037baddfb914c",
+      "linkedInPostedAt": "2026-07-06T19:35:13.192Z"
+    },
+    "meta-ai-agent-slowdown-property-management-escalation": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/meta-ai-agent-slowdown-property-management-escalation/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-07T17:06:25.359Z",
+      "replyId": null,
+      "tweetId": "2074540551391551823",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4d3211b61c8b0fcf09fa54",
+      "linkedInPostedAt": "2026-07-07T17:06:36.194Z"
+    },
+    "buildium-renter-deduplication-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-renter-deduplication-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-07T19:34:42.753Z",
+      "replyId": null,
+      "tweetId": "2074577869838152118",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4d54d3996229369d8d04c6",
+      "linkedInPostedAt": "2026-07-07T19:34:53.563Z"
+    },
+    "apartments-com-ai-property-management-lead-tracking": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/apartments-com-ai-property-management-lead-tracking/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-08T17:06:24.742Z",
+      "replyId": null,
+      "tweetId": "2074902936774156714",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4e8391b657b31762e63776",
+      "linkedInPostedAt": "2026-07-08T17:06:35.699Z"
+    },
+    "buildium-no-show-recovery-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-no-show-recovery-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-08T19:36:03.770Z",
+      "replyId": null,
+      "tweetId": "2074940597530484914",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4ea6a47006796191a28871",
+      "linkedInPostedAt": "2026-07-08T19:36:14.647Z"
+    },
+    "openai-gpt-live-property-management-voice-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/openai-gpt-live-property-management-voice-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-09T17:04:53.398Z",
+      "replyId": null,
+      "tweetId": "2075264941733376155",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4fd4b6c3279d6f0da7fd38",
+      "linkedInPostedAt": "2026-07-09T17:05:04.273Z"
+    },
+    "buildium-incomplete-application-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-incomplete-application-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-09T19:34:46.546Z",
+      "replyId": null,
+      "tweetId": "2075302661532926103",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a4ff7d83c48e2c7b33f97ae",
+      "linkedInPostedAt": "2026-07-09T19:34:58.329Z"
+    },
+    "buildium-lead-status-sync-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-lead-status-sync-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-11T16:51:38.507Z",
+      "replyId": null,
+      "tweetId": "2075986380983861709",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a52749b8dcbd51dcbb5c4b9",
+      "linkedInPostedAt": "2026-07-11T16:51:49.717Z"
+    },
+    "openai-northslope-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/openai-northslope-property-management-workflows/",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a53ca6598dc012070385b80",
+      "linkedInPostedAt": "2026-07-12T17:10:07.746Z"
+    },
+    "buildium-tour-confirmation-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-tour-confirmation-workflow/",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a53ecce9372accfada6a80d",
+      "linkedInPostedAt": "2026-07-12T19:36:56.927Z"
+    },
+    "ai-inflation-property-management-workflow-roi": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/ai-inflation-property-management-workflow-roi/",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a551b89089cafdc9d4ae9e9",
+      "linkedInPostedAt": "2026-07-13T17:08:36.837Z"
+    },
+    "buildium-maintenance-scheduling-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-maintenance-scheduling-workflow/",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a553e650a91bd784c79d016",
+      "linkedInPostedAt": "2026-07-13T19:37:20.928Z"
+    },
+    "buildium-availability-sync-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-availability-sync-workflow/",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a569002556a2b06a6852179",
+      "linkedInPostedAt": "2026-07-14T19:37:48.941Z"
+    },
+    "zoom-ai-receptionist-property-management-call-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/zoom-ai-receptionist-property-management-call-workflows/",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a57be7519c19fc16b899258",
+      "linkedInPostedAt": "2026-07-15T17:08:15.650Z"
+    },
+    "buildium-conditional-approval-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-conditional-approval-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-15T19:35:34.283Z",
+      "replyId": null,
+      "tweetId": "2077477131659968703",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a57e0fb373042f385115f06",
+      "linkedInPostedAt": "2026-07-15T19:35:34.283Z"
+    },
+    "rime-property-management-call-to-guest-card-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/rime-property-management-call-to-guest-card-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-16T17:07:10.560Z",
+      "replyId": null,
+      "tweetId": "2077802186059223495",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a590fb409881a4964166477",
+      "linkedInPostedAt": "2026-07-16T17:07:10.563Z"
+    },
+    "buildium-notice-to-enter-coordination-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-notice-to-enter-coordination-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-16T19:35:09.345Z",
+      "replyId": null,
+      "tweetId": "2077839426407874851",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a593263763686fc6b47b929",
+      "linkedInPostedAt": "2026-07-16T19:35:09.345Z"
+    },
+    "texas-flooding-property-management-resident-update-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/texas-flooding-property-management-resident-update-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-17T17:07:28.891Z",
+      "replyId": null,
+      "tweetId": "2078164650848309556",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a5a6146658dbc323942ce13",
+      "linkedInPostedAt": "2026-07-17T17:07:28.894Z"
+    },
+    "buildium-waitlist-follow-up-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-waitlist-follow-up-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-17T19:35:53.289Z",
+      "replyId": null,
+      "tweetId": "2078201998956957923",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a5a840ffc7fce1db7017a8a",
+      "linkedInPostedAt": "2026-07-17T19:35:53.289Z"
+    },
+    "wildfire-smoke-tour-rescheduling-workflow-property-management": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/wildfire-smoke-tour-rescheduling-workflow-property-management/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-18T17:07:36.750Z",
+      "replyId": null,
+      "tweetId": "2078527072754913549",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a5bb2ce007d65c40903aa19",
+      "linkedInPostedAt": "2026-07-18T17:07:36.751Z"
+    },
+    "buildium-lease-addendum-signature-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-lease-addendum-signature-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-18T19:34:35.532Z",
+      "replyId": null,
+      "tweetId": "2078564052058382672",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a5bd53f6f2d83b688786078",
+      "linkedInPostedAt": "2026-07-18T19:34:35.532Z"
+    },
+    "falling-rents-apartment-lead-tracking-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/falling-rents-apartment-lead-tracking-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-19T17:06:47.526Z",
+      "replyId": null,
+      "tweetId": "2078889251752542622",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a5d041d7b8edcc469c7690a",
+      "linkedInPostedAt": "2026-07-19T17:06:47.527Z"
     }
   }
 }
