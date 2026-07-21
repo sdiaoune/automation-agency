@@ -1505,6 +1505,70 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a5d041d7b8edcc469c7690a",
       "linkedInPostedAt": "2026-07-19T17:06:47.527Z"
+    },
+    "buildium-utility-transfer-proof-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-utility-transfer-proof-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-19T19:35:50.923Z",
+      "replyId": null,
+      "tweetId": "2078926765121061287",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a5d270ca53093480225177a",
+      "linkedInPostedAt": "2026-07-19T19:35:50.923Z"
+    },
+    "openai-atlas-shutdown-property-management-workflow-rollout": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/openai-atlas-shutdown-property-management-workflow-rollout/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-20T17:06:18.148Z",
+      "replyId": null,
+      "tweetId": "2079251518079770949",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a5e557fe11f95ff2615e7fc",
+      "linkedInPostedAt": "2026-07-20T17:06:18.150Z"
+    },
+    "buildium-co-signer-document-collection-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-co-signer-document-collection-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-20T19:34:17.391Z",
+      "replyId": null,
+      "tweetId": "2079288760248762382",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a5e782f1f1d130c06dbccdf",
+      "linkedInPostedAt": "2026-07-20T19:34:17.391Z"
+    },
+    "ai-app-flood-property-management-workflow-governance": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/ai-app-flood-property-management-workflow-governance/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-21T17:06:31.828Z",
+      "replyId": null,
+      "tweetId": "2079613962962808931",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a5fa70d801f9f0e566a8593",
+      "linkedInPostedAt": "2026-07-21T17:06:31.829Z"
     }
   }
 }
