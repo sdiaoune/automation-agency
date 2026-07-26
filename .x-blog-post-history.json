@@ -1569,6 +1569,70 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a5fa70d801f9f0e566a8593",
       "linkedInPostedAt": "2026-07-21T17:06:31.829Z"
+    },
+    "buildium-renters-insurance-proof-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-renters-insurance-proof-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-21T19:34:11.193Z",
+      "replyId": null,
+      "tweetId": "2079651121832853898",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a5fc9a8541018bc20bb6034",
+      "linkedInPostedAt": "2026-07-21T19:34:11.193Z"
+    },
+    "washington-cooling-request-workflow-property-management": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/washington-cooling-request-workflow-property-management/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-22T17:08:08.370Z",
+      "replyId": null,
+      "tweetId": "2079976755339595869",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a60f8ed5964f6ebc32badae",
+      "linkedInPostedAt": "2026-07-22T17:08:08.371Z"
+    },
+    "buildium-work-order-closeout-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-work-order-closeout-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-22T19:34:15.099Z",
+      "replyId": null,
+      "tweetId": "2080013527104798726",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a611b2c10209b16ac87e58d",
+      "linkedInPostedAt": "2026-07-22T19:34:15.099Z"
+    },
+    "meta-daily-briefings-property-management-handoffs": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/meta-daily-briefings-property-management-handoffs/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-26T17:05:55.475Z",
+      "replyId": null,
+      "tweetId": "2081425749433590181",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a663e692df0a0f1fdd5f1cf",
+      "linkedInPostedAt": "2026-07-26T17:05:55.476Z"
     }
   }
 }
