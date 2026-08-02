@@ -1633,6 +1633,167 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a663e692df0a0f1fdd5f1cf",
       "linkedInPostedAt": "2026-07-26T17:05:55.476Z"
+    },
+    "buildium-unit-hold-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-unit-hold-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-26T19:34:44.347Z",
+      "replyId": null,
+      "tweetId": "2081463200684319124",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a66614a353caf726926beda",
+      "linkedInPostedAt": "2026-07-26T19:34:44.347Z"
+    },
+    "uber-ai-customer-service-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/uber-ai-customer-service-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-27T17:06:00.285Z",
+      "replyId": null,
+      "tweetId": "2081788156915974557",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a678fed089408ea037ab9cc",
+      "linkedInPostedAt": "2026-07-27T17:06:00.286Z"
+    },
+    "buildium-pet-screening-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-pet-screening-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-27T19:35:15.599Z",
+      "replyId": null,
+      "tweetId": "2081825719982682318",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a67b2e9ae149d82602ed709",
+      "linkedInPostedAt": "2026-07-27T19:35:15.599Z"
+    },
+    "openai-presence-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/openai-presence-property-management-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-28T17:08:06.715Z",
+      "replyId": null,
+      "tweetId": "2082151076858331599",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a68e1ec32fa2eaee36a284d",
+      "linkedInPostedAt": "2026-07-28T17:08:06.716Z"
+    },
+    "buildium-tour-rescheduling-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-tour-rescheduling-workflow/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-07-28T19:34:25.230Z",
+      "replyId": null,
+      "tweetId": "2082187896107213134",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a690437267cff140765782b",
+      "linkedInPostedAt": "2026-07-28T19:34:25.230Z"
+    },
+    "high-density-apartment-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/high-density-apartment-property-management-workflows/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-07-29T17:07:40.148Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a6a33514e9875a1f4f228d3",
+      "linkedInPostedAt": "2026-07-29T17:07:40.149Z"
+    },
+    "buildium-income-verification-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-income-verification-workflow/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-07-29T19:35:25.517Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a6a55f3741fe65687afc781",
+      "linkedInPostedAt": "2026-07-29T19:35:25.518Z"
+    },
+    "hint-home-maintenance-property-management-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/hint-home-maintenance-property-management-workflows/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-07-30T17:06:41.146Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a6b8496ea32684715540bc5",
+      "linkedInPostedAt": "2026-07-30T17:06:41.147Z"
+    },
+    "property-management-crm-field-discipline-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/property-management-crm-field-discipline-workflow/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-07-30T19:34:59.506Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a6ba759392f4c70ec335bb4",
+      "linkedInPostedAt": "2026-07-30T19:34:59.506Z"
+    },
+    "smallest-ai-property-management-voice-response-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/smallest-ai-property-management-voice-response-workflow/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-07-31T17:07:12.510Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a6cd636ebe00edff558b613",
+      "linkedInPostedAt": "2026-07-31T17:07:12.511Z"
+    },
+    "buildium-lease-signing-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-lease-signing-workflow/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-07-31T19:34:58.854Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a6cf8d8ebe00edff55a64d2",
+      "linkedInPostedAt": "2026-07-31T19:34:58.854Z"
+    },
+    "high-urgency-renter-lead-routing-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/high-urgency-renter-lead-routing-workflow/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-08-01T17:06:29.040Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a6e278af93d764d938f40f1",
+      "linkedInPostedAt": "2026-08-01T17:06:29.041Z"
+    },
+    "buildium-parking-permit-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-parking-permit-workflow/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-08-01T19:36:26.622Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a6e4ab0c54cb283664ccad0",
+      "linkedInPostedAt": "2026-08-01T19:36:26.623Z"
+    },
+    "meta-personal-agent-leasing-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/meta-personal-agent-leasing-workflows/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-08-02T17:07:02.004Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a6f792b1b4d436cc319034b",
+      "linkedInPostedAt": "2026-08-02T17:07:02.005Z"
     }
   }
 }
