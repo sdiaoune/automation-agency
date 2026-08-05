@@ -1,22 +1,41 @@
-# Daily EMC2Ops News-Cycle Blog Post
+# Daily EMC2Ops news-cycle blog post memory
 
-## 2026-08-02 Run
+- Run date: 2026-08-04
+- Selected news hook: OpenAI's July 31, 2026 "Building abundant intelligence" update saying its models now reach more than 1 billion active users and more than 2 million businesses.
+- Article title: OpenAI's Billion-User Milestone Is a Leasing Follow-Up Warning for Property Managers
+- Slug: openai-billion-users-property-management-leasing-follow-up
+- Public URL: https://www.emc2ops.com/blog/openai-billion-users-property-management-leasing-follow-up/
+- Body word count: 1333
+- Internal blog link count: 12
+- Validation status: `npm run blog:validate` passed; `npm run content:preflight -- --slug openai-billion-users-property-management-leasing-follow-up` passed.
+- Build status: `npm run build` passed locally and on Vercel.
+- SEO status: `npm run seo:validate` passed overall with pre-existing title/description length warnings on other pages.
+- Deploy status: `npx vercel --prod --yes` passed; production alias confirmed on https://www.emc2ops.com.
+- Social hook: If AI now reaches 1 billion active users, 'we'll call that renter tomorrow' is not a neutral leasing workflow anymore.
+- Custom social image path: /blog/social-assets/openai-billion-users-property-management-leasing-follow-up.png
+- Twitter card image verification: Confirmed live `twitter:image` and `og:image` point to `https://www.emc2ops.com/blog/social-assets/openai-billion-users-property-management-leasing-follow-up.png`, not `/og-image.png`.
+- X posting status: Failed. Publisher reported `credits depleted [HTTP 402; https://api.x.com/2/problems/credits-depleted; Payment Required]`, then `Direct X link post failed: Your client app is not configured with the appropriate oauth1 app permissions for this endpoint.`, and final result `X failed: fetch failed`.
+- LinkedIn posting status: Succeeded via Buffer (`linkedInMethod: buffer-shareNow`, `linkedInPostId: 6a721c1ae65a56ea413e5f02`, posted at `2026-08-04T17:06:44.506Z`).
+- Git status: Selective commit created for the new article and social card only: `ce1981d` (`Add daily news-cycle blog post: OpenAI's Billion-User Milestone Is a Leasing Follow-Up Warning for Property Managers`). Existing unrelated working-tree changes were left untouched.
+- Concise summary: Wrote and published one leasing-follow-up article around OpenAI's billion-user milestone, generated a custom social card, verified live card metadata, posted successfully to LinkedIn, and left X unforced after platform-side failures.
+- Current run time: ~18 minutes.
 
-- Run date: 2026-08-02
-- Local completion time: 2026-08-02 13:07:12 EDT
-- Approx. run time: 4m 40s
-- Selected news hook: Meta's July 29, 2026 Q2 earnings push around personal AI agents and broader enterprise AI opportunity
-- Article title: Meta's Personal Agent Push Is a Leasing Workflow Warning for Property Managers
-- Slug: `meta-personal-agent-leasing-workflows`
-- Public URL: https://www.emc2ops.com/blog/meta-personal-agent-leasing-workflows/
-- Body word count: 1386
-- Internal blog link count: 14
-- Social hook: Meta just previewed personal AI agents. If your leasing workflow still needs three touches to offer one tour, the market is moving faster than your front desk.
-- Custom social image path: `/blog/social-assets/meta-personal-agent-leasing-workflows.png`
-- Twitter card image verification: passed
-- Verified `twitter:image`: `https://www.emc2ops.com/blog/social-assets/meta-personal-agent-leasing-workflows.png`
-- Validation status: `npm run blog:validate` passed; `npm run content:preflight -- --slug meta-personal-agent-leasing-workflows` passed; `npm run build` passed; `npm run seo:validate` passed
-- Deploy status: `npx vercel --prod --yes` succeeded; production aliased to https://www.emc2ops.com
-- LinkedIn posting status: success via Buffer `shareNow`; post id `6a6f792b1b4d436cc319034b`
-- X posting status: failed; initial X link post returned credits-depleted `HTTP 402`, direct OAuth1 retry failed due to app permissions, localhost fallback ended with `fetch failed`
-- Blockers: X publishing remains blocked by account/platform configuration; do not force duplicate retries until credits/permissions are fixed
+- Run date: 2026-08-05
+- Selected news hook: Reports published on August 4 and August 5, 2026 that Google will begin removing Google Assistant access on Android phones, tablets, and paired devices starting September 4, 2026 as Gemini becomes the default assistant path.
+- Article title: Google Assistant's Shutdown Date Is a Missed-Call Workflow Warning for Property Managers
+- Slug: google-assistant-shutdown-property-management-missed-call-workflows
+- Public URL: https://www.emc2ops.com/blog/google-assistant-shutdown-property-management-missed-call-workflows/
+- Body word count: 1370
+- Internal blog link count: 13
+- Validation status: `npm run blog:validate` passed; `npm run content:preflight -- --slug google-assistant-shutdown-property-management-missed-call-workflows` passed.
+- Build status: `npm run build` passed locally and on Vercel.
+- SEO status: `npm run seo:validate` passed overall with pre-existing title/description length warnings on other pages.
+- Deploy status: `npx vercel --prod --yes` passed; production alias confirmed on https://www.emc2ops.com.
+- Social hook: Google just put a shutdown date on its old assistant. Property managers still relying on voicemail just got a clearer leasing warning.
+- Custom social image path: /blog/social-assets/google-assistant-shutdown-property-management-missed-call-workflows.png
+- Twitter card image verification: Confirmed live `twitter:image` points to `https://www.emc2ops.com/blog/social-assets/google-assistant-shutdown-property-management-missed-call-workflows.png`, not `/og-image.png`.
+- X posting status: Succeeded (`postId: 2085049852086424013`, method `oauth2-link-post`).
+- LinkedIn posting status: Succeeded via Buffer (`linkedInMethod: buffer-shareNow`, `linkedInPostId: 6a736d9e5d00aad4b870c709`).
+- Git status: Scoped commit pending for the new article, generated social card, updated posting history, and automation memory only; unrelated working-tree changes remain untouched.
+- Concise summary: Wrote and published one missed-call workflow article around Google's Assistant shutdown date, generated a custom social card, verified the live card image, and posted successfully to both X and LinkedIn.
+- Current run time: ~22 minutes.

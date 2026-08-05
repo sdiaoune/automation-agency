@@ -1794,6 +1794,67 @@
       "linkedInMethod": "buffer-shareNow",
       "linkedInPostId": "6a6f792b1b4d436cc319034b",
       "linkedInPostedAt": "2026-08-02T17:07:02.005Z"
+    },
+    "buildium-key-pickup-coordination-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-key-pickup-coordination-workflow/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-08-02T19:36:11.371Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a6f9c21aacd241cfdaff372",
+      "linkedInPostedAt": "2026-08-02T19:36:11.372Z"
+    },
+    "spokane-wildfires-property-management-resident-update-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/spokane-wildfires-property-management-resident-update-workflows/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-08-03T17:06:46.767Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a70ca9c872bd7c7415ea16c",
+      "linkedInPostedAt": "2026-08-03T17:06:46.768Z"
+    },
+    "property-management-vacant-unit-inquiry-routing-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/property-management-vacant-unit-inquiry-routing-workflow/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-08-03T19:36:14.542Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a70eda4872bd7c741608354",
+      "linkedInPostedAt": "2026-08-03T19:36:14.543Z"
+    },
+    "openai-billion-users-property-management-leasing-follow-up": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/openai-billion-users-property-management-leasing-follow-up/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-08-04T17:06:44.506Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a721c1ae65a56ea413e5f02",
+      "linkedInPostedAt": "2026-08-04T17:06:44.506Z"
+    },
+    "buildium-missed-call-follow-up-workflow": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/buildium-missed-call-follow-up-workflow/",
+      "xLastError": "fetch failed",
+      "xLastFailedAt": "2026-08-04T19:35:56.733Z",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a723f12beaf5fe35550d74d",
+      "linkedInPostedAt": "2026-08-04T19:35:56.734Z"
+    },
+    "google-assistant-shutdown-property-management-missed-call-workflows": {
+      "imagePath": "",
+      "url": "https://www.emc2ops.com/blog/google-assistant-shutdown-property-management-missed-call-workflows/",
+      "mediaCapability": {
+        "lastCheckedAt": "2026-06-28T19:40:19.352Z",
+        "status": "unsupported",
+        "reason": "oauth1 media upload forbidden: X media upload returned 403."
+      },
+      "method": "oauth2-link-post",
+      "postedAt": "2026-08-05T17:06:48.663Z",
+      "replyId": null,
+      "tweetId": "2085049852086424013",
+      "linkedInMethod": "buffer-shareNow",
+      "linkedInPostId": "6a736d9e5d00aad4b870c709",
+      "linkedInPostedAt": "2026-08-05T17:06:48.664Z"
     }
   }
 }
