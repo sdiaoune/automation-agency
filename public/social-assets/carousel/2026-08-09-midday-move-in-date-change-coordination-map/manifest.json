@@ -1,0 +1,139 @@
+{
+  "date": "2026-08-09",
+  "slot": "midday",
+  "slug": "move-in-date-change-coordination-map",
+  "topic": "Move-in date change coordination map for property managers",
+  "hook": "If one move-in date change still breaks leasing, keys, utilities, and vendor timing, the handoff workflow is already leaking time.",
+  "captionInstagram": "Why do move-in date changes still create so much front-desk drag for property managers?\n\nBecause many teams handle a date change like a few scattered updates instead of one controlled coordination workflow. Property management automation should capture the change reason, confirm the policy lane, recalculate the downstream tasks, trigger the right resident message, route the right exceptions, and write the live status back before the team starts chasing the same file across inboxes, calendars, and notes.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. AI voice, SMS, leasing coordination, make-ready scheduling, utility follow-up, and property management CRM workflows should work as one visible move-in-change path so every date shift produces the next action automatically.\n\nIf your team still loses time to missed key handoffs, stale welcome messages, cleaners or vendors booked for the wrong day, utilities still tied to the old schedule, or residents hearing different answers from leasing and operations, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk, leasing, and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do move-in date changes still create so much front-desk drag?\n\nBecause many teams handle a date shift like scattered follow-up instead of one controlled workflow. Property management automation should confirm the policy lane, trigger the right resident message, reschedule dependent tasks, and sync the live status before staff start chasing the file by hand.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #LeasingAutomation #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Move-in change workflow",
+      "title": "If one move-in date change still restarts the whole office,",
+      "titleAccent": "the coordination workflow is too loose.",
+      "body": "A date change should open one controlled path for request capture, approval rules, task rescheduling, resident updates, and CRM truth before the next handoff breaks.",
+      "footer": "Swipe for the 6 rules behind cleaner move-in change coordination",
+      "visual": "inbox"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Request capture",
+      "title": "The workflow should know what changed before staff starts moving tasks around.",
+      "body": "Old date, new target date, reason for change, resident status, unit status, and urgency should land in one intake record instead of loose calls, texts, and notes.",
+      "footer": "Goal: every date change should start with one clean request record",
+      "visual": "signal"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Policy lane",
+      "title": "The file should branch by the real move-in scenario instead of one generic reschedule label.",
+      "body": "Applicant delay, property delay, utility issue, inspection hold, unit-ready problem, or resident-requested switch should each carry a specific approval path and next owner.",
+      "footer": "Goal: the workflow should know which move-in lane it is actually in",
+      "visual": "checklist"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Resident update",
+      "title": "Residents should get one clear next-step message without leasing rewriting the same explanation each time.",
+      "body": "Confirmed date, required documents, key timing, utility expectations, access instructions, and escalation path should branch from the real lane so everyone hears one answer.",
+      "footer": "Goal: one state should trigger one consistent resident update",
+      "visual": "phone"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Task reschedule",
+      "title": "A move-in date change should automatically shift the downstream work instead of leaving teams to remember every dependency.",
+      "body": "Make-ready, cleaning, vendor access, lockbox prep, key pickup, inspection timing, welcome sequence, and utility reminders should all move from the same source change.",
+      "footer": "Goal: one date change should update every dependent task",
+      "visual": "calendar"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Exception routing",
+      "title": "The workflow should know when a date change needs a human decision instead of more automated nudges.",
+      "body": "Lease-signature gap, rent-ready dispute, owner approval issue, utility mismatch, same-day switch, or unit-readiness risk should route to the right owner with context attached.",
+      "footer": "Goal: exceptions should move to a named owner before confusion spreads",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "System write-back",
+      "title": "Coordination is not complete until leasing, operations, and the CRM show the same live move-in reality.",
+      "body": "Active date, approval state, changed tasks, resident message status, next owner, and blocking issue should write back immediately so teams stop working from different versions.",
+      "footer": "Goal: everyone should read from one live move-in schedule",
+      "visual": "merge"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want fewer move-in handoff misses and",
+      "titleAccent": "cleaner front-desk coordination?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make leasing, front-desk, and operations easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "directory": "2026-08-09-midday-move-in-date-change-coordination-map",
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map",
+  "renderedAt": "2026-08-09T20:03:48.715Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-09-midday-move-in-date-change-coordination-map/contact-sheet.png"
+}
