@@ -1,0 +1,148 @@
+{
+  "date": "2026-08-10",
+  "slot": "midday",
+  "slug": "utility-shutoff-warning-response-map",
+  "topic": "Utility shutoff warning response map for property managers",
+  "hook": "If one utility shutoff warning still turns into scattered calls, stale notes, and same-day scrambling, the response workflow is already leaking risk.",
+  "captionInstagram": "Why do utility shutoff warnings still create so much front-desk drag for property managers?\n\nBecause many teams treat a shutoff warning like a one-off resident complaint instead of a controlled response workflow. Property management automation should detect the true utility issue, confirm the account and occupancy context, trigger the right resident update, route the right exception, and write the live outcome back before the same warning turns into repeat calls, missed deadlines, or avoidable habitability risk.\n\nThis is where an AI front desk for property managers becomes operational leverage instead of just faster messaging. AI voice, SMS, resident communication, accounting coordination, utility follow-up, and property management CRM workflows should work as one visible shutoff-warning path so every case has a clear owner, a clear timer, and a clear next action.\n\nIf your team still loses time to unclear responsibility, duplicate callbacks, disconnected resident promises, shutoff dates buried in inboxes, accounting notes that never reach site teams, or residents hearing different answers from operations and the front desk, the issue is not effort. The workflow is weak.\n\nEMC2Ops installs done-for-you property management automation for front-desk, accounting, and operations teams across the U.S.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #ResidentCommunication #AIFrontDesk #CRMWorkflows #PropertyManagement",
+  "captionFacebook": "Why do utility shutoff warnings still create so much front-desk drag?\n\nBecause many teams handle utility threats like inbox cleanup instead of one controlled workflow. Property management automation should confirm the issue, route the right owner, trigger the right resident update, and sync the live status before shutoff risk gets closer.\n\nBook a 15-minute workflow audit at https://www.emc2ops.com/\n\n#PropertyManagementAutomation #ResidentCommunication #AIFrontDesk #CRMWorkflows",
+  "slides": [
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "Utility warning workflow",
+      "title": "If one utility shutoff warning still restarts the whole office,",
+      "titleAccent": "the response workflow is too loose.",
+      "body": "A shutoff warning should open one controlled path for issue classification, deadline control, resident communication, exception routing, and system truth before the risk gets closer.",
+      "footer": "Swipe for the 6 rules behind cleaner utility shutoff response",
+      "visual": "route"
+    },
+    {
+      "eyebrow": "Rule 01",
+      "kicker": "Issue classification",
+      "title": "The workflow should know what utility problem exists before staff starts promising fixes.",
+      "body": "Electric, water, gas, common-area service, resident-held account, owner-paid account, billing error, missed transfer, or reconnect failure should each split into one named response lane immediately.",
+      "footer": "Goal: every warning should open inside one exact issue lane",
+      "visual": "grid"
+    },
+    {
+      "eyebrow": "Rule 02",
+      "kicker": "Context check",
+      "title": "The case should show the real account and occupancy context instead of one vague urgent note.",
+      "body": "Service address, unit, resident status, payer responsibility, shutoff date, balance state, prior promise, and active lease context should land in one visible record before work starts.",
+      "footer": "Goal: the team should read one shared utility-risk record",
+      "visual": "score"
+    },
+    {
+      "eyebrow": "Rule 03",
+      "kicker": "Resident update",
+      "title": "Residents should get one clear next-step message without site teams rewriting the same explanation.",
+      "body": "Utility type, risk date, required action, payment or transfer instruction, documentation request, and escalation path should branch from the true case state so everyone hears one answer.",
+      "footer": "Goal: one state should trigger one consistent resident update",
+      "visual": "stack"
+    },
+    {
+      "eyebrow": "Rule 04",
+      "kicker": "Owner routing",
+      "title": "The warning should reach the right human lane before deadline pressure turns into office chaos.",
+      "body": "Front desk, accounting, property manager, utility coordinator, vendor, or emergency after-hours owner should receive the case with balance, deadline, and responsibility context already attached.",
+      "footer": "Goal: the first human handoff should start with full context",
+      "visual": "handoff"
+    },
+    {
+      "eyebrow": "Rule 05",
+      "kicker": "Timer control",
+      "title": "Shutoff risk should age by rules instead of relying on memory, sticky notes, and callback luck.",
+      "body": "Same-day warning, proof requested, payment pending, transfer in progress, utility callback due, and final escalation timer should all trigger automatically before the deadline gets missed.",
+      "footer": "Goal: every warning should move on controlled timers",
+      "visual": "timer"
+    },
+    {
+      "eyebrow": "Rule 06",
+      "kicker": "System write-back",
+      "title": "The case is not complete until operations, accounting, and the CRM show the same live utility reality.",
+      "body": "Issue type, responsibility lane, resident status, shutoff date, assigned owner, last update, and resolved outcome should write back immediately so teams stop chasing facts across systems.",
+      "footer": "Goal: everyone should work from one live utility status",
+      "visual": "bars"
+    },
+    {
+      "eyebrow": "EMC2Ops",
+      "kicker": "15-minute workflow audit",
+      "title": "Want fewer utility-warning scrambles and",
+      "titleAccent": "cleaner front-desk coordination?",
+      "body": "We install practical AI voice, SMS, routing, and CRM workflows that make front-desk, accounting, and operations easier to run.",
+      "footer": "Book your workflow audit at emc2ops.com",
+      "visual": "cta"
+    }
+  ],
+  "outputDir": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map",
+  "renderedAt": "2026-08-10T20:05:00.224Z",
+  "slidePaths": [
+    {
+      "fileName": "slide-1.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-1.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-1.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-2.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-2.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-2.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-3.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-3.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-3.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-4.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-4.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-4.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-5.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-5.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-5.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-6.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-6.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-6.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-7.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-7.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-7.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "fileName": "slide-8.png",
+      "filePath": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-8.png",
+      "relativeUrl": "/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-8.png",
+      "width": 1080,
+      "height": 1350
+    }
+  ],
+  "contactSheet": "/Users/diaoune/automation-agency/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/contact-sheet.png",
+  "slideUrls": [
+    "https://raw.githubusercontent.com/sdiaoune/automation-agency/carousel-assets/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-1.png",
+    "https://raw.githubusercontent.com/sdiaoune/automation-agency/carousel-assets/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-2.png",
+    "https://raw.githubusercontent.com/sdiaoune/automation-agency/carousel-assets/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-3.png",
+    "https://raw.githubusercontent.com/sdiaoune/automation-agency/carousel-assets/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-4.png",
+    "https://raw.githubusercontent.com/sdiaoune/automation-agency/carousel-assets/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-5.png",
+    "https://raw.githubusercontent.com/sdiaoune/automation-agency/carousel-assets/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-6.png",
+    "https://raw.githubusercontent.com/sdiaoune/automation-agency/carousel-assets/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-7.png",
+    "https://raw.githubusercontent.com/sdiaoune/automation-agency/carousel-assets/public/social-assets/carousel/2026-08-10-midday-utility-shutoff-warning-response-map/slide-8.png"
+  ]
+}
