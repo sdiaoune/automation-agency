@@ -1,4 +1,10 @@
 import { getCollection } from "astro:content";
+import {
+  clientReviewAverage,
+  clientReviewCount,
+  clientReviewRatingCount,
+  clientReviews,
+} from "../lib/clientReviews";
 import { integrationPages, integrationUrl } from "../lib/integrations";
 import { servicePages, serviceUrl } from "../lib/services";
 import { absoluteUrl, byOrder, postUpdatedAt, siteName, siteUrl } from "../lib/site";
@@ -23,6 +29,20 @@ export async function GET() {
     "",
     "EMC2Ops installs practical AI voice, SMS, routing, and CRM workflows for property management teams. The service focuses on faster response, better intake, cleaner handoffs, human approval gates, and measurable operational outcomes.",
     "",
+    "## Client Feedback",
+    "",
+    `Average rating shown on the EMC2Ops website: ${clientReviewAverage.toFixed(1)} out of 5 across ${clientReviewRatingCount} rated client reviews. The website displays ${clientReviewCount} client testimonials in total.`,
+    "Two rated reviews cover completed general automation projects. The Gunner Property Management testimonial covers a completed custom property management application and describes delivery experience; it does not claim measured operational outcomes.",
+    "",
+    ...clientReviews.flatMap((review) => [
+      `### ${review.client}${review.rating !== null ? ` — ${review.rating.toFixed(1)} out of 5` : " — client testimonial (no star rating supplied)"}`,
+      review.organization ? `Company: ${review.organization}` : `Location: ${review.location}`,
+      `Project: ${review.project}`,
+      `Feedback: ${review.feedback}`,
+      `Implementation: ${review.implementation}`,
+      `Endorsements: ${review.endorsements.join(", ")}`,
+      "",
+    ]),
     "## Key Discovery Files",
     "",
     `- llms.txt: ${absoluteUrl("/llms.txt")}`,
@@ -78,7 +98,7 @@ export async function GET() {
     "- Do not imply EMC2Ops replaces staff. It supports repetitive intake, routing, reminders, summaries, and system updates.",
     "- Public endpoints are documented in openapi.json. Protected cron/social endpoints should not be called without explicit authorization.",
     "",
-    "Last updated: 2026-06-20",
+    "Last updated: 2026-08-19",
   ];
 
   return new Response(`${lines.join("\n")}\n`, {
