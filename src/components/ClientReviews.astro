@@ -1,0 +1,79 @@
+---
+import {
+  clientReviewAverage,
+  clientReviewCount,
+  clientReviewRatingCount,
+  clientReviews,
+} from "../lib/clientReviews";
+import "../styles/client-reviews.css";
+
+interface Props {
+  id?: string;
+}
+
+const { id = "client-reviews" } = Astro.props;
+const headingId = `${id}-heading`;
+---
+
+<section class="client-reviews-section" id={id} aria-labelledby={headingId}>
+  <div class="wrap">
+    <div class="client-reviews-head">
+      <div>
+        <p class="eyebrow">Client feedback</p>
+        <h2 id={headingId}>Feedback from clients who hired Soya and EMC2Ops to build working systems.</h2>
+        <p>
+          These projects include a custom property management application, AI scheduling, calendars,
+          and systems integration.
+        </p>
+      </div>
+      <div
+        class="client-reviews-summary"
+        aria-label={`${clientReviewAverage.toFixed(1)} out of 5 stars across ${clientReviewRatingCount} rated reviews; ${clientReviewCount} client testimonials total`}
+      >
+        <span aria-hidden="true">★★★★★</span>
+        <strong>{clientReviewAverage.toFixed(1)}</strong>
+        <small>{clientReviewRatingCount} rated reviews · {clientReviewCount} testimonials</small>
+      </div>
+    </div>
+
+    <div class="client-reviews-grid">
+      {
+        clientReviews.map((review) => (
+          <article class="client-review-card">
+            {review.rating !== null ? (
+              <div class="client-review-rating" aria-label={`${review.rating} out of 5 stars`}>
+                <span aria-hidden="true">★★★★★</span>
+                <strong>{review.rating.toFixed(1)}</strong>
+              </div>
+            ) : (
+              <div class="client-review-rating client-review-rating--testimonial">
+                <span>Client testimonial</span>
+              </div>
+            )}
+
+            <div class="client-review-client">
+              <span>Client</span>
+              <strong>{review.client}</strong>
+              <small>{review.organization ?? review.location}</small>
+            </div>
+
+            <div class="client-review-feedback">
+              <span>Client feedback</span>
+              <p>{review.feedback}</p>
+            </div>
+
+            <div class="client-review-project">
+              <span>What EMC2Ops implemented</span>
+              <h3>{review.project}</h3>
+              <p>{review.implementation}</p>
+            </div>
+
+            <ul aria-label={`${review.client} endorsements`}>
+              {review.endorsements.map((endorsement) => <li>{endorsement}</li>)}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

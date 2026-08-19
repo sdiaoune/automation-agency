@@ -1,0 +1,218 @@
+.client-reviews-section {
+  background:
+    radial-gradient(circle at 92% 8%, oklch(var(--brand-l) var(--brand-c) var(--brand-h) / .11), transparent 30rem),
+    var(--section-muted-bg);
+  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  padding: 80px 0;
+}
+
+.client-reviews-head {
+  align-items: end;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.client-reviews-head h2 {
+  color: var(--foreground);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  letter-spacing: -.04em;
+  line-height: 1.05;
+  margin: 18px 0 0;
+  max-width: 850px;
+  text-wrap: balance;
+}
+
+.client-reviews-head > div:first-child > p:last-child {
+  color: var(--muted);
+  font-size: 1.02rem;
+  margin: 18px 0 0;
+  max-width: 760px;
+}
+
+.client-reviews-summary {
+  align-items: center;
+  border-left: 3px solid var(--primary);
+  display: grid;
+  gap: 3px 14px;
+  grid-template-columns: auto auto;
+  min-width: 210px;
+  padding: 3px 0 3px 22px;
+}
+
+.client-reviews-summary span,
+.client-review-rating span {
+  color: var(--primary);
+  font-size: 1.05rem;
+  letter-spacing: .08em;
+  line-height: 1;
+}
+
+.client-reviews-summary strong {
+  color: var(--foreground);
+  font-size: 2.25rem;
+  letter-spacing: -.04em;
+  line-height: 1;
+}
+
+.client-reviews-summary small {
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 780;
+  grid-column: 1 / -1;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.client-reviews-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr));
+  margin-top: 42px;
+}
+
+.client-review-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  min-height: 440px;
+  padding: 28px;
+}
+
+.client-review-rating {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.client-review-rating strong {
+  color: var(--foreground);
+  font-size: .95rem;
+}
+
+.client-review-rating--testimonial span {
+  font-size: .7rem;
+  font-weight: 830;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.client-review-client {
+  align-items: baseline;
+  column-gap: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 22px;
+  row-gap: 4px;
+}
+
+.client-review-client > span,
+.client-review-feedback > span,
+.client-review-project > span {
+  color: var(--primary);
+  font-size: .68rem;
+  font-weight: 830;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.client-review-client > span {
+  grid-column: 1 / -1;
+}
+
+.client-review-client strong {
+  color: var(--foreground);
+  font-size: 1.08rem;
+}
+
+.client-review-client small {
+  color: var(--muted);
+  font-size: .78rem;
+}
+
+.client-review-feedback {
+  margin: 24px 0 28px;
+}
+
+.client-review-feedback p {
+  color: var(--foreground);
+  font-size: 1.16rem;
+  letter-spacing: -.015em;
+  line-height: 1.5;
+  margin: 9px 0 0;
+}
+
+.client-review-project {
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+  padding-top: 19px;
+}
+
+.client-review-project h3 {
+  color: var(--foreground);
+  font-family: var(--font-display);
+  font-size: .94rem;
+  line-height: 1.4;
+  margin: 7px 0 0;
+}
+
+.client-review-project p {
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.6;
+  margin: 9px 0 0;
+}
+
+.client-review-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
+  margin: 17px 0 0;
+  padding: 0;
+}
+
+.client-review-card li {
+  background: var(--accent-soft);
+  border: 1px solid oklch(var(--brand-l) var(--brand-c) var(--brand-h) / .2);
+  border-radius: 999px;
+  color: var(--accent-soft-foreground);
+  font-size: .68rem;
+  font-weight: 700;
+  padding: 6px 9px;
+}
+
+@media (max-width: 820px) {
+  .client-reviews-head,
+  .client-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-reviews-head {
+    align-items: start;
+    gap: 28px;
+  }
+
+  .client-review-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .client-reviews-section {
+    padding: 58px 0;
+  }
+
+  .client-review-card {
+    padding: 22px;
+  }
+
+  .client-review-client {
+    grid-template-columns: 1fr;
+  }
+}
