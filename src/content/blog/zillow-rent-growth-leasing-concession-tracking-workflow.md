@@ -60,7 +60,7 @@ related:
   - "buildium-leasing-follow-up-suppression-workflow"
   - "falling-rents-apartment-lead-tracking-workflow"
   - "renters-market-property-management-leasing-follow-up"
-  - "slowing-apartment-supply-property-management-leasing-follow-up"
+  - "apartments-com-ai-property-management-lead-tracking"
 socialHook: "Rents rose 2.3%. Deals stayed on 39.8% of listings. CRM needs both."
 socialImage: "/blog/social-assets/zillow-rent-growth-leasing-concession-tracking-workflow.png"
 ---
@@ -143,7 +143,7 @@ Offer accuracy depends on adjacent workflows staying aligned:
 - Add [leasing follow-up suppression rules](/blog/buildium-leasing-follow-up-suppression-workflow/) so expired offers and resolved records do not keep generating nudges.
 - Review the earlier [falling-rents apartment lead-tracking lesson](/blog/falling-rents-apartment-lead-tracking-workflow/) for the broader case against blaming market conditions for missing pipeline ownership.
 - Compare the [renter's-market leasing follow-up workflow](/blog/renters-market-property-management-leasing-follow-up/) with the newer rent-growth signal without assuming every community moved in the same direction.
-- Use the [slowing apartment supply workflow lesson](/blog/slowing-apartment-supply-property-management-leasing-follow-up/) to keep market forecasts separate from today's property-level lead response.
+- Review how [Apartments.com AI shifts where apartment lead tracking begins](/blog/apartments-com-ai-property-management-lead-tracking/) when the listing experience shapes renter intent before a guest card exists.
 - Start with [property management automation tasks that produce measurable handoffs](/blog/property-management-automation-tasks/) when the portfolio has too many disconnected fixes competing for attention.
 
 ## Metrics that show whether the workflow works
