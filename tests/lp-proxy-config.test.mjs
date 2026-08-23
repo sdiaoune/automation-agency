@@ -34,6 +34,7 @@ test("LP proxy allows the current deployed first-party asset set without proxyin
     "/assets/root-CLjlgIa6.js",
     "/assets/lib-ChiNR1J4.js",
     "/assets/lp._slug-_Qb1yElH.js",
+    "/assets/home-CBw0Loct.js",
     "/assets/building-2-CY5AdSoh.js",
     "/assets/wrench-B207yrAV.js",
     "/assets/root-BW2LrLS9.css",

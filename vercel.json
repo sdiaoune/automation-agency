@@ -19,7 +19,7 @@
       "dest": "https://emc2ops-pm-ops.vercel.app/assets/$1"
     },
     {
-      "src": "/assets/(entry\\.client-Dk0KuByq\\.js|jsx-runtime-CGvjSJw6\\.js|root-CLjlgIa6\\.js|lib-ChiNR1J4\\.js|lp\\._slug-_Qb1yElH\\.js|building-2-CY5AdSoh\\.js|wrench-B207yrAV\\.js|root-BW2LrLS9\\.css|lp-BuVUsHAJ\\.css)",
+      "src": "/assets/(entry\\.client-Dk0KuByq\\.js|jsx-runtime-CGvjSJw6\\.js|root-CLjlgIa6\\.js|lib-ChiNR1J4\\.js|lp\\._slug-_Qb1yElH\\.js|home-CBw0Loct\\.js|building-2-CY5AdSoh\\.js|wrench-B207yrAV\\.js|root-BW2LrLS9\\.css|lp-BuVUsHAJ\\.css)",
       "dest": "https://emc2ops-pm-ops.vercel.app/assets/$1"
     }
   ],
