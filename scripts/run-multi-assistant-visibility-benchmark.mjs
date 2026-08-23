@@ -133,6 +133,11 @@ export function resolveVisibilityMode(querySet, requestedMode = null) {
   return { mode, policy: modes[mode], legacy: false };
 }
 
+function containsEmc2OpsSeed(value) {
+  const normalized = String(value).normalize("NFKC");
+  return /(^|[^a-z0-9])e\s*m\s*c\s*2\s*o\s*p\s*s(?:\s*\.\s*c\s*o\s*m)?(?=$|[^a-z0-9])/i.test(normalized);
+}
+
 export function validateVisibilityMode({ querySet, requestedMode = null, outputDir = null }) {
   const resolved = resolveVisibilityMode(querySet, requestedMode);
   if (resolved.legacy) return resolved;
@@ -141,7 +146,7 @@ export function validateVisibilityMode({ querySet, requestedMode = null, outputD
       throw new Error(`Query ${query.id || "(unknown)"} must use visibility mode ${resolved.mode}`);
     }
     if (resolved.mode === "unpromptedOrganicVisibility") {
-      if (typeof query.query !== "string" || /emc\s*2\s*ops|emc2ops\.com/i.test(query.query)) {
+      if (typeof query.query !== "string" || containsEmc2OpsSeed(query.query)) {
         throw new Error(`Query ${query.id || "(unknown)"} must not seed EMC2Ops in organic visibility mode`);
       }
       if (!Array.isArray(query.tags) || query.tags.includes("brand-aware") || !query.tags.includes("brand-neutral")) {

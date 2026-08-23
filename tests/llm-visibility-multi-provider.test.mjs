@@ -219,6 +219,32 @@ test("organic mode rejects seeded brand text and brand-aware tags", () => {
   const tagOnly = structuredClone(querySet);
   tagOnly.queries[0].query = "Which property automation providers should I compare?";
   assert.throws(() => validateVisibilityMode({ querySet: tagOnly, outputDir: "outputs/llm-visibility-phase-1" }), /must be tagged brand-neutral/);
+  const missingNeutralTag = structuredClone(querySet);
+  missingNeutralTag.queries[0].query = "Which property automation providers should I compare?";
+  missingNeutralTag.queries[0].tags = ["services"];
+  assert.throws(() => validateVisibilityMode({ querySet: missingNeutralTag, outputDir: "outputs/llm-visibility-phase-1" }), /must be tagged brand-neutral/);
+});
+
+test("organic mode rejects arbitrary letter spacing in a seeded brand", () => {
+  const querySet = {
+    runProtocol: {
+      modes: {
+        unpromptedOrganicVisibility: {
+          promptPolicy: "brand-neutral",
+          countInOrganicVisibility: true,
+          outputNamespace: "organic",
+          outputDirectory: "outputs/llm-visibility-phase-1",
+        },
+      },
+    },
+    queries: [{
+      id: "letter-spaced-seed",
+      mode: "unpromptedOrganicVisibility",
+      query: "Which provider is E M C 2 Ops for property automation?",
+      tags: ["brand-neutral", "services"],
+    }],
+  };
+  assert.throws(() => validateVisibilityMode({ querySet, outputDir: "outputs/llm-visibility-phase-1" }), /must not seed EMC2Ops/);
 });
 
 test("organic summaries exclude brand-explicit results from organic totals", () => {
