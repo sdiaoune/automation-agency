@@ -4,6 +4,7 @@ import FaqList from "../../components/FaqList.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import { auditHref } from "../../lib/conversion";
 import { absoluteUrl, byOrder, defaultSocialImage, type BlogPost } from "../../lib/site";
 import { servicePages, serviceSchema, serviceUrl, type ServicePage } from "../../lib/services";
 import "../../styles/service.css";
@@ -25,6 +26,7 @@ const relatedPosts = service.relatedPosts
   .map((slug) => posts.find((post) => post.data.slug === slug))
   .filter(Boolean) as BlogPost[];
 const canonical = absoluteUrl(serviceUrl(service));
+const auditUrl = auditHref(service.slug, "service");
 ---
 
 <SiteLayout
@@ -47,7 +49,7 @@ const canonical = absoluteUrl(serviceUrl(service));
         <h1>{service.title}</h1>
         <p class="dek">{service.summary}</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="/book-demo/">Book a 15-minute audit</a>
+          <a class="btn btn-primary" href={auditUrl}>Book a 15-minute audit</a>
           <a class="btn btn-secondary" href="#workflow">See workflow</a>
         </div>
       </div>

@@ -3,6 +3,7 @@ import FaqList from "../../components/FaqList.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import { auditHref } from "../../lib/conversion";
 import { absoluteUrl, defaultSocialImage } from "../../lib/site";
 import { useCasePages, useCaseSchema, useCaseUrl, type UseCasePage } from "../../lib/useCases";
 import "../../styles/service.css";
@@ -20,6 +21,7 @@ interface Props {
 
 const { useCase } = Astro.props;
 const canonical = absoluteUrl(useCaseUrl(useCase));
+const auditUrl = auditHref(useCase.slug, "use-case");
 const detailBySlug = {
   "apartment-lead-tracking": {
     exampleTitle: "Example: missed apartment inquiry to booked tour",
@@ -124,7 +126,7 @@ const detailBySlug = {
         <h1>{useCase.h1}</h1>
         <p class="dek">{useCase.summary}</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="/book-demo/">Book a 15-minute audit</a>
+          <a class="btn btn-primary" href={auditUrl}>Book a 15-minute audit</a>
           <a class="btn btn-secondary" href="#workflow">See workflow</a>
         </div>
       </div>

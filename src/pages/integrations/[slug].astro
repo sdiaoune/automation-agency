@@ -3,6 +3,7 @@ import FaqList from "../../components/FaqList.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import { auditHref } from "../../lib/conversion";
 import { absoluteUrl, defaultSocialImage } from "../../lib/site";
 import {
   integrationPages,
@@ -25,6 +26,7 @@ interface Props {
 
 const { integration } = Astro.props;
 const canonical = absoluteUrl(integrationUrl(integration));
+const auditUrl = auditHref(integration.slug, "integration");
 ---
 
 <SiteLayout
@@ -48,7 +50,7 @@ const canonical = absoluteUrl(integrationUrl(integration));
         <h1>{integration.title}</h1>
         <p class="dek">{integration.summary}</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="/book-demo/">Book a 15-minute audit</a>
+          <a class="btn btn-primary" href={auditUrl}>Book a 15-minute audit</a>
           <a class="btn btn-secondary" href="/services/">View services</a>
         </div>
       </div>
