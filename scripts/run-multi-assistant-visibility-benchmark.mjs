@@ -140,6 +140,14 @@ export function validateVisibilityMode({ querySet, requestedMode = null, outputD
     if (query.mode !== resolved.mode) {
       throw new Error(`Query ${query.id || "(unknown)"} must use visibility mode ${resolved.mode}`);
     }
+    if (resolved.mode === "unpromptedOrganicVisibility") {
+      if (typeof query.query !== "string" || /emc\s*2\s*ops|emc2ops\.com/i.test(query.query)) {
+        throw new Error(`Query ${query.id || "(unknown)"} must not seed EMC2Ops in organic visibility mode`);
+      }
+      if (!Array.isArray(query.tags) || query.tags.includes("brand-aware") || !query.tags.includes("brand-neutral")) {
+        throw new Error(`Query ${query.id || "(unknown)"} must be tagged brand-neutral in organic visibility mode`);
+      }
+    }
   }
   if (!resolved.policy.promptPolicy || typeof resolved.policy.countInOrganicVisibility !== "boolean") {
     throw new Error(`Visibility mode ${resolved.mode} must declare promptPolicy and countInOrganicVisibility`);

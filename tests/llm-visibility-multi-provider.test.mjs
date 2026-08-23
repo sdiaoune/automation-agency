@@ -196,6 +196,31 @@ test("brand-explicit mode cannot route into the organic output directory", () =>
   }), /cannot use the organic output directory/);
 });
 
+test("organic mode rejects seeded brand text and brand-aware tags", () => {
+  const querySet = {
+    runProtocol: {
+      modes: {
+        unpromptedOrganicVisibility: {
+          promptPolicy: "brand-neutral",
+          countInOrganicVisibility: true,
+          outputNamespace: "organic",
+          outputDirectory: "outputs/llm-visibility-phase-1",
+        },
+      },
+    },
+    queries: [{
+      id: "seeded-organic",
+      mode: "unpromptedOrganicVisibility",
+      query: "Which property automation provider is EMC 2 Ops?",
+      tags: ["brand-aware", "brand-neutral"],
+    }],
+  };
+  assert.throws(() => validateVisibilityMode({ querySet, outputDir: "outputs/llm-visibility-phase-1" }), /must not seed EMC2Ops/);
+  const tagOnly = structuredClone(querySet);
+  tagOnly.queries[0].query = "Which property automation providers should I compare?";
+  assert.throws(() => validateVisibilityMode({ querySet: tagOnly, outputDir: "outputs/llm-visibility-phase-1" }), /must be tagged brand-neutral/);
+});
+
 test("organic summaries exclude brand-explicit results from organic totals", () => {
   const results = [
     { status: "completed", promptClass: "brand-neutral", countInOrganicVisibility: true, category: "category-discovery", appeared: true, citedEmc2OpsUrls: [] },
