@@ -71,6 +71,10 @@ test("booking page submits the audit form payload", async ({ page }) => {
     });
   });
 
+  await page.addInitScript(() => {
+    window.dataLayer = [];
+  });
+
   await page.goto("/book-demo/");
   await expect(page.locator("h1")).toContainText("Tell us what you need");
   await expect(page.locator("#book-demo h2")).toContainText("Use the call for a quote, demo, or workflow audit");
@@ -94,6 +98,19 @@ test("booking page submits the audit form payload", async ({ page }) => {
   await page.locator("#audit-form button[type=submit]").click();
 
   await expect(page.locator("#audit-form-status")).toContainText("Consultation booked");
+  const events = await page.evaluate(() => window.dataLayer
+    .map((entry) => Array.from(entry))
+    .filter((entry) => entry[0] === "event")
+    .map((entry) => ({ name: entry[1], params: entry[2] || {} })));
+  for (const name of [
+    "booking_page_view",
+    "calendar_slot_selected",
+    "form_start",
+    "booking_confirmed",
+    "conversion",
+  ]) {
+    expect(events.some((event) => event.name === name), `missing ${name}`).toBeTruthy();
+  }
   expect(submittedPayload).toMatchObject({
     fullName: "Avery Lee",
     email: "avery@example.com",
@@ -167,4 +184,29 @@ test("article page renders SEO, FAQ, breadcrumbs, and related links", async ({ p
   const schemaText = await page.locator("script[type='application/ld+json']").textContent();
   expect(schemaText).toContain("FAQPage");
   expect(schemaText).toContain("Article");
+});
+
+test("booking page records workflow and source context in analytics", async ({ page }) => {
+  await page.addInitScript(() => {
+    window.dataLayer = [];
+  });
+  await page.route("**/api/audit-slots/", async (route) => {
+    await route.fulfill({
+      contentType: "application/json",
+      body: JSON.stringify({ slots: [] }),
+    });
+  });
+
+  await page.goto("/book-demo/?workflow=lead-to-lease-automation&source=use-case");
+
+  const bookingPageView = await page.evaluate(() => window.dataLayer
+    .map((entry) => Array.from(entry))
+    .filter((entry) => entry[0] === "event" && entry[1] === "booking_page_view")
+    .map((entry) => ({ name: entry[1], params: entry[2] || {} }))
+    .at(-1));
+  expect(bookingPageView.params).toMatchObject({
+    page_path: "/book-demo/",
+    workflow: "lead-to-lease-automation",
+    source: "use-case",
+  });
 });
