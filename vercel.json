@@ -1,6 +1,28 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
+  "routes": [
+    {
+      "src": "/lp/(.*)",
+      "dest": "https://emc2ops-pm-ops.vercel.app/lp/$1"
+    },
+    {
+      "src": "/__manifest/?",
+      "dest": "https://emc2ops-pm-ops.vercel.app/__manifest"
+    },
+    {
+      "src": "/api/funnel-event/?",
+      "dest": "https://emc2ops-pm-ops.vercel.app/api/funnel-event"
+    },
+    {
+      "src": "/assets/(manifest-[A-Za-z0-9_-]+\\.js)",
+      "dest": "https://emc2ops-pm-ops.vercel.app/assets/$1"
+    },
+    {
+      "src": "/assets/(entry\\.client-Dk0KuByq\\.js|jsx-runtime-CGvjSJw6\\.js|root-CLjlgIa6\\.js|lib-ChiNR1J4\\.js|lp\\._slug-_Qb1yElH\\.js|building-2-CY5AdSoh\\.js|wrench-B207yrAV\\.js|root-BW2LrLS9\\.css|lp-BuVUsHAJ\\.css)",
+      "dest": "https://emc2ops-pm-ops.vercel.app/assets/$1"
+    }
+  ],
   "redirects": [
     {
       "source": "/:path*",
@@ -15,6 +37,19 @@
     }
   ],
   "headers": [
+    {
+      "source": "/lp/:slug/",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive, nosnippet"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=300"
+        }
+      ]
+    },
     {
       "source": "/:path*",
       "headers": [
