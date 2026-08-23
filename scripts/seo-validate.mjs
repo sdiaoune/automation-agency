@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { normalizeInternalHref } from "./lib/normalize-internal-href.mjs";
 
 const distDir = path.resolve("dist");
 const sitemapPath = path.join(distDir, "sitemap.xml");
@@ -91,7 +92,7 @@ for (const file of htmlFiles) {
   for (const link of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)) {
     const href = link[1];
     if (!href.startsWith("/") || href.startsWith("//")) continue;
-    const target = href.split("#")[0];
+    const target = normalizeInternalHref(href);
     if (!target) continue;
     const targetFile = path.join(distDir, target.replace(/^\//, ""), "index.html");
     const targetAsset = path.join(distDir, target.replace(/^\//, ""));
