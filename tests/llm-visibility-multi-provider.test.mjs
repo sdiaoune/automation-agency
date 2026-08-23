@@ -9,10 +9,12 @@ import {
   parseAnthropicResponse,
   parseGeminiResponse,
   parsePerplexityResponse,
+  promptClassRule,
   resolveVisibilityMode,
   providerProtocolDeviations,
   secretFreeProviderRequest,
   summarize,
+  validateOutboundRequestForVisibility,
   validateVisibilityMode,
 } from "../scripts/run-multi-assistant-visibility-benchmark.mjs";
 
@@ -112,6 +114,54 @@ test("request evidence preserves exact provider payload without credentials", ()
   assert.equal(evidence.body.tools[0].google_search !== undefined, true);
   assert.equal(evidence.headers["x-goog-api-key"], "[excluded]");
   assert.equal(JSON.stringify(evidence).includes("secret-gemini"), false);
+});
+
+test("organic provider payloads are brand-neutral for every provider", () => {
+  const organicPolicy = {
+    promptPolicy: "brand-neutral",
+    countInOrganicVisibility: true,
+  };
+  const genericQuery = "Which providers help property managers automate leasing follow-up?";
+
+  for (const provider of ["anthropic", "gemini", "perplexity"]) {
+    const request = buildProviderRequest(provider, `secret-${provider}`, "test-model", genericQuery);
+    const outbound = secretFreeProviderRequest(request);
+    const outboundJson = JSON.stringify(outbound);
+
+    assert.equal(/emc\s*2\s*ops|emc2ops\.com/i.test(outboundJson), false, `${provider} organic payload must not seed EMC2Ops`);
+    assert.doesNotThrow(() => validateOutboundRequestForVisibility({
+      request,
+      visibilityMode: "unpromptedOrganicVisibility",
+      visibilityPolicy: organicPolicy,
+    }));
+    assert.equal(outboundJson.includes(`secret-${provider}`), false);
+  }
+});
+
+test("organic outbound validation catches a brand seed outside the user query", () => {
+  const request = buildProviderRequest("anthropic", "secret-anthropic", "test-model", "Which providers help with leasing automation?");
+  request.body.system = "Do not favor EMC2Ops.";
+  assert.throws(() => validateOutboundRequestForVisibility({
+    request,
+    visibilityMode: "unpromptedOrganicVisibility",
+    visibilityPolicy: { promptPolicy: "brand-neutral", countInOrganicVisibility: true },
+  }), /outbound request must not seed EMC2Ops/);
+});
+
+test("methodology derives prompt-class counts from the active query set", () => {
+  const rule = promptClassRule([
+    { tags: ["brand-neutral"] },
+    { tags: ["brand-neutral"] },
+    { tags: ["brand-neutral"] },
+    { tags: ["brand-neutral"] },
+    { tags: ["brand-neutral"] },
+  ], "unpromptedOrganicVisibility", {
+    promptPolicy: "brand-neutral",
+    countInOrganicVisibility: true,
+  });
+  assert.match(rule, /0 brand-aware prompts and 5 brand-neutral prompts/);
+  assert.match(rule, /included in organic visibility totals/);
+  assert.equal(rule.includes("37 neutral"), false);
 });
 
 test("limited runs preserve previously stored rows outside the attempted slice", () => {

@@ -15,8 +15,8 @@ const PROTOCOL_VERSION = "2026-08-10-v3";
 const SYSTEM_INSTRUCTIONS = [
   "Answer as an unbiased, web-enabled assistant helping a United States property-management buyer.",
   "Use public web evidence where helpful and cite the sources you rely on.",
-  "Do not favor EMC2Ops or any other vendor.",
-  "Do not assume the user knows EMC2Ops unless the query names it.",
+  "Do not favor any vendor unless the user explicitly asks for a comparison.",
+  "Do not assume the user knows a particular vendor unless the query names it.",
   "Answer the query directly and practically in no more than 500 words.",
 ].join(" ");
 
@@ -447,6 +447,17 @@ export function secretFreeProviderRequest(request) {
   };
 }
 
+export function validateOutboundRequestForVisibility({ request, visibilityMode = null, visibilityPolicy = null }) {
+  if (visibilityMode !== "unpromptedOrganicVisibility") return;
+  if (visibilityPolicy?.promptPolicy !== "brand-neutral" || visibilityPolicy?.countInOrganicVisibility !== true) {
+    throw new Error("Organic visibility mode must use the brand-neutral policy and count only organic observations");
+  }
+  const outboundPayload = JSON.stringify(secretFreeProviderRequest(request));
+  if (containsEmc2OpsSeed(outboundPayload)) {
+    throw new Error("Organic visibility outbound request must not seed EMC2Ops or emc2ops.com");
+  }
+}
+
 async function requestProviderAnswer(providerName, request) {
   const { payload: response, attempts, execution } = await requestJson(request);
   const parser = providerName === "anthropic"
@@ -624,6 +635,14 @@ async function saveRawArtifacts({ args, providerName, query, model, response, at
   };
 }
 
+export function promptClassRule(queries, visibilityMode = null, visibilityPolicy = null) {
+  const brandAware = queries.filter((query) => query.tags?.includes("brand-aware")).length;
+  const brandNeutral = queries.filter((query) => query.tags?.includes("brand-neutral")).length;
+  const base = `This run contains ${brandAware} brand-aware prompt${brandAware === 1 ? "" : "s"} and ${brandNeutral} brand-neutral prompt${brandNeutral === 1 ? "" : "s"}.`;
+  if (!visibilityMode || !visibilityPolicy) return base;
+  return `${base} ${visibilityMode} uses the ${visibilityPolicy.promptPolicy} policy; observations are ${visibilityPolicy.countInOrganicVisibility ? "included in" : "excluded from"} organic visibility totals.`;
+}
+
 function selectedProviderNames(provider) {
   return provider === "all" ? Object.keys(providers) : [provider];
 }
@@ -678,6 +697,7 @@ async function runProvider({ providerName, querySet, querySetSha256, queries, ar
   for (let index = 0; index < queries.length; index += 1) {
     const query = queries[index];
     const request = buildProviderRequest(providerName, apiKey, model, query.query);
+    validateOutboundRequestForVisibility({ request, visibilityMode, visibilityPolicy });
     if (resultsById.get(query.id)?.status === "completed") {
       console.log(`[${providerName} ${index + 1}/${queries.length}] ${query.id} already complete`);
       continue;
@@ -751,7 +771,7 @@ async function runProvider({ providerName, querySet, querySetSha256, queries, ar
       },
       methodology: {
         promptWording: "Exact query-set wording",
-        promptClassRule: "The query-set brand-aware tag separates five branded prompts from 37 neutral prompts.",
+        promptClassRule: promptClassRule(querySet.queries, visibilityMode, visibilityPolicy),
         appearanceRule: "Case-insensitive EMC2Ops or EMC 2 Ops match in raw answer text.",
         citationRule: config.citationRule,
         evidenceRetention: "Raw answer, native citation metadata, request timestamp, model, usage, and provider response identifier where available.",
@@ -773,8 +793,16 @@ async function main() {
   const visibility = validateVisibilityMode({ querySet, requestedMode: args.visibilityMode, outputDir: args.outputDirProvided ? args.outputDir : null });
   if (!visibility.legacy && !args.outputDirProvided) args.outputDir = visibility.policy.outputDirectory;
   const queries = args.limit ? querySet.queries.slice(0, args.limit) : querySet.queries;
-  const status = credentialStatus();
   const selected = selectedProviderNames(args.provider);
+  for (const providerName of selected) {
+    const config = providers[providerName];
+    const model = process.env[config.modelEnv] || config.defaultModel;
+    for (const query of queries) {
+      const request = buildProviderRequest(providerName, "[not-used-for-validation]", model, query.query);
+      validateOutboundRequestForVisibility({ request, visibilityMode: visibility.mode, visibilityPolicy: visibility.policy });
+    }
+  }
+  const status = credentialStatus();
   const openAIStatus = visibility.legacy ? await currentOpenAIStatus(args.outputDir) : { completed: 0, remaining: 0 };
   const plannedAssistants = visibility.legacy ? 4 : selected.length;
   const plannedObservations = querySet.queries.length * plannedAssistants;
