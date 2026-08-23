@@ -45,7 +45,7 @@ Observed query variants may be conventional reformulations, Search Console query
 - Apartment guide preflight: passed (1,142 body words, 6 internal blog links, and a valid social image).
 - Blog validation: passed (158 Astro blog posts).
 - Astro build: passed (203 pages).
-- SEO validation: passed (204 HTML pages). Existing metadata-length warnings remain outside the seven-page cohort; `/book-demo/` is also one character over the validator's description threshold and is deferred rather than silently expanded in this task.
+- SEO validation: passed (204 HTML pages). Existing metadata-length warnings remain outside the seven-page cohort; the `/book-demo/` description warning was resolved by commit `fb6912f` (128-character description).
 - API tests: passed (33 tests).
 - Public-site and mobile tests: failed. The Chromium run fails at `tests/public-site.spec.js:418` because its old expected H1, `AI leasing follow-up automation`, no longer matches the approved Phase 1 rendered H1, `Leasing lead automation for property managers`. That same fixture also still expects `Buildium integration automation for property managers`, while the approved rendered H1 is `Buildium workflow automation integration`. Reconcile both assertions before release.
 - Live LP validation: failed. `https://www.emc2ops.com/lp/property-management-systems/`, `/lp/property-management-crm/`, and `/lp/ai-property-management/` each return 404 and lack both `X-Robots-Tag: noindex` and a meta-robots noindex directive. The public deployment is not applying the checked-in LP rewrite (or is serving an older configuration).
