@@ -2,7 +2,7 @@
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
-import { absoluteUrl, defaultSocialImage } from "../../lib/site";
+import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../../lib/site";
 import { servicePages, serviceUrl } from "../../lib/services";
 import "../../styles/service.css";
 
@@ -17,6 +17,7 @@ const description =
   canonical={absoluteUrl("/services/")}
   image={absoluteUrl(defaultSocialImage)}
   imageAlt="EMC2Ops property management automation service workflow."
+  schema={standardPageSchema({ path: "/services/", name: "Property management automation services", description, type: "CollectionPage" })}
   pageClass="service-page"
 >
   <SiteHeader />

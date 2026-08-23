@@ -4,7 +4,7 @@ import ProductScreenshot from "../components/ProductScreenshot.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
-import { absoluteUrl, defaultSocialImage } from "../lib/site";
+import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../lib/site";
 import { productScreenshotForPath } from "../lib/productScreenshots";
 import "../styles/landing.css";
 
@@ -18,6 +18,7 @@ const description = "Book a 15-minute EMC2Ops consultation to request a tailored
   canonical={absoluteUrl("/book-demo/")}
   image={absoluteUrl(defaultSocialImage)}
   imageAlt="EMC2Ops property management automation workflow for capturing after-hours leasing leads."
+  schema={standardPageSchema({ path: "/book-demo/", name: "Book an EMC2Ops consultation", description, type: "ContactPage" })}
   author="EMC2Ops"
 >
   <SiteHeader variant="blog" />

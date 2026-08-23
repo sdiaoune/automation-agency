@@ -61,3 +61,23 @@ for (const target of targets) {
     for (const phrase of target.phrases) assert.ok(visible.includes(phrase));
   });
 }
+
+test("commercial hubs expose the expected structured-data types", () => {
+  const cases = [
+    ["/services/", "CollectionPage"],
+    ["/integrations/", "CollectionPage"],
+    ["/book-demo/", "ContactPage"],
+  ];
+  for (const [route, expectedType] of cases) {
+    assert.ok(htmlFor(route).includes(`\"@type\":\"${expectedType}\"`));
+  }
+});
+
+test("the links page uses existing assets and the booking route", () => {
+  const html = htmlFor("/links/");
+  assert.ok(html.includes('href="https://www.emc2ops.com/book-demo/"'));
+  assert.ok(html.includes('src="/icon-512.png"'));
+  assert.ok(html.includes('content="https://www.emc2ops.com/og-image.png"'));
+  assert.ok(!html.includes("/links/assets/emc2ops-logo.jpg"));
+  assert.ok(!html.includes("/#book"));
+});
