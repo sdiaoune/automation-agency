@@ -1,0 +1,65 @@
+[
+  {
+    "id": "apartment-lead-tracking",
+    "candidateQueries": ["apartment lead tracking", "multifamily lead tracking"],
+    "canonicalUrl": "/use-cases/apartment-lead-tracking/",
+    "supportingUrls": ["/blog/apartment-lead-tracking/"],
+    "intentTier": "medium-high",
+    "evidence": "gsc-or-fan-out",
+    "action": "optimize-existing"
+  },
+  {
+    "id": "leasing-lead-automation",
+    "candidateQueries": ["leasing lead automation", "leasing follow-up automation"],
+    "canonicalUrl": "/services/leasing-follow-up/",
+    "supportingUrls": ["/blog/ai-leasing-follow-up-property-management/", "/blog/automate-property-management-lead-follow-up/"],
+    "intentTier": "high",
+    "evidence": "gsc-or-fan-out",
+    "action": "optimize-existing"
+  },
+  {
+    "id": "lead-to-lease",
+    "candidateQueries": ["lead-to-lease automation", "lead to lease workflow"],
+    "canonicalUrl": "/use-cases/lead-to-lease-automation/",
+    "supportingUrls": ["/blog/property-management-post-tour-follow-up-automation/", "/blog/buildium-tour-to-application-workflow/"],
+    "intentTier": "medium-high",
+    "evidence": "gsc-or-fan-out",
+    "action": "optimize-existing"
+  },
+  {
+    "id": "apartment-call-tracking",
+    "candidateQueries": ["apartment call tracking", "leasing call routing"],
+    "canonicalUrl": "/services/missed-call-recovery/",
+    "supportingUrls": ["/blog/property-management-leasing-call-routing-automation/", "/blog/missed-leasing-calls-property-management/"],
+    "intentTier": "high",
+    "evidence": "gsc-or-fan-out",
+    "action": "optimize-existing"
+  },
+  {
+    "id": "crm-cleanup",
+    "candidateQueries": ["real estate CRM cleanup", "property management CRM cleanup", "messy pipeline stages"],
+    "canonicalUrl": "/use-cases/real-estate-crm-follow-up-mess/",
+    "supportingUrls": ["/blog/property-management-crm-workflow-automation/", "/blog/property-management-lead-deduplication-routing/"],
+    "intentTier": "high",
+    "evidence": "gsc-or-fan-out",
+    "action": "optimize-existing"
+  },
+  {
+    "id": "buildium-workflow-integration",
+    "candidateQueries": ["Buildium workflow automation integration"],
+    "canonicalUrl": "/integrations/buildium/",
+    "supportingUrls": ["/blog/buildium-leasing-follow-up-workflow/", "/blog/buildium-maintenance-intake-workflow/"],
+    "intentTier": "high",
+    "evidence": "gsc-or-fan-out",
+    "action": "optimize-existing"
+  },
+  {
+    "id": "appfolio-workflow-integration",
+    "candidateQueries": ["AppFolio workflow integration"],
+    "canonicalUrl": "/integrations/appfolio/",
+    "supportingUrls": ["/blog/appfolio-claude-property-management-workflows/"],
+    "intentTier": "high",
+    "evidence": "gsc-or-fan-out",
+    "action": "optimize-existing"
+  }
+]

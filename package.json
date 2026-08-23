@@ -8,6 +8,7 @@
     "build": "astro build",
     "preview": "astro preview --host 0.0.0.0 --port 3000",
     "generate:blog": "npm run blog:validate && npm run build",
+    "test:seo-query-map": "node --test tests/seo-phase-1-query-map.test.mjs",
     "seo:validate": "node scripts/seo-validate.mjs",
     "screenshots:capture": "node scripts/capture-pm-ops-money-pages.mjs",
     "screenshots:validate": "node scripts/validate-product-screenshots.mjs",
