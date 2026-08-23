@@ -116,4 +116,6 @@ Start with one property, one trigger, or one high-volume request type. Keep the 
 
 Once the first workflow is stable, expand sideways into the next related handoff. That is how automation becomes an operating system instead of another disconnected app.
 
+If the pipeline is already full of mismatched owners, duplicate stages, and stalled next steps, use a [CRM cleanup workflow](/use-cases/real-estate-crm-follow-up-mess/) to make the operating path trustworthy before asking the team to work it faster.
+
 A workflow audit can turn your leasing pipeline from a record keeper into an operating system.

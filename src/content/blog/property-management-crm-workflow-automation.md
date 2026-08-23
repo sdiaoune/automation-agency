@@ -124,4 +124,6 @@ Start with one property, one trigger, or one high-volume request type. Keep the 
 
 Once the first workflow is stable, expand sideways into the next related handoff. That is how automation becomes an operating system instead of another disconnected app.
 
+If owners and stages no longer match the actual conversation, start with a [CRM cleanup workflow](/use-cases/real-estate-crm-follow-up-mess/) that restores usable ownership, next steps, and follow-up records before adding more automation.
+
 A 15-minute audit can identify which CRM update points should be automated first.

@@ -167,4 +167,6 @@ The first rollout should stay narrow. One property or portfolio slice. One same-
 
 For operators managing 50+ units, the win is straightforward. Warm toured renters get the right next step while intent still exists, staff stop reconstructing what happened after every showing, and the Buildium-adjacent record finally reflects the real leasing stage.
 
+Use the broader [lead-to-lease automation](/use-cases/lead-to-lease-automation/) workflow when the Buildium-adjacent handoff must remain connected to the first inquiry, tour result, application, and move-in decision.
+
 If toured renters still depend on manual callbacks before they start an application, book a 15-minute workflow audit.

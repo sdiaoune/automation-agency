@@ -19,6 +19,26 @@ const reservedFamilies = [
     phrases: ["buildium integration", "buildium integrations"],
     target: "/integrations/buildium/",
   },
+  {
+    phrases: ["leasing lead automation", "leasing follow-up automation"],
+    target: "/services/leasing-follow-up/",
+  },
+  {
+    phrases: ["apartment call tracking", "leasing call routing"],
+    target: "/services/missed-call-recovery/",
+  },
+  {
+    phrases: ["real estate crm cleanup", "property management crm cleanup", "crm follow-up cleanup"],
+    target: "/use-cases/real-estate-crm-follow-up-mess/",
+  },
+  {
+    phrases: ["appfolio workflow integration"],
+    target: "/integrations/appfolio/",
+  },
+  {
+    phrases: ["buildium workflow integration", "buildium workflow automation integration"],
+    target: "/integrations/buildium/",
+  },
 ];
 
 const reservedPrimaryKeywords = new Map(

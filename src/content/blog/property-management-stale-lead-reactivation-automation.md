@@ -114,4 +114,6 @@ From there we would define:
 4. The write-backs that keep the CRM, lead owner, and reporting view aligned.
 5. The reporting that shows whether reactivation is actually recovering tours and cleaning the pipeline.
 
+When the problem is larger than inactive leads, a [clean up broken follow-up](/use-cases/real-estate-crm-follow-up-mess/) workflow can reset ownership, stages, and next actions so reactivation does not add more noise to an already unreliable CRM.
+
 If old leasing leads still depend on spreadsheet callbacks and whoever has time to dig through the CRM, this is a strong workflow to automate next.

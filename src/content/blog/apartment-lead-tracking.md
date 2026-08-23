@@ -2,9 +2,9 @@
 slug: "apartment-lead-tracking"
 order: 32
 pillar: "Leasing Automation"
-keyword: "apartment lead tracking"
+keyword: "apartment lead tracking workflow"
 title: "Apartment Lead Tracking: How to Stop Losing Renters Between First Inquiry and Tour"
-seoTitle: "Apartment Lead Tracking Workflow for Leasing Teams"
+seoTitle: "Apartment Lead Tracking Workflow Guide"
 meta: "A practical apartment lead tracking workflow for faster response, cleaner source attribution, fewer duplicate leads, and better tour conversion."
 publishedAt: "2026-06-06"
 updatedAt: "2026-06-06"
@@ -31,6 +31,8 @@ metrics:
   - "source to signed lease attribution"
 cta: "If apartment leads are spread across calls, texts, ILS alerts, and CRM notes, book a 15-minute workflow audit."
 bodySections: true
+socialHook: "If apartment lead tracking still depends on separate call logs, ILS alerts, inboxes, and memory, the workflow is the problem—not the number of tools."
+socialImage: "/og-image.png"
 relatedServices:
   - label: "AI leasing follow-up automation"
     href: "/services/leasing-follow-up/"
@@ -155,3 +157,14 @@ After that, connect the intake sources one at a time. Start with missed calls, w
 Once the workflow is live, review the first week of records manually. Look for duplicate leads, wrong statuses, missing owner assignments, and follow-up messages that should have been suppressed. Tighten the rules before expanding to more properties or channels.
 
 Apartment lead tracking works when it becomes part of the operating workflow. The outcome is simple: every renter is captured, every next step is visible, and every source can be judged by tours and leases instead of raw inquiry count.
+
+## Continue the lead-tracking workflow
+
+The intake workflow only stays useful when its records, routing, and next steps remain connected. These guides cover the adjacent operating pieces:
+
+- [Guest-card automation](/blog/property-management-guest-card-automation/)
+- [Leasing pipeline setup](/blog/property-management-leasing-pipeline-setup/)
+- [Leasing inquiry routing](/blog/property-management-leasing-inquiry-routing-automation/)
+- [Stale-lead reactivation](/blog/property-management-stale-lead-reactivation-automation/)
+- [Lead deduplication and routing](/blog/property-management-lead-deduplication-routing/)
+- [Property management lead follow-up automation](/blog/automate-property-management-lead-follow-up/)

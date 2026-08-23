@@ -138,6 +138,8 @@ Week one should focus on routing logic, fallback paths, and CRM logging. Week tw
 
 The mistake to avoid is trying to automate every call type at once. A leasing prospect, a current resident, an owner, and a vendor should not share the same logic. Build the leasing path first, prove it, and then expand to adjacent handoffs such as [Property Management Guest Card Automation: Stop Re-Entering Every Prospect by Hand](/blog/property-management-guest-card-automation/) or [Apartment Lead Tracking: How to Stop Losing Renters Between First Inquiry and Tour](/blog/apartment-lead-tracking/).
 
+When unanswered leasing calls are the first leak, a [missed-call recovery workflow](/services/missed-call-recovery/) can create the right follow-up task and preserve the caller context for the leasing team without treating every call as the same request.
+
 ## Related workflows to review next
 
 Leasing call routing works best when it is part of a tighter response system, not a standalone phone fix.

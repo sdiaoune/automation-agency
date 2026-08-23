@@ -112,4 +112,6 @@ Start with one property, one trigger, or one high-volume request type. Keep the 
 
 Once the first workflow is stable, expand sideways into the next related handoff. That is how automation becomes an operating system instead of another disconnected app.
 
+When duplicate records and stale assignments make the pipeline unreliable, [repair CRM ownership and stages](/use-cases/real-estate-crm-follow-up-mess/) before layering new messages on top of the same broken data.
+
 If duplicate leads are making your leasing pipeline noisy, book a 15-minute workflow audit.

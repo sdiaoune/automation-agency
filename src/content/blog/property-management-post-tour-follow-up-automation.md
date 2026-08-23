@@ -132,4 +132,6 @@ Post-tour follow-up works best when the rest of the leasing path is clean. The n
 
 That sequence covers the full operational path from booking the showing to logging the tour, moving the renter to application, and keeping the CRM accurate enough for real management decisions.
 
+The commercial [lead-to-lease automation](/use-cases/lead-to-lease-automation/) workflow connects that post-tour decision to the earlier inquiry and the next application handoff, so staff can manage one continuous leasing path.
+
 If toured prospects keep going quiet before they apply, book a 15-minute workflow audit.

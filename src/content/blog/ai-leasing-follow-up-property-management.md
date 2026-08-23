@@ -128,4 +128,6 @@ Start with one property, one trigger, or one high-volume request type. Keep the 
 
 Once the first workflow is stable, expand sideways into the next related handoff. That is how automation becomes an operating system instead of another disconnected app.
 
+For a connected [inquiry-to-move-in workflow](/use-cases/lead-to-lease-automation/), the same status model must carry the renter from the first reply through the tour, application, approval, and handoff rather than restarting the conversation at every stage.
+
 If warm leasing leads are aging out before they book a tour, book a 15-minute workflow audit.
