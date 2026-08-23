@@ -24,7 +24,7 @@ export const servicePages: ServicePage[] = [
     description:
       "Recover missed leasing calls with instant SMS follow-up, renter qualification, team alerts, and CRM logging.",
     summary:
-      "EMC2Ops installs a missed-call workflow that responds in seconds, captures renter intent, and routes qualified prospects back into your leasing process.",
+      "EMC2Ops installs apartment call tracking and the complete missed-call-to-showing workflow: detect the unanswered call, text the renter, capture leasing intent, offer an approved booking path, and record the confirmed next step.",
     outcomes: [
       "Text prospects back automatically after missed calls.",
       "Collect move date, unit interest, budget, pets, and showing intent.",
@@ -45,6 +45,11 @@ export const servicePages: ServicePage[] = [
       {
         question: "Can it stop when a human responds?",
         answer: "Yes. We design stop rules so automation does not fight the leasing team once a human takes over.",
+      },
+      {
+        question: "How does apartment call tracking work after a missed leasing call?",
+        answer:
+          "Apartment call tracking connects the phone event to the renter, property, source, qualification details, staff owner, follow-up status, and CRM outcome instead of leaving the call as an isolated voicemail.",
       },
     ],
     relatedUseCases: [
@@ -69,12 +74,12 @@ export const servicePages: ServicePage[] = [
   {
     slug: "leasing-follow-up",
     eyebrow: "Leasing follow-up",
-    title: "AI leasing follow-up automation",
-    seoTitle: "Leasing Follow-Up Automation for Property Managers",
+    title: "Leasing lead automation for property managers",
+    seoTitle: "Leasing Lead Automation for Property Managers",
     description:
-      "Automate renter follow-up after missed calls, stale replies, no-shows, and incomplete applications with SMS, email, CRM tasks, and stop rules.",
+      "Install leasing lead automation for missed inquiries, stale replies, no-shows, and incomplete applications with CRM updates and human stop rules.",
     summary:
-      "EMC2Ops builds leasing follow-up workflows that keep renter conversations moving after the first inquiry, missed call, booked tour, no-show, stale reply, or incomplete application.",
+      "EMC2Ops installs leasing lead automation that keeps renter follow-up moving after the first inquiry, missed call, tour, no-show, stale reply, or incomplete application.",
     outcomes: [
       "Recover prospects who stopped replying after first contact, tour requests, or application links.",
       "Send showing reminders, confirmations, no-show recovery prompts, and rebooking paths.",

@@ -279,23 +279,20 @@ export const useCasePages: UseCasePage[] = [
   },
   {
     slug: "real-estate-crm-follow-up-mess",
-    primaryKeyword: "best real estate CRM when follow up is a mess",
+    primaryKeyword: "real estate CRM cleanup",
     clusterKeywords: [
-      "real estate CRM follow up",
-      "property management CRM follow up",
-      "CRM follow up automation",
-      "messy CRM lead follow up",
-      "real estate CRM automation",
-      "real estate CRM cleanup service",
-      "fix messy real estate CRM database",
-      "fix messy pipeline stages setup real estate CRM",
+      "property management CRM cleanup",
+      "real estate CRM follow-up cleanup",
+      "messy real estate CRM",
+      "broken pipeline stages",
+      "CRM duplicate cleanup",
     ],
     intent: "A buyer is blaming the CRM, but the deeper issue is usually follow-up process and data hygiene.",
     title: "Real estate CRM follow-up cleanup",
-    seoTitle: "Best Real Estate CRM When Follow-Up Is a Mess",
+    seoTitle: "Real Estate CRM Cleanup for Follow-Up",
     description:
-      "Before switching CRMs, fix the messy CRM database and follow-up workflow: ownership, pipeline stages, notes, tasks, duplicate leads, and automated next steps.",
-    h1: "The best real estate CRM will not fix messy follow-up by itself",
+      "Clean up real estate CRM stages, duplicates, ownership, notes, tasks, and follow-up rules so property teams can trust the next action.",
+    h1: "Real estate CRM cleanup for broken follow-up",
     summary:
       "If follow-up is a mess, EMC2Ops provides a real estate CRM cleanup service focused on the workflow around the CRM: what enters, who owns it, what gets logged, how to fix messy pipeline stages, when tasks fire, and when a human takes over.",
     painPoints: [

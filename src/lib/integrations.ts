@@ -17,12 +17,12 @@ export const integrationPages: IntegrationPage[] = [
     slug: "appfolio",
     name: "AppFolio",
     logo: "/assets/integrations/appfolio.png",
-    title: "AppFolio automation for property managers",
-    seoTitle: "AppFolio Automation for Property Managers",
+    title: "AppFolio workflow integration",
+    seoTitle: "AppFolio Workflow Integration",
     description:
-      "Connect AppFolio-adjacent leasing, maintenance, communication, and CRM workflows with AI intake and automation.",
+      "Scope an AppFolio workflow integration for leasing, maintenance, communication, CRM tasks, and safe API, middleware, inbox, or review handoffs.",
     summary:
-      "EMC2Ops helps property teams build practical automation around AppFolio workflows, communication paths, and handoffs.",
+      "EMC2Ops maps each AppFolio workflow integration to the available connection path, required fields, fallback route, and human review gates.",
     workflows: [
       "Missed-call and SMS lead capture before staff update records.",
       "Maintenance intake summaries routed to the team with useful context.",
@@ -44,12 +44,12 @@ export const integrationPages: IntegrationPage[] = [
     slug: "buildium",
     name: "Buildium",
     logo: "/assets/integrations/buildium.png",
-    title: "Buildium integration automation for property managers",
-    seoTitle: "Buildium Integration Automation",
+    title: "Buildium workflow automation integration",
+    seoTitle: "Buildium Workflow Automation Integration",
     description:
-      "Build Buildium integration workflows for leasing follow-up, maintenance intake, owner updates, CRM tasks, and supported Buildium API or middleware handoffs.",
+      "Scope a Buildium workflow automation integration for leasing, maintenance, owner updates, CRM tasks, and supported API or middleware handoffs.",
     summary:
-      "EMC2Ops scopes practical Buildium integrations around your account permissions, Buildium API or Buildium Open API availability, data flow, and operating handoffs so teams spend less time chasing details between systems.",
+      "EMC2Ops maps each Buildium workflow automation integration to verified access, required fields, fallback paths, human approvals, and safe writebacks.",
     workflows: [
       "Leasing inquiry capture, source tracking, and follow-up routing before prospects go stale.",
       "Maintenance request detail collection with urgency, access, photo, and owner-approval context before team review.",
