@@ -396,3 +396,56 @@ export function aboutPageSchema() {
     ],
   };
 }
+
+export function standardPageSchema({
+  path,
+  name,
+  description,
+  type = "WebPage",
+  parent,
+}: {
+  path: string;
+  name: string;
+  description: string;
+  type?: "WebPage" | "CollectionPage" | "ContactPage";
+  parent?: { name: string; path: string };
+}) {
+  const url = absoluteUrl(path);
+  const breadcrumbs = [
+    { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/` },
+    ...(parent
+      ? [{ "@type": "ListItem", position: 2, name: parent.name, item: absoluteUrl(parent.path) }]
+      : []),
+    {
+      "@type": "ListItem",
+      position: parent ? 3 : 2,
+      name,
+      item: url,
+    },
+  ];
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      organizationSchema(),
+      websiteSchema(),
+      {
+        "@type": type,
+        "@id": `${url}#webpage`,
+        url,
+        name,
+        description,
+        dateModified: siteUpdatedAt,
+        inLanguage: "en-US",
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        publisher: { "@id": `${siteUrl}/#organization` },
+        breadcrumb: { "@id": `${url}#breadcrumb` },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${url}#breadcrumb`,
+        itemListElement: breadcrumbs,
+      },
+    ],
+  };
+}
