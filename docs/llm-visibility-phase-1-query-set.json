@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "purpose": "Measure whether AI assistants mention EMC2Ops for generic property-management automation buying questions without seeding the brand in the prompt.",
+  "reviewCadence": "post-deployment-once",
+  "runProtocol": {
+    "assistants": ["Claude", "Gemini", "Perplexity"],
+    "market": "United States",
+    "language": "en-US",
+    "freshConversationPerQuery": true,
+    "unpromptedBrandMeasurement": true,
+    "captureResultFields": ["checkedAt", "assistant", "modelOrMode", "queryId", "query", "appeared", "mentionContext", "rawAnswer", "citedEmc2OpsUrls", "citedThirdPartyUrls", "competitorsMentioned", "notes"],
+    "rules": [
+      "Run the wording exactly as stored.",
+      "Do not add EMC2Ops, emc2ops.com, or a request to mention a specific company to any prompt.",
+      "Keep the raw answer, mention context, competitors, and cited URLs.",
+      "A brand mention without a cited EMC2Ops URL counts as appeared but not cited.",
+      "Do not infer rankings, traffic, leads, or conversions."
+    ]
+  },
+  "categories": ["category-discovery", "problem-discovery", "integration-discovery"],
+  "queries": [
+    {
+      "id": "phase1-category-services",
+      "category": "category-discovery",
+      "funnelStage": "consideration",
+      "persona": "property-management-owner",
+      "tags": ["brand-neutral", "services", "category-discovery"],
+      "query": "Which companies provide property management automation services for U.S. property managers, and what does each company specialize in?"
+    },
+    {
+      "id": "phase1-leasing-automation",
+      "category": "problem-discovery",
+      "funnelStage": "consideration",
+      "persona": "leasing-manager",
+      "tags": ["brand-neutral", "leasing-follow-up", "missed-calls"],
+      "query": "What service providers can automate missed leasing call recovery, renter qualification, follow-up, human escalation, and CRM updates for a property management company?"
+    },
+    {
+      "id": "phase1-apartment-leads",
+      "category": "problem-discovery",
+      "funnelStage": "consideration",
+      "persona": "property-management-owner",
+      "tags": ["brand-neutral", "apartment-leads", "multifamily"],
+      "query": "Which companies help multifamily property managers track apartment leads across calls, forms, ILS sources, texts, tours, and CRM follow-up?"
+    },
+    {
+      "id": "phase1-crm-cleanup",
+      "category": "problem-discovery",
+      "funnelStage": "consideration",
+      "persona": "property-management-operations-leader",
+      "tags": ["brand-neutral", "crm-cleanup", "implementation-services"],
+      "query": "Who provides real estate or property management CRM cleanup and workflow automation services for broken stages, duplicate leads, ownership, tasks, and follow-up?"
+    },
+    {
+      "id": "phase1-integrations",
+      "category": "integration-discovery",
+      "funnelStage": "consideration",
+      "persona": "property-management-operations-leader",
+      "tags": ["brand-neutral", "appfolio", "buildium", "workflow-integration"],
+      "query": "Which consultants or service providers implement AppFolio and Buildium workflow integrations using APIs, middleware, inbox parsing, approval queues, and safe writebacks?"
+    }
+  ]
+}
