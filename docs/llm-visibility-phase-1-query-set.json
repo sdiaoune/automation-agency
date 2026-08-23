@@ -8,13 +8,28 @@
     "language": "en-US",
     "freshConversationPerQuery": true,
     "unpromptedBrandMeasurement": true,
+    "modes": {
+      "unpromptedOrganicVisibility": {
+        "promptPolicy": "brand-neutral",
+        "countInOrganicVisibility": true,
+        "outputNamespace": "organic",
+        "outputDirectory": "outputs/llm-visibility-phase-1/organic"
+      },
+      "brandExplicitSiteAudit": {
+        "promptPolicy": "brand-explicit",
+        "countInOrganicVisibility": false,
+        "outputNamespace": "brand-explicit-site-audit",
+        "outputDirectory": "outputs/llm-visibility-phase-1/brand-explicit-site-audit"
+      }
+    },
     "captureResultFields": ["checkedAt", "assistant", "modelOrMode", "queryId", "query", "appeared", "mentionContext", "rawAnswer", "citedEmc2OpsUrls", "citedThirdPartyUrls", "competitorsMentioned", "notes"],
     "rules": [
       "Run the wording exactly as stored.",
       "Do not add EMC2Ops, emc2ops.com, or a request to mention a specific company to any prompt.",
       "Keep the raw answer, mention context, competitors, and cited URLs.",
       "A brand mention without a cited EMC2Ops URL counts as appeared but not cited.",
-      "Do not infer rankings, traffic, leads, or conversions."
+      "Do not infer rankings, traffic, leads, or conversions.",
+      "Brand-explicit site-audit observations are excluded from organic visibility and stored in their separate output namespace and directory."
     ]
   },
   "categories": ["category-discovery", "problem-discovery", "integration-discovery"],
@@ -24,6 +39,7 @@
       "category": "category-discovery",
       "funnelStage": "consideration",
       "persona": "property-management-owner",
+      "mode": "unpromptedOrganicVisibility",
       "tags": ["brand-neutral", "services", "category-discovery"],
       "query": "Which companies provide property management automation services for U.S. property managers, and what does each company specialize in?"
     },
@@ -32,6 +48,7 @@
       "category": "problem-discovery",
       "funnelStage": "consideration",
       "persona": "leasing-manager",
+      "mode": "unpromptedOrganicVisibility",
       "tags": ["brand-neutral", "leasing-follow-up", "missed-calls"],
       "query": "What service providers can automate missed leasing call recovery, renter qualification, follow-up, human escalation, and CRM updates for a property management company?"
     },
@@ -40,6 +57,7 @@
       "category": "problem-discovery",
       "funnelStage": "consideration",
       "persona": "property-management-owner",
+      "mode": "unpromptedOrganicVisibility",
       "tags": ["brand-neutral", "apartment-leads", "multifamily"],
       "query": "Which companies help multifamily property managers track apartment leads across calls, forms, ILS sources, texts, tours, and CRM follow-up?"
     },
@@ -48,6 +66,7 @@
       "category": "problem-discovery",
       "funnelStage": "consideration",
       "persona": "property-management-operations-leader",
+      "mode": "unpromptedOrganicVisibility",
       "tags": ["brand-neutral", "crm-cleanup", "implementation-services"],
       "query": "Who provides real estate or property management CRM cleanup and workflow automation services for broken stages, duplicate leads, ownership, tasks, and follow-up?"
     },
@@ -56,6 +75,7 @@
       "category": "integration-discovery",
       "funnelStage": "consideration",
       "persona": "property-management-operations-leader",
+      "mode": "unpromptedOrganicVisibility",
       "tags": ["brand-neutral", "appfolio", "buildium", "workflow-integration"],
       "query": "Which consultants or service providers implement AppFolio and Buildium workflow integrations using APIs, middleware, inbox parsing, approval queues, and safe writebacks?"
     }

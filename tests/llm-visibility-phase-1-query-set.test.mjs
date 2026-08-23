@@ -9,6 +9,7 @@ test("every Phase 1 AI visibility prompt is brand-neutral", () => {
   for (const item of querySet.queries) {
     assert.doesNotMatch(item.query, /emc\s*2\s*ops|emc2ops\.com/i);
     assert.ok(item.tags.includes("brand-neutral"));
+    assert.equal(item.mode, "unpromptedOrganicVisibility");
   }
 });
 
@@ -25,4 +26,26 @@ test("the run protocol measures unprompted mentions and evidence", () => {
     assert.ok(querySet.runProtocol.captureResultFields.includes(field));
   }
   assert.equal(querySet.runProtocol.unpromptedBrandMeasurement, true);
+});
+
+test("organic visibility and brand-explicit audits are separate machine-readable modes", () => {
+  const modes = querySet.runProtocol.modes;
+  assert.ok(modes);
+  assert.deepEqual(modes.unpromptedOrganicVisibility, {
+    promptPolicy: "brand-neutral",
+    countInOrganicVisibility: true,
+    outputNamespace: "organic",
+    outputDirectory: "outputs/llm-visibility-phase-1/organic"
+  });
+  assert.deepEqual(modes.brandExplicitSiteAudit, {
+    promptPolicy: "brand-explicit",
+    countInOrganicVisibility: false,
+    outputNamespace: "brand-explicit-site-audit",
+    outputDirectory: "outputs/llm-visibility-phase-1/brand-explicit-site-audit"
+  });
+  assert.notEqual(
+    modes.unpromptedOrganicVisibility.outputDirectory,
+    modes.brandExplicitSiteAudit.outputDirectory
+  );
+  assert.ok(querySet.runProtocol.rules.some((rule) => /brand-explicit.*excluded from organic visibility/i.test(rule)));
 });
