@@ -8,12 +8,13 @@
     "language": "en-US",
     "freshConversationPerQuery": true,
     "unpromptedBrandMeasurement": true,
+    "defaultMode": "unpromptedOrganicVisibility",
     "modes": {
       "unpromptedOrganicVisibility": {
         "promptPolicy": "brand-neutral",
         "countInOrganicVisibility": true,
         "outputNamespace": "organic",
-        "outputDirectory": "outputs/llm-visibility-phase-1/organic"
+        "outputDirectory": "outputs/llm-visibility-phase-1"
       },
       "brandExplicitSiteAudit": {
         "promptPolicy": "brand-explicit",

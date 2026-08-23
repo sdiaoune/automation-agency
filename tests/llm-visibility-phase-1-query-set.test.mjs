@@ -31,11 +31,12 @@ test("the run protocol measures unprompted mentions and evidence", () => {
 test("organic visibility and brand-explicit audits are separate machine-readable modes", () => {
   const modes = querySet.runProtocol.modes;
   assert.ok(modes);
+  assert.equal(querySet.runProtocol.defaultMode, "unpromptedOrganicVisibility");
   assert.deepEqual(modes.unpromptedOrganicVisibility, {
     promptPolicy: "brand-neutral",
     countInOrganicVisibility: true,
     outputNamespace: "organic",
-    outputDirectory: "outputs/llm-visibility-phase-1/organic"
+    outputDirectory: "outputs/llm-visibility-phase-1"
   });
   assert.deepEqual(modes.brandExplicitSiteAudit, {
     promptPolicy: "brand-explicit",
