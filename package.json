@@ -18,6 +18,7 @@
     "content:preflight": "node scripts/content-preflight.mjs",
     "blog:list": "node scripts/blog-content.mjs --list",
     "blog:validate": "node scripts/blog-content.mjs",
+    "blog:deploy-guard": "node scripts/verify-blog-deploy-baseline.mjs",
     "blog:card": "node scripts/render-blog-social-card.mjs",
     "post:blog:x": "node scripts/x-blog-post.mjs",
     "post:blog:social": "node scripts/x-blog-post.mjs",

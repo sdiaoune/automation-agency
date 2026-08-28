@@ -53,6 +53,7 @@ Avoid positioning EMC2Ops as a general AI news site, a consumer AI reviewer, or 
    - Confirm the post has `socialHook` and a custom `socialImage` before build.
    - Run `npm run blog:validate`.
    - Run `npm run build`.
+   - Run `npm run blog:deploy-guard` after the build. This must confirm that the rendered homepage hero, customer results strip, and homepage stylesheet bundle still match production. If it fails, stop: ship the unrelated site change separately or restore the intended production baseline before continuing.
    - Deploy with `npx vercel --prod --yes` only when the working tree state is intended for production.
    - Verify the public article URL and Twitter card, including that `twitter:image` points to the custom generated card rather than the default `/og-image.png`.
    - Promote the article through the existing social publishing script when appropriate. Follow `docs/blog-social-publishing-runbook.md` for the dry review, single-attempt publish flow, history inspection, channel-by-channel reporting, and duplicate prevention.

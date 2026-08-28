@@ -56,6 +56,55 @@ test("places customer operating results directly after the home hero", async ({ 
   await expect(cards.nth(2)).toContainText("Work order tickets processed per month");
 });
 
+test("home hero stays inside the visible viewport", async ({ page }) => {
+  const viewports = [
+    { width: 1904, height: 958 },
+    { width: 1440, height: 900 },
+    { width: 1366, height: 768 },
+    { width: 1280, height: 720 },
+    { width: 1024, height: 768 },
+    { width: 390, height: 844 },
+    { width: 390, height: 600 },
+    { width: 320, height: 568 },
+  ];
+
+  for (const viewport of viewports) {
+    await page.setViewportSize(viewport);
+    await page.goto("/");
+
+    const layout = await page.evaluate(() => {
+      const bounds = (selector) => {
+        const element = document.querySelector(selector);
+        const rect = element?.getBoundingClientRect();
+        return rect ? { top: Math.round(rect.top), bottom: Math.round(rect.bottom), height: Math.round(rect.height) } : null;
+      };
+
+      return {
+        hero: bounds(".hero"),
+        results: bounds(".hero + .customer-results"),
+        copy: bounds(".hero-copy"),
+        media: bounds(".product-hero-media"),
+        offers: bounds(".offer-strip"),
+        proof: bounds(".proof"),
+        horizontalOverflow: document.documentElement.scrollWidth > window.innerWidth,
+      };
+    });
+
+    expect(layout.hero.bottom, `${viewport.width}x${viewport.height} hero bottom`).toBeLessThanOrEqual(viewport.height + 1);
+    expect(layout.results.top, `${viewport.width}x${viewport.height} results top`).toBeLessThanOrEqual(viewport.height + 1);
+    expect(layout.copy.top).toBeGreaterThanOrEqual(layout.hero.top);
+    expect(layout.copy.bottom).toBeLessThanOrEqual(layout.hero.bottom);
+    expect(layout.media.height).toBeGreaterThan(0);
+    expect(layout.media.bottom).toBeLessThanOrEqual(layout.hero.bottom);
+    expect(layout.horizontalOverflow).toBe(false);
+
+    if (viewport.width > 719) {
+      expect(layout.offers.bottom).toBeLessThanOrEqual(layout.hero.bottom);
+      expect(layout.proof.bottom).toBeLessThanOrEqual(layout.hero.bottom);
+    }
+  }
+});
+
 test("booking page submits the audit form payload", async ({ page }) => {
   const errors = [];
   let submittedPayload;

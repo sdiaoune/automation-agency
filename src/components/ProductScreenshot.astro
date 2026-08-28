@@ -6,9 +6,15 @@ interface Props {
   screenshot: ProductScreenshot;
   variant?: "proof" | "hero";
   priority?: boolean;
+  useDesktopOnMobile?: boolean;
 }
 
-const { screenshot, variant = "proof", priority = false } = Astro.props;
+const {
+  screenshot,
+  variant = "proof",
+  priority = false,
+  useDesktopOnMobile = false,
+} = Astro.props;
 ---
 
 <figure
@@ -16,8 +22,8 @@ const { screenshot, variant = "proof", priority = false } = Astro.props;
   data-product-screenshot-route={screenshot.route}
 >
   <picture>
-    <source media="(max-width: 719px)" srcset={screenshot.mobile.webp} type="image/webp" />
-    <source media="(max-width: 719px)" srcset={screenshot.mobile.jpeg} type="image/jpeg" />
+    <source media="(max-width: 719px)" srcset={useDesktopOnMobile ? screenshot.desktop.webp : screenshot.mobile.webp} type="image/webp" />
+    <source media="(max-width: 719px)" srcset={useDesktopOnMobile ? screenshot.desktop.jpeg : screenshot.mobile.jpeg} type="image/jpeg" />
     <source srcset={screenshot.desktop.webp} type="image/webp" />
     <img
       src={screenshot.desktop.jpeg}

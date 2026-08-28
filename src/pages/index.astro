@@ -26,7 +26,7 @@ const productScreenshot = productScreenshotForPath("/");
 <main>
     <section class="hero">
       <div class="wrap hero-grid">
-        <div>
+        <div class="hero-copy">
           <div class="eyebrow">Missed leasing call recovery for property managers</div>
           <h1>Turn missed leasing calls into text-back, qualification, and routed next steps.</h1>
           <p class="lead">EMC2Ops installs one measurable workflow first: when a renter call is missed after hours, during tours, or while the team is busy, they get an immediate SMS path and your team gets a clean summary.</p>
@@ -34,20 +34,21 @@ const productScreenshot = productScreenshotForPath("/");
             <a href="/book-demo/" class="btn btn-primary">Book a 15-minute consultation</a>
             <a href="#demo" class="btn btn-secondary">Watch the Demo</a>
           </div>
-          <div class="offer-strip" aria-label="Core EMC2Ops services">
-            <div class="offer-chip"><span class="icon">01</span><div><strong>Immediate text-back</strong><span>Missed callers get a branded SMS in seconds</span></div></div>
-            <div class="offer-chip"><span class="icon">02</span><div><strong>Renter qualification</strong><span>Move timing, property fit, budget, pets, and intent captured</span></div></div>
-            <div class="offer-chip"><span class="icon">03</span><div><strong>Team and CRM routing</strong><span>Showing requests, transcripts, summaries, and tasks sent to the right place</span></div></div>
-          </div>
-          <div class="proof">
-            <span><i class="dot"></i> Built around your current phone/SMS and CRM stack</span>
-            <span><i class="dot"></i> Scoped around one measurable first workflow</span>
-            <span><i class="dot"></i> Human handoff stays in the team’s control</span>
-          </div>
         </div>
 
         <div class="dashboard product-hero-media">
-          <ProductScreenshot screenshot={productScreenshot} variant="hero" priority />
+          <ProductScreenshot screenshot={productScreenshot} variant="hero" priority useDesktopOnMobile />
+        </div>
+
+        <div class="offer-strip" aria-label="Core EMC2Ops services">
+          <div class="offer-chip"><span class="icon">01</span><div><strong>Immediate text-back</strong><span>Missed callers get a branded SMS in seconds</span></div></div>
+          <div class="offer-chip"><span class="icon">02</span><div><strong>Renter qualification</strong><span>Move timing, property fit, budget, pets, and intent captured</span></div></div>
+          <div class="offer-chip"><span class="icon">03</span><div><strong>Team and CRM routing</strong><span>Showing requests, transcripts, summaries, and tasks sent to the right place</span></div></div>
+        </div>
+        <div class="proof">
+          <span><i class="dot"></i> Built around your current phone/SMS and CRM stack</span>
+          <span><i class="dot"></i> Scoped around one measurable first workflow</span>
+          <span><i class="dot"></i> Human handoff stays in the team’s control</span>
         </div>
       </div>
     </section>
