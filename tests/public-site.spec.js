@@ -40,6 +40,22 @@ test("home page loads and routes audit CTAs to the booking page", async ({ page 
   expect(errors).toEqual([]);
 });
 
+test("places customer operating results directly after the home hero", async ({ page }) => {
+  await page.goto("/");
+
+  const results = page.locator(".hero + .customer-results");
+  const cards = results.locator(".customer-result");
+  await expect(results).toBeVisible();
+  await expect(cards).toHaveCount(3);
+  await expect(cards.nth(0)).toContainText("3,000+");
+  await expect(cards.nth(0)).toContainText("Units served");
+  await expect(cards.nth(0)).toContainText("Across 200+ properties");
+  await expect(cards.nth(1)).toContainText("300+");
+  await expect(cards.nth(1)).toContainText("Security deposits processed per month");
+  await expect(cards.nth(2)).toContainText("500+");
+  await expect(cards.nth(2)).toContainText("Work order tickets processed per month");
+});
+
 test("booking page submits the audit form payload", async ({ page }) => {
   const errors = [];
   let submittedPayload;
