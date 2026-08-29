@@ -1,0 +1,125 @@
+---
+import "../styles/security-deposit-preview.css";
+
+const evidenceItems = [
+  ["Move-in inspection", "Verified"],
+  ["Move-out inspection", "Verified"],
+  ["Before photos", "12 files"],
+  ["After photos", "14 files"],
+  ["Vendor invoices", "1 attached"],
+  ["Lease and policy", "Current"],
+];
+---
+
+<figure id="deposit-product-preview" class="deposit-preview" data-security-deposit-preview>
+  <div class="deposit-preview__appbar">
+    <div class="deposit-preview__brand">
+      <span class="deposit-preview__mark" aria-hidden="true">D</span>
+      <div>
+        <strong>Deposit Review</strong>
+        <span>EMC2Ops workflow</span>
+      </div>
+    </div>
+    <span class="deposit-preview__demo-badge">Fictional demo data</span>
+  </div>
+
+  <div class="deposit-preview__casebar">
+    <div>
+      <span class="deposit-preview__kicker">Security deposit review</span>
+      <h2>Unit 3B · Move-out case</h2>
+      <p>Portfolio Demo · Internal review due</p>
+    </div>
+    <span class="deposit-preview__status"><i aria-hidden="true"></i> Manager review required</span>
+  </div>
+
+  <div class="deposit-preview__workspace">
+    <aside class="deposit-preview__rail" aria-label="Evidence packet">
+      <div class="deposit-preview__section-heading">
+        <strong>Evidence packet</strong>
+        <span>6 of 6 ready</span>
+      </div>
+      <div class="deposit-preview__progress" aria-label="Evidence complete"><span></span></div>
+      <div class="deposit-preview__evidence-list">
+        {evidenceItems.map(([label, status], index) => (
+          <div class="deposit-preview__evidence-row">
+            <span class="deposit-preview__file-icon" aria-hidden="true">{index < 2 ? "✓" : index < 4 ? "▧" : "≡"}</span>
+            <span><strong>{label}</strong><small>{status}</small></span>
+          </div>
+        ))}
+      </div>
+      <div class="deposit-preview__deadline">
+        <span>Rule and deadline</span>
+        <strong>Policy version confirmed</strong>
+        <small>Counsel-approved configuration</small>
+      </div>
+    </aside>
+
+    <section class="deposit-preview__review" aria-label="Before and after evidence review">
+      <div class="deposit-preview__section-heading">
+        <strong>Verified comparison</strong>
+        <span>Kitchen · Countertop</span>
+      </div>
+      <div class="deposit-preview__comparison">
+        <figure>
+          <span>Before</span>
+          <img src="/assets/security-deposit-automation/kitchen-before.jpg" alt="Clean kitchen countertop before move-out" width="720" height="480" loading="lazy" />
+        </figure>
+        <figure>
+          <span>After</span>
+          <img src="/assets/security-deposit-automation/kitchen-after.jpg" alt="Kitchen countertop after move-out with visible damage" width="720" height="480" loading="lazy" />
+        </figure>
+      </div>
+      <div class="deposit-preview__finding">
+        <span class="deposit-preview__finding-icon" aria-hidden="true">AI</span>
+        <div>
+          <strong>Source-linked observation</strong>
+          <p>Visible countertop edge damage appears in the verified move-out image and is not present in the paired move-in image.</p>
+          <span>Advisory only · Liability and amount require staff review</span>
+        </div>
+      </div>
+      <div class="deposit-preview__finding deposit-preview__finding--neutral">
+        <span class="deposit-preview__finding-icon" aria-hidden="true">✓</span>
+        <div>
+          <strong>Evidence lineage preserved</strong>
+          <p>Observation is linked to both source images, inspection records, and the active case version.</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="deposit-preview__inspector" aria-label="Proposed disposition">
+      <div class="deposit-preview__section-heading">
+        <strong>Proposed disposition</strong>
+        <span>Not final</span>
+      </div>
+      <div class="deposit-preview__money-row">
+        <span>Deposit held</span>
+        <strong>$1,450.00</strong>
+      </div>
+      <div class="deposit-preview__charge-card">
+        <div>
+          <strong>Countertop repair</strong>
+          <span>Vendor estimate attached</span>
+        </div>
+        <strong>$280.00</strong>
+      </div>
+      <div class="deposit-preview__money-row deposit-preview__money-row--total">
+        <span>Proposed refund</span>
+        <strong>$1,170.00</strong>
+      </div>
+      <div class="deposit-preview__approval-note">
+        <strong>Human approval gate</strong>
+        <p>An authorized manager must confirm policy, liability, amount, and the final disposition.</p>
+      </div>
+      <button type="button" disabled>Ready for manager review</button>
+      <small class="deposit-preview__fineprint">The workflow does not move money or make legal decisions automatically.</small>
+    </aside>
+  </div>
+
+  <div class="deposit-preview__timeline" aria-label="Case workflow">
+    <span class="is-complete">Case opened</span>
+    <span class="is-complete">Evidence assembled</span>
+    <span class="is-current">Manager review</span>
+    <span>Disposition and refund tracking</span>
+  </div>
+  <figcaption>Illustrative product workflow with fictional data. Final financial and legal decisions remain with authorized staff.</figcaption>
+</figure>

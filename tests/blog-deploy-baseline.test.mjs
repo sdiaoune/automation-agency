@@ -14,16 +14,35 @@ const page = ({ hero = "Protected hero", results = "Protected results", extra = 
   <section class="latest-posts">${extra}</section>
 </body></html>`;
 
-async function withFixture({ livePage, liveCss, localPage, localCss }, run) {
+const sitemap = (paths) => `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+${paths.map((pathname) => `  <url><loc>https://www.emc2ops.com${pathname}</loc></url>`).join("\n")}
+</urlset>`;
+
+async function withFixture({
+  livePage,
+  liveCss,
+  localPage,
+  localCss,
+  liveSitemap = sitemap(["/", "/blog/existing-article/"]),
+  localSitemap = liveSitemap,
+}, run) {
   const distDir = await mkdtemp(path.join(os.tmpdir(), "emc2ops-blog-guard-"));
   await mkdir(path.join(distDir, "_astro"), { recursive: true });
   await writeFile(path.join(distDir, "index.html"), localPage);
   await writeFile(path.join(distDir, "_astro", "home.css"), localCss);
+  await writeFile(path.join(distDir, "sitemap.xml"), localSitemap);
 
   const server = createServer((request, response) => {
     if (request.url === "/_astro/home.css") {
       response.setHeader("content-type", "text/css");
       response.end(liveCss);
+      return;
+    }
+
+    if (request.url === "/sitemap.xml") {
+      response.setHeader("content-type", "application/xml");
+      response.end(liveSitemap);
       return;
     }
 
@@ -52,6 +71,43 @@ test("allows blog-only changes outside protected homepage regions", async () => 
   }, async ({ distDir, origin }) => {
     const result = await verifyBlogDeployBaseline({ distDir, origin });
     assert.deepEqual(result, { protectedRegions: 2, stylesheets: 1 });
+  });
+});
+
+test("allows an additive deploy that preserves every production URL", async () => {
+  await withFixture({
+    livePage: page(),
+    localPage: page(),
+    liveCss: ".hero { min-height: 100svh; }",
+    localCss: ".hero { min-height: 100svh; }",
+    liveSitemap: sitemap(["/", "/blog/existing-article/"]),
+    localSitemap: sitemap([
+      "/",
+      "/blog/existing-article/",
+      "/use-cases/security-deposit-automation/",
+    ]),
+  }, async ({ distDir, origin }) => {
+    await assert.doesNotReject(verifyBlogDeployBaseline({ distDir, origin }));
+  });
+});
+
+test("blocks a blog deploy that removes a production URL", async () => {
+  await withFixture({
+    livePage: page(),
+    localPage: page(),
+    liveCss: ".hero { min-height: 100svh; }",
+    localCss: ".hero { min-height: 100svh; }",
+    liveSitemap: sitemap([
+      "/",
+      "/blog/article-created-after-the-use-case/",
+      "/use-cases/security-deposit-automation/",
+    ]),
+    localSitemap: sitemap(["/"]),
+  }, async ({ distDir, origin }) => {
+    await assert.rejects(
+      verifyBlogDeployBaseline({ distDir, origin }),
+      /production URLs would disappear.*article-created-after-the-use-case.*security-deposit-automation/s,
+    );
   });
 });
 

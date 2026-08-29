@@ -51,6 +51,22 @@ function normalizeCss(value) {
     .trim();
 }
 
+function sitemapPaths(xml, label) {
+  const paths = new Set();
+  for (const match of xml.matchAll(/<loc>\s*([^<]+?)\s*<\/loc>/gis)) {
+    try {
+      const url = new URL(match[1]);
+      paths.add(`${url.pathname}${url.search}`);
+    } catch {
+      throw new Error(`Blog deployment blocked: ${label} contains an invalid sitemap URL: ${match[1]}.`);
+    }
+  }
+  if (paths.size === 0) {
+    throw new Error(`Blog deployment blocked: ${label} does not contain any sitemap URLs.`);
+  }
+  return paths;
+}
+
 function attributes(element) {
   const values = new Map();
   for (const match of element.matchAll(/([:\w-]+)\s*=\s*(["'])(.*?)\2/gis)) {
@@ -124,6 +140,19 @@ export async function verifyBlogDeployBaseline({
 } = {}) {
   const localHomepage = await readFile(path.join(distDir, "index.html"), "utf8");
   const liveHomepage = await fetchedText(new URL("/", origin));
+  const [localSitemap, liveSitemap] = await Promise.all([
+    readFile(path.join(distDir, "sitemap.xml"), "utf8"),
+    fetchedText(new URL("/sitemap.xml", origin)),
+  ]);
+
+  const localPaths = sitemapPaths(localSitemap, "candidate build");
+  const livePaths = sitemapPaths(liveSitemap, "production");
+  const missingPaths = [...livePaths].filter((pathname) => !localPaths.has(pathname)).sort();
+  if (missingPaths.length > 0) {
+    throw new Error(
+      `Blog deployment blocked: production URLs would disappear from the candidate build:\n${missingPaths.join("\n")}`,
+    );
+  }
 
   for (const region of protectedRegions) {
     const local = normalizeMarkup(elementWithClass(localHomepage, region));

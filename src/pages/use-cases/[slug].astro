@@ -1,5 +1,6 @@
 ---
 import FaqList from "../../components/FaqList.astro";
+import SecurityDepositProductPreview from "../../components/SecurityDepositProductPreview.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
@@ -103,6 +104,22 @@ const detailBySlug = {
       ["Note rule", "What summary should be logged, and what raw details should be excluded?", "CRM workflow"],
     ],
   },
+  "security-deposit-automation": {
+    exampleTitle: "Example: move-out evidence to approved disposition",
+    exampleSteps: [
+      "A completed move-out opens one deposit case with resident, unit, ledger balance, policy version, deadline, and assigned reviewer.",
+      "The workflow pairs verified move-in and move-out evidence, attaches the invoice, and drafts a neutral observation linked to its sources.",
+      "A manager reviews policy, liability, evidence, amount, and refund math, then approves or returns the frozen proposal with a reason.",
+      "The final disposition artifact, delivery state, refund milestone, and writeback status stay attached to the case history.",
+    ],
+    templateTitle: "Security deposit case template",
+    templateRows: [
+      ["Case identity", "Property, unit, resident, deposit held, policy version, deadline, and staff owner.", "PMS and intake"],
+      ["Evidence packet", "Inspections, before and after photos, invoices, policy files, and verification status.", "Evidence controls"],
+      ["Proposed disposition", "Source-linked observations, proposed deductions, credits, refund math, and exceptions.", "Review workspace"],
+      ["Approval and fulfillment", "Authorized reviewer, artifact, delivery, refund milestone, writeback, and activity trail.", "Human approval"],
+    ],
+  },
 }[useCase.slug];
 ---
 
@@ -131,6 +148,12 @@ const detailBySlug = {
         </div>
       </div>
     </section>
+
+    {useCase.slug === "security-deposit-automation" && (
+      <section class="wrap detail-section">
+        <SecurityDepositProductPreview />
+      </section>
+    )}
 
     <section class="wrap split-section">
       <div>

@@ -341,6 +341,98 @@ export const useCasePages: UseCasePage[] = [
       },
     ],
   },
+  {
+    slug: "security-deposit-automation",
+    primaryKeyword: "security deposit automation",
+    clusterKeywords: [
+      "security deposit disposition automation",
+      "security deposit return automation",
+      "property management deposit workflow",
+      "move-out deposit automation",
+      "security deposit deduction review",
+      "deposit accounting workflow",
+    ],
+    intent:
+      "A property management team wants every move-out deposit case to have complete evidence, reconciled amounts, clear approval ownership, deadline visibility, and a defensible disposition trail.",
+    title: "Security deposit automation",
+    seoTitle: "Security Deposit Automation for Property Managers",
+    description:
+      "Automate security deposit move-out intake, evidence review, proposed deductions, manager approvals, disposition documents, delivery, and refund tracking.",
+    h1: "Security deposit automation that keeps every deduction tied to evidence",
+    summary:
+      "EMC2Ops installs a security deposit workflow that assembles move-out records, compares verified evidence, reconciles proposed deductions and refunds, routes exceptions for manager approval, and preserves a complete disposition trail. AI can organize and summarize evidence; authorized staff make every final financial and legal decision.",
+    painPoints: [
+      "Move-out records are scattered across the PMS, inspection tools, inboxes, photos, vendor bills, resident messages, and spreadsheets.",
+      "Staff reconstruct the deposit held, credits, proposed deductions, refund, and deadline by hand for every case.",
+      "Photos and inspection findings are not reliably tied to the exact observation, charge, decision, and reviewer they support.",
+      "A missing forwarding address, invoice, required image, amount reconciliation, or approval is often discovered only when the deadline is close.",
+      "AI and automation cannot safely decide liability, normal wear, legal compliance, deductions, or money without authorized human review.",
+    ],
+    workflow: [
+      "Import or select the verified move-out and lock the property, unit, resident, ledger, jurisdiction or policy, and case version.",
+      "Assemble the deposit ledger, move-in and move-out inspections, verified photos, invoices, lease or policy documents, and relevant correspondence.",
+      "Apply the approved rule version and deadline source, then calculate the internal review target while leaving legal interpretation with authorized staff and counsel.",
+      "Draft neutral, source-linked observations and reconcile the proposed deductions, credits, and refund without treating AI suggestions as decisions.",
+      "Route missing evidence, mismatches, exceptions, and the exact frozen proposal to an authorized manager for review and approval.",
+      "Generate the approved disposition artifact and track delivery, refund fulfillment, and PMS writeback without moving money automatically.",
+    ],
+    metrics: [
+      "deposit cases processed per month",
+      "evidence completeness",
+      "days to manager-ready",
+      "exception rate",
+      "approval rework",
+      "deadline adherence",
+      "manual touches per case",
+    ],
+    bestFit: [
+      "Property operators processing enough move-outs that manual deposit files create recurring coordination and deadline pressure.",
+      "Teams whose ledger, inspections, images, invoices, approvals, delivery, and refund status currently live across several systems.",
+      "Organizations ready to define counsel-approved rules, evidence requirements, access boundaries, staff roles, and approval gates.",
+    ],
+    relatedServices: [
+      { label: "CRM workflow automation", href: "/services/crm-workflow-automation/" },
+      { label: "Owner update automation", href: "/services/owner-update-automation/" },
+      { label: "Maintenance intake automation", href: "/services/maintenance-intake-automation/" },
+    ],
+    relatedGuides: [
+      {
+        label: "Property Management Security Deposit Return Automation",
+        href: "/blog/property-management-security-deposit-return-automation/",
+      },
+      {
+        label: "Property Management Move-Out Automation",
+        href: "/blog/property-management-move-out-automation/",
+      },
+    ],
+    faqs: [
+      {
+        question: "What can security deposit automation handle?",
+        answer:
+          "It can open a case from a verified move-out, assemble ledger and evidence records, compare verified images, draft source-linked observations, reconcile a proposed disposition, route exceptions and approvals, generate the approved artifact, and track delivery, refund, and writeback milestones.",
+      },
+      {
+        question: "Does AI decide security deposit deductions or refunds?",
+        answer:
+          "No. AI may organize evidence and draft neutral, source-linked observations. Authorized staff remain responsible for policy, liability, wear, legal, deduction, refund, and approval decisions.",
+      },
+      {
+        question: "Can this connect to AppFolio or our existing property management system?",
+        answer:
+          "Yes, after the account's permissions and supported access path are verified. The workflow can use supported APIs, exports, inbox parsing, middleware, secure review queues, or manual writeback without promising unavailable direct access.",
+      },
+      {
+        question: "Does EMC2Ops guarantee security deposit legal compliance?",
+        answer:
+          "No. The workflow uses the operator's counsel-approved policies, rule configuration, deadline sources, and human review gates. It provides operational controls and an audit trail, not legal advice or a substitute for counsel.",
+      },
+      {
+        question: "Does the product send refunds automatically?",
+        answer:
+          "Not by default. It tracks the approved refund and fulfillment status. Moving money requires a separately approved payment integration, permissions, controls, reconciliation, and human authorization.",
+      },
+    ],
+  },
 ];
 
 export function useCaseUrl(useCase: UseCasePage) {

@@ -251,6 +251,42 @@ test("article page renders SEO, FAQ, breadcrumbs, and related links", async ({ p
   expect(schemaText).toContain("Article");
 });
 
+test("security deposit workflow remains listed and preserves human approval boundaries", async ({ page }) => {
+  const pagePath = "/use-cases/security-deposit-automation/";
+
+  await page.goto("/use-cases/");
+  await expect(page.locator(`a[href="${pagePath}"]`).first()).toContainText(
+    "Security deposit automation",
+  );
+
+  await page.goto(pagePath);
+  await expect(page.locator("h1")).toHaveText(
+    "Security deposit automation that keeps every deduction tied to evidence",
+  );
+  await expect(page.locator("link[rel=canonical]")).toHaveAttribute(
+    "href",
+    `https://www.emc2ops.com${pagePath}`,
+  );
+  await expect(page.locator("[data-security-deposit-preview]")).toBeVisible();
+  await expect(page.locator("[data-security-deposit-preview] img")).toHaveCount(2);
+  await expect(page.locator("[data-security-deposit-preview]")).toContainText(
+    "Manager review required",
+  );
+  await expect(page.locator("main")).toContainText(
+    "AI may organize evidence and draft neutral, source-linked observations",
+  );
+  await expect(page.locator("main")).toContainText(
+    "The workflow does not move money or make legal decisions automatically",
+  );
+
+  for (const viewport of [{ width: 390, height: 844 }, { width: 1440, height: 1000 }]) {
+    await page.setViewportSize(viewport);
+    await page.goto(pagePath);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+    expect(overflow, `${viewport.width}px security deposit page overflow`).toBe(false);
+  }
+});
+
 test("booking page records workflow and source context in analytics", async ({ page }) => {
   await page.addInitScript(() => {
     window.dataLayer = [];
