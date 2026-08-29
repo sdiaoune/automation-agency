@@ -1,0 +1,449 @@
+.authority-grid,
+.comparison-table,
+.metric-grid,
+.proof-standard-grid,
+.resource-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.authority-grid,
+.proof-standard-grid,
+.resource-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.authority-card,
+.calculator-panel,
+.comparison-table,
+.founder-card,
+.metric-card,
+.notice-card,
+.proof-standard,
+.resource-card,
+.result-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.authority-card,
+.proof-standard,
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+}
+
+.authority-card h2,
+.authority-card h3,
+.proof-standard h3,
+.resource-card h2,
+.resource-card h3 {
+  font-size: 1.22rem;
+  line-height: 1.24;
+  margin: 0 0 12px;
+}
+
+.authority-card p,
+.proof-standard p,
+.resource-card p {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.authority-card a,
+.resource-card a {
+  color: var(--primary);
+  font-weight: 820;
+  margin-top: auto;
+}
+
+.notice-card {
+  background: var(--accent-soft);
+  border-color: oklch(var(--brand-l) var(--brand-c) var(--brand-h) / .25);
+  padding: 22px;
+}
+
+.notice-card strong {
+  color: var(--foreground);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.notice-card p {
+  color: var(--muted-strong);
+  margin: 0;
+}
+
+.founder-card {
+  align-items: center;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 180px minmax(0, 1fr);
+  padding: 24px;
+}
+
+.founder-card img {
+  aspect-ratio: 1;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  object-fit: cover;
+  width: 180px;
+}
+
+.founder-card p {
+  color: var(--muted);
+}
+
+.founder-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.founder-links a {
+  color: var(--primary);
+  font-weight: 780;
+}
+
+.calculator-shell {
+  align-items: start;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr);
+}
+
+.calculator-panel,
+.result-panel {
+  padding: 24px;
+}
+
+.calculator-fields {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.calculator-field {
+  display: grid;
+  gap: 7px;
+}
+
+.calculator-field label {
+  color: var(--foreground);
+  font-size: .9rem;
+  font-weight: 780;
+}
+
+.calculator-field small,
+.calculator-note {
+  color: var(--muted);
+}
+
+.calculator-field input {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--foreground);
+  font: inherit;
+  min-height: 46px;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.calculator-field input:focus-visible {
+  border-color: var(--primary);
+  box-shadow: var(--focus-ring);
+  outline: none;
+}
+
+.calculator-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.metric-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.metric-card {
+  padding: 16px;
+}
+
+.metric-card span {
+  color: var(--muted);
+  display: block;
+  font-size: .85rem;
+  margin-bottom: 6px;
+}
+
+.metric-card strong {
+  color: var(--foreground);
+  font-size: 1.65rem;
+}
+
+.formula-list {
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+  padding-left: 20px;
+}
+
+.worksheet-heading {
+  align-items: end;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, .62fr);
+  margin-bottom: 24px;
+}
+
+.worksheet-heading p,
+.section-intro,
+.worksheet-sources p {
+  color: var(--muted);
+}
+
+.worksheet-meta {
+  background: var(--muted-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--muted-strong);
+  display: grid;
+  font-size: .9rem;
+  gap: 12px;
+  padding: 16px;
+}
+
+.workflow-audit-table,
+.measurement-table {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.measurement-table {
+  margin-top: 24px;
+}
+
+.workflow-audit-table th,
+.workflow-audit-table td,
+.measurement-table th,
+.measurement-table td {
+  border-bottom: 1px solid var(--border);
+  color: var(--muted-strong);
+  padding: 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.workflow-audit-table th:not(:first-child),
+.workflow-audit-table td:not(:first-child),
+.measurement-table th:not(:first-child),
+.measurement-table td:not(:first-child) {
+  border-left: 1px solid var(--border);
+}
+
+.workflow-audit-table thead th,
+.measurement-table thead th {
+  background: var(--muted-surface);
+  color: var(--foreground) !important;
+  font-size: .85rem;
+  font-weight: 850;
+  letter-spacing: .02em;
+}
+
+.audit-stage {
+  display: grid;
+  gap: 6px;
+}
+
+.audit-stage span {
+  color: var(--primary);
+  font-size: .78rem;
+  font-weight: 900;
+}
+
+.audit-stage strong,
+.measurement-table tbody th {
+  color: var(--foreground);
+}
+
+.workflow-audit-table th:nth-child(1) { width: 18%; }
+.workflow-audit-table th:nth-child(2),
+.workflow-audit-table th:nth-child(3) { width: 35%; }
+.workflow-audit-table th:nth-child(4) { width: 12%; }
+.measurement-table th:nth-child(1) { width: 24%; }
+.measurement-table th:nth-child(2) { width: 49%; }
+.measurement-table th:nth-child(3) { width: 27%; }
+.mobile-cell-label { display: none; }
+
+.audit-result {
+  color: var(--muted) !important;
+  line-height: 1.8;
+  white-space: nowrap;
+}
+
+.worksheet-note {
+  color: var(--muted);
+  font-size: .92rem;
+  margin: 16px 0 0;
+}
+
+.worksheet-split {
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
+}
+
+.gate-list {
+  margin-top: 22px;
+}
+
+.gate-list li::before {
+  color: var(--muted-strong);
+  content: "□";
+}
+
+.conversion-card .btn {
+  margin-top: 18px;
+}
+
+.comparison-table {
+  grid-template-columns: minmax(150px, .65fr) repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.comparison-table > div {
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  padding: 16px;
+}
+
+.comparison-table > div:nth-child(3n + 1) {
+  color: var(--foreground);
+  font-weight: 820;
+}
+
+.comparison-table .comparison-heading {
+  background: var(--muted-surface);
+  color: var(--foreground);
+  font-weight: 850;
+}
+
+@media (max-width: 900px) {
+  .authority-grid,
+  .calculator-shell,
+  .founder-card,
+  .proof-standard-grid,
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .worksheet-heading,
+  .worksheet-split {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-audit-table thead,
+  .measurement-table thead {
+    display: none;
+  }
+
+  .workflow-audit-table,
+  .workflow-audit-table tbody,
+  .workflow-audit-table tr,
+  .workflow-audit-table th,
+  .workflow-audit-table td,
+  .measurement-table,
+  .measurement-table tbody,
+  .measurement-table tr,
+  .measurement-table th,
+  .measurement-table td {
+    display: block;
+    width: 100% !important;
+  }
+
+  .workflow-audit-table th,
+  .workflow-audit-table td,
+  .measurement-table th,
+  .measurement-table td {
+    border-left: 0 !important;
+  }
+
+  .audit-stage,
+  .measurement-table tbody th {
+    background: var(--muted-surface);
+    border-top: 1px solid var(--border);
+  }
+
+  .mobile-cell-label {
+    color: var(--foreground);
+    display: block;
+    font-size: .72rem;
+    font-weight: 850;
+    letter-spacing: .06em;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+
+  .workflow-audit-page [data-sales-chatbot] {
+    display: none !important;
+  }
+
+  .founder-card img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 620px) {
+  .calculator-fields,
+  .metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-table {
+    display: block;
+  }
+
+  .comparison-table > div {
+    border-bottom: 0;
+  }
+
+  .comparison-table > div:nth-child(3n + 1) {
+    background: var(--muted-surface);
+    border-top: 1px solid var(--border);
+    margin-top: 8px;
+  }
+}
+
+@media print {
+  [data-site-header],
+  .site-footer,
+  .calculator-actions,
+  [data-sales-chatbot] {
+    display: none !important;
+  }
+
+  .service-hero .hero-actions,
+  .conversion-card,
+  .worksheet-sources {
+    display: none !important;
+  }
+
+  .workflow-audit-table,
+  .measurement-table {
+    box-shadow: none;
+  }
+
+  .calculator-shell {
+    grid-template-columns: 1fr 1fr;
+  }
+}

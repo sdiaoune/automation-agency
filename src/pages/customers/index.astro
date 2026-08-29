@@ -1,0 +1,79 @@
+---
+import ClientReviews from "../../components/ClientReviews.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { customerStories, customerStoryUrl } from "../../lib/customerStories";
+import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../../lib/site";
+import "../../styles/service.css";
+import "../../styles/authority.css";
+
+const title = "EMC2Ops Customer Proof | Reviews and Property Management Results";
+const description =
+  "See EMC2Ops client reviews, evidence standards, and approved property management automation customer stories.";
+---
+
+<SiteLayout
+  title={title}
+  description={description}
+  canonical={absoluteUrl("/customers/")}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt="EMC2Ops client proof and property management automation results."
+  schema={standardPageSchema({ path: "/customers/", name: "Customer proof", description, type: "CollectionPage" })}
+  pageClass="service-page"
+>
+  <SiteHeader />
+  <main>
+    <section class="service-hero">
+      <div class="wrap">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span>Customers</nav>
+        <p class="eyebrow">Customer proof</p>
+        <h1>Evidence before claims.</h1>
+        <p class="dek">EMC2Ops publishes completed client feedback as received and separates general automation delivery experience from property-management-specific results.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/book-demo/">Book a 15-minute consultation</a>
+          <a class="btn btn-secondary" href="#evidence-standards">See our evidence standards</a>
+        </div>
+      </div>
+    </section>
+
+    <ClientReviews />
+
+    <section class="wrap detail-section" aria-labelledby="property-stories-heading">
+      <h2 id="property-stories-heading">Property management customer stories</h2>
+      {customerStories.length > 0 ? (
+        <div class="authority-grid">
+          {customerStories.map((story) => (
+            <article class="authority-card">
+              <h3>{story.title}</h3>
+              <p>{story.summary}</p>
+              <a href={customerStoryUrl(story)}>Read the verified customer story</a>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <div class="notice-card">
+          <strong>The first property-management story is under evidence review.</strong>
+          <p>It will be published only after the customer label, measurement window, metric definitions, limitations, and quotation are approved. Until then, EMC2Ops does not present general automation reviews as property-management outcomes.</p>
+        </div>
+      )}
+    </section>
+
+    <section id="evidence-standards" class="wrap detail-section">
+      <h2>What must be verified before a story goes live</h2>
+      <div class="proof-standard-grid">
+        <article class="proof-standard"><h3>Defined baseline</h3><p>The starting period, workflow state, and metric definitions must be documented.</p></article>
+        <article class="proof-standard"><h3>Measured result</h3><p>Every result needs a source record, time window, and explanation of how it was calculated.</p></article>
+        <article class="proof-standard"><h3>Approved disclosure</h3><p>The customer approves the label, quotation, allowed context, and details that must remain private.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap detail-section">
+      <div class="conversion-cta">
+        <div><h2>Start with one outcome your team can measure.</h2><p>Map the baseline, install one workflow, and agree on the result definition before launch.</p></div>
+        <div class="conversion-cta-actions"><a class="btn btn-primary" href="/book-demo/?workflow=customer-proof&source=customers">Book my workflow audit</a></div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</SiteLayout>

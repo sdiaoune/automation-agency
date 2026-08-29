@@ -6,23 +6,27 @@ interface Props {
 const { variant = "blog" } = Astro.props;
 
 const landingLinks = [
-  { href: "#overview", label: "What You Get" },
   { href: "/services/", label: "Services" },
   { href: "/use-cases/", label: "Use Cases" },
   { href: "/integrations/", label: "Integrations" },
-  { href: "#proof", label: "Proof" },
-  { href: "/blog/", label: "Blog" },
+  { href: "/customers/", label: "Customers" },
   { href: "/about/", label: "About" },
-  { href: "#faq", label: "FAQ" },
 ];
 
 const siteLinks = [
-  { href: "/", label: "Home" },
   { href: "/services/", label: "Services" },
   { href: "/use-cases/", label: "Use Cases" },
   { href: "/integrations/", label: "Integrations" },
-  { href: "/blog/", label: "Blog" },
+  { href: "/customers/", label: "Customers" },
   { href: "/about/", label: "About" },
+];
+
+const resourceLinks = [
+  { href: "/resources/", label: "Resource hub" },
+  { href: "/resources/missed-call-workflow-audit/", label: "Workflow audit" },
+  { href: "/resources/missed-call-recovery-roi-calculator/", label: "ROI calculator" },
+  { href: "/compare/", label: "Comparisons" },
+  { href: "/blog/", label: "Blog" },
 ];
 
 const navLinks = variant === "landing" ? landingLinks : siteLinks;
@@ -37,6 +41,12 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
     </a>
     <nav class="navlinks" aria-label="Primary">
       {navLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+      <details class="nav-dropdown">
+        <summary>Resources</summary>
+        <div class="nav-dropdown-menu">
+          {resourceLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+        </div>
+      </details>
       <a href="/book-demo/" class="btn btn-primary">Book a 15-minute consultation</a>
     </nav>
     <div class="nav-actions">
@@ -71,7 +81,9 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
       <span>Menu</span>
     </div>
     <div class="mobile-menu-links">
+      <a href="/" data-mobile-nav-link>Home</a>
       {navLinks.map((link) => <a href={link.href} data-mobile-nav-link>{link.label}</a>)}
+      {resourceLinks.map((link) => <a href={link.href} data-mobile-nav-link>{link.label}</a>)}
     </div>
     <a class="mobile-menu-cta" href="/book-demo/" data-mobile-nav-link>Book a 15-minute consultation</a>
   </nav>
@@ -135,6 +147,72 @@ const mobileNavId = `mobile-primary-nav-${variant}`;
     min-height: 40px;
     padding: 0 8px;
     transition: background .18s ease, color .18s ease;
+  }
+
+  .nav-dropdown {
+    position: relative;
+  }
+
+  .nav-dropdown summary {
+    align-items: center;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 700;
+    list-style: none;
+    min-height: 40px;
+    padding: 0 8px;
+  }
+
+  .nav-dropdown summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .nav-dropdown summary::after {
+    content: "";
+    border-bottom: 1.5px solid currentColor;
+    border-right: 1.5px solid currentColor;
+    height: 6px;
+    margin-left: 7px;
+    transform: rotate(45deg) translateY(-2px);
+    width: 6px;
+  }
+
+  .nav-dropdown[open] summary,
+  .nav-dropdown summary:hover,
+  .nav-dropdown summary:focus-visible {
+    background: var(--secondary);
+    color: var(--foreground);
+    outline: none;
+  }
+
+  .nav-dropdown-menu {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    display: grid;
+    gap: 4px;
+    min-width: 220px;
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 80;
+  }
+
+  .nav-dropdown-menu a {
+    border-radius: var(--radius-sm);
+    color: var(--muted-strong);
+    font-weight: 740;
+    padding: 10px 12px;
+  }
+
+  .nav-dropdown-menu a:hover,
+  .nav-dropdown-menu a:focus-visible {
+    background: var(--secondary);
+    color: var(--foreground);
+    outline: none;
   }
 
   .navlinks > a:not(.btn):hover,

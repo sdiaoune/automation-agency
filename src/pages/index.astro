@@ -4,6 +4,7 @@ import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
 import ClientReviews from "../components/ClientReviews.astro";
 import ProductScreenshot from "../components/ProductScreenshot.astro";
+import { homepageBuyerFaqs, homepageSetupFaqs } from "../lib/homepageFaq";
 import { productScreenshotForPath } from "../lib/productScreenshots";
 import { absoluteUrl, defaultSocialImage, homeSchema } from "../lib/site";
 import "../styles/landing.css";
@@ -305,6 +306,20 @@ const productScreenshot = productScreenshotForPath("/");
 
     <ClientReviews />
 
+    <section id="evidence">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Use evidence to decide what to automate first.</h2>
+          <p>Review completed client feedback, model the missed-call opportunity with your own assumptions, and compare implementation approaches before choosing a platform.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><span class="icon" aria-hidden="true">CP</span><h3><a href="/customers/">Customer proof</a></h3><p>See verified reviews, property-management story standards, and the line between delivery experience and vertical outcomes.</p></article>
+          <article class="card"><span class="icon" aria-hidden="true">ROI</span><h3><a href="/resources/missed-call-recovery-roi-calculator/">Missed-call recovery calculator</a></h3><p>Estimate recovered conversations, qualified renters, tours, leases, and optional value using your own data.</p></article>
+          <article class="card"><span class="icon" aria-hidden="true">VS</span><h3><a href="/compare/">Buying comparisons</a></h3><p>Compare AI front desks, call centers, custom workflows, and off-the-shelf software by operating fit.</p></article>
+        </div>
+      </div>
+    </section>
+
     <section id="demo">
       <div class="wrap">
         <div class="section-head">
@@ -449,33 +464,33 @@ const productScreenshot = productScreenshotForPath("/");
       <div class="wrap">
         <div class="section-head">
           <h2>Questions property managers ask before installing AI.</h2>
-          <p>These answers cover setup timing, CRM integrations, team handoff, maintenance intake, and the compliance questions to resolve before launch.</p>
+          <p>Clear answers on call handling, rollout effort, human handoff, fit, customization, alternatives, languages, pricing, integrations, and compliance.</p>
         </div>
 
-        <div class="faq-grid">
-          <div class="faq-item">
-            <h3>How fast can this go live?</h3>
-            <p>The starter missed-call and follow-up workflow is scoped after access, copy, CRM details, and call/SMS requirements are confirmed.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Does this replace my team?</h3>
-            <p>No. It handles repetitive intake, qualification, routing, reminders, and logging so your team can focus on higher-value conversations.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Can it connect to my CRM?</h3>
-            <p>Most CRMs can be supported through native integrations, APIs, Zapier, Make, n8n, webhooks, or custom database workflows.</p>
-          </div>
-          <div class="faq-item">
-            <h3>What about SMS compliance?</h3>
-            <p>We design opt-in language, message flows, and routing around your provider’s requirements. Final compliance approval depends on your business, use case, and carrier setup.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Can it handle maintenance requests?</h3>
-            <p>Yes. The AI can collect the issue, urgency, property/unit, photos or links when supported, and route the request to your team or vendor process.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Do I need AI voice right away?</h3>
-            <p>No. Many teams should start with missed-call text-back and CRM logging, then add AI voice after the workflow proves ROI.</p>
+        <div class="faq-grid buyer-faq-grid">
+          {homepageBuyerFaqs.map((faq, index) => (
+            <details class="faq-item" open={index === 0}>
+              <summary>
+                <span class="faq-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+                <span>{faq.question}</span>
+              </summary>
+              <div class="faq-answer">
+                <p>{faq.answer}</p>
+                {faq.cta && <a class="faq-link" href={faq.cta.href}>{faq.cta.label} <span aria-hidden="true">→</span></a>}
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <div class="faq-secondary">
+          <h3>More setup questions</h3>
+          <div class="faq-grid setup-faq-grid">
+            {homepageSetupFaqs.map((faq) => (
+              <details class="faq-item compact">
+                <summary><span>{faq.question}</span></summary>
+                <div class="faq-answer"><p>{faq.answer}</p></div>
+              </details>
+            ))}
           </div>
         </div>
       </div>

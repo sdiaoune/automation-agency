@@ -1,0 +1,37 @@
+---
+import type { WorkflowProof } from "../lib/workflowProof";
+
+interface Props {
+  proof: WorkflowProof;
+}
+
+const { proof } = Astro.props;
+---
+
+<section class="wrap detail-section workflow-proof-section" aria-labelledby="workflow-proof-heading">
+  <p class="eyebrow">Measurement and proof</p>
+  <h2 id="workflow-proof-heading">{proof.title}</h2>
+  <p class="section-lede">{proof.intro}</p>
+  <div class="workflow-proof-grid">
+    {proof.metrics.map((metric) => (
+      <article class="workflow-proof-card">
+        <h3>{metric.label}</h3>
+        <p>{metric.definition}</p>
+        <small><strong>Proof records:</strong> {metric.evidence}</small>
+      </article>
+    ))}
+  </div>
+  <div class="notice-card workflow-proof-disclosure">
+    <strong>Evidence boundary</strong>
+    <p>
+      PM Ops screenshots on this site use fictional workflow data. EMC2Ops currently publishes two
+      five-star reviews from general automation projects, not property-management outcome claims. A
+      property-management customer story will publish only after its baseline, source records,
+      measurement window, metric definitions, limitations, quotation, and client approval are verified.
+    </p>
+    <div class="workflow-proof-links">
+      <a href="/customers/">Review the evidence standard</a>
+      <a href="/resources/missed-call-recovery-roi-calculator/">Model missed-call recovery assumptions</a>
+    </div>
+  </div>
+</section>

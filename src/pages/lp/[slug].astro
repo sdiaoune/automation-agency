@@ -1,0 +1,408 @@
+---
+import FunnelIcon from "../../components/FunnelIcon.astro";
+import FunnelLayout from "../../layouts/FunnelLayout.astro";
+import { ratedClientReviews } from "../../lib/clientReviews";
+import { funnelPages, type FunnelPage } from "../../lib/funnelPages";
+
+export function getStaticPaths() {
+  return funnelPages.map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+interface Props { page: FunnelPage; }
+const { page } = Astro.props;
+const canonical = `https://www.emc2ops.com/lp/${page.slug}/`;
+
+const benchmarkCards = [
+  { value: "10+", label: "hours saved per week", detail: "Average reported by users of AppFolio's Realm-X Assistant.", source: "AppFolio customer benchmark", url: "https://www.appfolio.com/newsroom/appfolio-unleashes-realm-x-ai-capabilities", icon: "clock" },
+  { value: "46%", label: "of leads arrived after hours", detail: "Woodward Properties also attributed 33% of its EliseAI-generated leases to those interactions.", source: "EliseAI / Woodward benchmark", url: "https://eliseai.com/customer-stories/how-woodward-properties-built-a-24-7-operating-model-with-eliseai", icon: "calendar" },
+  { value: "17h", label: "saved weekly, per community", detail: "Reported alongside a 40% reduction in median work-order completion time.", source: "EliseAI / S2 benchmark", url: "https://eliseai.com/customer-stories/how-s2-empowers-their-techs-and-completes-work-orders-faster-with-eliseais-maintenance-app", icon: "wrench" },
+] as const;
+
+const proofLedger = [
+  { result: "26 seconds saved per AI-generated message, on average", context: "AppFolio reported nearly half a million messages generated in 30 days.", source: "AppFolio", url: "https://www.appfolio.com/newsroom/appfolio-unleashes-realm-x-ai-capabilities" },
+  { result: "93% of interactions automated; capacity estimated at 6.6 FTE", context: "Woodward's 24/7 operating-model customer story.", source: "EliseAI / Woodward", url: "https://eliseai.com/customer-stories/how-woodward-properties-built-a-24-7-operating-model-with-eliseai" },
+  { result: "45% of after-hours emergency calls de-escalated", context: "S2 Residential's maintenance-app customer story.", source: "EliseAI / S2 Residential", url: "https://eliseai.com/customer-stories/how-s2-empowers-their-techs-and-completes-work-orders-faster-with-eliseais-maintenance-app" },
+  { result: "86% of leasing messages automated; 164 leases from after-hours chats", context: "RYSE Management's customer story.", source: "EliseAI / RYSE", url: "https://eliseai.com/customer-stories/how-ryse-management-built-a-tech-enabled-fee-management-startup-with-help-from-eliseai" },
+  { result: "Move-ins per specialist increased from 7 to 15+ with headcount held flat", context: "Flatz Living also reported a 4–5× return on its AI investment.", source: "EliseAI / Flatz Living", url: "https://eliseai.com/customer-stories/flatz-living-implements-a-leaner-management-model-with-ai" },
+] as const;
+
+const queueRows = [
+  { item: "Missed call", source: "Phone", status: "New", team: "Leasing", age: "2m", icon: "phone" },
+  { item: "Leasing follow-up", source: "Website form", status: "In progress", team: "Leasing", age: "15m", icon: "user" },
+  { item: "Maintenance intake", source: "Resident portal", status: "New", team: "Maintenance", age: "22m", icon: "wrench" },
+  { item: "Owner update", source: "Monthly report", status: "In review", team: "Accounting", age: "1h", icon: "building" },
+  { item: "Vendor dispatch", source: "Work order", status: "Queued", team: "Maintenance", age: "1h 35m", icon: "users" },
+] as const;
+
+const workflowLeaks = ["Missed after-hours leads", "Slow leasing follow-up", "Maintenance routing delays", "Owner-update bottlenecks", "Vendor handoff gaps", "Duplicate CRM / PMS data entry"];
+const offerDeliverables = [
+  { title: "Workflow leak map", copy: "See where the trigger, owner, deadline, or follow-up is breaking down." },
+  { title: "Handoff + approval blueprint", copy: "Define what can move automatically and where a person should stay in control." },
+  { title: "30-day measurement scorecard", copy: "Know which response, completion, and time-saved signals to baseline before rollout." },
+];
+const benefits = [
+  { title: "Capture every signal", copy: "Calls, forms, portals, and inboxes flow into one visible queue.", icon: "zap" },
+  { title: "Prioritize and assign", copy: "Route the right work to the right person using rules you control.", icon: "shield" },
+  { title: "Close the loop", copy: "Keep the handoff moving, log the outcome, and update the source record.", icon: "database" },
+] as const;
+const faqs = [
+  { question: "Does EMC2Ops replace my property management system?", answer: "No. PM Ops is designed as an operations layer around the property and CRM systems you already use. We start by mapping one workflow and its required connections." },
+  { question: "What happens after I submit the form?", answer: "We review the bottleneck you selected, map the trigger, handoffs, approvals, and writeback, then contact you with a focused first-workflow recommendation." },
+  { question: "Can a person approve actions before anything is sent?", answer: "Yes. Human-review checkpoints can stay in the workflow for resident communications, owner updates, vendor decisions, and other high-impact actions." },
+  { question: "How quickly can we start with one workflow?", answer: "It depends on the systems and approvals involved. The first step is a short workflow review so we can scope the smallest useful launch instead of proposing a broad replacement project." },
+];
+---
+
+<FunnelLayout title={`${page.headline} | EMC2Ops`} description={page.description} canonical={canonical}>
+  <main class="funnel-page" data-funnel-page={page.slug}>
+    <section class="funnel-hero">
+      <div class="funnel-shell funnel-header">
+        <div class="funnel-logo" aria-label="EMC2Ops PM Ops"><span>EMC2</span><strong>Ops</strong><small>PM Ops</small></div>
+        <span class="funnel-private-pill"><FunnelIcon name="lock" size={14} /> Private workflow review</span>
+      </div>
+
+      <div class="funnel-shell funnel-hero-grid">
+        <div class="funnel-hero-copy">
+          <p class="funnel-eyebrow">{page.eyebrow}</p>
+          <h1>{page.headline}</h1>
+          <p class="funnel-hero-description">{page.description}</p>
+          <div class="funnel-hero-intrigue">
+            <strong>Find the operational leak hiding in:</strong>
+            <ul>{workflowLeaks.map((leak) => <li><FunnelIcon name="check" size={14} />{leak}</li>)}</ul>
+          </div>
+          <button class="funnel-text-button js-scroll-to-form" data-placement="hero_text_link" type="button">Get my free workflow plan <FunnelIcon name="arrow" size={18} /></button>
+
+          <div class="funnel-mini-queue" aria-label="Example PM Ops activity queue">
+            <div class="funnel-mini-head"><strong>Operations queue</strong><span>Live workflow view</span></div>
+            {queueRows.slice(0,4).map((row) => (
+              <div class="funnel-mini-row">
+                <span class="funnel-queue-icon"><FunnelIcon name={row.icon} size={16} /></span>
+                <strong>{row.item}</strong><span class="funnel-mini-source">{row.source}</span><span class="funnel-status"><i></i>{row.status}</span><small>{row.age}</small>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="funnel-form-card" id="funnel-intake-card">
+          <form id="lead-form">
+            <p class="funnel-kicker">$0 workflow review</p>
+            <h2>Get your workflow savings plan</h2>
+            <p class="funnel-form-intro">One workflow. A focused leak map, approval blueprint, and measurement scorecard.</p>
+            <label>Work email<input autocomplete="email" name="email" placeholder="name@company.com" required type="email" /></label>
+            <label>Company<input autocomplete="organization" name="company" placeholder="Your company" required type="text" minlength="2" /></label>
+            <div class="funnel-form-grid">
+              <label>Portfolio size<select name="portfolio_size" required><option value="" selected disabled>Select…</option><option>1–100 units</option><option>101–500 units</option><option>501–2,000 units</option><option>2,001–10,000 units</option><option>10,000+ units</option></select></label>
+              <label>Current system<select name="current_system" required><option value="" selected disabled>Select…</option><option>AppFolio</option><option>Buildium</option><option>Yardi</option><option>RealPage</option><option>Entrata</option><option>Rent Manager</option><option>Spreadsheets / multiple tools</option><option>Other</option></select></label>
+            </div>
+            <label>Biggest bottleneck<select name="biggest_bottleneck" required><option value="" selected disabled>Select…</option><option>Missed calls and after-hours response</option><option>Leasing lead follow-up</option><option>Maintenance intake and triage</option><option>Owner updates and reporting</option><option>Vendor dispatch and follow-through</option><option>CRM / PMS data entry and writeback</option><option>Another repetitive workflow</option></select></label>
+            <label class="funnel-honeypot" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off" /></label>
+            <input type="hidden" name="page_slug" value={page.slug} />
+            <input type="hidden" name="source_url" /><input type="hidden" name="referrer" />
+            <input type="hidden" name="utm_source" /><input type="hidden" name="utm_medium" /><input type="hidden" name="utm_campaign" /><input type="hidden" name="utm_content" /><input type="hidden" name="utm_term" />
+            <p class="funnel-form-error" id="lead-form-error" role="alert"></p>
+            <button class="funnel-primary-button" type="submit"><span>Get my free workflow plan</span><FunnelIcon name="arrow" size={20} /></button>
+            <p class="funnel-form-note"><FunnelIcon name="lock" size={15} /> 60 seconds · No spam · No obligation</p>
+            <p class="funnel-consent">By submitting, you agree to be contacted about this workflow review.</p>
+          </form>
+
+          <section class="funnel-schedule" id="funnel-schedule" aria-live="polite" hidden>
+            <p class="funnel-kicker">Saved · Step 2 of 2</p>
+            <h2>Choose your 15-minute workflow review</h2>
+            <p class="funnel-form-intro">Your answers are recorded. Pick a time below to finish.</p>
+            <div class="funnel-calendar-shell">
+              <div class="funnel-calendar-head"><strong>Available times</strong><small id="funnel-calendar-timezone"></small></div>
+              <div class="funnel-date-list" id="funnel-date-list" aria-label="Choose a date"></div>
+              <div class="funnel-time-list" id="funnel-time-list" aria-label="Choose a time"><p class="funnel-slot-loading">Loading the calendar…</p></div>
+            </div>
+            <div class="funnel-slot-summary" id="funnel-slot-summary" hidden><FunnelIcon name="calendar" size={18} /><span><small>Your selected time</small><strong id="funnel-slot-label"></strong></span></div>
+            <p class="funnel-form-error" id="funnel-schedule-error" role="alert"></p>
+            <button class="funnel-primary-button" id="funnel-confirm-slot" type="button" disabled><span>Confirm my consultation</span><FunnelIcon name="arrow" size={20} /></button>
+            <p class="funnel-form-note"><FunnelIcon name="lock" size={15} /> Your intake is already safely recorded</p>
+          </section>
+
+          <section class="funnel-success" id="lead-success" role="status" aria-live="polite" hidden>
+            <span class="funnel-success-icon"><FunnelIcon name="check" size={28} /></span>
+            <p class="funnel-kicker">You're booked</p>
+            <h2>Your workflow review is confirmed.</h2>
+            <p>We saved your intake and reserved <strong id="funnel-confirmed-slot"></strong>.</p>
+            <div class="funnel-success-next"><FunnelIcon name="mail" size={20} /><span>Watch your inbox for the meeting details.</span></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="funnel-problem" aria-labelledby="problem-heading"><div class="funnel-shell">
+      <p class="funnel-section-kicker">The hidden operating cost</p><h2 id="problem-heading">The expensive work is usually hiding between systems.</h2><p class="funnel-section-intro">A new tool does not fix a broken handoff by itself. The leak lives between the signal, the next decision, the person responsible, and the record that never gets updated.</p>
+      <div class="funnel-problem-grid"><article><span>01</span><h3>Signals wait</h3><p>Calls, forms, inboxes, and portals create work at different hours in different places.</p></article><article><span>02</span><h3>Follow-up becomes invisible</h3><p>Spreadsheets, reminders, and good intentions cannot show who owns the next move.</p></article><article><span>03</span><h3>The cost stays unmeasured</h3><p>Without a baseline, teams cannot prove what should be automated—or whether it worked.</p></article></div>
+      <div class="funnel-problem-solution"><FunnelIcon name="zap" size={24} /><p><strong>EMC2Ops connects the gaps.</strong> Give each signal an owner, decision, deadline, approval path, and writeback—while keeping the property system your team already uses.</p></div>
+    </div></section>
+
+    <section class="funnel-offer" aria-labelledby="offer-heading"><div class="funnel-shell funnel-offer-panel">
+      <div class="funnel-offer-copy"><p class="funnel-section-kicker">A focused first step</p><h2 id="offer-heading">Get the plan before you buy the platform.</h2><p>Start with one high-friction workflow. We’ll map the practical path forward and the measurements needed to prove whether it saves time.</p><div class="funnel-offer-price"><span>Your cost</span><strong>$0</strong><small>One workflow per review</small></div><button class="funnel-primary-button js-scroll-to-form" data-placement="offer_section" type="button">Get my free workflow plan <FunnelIcon name="arrow" size={20} /></button></div>
+      <div class="funnel-offer-stack"><p>Included in your review</p>{offerDeliverables.map((item) => <article><span><FunnelIcon name="check" size={17} /></span><div><h3>{item.title}</h3><p>{item.copy}</p></div></article>)}<div class="funnel-guarantee"><FunnelIcon name="shield" size={19} /><p><strong>No forced pitch.</strong> If there is not a sensible first workflow, we’ll say so.</p></div></div>
+    </div></section>
+
+    <section class="funnel-client-proof" aria-labelledby="client-proof-heading"><div class="funnel-shell">
+      <div class="funnel-client-proof-head">
+        <div><p class="funnel-section-kicker">Client feedback</p><h2 id="client-proof-heading">Every EMC2Ops client review is five stars.</h2><p>Client feedback, plus a plain-English look at the workflows EMC2Ops delivered.</p></div>
+        <div class="funnel-client-rating" aria-label="5.0 out of 5 stars across all EMC2Ops client reviews"><span aria-hidden="true">★★★★★</span><strong>5.0</strong><small>Across all EMC2Ops client reviews</small></div>
+      </div>
+      <div class="funnel-review-grid">{ratedClientReviews.map((review) => <article class="funnel-review-card">
+        <div class="funnel-review-rating"><span aria-hidden="true">★★★★★</span><strong>5.0</strong></div>
+        <div class="funnel-review-client"><span>Client</span><strong>{review.client}</strong><small>{review.location}</small></div>
+        <div class="funnel-review-feedback"><span>Client feedback</span><p>{review.feedback}</p></div>
+        <div class="funnel-review-project"><span>What EMC2Ops implemented</span><h3>{review.project}</h3><p>{review.implementation}</p></div>
+        <ul aria-label="Client endorsements">{review.endorsements.map((endorsement) => <li>{endorsement}</li>)}</ul>
+      </article>)}</div>
+    </div></section>
+
+    <section class="funnel-proof" aria-labelledby="proof-heading"><div class="funnel-shell">
+      <p class="funnel-section-kicker">Independent category benchmarks</p><h2 id="proof-heading">The upside has been measured elsewhere. Your baseline comes first.</h2><p class="funnel-section-intro">Source-linked benchmarks from property-technology vendors and their customers.</p>
+      <div class="funnel-proof-grid">{benchmarkCards.map((card) => <article class="funnel-proof-card"><span class="funnel-proof-icon"><FunnelIcon name={card.icon} size={25} /></span><p class="funnel-proof-value">{card.value}</p><h3>{card.label}</h3><p>{card.detail}</p><a class="js-proof-link" data-source={card.source} href={card.url} target="_blank" rel="noreferrer">{card.source} <FunnelIcon name="arrow" size={14} /></a></article>)}</div>
+      <details class="funnel-proof-ledger"><summary>See all public benchmark notes <FunnelIcon name="arrow" size={16} /></summary><div class="funnel-ledger-list">{proofLedger.map((item) => <div class="funnel-ledger-row"><FunnelIcon name="check" size={18} /><div><strong>{item.result}</strong><span>{item.context}</span></div><a class="js-proof-link" data-source={item.source} href={item.url} target="_blank" rel="noreferrer">{item.source}</a></div>)}</div></details>
+    </div></section>
+
+    <section class="funnel-product" aria-labelledby="product-heading"><div class="funnel-shell funnel-product-panel">
+      <div class="funnel-queue-panel"><div class="funnel-queue-head"><h2>Activity Queue</h2><span>Filters · Today</span></div><div class="funnel-queue-labels"><span>Item</span><span>Source</span><span>Status</span><span>Assigned to</span><span>Age</span></div>{queueRows.map((row) => <div class="funnel-queue-row"><span class="funnel-queue-item"><i><FunnelIcon name={row.icon} size={18} /></i><strong>{row.item}</strong></span><span>{row.source}</span><span class="funnel-status"><i></i>{row.status}</span><span>{row.team}</span><small>{row.age}</small></div>)}</div>
+      <div class="funnel-product-copy"><p class="funnel-section-kicker">PM Ops in action</p><h2 id="product-heading">One queue. Fewer dropped handoffs.</h2>{benefits.map((benefit) => <div class="funnel-benefit"><span><FunnelIcon name={benefit.icon} size={20} /></span><div><h3>{benefit.title}</h3><p>{benefit.copy}</p></div></div>)}<button class="funnel-text-button js-scroll-to-form" data-placement="product_section" type="button">Get my free workflow plan <FunnelIcon name="arrow" size={18} /></button></div>
+    </div></section>
+
+    <section class="funnel-how" aria-labelledby="how-heading"><div class="funnel-shell">
+      <p class="funnel-section-kicker">A focused path to value</p><h2 id="how-heading">Start with one expensive workflow. Prove it. Then expand.</h2>
+      <div class="funnel-steps"><article><span>1</span><div><h3>Find the leak</h3><p>Choose the missed calls, slow follow-up, maintenance intake, or reporting gap costing the most.</p></div></article><article><span>2</span><div><h3>Connect the workflow</h3><p>Keep your current property system. Connect the trigger, decision, handoff, and writeback.</p></div></article><article><span>3</span><div><h3>Measure the result</h3><p>Track response, completion, and time saved before rolling out the next workflow.</p></div></article></div>
+      <div class="funnel-workflow-map"><div><FunnelIcon name="headphones" size={24} /><small>Signal</small><strong>Call, form, portal, inbox</strong></div><FunnelIcon class="funnel-map-arrow" name="arrow" /><div><FunnelIcon name="sparkles" size={24} /><small>EMC2Ops rule</small><strong>Evaluate, route, draft</strong></div><FunnelIcon class="funnel-map-arrow" name="arrow" /><div><FunnelIcon name="user" size={24} /><small>Human review</small><strong>Confirm, adjust, approve</strong></div><FunnelIcon class="funnel-map-arrow" name="arrow" /><div><FunnelIcon name="database" size={24} /><small>PMS / CRM writeback</small><strong>Update record and task</strong></div><p><FunnelIcon name="shield" size={18} /> Human approval stays in the loop where it matters.</p></div>
+    </div></section>
+
+    <section class="funnel-faq" aria-labelledby="faq-heading"><div class="funnel-shell funnel-faq-shell"><p class="funnel-section-kicker">A clear first step</p><h2 id="faq-heading">Questions before you share your workflow?</h2><div class="funnel-faq-list">{faqs.map((faq) => <details><summary>{faq.question}<span>+</span></summary><p>{faq.answer}</p></details>)}</div></div></section>
+
+    <section class="funnel-final-cta"><div class="funnel-shell"><FunnelIcon name="messages" size={34} /><h2>Find the workflow <span>costing you the most.</span></h2><p>In 60 seconds, tell us where work gets stuck. We'll map the first workflow, the handoffs, and the metrics worth tracking.</p><button class="funnel-primary-button js-scroll-to-form" data-placement="final_cta" type="button">Get my free workflow plan <FunnelIcon name="arrow" size={20} /></button><small><FunnelIcon name="shield" size={16} /> No obligation. No spam. Just a focused workflow review.</small><p class="funnel-ps"><strong>P.S.</strong> Every week a broken handoff stays manual is another week your team has to chase it. Start with one workflow.</p></div></section>
+    <footer class="funnel-footer"><div class="funnel-shell"><div class="funnel-logo"><span>EMC2</span><strong>Ops</strong><small>PM Ops</small></div><span>Private campaign page · Not indexed</span></div></footer>
+  </main>
+</FunnelLayout>
+
+<script>
+  import { track } from "@vercel/analytics";
+
+  const pageRoot = document.querySelector<HTMLElement>("[data-funnel-page]");
+  const pageSlug = pageRoot?.dataset.funnelPage || "";
+  const form = document.querySelector<HTMLFormElement>("#lead-form");
+  const card = document.querySelector<HTMLElement>("#funnel-intake-card");
+  const schedule = document.querySelector<HTMLElement>("#funnel-schedule");
+  const success = document.querySelector<HTMLElement>("#lead-success");
+  const errorBox = document.querySelector<HTMLElement>("#lead-form-error");
+  const scheduleError = document.querySelector<HTMLElement>("#funnel-schedule-error");
+  const dateList = document.querySelector<HTMLElement>("#funnel-date-list");
+  const timeList = document.querySelector<HTMLElement>("#funnel-time-list");
+  const timeZoneLabel = document.querySelector<HTMLElement>("#funnel-calendar-timezone");
+  const slotSummary = document.querySelector<HTMLElement>("#funnel-slot-summary");
+  const slotLabel = document.querySelector<HTMLElement>("#funnel-slot-label");
+  const confirmedSlot = document.querySelector<HTMLElement>("#funnel-confirmed-slot");
+  const confirmButton = document.querySelector<HTMLButtonElement>("#funnel-confirm-slot");
+  let formStarted = false;
+  let bookingId = "";
+  let bookingToken = "";
+  let selectedSlot: { start: string; end: string; label: string; timeZone: string } | null = null;
+  let loadedSlots: Array<{ day: string; start: string; end: string; label: string; timeLabel?: string; timeZone: string }> = [];
+
+  function funnelEvent(eventName: string, properties: Record<string, string | number | boolean> = {}) {
+    const eventProperties = { page_slug: pageSlug, ...properties };
+    try { track(eventName, eventProperties); } catch { /* analytics cannot block intake */ }
+    const payload = JSON.stringify({ eventName, pageSlug, properties });
+    try {
+      if (navigator.sendBeacon) {
+        const sent = navigator.sendBeacon("/api/funnel-event/", new Blob([payload], { type: "application/json" }));
+        if (sent) return;
+      }
+      void fetch("/api/funnel-event/", { method: "POST", headers: { "Content-Type": "application/json" }, body: payload, keepalive: true });
+    } catch { /* best effort */ }
+  }
+
+  document.querySelectorAll<HTMLButtonElement>(".js-scroll-to-form").forEach((button) => {
+    button.addEventListener("click", () => {
+      funnelEvent("Funnel CTA Click", { placement: button.dataset.placement || "unknown" });
+      form?.scrollIntoView({ behavior: "smooth", block: "center" });
+      window.setTimeout(() => form?.querySelector<HTMLInputElement>("input[name=email]")?.focus({ preventScroll: true }), 500);
+    });
+  });
+  document.querySelectorAll<HTMLAnchorElement>(".js-proof-link").forEach((link) => link.addEventListener("click", () => funnelEvent("Funnel Proof Opened", { source: link.dataset.source || "unknown" })));
+
+  const localTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "America/New_York";
+  if (timeZoneLabel) timeZoneLabel.textContent = `Shown in ${localTimeZone.replaceAll("_", " ")}`;
+
+  const dayKey = (start: string) => new Intl.DateTimeFormat("en-CA", { day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date(start));
+  const dayLabel = (start: string) => new Intl.DateTimeFormat("en-US", { day: "numeric", month: "short", weekday: "short" }).format(new Date(start));
+  const timeLabel = (start: string) => new Intl.DateTimeFormat("en-US", { hour: "numeric", minute: "2-digit" }).format(new Date(start));
+  const fullSlotLabel = (start: string) => new Intl.DateTimeFormat("en-US", { dateStyle: "full", timeStyle: "short" }).format(new Date(start));
+
+  function setScheduleError(message = "") {
+    if (!scheduleError) return;
+    scheduleError.textContent = message;
+    scheduleError.dataset.visible = message ? "true" : "false";
+  }
+
+  function renderTimes(day: string) {
+    if (!timeList) return;
+    selectedSlot = null;
+    if (slotSummary) slotSummary.hidden = true;
+    if (confirmButton) confirmButton.disabled = true;
+    timeList.innerHTML = "";
+    const daySlots = loadedSlots.filter((slot) => dayKey(slot.start) === day);
+    for (const slot of daySlots) {
+      const button = document.createElement("button");
+      button.className = "funnel-time-button";
+      button.type = "button";
+      button.textContent = timeLabel(slot.start);
+      button.setAttribute("aria-label", `Select ${fullSlotLabel(slot.start)}`);
+      button.setAttribute("aria-pressed", "false");
+      button.addEventListener("click", () => {
+        timeList.querySelectorAll("button").forEach((item) => { item.classList.remove("selected"); item.setAttribute("aria-pressed", "false"); });
+        button.classList.add("selected");
+        button.setAttribute("aria-pressed", "true");
+        selectedSlot = slot;
+        if (slotLabel) slotLabel.textContent = fullSlotLabel(slot.start);
+        if (slotSummary) slotSummary.hidden = false;
+        if (confirmButton) confirmButton.disabled = false;
+        setScheduleError();
+        funnelEvent("Funnel Slot Selected", { slot_start: slot.start });
+      });
+      timeList.append(button);
+    }
+  }
+
+  function renderCalendar() {
+    if (!dateList || !timeList) return;
+    if (!loadedSlots.length) {
+      dateList.innerHTML = "";
+      timeList.innerHTML = '<p class="funnel-slot-loading">No open times are available right now. Email soya@getemc2ops.com and we’ll send options.</p>';
+      return;
+    }
+
+    const days = [...new Set(loadedSlots.map((slot) => dayKey(slot.start)))].slice(0, 5);
+    dateList.innerHTML = "";
+    days.forEach((day, index) => {
+      const firstSlot = loadedSlots.find((slot) => dayKey(slot.start) === day);
+      if (!firstSlot) return;
+      const button = document.createElement("button");
+      button.className = "funnel-date-button";
+      button.type = "button";
+      button.textContent = dayLabel(firstSlot.start);
+      button.setAttribute("aria-pressed", index === 0 ? "true" : "false");
+      if (index === 0) button.classList.add("selected");
+      button.addEventListener("click", () => {
+        dateList.querySelectorAll("button").forEach((item) => { item.classList.remove("selected"); item.setAttribute("aria-pressed", "false"); });
+        button.classList.add("selected");
+        button.setAttribute("aria-pressed", "true");
+        renderTimes(day);
+      });
+      dateList.append(button);
+    });
+    renderTimes(days[0]);
+  }
+
+  async function loadCalendar() {
+    if (!timeList) return;
+    timeList.innerHTML = '<p class="funnel-slot-loading">Loading the calendar…</p>';
+    try {
+      const response = await fetch("/api/audit-slots/");
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || "Could not load available times.");
+      loadedSlots = result.slots || [];
+      renderCalendar();
+      funnelEvent("Funnel Calendar Viewed", { available_slots: loadedSlots.length });
+    } catch (error) {
+      if (dateList) dateList.innerHTML = "";
+      timeList.innerHTML = '<p class="funnel-slot-loading">Available times could not load. Email soya@getemc2ops.com and we’ll send options.</p>';
+      funnelEvent("Funnel Form Error", { error_type: "calendar_load" });
+    }
+  }
+
+  function launchConfetti() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const layer = document.createElement("div");
+    layer.className = "funnel-confetti";
+    layer.setAttribute("aria-hidden", "true");
+    const colors = ["#63df2d", "#ffffff", "#6fa8ff", "#c9ffb2", "#ffd166"];
+    for (let index = 0; index < 72; index += 1) {
+      const piece = document.createElement("i");
+      piece.style.setProperty("--confetti-x", `${Math.random() * 100}vw`);
+      piece.style.setProperty("--confetti-drift", `${(Math.random() - .5) * 260}px`);
+      piece.style.setProperty("--confetti-rotate", `${Math.random() * 960 - 480}deg`);
+      piece.style.setProperty("--confetti-delay", `${Math.random() * .35}s`);
+      piece.style.setProperty("--confetti-color", colors[index % colors.length]);
+      layer.append(piece);
+    }
+    document.body.append(layer);
+    window.setTimeout(() => layer.remove(), 3200);
+  }
+
+  if (form) {
+    const url = new URL(window.location.href);
+    const setValue = (name: string, value: string) => { const field = form.querySelector<HTMLInputElement>(`input[name=${name}]`); if (field) field.value = value.slice(0, name === "source_url" || name === "referrer" ? 1000 : 200); };
+    setValue("source_url", url.toString()); setValue("referrer", document.referrer);
+    ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"].forEach((key) => setValue(key, url.searchParams.get(key) || ""));
+
+    form.addEventListener("focusin", () => { if (!formStarted) { formStarted = true; funnelEvent("Funnel Form Start"); } });
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      funnelEvent("Funnel Form Submit");
+      const button = form.querySelector<HTMLButtonElement>("button[type=submit]");
+      const label = button?.querySelector("span");
+      if (button) button.disabled = true;
+      if (label) label.textContent = "Saving your request…";
+      if (errorBox) { errorBox.dataset.visible = "false"; errorBox.textContent = ""; }
+
+      try {
+        const body = Object.fromEntries(new FormData(form).entries());
+        const response = await fetch("/api/funnel-lead/", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || !result.ok) throw new Error(result.error || "We couldn't save this yet. Please try again in a moment.");
+        bookingId = result.id || "";
+        bookingToken = result.bookingToken || "";
+        if (!bookingId || !bookingToken) throw new Error("Your request was saved, but scheduling could not start. Please refresh and try again.");
+        funnelEvent("Funnel Lead Captured", { booking_id: bookingId });
+        form.hidden = true;
+        if (schedule) schedule.hidden = false;
+        card?.scrollIntoView({ behavior: "smooth", block: "center" });
+        void loadCalendar();
+      } catch (error) {
+        funnelEvent("Funnel Form Error", { error_type: "server" });
+        if (errorBox) { errorBox.textContent = error instanceof Error ? error.message : "We couldn't save this yet. Please try again in a moment."; errorBox.dataset.visible = "true"; }
+        if (button) button.disabled = false;
+        if (label) label.textContent = "Get my free workflow plan";
+      }
+    });
+  }
+
+  confirmButton?.addEventListener("click", async () => {
+    if (!selectedSlot || !bookingId || !bookingToken) return;
+    const buttonLabel = confirmButton.querySelector("span");
+    confirmButton.disabled = true;
+    if (buttonLabel) buttonLabel.textContent = "Confirming your time…";
+    setScheduleError();
+    try {
+      const response = await fetch("/api/funnel-book/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: bookingId, bookingToken, scheduledStart: selectedSlot.start }),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok) throw new Error(result.error || "We couldn't confirm that time. Please try again.");
+      const display = fullSlotLabel(selectedSlot.start);
+      if (confirmedSlot) confirmedSlot.textContent = display;
+      if (schedule) schedule.hidden = true;
+      if (success) success.hidden = false;
+      funnelEvent("Funnel Booking Confirmed", { booking_id: bookingId, slot_start: selectedSlot.start });
+      const reportGoogleAdsConversion = (window as Window & { gtag_report_conversion?: () => boolean }).gtag_report_conversion;
+      if (typeof reportGoogleAdsConversion === "function") reportGoogleAdsConversion();
+      launchConfetti();
+      card?.scrollIntoView({ behavior: "smooth", block: "center" });
+    } catch (error) {
+      setScheduleError(error instanceof Error ? error.message : "We couldn't confirm that time. Please try again.");
+      funnelEvent("Funnel Form Error", { error_type: "booking_submit" });
+      if (buttonLabel) buttonLabel.textContent = "Confirm my consultation";
+      confirmButton.disabled = false;
+      if (error instanceof Error && error.message.includes("no longer available")) void loadCalendar();
+    }
+  });
+</script>

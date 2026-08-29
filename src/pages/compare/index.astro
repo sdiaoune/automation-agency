@@ -1,0 +1,16 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../../lib/site";
+import "../../styles/service.css";
+import "../../styles/authority.css";
+const description = "Practical comparisons for property managers evaluating AI front desks, call centers, custom workflow automation, and off-the-shelf software.";
+---
+<SiteLayout title="Property Management Automation Comparisons | EMC2Ops" description={description} canonical={absoluteUrl("/compare/")} image={absoluteUrl(defaultSocialImage)} imageAlt="Property management automation comparison guides." schema={standardPageSchema({ path: "/compare/", name: "Automation comparisons", description, type: "CollectionPage" })} pageClass="service-page">
+  <SiteHeader /><main><section class="service-hero"><div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span>Compare</nav><p class="eyebrow">Buying comparisons</p><h1>Choose the operating model, not just the tool.</h1><p class="dek">Compare workflow fit, implementation effort, integrations, control, escalation, and ongoing ownership before committing to an automation approach.</p></div></section>
+  <section class="wrap service-grid-section"><div class="resource-grid">
+    <article class="resource-card"><h2>AI front desk vs. call center</h2><p>Compare repeatable intake and routing automation with live-agent coverage, including the cases where a hybrid model is stronger.</p><a href="/compare/ai-front-desk-vs-call-center/">Read the comparison</a></article>
+    <article class="resource-card"><h2>Custom automation vs. off-the-shelf AI</h2><p>Compare speed, flexibility, integration depth, maintenance, governance, and fit with existing property-management processes.</p><a href="/compare/custom-automation-vs-off-the-shelf-property-management-ai/">Read the comparison</a></article>
+  </div></section></main><SiteFooter />
+</SiteLayout>

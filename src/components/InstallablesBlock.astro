@@ -1,0 +1,28 @@
+---
+interface InstallableItem {
+  title: string;
+  description: string;
+}
+
+interface Props {
+  items: InstallableItem[];
+  title?: string;
+  intro?: string;
+}
+
+const { items, title = "What EMC2Ops installs", intro } = Astro.props;
+---
+
+<section class="wrap detail-section installables-section" aria-labelledby="installables-heading">
+  <p class="eyebrow">Audit deliverables</p>
+  <h2 id="installables-heading">{title}</h2>
+  {intro && <p class="section-lede">{intro}</p>}
+  <div class="installable-grid">
+    {items.map((item) => (
+      <article class="installable-card">
+        <h3>{item.title}</h3>
+        <p>{item.description}</p>
+      </article>
+    ))}
+  </div>
+</section>

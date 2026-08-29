@@ -1,5 +1,6 @@
 import { getCollection } from "astro:content";
 import { integrationPages, integrationUrl } from "../lib/integrations";
+import { customerStories, customerStoryUrl } from "../lib/customerStories";
 import { absoluteUrl, byOrder, postUpdatedAt, siteUpdatedAt } from "../lib/site";
 import { servicePages, serviceUrl } from "../lib/services";
 import { useCasePages, useCaseUrl } from "../lib/useCases";
@@ -10,10 +11,19 @@ export async function GET() {
     { url: "/", lastmod: siteUpdatedAt },
     { url: "/about/", lastmod: siteUpdatedAt },
     { url: "/book-demo/", lastmod: siteUpdatedAt },
+    { url: "/customers/", lastmod: siteUpdatedAt },
+    ...customerStories.map((story) => ({ url: customerStoryUrl(story), lastmod: story.updatedAt })),
+    { url: "/resources/", lastmod: siteUpdatedAt },
+    { url: "/resources/missed-call-workflow-audit/", lastmod: siteUpdatedAt },
+    { url: "/resources/missed-call-recovery-roi-calculator/", lastmod: siteUpdatedAt },
+    { url: "/compare/", lastmod: siteUpdatedAt },
+    { url: "/compare/ai-front-desk-vs-call-center/", lastmod: siteUpdatedAt },
+    { url: "/compare/custom-automation-vs-off-the-shelf-property-management-ai/", lastmod: siteUpdatedAt },
+    { url: "/security/", lastmod: siteUpdatedAt },
     { url: "/services/", lastmod: siteUpdatedAt },
     ...servicePages.map((service) => ({ url: serviceUrl(service), lastmod: siteUpdatedAt })),
     { url: "/use-cases/", lastmod: siteUpdatedAt },
-    ...useCasePages.map((useCase) => ({ url: useCaseUrl(useCase), lastmod: siteUpdatedAt })),
+    ...useCasePages.map((useCase) => ({ url: useCaseUrl(useCase), lastmod: useCase.updatedAt || siteUpdatedAt })),
     { url: "/integrations/", lastmod: siteUpdatedAt },
     ...integrationPages.map((integration) => ({ url: integrationUrl(integration), lastmod: siteUpdatedAt })),
     { url: "/blog/", lastmod: siteUpdatedAt },

@@ -7,6 +7,7 @@ import RelatedPosts from "../../components/RelatedPosts.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import { auditHref } from "../../lib/conversion";
 import {
   absoluteUrl,
   articleSchema,
@@ -38,6 +39,7 @@ const related = post.data.related
   .filter(Boolean) as BlogPost[];
 const canonical = absoluteUrl(`/blog/${post.data.slug}/`);
 const { Content } = await render(post);
+const blogAuditHref = auditHref(post.data.slug, "blog");
 
 type MoneyLink = { label: string; href: string; description: string };
 
@@ -225,6 +227,7 @@ const relatedIntegrations = inferredIntegrationLinks();
 
           <ArticleCta
             top
+            href={blogAuditHref}
             title="Want the fastest workflow win?"
             description="EMC2Ops maps your leasing, maintenance, and CRM handoffs and identifies the first automation worth installing."
           />
@@ -307,9 +310,10 @@ const relatedIntegrations = inferredIntegrationLinks();
             </p>
           </section>
 
-          <FaqList faqs={post.data.faqs} />
+          <FaqList id="faq" faqs={post.data.faqs} />
 
           <ArticleCta
+            href={blogAuditHref}
             title={post.data.cta}
             description="Bring your current call, text, CRM, leasing, or maintenance process. We will identify the first workflow to automate."
           />

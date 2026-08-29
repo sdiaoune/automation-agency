@@ -271,7 +271,7 @@ summary {
   align-items: start;
   display: grid;
   gap: 42px;
-  grid-template-columns: minmax(240px, 1fr) repeat(2, minmax(140px, max-content));
+  grid-template-columns: minmax(220px, 1fr) repeat(4, minmax(120px, max-content));
 }
 
 .footer-brand {

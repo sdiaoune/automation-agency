@@ -1,6 +1,7 @@
 ---
 import Analytics from "@vercel/analytics/astro";
 import SeoHead from "../components/SeoHead.astro";
+import SalesChatbot from "../components/SalesChatbot.astro";
 import "../styles/theme.css";
 
 interface Props {
@@ -78,5 +79,32 @@ const enableAnalytics = process.env.VERCEL === "1" || import.meta.env.PUBLIC_ENA
   </head>
   <body class={pageClass}>
     <slot />
+    <SalesChatbot />
+    <script>
+      import { track } from "@vercel/analytics";
+
+      const sourceFromHost = (host) => {
+        if (host.includes("chatgpt.com") || host.includes("openai.com")) return "chatgpt";
+        if (host.includes("copilot.microsoft.com") || host.includes("bing.com")) return "copilot";
+        if (host.includes("perplexity.ai")) return "perplexity";
+        if (host.includes("gemini.google.com")) return "gemini";
+        return "";
+      };
+
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const utmSource = (params.get("utm_source") || "").toLowerCase();
+        const referrerHost = document.referrer ? new URL(document.referrer).hostname.toLowerCase() : "";
+        const source = sourceFromHost(utmSource) || sourceFromHost(referrerHost);
+        const sessionKey = `emc2ops-ai-referral:${window.location.pathname}`;
+
+        if (source && !window.sessionStorage.getItem(sessionKey)) {
+          track("ai_referral_landing", { source, landingPath: window.location.pathname });
+          window.sessionStorage.setItem(sessionKey, "1");
+        }
+      } catch {
+        /* Referral analytics must never block navigation or conversion paths. */
+      }
+    </script>
   </body>
 </html>

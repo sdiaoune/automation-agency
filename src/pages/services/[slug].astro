@@ -1,12 +1,21 @@
 ---
 import { getCollection } from "astro:content";
 import FaqList from "../../components/FaqList.astro";
+import BeforeAfterBlock from "../../components/BeforeAfterBlock.astro";
+import FitBlock from "../../components/FitBlock.astro";
+import InstallablesBlock from "../../components/InstallablesBlock.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import WorkflowAuditCta from "../../components/WorkflowAuditCta.astro";
+import WorkflowProofBlock from "../../components/WorkflowProofBlock.astro";
+import WorkflowIntegrationsBlock from "../../components/WorkflowIntegrationsBlock.astro";
+import ProductScreenshot from "../../components/ProductScreenshot.astro";
 import { auditHref } from "../../lib/conversion";
 import { absoluteUrl, byOrder, defaultSocialImage, type BlogPost } from "../../lib/site";
 import { servicePages, serviceSchema, serviceUrl, type ServicePage } from "../../lib/services";
+import { productScreenshotForPath } from "../../lib/productScreenshots";
+import { workflowIntegrationsForPath, workflowProofForPath } from "../../lib/workflowProof";
 import "../../styles/service.css";
 
 export async function getStaticPaths() {
@@ -27,6 +36,9 @@ const relatedPosts = service.relatedPosts
   .filter(Boolean) as BlogPost[];
 const canonical = absoluteUrl(serviceUrl(service));
 const auditUrl = auditHref(service.slug, "service");
+const productScreenshot = productScreenshotForPath(`/services/${service.slug}/`);
+const workflowProof = workflowProofForPath(`/services/${service.slug}/`);
+const workflowIntegrations = workflowIntegrationsForPath(`/services/${service.slug}/`);
 ---
 
 <SiteLayout
@@ -49,36 +61,58 @@ const auditUrl = auditHref(service.slug, "service");
         <h1>{service.title}</h1>
         <p class="dek">{service.summary}</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href={auditUrl}>Book a 15-minute audit</a>
+          <a class="btn btn-primary" href={auditUrl}>{service.auditCta.label}</a>
           <a class="btn btn-secondary" href="#workflow">See workflow</a>
         </div>
+      </div>
+    </section>
+
+    <section class="product-proof-section">
+      <div class="wrap">
+        <ProductScreenshot screenshot={productScreenshot} />
       </div>
     </section>
 
     <section class="wrap split-section">
       <div>
         <h2>What this improves</h2>
-        <p>
-          This service focuses on a narrow, measurable operating workflow so your team can respond
-          faster without giving up control over exceptions, approvals, or sensitive conversations.
-        </p>
+        <p>{service.auditFocus}</p>
       </div>
       <div class="check-list">
         {service.outcomes.map((outcome) => <div><span>✓</span><p>{outcome}</p></div>)}
       </div>
     </section>
 
+    <InstallablesBlock items={service.installables} intro="Each install is scoped around concrete triggers, captured fields, automations, writebacks, stop rules, and escalation paths." />
+
+    {workflowIntegrations.length > 0 && <WorkflowIntegrationsBlock items={workflowIntegrations} />}
+
     <section id="workflow" class="wrap detail-section">
-      <h2>Workflow model</h2>
+      <h2>Workflow to install</h2>
       <ol class="step-list">
         {service.workflow.map((step) => <li>{step}</li>)}
       </ol>
     </section>
 
+    <WorkflowAuditCta
+      title={service.auditCta.title}
+      body={service.auditCta.body}
+      href={auditUrl}
+      label={service.auditCta.label}
+      secondaryHref="#faq"
+      secondaryLabel="Read FAQs"
+    />
+
+    <BeforeAfterBlock before={service.beforeAfter.before} after={service.beforeAfter.after} />
+
+    {workflowProof && <WorkflowProofBlock proof={workflowProof} />}
+
     <section class="wrap detail-section">
       <h2>Metrics to track</h2>
       <div class="metric-list">{service.metrics.map((metric) => <span>{metric}</span>)}</div>
     </section>
+
+    <FitBlock bestFit={service.bestFit} notFit={service.notFit} />
 
     <section class="wrap detail-section">
       <h2>Related use cases</h2>
@@ -92,7 +126,7 @@ const auditUrl = auditHref(service.slug, "service");
       </div>
     </section>
 
-    <section class="wrap detail-section">
+    <section id="faq" class="wrap detail-section">
       <FaqList faqs={service.faqs} />
     </section>
 
@@ -111,6 +145,14 @@ const auditUrl = auditHref(service.slug, "service");
         </section>
       )
     }
+
+    <WorkflowAuditCta
+      eyebrow="Next step"
+      title={`Map your ${service.eyebrow.toLowerCase()} workflow`}
+      body="Use the audit to confirm the trigger, data source, approval gates, CRM writebacks, and first measurable deployment."
+      href={auditUrl}
+      label={service.auditCta.label}
+    />
   </main>
   <SiteFooter />
 </SiteLayout>

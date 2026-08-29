@@ -1,8 +1,9 @@
 import type { CollectionEntry } from "astro:content";
+import { homepageFaqs } from "./homepageFaq";
 
 export const siteUrl = "https://www.emc2ops.com";
 export const siteName = "EMC2Ops";
-export const siteUpdatedAt = "2026-06-20";
+export const siteUpdatedAt = "2026-08-29";
 export const defaultSocialImage = "/og-image.png";
 export const socialImageDimensions = { width: 1672, height: 941 };
 export const cities =
@@ -14,6 +15,28 @@ const sameAs = [
   "https://x.com/EMC2Ops",
   "https://www.instagram.com/emc2ops_official/",
 ];
+
+const founderSameAs = [
+  "https://www.soyadiaoune.com/",
+  "https://www.linkedin.com/in/soya-diaoun%C3%A9-27062089/",
+  "https://github.com/sdiaoune",
+];
+
+export function founderSchema() {
+  return {
+    "@type": "Person",
+    "@id": `${siteUrl}/about/#founder`,
+    name: "Soya Diaouné",
+    alternateName: "Soya Diaoune",
+    url: `${siteUrl}/about/#founder-profile`,
+    jobTitle: "Founder and AI automation engineer",
+    description:
+      "Founder of EMC2Ops and an AI/ML engineer who builds production workflow automation, LLM, data, and integration systems.",
+    homeLocation: { "@type": "Place", name: "Charlotte, North Carolina" },
+    sameAs: founderSameAs,
+    worksFor: { "@id": `${siteUrl}/#organization` },
+  };
+}
 
 const audience = {
   "@type": "BusinessAudience",
@@ -30,6 +53,7 @@ export function organizationSchema() {
     logo: absoluteUrl("/favicon.svg"),
     image: absoluteUrl(defaultSocialImage),
     sameAs,
+    founder: { "@id": `${siteUrl}/about/#founder` },
     email: "soya@getemc2ops.com",
     description:
       "EMC2Ops builds done-for-you AI front desk and workflow automation systems for property management companies.",
@@ -85,9 +109,9 @@ function siteNavigationSchema() {
       { "@type": "SiteNavigationElement", position: 2, name: "Use Cases", url: `${siteUrl}/use-cases/` },
       { "@type": "SiteNavigationElement", position: 3, name: "Integrations", url: `${siteUrl}/integrations/` },
       { "@type": "SiteNavigationElement", position: 4, name: "Blog", url: `${siteUrl}/blog/` },
-      { "@type": "SiteNavigationElement", position: 5, name: "About", url: `${siteUrl}/about/` },
-      { "@type": "SiteNavigationElement", position: 6, name: "Privacy", url: `${siteUrl}/privacy/` },
-      { "@type": "SiteNavigationElement", position: 7, name: "Terms", url: `${siteUrl}/terms/` },
+      { "@type": "SiteNavigationElement", position: 5, name: "Customers", url: `${siteUrl}/customers/` },
+      { "@type": "SiteNavigationElement", position: 6, name: "Resources", url: `${siteUrl}/resources/` },
+      { "@type": "SiteNavigationElement", position: 7, name: "About", url: `${siteUrl}/about/` },
     ],
   };
 }
@@ -123,6 +147,7 @@ export function homeSchema() {
     "@context": "https://schema.org",
     "@graph": [
       organizationSchema(),
+      founderSchema(),
       websiteSchema(),
       siteNavigationSchema(),
       {
@@ -132,6 +157,7 @@ export function homeSchema() {
         name: "EMC2Ops | Done-for-You AI Front Desk for Property Managers",
         description:
           "EMC2Ops installs AI front desk workflows for property managers: missed-call text-back, leasing follow-up, maintenance intake, and CRM logging.",
+        dateModified: siteUpdatedAt,
         isPartOf: { "@id": `${siteUrl}/#website` },
         about: { "@id": `${siteUrl}/#service` },
         primaryImageOfPage: {
@@ -181,44 +207,14 @@ export function homeSchema() {
       {
         "@type": "FAQPage",
         "@id": `${siteUrl}/#faq-schema`,
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "How fast can this go live?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "The starter missed-call and follow-up workflow is scoped after access, copy, CRM details, and call or SMS requirements are confirmed.",
-            },
+        mainEntity: homepageFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
           },
-          {
-            "@type": "Question",
-            name: "Does this replace my team?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "No. It handles repetitive intake, qualification, routing, reminders, and logging so the property team can focus on higher-value conversations.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Can it connect to my CRM?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "Most CRMs can be supported through native integrations, APIs, Zapier, Make, n8n, webhooks, or custom database workflows.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Can it handle maintenance requests?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text:
-                "Yes. The AI can collect the issue, urgency, property or unit information, photos or links when supported, and route the request to the team or vendor process.",
-            },
-          },
-        ],
+        })),
       },
     ],
   };
@@ -372,6 +368,7 @@ export function aboutPageSchema() {
     "@context": "https://schema.org",
     "@graph": [
       organizationSchema(),
+      founderSchema(),
       websiteSchema(),
       {
         "@type": "AboutPage",

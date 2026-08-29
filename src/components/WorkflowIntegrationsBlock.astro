@@ -1,0 +1,26 @@
+---
+import type { WorkflowIntegration } from "../lib/workflowProof";
+
+interface Props {
+  items: WorkflowIntegration[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="wrap detail-section workflow-integrations-section" aria-labelledby="workflow-integrations-heading">
+  <p class="eyebrow">Integration paths</p>
+  <h2 id="workflow-integrations-heading">Systems this workflow can connect</h2>
+  <p class="section-lede">
+    The final connection depends on account permissions, supported APIs, fields, webhooks, and the
+    safest available fallback. EMC2Ops verifies the path before promising an automated writeback.
+  </p>
+  <div class="workflow-integration-grid">
+    {items.map((item) => (
+      <article class="workflow-integration-card">
+        {item.href ? <h3><a href={item.href}>{item.label}</a></h3> : <h3>{item.label}</h3>}
+        <p>{item.description}</p>
+      </article>
+    ))}
+  </div>
+</section>

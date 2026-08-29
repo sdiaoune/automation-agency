@@ -1,8 +1,13 @@
 ---
 import FaqList from "../../components/FaqList.astro";
+import BeforeAfterBlock from "../../components/BeforeAfterBlock.astro";
+import FitBlock from "../../components/FitBlock.astro";
+import InstallablesBlock from "../../components/InstallablesBlock.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import WorkflowAuditCta from "../../components/WorkflowAuditCta.astro";
+import ProductScreenshot from "../../components/ProductScreenshot.astro";
 import { auditHref } from "../../lib/conversion";
 import { absoluteUrl, defaultSocialImage } from "../../lib/site";
 import {
@@ -11,6 +16,7 @@ import {
   integrationUrl,
   type IntegrationPage,
 } from "../../lib/integrations";
+import { productScreenshotForPath } from "../../lib/productScreenshots";
 import "../../styles/service.css";
 
 export async function getStaticPaths() {
@@ -27,6 +33,7 @@ interface Props {
 const { integration } = Astro.props;
 const canonical = absoluteUrl(integrationUrl(integration));
 const auditUrl = auditHref(integration.slug, "integration");
+const productScreenshot = productScreenshotForPath(`/integrations/${integration.slug}/`);
 ---
 
 <SiteLayout
@@ -50,9 +57,25 @@ const auditUrl = auditHref(integration.slug, "integration");
         <h1>{integration.title}</h1>
         <p class="dek">{integration.summary}</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href={auditUrl}>Book a 15-minute audit</a>
+          <a class="btn btn-primary" href={auditUrl}>{integration.auditCta.label}</a>
           <a class="btn btn-secondary" href="/services/">View services</a>
         </div>
+      </div>
+    </section>
+
+    <section class="product-proof-section">
+      <div class="wrap">
+        <ProductScreenshot screenshot={productScreenshot} />
+      </div>
+    </section>
+
+    <section class="wrap split-section">
+      <div>
+        <h2>What can connect</h2>
+        <p>{integration.auditFocus}</p>
+      </div>
+      <div class="check-list">
+        {integration.supportedWorkflows.map((workflow) => <div><span>✓</span><p>{workflow}</p></div>)}
       </div>
     </section>
 
@@ -63,9 +86,79 @@ const auditUrl = auditHref(integration.slug, "integration");
       </ol>
     </section>
 
-    <section class="wrap detail-section">
+    <InstallablesBlock items={integration.installables} intro="Integration work starts by choosing the safest connection path for the workflow: API, middleware, inbox or form parsing, review queue, or a hybrid route." />
+
+    <section class="wrap split-section">
+      <div>
+        <h2>API and access caveats</h2>
+        <div class="check-list">
+          {integration.accessNotes.map((note) => <div><span>✓</span><p>{note}</p></div>)}
+        </div>
+      </div>
+      <div>
+        <h2>Fallback paths</h2>
+        <div class="check-list">
+          {integration.fallbackPaths.map((path) => <div><span>✓</span><p>{path}</p></div>)}
+        </div>
+      </div>
+    </section>
+
+    <WorkflowAuditCta
+      title={integration.auditCta.title}
+      body={integration.auditCta.body}
+      href={auditUrl}
+      label={integration.auditCta.label}
+      secondaryHref="#prep"
+      secondaryLabel="See prep list"
+    />
+
+    <BeforeAfterBlock before={integration.beforeAfter.before} after={integration.beforeAfter.after} />
+
+    <section id="prep" class="wrap detail-section">
+      <h2>Audit prep checklist</h2>
+      <div class="check-list">
+        {integration.auditPrep.map((item) => <div><span>✓</span><p>{item}</p></div>)}
+      </div>
+    </section>
+
+    <FitBlock bestFit={integration.bestFit} notFit={integration.notFit} />
+
+    <section class="wrap split-section">
+      <div>
+        <h2>Related services</h2>
+        <div class="related-links stacked-links">
+          {integration.relatedServices.map((link) => (
+            <a href={link.href}>
+              <strong>{link.label}</strong>
+              <span>Service page</span>
+            </a>
+          ))}
+        </div>
+      </div>
+      <div>
+        <h2>Related use cases</h2>
+        <div class="related-links stacked-links">
+          {integration.relatedUseCases.map((link) => (
+            <a href={link.href}>
+              <strong>{link.label}</strong>
+              <span>Use-case page</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="wrap detail-section">
       <FaqList faqs={integration.faqs} />
     </section>
+
+    <WorkflowAuditCta
+      eyebrow="Next step"
+      title={`Map your ${integration.name} workflow`}
+      body="Use the audit to confirm the connection path, required fields, fallback route, review gates, and first workflow to deploy."
+      href={auditUrl}
+      label={integration.auditCta.label}
+    />
   </main>
   <SiteFooter />
 </SiteLayout>

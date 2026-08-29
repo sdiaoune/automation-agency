@@ -7,7 +7,7 @@ title: "Property Management Stale Lead Reactivation Automation: Stop Letting Old
 seoTitle: "Property Management Stale Lead Reactivation Automation"
 meta: "Learn how property managers can automate stale-lead reactivation, renter re-engagement, and CRM cleanup without blasting every old prospect with generic follow-up."
 publishedAt: "2026-06-21"
-updatedAt: "2026-06-21"
+updatedAt: "2026-07-01"
 h1: "Stop letting inactive leasing leads sit untouched until they are already lost"
 problem: "Stale leasing leads pile up when prospects who called, toured, replied, or started a conversation stop hearing from the team and nobody has a workflow that knows when to re-engage, what message fits the stage, and when the lead should stop sitting in the active pipeline."
 stakes:
@@ -28,6 +28,7 @@ metrics:
   - "manual stale-list touches removed per week"
 cta: "If old leasing leads are clogging the CRM while units still need demand, book a 15-minute workflow audit."
 bodySections: true
+socialHook: "Old leads should not sit in the CRM pretending to be active demand."
 faqs:
   - question: "What is stale lead reactivation automation in property management?"
     answer: "It is a workflow that watches for inactive renter leads, sends a context-aware re-engagement message, routes replies to the right next step, and updates the CRM automatically."
@@ -53,6 +54,12 @@ One prospect called last week but never booked. Another toured and went quiet. A
 
 For operators managing 50 or more units, stale-lead recovery becomes a quiet leasing drain. It pulls agents back into old lists, hides real demand quality, and keeps the CRM bloated because the reactivation process depends on memory instead of a controlled workflow.
 
+This page is intentionally narrower than [leasing follow-up automation](/blog/ai-leasing-follow-up-property-management/). Use it when the lead is already inactive or aging in the CRM. Use the broader leasing follow-up guide when the workflow covers the whole journey from first inquiry to tour, application, approval, and move-in.
+
+## How this differs from leasing follow-up automation
+
+Stale-lead reactivation begins after intent has already gone quiet. It should segment aged leads, suppress bad-fit renters, ask for one clean next step, and write the reactivation outcome back to the CRM. The broader leasing follow-up guide owns the live journey from new inquiry through tour, application, approval, and move-in.
+
 ## Why stale-lead recovery breaks down
 
 The pattern is usually predictable:
@@ -64,6 +71,8 @@ The pattern is usually predictable:
 - managers keep seeing inflated pipeline volume because dead leads and recoverable leads are mixed together
 
 This is not mainly a leasing hustle problem. It is a workflow problem.
+
+For adjacent leasing cleanup, keep these pages separate: [Automate Property Management Lead Follow-Up Without Damaging Your Brand](/blog/automate-property-management-lead-follow-up/) covers message control, [Apartment Lead Tracking](/blog/apartment-lead-tracking/) covers first-inquiry visibility, [Property Management Leasing Pipeline Setup](/blog/property-management-leasing-pipeline-setup/) covers stage design, [Property Management Lead Qualification Automation](/blog/property-management-lead-qualification-automation/) covers fit, [Property Management No-Show Recovery Automation](/blog/property-management-no-show-recovery-automation/) covers missed tours, and [Property Management Tour Scheduling Automation](/blog/property-management-tour-scheduling-automation/) covers booking mechanics. For the use-case view, see [apartment lead tracking automation](/use-cases/apartment-lead-tracking/) before redesigning the whole pipeline.
 
 ## What stale-lead reactivation automation should actually do
 

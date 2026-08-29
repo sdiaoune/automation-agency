@@ -74,6 +74,13 @@ h2 {
   gap: 12px;
 }
 
+.hero-reassurance {
+  color: var(--muted);
+  font-size: .92rem;
+  font-weight: 720;
+  margin: 14px 0 0;
+}
+
 .service-grid-section,
 .split-section,
 .detail-section {
@@ -368,7 +375,9 @@ details,
 
 .installable-grid,
 .before-after-grid,
-.fit-grid {
+.fit-grid,
+.workflow-integration-grid,
+.workflow-proof-grid {
   display: grid;
   gap: 14px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -381,19 +390,92 @@ details,
 
 .installable-card,
 .comparison-column,
-.fit-column {
+.fit-column,
+.workflow-integration-card,
+.workflow-proof-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
   padding: 18px;
 }
 
 .installable-card h3,
 .comparison-column h3,
-.fit-column h3 {
+.fit-column h3,
+.workflow-integration-card h3,
+.workflow-proof-card h3 {
   line-height: 1.2;
   margin: 0 0 10px;
 }
 
-.installable-card p {
+.installable-card p,
+.workflow-integration-card p,
+.workflow-proof-card p {
   margin: 0;
+}
+
+.workflow-proof-grid {
+  margin-top: 22px;
+}
+
+.workflow-integration-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 22px;
+}
+
+.workflow-integration-card h3 a {
+  color: var(--foreground);
+}
+
+.workflow-integration-card h3 a:hover,
+.workflow-integration-card h3 a:focus-visible {
+  color: var(--primary);
+}
+
+.workflow-proof-card {
+  display: grid;
+  gap: 14px;
+}
+
+.workflow-proof-card small {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.workflow-proof-card small strong {
+  color: var(--muted-strong);
+}
+
+.workflow-proof-disclosure {
+  background: var(--accent-soft);
+  border: 1px solid oklch(var(--brand-l) var(--brand-c) var(--brand-h) / .24);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  margin-top: 16px;
+  padding: 20px;
+}
+
+.workflow-proof-disclosure > strong {
+  color: var(--foreground);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.workflow-proof-disclosure p {
+  margin: 0;
+}
+
+.workflow-proof-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 14px;
+}
+
+.workflow-proof-links a {
+  color: var(--primary);
+  font-weight: 820;
 }
 
 .after-column,
@@ -406,6 +488,249 @@ details,
   background: var(--muted-surface);
 }
 
+.deposit-guide {
+  padding-bottom: 34px;
+}
+
+.deposit-guide__intro {
+  align-items: start;
+  display: grid;
+  gap: 34px;
+  grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
+}
+
+.deposit-guide__definition {
+  color: var(--muted-strong) !important;
+  font-size: clamp(1.08rem, 1.8vw, 1.28rem);
+  line-height: 1.72;
+  margin: 0;
+}
+
+.deposit-guide__nav {
+  background: var(--muted-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin: 28px 0 20px;
+  padding: 16px 18px;
+}
+
+.deposit-guide__nav a {
+  color: var(--muted-strong);
+  font-size: .9rem;
+  font-weight: 780;
+}
+
+.deposit-guide__nav a:hover,
+.deposit-guide__nav a:focus-visible {
+  color: var(--primary);
+}
+
+.deposit-fact-grid,
+.deposit-exception-grid,
+.deposit-comparison-grid,
+.deposit-implementation-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.deposit-fact-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.deposit-fact-grid article,
+.deposit-exception-grid article,
+.deposit-comparison-grid article,
+.deposit-implementation-grid article,
+.deposit-buying-list li,
+.deposit-guide__review-note {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.deposit-fact-grid article {
+  padding: 17px;
+}
+
+.deposit-fact-grid strong {
+  color: var(--primary);
+  display: block;
+  font-size: .82rem;
+  letter-spacing: .035em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.deposit-fact-grid p,
+.deposit-exception-grid p,
+.deposit-comparison-grid p,
+.deposit-implementation-grid p,
+.deposit-guide__review-note p {
+  margin: 0;
+}
+
+.deposit-table-shell {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  margin-top: 24px;
+  overflow-x: auto;
+}
+
+.deposit-table {
+  background: var(--card);
+  border-collapse: collapse;
+  min-width: 900px;
+  width: 100%;
+}
+
+.deposit-table th,
+.deposit-table td {
+  border-bottom: 1px solid var(--border);
+  color: var(--muted-strong);
+  line-height: 1.58;
+  padding: 16px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.deposit-table thead th {
+  background: var(--muted-surface);
+  color: var(--foreground);
+  font-size: .86rem;
+}
+
+.deposit-table tbody th {
+  color: var(--foreground);
+  width: 18%;
+}
+
+.deposit-table tbody tr:last-child th,
+.deposit-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.deposit-exception-grid,
+.deposit-comparison-grid,
+.deposit-implementation-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.deposit-exception-grid article,
+.deposit-comparison-grid article,
+.deposit-implementation-grid article {
+  padding: 20px;
+}
+
+.deposit-exception-grid h3,
+.deposit-comparison-grid h3,
+.deposit-implementation-grid h3 {
+  font-size: 1.12rem;
+  line-height: 1.25;
+  margin: 0 0 10px;
+}
+
+.deposit-comparison-grid article {
+  display: grid;
+  gap: 10px;
+}
+
+.deposit-comparison-grid p strong {
+  color: var(--foreground);
+}
+
+.deposit-comparison-grid__emphasis {
+  background: var(--accent-soft) !important;
+  border-color: oklch(var(--brand-l) var(--brand-c) var(--brand-h) / .24) !important;
+}
+
+.deposit-implementation-steps {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.deposit-implementation-steps li {
+  min-height: 190px;
+}
+
+.deposit-implementation-steps strong {
+  color: var(--foreground);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.deposit-implementation-grid ul {
+  color: var(--muted-strong);
+  margin: 0;
+  padding-left: 20px;
+}
+
+.deposit-implementation-grid li + li {
+  margin-top: 8px;
+}
+
+.deposit-implementation-grid article:last-child {
+  background: var(--muted-surface);
+}
+
+.deposit-implementation-grid article:last-child p {
+  border-top: 1px solid var(--border);
+  margin-top: 18px;
+  padding-top: 18px;
+}
+
+.deposit-source-policy a {
+  color: var(--primary);
+  font-weight: 760;
+}
+
+.deposit-buying-list {
+  counter-reset: deposit-buying;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+
+.deposit-buying-list li {
+  color: var(--muted-strong);
+  counter-increment: deposit-buying;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 30px 1fr;
+  padding: 17px;
+}
+
+.deposit-buying-list li::before {
+  color: var(--primary);
+  content: counter(deposit-buying, decimal-leading-zero);
+  font-weight: 900;
+}
+
+.deposit-guide__review-note {
+  background: var(--muted-surface);
+  margin-top: 18px;
+  padding: 18px 20px;
+}
+
+.deposit-guide__review-note strong {
+  color: var(--foreground);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.deposit-guide__review-note a {
+  color: var(--primary);
+  font-weight: 760;
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 2.55rem;
@@ -414,12 +739,24 @@ details,
   .before-after-grid,
   .conversion-cta,
   .decision-grid,
-  .fit-grid,
-  .installable-grid,
-  .related-links,
-  .service-grid,
-  .split-section,
-  .step-list {
+    .fit-grid,
+    .installable-grid,
+    .related-links,
+    .service-grid,
+    .split-section,
+    .step-list,
+    .workflow-integration-grid,
+    .workflow-proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .deposit-buying-list,
+  .deposit-comparison-grid,
+  .deposit-exception-grid,
+  .deposit-fact-grid,
+  .deposit-guide__intro,
+  .deposit-implementation-grid,
+  .deposit-implementation-steps {
     grid-template-columns: 1fr;
   }
 
@@ -433,6 +770,11 @@ details,
 
   .step-list li {
     min-height: auto;
+  }
+
+  .deposit-guide__nav {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 

@@ -1,0 +1,87 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../../lib/site";
+import "../../styles/service.css";
+import "../../styles/authority.css";
+const description = "Estimate recovered leasing conversations, qualified renters, tours, leases, and optional economic value from missed-call recovery using your own assumptions.";
+const path = "/resources/missed-call-recovery-roi-calculator/";
+---
+<SiteLayout title="Missed-Call Recovery Calculator for Property Managers | EMC2Ops" description={description} canonical={absoluteUrl(path)} image={absoluteUrl(defaultSocialImage)} imageAlt="Missed-call recovery calculator for property management leasing teams." schema={standardPageSchema({ path, name: "Missed-call recovery ROI calculator", description, parent: { name: "Resources", path: "/resources/" } })} pageClass="service-page">
+  <SiteHeader />
+  <main>
+    <section class="service-hero"><div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/resources/">Resources</a><span>/</span>Calculator</nav><p class="eyebrow">Planning calculator</p><h1>Estimate what missed-call recovery could put back into your leasing pipeline.</h1><p class="dek">Use your own call volume and conversion assumptions. This calculator is a planning model—not an EMC2Ops performance claim, guarantee, or industry benchmark.</p></div></section>
+    <section class="wrap detail-section">
+      <div class="calculator-shell" data-roi-calculator>
+        <form class="calculator-panel" id="roi-calculator-form">
+          <h2>Your assumptions</h2><p class="calculator-note">Example values are included only to demonstrate the model. Replace every value with your own measured data.</p>
+          <div class="calculator-fields">
+            <div class="calculator-field"><label for="missed-calls">Missed leasing calls per month</label><input id="missed-calls" name="missedCalls" type="number" min="0" step="1" value="100" inputmode="numeric" /><small>Total leasing calls your team does not answer live.</small></div>
+            <div class="calculator-field"><label for="current-recovery">Currently recovered (%)</label><input id="current-recovery" name="currentRecovery" type="number" min="0" max="100" step="1" value="10" inputmode="decimal" /><small>Share already contacted through voicemail, callbacks, or another process.</small></div>
+            <div class="calculator-field"><label for="contact-rate">Automated contact rate (%)</label><input id="contact-rate" name="contactRate" type="number" min="0" max="100" step="1" value="70" inputmode="decimal" /><small>Share of unrecovered callers expected to engage with the follow-up.</small></div>
+            <div class="calculator-field"><label for="qualification-rate">Qualified renter rate (%)</label><input id="qualification-rate" name="qualificationRate" type="number" min="0" max="100" step="1" value="50" inputmode="decimal" /><small>Share of engaged callers who match your basic leasing criteria.</small></div>
+            <div class="calculator-field"><label for="tour-rate">Tour booking rate (%)</label><input id="tour-rate" name="tourRate" type="number" min="0" max="100" step="1" value="40" inputmode="decimal" /><small>Share of qualified renters who book a tour or equivalent next step.</small></div>
+            <div class="calculator-field"><label for="lease-rate">Lease conversion rate (%)</label><input id="lease-rate" name="leaseRate" type="number" min="0" max="100" step="1" value="25" inputmode="decimal" /><small>Share of recovered tours that become signed leases.</small></div>
+            <div class="calculator-field"><label for="lease-value">Optional value per signed lease ($)</label><input id="lease-value" name="leaseValue" type="number" min="0" step="1" placeholder="Enter your own value" inputmode="decimal" /><small>Use your own contribution or management-fee value—not total rent unless that is your actual revenue measure.</small></div>
+          </div>
+          <div class="calculator-actions"><button class="btn btn-primary" type="submit">Update estimate</button><button class="btn btn-secondary" type="button" data-print-results>Print results</button></div>
+        </form>
+        <aside class="result-panel" aria-live="polite" aria-labelledby="results-heading"><h2 id="results-heading">Monthly planning estimate</h2><div class="metric-grid">
+          <div class="metric-card"><span>Unrecovered calls available</span><strong data-result="unrecovered">81.0</strong></div>
+          <div class="metric-card"><span>Recovered conversations</span><strong data-result="contacted">56.7</strong></div>
+          <div class="metric-card"><span>Qualified renters</span><strong data-result="qualified">28.4</strong></div>
+          <div class="metric-card"><span>Projected tours</span><strong data-result="tours">11.3</strong></div>
+          <div class="metric-card"><span>Projected leases</span><strong data-result="leases">2.8</strong></div>
+          <div class="metric-card"><span>Optional estimated value</span><strong data-result="value">Not entered</strong></div>
+        </div><p class="calculator-note" data-result-note>Results are arithmetic projections from the assumptions shown. Actual outcomes depend on call quality, inventory, pricing, response design, compliance, staff handoff, and market conditions.</p></aside>
+      </div>
+    </section>
+    <section class="wrap split-section"><div><h2>Formula</h2><ol class="formula-list"><li>Unrecovered calls = missed calls × (1 − current recovery rate)</li><li>Recovered conversations = unrecovered calls × automated contact rate</li><li>Qualified renters = recovered conversations × qualification rate</li><li>Projected tours = qualified renters × tour booking rate</li><li>Projected leases = projected tours × lease conversion rate</li><li>Optional value = projected leases × your value per signed lease</li></ol></div><div><h2>Use the output responsibly</h2><p>Run the model with conservative, expected, and aggressive assumptions. Validate every rate against your CRM and call records, then compare projected results with the first 30 days after launch.</p><p><a href="/services/missed-call-recovery/">See the missed-call recovery workflow</a> or <a href="/book-demo/?workflow=missed-call-recovery&source=roi-calculator">scope a measured pilot</a>.</p></div></section>
+  </main><SiteFooter />
+</SiteLayout>
+
+<script>
+  const calculator = document.querySelector("[data-roi-calculator]");
+  const form = document.querySelector("#roi-calculator-form");
+
+  const boundedNumber = (formData, key, maximum = Number.POSITIVE_INFINITY) => {
+    const raw = Number(formData.get(key));
+    if (!Number.isFinite(raw)) return 0;
+    return Math.min(Math.max(raw, 0), maximum);
+  };
+
+  const formatCount = (value) => value.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+
+  const updateCalculator = () => {
+    if (!(calculator instanceof HTMLElement) || !(form instanceof HTMLFormElement)) return;
+    const data = new FormData(form);
+    const missedCalls = boundedNumber(data, "missedCalls");
+    const currentRecovery = boundedNumber(data, "currentRecovery", 100) / 100;
+    const contactRate = boundedNumber(data, "contactRate", 100) / 100;
+    const qualificationRate = boundedNumber(data, "qualificationRate", 100) / 100;
+    const tourRate = boundedNumber(data, "tourRate", 100) / 100;
+    const leaseRate = boundedNumber(data, "leaseRate", 100) / 100;
+    const leaseValue = boundedNumber(data, "leaseValue");
+    const unrecovered = missedCalls * (1 - currentRecovery);
+    const contacted = unrecovered * contactRate;
+    const qualified = contacted * qualificationRate;
+    const tours = qualified * tourRate;
+    const leases = tours * leaseRate;
+    const results = { unrecovered, contacted, qualified, tours, leases };
+
+    for (const [key, value] of Object.entries(results)) {
+      const output = calculator.querySelector(`[data-result="${key}"]`);
+      if (output) output.textContent = formatCount(value);
+    }
+    const valueOutput = calculator.querySelector('[data-result="value"]');
+    if (valueOutput) valueOutput.textContent = leaseValue > 0
+      ? new Intl.NumberFormat(undefined, { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(leases * leaseValue)
+      : "Not entered";
+  };
+
+  form?.addEventListener("submit", (event) => { event.preventDefault(); updateCalculator(); });
+  form?.addEventListener("input", updateCalculator);
+  document.querySelector("[data-print-results]")?.addEventListener("click", () => window.print());
+  updateCalculator();
+</script>

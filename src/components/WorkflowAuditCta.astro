@@ -1,0 +1,25 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  body: string;
+  href: string;
+  label: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+}
+
+const { eyebrow = "Workflow audit", title, body, href, label, secondaryHref, secondaryLabel } = Astro.props;
+---
+
+<section class="wrap detail-section conversion-cta" aria-label={eyebrow}>
+  <div class="conversion-cta-copy">
+    <p class="eyebrow">{eyebrow}</p>
+    <h2>{title}</h2>
+    <p>{body}</p>
+  </div>
+  <div class="conversion-cta-actions">
+    <a class="btn btn-primary" href={href}>{label}</a>
+    {secondaryHref && secondaryLabel && <a class="btn btn-secondary" href={secondaryHref}>{secondaryLabel}</a>}
+  </div>
+</section>

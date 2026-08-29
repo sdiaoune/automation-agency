@@ -7,7 +7,7 @@ title: "What Is an AI Leasing Assistant? How It Works for Property Managers in 2
 seoTitle: "AI Leasing Assistant for Property Managers"
 meta: "Learn what an AI leasing assistant does, how it answers renter inquiries, books tours, follows up, escalates exceptions, and updates the CRM."
 publishedAt: "2026-06-08"
-updatedAt: "2026-06-08"
+updatedAt: "2026-07-01"
 h1: "What is an AI leasing assistant, and how does it work in 2026?"
 problem: "An AI leasing assistant is software that answers renter inquiries, qualifies prospects, books tours, sends follow-up, and updates your CRM or property management system so leasing teams can respond faster without adding more admin work."
 stakes:
@@ -30,6 +30,8 @@ metrics:
   - "human escalation rate"
 cta: "If you want an AI leasing assistant that fits your current leasing workflow, book a 15-minute workflow audit."
 bodySections: true
+socialHook: "An AI leasing assistant should book the next step, not just answer a question."
+socialImage: "/blog/social-assets/ai-leasing-assistant.png"
 faqs:
   - question: "What does an AI leasing assistant do for property managers?"
     answer: "An AI leasing assistant answers renter questions, qualifies leads, schedules tours, sends reminders and follow-up, escalates exceptions, and logs activity in the leasing CRM or property management system."
@@ -42,6 +44,7 @@ faqs:
   - question: "How fast can a property manager launch an AI leasing assistant?"
     answer: "A narrow first workflow can often launch in days once property data, channels, calendar rules, CRM fields, escalation rules, and approved messaging are ready."
 related:
+  - "ai-front-desk-loop-not-chatbot"
   - "property-management-ai-automation-vs-chatbots"
   - "after-hours-leasing-automation"
   - "property-management-response-times"
@@ -54,7 +57,15 @@ The short answer: yes, if the assistant is built around the leasing workflow ins
 
 In 2026, an AI leasing assistant is best understood as a front-end leasing operator. It works across calls, texts, emails, chat, forms, and listing-site leads. It answers property-specific questions, captures qualification details, schedules tours, follows up with warm prospects, and writes the outcome back to the system your team already uses.
 
+This guide is leasing-specific buyer education. For the broader operating model across leasing, maintenance, owners, vendors, and CRM writebacks, use [AI front desk for property managers](/blog/ai-front-desk-loop-not-chatbot/). For the chatbot comparison angle, use [property management AI automation vs chatbots](/blog/property-management-ai-automation-vs-chatbots/).
+
 That matters because renter intent is perishable. A prospect who asks about availability at 8:43 p.m. is often comparing several properties at once. If your team replies the next morning, the lead may already have booked with another community.
+
+## How this differs from an AI front desk
+
+An AI leasing assistant is a leasing workflow: renter questions, qualification, tour scheduling, follow-up, and CRM updates. An AI front desk is the broader operating layer that can include leasing, maintenance, owner requests, vendor handoffs, missed calls, and CRM writebacks. This page should help buyers understand the leasing assistant category; the AI front desk page should own the cross-functional operating model.
+
+For specific leasing workflows, compare this category page with [after-hours leasing automation](/blog/after-hours-leasing-automation/), [property management response times](/blog/property-management-response-times/), [AI leasing follow-up](/blog/ai-leasing-follow-up-property-management/), [property management tour scheduling automation](/blog/property-management-tour-scheduling-automation/), and [showing no-show prevention](/blog/reduce-showing-no-shows-property-management/). Those pages each own narrower implementation questions.
 
 ## What an AI leasing assistant is
 

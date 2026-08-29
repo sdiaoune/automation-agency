@@ -2,8 +2,12 @@
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import ClientReviews from "../../components/ClientReviews.astro";
+import ProductScreenshot from "../../components/ProductScreenshot.astro";
+import { auditHref } from "../../lib/conversion";
 import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../../lib/site";
 import { integrationPages, integrationUrl } from "../../lib/integrations";
+import { productScreenshotForPath } from "../../lib/productScreenshots";
 import "../../styles/service.css";
 
 const title = "Property Management Automation Integrations | EMC2Ops";
@@ -27,13 +31,51 @@ const description =
         <p class="eyebrow">Integrations</p>
         <h1>Automation workflows for the systems property teams already use.</h1>
         <p class="dek">
-          EMC2Ops connects communication, intake, routing, and CRM handoffs through supported APIs,
-          webhooks, middleware, and workflow tools.
+          Integration work is not always a direct API write. EMC2Ops scopes the safest route for
+          each workflow: API, middleware, inbox parsing, structured forms, review queues, or a
+          hybrid handoff.
         </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/book-demo/?workflow=buildium&source=integrations-index">Book my integration audit</a>
+          <a class="btn btn-secondary" href="#paths">Compare connection paths</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-proof-section">
+      <div class="wrap">
+        <ProductScreenshot screenshot={productScreenshotForPath("/integrations/")} />
+      </div>
+    </section>
+
+    <ClientReviews />
+
+    <section id="paths" class="wrap detail-section">
+      <p class="eyebrow">Connection paths</p>
+      <h2>Choose the route that matches the workflow and access</h2>
+      <div class="decision-grid">
+        <a href="/integrations/buildium/">
+          <strong>API or Open API</strong>
+          <span>Use direct access when permissions, endpoint coverage, and workflow risk support it.</span>
+        </a>
+        <a href="/integrations/appfolio/">
+          <strong>Middleware and webhooks</strong>
+          <span>Connect surrounding tools through Zapier, Make, n8n, webhooks, or custom logic where supported.</span>
+        </a>
+        <a href="/services/maintenance-intake-automation/">
+          <strong>Inbox or form parsing</strong>
+          <span>Capture missing context when the system can receive cleaner summaries but direct access is limited.</span>
+        </a>
+        <a href="/services/owner-update-automation/">
+          <strong>Human review queues</strong>
+          <span>Hold owner-facing, financial, approval, or policy-sensitive steps before sending or writing updates.</span>
+        </a>
       </div>
     </section>
 
     <section class="wrap service-grid-section">
+      <p class="eyebrow">Integration menu</p>
+      <h2>Systems and workflow handoffs</h2>
       <div class="service-grid">
         {
           integrationPages.map((integration) => (
@@ -41,8 +83,9 @@ const description =
               <img src={integration.logo} alt={`${integration.name} logo`} width="42" height="42" loading="lazy" />
               <span>{integration.name}</span>
               <h2><a href={integrationUrl(integration)}>{integration.title}</a></h2>
-              <p>{integration.description}</p>
+              <p>{integration.auditFocus}</p>
               <a class="read-more" href={integrationUrl(integration)}>View integration</a>
+              <a class="read-more muted-more" href={auditHref(integration.slug, "integration")}>{integration.auditCta.label}</a>
             </article>
           ))
         }

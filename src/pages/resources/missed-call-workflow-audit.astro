@@ -1,0 +1,62 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../../lib/site";
+import "../../styles/service.css";
+import "../../styles/authority.css";
+
+const description = "Audit seven missed-call-to-CRM stages, five human decision gates, and five measurable handoff metrics with a vendor-neutral property-management worksheet.";
+const path = "/resources/missed-call-workflow-audit/";
+const stages = [
+  ["Eligible trigger", "One eligible phone event launches one workflow.", "Duplicate messages or the wrong line enters the workflow."],
+  ["Consent and stop rules", "Suppression, opt-out, duplicate, and staff-ownership checks run first.", "A stopped contact receives a message or the send has no auditable basis."],
+  ["Approved first response", "The copy identifies the team and offers one useful next step.", "The reply is fast but vague, misleading, or cannot accept a stop request."],
+  ["Minimum qualification", "Only fields required for the agreed next action are captured.", "The workflow collects excess data or creates an unusable transcript."],
+  ["Human escalation", "Sensitive, uncertain, or policy-dependent cases leave automation with context.", "Automation improvises or silently parks the exception."],
+  ["Booked or assigned next step", "A supported appointment is created or one named person owns a task.", "The renter replies, but nobody owns the next action."],
+  ["CRM writeback and stop state", "The record shows source, summary, owner, next action, and automation status.", "The CRM holds a transcript without an outcome or automation conflicts with staff."],
+];
+const gates = [
+  "Fair-housing or accommodation questions",
+  "Pricing, screening, lease, or legal interpretation",
+  "Emergency, habitability, or safety concerns",
+  "Complaints, payment disputes, or interpersonal conflict",
+  "Approval, low-confidence answer, or an action the connected system cannot verify",
+];
+const metrics = [
+  ["Provider acceptance time", "Median provider-accepted timestamp minus eligible-event timestamp", "Phone event log + messaging receipt"],
+  ["Qualification completion", "Replied conversations with every required next-step field ÷ replied eligible conversations", "Workflow + structured CRM fields"],
+  ["Booked or assigned next step", "Qualified conversations ending in a supported booking or named task ÷ qualified conversations", "Calendar or task queue + CRM"],
+  ["CRM completeness", "Audited records with source, timestamps, summary, owner, next action, and stop state ÷ audited records", "CRM query or sampled review"],
+  ["Unresolved exception rate", "Escalations without an owner or resolution inside the target window ÷ all escalations", "Escalation queue + CRM history"],
+];
+---
+<SiteLayout title="Missed-Call-to-CRM Workflow Audit | EMC2Ops" description={description} canonical={absoluteUrl(path)} image={absoluteUrl(defaultSocialImage)} imageAlt="Seven-stage missed-call-to-CRM workflow audit for property managers." schema={standardPageSchema({ path, name: "Missed-call-to-CRM workflow audit", description, parent: { name: "Resources", path: "/resources/" } })} pageClass="service-page workflow-audit-page">
+  <SiteHeader />
+  <main>
+    <section class="service-hero"><div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/resources/">Resources</a><span>/</span>Workflow audit</nav><p class="eyebrow">Vendor-neutral operator worksheet</p><h1>A missed call is not complete until the next step has an owner.</h1><p class="dek">Audit one unanswered leasing call across seven workflow stages, five human decision gates, and five measurable outcomes. Use this with your current phone, messaging, scheduling, and CRM tools.</p><div class="hero-actions"><a class="btn btn-primary" href="/downloads/missed-call-workflow-audit.pdf" download>Download the one-page PDF</a><button class="btn btn-secondary" type="button" data-print-audit>Print the live worksheet</button><a class="btn btn-secondary" href="/services/missed-call-recovery/">See the definitive workflow</a></div><p class="hero-reassurance">No email gate. No product purchase required. This is a process audit, not a legal opinion or performance guarantee.</p></div></section>
+
+    <section class="wrap detail-section"><div class="worksheet-heading"><div><p class="eyebrow">Part 1</p><h2>Trace the seven-stage handoff</h2><p>Choose one real, recent call. Mark a stage complete only when you can point to evidence in the real system.</p></div><div class="worksheet-meta" aria-label="Audit fields"><span>Call or record ID: ____________________</span><span>Audit date: ____________________</span><span>Owner: ____________________</span></div></div>
+      <table class="workflow-audit-table">
+        <caption class="sr-only">Seven-stage missed-call workflow audit</caption>
+        <thead><tr><th scope="col">Stage</th><th scope="col">Pass standard</th><th scope="col">Failure to look for</th><th scope="col">Result</th></tr></thead>
+        <tbody>{stages.map(([stage, standard, failure], index) => <tr><th class="audit-stage" scope="row"><span>{String(index + 1).padStart(2, "0")}</span><strong>{stage}</strong></th><td><span class="mobile-cell-label">Pass standard</span>{standard}</td><td><span class="mobile-cell-label">Failure to look for</span>{failure}</td><td class="audit-result"><span class="mobile-cell-label">Result</span>□ Pass<br />□ Gap</td></tr>)}</tbody>
+      </table>
+      <p class="worksheet-note">Measurement sits outside these seven stages. It evaluates whether the stages created a usable, owned outcome; it is not an eighth workflow stage.</p>
+    </section>
+
+    <section class="wrap split-section worksheet-split"><div><p class="eyebrow">Part 2</p><h2>Name the five human decision gates</h2><p>When a gate applies, automation should transfer the reason, relevant context, named owner, and takeover timestamp.</p><ul class="check-list gate-list">{gates.map((gate) => <li>{gate}</li>)}</ul></div><aside class="notice-card"><strong>Human handoff record</strong><p>Escalation reason: ____________________</p><p>Named owner: ____________________</p><p>Context transferred: ____________________</p><p>Takeover timestamp: ____________________</p><p>Stop state confirmed: □</p></aside></section>
+
+    <section class="wrap detail-section"><p class="eyebrow">Part 3</p><h2>Measure completed handoffs, not messages sent</h2><p class="section-intro">Agree on the numerator, denominator, and source system before a pilot begins. Compare the pilot with a baseline using the same definitions.</p><table class="measurement-table"><caption class="sr-only">Five workflow measurement definitions</caption><thead><tr><th scope="col">Metric</th><th scope="col">Formula</th><th scope="col">Primary source</th></tr></thead><tbody>{metrics.map(([metric, formula, source]) => <tr><th scope="row">{metric}</th><td><span class="mobile-cell-label">Formula</span>{formula}</td><td><span class="mobile-cell-label">Primary source</span>{source}</td></tr>)}</tbody></table></section>
+
+    <section class="wrap split-section"><div><p class="eyebrow">Review</p><h2>Close the audit with six questions</h2><ol class="formula-list"><li>Which stage caused the longest delay?</li><li>Where could automation make a promise it cannot verify?</li><li>Which exception lacks a named owner?</li><li>Does the CRM show an outcome or only a transcript?</li><li>What event stops automation when staff take over?</li><li>Which metric can current timestamps and fields support reliably?</li></ol></div><div class="notice-card conversion-card"><strong>Want help mapping the first workflow?</strong><p>Bring one recent missed call, the systems involved, and the current owner. EMC2Ops will help you identify the narrowest measurable handoff.</p><a class="btn btn-primary" href="/book-demo/?workflow=missed-call-recovery&source=workflow-audit">Book a 15-minute consultation</a></div></section>
+
+    <section class="wrap detail-section worksheet-sources"><h2>Scope and source note</h2><p>This worksheet is an operations framework, not legal advice. Consent, fair-housing, accommodation, emergency, privacy, retention, carrier, and other obligations vary by facts and jurisdiction. Have qualified counsel and your providers review the rules that apply to a specific workflow.</p><p>Reference starting points: <a href="https://www.hud.gov/helping-americans/fair-housing-act-overview" rel="noreferrer">HUD’s Fair Housing Act overview</a>, the <a href="https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200" rel="noreferrer">current 47 C.F.R. § 64.1200</a>, and the FCC’s <a href="https://docs.fcc.gov/public/attachments/DA-26-12A1.pdf" rel="noreferrer">limited consent-revocation extension through January 31, 2027</a>.</p></section>
+  </main>
+  <SiteFooter />
+</SiteLayout>
+
+<script>
+  document.querySelector("[data-print-audit]")?.addEventListener("click", () => window.print());
+</script>

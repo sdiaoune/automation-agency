@@ -1,0 +1,27 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../../lib/site";
+import "../../styles/service.css";
+import "../../styles/authority.css";
+const path = "/compare/custom-automation-vs-off-the-shelf-property-management-ai/";
+const description = "Compare custom workflow automation with off-the-shelf property management AI across speed, fit, integrations, control, maintenance, and governance.";
+const rows = [
+  ["Initial setup", "Workflow mapping, configuration, integration, testing, and client-specific rules", "Vendor onboarding and configuration within the product’s supported model"],
+  ["Process fit", "Can be designed around a differentiated or cross-system workflow", "Strongest when the existing process matches supported features and integrations"],
+  ["Time to first use", "Varies with scope, access, data, and integration complexity", "Often faster when requirements stay inside the standard product"],
+  ["Control", "More direct control over logic, prompts, fields, stop rules, and handoffs", "Control is bounded by vendor configuration and roadmap"],
+  ["Maintenance", "The owner must maintain integrations, logic, tests, and provider changes", "The vendor maintains the core product; the client maintains configuration and adoption"],
+  ["Best fit", "A valuable workflow that crosses systems or needs distinctive operating rules", "A common workflow the vendor already supports well"],
+];
+---
+<SiteLayout title="Custom vs. Off-the-Shelf Property Management AI | EMC2Ops" description={description} canonical={absoluteUrl(path)} image={absoluteUrl(defaultSocialImage)} imageAlt="Custom automation versus off-the-shelf property management AI comparison." schema={standardPageSchema({ path, name: "Custom automation vs. off-the-shelf property management AI", description, parent: { name: "Compare", path: "/compare/" } })} pageClass="service-page">
+  <SiteHeader /><main><section class="service-hero"><div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/compare/">Compare</a><span>/</span>Custom vs. off-the-shelf</nav><p class="eyebrow">Implementation comparison</p><h1>Custom automation vs. off-the-shelf property management AI.</h1><p class="dek">Buy the standard product when your workflow fits it. Build or configure a custom system when the operating advantage depends on cross-system rules, differentiated handoffs, or control the product does not expose.</p><p class="hero-reassurance">Reviewed August 5, 2026 · Framework and limitations included below</p></div></section>
+  <section class="wrap detail-section"><h2>Side-by-side comparison</h2><div class="comparison-table"><div class="comparison-heading">Decision area</div><div class="comparison-heading">Custom automation</div><div class="comparison-heading">Off-the-shelf AI</div>{rows.flatMap((row) => row.map((cell) => <div>{cell}</div>))}</div></section>
+  <section class="wrap split-section"><div><h2>Start with off-the-shelf software when</h2><ul><li>The workflow is common and already supported end to end.</li><li>Native integrations cover the systems that own the record.</li><li>Your team can adopt the product’s standard process.</li><li>Faster onboarding matters more than distinctive workflow control.</li></ul></div><div><h2>Consider custom automation when</h2><ul><li>The workflow crosses phone, SMS, email, PMS, CRM, calendar, and internal task systems.</li><li>Your rules, approvals, stop conditions, or reporting requirements are materially different.</li><li>The process creates enough value to justify an owned maintenance plan.</li><li>You need a narrow layer around existing systems rather than a replacement platform.</li></ul></div></section>
+  <section class="wrap detail-section"><h2>A five-question decision test</h2><ol class="step-list"><li>Does a current product support the exact trigger and desired outcome?</li><li>Can it write the required fields to the real system of record?</li><li>Can the team configure every sensitive exception and stop rule?</li><li>Who owns monitoring, incident response, and provider changes?</li><li>Is the workflow valuable enough to justify custom lifecycle costs?</li></ol></section>
+  <section class="wrap split-section"><div><h2>Governance source</h2><p>The <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI Risk Management Framework</a> recommends mapping and managing AI risk across the lifecycle. Its core guidance also calls for documented scope, third-party components, and human oversight—useful checks for either buying or building.</p></div><div><h2>Limitations</h2><p>This is a selection framework, not a product ranking. Vendor features, APIs, pricing, and service levels change. Verify current capabilities directly with each vendor and test the actual workflow before committing.</p></div></section>
+  <section class="wrap detail-section"><div class="conversion-cta"><div><h2>Bring the workflow before you buy the platform.</h2><p>EMC2Ops can map the trigger, rules, system of record, exceptions, and measurable outcome.</p></div><div class="conversion-cta-actions"><a class="btn btn-primary" href="/book-demo/?workflow=build-vs-buy&source=comparison">Book a consultation</a></div></div></section>
+  </main><SiteFooter />
+</SiteLayout>

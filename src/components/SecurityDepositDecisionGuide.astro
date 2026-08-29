@@ -1,0 +1,319 @@
+<section id="security-deposit-guide" class="wrap detail-section deposit-guide">
+  <div class="deposit-guide__intro">
+    <div>
+      <p class="eyebrow">Direct answer</p>
+      <h2>What is security deposit automation?</h2>
+    </div>
+    <p class="deposit-guide__definition">
+      Security deposit automation is a controlled move-out workflow that gathers the deposit ledger, inspections,
+      before-and-after evidence, invoices, policy context, deadlines, approvals, disposition documents, delivery,
+      refund status, and PMS writeback in one versioned case. It automates coordination and recordkeeping. It does not
+      give AI authority to decide liability, normal wear, legal compliance, deductions, or refunds.
+    </p>
+  </div>
+
+  <nav class="deposit-guide__nav" aria-label="Security deposit automation guide">
+    <a href="#deposit-at-a-glance">At a glance</a>
+    <a href="#deposit-decision-boundaries">Decision boundaries</a>
+    <a href="#deposit-required-inputs">Required inputs</a>
+    <a href="#deposit-exceptions">Missing and conflicting evidence</a>
+    <a href="#deposit-comparison">Compare approaches</a>
+    <a href="#deposit-implementation">Implementation</a>
+    <a href="#deposit-buying-checklist">Buying checklist</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <div id="deposit-at-a-glance" class="deposit-fact-grid">
+    <article>
+      <strong>Category</strong>
+      <p>Done-for-you workflow implementation layered around the systems your team already uses.</p>
+    </article>
+    <article>
+      <strong>Best for</strong>
+      <p>Property managers and rental operators whose move-out evidence, approvals, and refund status span several tools.</p>
+    </article>
+    <article>
+      <strong>Verified trigger</strong>
+      <p>A confirmed move-out or other client-approved event opens the case and starts the internal review path.</p>
+    </article>
+    <article>
+      <strong>Primary output</strong>
+      <p>An approved disposition package with evidence lineage, delivery state, refund milestone, and activity history.</p>
+    </article>
+    <article>
+      <strong>AI's role</strong>
+      <p>Organize records and draft neutral observations linked to the evidence a manager can inspect.</p>
+    </article>
+    <article>
+      <strong>Staff's role</strong>
+      <p>Decide policy, liability, wear, charge amounts, refund amounts, legal questions, exceptions, and final approval.</p>
+    </article>
+    <article>
+      <strong>Money movement</strong>
+      <p>Off by default. It requires a separately approved payment integration, permissions, controls, and authorization.</p>
+    </article>
+    <article>
+      <strong>Legal scope</strong>
+      <p>Operational controls using client-approved rules. The workflow is not legal advice or a compliance guarantee.</p>
+    </article>
+  </div>
+</section>
+
+<section id="deposit-decision-boundaries" class="wrap detail-section">
+  <p class="eyebrow">Authority map</p>
+  <h2>What automation, AI, and authorized staff each control</h2>
+  <p class="section-lede">
+    A safe deposit workflow separates repeatable coordination from financial and legal judgment. The boundary is explicit
+    at every step, not buried in a general disclaimer.
+  </p>
+  <div class="deposit-table-shell" role="region" aria-label="Security deposit decision boundary table" tabindex="0">
+    <table class="deposit-table">
+      <thead>
+        <tr>
+          <th scope="col">Workflow decision</th>
+          <th scope="col">Automation may</th>
+          <th scope="col">AI may</th>
+          <th scope="col">Authorized staff must</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Open and identify the case</th>
+          <td>Use a verified trigger and attach the correct property, unit, resident, ledger, source dates, and owner.</td>
+          <td>Flag possible identity or record mismatches for review.</td>
+          <td>Resolve uncertain identity, ownership, or jurisdiction context.</td>
+        </tr>
+        <tr>
+          <th scope="row">Compare evidence</th>
+          <td>Pair verified inspections, images, invoices, messages, and policy files.</td>
+          <td>Draft neutral descriptions of visible or documented differences and cite the source records.</td>
+          <td>Decide whether the evidence is reliable, relevant, and sufficient for a proposed charge.</td>
+        </tr>
+        <tr>
+          <th scope="row">Apply rules and dates</th>
+          <td>Apply the active, versioned client configuration and calculate internal target dates.</td>
+          <td>Summarize a configured rule but not interpret law or invent a deadline.</td>
+          <td>Approve the policy, legal source, jurisdiction, effective date, and exception path with counsel as needed.</td>
+        </tr>
+        <tr>
+          <th scope="row">Prepare deductions and refund math</th>
+          <td>Reconcile the deposit held, credits, proposed charges, and proposed refund and block mismatches.</td>
+          <td>Help organize supporting evidence; suggestions remain nonbinding.</td>
+          <td>Determine liability, wear, allowed charges, exact amounts, credits, and the final refund.</td>
+        </tr>
+        <tr>
+          <th scope="row">Approve and fulfill</th>
+          <td>Freeze the reviewed version, generate the approved artifact, and track delivery, refund, and writeback states.</td>
+          <td>Summarize the final record without changing the approved decision.</td>
+          <td>Approve the frozen proposal and separately authorize any document delivery, money movement, or PMS writeback.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="deposit-required-inputs" class="wrap split-section">
+  <div>
+    <p class="eyebrow">Required inputs</p>
+    <h2>What must exist before a case can be manager-ready?</h2>
+    <p>
+      The evidence standard is configured by portfolio, jurisdiction, property, or policy version. The workflow should
+      show what is present, missing, stale, or unverified rather than filling gaps with assumptions.
+    </p>
+  </div>
+  <div class="check-list">
+    <div><span>✓</span><p>Verified property, unit, resident, move-out event, source dates, and assigned reviewer.</p></div>
+    <div><span>✓</span><p>Deposit held, credits, unpaid balances, proposed charges, and refund reconciliation from approved records.</p></div>
+    <div><span>✓</span><p>Move-in and move-out inspections, paired images when required, and source identifiers for every file.</p></div>
+    <div><span>✓</span><p>Invoices, receipts, estimates, work descriptions, lease or policy files, and relevant resident correspondence.</p></div>
+    <div><span>✓</span><p>Active policy version, jurisdiction context, deadline source, internal target, and required approval role.</p></div>
+    <div><span>✓</span><p>Delivery destination, refund method or tracking state, retention rule, and supported PMS writeback path.</p></div>
+  </div>
+</section>
+
+<section id="deposit-exceptions" class="wrap detail-section">
+  <p class="eyebrow">Failure behavior</p>
+  <h2>What happens when evidence is missing, conflicting, or late?</h2>
+  <p class="section-lede">
+    A useful workflow is defined by what it refuses to guess. These are default control patterns; the client's approved
+    rules determine the production behavior.
+  </p>
+  <div class="deposit-exception-grid">
+    <article>
+      <h3>No move-in inspection or photo</h3>
+      <p>The case records an evidence gap. AI must not infer the original condition or convert a move-out image into proof of tenant responsibility.</p>
+    </article>
+    <article>
+      <h3>Ledger and deposit balance disagree</h3>
+      <p>Reconciliation fails visibly, the proposal remains unapprovable, and the case routes to the designated accounting owner.</p>
+    </article>
+    <article>
+      <h3>Invoice or receipt is missing</h3>
+      <p>The proposed line item shows the missing support and follows the client's approved estimate, exclusion, or manager-review rule.</p>
+    </article>
+    <article>
+      <h3>Evidence changes after approval</h3>
+      <p>The prior approval is attached to its frozen version. A material change creates a new version and requires review again.</p>
+    </article>
+    <article>
+      <h3>Deadline risk appears</h3>
+      <p>The case escalates by the configured internal target with the unresolved items, responsible owner, source date, and current state visible.</p>
+    </article>
+    <article>
+      <h3>The PMS cannot provide direct access</h3>
+      <p>The design falls back to supported exports, inbox parsing, middleware, a secure review queue, or manual writeback instead of claiming an integration that does not exist.</p>
+    </article>
+    <article>
+      <h3>The AI result is uncertain</h3>
+      <p>The observation is marked for review or omitted. Confidence never substitutes for source evidence or human authority.</p>
+    </article>
+    <article>
+      <h3>A provider or workflow step fails</h3>
+      <p>The failure is logged, the case remains incomplete, and the assigned fallback owner receives the context needed to continue safely.</p>
+    </article>
+  </div>
+</section>
+
+<section id="deposit-comparison" class="wrap detail-section">
+  <p class="eyebrow">Category comparison</p>
+  <h2>How this differs from other security deposit products</h2>
+  <p class="section-lede">
+    These categories can complement one another. Capabilities vary by vendor, so confirm the actual product, permissions,
+    jurisdictions, and operating model before buying.
+  </p>
+  <div class="deposit-comparison-grid">
+    <article>
+      <h3>Deposit management platform</h3>
+      <p><strong>Typical focus:</strong> collection, escrow or FBO accounts, interest, statements, and digital refunds.</p>
+      <p><strong>EMC2Ops focus:</strong> the cross-system evidence, reconciliation, exception, approval, and audit workflow around the disposition.</p>
+    </article>
+    <article>
+      <h3>Inspection or photo-comparison app</h3>
+      <p><strong>Typical focus:</strong> condition capture, before-and-after comparisons, signatures, and inspection reports.</p>
+      <p><strong>EMC2Ops focus:</strong> connect that evidence to the ledger, invoices, policy version, charge proposal, manager decision, delivery, and refund state.</p>
+    </article>
+    <article>
+      <h3>PMS-native deposit features</h3>
+      <p><strong>Typical focus:</strong> the resident ledger, accounting transaction, attachment, check, or system-of-record entry.</p>
+      <p><strong>EMC2Ops focus:</strong> coordinate records that also live in inspection tools, storage, email, vendor systems, approval queues, and fulfillment paths.</p>
+    </article>
+    <article>
+      <h3>Security deposit alternative</h3>
+      <p><strong>Typical focus:</strong> replace or reduce the upfront cash deposit through a bond, policy, guarantee, or payment option.</p>
+      <p><strong>EMC2Ops focus:</strong> improve the operating workflow for a deposit or move-out claim; it is not itself a financial substitute for a cash deposit.</p>
+    </article>
+    <article>
+      <h3>Generic no-code automation</h3>
+      <p><strong>Typical focus:</strong> move fields or trigger actions between apps.</p>
+      <p><strong>EMC2Ops focus:</strong> implement a versioned case, evidence requirements, frozen approvals, exception ownership, failure logging, and measurable completion states.</p>
+    </article>
+    <article class="deposit-comparison-grid__emphasis">
+      <h3>When the EMC2Ops approach is useful</h3>
+      <p>Use it when the hard part is not only holding or refunding money, but proving how a case moved from scattered records to an authorized, evidence-backed disposition.</p>
+    </article>
+  </div>
+</section>
+
+<section id="deposit-implementation" class="wrap detail-section">
+  <p class="eyebrow">Implementation</p>
+  <h2>How a security deposit workflow is scoped, tested, and launched</h2>
+  <p class="section-lede">
+    EMC2Ops does not promise a universal launch date before the systems, permissions, evidence rules, and approval boundaries
+    are known. A written scope should establish the sequence below.
+  </p>
+  <ol class="step-list deposit-implementation-steps">
+    <li><strong>Trace a real case.</strong> Map one recent move-out from trigger through ledger, evidence, approval, delivery, refund, and writeback.</li>
+    <li><strong>Define the control set.</strong> Document required evidence, rule sources, roles, target dates, exceptions, retention, and access limits.</li>
+    <li><strong>Verify integrations.</strong> Confirm supported APIs, exports, webhooks, inboxes, storage, queues, and fallback paths before promising automation.</li>
+    <li><strong>Build a reviewable case.</strong> Configure evidence lineage, reconciliation, versioning, approval states, outputs, and failure logs.</li>
+    <li><strong>Run acceptance tests.</strong> Test ordinary cases plus missing evidence, conflicting balances, stale approvals, permission failures, and deadline risk.</li>
+    <li><strong>Launch with review.</strong> Start with conservative human gates, inspect completed and failed cases, then expand only after the operating record is reliable.</li>
+  </ol>
+
+  <div class="deposit-implementation-grid">
+    <article>
+      <h3>What your team supplies</h3>
+      <ul>
+        <li>Representative completed and exception cases.</li>
+        <li>Counsel-approved policies and primary rule sources.</li>
+        <li>Evidence requirements and deduction authority.</li>
+        <li>System owners, credentials, permissions, and test access.</li>
+        <li>Approval roles, escalation contacts, and acceptance criteria.</li>
+        <li>Retention, delivery, refund, and writeback requirements.</li>
+      </ul>
+    </article>
+    <article>
+      <h3>What changes the price</h3>
+      <ul>
+        <li>Number of workflows, portfolios, jurisdictions, and policy variants.</li>
+        <li>PMS, inspection, storage, accounting, payment, and delivery systems.</li>
+        <li>Availability and quality of supported integration access.</li>
+        <li>Case volume, evidence volume, migration, and exception complexity.</li>
+        <li>Security, reporting, monitoring, support, and change-control requirements.</li>
+        <li>Whether payment or document delivery integrations are included.</li>
+      </ul>
+      <p>Pricing is quote-based. The written scope should state inclusions, assumptions, exclusions, third-party costs, and expansion pricing before implementation.</p>
+    </article>
+  </div>
+</section>
+
+<section class="wrap split-section deposit-source-policy">
+  <div>
+    <p class="eyebrow">Rule-source policy</p>
+    <h2>How state and local requirements enter the workflow</h2>
+    <p>
+      The production configuration should use the operator's counsel-approved policy and named primary sources—not an AI
+      model's memory or an undated blog summary. Each rule should carry a jurisdiction, source, effective date, version,
+      approver, and change history. Existing cases retain the rule version applied to them; a rule change is tested and
+      approved before it becomes active for new cases.
+    </p>
+    <p>
+      Examples of primary sources include the
+      <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5." rel="noreferrer">California Legislature's Civil Code § 1950.5</a>
+      and
+      <a href="https://www.nysenate.gov/legislation/laws/GOB/7-108" rel="noreferrer">New York's official General Obligations Law § 7-108</a>.
+      Those links illustrate source discipline; they are not a complete legal guide.
+    </p>
+  </div>
+  <div>
+    <p class="eyebrow">Security and privacy</p>
+    <h2>How sensitive evidence is scoped</h2>
+    <p>
+      The implementation defines which records are needed, where they are stored, who can review them, how long they are
+      retained, what is logged, and which provider handles each step. Prefer scoped, revocable access and separate test
+      environments where the connected tools support them.
+    </p>
+    <p>
+      Security requirements and certifications must be verified for the actual client architecture. See the
+      <a href="/security/">EMC2Ops security and workflow controls</a> and <a href="/privacy/">privacy policy</a> for the
+      current public boundaries.
+    </p>
+  </div>
+</section>
+
+<section id="deposit-buying-checklist" class="wrap detail-section">
+  <p class="eyebrow">Evaluation checklist</p>
+  <h2>Questions to ask any security deposit automation provider</h2>
+  <p class="section-lede">
+    A demo should prove the operating record, not only the happy path. Ask the provider to show each answer using a sample
+    case and your actual integration constraints.
+  </p>
+  <ol class="deposit-buying-list">
+    <li>Can every observation and proposed charge link back to the exact inspection, image, invoice, message, or ledger source?</li>
+    <li>What happens when the move-in record, forwarding detail, invoice, receipt, or required image is missing?</li>
+    <li>Does a ledger mismatch block approval, and who receives the exception?</li>
+    <li>Is the proposal frozen at approval, and does a later material change invalidate that approval?</li>
+    <li>Who owns liability, normal-wear, policy, legal, deduction, credit, and refund decisions?</li>
+    <li>Where do jurisdiction rules and target dates come from, and how are rule changes versioned and approved?</li>
+    <li>Which PMS and inspection access paths have been verified for this account—not merely listed as possible?</li>
+    <li>Can the workflow operate without bank access or automatic money movement?</li>
+    <li>How are document delivery, refund fulfillment, failed payments, returned mail, and PMS writeback tracked?</li>
+    <li>What data is stored, for how long, in which systems, and under whose permissions?</li>
+    <li>What happens when the AI, integration, credential, provider, or scheduled workflow fails?</li>
+    <li>Can the complete case history be exported for management review, a resident dispute, an audit, or counsel?</li>
+  </ol>
+  <div class="deposit-guide__review-note">
+    <strong>Content scope reviewed August 29, 2026</strong>
+    <p>Workflow design by <a href="/about/#founder-profile">Soya Diaouné, founder and AI automation engineer</a>. Legal rules and software capabilities change; verify the production configuration before relying on it.</p>
+  </div>
+</section>

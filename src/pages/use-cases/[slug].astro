@@ -1,12 +1,23 @@
 ---
 import FaqList from "../../components/FaqList.astro";
-import SecurityDepositProductPreview from "../../components/SecurityDepositProductPreview.astro";
+import BeforeAfterBlock from "../../components/BeforeAfterBlock.astro";
+import FitBlock from "../../components/FitBlock.astro";
+import InstallablesBlock from "../../components/InstallablesBlock.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import WorkflowAuditCta from "../../components/WorkflowAuditCta.astro";
+import WorkflowProofBlock from "../../components/WorkflowProofBlock.astro";
+import WorkflowIntegrationsBlock from "../../components/WorkflowIntegrationsBlock.astro";
+import ProductScreenshot from "../../components/ProductScreenshot.astro";
+import SecurityDepositProductPreview from "../../components/SecurityDepositProductPreview.astro";
+import SecurityDepositDecisionGuide from "../../components/SecurityDepositDecisionGuide.astro";
+import AuditBookingSection from "../../components/AuditBookingSection.astro";
 import { auditHref } from "../../lib/conversion";
 import { absoluteUrl, defaultSocialImage } from "../../lib/site";
 import { useCasePages, useCaseSchema, useCaseUrl, type UseCasePage } from "../../lib/useCases";
+import { productScreenshotForPath } from "../../lib/productScreenshots";
+import { workflowIntegrationsForPath, workflowProofForPath } from "../../lib/workflowProof";
 import "../../styles/service.css";
 
 export function getStaticPaths() {
@@ -23,104 +34,22 @@ interface Props {
 const { useCase } = Astro.props;
 const canonical = absoluteUrl(useCaseUrl(useCase));
 const auditUrl = auditHref(useCase.slug, "use-case");
-const detailBySlug = {
-  "apartment-lead-tracking": {
-    exampleTitle: "Example: missed apartment inquiry to booked tour",
-    exampleSteps: [
-      "A renter submits an ILS form and calls the property 12 minutes later.",
-      "The workflow recognizes the duplicate lead, keeps the original source, and appends the call context.",
-      "AI asks for move date, unit size, budget, pets, and preferred tour window.",
-      "The CRM receives one clean lead record with owner, source, qualification fields, and next task.",
-    ],
-    templateTitle: "Apartment lead tracking field template",
-    templateRows: [
-      ["Lead source", "Capture ILS, call, form, referral, walk-in, or text source.", "CRM or lead source"],
-      ["Renter fit", "Store move date, unit interest, budget, pets, and preferred tour time.", "AI intake"],
-      ["Ownership", "Assign property, leasing agent, backup owner, and follow-up due time.", "Routing rule"],
-      ["Outcome", "Log booked tour, stale lead, duplicate, disqualified, or application started.", "CRM update"],
-    ],
-  },
-  "real-estate-lead-follow-up-automation": {
-    exampleTitle: "Example: stale renter lead recovery",
-    exampleSteps: [
-      "A qualified renter asks about availability but does not book a tour.",
-      "The workflow waits until the next defined follow-up window and sends a short SMS with one clear next step.",
-      "If the renter replies, staff get context and the automation stops.",
-      "If the renter does not reply, the CRM receives a stale-lead task and final sequence status.",
-    ],
-    templateTitle: "Follow-up sequence template",
-    templateRows: [
-      ["Trigger", "New inquiry, missed call, no-show, stale reply, or incomplete application.", "CRM status"],
-      ["Message goal", "Book, confirm, reschedule, complete application, or close the loop.", "Sequence rule"],
-      ["Stop rule", "Stop when staff reply, renter opts out, appointment is booked, or question needs review.", "Automation guardrail"],
-      ["CRM writeback", "Log reply, stage, next owner, task due date, and sequence outcome.", "CRM update"],
-    ],
-  },
-  "how-to-automate-property-management": {
-    exampleTitle: "Example: first workflow selection",
-    exampleSteps: [
-      "The team lists the five highest-volume handoffs: missed calls, maintenance intake, owner updates, vendor dispatch, and CRM notes.",
-      "Each workflow is scored by volume, risk, measurability, and staff frustration.",
-      "The first launch is limited to one trigger and one system-of-record update.",
-      "After one week of live review, prompts, routing, and reporting are adjusted before expanding.",
-    ],
-    templateTitle: "Property management automation planning template",
-    templateRows: [
-      ["Trigger", "What event should start the workflow?", "Operations lead"],
-      ["Required context", "What fields must be collected before the team can act?", "Workflow owner"],
-      ["Exception path", "What should stop automation and alert a human?", "Manager"],
-      ["Final record", "What CRM, work order, task, or owner update should exist at the end?", "System owner"],
-    ],
-  },
-  "lead-to-lease-automation": {
-    exampleTitle: "Example: inquiry to move-in handoff",
-    exampleSteps: [
-      "A renter asks about a unit after hours and receives an immediate qualification path.",
-      "The workflow books a tour, sends reminders, and recovers the lead if they no-show.",
-      "After application start, missing-document follow-up and staff exceptions are routed by status.",
-      "Once approved, move-in readiness tasks and CRM notes are created for the leasing team.",
-    ],
-    templateTitle: "Lead-to-lease stage template",
-    templateRows: [
-      ["Inquiry", "Source, property, unit fit, budget, move date, and channel.", "AI intake"],
-      ["Tour", "Booked time, confirmation, reminder, no-show, and reschedule status.", "Calendar/CRM"],
-      ["Application", "Started, missing items, submitted, exception, or approved.", "Application workflow"],
-      ["Move-in", "Deposit, utilities, lease status, keys, welcome message, and readiness tasks.", "Move-in workflow"],
-    ],
-  },
-  "real-estate-crm-follow-up-mess": {
-    exampleTitle: "Example: fixing a messy CRM without switching tools",
-    exampleSteps: [
-      "The team exports recent leads and finds duplicate records, missing notes, and stale stages.",
-      "The workflow defines which source wins, when to merge or flag duplicates, and what fields are required.",
-      "Automation logs concise summaries and next steps instead of dumping raw conversations into notes.",
-      "Managers review an exception queue instead of manually reconciling every lead record.",
-    ],
-    templateTitle: "CRM follow-up cleanup template",
-    templateRows: [
-      ["Source rule", "Which source and timestamp should be trusted when duplicate leads exist?", "CRM admin"],
-      ["Stage rule", "What event moves a lead to new, contacted, booked, no-show, applied, or closed?", "Sales/Leasing lead"],
-      ["Task rule", "What follow-up task should be created when no reply or missing application item exists?", "Automation rule"],
-      ["Note rule", "What summary should be logged, and what raw details should be excluded?", "CRM workflow"],
-    ],
-  },
-  "security-deposit-automation": {
-    exampleTitle: "Example: move-out evidence to approved disposition",
-    exampleSteps: [
-      "A completed move-out opens one deposit case with resident, unit, ledger balance, policy version, deadline, and assigned reviewer.",
-      "The workflow pairs verified move-in and move-out evidence, attaches the invoice, and drafts a neutral observation linked to its sources.",
-      "A manager reviews policy, liability, evidence, amount, and refund math, then approves or returns the frozen proposal with a reason.",
-      "The final disposition artifact, delivery state, refund milestone, and writeback status stay attached to the case history.",
-    ],
-    templateTitle: "Security deposit case template",
-    templateRows: [
-      ["Case identity", "Property, unit, resident, deposit held, policy version, deadline, and staff owner.", "PMS and intake"],
-      ["Evidence packet", "Inspections, before and after photos, invoices, policy files, and verification status.", "Evidence controls"],
-      ["Proposed disposition", "Source-linked observations, proposed deductions, credits, refund math, and exceptions.", "Review workspace"],
-      ["Approval and fulfillment", "Authorized reviewer, artifact, delivery, refund milestone, writeback, and activity trail.", "Human approval"],
-    ],
-  },
-}[useCase.slug];
+const isSecurityDepositAutomation = useCase.slug === "security-deposit-automation";
+const productScreenshot = isSecurityDepositAutomation
+  ? undefined
+  : productScreenshotForPath(`/use-cases/${useCase.slug}/`);
+const workflowProof = workflowProofForPath(`/use-cases/${useCase.slug}/`);
+const workflowIntegrations = workflowIntegrationsForPath(`/use-cases/${useCase.slug}/`);
+const isApartmentLeadLanding = useCase.slug === "apartment-lead-tracking";
+const primaryCtaHref = isApartmentLeadLanding ? "#book-demo" : auditUrl;
+const primaryCtaLabel = isApartmentLeadLanding ? "Check available times" : useCase.auditCta.label;
+const middleCtaHref = isApartmentLeadLanding ? "#book-demo" : auditUrl;
+const buyerLanguageTitle = isApartmentLeadLanding
+  ? "Lead sources this workflow brings together"
+  : "Related buyer language";
+const buyerLanguage = isApartmentLeadLanding
+  ? ["Calls", "Website forms", "ILS leads", "Texts", "Walk-ins", "Tour requests"]
+  : useCase.clusterKeywords;
 ---
 
 <SiteLayout
@@ -143,25 +72,51 @@ const detailBySlug = {
         <h1>{useCase.h1}</h1>
         <p class="dek">{useCase.summary}</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href={auditUrl}>Book a 15-minute audit</a>
-          <a class="btn btn-secondary" href="#workflow">See workflow</a>
+          <a class="btn btn-primary" href={primaryCtaHref}>{primaryCtaLabel}</a>
+          <a class="btn btn-secondary" href="#workflow">See how it works</a>
         </div>
+        {isApartmentLeadLanding && (
+          <p class="hero-reassurance">15 minutes · No commitment · Times shown in your timezone</p>
+        )}
       </div>
     </section>
 
-    {useCase.slug === "security-deposit-automation" && (
-      <section class="wrap detail-section">
-        <SecurityDepositProductPreview />
-      </section>
+    <section class="product-proof-section">
+      <div class="wrap">
+        {isSecurityDepositAutomation ? (
+          <SecurityDepositProductPreview />
+        ) : (
+          <ProductScreenshot screenshot={productScreenshot!} />
+        )}
+      </div>
+    </section>
+
+    {isSecurityDepositAutomation && <SecurityDepositDecisionGuide />}
+
+    {isApartmentLeadLanding && (
+      <AuditBookingSection
+        eyebrow="15-minute apartment lead audit"
+        title="See where renter leads disappear before the tour."
+        body="Bring one lead source and the current CRM handoff. We’ll identify the leak and map the first workflow to install."
+        formTitle="Book your apartment lead tracking audit."
+        workflow="apartment-lead-tracking"
+        source="google-ads-landing"
+        agendaItems={[
+          "Show us where renter inquiries enter today.",
+          "Trace one lead through ownership, follow-up, and CRM updates.",
+          "Leave with the first workflow to install and a clear scope.",
+        ]}
+        proofItems={["Lead source capture", "Duplicate cleanup", "Speed-to-lead", "CRM writeback"]}
+      />
     )}
 
     <section class="wrap split-section">
       <div>
         <h2>Problems this workflow solves</h2>
         <p>{useCase.intent}</p>
-        <h2>Related ways teams search for this</h2>
+        <h2>{buyerLanguageTitle}</h2>
         <div class="metric-list">
-          {useCase.clusterKeywords.map((keyword) => <span>{keyword}</span>)}
+          {buyerLanguage.map((keyword) => <span>{keyword}</span>)}
         </div>
       </div>
       <div class="check-list">
@@ -176,41 +131,63 @@ const detailBySlug = {
       </ol>
     </section>
 
-    {detailBySlug && (
+    {useCase.outcomes && (
       <section class="wrap split-section">
         <div>
-          <h2>{detailBySlug.exampleTitle}</h2>
-          <ol class="step-list compact-steps">
-            {detailBySlug.exampleSteps.map((step) => <li>{step}</li>)}
-          </ol>
+          <p class="eyebrow">Operational outcomes</p>
+          <h2>What the installed workflow should make visible</h2>
+          <p>These are workflow states to verify after launch, not guaranteed performance claims.</p>
         </div>
-        <div>
-          <h2>{detailBySlug.templateTitle}</h2>
-          <div class="template-grid">
-            {detailBySlug.templateRows.map(([field, rule, owner]) => (
-              <div class="template-row">
-                <strong>{field}</strong>
-                <p>{rule}</p>
-                <span>{owner}</span>
-              </div>
-            ))}
-          </div>
+        <div class="check-list">
+          {useCase.outcomes.map((outcome) => <div><span>✓</span><p>{outcome}</p></div>)}
         </div>
       </section>
     )}
 
     <section class="wrap split-section">
       <div>
-        <h2>Best fit</h2>
-        <div class="check-list">
-          {useCase.bestFit.map((item) => <div><span>✓</span><p>{item}</p></div>)}
-        </div>
+        <h2>{useCase.example.title}</h2>
+        <ol class="step-list compact-steps">
+          {useCase.example.steps.map((step) => <li>{step}</li>)}
+        </ol>
       </div>
       <div>
-        <h2>Metrics to track</h2>
-        <div class="metric-list">
-          {useCase.metrics.map((metric) => <span>{metric}</span>)}
+        <h2>{useCase.template.title}</h2>
+        <div class="template-grid">
+          {useCase.template.rows.map(([field, rule, owner]) => (
+            <div class="template-row">
+              <strong>{field}</strong>
+              <p>{rule}</p>
+              <span>{owner}</span>
+            </div>
+          ))}
         </div>
+      </div>
+    </section>
+
+    <InstallablesBlock items={useCase.installables} intro={useCase.auditFocus} />
+
+    {workflowIntegrations.length > 0 && <WorkflowIntegrationsBlock items={workflowIntegrations} />}
+
+    <WorkflowAuditCta
+      title={useCase.auditCta.title}
+      body={useCase.auditCta.body}
+      href={middleCtaHref}
+      label={useCase.auditCta.label}
+      secondaryHref="#faq"
+      secondaryLabel="Read FAQs"
+    />
+
+    <BeforeAfterBlock before={useCase.beforeAfter.before} after={useCase.beforeAfter.after} />
+
+    {workflowProof && <WorkflowProofBlock proof={workflowProof} />}
+
+    <FitBlock bestFit={useCase.bestFit} notFit={useCase.notFit} />
+
+    <section class="wrap detail-section">
+      <h2>Metrics to track</h2>
+      <div class="metric-list">
+        {useCase.metrics.map((metric) => <span>{metric}</span>)}
       </div>
     </section>
 
@@ -238,9 +215,17 @@ const detailBySlug = {
       </div>
     </section>
 
-    <section class="wrap detail-section">
+    <section id="faq" class="wrap detail-section">
       <FaqList faqs={useCase.faqs} />
     </section>
+
+    <WorkflowAuditCta
+      eyebrow="Next step"
+      title={`Map your ${useCase.title.toLowerCase()} workflow`}
+      body="Use the audit to confirm the trigger, owner, required data, automation rules, stop conditions, and system-of-record update."
+      href={middleCtaHref}
+      label={useCase.auditCta.label}
+    />
   </main>
   <SiteFooter />
 </SiteLayout>

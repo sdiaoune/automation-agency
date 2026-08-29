@@ -3,18 +3,32 @@ interface Props {
   variant?: "landing" | "blog";
 }
 
-const footerLinks = [
-  { label: "Home", href: "/" },
+const serviceLinks = [
   { label: "Services", href: "/services/" },
   { label: "Use Cases", href: "/use-cases/" },
   { label: "Integrations", href: "/integrations/" },
+  { label: "Consultation", href: "/book-demo/" },
+];
+
+const resourceLinks = [
+  { label: "Resources", href: "/resources/" },
+  { label: "Workflow Audit", href: "/resources/missed-call-workflow-audit/" },
+  { label: "ROI Calculator", href: "/resources/missed-call-recovery-roi-calculator/" },
+  { label: "Comparisons", href: "/compare/" },
+  { label: "Customers", href: "/customers/" },
   { label: "Blog", href: "/blog/" },
+];
+
+const companyLinks = [
   { label: "About", href: "/about/" },
   { label: "Links", href: "/links/" },
+  { label: "Security", href: "/security/" },
+];
+
+const legalLinks = [
   { label: "Privacy", href: "/privacy/" },
   { label: "Terms", href: "/terms/" },
   { label: "SMS Consent", href: "/sms-consent/" },
-  { label: "Consultation", href: "/book-demo/" },
 ];
 
 const socialLinks = [
@@ -36,14 +50,25 @@ const socialLinks = [
       <span>© 2026 EMC2Ops. All rights reserved.</span>
     </div>
 
-    <nav class="footer-group" aria-label="Important links">
-      <strong>Site</strong>
-      {footerLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+    <nav class="footer-group" aria-label="Services links">
+      <strong>Services</strong>
+      {serviceLinks.map((link) => <a href={link.href}>{link.label}</a>)}
     </nav>
 
-    <nav class="footer-group" aria-label="Social links">
-      <strong>Social</strong>
+    <nav class="footer-group" aria-label="Resource links">
+      <strong>Resources</strong>
+      {resourceLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+
+    <nav class="footer-group" aria-label="Company links">
+      <strong>Company</strong>
+      {companyLinks.map((link) => <a href={link.href}>{link.label}</a>)}
       {socialLinks.map((link) => <a href={link.href}>{link.label}</a>)}
+    </nav>
+
+    <nav class="footer-group" aria-label="Legal links">
+      <strong>Legal</strong>
+      {legalLinks.map((link) => <a href={link.href}>{link.label}</a>)}
     </nav>
   </div>
 </footer>

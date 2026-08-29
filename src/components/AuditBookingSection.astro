@@ -1,25 +1,53 @@
+---
+interface Props {
+  eyebrow?: string;
+  title?: string;
+  body?: string;
+  formTitle?: string;
+  workflow?: string;
+  source?: string;
+  agendaItems?: string[];
+  proofItems?: string[];
+}
+
+const {
+  eyebrow = "15-minute consultation",
+  title = "Use the call for a quote, demo, or workflow audit.",
+  body = "Choose the outcome you need. We’ll review your current setup, answer questions, and recommend a practical next step.",
+  formTitle = "Book your 15-minute consultation.",
+  workflow = "",
+  source = "",
+  agendaItems = [
+    "Tell us whether you need pricing, a demo, or help choosing the first workflow.",
+    "Review the current bottleneck and the tools your team already uses.",
+    "Leave with a clear next step and tailored scope when there is a fit.",
+  ],
+  proofItems = [
+    "Missed-call text-back",
+    "Leasing follow-up",
+    "Maintenance triage",
+    "CRM cleanup",
+  ],
+} = Astro.props;
+---
+
 <section id="book-demo" class="booking-section">
   <div class="wrap">
     <div class="booking">
       <div class="booking-panel">
-        <div class="eyebrow">15-minute consultation</div>
-        <h2>Use the call for a quote, demo, or workflow audit.</h2>
-        <p class="muted">Choose the outcome you need. We’ll review your current setup, answer questions, and recommend a practical next step.</p>
+        <div class="eyebrow">{eyebrow}</div>
+        <h2>{title}</h2>
+        <p class="muted">{body}</p>
 
         <div class="audit-agenda" aria-label="Consultation agenda">
           <strong>What happens on the call</strong>
           <ol>
-            <li>Tell us whether you need pricing, a demo, or help choosing the first workflow.</li>
-            <li>Review the current bottleneck and the tools your team already uses.</li>
-            <li>Leave with a clear next step and tailored scope when there is a fit.</li>
+            {agendaItems.map((item) => <li>{item}</li>)}
           </ol>
         </div>
 
         <div class="proof-strip" aria-label="Workflow examples">
-          <span>Missed-call text-back</span>
-          <span>Leasing follow-up</span>
-          <span>Maintenance triage</span>
-          <span>CRM cleanup</span>
+          {proofItems.map((item) => <span>{item}</span>)}
         </div>
 
         <ul>
@@ -30,22 +58,22 @@
       </div>
 
       <div class="calendar-box">
-        <form class="audit-form" id="audit-form">
-          <strong>Book your 15-minute consultation.</strong>
-          <p class="muted">Choose an available Eastern-time slot first. Then add the basic details needed to confirm the call.</p>
+        <form class="audit-form" id="audit-form" data-workflow={workflow} data-source={source}>
+          <strong>{formTitle}</strong>
+          <p class="muted">Choose a time below. Every opening is shown in your local timezone.</p>
           <p class="booking-step" id="booking-step">Step 1 of 2: choose a time that works.</p>
           <p class="booking-context" id="booking-context" hidden></p>
 
           <div class="slot-picker" id="slot-picker" aria-live="polite">
             <div class="slot-picker-head">
               <span>Next openings</span>
-              <small>15 min · Eastern time</small>
+              <small id="calendar-timezone">Detecting your local time…</small>
             </div>
             <div class="slot-grid" id="slot-grid">
               <p class="slot-loading">Loading available consultation times...</p>
             </div>
             <p class="slot-fallback">
-              Need a morning or midday time?
+              Can’t find a workable time?
               <a href="mailto:soya@getemc2ops.com?subject=Consultation%20alternate%20times">Ask for alternate options</a>.
             </p>
           </div>
@@ -57,73 +85,75 @@
           <input name="workflowContext" id="workflow-context" type="hidden" />
           <input name="sourceContext" id="source-context" type="hidden" />
 
-          <div class="selected-slot-summary" id="selected-slot-summary" hidden>
-            <span>Selected time</span>
-            <strong id="selected-slot-label"></strong>
-          </div>
+          <div class="booking-details-panel" id="booking-details-panel" hidden>
+            <div class="selected-slot-summary" id="selected-slot-summary" hidden>
+              <span>Selected time</span>
+              <strong id="selected-slot-label"></strong>
+            </div>
 
-          <div class="form-grid" id="booking-details">
-            <label>
-              Name
-              <input name="fullName" autocomplete="name" required />
-            </label>
-            <label>
-              Work email
-              <input name="email" type="email" autocomplete="email" required />
-            </label>
-            <label>
-              Company
-              <input name="company" autocomplete="organization" required />
-            </label>
-            <label>
-              Biggest workflow problem
-              <select name="workflowProblem" required>
-                <option value="">Select one</option>
-                <option>Missed leasing calls</option>
-                <option>Tenant intake</option>
-                <option>Maintenance triage</option>
-                <option>CRM follow-up</option>
-                <option>Owner or vendor updates</option>
-              </select>
-            </label>
-          </div>
-
-          <details class="prep-fields">
-            <summary>Optional prep details</summary>
-            <div class="form-grid">
+            <div class="form-grid" id="booking-details">
               <label>
-                Phone
-                <input name="phone" type="tel" autocomplete="tel" />
+                Name
+                <input name="fullName" autocomplete="name" required />
               </label>
               <label>
-                Company website
-                <input name="companyWebsite" type="url" inputmode="url" placeholder="https://example.com" />
+                Work email
+                <input name="email" type="email" autocomplete="email" required />
               </label>
               <label>
-                Portfolio size
-                <select name="portfolioSize">
+                Company
+                <input name="company" autocomplete="organization" required />
+              </label>
+              <label>
+                Biggest workflow problem
+                <select name="workflowProblem" required>
                   <option value="">Select one</option>
-                  <option>1-50 units</option>
-                  <option>51-250 units</option>
-                  <option>251-1,000 units</option>
-                  <option>1,000+ units</option>
+                  <option>Missed leasing calls</option>
+                  <option>Tenant intake</option>
+                  <option>Maintenance triage</option>
+                  <option>CRM follow-up</option>
+                  <option>Owner or vendor updates</option>
                 </select>
               </label>
-              <label class="full-field">
-                What should we look at first?
-                <textarea name="message" placeholder="Example: after-hours calls are missed, leads are not followed up, maintenance requests need better routing..."></textarea>
-              </label>
             </div>
-          </details>
 
-          <label class="hidden-field">
-            Leave this blank
-            <input name="companySiteConfirm" tabindex="-1" autocomplete="off" />
-          </label>
+            <details class="prep-fields">
+              <summary>Optional prep details</summary>
+              <div class="form-grid">
+                <label>
+                  Phone
+                  <input name="phone" type="tel" autocomplete="tel" />
+                </label>
+                <label>
+                  Company website
+                  <input name="companyWebsite" type="url" inputmode="url" placeholder="https://example.com" />
+                </label>
+                <label>
+                  Portfolio size
+                  <select name="portfolioSize">
+                    <option value="">Select one</option>
+                    <option>1-50 units</option>
+                    <option>51-250 units</option>
+                    <option>251-1,000 units</option>
+                    <option>1,000+ units</option>
+                  </select>
+                </label>
+                <label class="full-field">
+                  What should we look at first?
+                  <textarea name="message" placeholder="Example: after-hours calls are missed, leads are not followed up, maintenance requests need better routing..."></textarea>
+                </label>
+              </div>
+            </details>
 
-          <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Book My Consultation</button>
-            <p class="form-note">You’ll get a direct confirmation from EMC2Ops.</p>
+            <label class="hidden-field">
+              Leave this blank
+              <input name="companySiteConfirm" tabindex="-1" autocomplete="off" />
+            </label>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Book My Consultation</button>
+              <p class="form-note">You’ll get a direct confirmation from EMC2Ops.</p>
+            </div>
           </div>
           <p class="form-status" id="audit-form-status" role="status" aria-live="polite"></p>
         </form>
@@ -144,12 +174,15 @@
   const sourceContext = document.querySelector("#source-context");
   const bookingStep = document.querySelector("#booking-step");
   const bookingContext = document.querySelector("#booking-context");
+  const calendarTimeZone = document.querySelector("#calendar-timezone");
+  const bookingDetailsPanel = document.querySelector("#booking-details-panel");
   const selectedSlotSummary = document.querySelector("#selected-slot-summary");
   const selectedSlotLabel = document.querySelector("#selected-slot-label");
   const workflowProblemSelect = auditForm?.querySelector("[name='workflowProblem']");
   const bookingParams = new URLSearchParams(window.location.search);
-  const requestedWorkflow = bookingParams.get("workflow") || "";
-  const requestedSource = bookingParams.get("source") || "";
+  const requestedWorkflow = bookingParams.get("workflow") || auditForm?.dataset.workflow || "";
+  const requestedSource = bookingParams.get("source") || auditForm?.dataset.source || "";
+  const visitorTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
   const INITIAL_VISIBLE_SLOT_COUNT = 8;
   const SLOT_BATCH_SIZE = 8;
   let loadedSlots = [];
@@ -169,6 +202,8 @@
     "how-to-automate-property-management": { label: "Property management workflow automation", problem: "CRM follow-up" },
     "lead-to-lease-automation": { label: "Lead-to-lease automation", problem: "CRM follow-up" },
     "real-estate-crm-follow-up-mess": { label: "CRM follow-up cleanup", problem: "CRM follow-up" },
+    "leasing-intake-routing-automation": { label: "Leasing intake and routing automation", problem: "CRM follow-up" },
+    "resident-owner-vendor-communication-automation": { label: "Resident, owner, and vendor communication automation", problem: "Owner or vendor updates" },
     appfolio: { label: "AppFolio automation", problem: "CRM follow-up" },
     buildium: { label: "Buildium integration", problem: "CRM follow-up" },
     leadsimple: { label: "LeadSimple automation", problem: "CRM follow-up" },
@@ -204,7 +239,7 @@
 
     if (bookingContext) {
       bookingContext.hidden = false;
-      bookingContext.textContent = `You came from ${context.label}. We'll focus the consultation there first.`;
+      bookingContext.textContent = `We’ll focus first on ${context.label}.`;
     }
   }
 
@@ -246,16 +281,37 @@
   bookingEvent("booking_page_view", {
     page_path: window.location.pathname,
     workflow: requestedWorkflow,
-    source: requestedSource
+    source: requestedSource,
+    display_time_zone: visitorTimeZone
   });
+
+  if (calendarTimeZone) {
+    calendarTimeZone.textContent = `Your local time · ${visitorTimeZone}`;
+  }
+
+  function slotDayLabel(slot) {
+    const start = new Date(slot.start);
+
+    if (!Number.isNaN(start.getTime())) {
+      return new Intl.DateTimeFormat("en-US", {
+        day: "numeric",
+        month: "long",
+        timeZone: visitorTimeZone,
+        weekday: "long",
+      }).format(start);
+    }
+
+    return slot.day || "Available times";
+  }
 
   function groupSlots(slots) {
     return slots.reduce((groups, slot) => {
-      const existing = groups.find((group) => group.day === slot.day);
+      const day = slotDayLabel(slot);
+      const existing = groups.find((group) => group.day === day);
       if (existing) {
         existing.slots.push(slot);
       } else {
-        groups.push({ day: slot.day, slots: [slot] });
+        groups.push({ day, slots: [slot] });
       }
       return groups;
     }, []);
@@ -268,11 +324,39 @@
       return new Intl.DateTimeFormat("en-US", {
         hour: "numeric",
         minute: "2-digit",
-        timeZone: slot.timeZone || "America/New_York",
+        timeZone: visitorTimeZone,
       }).format(start);
     }
 
     return (slot.timeLabel || slot.label || "Select time").split(" - ")[0];
+  }
+
+  function selectedSlotDisplayLabel(slot) {
+    const start = new Date(slot.start);
+    const end = new Date(slot.end);
+
+    if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) {
+      return slot.label || "Selected time";
+    }
+
+    const day = new Intl.DateTimeFormat("en-US", {
+      day: "numeric",
+      month: "short",
+      timeZone: visitorTimeZone,
+      weekday: "short",
+    }).format(start);
+    const startTime = new Intl.DateTimeFormat("en-US", {
+      hour: "numeric",
+      minute: "2-digit",
+      timeZone: visitorTimeZone,
+    }).format(start);
+    const endTime = new Intl.DateTimeFormat("en-US", {
+      hour: "numeric",
+      minute: "2-digit",
+      timeZone: visitorTimeZone,
+    }).format(end);
+
+    return `${day}, ${startTime} – ${endTime} (${visitorTimeZone})`;
   }
 
   function resetBookingStep() {
@@ -282,6 +366,8 @@
   }
 
   function selectSlot(button, slot) {
+    const displayLabel = selectedSlotDisplayLabel(slot);
+
     slotGrid?.querySelectorAll(".slot-button").forEach((slotButton) => {
       slotButton.classList.remove("selected");
       slotButton.setAttribute("aria-pressed", "false");
@@ -293,15 +379,20 @@
     scheduledEnd.value = slot.end;
     scheduledLabel.value = slot.label;
     scheduledTimeZone.value = slot.timeZone || "America/New_York";
+    bookingDetailsPanel.hidden = false;
     selectedSlotSummary.hidden = false;
-    selectedSlotLabel.textContent = slot.label;
+    selectedSlotLabel.textContent = displayLabel;
     if (bookingStep) {
       bookingStep.textContent = "Step 2 of 2: add details to confirm.";
     }
     auditForm.classList.add("slot-selected");
-    auditFormStatus.textContent = `Time selected: ${slot.label}. Last step: add your details.`;
+    auditFormStatus.textContent = `Time selected: ${displayLabel}. Last step: add your details.`;
     auditFormStatus.className = "form-status";
-    bookingEvent("calendar_slot_selected", { slot_start: slot.start, slot_label: slot.label });
+    bookingEvent("calendar_slot_selected", {
+      slot_start: slot.start,
+      slot_label: slot.label,
+      display_time_zone: visitorTimeZone
+    });
 
     window.requestAnimationFrame(() => {
       selectedSlotSummary?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -334,12 +425,13 @@
       list.className = "slot-list";
 
       for (const slot of group.slots) {
+        const displayLabel = selectedSlotDisplayLabel(slot);
         const button = document.createElement("button");
         button.className = "slot-button";
         button.type = "button";
         button.setAttribute("aria-pressed", "false");
-        button.setAttribute("aria-label", `Select ${slot.label || slotStartLabel(slot)}`);
-        button.title = slot.label || slotStartLabel(slot);
+        button.setAttribute("aria-label", `Select ${displayLabel}`);
+        button.title = displayLabel;
         button.textContent = slotStartLabel(slot);
 
         if (slot.start === scheduledStart.value) {
@@ -437,6 +529,7 @@
       });
       selectedSlotSummary.hidden = true;
       selectedSlotLabel.textContent = "";
+      bookingDetailsPanel.hidden = true;
       auditForm.classList.remove("slot-selected");
       resetBookingStep();
       auditFormStatus.textContent = "Consultation booked. We’ll send a direct confirmation shortly.";
@@ -456,3 +549,374 @@
 
   loadSlots();
 </script>
+
+<style>
+  .booking-section {
+    padding: 68px 0;
+    scroll-margin-top: 78px;
+  }
+
+  .booking {
+    align-items: stretch;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: .85fr 1.15fr;
+  }
+
+  .booking-panel,
+  .calendar-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    padding: 24px;
+  }
+
+  .calendar-box {
+    background:
+      radial-gradient(circle at 100% 0, oklch(var(--brand-l) var(--brand-c) var(--brand-h) / .09), transparent 24rem),
+      var(--card);
+    min-height: 400px;
+  }
+
+  .calendar-box > form > strong {
+    display: block;
+    font-size: 1.35rem;
+    margin-bottom: 8px;
+  }
+
+  .muted,
+  .booking-panel li {
+    color: var(--muted);
+  }
+
+  .booking-panel ul {
+    display: grid;
+    gap: 10px;
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+  }
+
+  .booking-panel li::before {
+    color: var(--primary);
+    content: "\2713";
+    font-weight: 900;
+    margin-right: 8px;
+  }
+
+  .audit-agenda {
+    background: var(--muted-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin: 22px 0 0;
+    padding: 18px;
+  }
+
+  .audit-agenda strong {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .audit-agenda ol {
+    color: var(--muted);
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .audit-agenda li {
+    margin: 0 0 8px;
+  }
+
+  .audit-agenda li::before {
+    content: none;
+  }
+
+  .proof-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0 0;
+  }
+
+  .proof-strip span {
+    background: var(--accent-soft);
+    border: 1px solid oklch(var(--brand-l) var(--brand-c) var(--brand-h) / .18);
+    border-radius: 999px;
+    color: var(--primary);
+    font-size: .84rem;
+    font-weight: 760;
+    padding: 8px 10px;
+  }
+
+  .audit-form,
+  .booking-details-panel {
+    display: grid;
+    gap: 14px;
+    text-align: left;
+  }
+
+  .booking-details-panel[hidden] {
+    display: none;
+  }
+
+  .booking-step {
+    color: var(--primary);
+    font-size: .9rem;
+    font-weight: 850;
+    margin: 0;
+  }
+
+  .booking-context,
+  .selected-slot-summary {
+    background: var(--accent-soft);
+    border: 1px solid oklch(var(--brand-l) var(--brand-c) var(--brand-h) / .22);
+    border-radius: var(--radius);
+    color: var(--accent-soft-foreground);
+    padding: 12px 14px;
+  }
+
+  .booking-context {
+    font-weight: 720;
+    margin: 0;
+  }
+
+  .slot-picker {
+    background: var(--muted-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    display: grid;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .slot-picker-head {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+  }
+
+  .slot-picker-head span,
+  #book-demo :global(.slot-day strong) {
+    font-weight: 850;
+  }
+
+  .slot-picker-head small,
+  #book-demo :global(.slot-loading),
+  .slot-fallback {
+    color: var(--muted);
+    font-weight: 700;
+  }
+
+  .slot-picker-head small {
+    text-align: right;
+  }
+
+  .slot-grid,
+  #book-demo :global(.slot-day) {
+    display: grid;
+    gap: 12px;
+  }
+
+  #book-demo :global(.slot-list) {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #book-demo :global(.slot-button),
+  #book-demo :global(.slot-more-button) {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font: inherit;
+    font-size: .88rem;
+    font-weight: 800;
+    min-height: 44px;
+    padding: 10px;
+    text-align: center;
+    transition: background .18s ease, border-color .18s ease, box-shadow .18s ease, color .18s ease;
+    white-space: nowrap;
+  }
+
+  #book-demo :global(.slot-button) {
+    background: var(--card);
+    color: var(--foreground);
+  }
+
+  #book-demo :global(.slot-more-button) {
+    background: var(--accent-soft);
+    color: var(--primary);
+  }
+
+  #book-demo :global(.slot-button:hover),
+  #book-demo :global(.slot-button:focus-visible),
+  #book-demo :global(.slot-more-button:hover),
+  #book-demo :global(.slot-more-button:focus-visible) {
+    border-color: var(--primary);
+    box-shadow: var(--focus-ring);
+    outline: none;
+  }
+
+  #book-demo :global(.slot-button.selected) {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--primary-foreground);
+  }
+
+  .slot-fallback {
+    font-size: .9rem;
+    margin: 0;
+  }
+
+  .slot-fallback a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .selected-slot-summary {
+    display: grid;
+    gap: 4px;
+    scroll-margin-top: 96px;
+  }
+
+  .selected-slot-summary[hidden] {
+    display: none;
+  }
+
+  .selected-slot-summary span {
+    color: var(--primary);
+    font-size: .82rem;
+    font-weight: 850;
+    text-transform: uppercase;
+  }
+
+  .selected-slot-summary strong {
+    display: block;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .form-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    scroll-margin-top: 96px;
+  }
+
+  .prep-fields {
+    background: var(--muted-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px;
+  }
+
+  .prep-fields summary {
+    color: var(--foreground);
+    cursor: pointer;
+    font-weight: 850;
+  }
+
+  .prep-fields .form-grid {
+    margin-top: 14px;
+  }
+
+  label {
+    color: var(--muted-strong);
+    display: grid;
+    font-size: .9rem;
+    font-weight: 720;
+    gap: 7px;
+  }
+
+  input,
+  select,
+  textarea {
+    background: var(--card);
+    border: 1px solid var(--input);
+    border-radius: var(--radius);
+    color: var(--foreground);
+    min-height: 48px;
+    outline: none;
+    padding: 12px 14px;
+    width: 100%;
+  }
+
+  textarea {
+    min-height: 110px;
+    resize: vertical;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: var(--ring);
+    box-shadow: var(--focus-ring);
+  }
+
+  .full-field {
+    grid-column: 1 / -1;
+  }
+
+  .form-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .form-note,
+  .form-status {
+    color: var(--muted);
+    font-size: .9rem;
+    margin: 0;
+  }
+
+  .form-status {
+    min-height: 22px;
+  }
+
+  @media (max-width: 860px) {
+    .booking {
+      align-items: start;
+      grid-template-columns: 1fr;
+    }
+
+    .calendar-box {
+      order: 1;
+    }
+
+    .booking-panel {
+      order: 2;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .booking-section {
+      padding: 54px 0;
+    }
+
+    .booking-panel,
+    .calendar-box {
+      padding: 18px;
+    }
+
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+
+    #book-demo :global(.slot-list) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .slot-picker-head {
+      align-items: flex-start;
+    }
+
+    .form-actions .btn {
+      width: 100%;
+    }
+  }
+</style>

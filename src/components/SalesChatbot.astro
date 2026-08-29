@@ -1,0 +1,461 @@
+---
+import "../styles/sales-chatbot.css";
+---
+
+<div class="sales-chatbot" data-sales-chatbot>
+  <button
+    class="sales-chatbot__launcher"
+    type="button"
+    aria-label="Open EMC2Ops Assistant"
+    aria-controls="sales-chatbot-panel"
+    aria-expanded="false"
+    data-chat-open
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M5 5.75h14a2.25 2.25 0 0 1 2.25 2.25v7.25A2.25 2.25 0 0 1 19 17.5h-6.15L8.2 21v-3.5H5a2.25 2.25 0 0 1-2.25-2.25V8A2.25 2.25 0 0 1 5 5.75Z" />
+      <path d="M8 11.5h.01M12 11.5h.01M16 11.5h.01" />
+    </svg>
+    <span class="sales-chatbot__online-dot" aria-hidden="true"></span>
+  </button>
+
+  <section
+    class="sales-chatbot__panel"
+    id="sales-chatbot-panel"
+    role="dialog"
+    aria-label="EMC2Ops Assistant"
+    aria-modal="false"
+    hidden
+    data-chat-panel
+  >
+    <header class="sales-chatbot__header">
+      <div class="sales-chatbot__brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32">
+          <path d="M16 2.5c.8 7.8 5.7 12.7 13.5 13.5C21.7 16.8 16.8 21.7 16 29.5 15.2 21.7 10.3 16.8 2.5 16 10.3 15.2 15.2 10.3 16 2.5Z" />
+          <circle cx="16" cy="16" r="2.75" />
+        </svg>
+      </div>
+      <div class="sales-chatbot__header-copy">
+        <strong>EMC2Ops Assistant</strong>
+        <span><i aria-hidden="true"></i>Online · answers in seconds</span>
+      </div>
+      <div class="sales-chatbot__header-actions">
+        <button type="button" aria-label="Reset conversation" title="Reset conversation" data-chat-reset>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 9a7 7 0 0 1 11.6-2.6L20 8.5M4 15.5l2.3 2.1A7 7 0 0 0 17.9 15"/></svg>
+        </button>
+        <button type="button" aria-label="Close assistant" title="Close assistant" data-chat-close>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="sales-chatbot__body" data-chat-body>
+      <div class="sales-chatbot__intro" data-chat-intro>
+        <div class="sales-chatbot__welcome">
+          <p>Hi — I’m the EMC2Ops assistant. I can answer questions, help you find the best first workflow, or get a consultation on the calendar.</p>
+          <p>What brings you here?</p>
+        </div>
+
+        <div class="sales-chatbot__consult-card">
+          <span class="sales-chatbot__consult-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M8 2v4M16 2v4M3 10h18"/><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 14h3M13 14h3M8 17h3M13 17h3"/></svg>
+          </span>
+          <div>
+            <strong>Ready to map the first workflow?</strong>
+            <a href="/book-demo/?source=website-chat" data-chat-book>Book a consultation</a>
+          </div>
+        </div>
+
+        <div class="sales-chatbot__routes" aria-label="Assistant options">
+          <button type="button" data-chat-action="workflow">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M12 7v4M12 11 5 16M12 11l7 5"/></svg>
+            <span>Find my best first workflow</span>
+            <svg class="sales-chatbot__route-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <button type="button" data-chat-action="question">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.8 9a2.3 2.3 0 1 1 3.4 2c-.8.4-1.2 1-1.2 2M12 17h.01"/></svg>
+            <span>Ask a question</span>
+            <svg class="sales-chatbot__route-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <a href="/book-demo/?source=website-chat" data-chat-book>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v4M16 2v4M3 10h18"/><rect x="3" y="4" width="18" height="17" rx="2"/><path d="m14 15 2 2 4-4"/></svg>
+            <span>Book a 15-minute consultation</span>
+            <svg class="sales-chatbot__route-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <button type="button" data-chat-action="support">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M4 14v4a2 2 0 0 0 2 2h2v-8H6a2 2 0 0 0-2 2ZM20 14v4a2 2 0 0 1-2 2h-2v-8h2a2 2 0 0 1 2 2Z"/></svg>
+            <span>Existing client support</span>
+            <svg class="sales-chatbot__route-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="sales-chatbot__messages" aria-live="polite" aria-relevant="additions" data-chat-messages></div>
+
+      <div class="sales-chatbot__workflow-choices" hidden data-chat-workflow-choices>
+        <button type="button" data-workflow-choice="Missed leasing calls">Missed leasing calls</button>
+        <button type="button" data-workflow-choice="Slow or inconsistent lead follow-up">Lead follow-up</button>
+        <button type="button" data-workflow-choice="Incomplete maintenance intake">Maintenance intake</button>
+        <button type="button" data-workflow-choice="Manual CRM updates and handoffs">CRM handoffs</button>
+      </div>
+
+      <div class="sales-chatbot__typing" role="status" aria-label="Assistant is replying" hidden data-chat-typing>
+        <i></i><i></i><i></i>
+      </div>
+    </div>
+
+    <footer class="sales-chatbot__footer">
+      <form class="sales-chatbot__composer" data-chat-form>
+        <label class="sr-only" for="sales-chatbot-input">Ask EMC2Ops a question</label>
+        <textarea
+          id="sales-chatbot-input"
+          name="message"
+          rows="1"
+          maxlength="800"
+          autocomplete="off"
+          placeholder="Ask about workflows, integrations, or fit"
+          data-chat-input
+        ></textarea>
+        <button type="submit" aria-label="Send message" disabled data-chat-send>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14-7-4 14-3-6-7-1Z"/><path d="m12 13 7-8"/></svg>
+        </button>
+      </form>
+      <p>AI responses may be inaccurate. Don’t share sensitive information. <a href="/privacy/">Privacy</a></p>
+      <span>Powered by EMC2Ops</span>
+    </footer>
+  </section>
+</div>
+
+<script>
+  const chatbot = document.querySelector("[data-sales-chatbot]");
+
+  if (chatbot instanceof HTMLElement && chatbot.dataset.ready !== "true") {
+    chatbot.dataset.ready = "true";
+
+    const panel = chatbot.querySelector("[data-chat-panel]");
+    const launcher = chatbot.querySelector("[data-chat-open]");
+    const closeButton = chatbot.querySelector("[data-chat-close]");
+    const resetButton = chatbot.querySelector("[data-chat-reset]");
+    const body = chatbot.querySelector("[data-chat-body]");
+    const messagesNode = chatbot.querySelector("[data-chat-messages]");
+    const choicesNode = chatbot.querySelector("[data-chat-workflow-choices]");
+    const typingNode = chatbot.querySelector("[data-chat-typing]");
+    const form = chatbot.querySelector("[data-chat-form]");
+    const input = chatbot.querySelector("[data-chat-input]");
+    const sendButton = chatbot.querySelector("[data-chat-send]");
+    const sessionKey = "emc2ops-sales-chat-v1";
+    const visitorKey = "emc2ops-chat-visitor-v1";
+    const autoOpenKey = "emc2ops-chat-auto-opened-v1";
+    const autoOpenDelayMs = 5000;
+    let pending = false;
+    let history = [];
+    let autoOpenTimer;
+    let openedProactively = false;
+
+    const track = (eventName, properties = {}) => {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: eventName, ...properties });
+    };
+
+    const visitorId = (() => {
+      try {
+        const stored = window.localStorage.getItem(visitorKey);
+        if (stored) return stored;
+        const created = window.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+        window.localStorage.setItem(visitorKey, created);
+        return created;
+      } catch {
+        return "anonymous";
+      }
+    })();
+
+    const saveHistory = () => {
+      try {
+        window.sessionStorage.setItem(sessionKey, JSON.stringify(history.slice(-12)));
+      } catch {
+        // Chat still works if browser storage is unavailable.
+      }
+    };
+
+    const scrollToLatest = () => {
+      if (body instanceof HTMLElement) body.scrollTop = body.scrollHeight;
+    };
+
+    const createBookingCard = () => {
+      const card = document.createElement("div");
+      card.className = "sales-chatbot__inline-cta";
+      const copy = document.createElement("span");
+      copy.textContent = "See what the first workflow could look like for your team.";
+      const link = document.createElement("a");
+      link.href = "/book-demo/?source=website-chat";
+      link.textContent = "Book a 15-minute consultation";
+      link.addEventListener("click", () => track("sales_chat_booking_click", { location: "assistant_reply" }));
+      card.append(copy, link);
+      return card;
+    };
+
+    const addMessage = (role, text, options = {}) => {
+      if (!(messagesNode instanceof HTMLElement)) return;
+      const row = document.createElement("div");
+      row.className = `sales-chatbot__message-row sales-chatbot__message-row--${role}`;
+      const bubble = document.createElement("div");
+      bubble.className = "sales-chatbot__message";
+      bubble.textContent = text;
+      row.append(bubble);
+      if (options.booking) row.append(createBookingCard());
+      if (options.support) {
+        const support = document.createElement("a");
+        support.className = "sales-chatbot__support-link";
+        support.href = "mailto:soya@getemc2ops.com";
+        support.textContent = "Email soya@getemc2ops.com";
+        row.append(support);
+      }
+      messagesNode.append(row);
+      if (options.persist !== false) {
+        history.push({ role, text });
+        history = history.slice(-12);
+        saveHistory();
+      }
+      window.requestAnimationFrame(scrollToLatest);
+    };
+
+    const setPending = (value) => {
+      pending = value;
+      if (typingNode instanceof HTMLElement) typingNode.hidden = !value;
+      if (input instanceof HTMLTextAreaElement) input.disabled = value;
+      if (sendButton instanceof HTMLButtonElement) sendButton.disabled = value || !(input instanceof HTMLTextAreaElement) || !input.value.trim();
+      if (value) scrollToLatest();
+    };
+
+    const cancelAutoOpen = () => {
+      if (autoOpenTimer !== undefined) {
+        window.clearTimeout(autoOpenTimer);
+        autoOpenTimer = undefined;
+      }
+    };
+
+    const hasAutoOpened = () => {
+      try {
+        return window.sessionStorage.getItem(autoOpenKey) === "true";
+      } catch {
+        return false;
+      }
+    };
+
+    const rememberAutoOpen = () => {
+      try {
+        window.sessionStorage.setItem(autoOpenKey, "true");
+      } catch {
+        // The current page still avoids duplicate timers if storage is unavailable.
+      }
+    };
+
+    const setOpen = (
+      open,
+      options: { focus?: boolean; source?: string; restoreFocus?: boolean } = {},
+    ) => {
+      if (!(panel instanceof HTMLElement) || !(launcher instanceof HTMLButtonElement)) return;
+      panel.hidden = !open;
+      launcher.hidden = open;
+      launcher.setAttribute("aria-expanded", String(open));
+      if (open) {
+        openedProactively = options.source === "proactive_delay";
+        track("sales_chat_open", {
+          page_path: window.location.pathname,
+          source: typeof options.source === "string" ? options.source : "manual",
+        });
+        if (options.focus !== false) {
+          window.requestAnimationFrame(() => {
+            const firstControl = panel.querySelector("[data-chat-action]");
+            if (firstControl instanceof HTMLElement) firstControl.focus({ preventScroll: true });
+          });
+        }
+      } else {
+        openedProactively = false;
+        launcher.hidden = false;
+        if (options.restoreFocus !== false) launcher.focus({ preventScroll: true });
+      }
+    };
+
+    const yieldToPageInteraction = (reason) => {
+      const isOpen = panel instanceof HTMLElement && !panel.hidden && openedProactively;
+      const isPending = autoOpenTimer !== undefined;
+      if (!isOpen && !isPending) return;
+      cancelAutoOpen();
+      rememberAutoOpen();
+      if (isOpen) setOpen(false, { restoreFocus: false });
+      track("sales_chat_proactive_dismissed", { reason });
+    };
+
+    const sendQuestion = async (text) => {
+      const question = String(text || "").trim().slice(0, 800);
+      if (!question || pending) return;
+      addMessage("user", question);
+      if (input instanceof HTMLTextAreaElement) {
+        input.value = "";
+        input.style.height = "auto";
+      }
+      if (choicesNode instanceof HTMLElement) choicesNode.hidden = true;
+      setPending(true);
+      track("sales_chat_message_sent", { page_path: window.location.pathname });
+
+      try {
+        const response = await fetch("/api/sales-chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            messages: history.slice(-10),
+            page: { path: window.location.pathname, title: document.title },
+            visitorId,
+          }),
+        });
+        const result = await response.json().catch(() => ({}));
+        if (!response.ok || typeof result.reply !== "string") throw new Error("assistant_unavailable");
+        addMessage("assistant", result.reply, { booking: result.showBooking === true });
+      } catch {
+        addMessage(
+          "assistant",
+          "I couldn’t reach the answer service just now. You can try again, or use the consultation link and we’ll help directly.",
+          { booking: true },
+        );
+      } finally {
+        setPending(false);
+        if (input instanceof HTMLTextAreaElement) input.focus({ preventScroll: true });
+      }
+    };
+
+    const resetConversation = () => {
+      history = [];
+      saveHistory();
+      if (messagesNode instanceof HTMLElement) messagesNode.replaceChildren();
+      if (choicesNode instanceof HTMLElement) choicesNode.hidden = true;
+      if (input instanceof HTMLTextAreaElement) {
+        input.value = "";
+        input.style.height = "auto";
+      }
+      setPending(false);
+      track("sales_chat_reset");
+      const firstRoute = chatbot.querySelector("[data-chat-action]");
+      if (firstRoute instanceof HTMLElement) firstRoute.focus({ preventScroll: true });
+      scrollToLatest();
+    };
+
+    try {
+      const saved = JSON.parse(window.sessionStorage.getItem(sessionKey) || "[]");
+      if (Array.isArray(saved)) {
+        history = saved
+          .filter((item) => item && (item.role === "user" || item.role === "assistant") && typeof item.text === "string")
+          .slice(-12);
+        history.forEach((item) => addMessage(item.role, item.text, { persist: false }));
+      }
+    } catch {
+      history = [];
+    }
+
+    launcher?.addEventListener("click", () => {
+      cancelAutoOpen();
+      rememberAutoOpen();
+      setOpen(true, { source: "launcher" });
+    });
+    closeButton?.addEventListener("click", () => {
+      cancelAutoOpen();
+      rememberAutoOpen();
+      setOpen(false);
+    });
+    resetButton?.addEventListener("click", resetConversation);
+
+    chatbot.querySelectorAll("[data-chat-book]").forEach((link) => {
+      link.addEventListener("click", () => track("sales_chat_booking_click", { location: "intent_route" }));
+    });
+
+    chatbot.querySelectorAll("[data-chat-action]").forEach((control) => {
+      control.addEventListener("click", () => {
+        if (!(control instanceof HTMLElement)) return;
+        const action = control.dataset.chatAction;
+        track("sales_chat_quick_action", { action });
+        if (action === "question") {
+          if (input instanceof HTMLTextAreaElement) input.focus({ preventScroll: true });
+          return;
+        }
+        if (action === "workflow") {
+          addMessage("user", "Help me find my best first workflow.");
+          addMessage("assistant", "Where is work slipping most often today?");
+          if (choicesNode instanceof HTMLElement) {
+            choicesNode.hidden = false;
+            window.requestAnimationFrame(() => {
+              scrollToLatest();
+              const firstChoice = choicesNode.querySelector("button");
+              if (firstChoice instanceof HTMLButtonElement) firstChoice.focus({ preventScroll: true });
+            });
+          }
+          return;
+        }
+        if (action === "support") {
+          addMessage(
+            "assistant",
+            "For an active EMC2Ops project or account question, email us directly and include your company name. Please don’t share credentials or resident data here.",
+            { support: true },
+          );
+        }
+      });
+    });
+
+    chatbot.querySelectorAll("[data-workflow-choice]").forEach((choice) => {
+      choice.addEventListener("click", () => {
+        if (!(choice instanceof HTMLElement)) return;
+        const workflow = choice.dataset.workflowChoice || choice.textContent || "our workflow";
+        sendQuestion(`Our biggest issue is ${workflow}. What would you recommend as the first workflow?`);
+      });
+    });
+
+    form?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (input instanceof HTMLTextAreaElement) sendQuestion(input.value);
+    });
+
+    input?.addEventListener("input", () => {
+      if (!(input instanceof HTMLTextAreaElement)) return;
+      input.style.height = "auto";
+      input.style.height = `${Math.min(input.scrollHeight, 112)}px`;
+      if (sendButton instanceof HTMLButtonElement) sendButton.disabled = pending || !input.value.trim();
+    });
+
+    input?.addEventListener("keydown", (event) => {
+      if (!(event instanceof KeyboardEvent) || !(input instanceof HTMLTextAreaElement)) return;
+      if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        sendQuestion(input.value);
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && panel instanceof HTMLElement && !panel.hidden) {
+        cancelAutoOpen();
+        rememberAutoOpen();
+        setOpen(false);
+      } else if (["PageDown", "PageUp", "Home", "End", "ArrowDown", "ArrowUp"].includes(event.key)) {
+        yieldToPageInteraction("keyboard_scroll");
+      }
+    });
+
+    document.addEventListener("focusin", (event) => {
+      if (event.target instanceof Node && !chatbot.contains(event.target)) {
+        yieldToPageInteraction("page_interaction");
+      }
+    });
+    window.addEventListener("wheel", () => yieldToPageInteraction("page_scroll"), { passive: true });
+    window.addEventListener("touchstart", () => yieldToPageInteraction("page_scroll"), { passive: true });
+
+    if (new URLSearchParams(window.location.search).get("chat") === "open") {
+      rememberAutoOpen();
+      setOpen(true, { source: "query_parameter" });
+    } else if (!hasAutoOpened()) {
+      autoOpenTimer = window.setTimeout(() => {
+        autoOpenTimer = undefined;
+        rememberAutoOpen();
+        if (panel instanceof HTMLElement && panel.hidden) {
+          setOpen(true, { focus: false, source: "proactive_delay" });
+        }
+      }, autoOpenDelayMs);
+    }
+  }
+</script>

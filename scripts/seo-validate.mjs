@@ -50,6 +50,8 @@ const moneyPageUrls = [
 const forbiddenVisibleLabels = [
   "Search intent this page answers",
   "Cluster keywords",
+  "Search cluster strategy",
+  "query clusters",
 ];
 const failures = [];
 const warnings = [];

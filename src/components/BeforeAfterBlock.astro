@@ -1,0 +1,29 @@
+---
+interface Props {
+  before: string[];
+  after: string[];
+  beforeTitle?: string;
+  afterTitle?: string;
+}
+
+const { before, after, beforeTitle = "Before", afterTitle = "After" } = Astro.props;
+---
+
+<section class="wrap detail-section before-after-section" aria-labelledby="before-after-heading">
+  <p class="eyebrow">Operational change</p>
+  <h2 id="before-after-heading">Before / After</h2>
+  <div class="before-after-grid">
+    <div class="comparison-column">
+      <h3>{beforeTitle}</h3>
+      <ul class="check-list muted-list">
+        {before.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+    <div class="comparison-column after-column">
+      <h3>{afterTitle}</h3>
+      <ul class="check-list">
+        {after.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </div>
+</section>

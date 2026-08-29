@@ -1,0 +1,24 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../../lib/site";
+import "../../styles/service.css";
+import "../../styles/authority.css";
+const description = "Property management automation calculators, comparisons, guides, and customer proof from EMC2Ops.";
+---
+<SiteLayout title="Property Management Automation Resources | EMC2Ops" description={description} canonical={absoluteUrl("/resources/")} image={absoluteUrl(defaultSocialImage)} imageAlt="EMC2Ops property management automation resources." schema={standardPageSchema({ path: "/resources/", name: "Resources", description, type: "CollectionPage" })} pageClass="service-page">
+  <SiteHeader />
+  <main>
+    <section class="service-hero"><div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span>Resources</nav><p class="eyebrow">Resources</p><h1>Make a better automation decision.</h1><p class="dek">Use transparent tools, practical comparisons, implementation guides, and customer evidence to decide what should be automated first.</p></div></section>
+    <section class="wrap service-grid-section"><div class="resource-grid">
+      <article class="resource-card"><h2>Missed-call workflow audit</h2><p>Trace seven handoff stages, five human decision gates, and five measurable outcomes using one recent leasing call.</p><a href="/resources/missed-call-workflow-audit/">Use the audit worksheet</a></article>
+      <article class="resource-card"><h2>Missed-call recovery calculator</h2><p>Model recovered conversations, qualified renters, tours, leases, and optional economic value using your own assumptions.</p><a href="/resources/missed-call-recovery-roi-calculator/">Use the calculator</a></article>
+      <article class="resource-card"><h2>Buying comparisons</h2><p>Compare operating models, implementation tradeoffs, control, integrations, and handoff requirements.</p><a href="/compare/">Browse comparisons</a></article>
+      <article class="resource-card"><h2>Customer proof</h2><p>Read completed client reviews and see the evidence standard used for property-management outcome stories.</p><a href="/customers/">See customer proof</a></article>
+      <article class="resource-card"><h2>Implementation guides</h2><p>Learn how property teams can scope leasing, maintenance, CRM, owner, and vendor workflows.</p><a href="/blog/">Browse the blog</a></article>
+      <article class="resource-card"><h2>Security and controls</h2><p>Review EMC2Ops’ practical approach to access, data minimization, human escalation, and incident reporting.</p><a href="/security/">Review security practices</a></article>
+      <article class="resource-card"><h2>Workflow consultation</h2><p>Bring one repetitive operating problem and leave with a clearer first-workflow scope.</p><a href="/book-demo/?workflow=resources&source=resources">Book a consultation</a></article>
+    </div></section>
+  </main><SiteFooter />
+</SiteLayout>

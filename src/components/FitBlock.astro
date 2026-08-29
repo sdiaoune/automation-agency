@@ -1,0 +1,27 @@
+---
+interface Props {
+  bestFit: string[];
+  notFit: string[];
+}
+
+const { bestFit, notFit } = Astro.props;
+---
+
+<section class="wrap detail-section fit-section" aria-labelledby="fit-heading">
+  <p class="eyebrow">Qualification</p>
+  <h2 id="fit-heading">Best fit / Not a fit</h2>
+  <div class="fit-grid">
+    <div class="fit-column">
+      <h3>Best fit</h3>
+      <ul class="check-list">
+        {bestFit.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+    <div class="fit-column not-fit-column">
+      <h3>Not a fit</h3>
+      <ul class="check-list muted-list">
+        {notFit.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+  </div>
+</section>

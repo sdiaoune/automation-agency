@@ -6,8 +6,9 @@ import {
   clientReviews,
 } from "../lib/clientReviews";
 import { integrationPages, integrationUrl } from "../lib/integrations";
+import { homepageBuyerFaqs } from "../lib/homepageFaq";
 import { servicePages, serviceUrl } from "../lib/services";
-import { absoluteUrl, byOrder, postUpdatedAt, siteName, siteUrl } from "../lib/site";
+import { absoluteUrl, byOrder, postUpdatedAt, siteName, siteUpdatedAt, siteUrl } from "../lib/site";
 import { useCasePages, useCaseUrl } from "../lib/useCases";
 
 export async function GET() {
@@ -19,6 +20,7 @@ export async function GET() {
     "",
     `Primary website: ${siteUrl}/`,
     `About: ${absoluteUrl("/about/")}`,
+    `Founder: Soya Diaouné | ${absoluteUrl("/about/#founder-profile")} | https://www.soyadiaoune.com/`,
     `Contact: soya@getemc2ops.com`,
     "",
     "## Positioning",
@@ -29,10 +31,19 @@ export async function GET() {
     "",
     "EMC2Ops installs practical AI voice, SMS, routing, and CRM workflows for property management teams. The service focuses on faster response, better intake, cleaner handoffs, human approval gates, and measurable operational outcomes.",
     "",
+    "## Buyer Questions Answered on the Homepage",
+    "",
+    ...homepageBuyerFaqs.flatMap((faq) => [
+      `### ${faq.question}`,
+      faq.answer,
+      `Supporting page: ${absoluteUrl(faq.cta?.href || "/book-demo/")}`,
+      "",
+    ]),
     "## Client Feedback",
     "",
     `Average rating shown on the EMC2Ops website: ${clientReviewAverage.toFixed(1)} out of 5 across ${clientReviewRatingCount} rated client reviews. The website displays ${clientReviewCount} client testimonials in total.`,
     "Two rated reviews cover completed general automation projects. The Gunner Property Management testimonial covers a completed custom property management application and describes delivery experience; it does not claim measured operational outcomes.",
+    "Property-management outcome stories are published only after metric definitions, source records, methodology, limitations, client label, and quotation are approved.",
     "",
     ...clientReviews.flatMap((review) => [
       `### ${review.client}${review.rating !== null ? ` — ${review.rating.toFixed(1)} out of 5` : " — client testimonial (no star rating supplied)"}`,
@@ -51,6 +62,11 @@ export async function GET() {
     `- openapi.json: ${absoluteUrl("/openapi.json")}`,
     `- feed.xml: ${absoluteUrl("/feed.xml")}`,
     `- sitemap.xml: ${absoluteUrl("/sitemap.xml")}`,
+    `- customers and evidence standards: ${absoluteUrl("/customers/")}`,
+    `- resources: ${absoluteUrl("/resources/")}`,
+    `- missed-call recovery calculator: ${absoluteUrl("/resources/missed-call-recovery-roi-calculator/")}`,
+    `- comparisons: ${absoluteUrl("/compare/")}`,
+    `- security and workflow controls: ${absoluteUrl("/security/")}`,
     "",
     "## Services",
     "",
@@ -68,10 +84,14 @@ export async function GET() {
       `### ${useCase.title}`,
       `URL: ${absoluteUrl(useCaseUrl(useCase))}`,
       `Primary keyword: ${useCase.primaryKeyword}`,
-      `Cluster keywords: ${useCase.clusterKeywords.join(", ")}`,
+      `Related buyer language: ${useCase.clusterKeywords.join(", ")}`,
       `Intent: ${useCase.intent}`,
       `Summary: ${useCase.summary}`,
+      `Updated: ${useCase.updatedAt || siteUpdatedAt}`,
+      ...(useCase.outcomes?.length ? [`Operational outcomes: ${useCase.outcomes.join("; ")}`] : []),
       `Metrics: ${useCase.metrics.join("; ")}`,
+      "Questions answered:",
+      ...useCase.faqs.map((faq) => `- ${faq.question} ${faq.answer}`),
       "",
     ]),
     "## Integrations",
@@ -98,7 +118,7 @@ export async function GET() {
     "- Do not imply EMC2Ops replaces staff. It supports repetitive intake, routing, reminders, summaries, and system updates.",
     "- Public endpoints are documented in openapi.json. Protected cron/social endpoints should not be called without explicit authorization.",
     "",
-    "Last updated: 2026-08-19",
+    `Last updated: ${siteUpdatedAt}`,
   ];
 
   return new Response(`${lines.join("\n")}\n`, {

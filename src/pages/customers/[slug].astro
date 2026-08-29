@@ -1,0 +1,42 @@
+---
+import SiteFooter from "../../components/SiteFooter.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { customerStories, customerStoryUrl, type CustomerStory } from "../../lib/customerStories";
+import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../../lib/site";
+import "../../styles/service.css";
+import "../../styles/authority.css";
+
+export function getStaticPaths() {
+  return customerStories.map((story) => ({ params: { slug: story.slug }, props: { story } }));
+}
+
+const { story } = Astro.props as { story: CustomerStory };
+const path = customerStoryUrl(story);
+const description = story.summary;
+---
+
+<SiteLayout
+  title={`${story.title} | EMC2Ops Customer Story`}
+  description={description}
+  canonical={absoluteUrl(path)}
+  image={absoluteUrl(defaultSocialImage)}
+  imageAlt={`${story.clientLabel} property management automation customer story.`}
+  schema={standardPageSchema({ path, name: story.title, description, parent: { name: "Customers", path: "/customers/" } })}
+  pageClass="service-page"
+>
+  <SiteHeader />
+  <main>
+    <section class="service-hero"><div class="wrap">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/customers/">Customers</a><span>/</span>{story.clientLabel}</nav>
+      <p class="eyebrow">Verified customer story</p><h1>{story.title}</h1><p class="dek">{story.summary}</p>
+      <div class="metric-list"><span>{story.clientLabel}</span><span>{story.portfolioContext}</span><span>{story.timeframe}</span></div>
+    </div></section>
+    <section class="wrap split-section"><div><h2>The challenge</h2><ul>{story.challenge.map((item) => <li>{item}</li>)}</ul></div><div><h2>What EMC2Ops implemented</h2><ol>{story.workflow.map((item) => <li>{item}</li>)}</ol></div></section>
+    <section class="wrap detail-section"><h2>Measured results</h2><div class="authority-grid">{story.metrics.map((metric) => <article class="authority-card"><h3>{metric.label}</h3><p><strong>Baseline:</strong> {metric.baseline}</p><p><strong>Result:</strong> {metric.result}</p><p>{metric.definition}</p></article>)}</div></section>
+    <section class="wrap split-section"><blockquote class="notice-card"><strong>Client feedback</strong><p>“{story.quote}”</p><cite>{story.quoteAttribution}</cite></blockquote><div><h2>Integrations</h2><p>{story.integrations.join(", ")}</p></div></section>
+    <section class="wrap split-section"><div><h2>Methodology</h2><ul>{story.methodology.map((item) => <li>{item}</li>)}</ul></div><div><h2>Limitations</h2><ul>{story.limitations.map((item) => <li>{item}</li>)}</ul></div></section>
+    <section class="wrap detail-section"><div class="conversion-cta"><div><h2>Define your baseline before automating.</h2><p>EMC2Ops starts with one measurable operating problem and a documented exception path.</p></div><div class="conversion-cta-actions"><a class="btn btn-primary" href="/book-demo/?workflow=customer-story&source=customers">Book a consultation</a></div></div></section>
+  </main>
+  <SiteFooter />
+</SiteLayout>

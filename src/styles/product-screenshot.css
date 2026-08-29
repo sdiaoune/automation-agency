@@ -22,6 +22,16 @@
   height: auto;
 }
 
+.product-screenshot figcaption {
+  background: color-mix(in srgb, var(--card) 92%, var(--accent-soft));
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  padding: 10px 14px;
+  text-align: left;
+}
+
 .product-screenshot--hero {
   box-shadow: var(--shadow-lg);
 }

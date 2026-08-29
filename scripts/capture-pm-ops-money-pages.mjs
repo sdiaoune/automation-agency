@@ -60,7 +60,7 @@ function assertPrivacy(text, scenario) {
 
 function captureUrl(item) {
   const route = item.section === "dashboard" ? "/app" : `/app/${item.section}`;
-  return `${origin}${route}?capture=${encodeURIComponent(item.scenario)}`;
+  return `${origin}${route}?capture=${encodeURIComponent(item.captureScenario || item.scenario)}`;
 }
 
 async function buildContactSheet(captures) {
@@ -109,10 +109,13 @@ try {
 
   for (const item of manifest) {
     for (const viewport of [
-      { key: "desktop", width: 1440, height: 900 },
-      { key: "mobile", width: 390, height: 844 },
+      { key: "desktop", width: 1440, height: 900, deviceScaleFactor: 2 },
+      { key: "mobile", width: 390, height: 844, deviceScaleFactor: 3 },
     ]) {
-      const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height } });
+      const page = await browser.newPage({
+        deviceScaleFactor: viewport.deviceScaleFactor,
+        viewport: { width: viewport.width, height: viewport.height },
+      });
       const consoleErrors = [];
       page.on("console", (message) => {
         if (message.type() === "error" && !message.text().includes("manifest patches")) {
@@ -121,7 +124,7 @@ try {
       });
 
       await page.goto(captureUrl(item), { waitUntil: "domcontentloaded" });
-      await page.locator(`[data-capture-scenario="${item.scenario}"]`).waitFor({ state: "visible" });
+      await page.locator(`[data-capture-scenario="${item.captureScenario || item.scenario}"]`).waitFor({ state: "visible" });
       await page.locator("[data-capture-primary]").waitFor({ state: "visible" });
       await page.evaluate(() => document.fonts.ready);
 
@@ -141,11 +144,18 @@ try {
       const jpegFile = publicFile(item[viewport.key].jpeg);
       const webpFile = publicFile(item[viewport.key].webp);
       await fs.mkdir(path.dirname(jpegFile), { recursive: true });
-      await page.screenshot({ path: jpegFile, type: "jpeg", quality: 92, fullPage: false });
-      await sharp(jpegFile).webp({ quality: 86 }).toFile(webpFile);
+      const source = await page.screenshot({ type: "png", fullPage: false });
+      await sharp(source)
+        .jpeg({ quality: 95, chromaSubsampling: "4:4:4" })
+        .toFile(jpegFile);
+      await sharp(source)
+        .webp({ lossless: true, effort: 6 })
+        .toFile(webpFile);
 
       const metadata = await sharp(jpegFile).metadata();
-      if (metadata.width !== viewport.width || metadata.height !== viewport.height) {
+      const expectedWidth = viewport.width * viewport.deviceScaleFactor;
+      const expectedHeight = viewport.height * viewport.deviceScaleFactor;
+      if (metadata.width !== expectedWidth || metadata.height !== expectedHeight) {
         throw new Error(`${item.scenario} ${viewport.key} captured ${metadata.width}x${metadata.height}.`);
       }
 

@@ -43,6 +43,30 @@ test("mobile header menu opens, closes, and routes to core pages", async ({ page
   expect(errors).toEqual([]);
 });
 
+test("mobile menu stays anchored when opened after scrolling", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/");
+  await page.locator("[data-product-screenshot-route] img").evaluate((image) => image.decode());
+  await expect.poll(() => page.evaluate(() => document.documentElement.scrollHeight)).toBeGreaterThan(2000);
+  await page.evaluate(() => window.scrollTo(0, 1400));
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(1000);
+  await page.locator("[data-mobile-menu-toggle]").click();
+
+  const header = page.locator("[data-site-header]");
+  const panel = page.locator("[data-mobile-menu-panel]");
+  const [headerBox, panelBox, scrollAfterOpen] = await Promise.all([
+    header.boundingBox(),
+    panel.boundingBox(),
+    page.evaluate(() => window.scrollY),
+  ]);
+
+  expect(scrollAfterOpen).toBeGreaterThan(1000);
+  expect(headerBox.y).toBe(0);
+  expect(panelBox.y).toBeGreaterThanOrEqual(headerBox.y + headerBox.height);
+  await expect(page.locator("[data-mobile-menu-toggle]")).toBeVisible();
+  await expect(panel).toBeVisible();
+});
+
 test("desktop header keeps the full primary navigation visible", async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto("/");

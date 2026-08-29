@@ -1,0 +1,24 @@
+---
+import SiteFooter from "../components/SiteFooter.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../lib/site";
+import "../styles/service.css";
+import "../styles/authority.css";
+const description = "How EMC2Ops approaches data minimization, access, human escalation, retention, integrations, and security reporting for automation projects.";
+---
+<SiteLayout title="Security and Workflow Controls | EMC2Ops" description={description} canonical={absoluteUrl("/security/")} image={absoluteUrl(defaultSocialImage)} imageAlt="EMC2Ops security and workflow controls." schema={standardPageSchema({ path: "/security/", name: "Security and workflow controls", description })} pageClass="service-page">
+  <SiteHeader />
+  <main>
+    <section class="service-hero"><div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span>Security</nav><p class="eyebrow">Security and workflow controls</p><h1>Design the workflow around the data and decisions it actually needs.</h1><p class="dek">Security requirements vary by client, system, and use case. EMC2Ops scopes access, retention, escalation, and integration controls before implementation.</p></div></section>
+    <section class="wrap detail-section"><div class="authority-grid">
+      <article class="authority-card"><h2>Data minimization</h2><p>Collect only the fields required to route the conversation, complete the approved task, and maintain the agreed operating record.</p></article>
+      <article class="authority-card"><h2>Least-necessary access</h2><p>Prefer scoped credentials, limited integration permissions, separate environments, and revocable access wherever the client’s tools support them.</p></article>
+      <article class="authority-card"><h2>Human escalation</h2><p>Keep emergencies, fair-housing concerns, payments, approvals, legal matters, and uncertain responses on explicit human paths.</p></article>
+      <article class="authority-card"><h2>Retention and logging</h2><p>Define what is logged, where the system of record lives, how long supporting data is retained, and who can review it.</p></article>
+      <article class="authority-card"><h2>Provider boundaries</h2><p>Document the phone, messaging, CRM, hosting, and AI providers involved so responsibilities and configuration limits stay visible.</p></article>
+      <article class="authority-card"><h2>Testing and change control</h2><p>Test common paths, exceptions, stop rules, permission failures, and handoffs before launch, then review changes against the same controls.</p></article>
+    </div></section>
+    <section class="wrap split-section"><div><h2>What this page does not claim</h2><p>EMC2Ops does not claim SOC 2, ISO 27001, PCI DSS, or another audited or certified status without current independent evidence, verified scope, and approval to disclose it. <a href="https://www.hhs.gov/hipaa/for-professionals/faq/2003/are-we-required-to-certify-our-organizations-compliance-with-the-standards/index.html" rel="noreferrer">HHS does not recognize private HIPAA Security Rule certifications</a>; work involving protected health information requires a separate legal, contractual, and technical assessment. A workflow must be evaluated against the client’s legal, carrier, platform, and industry obligations.</p></div><div class="notice-card"><strong>Report a security concern</strong><p>Email <a href="mailto:soya@getemc2ops.com">soya@getemc2ops.com</a>. The machine-readable policy is available at <a href="/.well-known/security.txt">/.well-known/security.txt</a>.</p></div></section>
+  </main><SiteFooter />
+</SiteLayout>

@@ -2,13 +2,17 @@
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import ClientReviews from "../../components/ClientReviews.astro";
+import ProductScreenshot from "../../components/ProductScreenshot.astro";
+import { auditHref } from "../../lib/conversion";
 import { absoluteUrl, defaultSocialImage } from "../../lib/site";
 import { useCasePages, useCasesIndexSchema, useCaseUrl } from "../../lib/useCases";
+import { productScreenshotForPath } from "../../lib/productScreenshots";
 import "../../styles/service.css";
 
 const title = "Property Management Automation Use Cases | EMC2Ops";
 const description =
-  "Use-case guides for security deposit automation, apartment lead tracking, real estate lead follow-up automation, lead-to-lease automation, CRM cleanup, and property management automation.";
+  "Use-case guides for security deposit automation, leasing intake and routing, lead follow-up, resident-owner-vendor communication, lead-to-lease handoffs, and CRM cleanup.";
 ---
 
 <SiteLayout
@@ -25,32 +29,62 @@ const description =
     <section class="service-hero">
       <div class="wrap">
         <p class="eyebrow">Use cases</p>
-        <h1>Property management automation use cases built around how operators search.</h1>
+        <h1>Choose the workflow to fix first.</h1>
         <p class="dek">
-          These pages map the phrases property managers already use when they are looking for help:
-          apartment lead tracking, real estate lead follow-up automation, lead-to-lease automation,
-          and CRM follow-up cleanup.
+          Use these pages to decide whether the first improvement should be lead intake and routing,
+          security deposit review, follow-up, cross-audience communication, lead-to-lease handoffs, CRM cleanup, or another
+          property management workflow your team can measure.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="/book-demo/">Book a 15-minute audit</a>
+          <a class="btn btn-primary" href="/book-demo/?workflow=how-to-automate-property-management&source=use-cases-index">Book my workflow audit</a>
           <a class="btn btn-secondary" href="#use-cases">Browse use cases</a>
         </div>
       </div>
     </section>
 
+    <section class="product-proof-section">
+      <div class="wrap">
+        <ProductScreenshot screenshot={productScreenshotForPath("/use-cases/")} />
+      </div>
+    </section>
+
+    <ClientReviews />
+
     <section class="wrap detail-section">
-      <h2>Search cluster strategy</h2>
+      <h2>Choose by the failure point</h2>
       <p>
-        The hub groups high-intent query clusters into practical workflows. Each page targets a
-        primary phrase, supports related long-tail keywords, and links into the relevant EMC2Ops
-        service pages and deeper blog guides.
+        The right starting point is usually the place where staff repeat the same follow-up,
+        renters or residents wait too long, or the CRM stops reflecting what actually happened.
       </p>
-      <div class="metric-list">
-        <span>apartment lead tracking</span>
-        <span>real estate lead follow up automation</span>
-        <span>how to automate property management</span>
-        <span>lead-to-lease automation</span>
-        <span>CRM follow-up automation</span>
+      <div class="decision-grid">
+        <a href="/use-cases/apartment-lead-tracking/">
+          <strong>Lead source and ownership are unclear</strong>
+          <span>Start with apartment lead tracking and multifamily source-to-tour visibility.</span>
+        </a>
+        <a href="/use-cases/real-estate-lead-follow-up-automation/">
+          <strong>Leads go cold after the first touch</strong>
+          <span>Start with lead follow-up automation, stop rules, and CRM task updates.</span>
+        </a>
+        <a href="/use-cases/lead-to-lease-automation/">
+          <strong>The renter journey breaks between stages</strong>
+          <span>Start with the lead-to-lease workflow across inquiry, tour, application, and move-in.</span>
+        </a>
+        <a href="/use-cases/leasing-intake-routing-automation/">
+          <strong>Inbound leasing inquiries reach the wrong owner or create duplicates</strong>
+          <span>Normalize calls, forms, ILS leads, texts, qualification, ownership, and next-step routing.</span>
+        </a>
+        <a href="/use-cases/resident-owner-vendor-communication-automation/">
+          <strong>Resident, owner, and vendor updates live in separate threads</strong>
+          <span>Coordinate audience-specific messages, approvals, replies, and status from one operating record.</span>
+        </a>
+        <a href="/use-cases/security-deposit-automation/">
+          <strong>Deposit cases are rebuilt from photos, ledgers, and spreadsheets</strong>
+          <span>Start with evidence-backed security deposit review, approvals, disposition output, and refund tracking.</span>
+        </a>
+        <a href="/use-cases/real-estate-crm-follow-up-mess/">
+          <strong>The CRM feels messy no matter which tool you use</strong>
+          <span>Start with CRM cleanup around stages, tasks, duplicate rules, and ownership.</span>
+        </a>
       </div>
     </section>
 
@@ -61,8 +95,9 @@ const description =
             <article class="service-card">
               <span>{useCase.primaryKeyword}</span>
               <h2><a href={useCaseUrl(useCase)}>{useCase.title}</a></h2>
-              <p>{useCase.description}</p>
+              <p>{useCase.auditFocus}</p>
               <a class="read-more" href={useCaseUrl(useCase)}>View use case</a>
+              <a class="read-more muted-more" href={auditHref(useCase.slug, "use-case")}>{useCase.auditCta.label}</a>
             </article>
           ))
         }

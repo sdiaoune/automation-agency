@@ -5,9 +5,9 @@ pillar: "Missed Call Recovery"
 keyword: "missed leasing calls property management"
 title: "The True Cost of Unanswered Leasing Calls for Property Managers"
 seoTitle: "Missed Leasing Calls: Cost and Recovery"
-meta: "Learn how missed leasing calls leak showings after hours and how property management teams can recover demand with fast SMS and CRM workflows."
+meta: "Diagnose the cost of missed leasing calls, then decide when missed-call text-back, after-hours coverage, or response-time automation should handle recovery."
 publishedAt: "2026-06-03"
-updatedAt: "2026-06-04"
+updatedAt: "2026-07-01"
 h1: "The true cost of the unanswered leasing call"
 problem: "A missed leasing call is rarely just a voicemail. For a renter comparing available units, it is often the moment they choose which property manager feels responsive enough to trust."
 stakes:
@@ -27,6 +27,8 @@ metrics:
   - "appointments booked from missed calls"
 cta: "If missed leasing calls are creating silent vacancy loss, start with a 15-minute workflow audit."
 bodySections: true
+socialHook: "The missed leasing call is a revenue leak before it is a voicemail problem."
+socialImage: "/blog/social-assets/missed-leasing-calls-property-management.png"
 faqs:
   - question: "What is a missed leasing call workflow?"
     answer: "It is an automated process that responds to unanswered leasing calls, captures renter intent, and routes the next step into the property team’s CRM or booking process."
@@ -42,9 +44,15 @@ related:
 
 A missed leasing call is rarely just a voicemail. For a renter comparing available units, it is often the moment they choose which property manager feels responsive enough to trust.
 
-That is the short version. The longer version is where the money leaks: one renter waits too long, one resident repeats the same details twice, one vendor gets partial context, or one owner asks for an update the team already should have sent. None of those moments feels like a systems problem in isolation. Together, they become the operating drag that makes a property team feel busier than it should.
+This guide is the cost and diagnosis page: it explains why unanswered leasing calls leak demand, how to measure the loss, and what has to be true before automation is worth installing. For the implementation pattern, use [missed-call text-back for property management](/blog/missed-call-text-back-property-management/); that page owns the SMS trigger, qualification sequence, stop rules, and CRM writeback workflow.
 
-A good automation plan does not start with a tool demo. It starts with the handoff. Who receives the request? What does the team need to know before acting? What should happen automatically? When should the workflow stop and ask a human to step in? If this is the issue your team is trying to fix, it usually sits next to [Missed Call Text-Back for Property Management](/blog/missed-call-text-back-property-management/), [After-Hours Leasing Automation](/blog/after-hours-leasing-automation/), [Property Management Response Times](/blog/property-management-response-times/).
+Use this page when the question is "how much are missed leasing calls costing us?" Use the text-back guide when the question is "what should happen after the call is missed?" That split keeps the problem page and solution page from fighting each other.
+
+It also keeps reporting conversations separate from implementation details.
+
+## How this differs from missed-call text-back
+
+This page should answer the "what is the cost?" and "why is this happening?" questions around unanswered leasing calls. The missed-call text-back guide should answer the "what should the system do next?" question. Keeping those roles separate lets this article diagnose the revenue leak while the canonical text-back page owns the automation workflow.
 
 ## Why this becomes expensive
 
@@ -80,6 +88,8 @@ Useful next reads:
 - [Missed Call Text-Back for Property Management](/blog/missed-call-text-back-property-management/)
 - [After-Hours Leasing Automation](/blog/after-hours-leasing-automation/)
 - [Property Management Response Times](/blog/property-management-response-times/)
+- [AI Leasing Follow-Up for Property Management](/blog/ai-leasing-follow-up-property-management/)
+- [Property Management CRM Workflow Automation](/blog/property-management-crm-workflow-automation/)
 
 Together, those guides move from response speed to intake quality, follow-up, routing, CRM updates, and reporting, which is the same path most teams have to clean up in the real operation.
 

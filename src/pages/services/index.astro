@@ -2,8 +2,12 @@
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import ClientReviews from "../../components/ClientReviews.astro";
+import ProductScreenshot from "../../components/ProductScreenshot.astro";
+import { auditHref } from "../../lib/conversion";
 import { absoluteUrl, defaultSocialImage, standardPageSchema } from "../../lib/site";
 import { servicePages, serviceUrl } from "../../lib/services";
+import { productScreenshotForPath } from "../../lib/productScreenshots";
 import "../../styles/service.css";
 
 const title = "Property Management Automation Services | EMC2Ops";
@@ -25,23 +29,70 @@ const description =
     <section class="service-hero">
       <div class="wrap">
         <p class="eyebrow">Services</p>
-        <h1>Property management automation services for leasing, CRM, and maintenance handoffs.</h1>
+        <h1>Choose the first property management workflow to fix.</h1>
         <p class="dek">
-          Start with one bottleneck you can measure, then expand once the workflow improves
-          leasing response, CRM completeness, maintenance intake, owner communication, or vendor coordination.
+          EMC2Ops services are built around operating bottlenecks: missed renter calls, stalled
+          leasing follow-up, incomplete maintenance intake, messy CRM records, owner updates, and
+          vendor coordination.
         </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/book-demo/?workflow=how-to-automate-property-management&source=services-index">Book my workflow audit</a>
+          <a class="btn btn-secondary" href="#choose">Choose by bottleneck</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-proof-section">
+      <div class="wrap">
+        <ProductScreenshot screenshot={productScreenshotForPath("/services/")} />
+      </div>
+    </section>
+
+    <ClientReviews />
+
+    <section id="choose" class="wrap detail-section">
+      <p class="eyebrow">Decision guide</p>
+      <h2>Start with the bottleneck your team already feels</h2>
+      <div class="decision-grid">
+        <a href="/services/missed-call-recovery/">
+          <strong>Renters call and do not get a fast next step</strong>
+          <span>Install missed-call text-back, qualification, CRM logging, and staff escalation.</span>
+        </a>
+        <a href="/services/leasing-follow-up/">
+          <strong>Leads stall after inquiry, tour, or application</strong>
+          <span>Install stage-aware follow-up with stop rules and CRM task updates.</span>
+        </a>
+        <a href="/services/maintenance-intake-automation/">
+          <strong>Maintenance requests arrive without enough context</strong>
+          <span>Collect urgency, access notes, photos, and routing details before dispatch.</span>
+        </a>
+        <a href="/services/crm-workflow-automation/">
+          <strong>The CRM does not show the real next step</strong>
+          <span>Clean up stages, tasks, notes, duplicate handling, and writebacks.</span>
+        </a>
+        <a href="/services/owner-update-automation/">
+          <strong>Owners ask for the same status updates</strong>
+          <span>Draft proactive owner updates with review gates and logging.</span>
+        </a>
+        <a href="/services/vendor-dispatch-automation/">
+          <strong>Vendor coordination takes too many manual loops</strong>
+          <span>Route qualified requests with approvals, reminders, and status updates.</span>
+        </a>
       </div>
     </section>
 
     <section class="wrap service-grid-section">
+      <p class="eyebrow">Service menu</p>
+      <h2>What EMC2Ops can install</h2>
       <div class="service-grid">
         {
           servicePages.map((service) => (
             <article class="service-card">
               <span>{service.eyebrow}</span>
               <h2><a href={serviceUrl(service)}>{service.title}</a></h2>
-              <p>{service.description}</p>
+              <p>{service.auditFocus}</p>
               <a class="read-more" href={serviceUrl(service)}>View service</a>
+              <a class="read-more muted-more" href={auditHref(service.slug, "service")}>{service.auditCta.label}</a>
             </article>
           ))
         }

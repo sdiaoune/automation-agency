@@ -9,8 +9,17 @@ test("starts availability two business days out from a weekday", () => {
   assert.equal(MIN_LEAD_BUSINESS_DAYS, 2);
   assert.ok(slots.length > 0);
   assert.equal(slots[0].day, "Tuesday, June 30");
-  assert.equal(slots[0].timeLabel, "5:00 PM EDT - 5:15 PM");
+  assert.equal(slots[0].timeLabel, "9:00 AM EDT - 9:15 AM");
   assert.ok(slots.every((slot) => !["Friday, June 26", "Saturday, June 27", "Sunday, June 28", "Monday, June 29"].includes(slot.day)));
+});
+
+test("offers half-hour consultation starts across the 9-to-5 workday", () => {
+  const slots = generateSlots({ now: new Date("2026-06-26T14:00:00.000Z") });
+  const firstDaySlots = slots.filter((slot) => slot.day === "Tuesday, June 30");
+
+  assert.equal(firstDaySlots.length, 16);
+  assert.equal(firstDaySlots[0].timeLabel, "9:00 AM EDT - 9:15 AM");
+  assert.equal(firstDaySlots.at(-1).timeLabel, "4:30 PM EDT - 4:45 PM");
 });
 
 test("skips weekends when calculating the two-business-day lead time", () => {

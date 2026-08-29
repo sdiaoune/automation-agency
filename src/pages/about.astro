@@ -2,8 +2,10 @@
 import SiteFooter from "../components/SiteFooter.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
+import ClientReviews from "../components/ClientReviews.astro";
 import { aboutPageSchema, absoluteUrl, defaultSocialImage } from "../lib/site";
 import "../styles/service.css";
+import "../styles/authority.css";
 
 const title = "About EMC2Ops | AI Front Desk Workflows for Property Managers";
 const description =
@@ -63,6 +65,34 @@ const description =
       </div>
     </section>
 
+    <section id="founder-profile" class="wrap detail-section">
+      <div class="founder-card">
+        <img src="https://www.soyadiaoune.com/headshot.jpeg" alt="Soya Diaouné, founder of EMC2Ops" width="180" height="180" loading="lazy" />
+        <div>
+          <p class="eyebrow">Founder</p>
+          <h2>Soya Diaouné</h2>
+          <p>
+            Soya is an AI/ML engineer in Charlotte, North Carolina who builds production LLM,
+            data, integration, and workflow automation systems. His background spans computer
+            science, enterprise systems operations, analytics, risk controls, and end-to-end AI
+            product development.
+          </p>
+          <p>
+            At EMC2Ops, he applies that systems background to property management workflows: define
+            the operating rule, connect the right systems, preserve the human decision points, and
+            measure whether the workflow changed the intended outcome.
+          </p>
+          <div class="founder-links">
+            <a href="https://www.soyadiaoune.com/">Personal site</a>
+            <a href="https://www.linkedin.com/in/soya-diaoun%C3%A9-27062089/">LinkedIn</a>
+            <a href="https://github.com/sdiaoune">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <ClientReviews />
+
     <section class="wrap detail-section">
       <h2>Operating principles</h2>
       <ol class="step-list">
@@ -105,6 +135,7 @@ const description =
         </p>
       </div>
       <div class="check-list">
+        <div><span>✓</span><p>Founder: <a href="#founder-profile">Soya Diaouné</a>, Charlotte, North Carolina</p></div>
         <div><span>✓</span><p>Email: <a href="mailto:soya@getemc2ops.com">soya@getemc2ops.com</a></p></div>
         <div><span>✓</span><p>LinkedIn: <a href="https://www.linkedin.com/company/emc2ops/">EMC2Ops</a></p></div>
         <div><span>✓</span><p>X: <a href="https://x.com/EMC2Ops">@EMC2Ops</a></p></div>

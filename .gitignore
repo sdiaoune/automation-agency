@@ -3,7 +3,10 @@ node_modules/
 .astro/
 dist/
 .vercel/
+.env
+.env.local
 supabase/.temp/
 test-results/
+outputs/private-proof-evidence/
 .x-blog-post-history.json
 .x-growth-post-history.json
