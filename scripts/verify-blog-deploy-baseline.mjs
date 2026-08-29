@@ -9,6 +9,18 @@ const protectedRegions = [
   { className: "customer-results", label: "customer results strip", tagName: "aside" },
 ];
 
+const protectedSecurityDepositMarkers = [
+  "What is security deposit automation?",
+  "What happens when evidence is missing, conflicting, or late?",
+  "Questions to ask any security deposit automation provider",
+  "AI must not infer the original condition",
+  "Does new evidence invalidate an earlier manager approval?",
+  "Content scope reviewed August 29, 2026",
+];
+
+const securityDepositPath = "/use-cases/security-deposit-automation/";
+const securityDepositUrl = `https://www.emc2ops.com${securityDepositPath}`;
+
 function elementWithClass(html, { className, label, tagName }) {
   const tokens = new RegExp(`<\\/?${tagName}\\b[^>]*>`, "gi");
   let start = -1;
@@ -49,6 +61,23 @@ function normalizeCss(value) {
     .replace(/\s+/g, "")
     .replace(/;}/g, "}")
     .trim();
+}
+
+function requireMarkers(value, markers, label) {
+  const missing = markers.filter((marker) => !value.includes(marker));
+  if (missing.length > 0) {
+    throw new Error(`Blog deployment blocked: ${label} lost protected security-deposit content:\n${missing.join("\n")}`);
+  }
+}
+
+function structuredDataGraph(html) {
+  const nodes = [];
+  for (const match of html.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
+    const value = JSON.parse(match[1]);
+    if (Array.isArray(value?.["@graph"])) nodes.push(...value["@graph"]);
+    else nodes.push(value);
+  }
+  return nodes;
 }
 
 function sitemapPaths(xml, label) {
@@ -154,6 +183,47 @@ export async function verifyBlogDeployBaseline({
     );
   }
 
+  if (!localPaths.has(securityDepositPath)) {
+    throw new Error(`Blog deployment blocked: candidate sitemap is missing ${securityDepositPath}.`);
+  }
+
+  const [securityDepositPage, llms, llmsFull, aiDocsText] = await Promise.all([
+    readFile(path.join(distDir, "use-cases", "security-deposit-automation", "index.html"), "utf8"),
+    readFile(path.join(distDir, "llms.txt"), "utf8"),
+    readFile(path.join(distDir, "llms-full.txt"), "utf8"),
+    readFile(path.join(distDir, "ai-docs.json"), "utf8"),
+  ]);
+
+  requireMarkers(securityDepositPage, protectedSecurityDepositMarkers, "rendered security-deposit page");
+  const graph = structuredDataGraph(securityDepositPage);
+  const webPage = graph.find((node) => node?.["@type"] === "WebPage");
+  const faqPage = graph.find((node) => node?.["@type"] === "FAQPage");
+  const howTo = graph.find((node) => node?.["@type"] === "HowTo");
+  if (webPage?.dateModified !== "2026-08-29") {
+    throw new Error("Blog deployment blocked: security-deposit WebPage dateModified is not 2026-08-29.");
+  }
+  if (!Array.isArray(faqPage?.mainEntity) || faqPage.mainEntity.length < 15) {
+    throw new Error("Blog deployment blocked: security-deposit FAQ schema has fewer than 15 answers.");
+  }
+  if (!Array.isArray(howTo?.step) || howTo.step.length !== 6) {
+    throw new Error("Blog deployment blocked: security-deposit HowTo schema does not contain six workflow steps.");
+  }
+
+  requireMarkers(llms, [securityDepositUrl], "llms.txt");
+  requireMarkers(llmsFull, [
+    securityDepositUrl,
+    "Does new evidence invalidate an earlier manager approval?",
+    "Can security deposit automation work without bank-account access?",
+  ], "llms-full.txt");
+
+  const aiDocs = JSON.parse(aiDocsText);
+  if (aiDocs?.importantUrls?.securityDepositAutomation !== securityDepositUrl) {
+    throw new Error("Blog deployment blocked: ai-docs.json lost the security-deposit canonical URL.");
+  }
+  if (!aiDocs?.useCaseClusters?.some((entry) => entry?.url === securityDepositUrl)) {
+    throw new Error("Blog deployment blocked: ai-docs.json lost the security-deposit use-case cluster.");
+  }
+
   for (const region of protectedRegions) {
     const local = normalizeMarkup(elementWithClass(localHomepage, region));
     const live = normalizeMarkup(elementWithClass(liveHomepage, region));
@@ -170,7 +240,11 @@ export async function verifyBlogDeployBaseline({
     throw new Error("Blog deployment blocked: homepage stylesheet bundle differs from production. Ship the site-wide style change separately before running a blog-only production deploy.");
   }
 
-  return { protectedRegions: protectedRegions.length, stylesheets: localCss.length };
+  return {
+    protectedRegions: protectedRegions.length,
+    stylesheets: localCss.length,
+    securityDepositMarkers: protectedSecurityDepositMarkers.length,
+  };
 }
 
 function option(name, fallback) {
@@ -184,7 +258,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
       distDir: path.resolve(option("--dist", "dist")),
       origin: option("--origin", "https://www.emc2ops.com"),
     });
-    console.log(`Blog deployment baseline verified: ${result.protectedRegions} protected regions and ${result.stylesheets} homepage stylesheet bundle(s) match production.`);
+    console.log(`Blog deployment baseline verified: ${result.protectedRegions} protected regions, ${result.stylesheets} homepage stylesheet bundle(s), and ${result.securityDepositMarkers} security-deposit markers are preserved.`);
   } catch (error) {
     console.error(error instanceof Error ? error.message : String(error));
     process.exitCode = 1;
