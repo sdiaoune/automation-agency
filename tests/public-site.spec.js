@@ -272,12 +272,27 @@ test("security deposit workflow remains listed and preserves human approval boun
   await expect(page.locator("[data-security-deposit-preview]")).toContainText(
     "Manager review required",
   );
+  await expect(page.getByRole("heading", { name: "What is security deposit automation?" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "What happens when evidence is missing, conflicting, or late?" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "How this differs from other security deposit products" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Questions to ask any security deposit automation provider" })).toBeVisible();
+  await expect(page.locator("main")).toContainText("AI must not infer the original condition");
+  await expect(page.locator("main")).toContainText("Evidence changes after approval");
+  await expect(page.locator("main")).toContainText("Can security deposit automation work without bank-account access?");
   await expect(page.locator("main")).toContainText(
     "AI may organize evidence and draft neutral, source-linked observations",
   );
   await expect(page.locator("main")).toContainText(
     "The workflow does not move money or make legal decisions automatically",
   );
+
+  const schema = JSON.parse(await page.locator('script[type="application/ld+json"]').textContent());
+  const webPageSchema = schema["@graph"].find((node) => node["@type"] === "WebPage");
+  const faqSchema = schema["@graph"].find((node) => node["@type"] === "FAQPage");
+  const howToSchema = schema["@graph"].find((node) => node["@type"] === "HowTo");
+  expect(webPageSchema.dateModified).toBe("2026-08-29");
+  expect(faqSchema.mainEntity.length).toBeGreaterThanOrEqual(15);
+  expect(howToSchema.step).toHaveLength(6);
 
   for (const viewport of [{ width: 390, height: 844 }, { width: 1440, height: 1000 }]) {
     await page.setViewportSize(viewport);

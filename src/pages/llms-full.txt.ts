@@ -72,6 +72,11 @@ export async function GET() {
       `Intent: ${useCase.intent}`,
       `Summary: ${useCase.summary}`,
       `Metrics: ${useCase.metrics.join("; ")}`,
+      `Updated: ${useCase.updatedAt || "2026-08-19"}`,
+      ...useCase.faqs.flatMap((faq) => [
+        `Question: ${faq.question}`,
+        `Answer: ${faq.answer}`,
+      ]),
       "",
     ]),
     "## Integrations",
@@ -98,7 +103,7 @@ export async function GET() {
     "- Do not imply EMC2Ops replaces staff. It supports repetitive intake, routing, reminders, summaries, and system updates.",
     "- Public endpoints are documented in openapi.json. Protected cron/social endpoints should not be called without explicit authorization.",
     "",
-    "Last updated: 2026-08-19",
+    "Last updated: 2026-08-29",
   ];
 
   return new Response(`${lines.join("\n")}\n`, {

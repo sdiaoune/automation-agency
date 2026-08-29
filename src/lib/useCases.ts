@@ -8,6 +8,7 @@ export interface UseCasePage {
   title: string;
   seoTitle: string;
   description: string;
+  updatedAt?: string;
   h1: string;
   summary: string;
   painPoints: string[];
@@ -347,8 +348,13 @@ export const useCasePages: UseCasePage[] = [
     clusterKeywords: [
       "security deposit disposition automation",
       "security deposit return automation",
+      "security deposit management software",
+      "security deposit disposition software",
+      "security deposit itemization software",
+      "automated move-out claims and refunds",
       "property management deposit workflow",
       "move-out deposit automation",
+      "AI move-out inspection",
       "security deposit deduction review",
       "deposit accounting workflow",
     ],
@@ -357,10 +363,11 @@ export const useCasePages: UseCasePage[] = [
     title: "Security deposit automation",
     seoTitle: "Security Deposit Automation for Property Managers",
     description:
-      "Automate security deposit move-out intake, evidence review, proposed deductions, manager approvals, disposition documents, delivery, and refund tracking.",
+      "Automate move-out evidence, deduction review, manager approval, itemized dispositions, delivery, and refund tracking without letting AI decide charges.",
+    updatedAt: "2026-08-29",
     h1: "Security deposit automation that keeps every deduction tied to evidence",
     summary:
-      "EMC2Ops installs a security deposit workflow that assembles move-out records, compares verified evidence, reconciles proposed deductions and refunds, routes exceptions for manager approval, and preserves a complete disposition trail. AI can organize and summarize evidence; authorized staff make every final financial and legal decision.",
+      "Turn every move-out into one evidence-backed deposit case. EMC2Ops connects your PMS, inspections, photos, invoices, and approved policies; prepares a reconciled disposition for manager review; then tracks delivery, refund, and writeback. AI organizes evidence. Your authorized staff decide every charge.",
     painPoints: [
       "Move-out records are scattered across the PMS, inspection tools, inboxes, photos, vendor bills, resident messages, and spreadsheets.",
       "Staff reconstruct the deposit held, credits, proposed deductions, refund, and deadline by hand for every case.",
@@ -412,9 +419,29 @@ export const useCasePages: UseCasePage[] = [
           "It can open a case from a verified move-out, assemble ledger and evidence records, compare verified images, draft source-linked observations, reconcile a proposed disposition, route exceptions and approvals, generate the approved artifact, and track delivery, refund, and writeback milestones.",
       },
       {
+        question: "What is security deposit automation for property managers?",
+        answer:
+          "It is a controlled move-out workflow that brings the deposit ledger, inspections, before-and-after evidence, invoices, policy context, deadlines, approvals, disposition output, delivery, refund status, and PMS writeback into one versioned case.",
+      },
+      {
         question: "Does AI decide security deposit deductions or refunds?",
         answer:
           "No. AI may organize evidence and draft neutral, source-linked observations. Authorized staff remain responsible for policy, liability, wear, legal, deduction, refund, and approval decisions.",
+      },
+      {
+        question: "What happens when move-in photos or other required evidence are missing?",
+        answer:
+          "The case records an evidence gap and follows the operator's approved exception rule. AI must not infer the original condition, invent missing support, or convert a move-out image into proof of tenant responsibility.",
+      },
+      {
+        question: "What happens when the ledger balance and proposed refund do not reconcile?",
+        answer:
+          "The mismatch blocks approval, remains visible on the case, and routes to the designated accounting or management owner. The workflow should not generate a final disposition from unreconciled amounts.",
+      },
+      {
+        question: "Does new evidence invalidate an earlier manager approval?",
+        answer:
+          "A manager approves an exact frozen proposal version. If evidence, policy context, charges, credits, or refund math materially changes, the workflow creates a new version and requires the configured review again.",
       },
       {
         question: "Can this connect to AppFolio or our existing property management system?",
@@ -422,14 +449,49 @@ export const useCasePages: UseCasePage[] = [
           "Yes, after the account's permissions and supported access path are verified. The workflow can use supported APIs, exports, inbox parsing, middleware, secure review queues, or manual writeback without promising unavailable direct access.",
       },
       {
+        question: "Can the workflow use our current inspection or photo app?",
+        answer:
+          "Often, yes. The implementation first verifies how the tool exposes inspections, images, timestamps, signatures, reports, and source identifiers. It then uses the safest supported API, export, webhook, storage, or review-queue path.",
+      },
+      {
+        question: "Is this the same as security deposit management software or a deposit alternative?",
+        answer:
+          "No. Deposit management platforms usually focus on collection, holding, interest, banking, and refunds, while deposit alternatives replace or reduce upfront cash. EMC2Ops focuses on the cross-system evidence, reconciliation, exception, approval, disposition, and audit workflow and can complement either category.",
+      },
+      {
         question: "Does EMC2Ops guarantee security deposit legal compliance?",
         answer:
           "No. The workflow uses the operator's counsel-approved policies, rule configuration, deadline sources, and human review gates. It provides operational controls and an audit trail, not legal advice or a substitute for counsel.",
       },
       {
+        question: "How are state and local security deposit rules updated?",
+        answer:
+          "Each production rule should carry a jurisdiction, primary source, effective date, version, approver, and change history. A changed rule is reviewed and tested before activation, while existing cases preserve the exact rule version applied to them.",
+      },
+      {
         question: "Does the product send refunds automatically?",
         answer:
           "Not by default. It tracks the approved refund and fulfillment status. Moving money requires a separately approved payment integration, permissions, controls, reconciliation, and human authorization.",
+      },
+      {
+        question: "Can security deposit automation work without bank-account access?",
+        answer:
+          "Yes. The workflow can stop at an approved disposition package and track a refund completed in the existing accounting or payment process. Bank or payment access is not required for the evidence and approval workflow.",
+      },
+      {
+        question: "How long does implementation take?",
+        answer:
+          "There is no responsible universal timeline. EMC2Ops confirms the implementation window after tracing a representative case and verifying systems, permissions, evidence rules, jurisdictions, approval roles, exception paths, testing, and any payment or delivery integrations.",
+      },
+      {
+        question: "How much does a security deposit automation workflow cost?",
+        answer:
+          "Pricing is quote-based. Cost depends on systems, supported access, case and evidence volume, jurisdictions and policy variants, migration, exception complexity, reporting, security, monitoring, support, and whether document delivery or payment integrations are included.",
+      },
+      {
+        question: "What should we ask a security deposit automation provider before buying?",
+        answer:
+          "Ask the provider to prove source lineage, evidence-gap behavior, balance reconciliation, frozen approvals, rule versioning, verified integrations, money-movement boundaries, failure handling, retention controls, exportable history, and ownership of every financial and legal decision.",
       },
     ],
   },
@@ -497,6 +559,17 @@ export function useCaseSchema(useCase: UseCasePage) {
         url,
         name: useCase.title,
         description: useCase.description,
+        ...(useCase.updatedAt ? { dateModified: useCase.updatedAt } : {}),
+        ...(useCase.slug === "security-deposit-automation"
+          ? {
+              reviewedBy: {
+                "@type": "Person",
+                name: "Soya Diaouné",
+                jobTitle: "Founder and AI automation engineer",
+                url: `${siteUrl}/about/`,
+              },
+            }
+          : {}),
         isPartOf: { "@id": `${siteUrl}/#website` },
         about: [useCase.primaryKeyword, ...useCase.clusterKeywords],
         keywords: [useCase.primaryKeyword, ...useCase.clusterKeywords],
@@ -535,6 +608,24 @@ export function useCaseSchema(useCase: UseCasePage) {
           acceptedAnswer: { "@type": "Answer", text: faq.answer },
         })),
       },
+      ...(useCase.slug === "security-deposit-automation"
+        ? [
+            {
+              "@type": "HowTo",
+              "@id": `${url}#workflow`,
+              name: "How security deposit automation works",
+              description:
+                "A controlled workflow for moving from a verified move-out to an evidence-backed, manager-approved security deposit disposition and tracked refund state.",
+              step: useCase.workflow.map((step, index) => ({
+                "@type": "HowToStep",
+                position: index + 1,
+                name: `Security deposit workflow step ${index + 1}`,
+                text: step,
+                url: `${url}#workflow`,
+              })),
+            },
+          ]
+        : []),
     ],
   };
 }

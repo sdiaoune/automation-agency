@@ -13,7 +13,7 @@ export async function GET() {
     { url: "/services/", lastmod: siteUpdatedAt },
     ...servicePages.map((service) => ({ url: serviceUrl(service), lastmod: siteUpdatedAt })),
     { url: "/use-cases/", lastmod: siteUpdatedAt },
-    ...useCasePages.map((useCase) => ({ url: useCaseUrl(useCase), lastmod: siteUpdatedAt })),
+    ...useCasePages.map((useCase) => ({ url: useCaseUrl(useCase), lastmod: useCase.updatedAt || siteUpdatedAt })),
     { url: "/integrations/", lastmod: siteUpdatedAt },
     ...integrationPages.map((integration) => ({ url: integrationUrl(integration), lastmod: siteUpdatedAt })),
     { url: "/blog/", lastmod: siteUpdatedAt },

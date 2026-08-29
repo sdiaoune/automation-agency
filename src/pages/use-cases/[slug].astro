@@ -1,5 +1,6 @@
 ---
 import FaqList from "../../components/FaqList.astro";
+import SecurityDepositDecisionGuide from "../../components/SecurityDepositDecisionGuide.astro";
 import SecurityDepositProductPreview from "../../components/SecurityDepositProductPreview.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
@@ -23,6 +24,7 @@ interface Props {
 const { useCase } = Astro.props;
 const canonical = absoluteUrl(useCaseUrl(useCase));
 const auditUrl = auditHref(useCase.slug, "use-case");
+const isSecurityDepositAutomation = useCase.slug === "security-deposit-automation";
 const detailBySlug = {
   "apartment-lead-tracking": {
     exampleTitle: "Example: missed apartment inquiry to booked tour",
@@ -149,11 +151,13 @@ const detailBySlug = {
       </div>
     </section>
 
-    {useCase.slug === "security-deposit-automation" && (
+    {isSecurityDepositAutomation && (
       <section class="wrap detail-section">
         <SecurityDepositProductPreview />
       </section>
     )}
+
+    {isSecurityDepositAutomation && <SecurityDepositDecisionGuide />}
 
     <section class="wrap split-section">
       <div>

@@ -17,6 +17,7 @@
     "CRM workflow automation",
     "owner update automation",
     "vendor dispatch automation",
+    "security deposit workflow automation",
     "AI front desk implementation"
   ],
   "topics": [
@@ -27,6 +28,7 @@
     "CRM logging",
     "SMS compliance",
     "workflow routing",
+    "security deposit disposition automation",
     "human approval gates"
   ],
   "importantUrls": {
@@ -34,6 +36,7 @@
     "about": "https://www.emc2ops.com/about/",
     "services": "https://www.emc2ops.com/services/",
     "useCases": "https://www.emc2ops.com/use-cases/",
+    "securityDepositAutomation": "https://www.emc2ops.com/use-cases/security-deposit-automation/",
     "integrations": "https://www.emc2ops.com/integrations/",
     "customers": "https://www.emc2ops.com/customers/",
     "blog": "https://www.emc2ops.com/blog/",
@@ -121,6 +124,12 @@
       "name": "Real estate CRM follow-up cleanup",
       "url": "https://www.emc2ops.com/use-cases/real-estate-crm-follow-up-mess/",
       "keywords": ["best real estate CRM when follow up is a mess", "CRM follow up automation", "real estate CRM automation"]
+    },
+    {
+      "name": "Security deposit automation",
+      "url": "https://www.emc2ops.com/use-cases/security-deposit-automation/",
+      "keywords": ["security deposit automation", "security deposit disposition automation", "security deposit itemization software", "move-out deposit automation"],
+      "summary": "A done-for-you workflow that assembles move-out records and evidence, reconciles a proposed disposition, routes the frozen version for authorized manager approval, and tracks the disposition artifact, delivery, refund milestone, and PMS writeback without giving AI authority over financial or legal decisions."
     }
   ],
   "sameAs": [
@@ -129,5 +138,5 @@
     "https://x.com/EMC2Ops",
     "https://www.instagram.com/emc2ops_official/"
   ],
-  "lastUpdated": "2026-08-19"
+  "lastUpdated": "2026-08-29"
 }
