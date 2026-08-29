@@ -1,7 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 
-export const contentPostsPath = "src/content/blog";
+const websiteRoot = path.resolve(process.env.EMC2OPS_WEBSITE_DIR || ".");
+
+export const contentPostsPath = path.join(websiteRoot, "src/content/blog");
 
 const reservedMoneyPageKeywords = new Map([
   ["apartment lead tracking", "/use-cases/apartment-lead-tracking/"],
@@ -164,7 +166,7 @@ export function validateBlogPosts(posts = readBlogPosts({ includeBody: true })) 
       );
     }
 
-    if (post.socialImage && !fs.existsSync(path.join("public", post.socialImage))) {
+    if (post.socialImage && !fs.existsSync(path.join(websiteRoot, "public", post.socialImage))) {
       errors.push(`${post.filePath}: social image not found: ${post.socialImage}`);
     }
   }
